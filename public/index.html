@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MCU Field Log</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="tape tape-tl"></div>
+<div class="tape tape-tr"></div>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="stamp-badge" id="stamp-badge">CLASSIFIED</div>
+    <h1>MCU FIELD LOG</h1>
+    <p class="subtitle">Narrative-order case file &mdash; track what you've watched, avoid what you haven't</p>
+  </div>
+</header>
+
+<nav class="phase-tabs" id="phase-tabs"></nav>
+
+<main class="dossier">
+  <section class="dossier-header">
+    <div class="dossier-title-row">
+      <h2 id="phase-title">Loading&hellip;</h2>
+      <button id="sort-toggle" class="sort-btn">Narrative Order ⇄ Release Order</button>
+    </div>
+    <div class="progress-row">
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <span class="progress-label" id="progress-label">0 / 0 viewed</span>
+    </div>
+  </section>
+
+  <section class="case-files" id="case-files"></section>
+</main>
+
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modal-close">&times;</button>
+    <div class="modal-content" id="modal-content"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

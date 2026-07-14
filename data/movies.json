@@ -1,0 +1,88 @@
+{
+  "phases": [
+    {
+      "id": "phase-1",
+      "name": "Phase One",
+      "label": "The Avengers Initiative",
+      "movies": [
+        {
+          "id": "cap-1",
+          "title": "Captain America: The First Avenger",
+          "year": 2011,
+          "narrativeOrder": 1,
+          "releaseOrder": 5,
+          "type": "movie",
+          "summary": "Set during World War II, a frail young man is transformed into a super-soldier and takes on a rogue Nazi-science division bent on world domination, ending with him frozen and lost to time.",
+          "keyCharacters": ["Steve Rogers / Captain America", "Bucky Barnes", "Peggy Carter", "Howard Stark", "Red Skull"],
+          "postCredit": { "count": 1, "type": "post" }
+        },
+        {
+          "id": "captain-marvel",
+          "title": "Captain Marvel",
+          "year": 2019,
+          "narrativeOrder": 2,
+          "releaseOrder": 21,
+          "type": "movie",
+          "summary": "Set in the 1990s, an Air Force pilot with cosmic powers gets caught in a galactic conflict and uncovers hidden memories about her past on Earth.",
+          "keyCharacters": ["Carol Danvers / Captain Marvel", "Nick Fury", "Maria Rambeau", "Talos"],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "iron-man-1",
+          "title": "Iron Man",
+          "year": 2008,
+          "narrativeOrder": 3,
+          "releaseOrder": 1,
+          "type": "movie",
+          "summary": "A billionaire weapons manufacturer is captured and forced to build a weapon, but instead builds a suit of armor and escapes, setting him on a new path.",
+          "keyCharacters": ["Tony Stark / Iron Man", "Pepper Potts", "James Rhodes", "Obadiah Stane", "Nick Fury"],
+          "postCredit": { "count": 1, "type": "post" }
+        },
+        {
+          "id": "incredible-hulk",
+          "title": "The Incredible Hulk",
+          "year": 2008,
+          "narrativeOrder": 4,
+          "releaseOrder": 2,
+          "type": "movie",
+          "summary": "A scientist on the run tries to control a rage-fueled transformation caused by a failed experiment, while the military hunts him down.",
+          "keyCharacters": ["Bruce Banner / Hulk", "Betty Ross", "General Ross", "Emil Blonsky"],
+          "postCredit": { "count": 1, "type": "post" }
+        },
+        {
+          "id": "iron-man-2",
+          "title": "Iron Man 2",
+          "year": 2010,
+          "narrativeOrder": 5,
+          "releaseOrder": 3,
+          "type": "movie",
+          "summary": "Facing pressure from the government and a personal crisis, a hero must deal with a new enemy seeking revenge tied to his father's past, while a former ally's ambitions grow.",
+          "keyCharacters": ["Tony Stark / Iron Man", "Natasha Romanoff", "James Rhodes", "Ivan Vanko", "Justin Hammer", "Nick Fury"],
+          "postCredit": { "count": 1, "type": "post" }
+        },
+        {
+          "id": "thor-1",
+          "title": "Thor",
+          "year": 2011,
+          "narrativeOrder": 6,
+          "releaseOrder": 4,
+          "type": "movie",
+          "summary": "A powerful but arrogant warrior is cast out of his home realm and stripped of his power, learning humility on Earth while a threat brews back home.",
+          "keyCharacters": ["Thor", "Loki", "Jane Foster", "Odin", "Sif"],
+          "postCredit": { "count": 1, "type": "mid" }
+        },
+        {
+          "id": "avengers-1",
+          "title": "The Avengers",
+          "year": 2012,
+          "narrativeOrder": 7,
+          "releaseOrder": 6,
+          "type": "movie",
+          "summary": "A team of powerful individuals is assembled to stop a stolen artifact from being used to open a portal for an invading force.",
+          "keyCharacters": ["Tony Stark / Iron Man", "Steve Rogers / Captain America", "Thor", "Bruce Banner / Hulk", "Natasha Romanoff", "Clint Barton", "Loki", "Nick Fury"],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        }
+      ]
+    }
+  ]
+}
