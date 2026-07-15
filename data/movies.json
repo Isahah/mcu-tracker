@@ -185,10 +185,21 @@
           "postCredit": { "count": 2, "type": "mid+post" }
         },
         {
+          "id": "black-widow",
+          "title": "Black Widow",
+          "year": 2021,
+          "narrativeOrder": 2,
+          "releaseOrder": 24,
+          "type": "movie",
+          "summary": "A fugitive in the fallout of Civil War, Natasha Romanoff is forced to confront dangerous ties from her past when a mysterious figure threatens to unravel the Red Room program that trained her. Released in Phase Four but set in 2016, so it's grouped here narratively, same reasoning as Captain Marvel and Guardians Vol. 2.",
+          "keyCharacters": ["Natasha Romanoff / Black Widow", "Yelena Belova", "Alexei / Red Guardian", "Melina Vostokoff", "Dreykov"],
+          "postCredit": { "count": 1, "type": "mid" }
+        },
+        {
           "id": "black-panther",
           "title": "Black Panther",
           "year": 2018,
-          "narrativeOrder": 2,
+          "narrativeOrder": 3,
           "releaseOrder": 18,
           "type": "movie",
           "summary": "After his father's death, T'Challa returns to the technologically advanced nation of Wakanda to claim the throne, but a challenger with ties to his family's past threatens both his crown and Wakanda's secrets.",
@@ -199,7 +210,7 @@
           "id": "spiderman-1",
           "title": "Spider-Man: Homecoming",
           "year": 2017,
-          "narrativeOrder": 3,
+          "narrativeOrder": 4,
           "releaseOrder": 16,
           "type": "movie",
           "summary": "Still adjusting to his new abilities, Peter Parker balances high school life with his growing responsibilities as Spider-Man while facing a black-market arms dealer wielding stolen alien technology.",
@@ -210,7 +221,7 @@
           "id": "doctor-strange-1",
           "title": "Doctor Strange",
           "year": 2016,
-          "narrativeOrder": 4,
+          "narrativeOrder": 5,
           "releaseOrder": 14,
           "type": "movie",
           "summary": "A brilliant but arrogant surgeon loses the use of his hands in an accident and seeks healing in the mystic arts, discovering a hidden world of sorcery and a looming threat from another dimension.",
@@ -221,7 +232,7 @@
           "id": "thor-3",
           "title": "Thor: Ragnarok",
           "year": 2017,
-          "narrativeOrder": 5,
+          "narrativeOrder": 6,
           "releaseOrder": 17,
           "type": "movie",
           "summary": "Imprisoned on the other side of the universe, Thor must race home to stop the fire demon Surtur and his ruthless sister Hela from destroying Asgard, teaming up with the Hulk and a band of misfits along the way.",
@@ -232,7 +243,7 @@
           "id": "avengers-3",
           "title": "Avengers: Infinity War",
           "year": 2018,
-          "narrativeOrder": 6,
+          "narrativeOrder": 7,
           "releaseOrder": 19,
           "type": "movie",
           "summary": "The Avengers and their allies unite to stop the Mad Titan Thanos from collecting all six Infinity Stones and using them to wipe out half of all life in the universe.",
@@ -243,7 +254,7 @@
           "id": "ant-man-2",
           "title": "Ant-Man and the Wasp",
           "year": 2018,
-          "narrativeOrder": 7,
+          "narrativeOrder": 8,
           "releaseOrder": 20,
           "type": "movie",
           "summary": "Scott Lang juggles house arrest with a new mission alongside Hope van Dyne and Hank Pym to rescue Hope's mother, Janet, from the mysterious and dangerous Quantum Realm.",
@@ -254,7 +265,7 @@
           "id": "avengers-4",
           "title": "Avengers: Endgame",
           "year": 2019,
-          "narrativeOrder": 8,
+          "narrativeOrder": 9,
           "releaseOrder": 22,
           "type": "movie",
           "summary": "With half of all life gone, the remaining Avengers assemble one final time to undo Thanos's actions, launching a desperate heist through their own history.",
@@ -265,12 +276,85 @@
           "id": "spiderman-2",
           "title": "Spider-Man: Far From Home",
           "year": 2019,
-          "narrativeOrder": 9,
+          "narrativeOrder": 10,
           "releaseOrder": 23,
           "type": "movie",
           "summary": "While on a school trip across Europe, Peter Parker is recruited by Nick Fury to help a mysterious visitor from another dimension battle a string of elemental creatures threatening the world.",
           "keyCharacters": ["Peter Parker / Spider-Man", "Nick Fury", "Mysterio", "MJ", "Happy Hogan", "Ned Leeds"],
           "postCredit": { "count": 2, "type": "mid+post" }
+        }
+      ]
+    },
+    {
+      "id": "phase-4",
+      "name": "Phase Four",
+      "label": "The Multiverse Saga Begins",
+      "movies": [
+        {
+          "id": "shang-chi",
+          "title": "Shang-Chi and the Legend of the Ten Rings",
+          "year": 2021,
+          "narrativeOrder": 1,
+          "releaseOrder": 25,
+          "type": "movie",
+          "summary": "A martial-arts prodigy who has been hiding from his past is drawn back into the orbit of his father's secret organization, the Ten Rings, and must confront a fate he thought he'd escaped.",
+          "keyCharacters": ["Shang-Chi", "Katy", "Xu Wenwu", "Xialing", "Ying Li"],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "eternals",
+          "title": "Eternals",
+          "year": 2021,
+          "narrativeOrder": 2,
+          "releaseOrder": 26,
+          "type": "movie",
+          "summary": "A team of immortal beings who have secretly protected Earth for thousands of years are forced to reunite against their ancient enemies, the Deviants, uncovering long-hidden truths about their true purpose.",
+          "keyCharacters": ["Sersi", "Ikaris", "Thena", "Kingo", "Sprite", "Ajak", "Druig", "Makkari", "Phastos", "Gilgamesh"],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "spiderman-3",
+          "title": "Spider-Man: No Way Home",
+          "year": 2021,
+          "narrativeOrder": 3,
+          "releaseOrder": 27,
+          "type": "movie",
+          "summary": "After his identity is exposed, Peter Parker asks Doctor Strange for help, and a spell gone wrong tears open the multiverse, bringing dangerous visitors from other realities into his world.",
+          "keyCharacters": ["Peter Parker / Spider-Man", "MJ", "Ned Leeds", "Doctor Strange", "Happy Hogan", "May Parker"],
+          "postCredit": { "count": 1, "type": "post" }
+        },
+        {
+          "id": "doctor-strange-2",
+          "title": "Doctor Strange in the Multiverse of Madness",
+          "year": 2022,
+          "narrativeOrder": 4,
+          "releaseOrder": 28,
+          "type": "movie",
+          "summary": "Doctor Strange journeys into the dangerous and mind-bending multiverse with the help of a young woman who can travel between realities, while a powerful force hunts her for her abilities.",
+          "keyCharacters": ["Stephen Strange", "Wanda Maximoff / Scarlet Witch", "America Chavez", "Wong", "Christine Palmer"],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "thor-4",
+          "title": "Thor: Love and Thunder",
+          "year": 2022,
+          "narrativeOrder": 5,
+          "releaseOrder": 29,
+          "type": "movie",
+          "summary": "Thor's search for inner peace is interrupted by a galactic killer known as Gorr the God Butcher, who seeks the extinction of the gods, forcing Thor to seek help from an old flame wielding his own hammer.",
+          "keyCharacters": ["Thor", "Jane Foster / Mighty Thor", "Valkyrie", "Korg", "Gorr the God Butcher"],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "black-panther-2",
+          "title": "Black Panther: Wakanda Forever",
+          "year": 2022,
+          "narrativeOrder": 6,
+          "releaseOrder": 30,
+          "type": "movie",
+          "summary": "Following the loss of their king, the people of Wakanda must fight to protect their nation from intervening world powers while facing a new threat from a hidden underwater civilization.",
+          "keyCharacters": ["Shuri", "Okoye", "Nakia", "Ramonda", "Namor", "Everett Ross"],
+          "postCredit": { "count": 1, "type": "post" }
         }
       ]
     }
