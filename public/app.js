@@ -12,35 +12,69 @@ async function init() {
   ]);
   phasesData = phasesRes.phases;
   progress = progressRes;
-  activePhaseId = phasesData[0].id;
-
-  renderTabs();
-  renderPhase();
 
   el('sort-toggle').addEventListener('click', () => {
     sortMode = sortMode === 'narrative' ? 'release' : 'narrative';
     renderPhase();
   });
 
+  el('back-btn').addEventListener('click', () => {
+    location.hash = '';
+  });
+
   el('modal-close').addEventListener('click', closeModal);
   el('modal-backdrop').addEventListener('click', (e) => {
     if (e.target.id === 'modal-backdrop') closeModal();
   });
+
+  window.addEventListener('hashchange', route);
+  route();
 }
 
-function renderTabs() {
-  const nav = el('phase-tabs');
-  nav.innerHTML = '';
+function route() {
+  const requestedId = location.hash.replace(/^#\/?/, '');
+  const phase = phasesData.find(p => p.id === requestedId);
+
+  if (phase) {
+    activePhaseId = phase.id;
+    el('screen-menu').hidden = true;
+    el('screen-phase').hidden = false;
+    renderPhase();
+  } else {
+    activePhaseId = null;
+    el('screen-menu').hidden = false;
+    el('screen-phase').hidden = true;
+    renderMenu();
+  }
+  window.scrollTo(0, 0);
+}
+
+function phaseWatchedCount(phase) {
+  return phase.movies.reduce((n, m) => n + (progress[m.id]?.watched ? 1 : 0), 0);
+}
+
+function renderMenu() {
+  const grid = el('phase-grid');
+  grid.innerHTML = '';
+
   phasesData.forEach(phase => {
-    const btn = document.createElement('button');
-    btn.className = 'phase-tab' + (phase.id === activePhaseId ? ' active' : '');
-    btn.textContent = phase.name;
-    btn.addEventListener('click', () => {
-      activePhaseId = phase.id;
-      renderTabs();
-      renderPhase();
-    });
-    nav.appendChild(btn);
+    const total = phase.movies.length;
+    const watched = phaseWatchedCount(phase);
+
+    const card = document.createElement('a');
+    card.className = 'phase-card';
+    card.href = `#/${phase.id}`;
+    card.innerHTML = `
+      <div class="phase-card-name">${phase.name}</div>
+      <div class="phase-card-label">${phase.label}</div>
+      <div class="phase-card-progress-row">
+        <div class="progress-track small">
+          <div class="progress-fill" style="width: ${total ? (watched / total) * 100 : 0}%"></div>
+        </div>
+        <span class="phase-card-count">${watched} / ${total}</span>
+      </div>
+    `;
+    grid.appendChild(card);
   });
 }
 
@@ -71,7 +105,9 @@ function renderPhase() {
     card.addEventListener('click', () => openModal(movie));
 
     const orderNum = sortMode === 'narrative' ? movie.narrativeOrder : movie.releaseOrder;
-    const creditLabel = movie.postCredit.count === 1
+    const creditLabel = movie.postCredit.count === 0
+      ? 'No credit scene'
+      : movie.postCredit.count === 1
       ? '1 credit scene'
       : `${movie.postCredit.count} credit scenes`;
 
@@ -103,11 +139,13 @@ function openModal(movie) {
   const p = progress[movie.id] || {};
   const content = el('modal-content');
 
-  const creditText = movie.postCredit.type === 'mid+post'
+  const creditText = movie.postCredit.count === 0
+    ? `No credit scene — safe to leave once the movie ends.`
+    : movie.postCredit.type === 'mid+post'
     ? `Has both a mid-credit and a post-credit scene (${movie.postCredit.count} total) — stay through the whole credits.`
     : movie.postCredit.type === 'mid'
     ? `Has 1 mid-credit scene — you can leave once credits start rolling.`
-    : `Has 1 post-credit scene — stay through to the very end.`;
+    : `Has ${movie.postCredit.count} post-credit scene${movie.postCredit.count > 1 ? 's' : ''} — stay through to the very end.`;
 
   content.innerHTML = `
     <h3>${movie.title}</h3>

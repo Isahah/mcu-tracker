@@ -83,6 +83,196 @@
           "postCredit": { "count": 2, "type": "mid+post" }
         }
       ]
+    },
+    {
+      "id": "phase-2",
+      "name": "Phase Two",
+      "label": "Age of Ultron",
+      "movies": [
+        {
+          "id": "iron-man-3",
+          "title": "Iron Man 3",
+          "year": 2013,
+          "narrativeOrder": 1,
+          "releaseOrder": 7,
+          "type": "movie",
+          "summary": "In the aftermath of New York, Tony Stark grapples with anxiety while a terrorist calling himself the Mandarin targets him, drawing him into a conspiracy involving a rogue scientist's super-soldier program.",
+          "keyCharacters": ["Tony Stark / Iron Man", "Pepper Potts", "James Rhodes / War Machine", "Aldrich Killian", "Trevor Slattery"],
+          "postCredit": { "count": 1, "type": "post" }
+        },
+        {
+          "id": "thor-2",
+          "title": "Thor: The Dark World",
+          "year": 2013,
+          "narrativeOrder": 2,
+          "releaseOrder": 8,
+          "type": "movie",
+          "summary": "An ancient race led by the vengeful Malekith returns to plunge the universe into darkness using a weapon called the Aether, forcing Thor to make an uneasy alliance with Loki to save the Nine Realms.",
+          "keyCharacters": ["Thor", "Loki", "Jane Foster", "Odin", "Malekith", "Frigga"],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "cap-2",
+          "title": "Captain America: The Winter Soldier",
+          "year": 2014,
+          "narrativeOrder": 3,
+          "releaseOrder": 9,
+          "type": "movie",
+          "summary": "Steve Rogers uncovers a conspiracy that has quietly taken root inside S.H.I.E.L.D. itself, and finds himself hunted by a mysterious, deadly assassin known as the Winter Soldier.",
+          "keyCharacters": ["Steve Rogers / Captain America", "Natasha Romanoff / Black Widow", "Sam Wilson / Falcon", "Nick Fury", "Bucky Barnes / Winter Soldier", "Alexander Pierce"],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "guardians-1",
+          "title": "Guardians of the Galaxy",
+          "year": 2014,
+          "narrativeOrder": 4,
+          "releaseOrder": 10,
+          "type": "movie",
+          "summary": "A group of misfit outlaws from across the galaxy is forced to band together to stop a fanatical warrior from acquiring a mysterious orb of immense and destructive power.",
+          "keyCharacters": ["Peter Quill / Star-Lord", "Gamora", "Drax", "Rocket", "Groot", "Ronan the Accuser"],
+          "postCredit": { "count": 1, "type": "post" }
+        },
+        {
+          "id": "guardians-2",
+          "title": "Guardians of the Galaxy Vol. 2",
+          "year": 2017,
+          "narrativeOrder": 5,
+          "releaseOrder": 15,
+          "type": "movie",
+          "summary": "Shortly after escaping other galactic factions, the Guardians must survive the appearance of Peter Quill's mysterious birth father while old grudges within the team come to a head. Set only months after the first film, so it's grouped here narratively even though it released during Phase Three.",
+          "keyCharacters": ["Peter Quill / Star-Lord", "Gamora", "Rocket", "Groot", "Drax", "Ego", "Yondu", "Mantis"],
+          "postCredit": { "count": 5, "type": "mid+post" }
+        },
+        {
+          "id": "avengers-2",
+          "title": "Avengers: Age of Ultron",
+          "year": 2015,
+          "narrativeOrder": 6,
+          "releaseOrder": 11,
+          "type": "movie",
+          "summary": "Tony Stark's attempt to build a peacekeeping artificial intelligence backfires when it becomes the villainous Ultron, forcing the Avengers to confront a new threat alongside a pair of enhanced siblings.",
+          "keyCharacters": ["Tony Stark / Iron Man", "Steve Rogers / Captain America", "Thor", "Bruce Banner / Hulk", "Natasha Romanoff", "Ultron", "Wanda Maximoff / Scarlet Witch", "Pietro Maximoff / Quicksilver", "Vision"],
+          "postCredit": { "count": 1, "type": "mid" }
+        },
+        {
+          "id": "ant-man-1",
+          "title": "Ant-Man",
+          "year": 2015,
+          "narrativeOrder": 7,
+          "releaseOrder": 12,
+          "type": "movie",
+          "summary": "Con man Scott Lang is recruited by scientist Hank Pym to master a suit that lets him shrink to the size of an insect, using his new ability to pull off a heist that could save the world.",
+          "keyCharacters": ["Scott Lang / Ant-Man", "Hank Pym", "Hope van Dyne", "Darren Cross"],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        }
+      ]
+    },
+    {
+      "id": "phase-3",
+      "name": "Phase Three",
+      "label": "The Infinity Saga: Endgame",
+      "movies": [
+        {
+          "id": "cap-3",
+          "title": "Captain America: Civil War",
+          "year": 2016,
+          "narrativeOrder": 1,
+          "releaseOrder": 13,
+          "type": "movie",
+          "summary": "A government oversight act splits the Avengers into two factions, pitting Captain America and his allies against Iron Man's, while a hidden mastermind quietly manipulates the conflict from the shadows.",
+          "keyCharacters": ["Steve Rogers / Captain America", "Tony Stark / Iron Man", "Bucky Barnes / Winter Soldier", "Natasha Romanoff", "Sam Wilson / Falcon", "T'Challa / Black Panther", "Peter Parker / Spider-Man", "Helmut Zemo"],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "black-panther",
+          "title": "Black Panther",
+          "year": 2018,
+          "narrativeOrder": 2,
+          "releaseOrder": 18,
+          "type": "movie",
+          "summary": "After his father's death, T'Challa returns to the technologically advanced nation of Wakanda to claim the throne, but a challenger with ties to his family's past threatens both his crown and Wakanda's secrets.",
+          "keyCharacters": ["T'Challa / Black Panther", "Shuri", "Okoye", "Nakia", "Erik Killmonger", "W'Kabi"],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "spiderman-1",
+          "title": "Spider-Man: Homecoming",
+          "year": 2017,
+          "narrativeOrder": 3,
+          "releaseOrder": 16,
+          "type": "movie",
+          "summary": "Still adjusting to his new abilities, Peter Parker balances high school life with his growing responsibilities as Spider-Man while facing a black-market arms dealer wielding stolen alien technology.",
+          "keyCharacters": ["Peter Parker / Spider-Man", "Tony Stark / Iron Man", "Ned Leeds", "MJ", "Adrian Toomes / Vulture", "Happy Hogan"],
+          "postCredit": { "count": 1, "type": "mid" }
+        },
+        {
+          "id": "doctor-strange-1",
+          "title": "Doctor Strange",
+          "year": 2016,
+          "narrativeOrder": 4,
+          "releaseOrder": 14,
+          "type": "movie",
+          "summary": "A brilliant but arrogant surgeon loses the use of his hands in an accident and seeks healing in the mystic arts, discovering a hidden world of sorcery and a looming threat from another dimension.",
+          "keyCharacters": ["Stephen Strange", "The Ancient One", "Mordo", "Wong", "Kaecilius", "Dormammu"],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "thor-3",
+          "title": "Thor: Ragnarok",
+          "year": 2017,
+          "narrativeOrder": 5,
+          "releaseOrder": 17,
+          "type": "movie",
+          "summary": "Imprisoned on the other side of the universe, Thor must race home to stop the fire demon Surtur and his ruthless sister Hela from destroying Asgard, teaming up with the Hulk and a band of misfits along the way.",
+          "keyCharacters": ["Thor", "Loki", "Hela", "Bruce Banner / Hulk", "Valkyrie", "Heimdall", "Grandmaster"],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "avengers-3",
+          "title": "Avengers: Infinity War",
+          "year": 2018,
+          "narrativeOrder": 6,
+          "releaseOrder": 19,
+          "type": "movie",
+          "summary": "The Avengers and their allies unite to stop the Mad Titan Thanos from collecting all six Infinity Stones and using them to wipe out half of all life in the universe.",
+          "keyCharacters": ["Thanos", "Tony Stark / Iron Man", "Steve Rogers / Captain America", "Thor", "Doctor Strange", "Peter Parker / Spider-Man", "T'Challa / Black Panther", "Gamora", "Vision", "Wanda Maximoff / Scarlet Witch"],
+          "postCredit": { "count": 1, "type": "post" }
+        },
+        {
+          "id": "ant-man-2",
+          "title": "Ant-Man and the Wasp",
+          "year": 2018,
+          "narrativeOrder": 7,
+          "releaseOrder": 20,
+          "type": "movie",
+          "summary": "Scott Lang juggles house arrest with a new mission alongside Hope van Dyne and Hank Pym to rescue Hope's mother, Janet, from the mysterious and dangerous Quantum Realm.",
+          "keyCharacters": ["Scott Lang / Ant-Man", "Hope van Dyne / Wasp", "Hank Pym", "Janet van Dyne", "Ghost"],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "avengers-4",
+          "title": "Avengers: Endgame",
+          "year": 2019,
+          "narrativeOrder": 8,
+          "releaseOrder": 22,
+          "type": "movie",
+          "summary": "With half of all life gone, the remaining Avengers assemble one final time to undo Thanos's actions, launching a desperate heist through their own history.",
+          "keyCharacters": ["Tony Stark / Iron Man", "Steve Rogers / Captain America", "Natasha Romanoff", "Thor", "Bruce Banner / Hulk", "Clint Barton", "Nebula", "Thanos"],
+          "postCredit": { "count": 0, "type": "none" }
+        },
+        {
+          "id": "spiderman-2",
+          "title": "Spider-Man: Far From Home",
+          "year": 2019,
+          "narrativeOrder": 9,
+          "releaseOrder": 23,
+          "type": "movie",
+          "summary": "While on a school trip across Europe, Peter Parker is recruited by Nick Fury to help a mysterious visitor from another dimension battle a string of elemental creatures threatening the world.",
+          "keyCharacters": ["Peter Parker / Spider-Man", "Nick Fury", "Mysterio", "MJ", "Happy Hogan", "Ned Leeds"],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        }
+      ]
     }
   ]
 }

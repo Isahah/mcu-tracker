@@ -79,35 +79,89 @@ body {
   letter-spacing: 0.02em;
 }
 
-.phase-tabs {
-  display: flex;
-  gap: 0.4rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 0 1.5rem 1.5rem;
+#screen-menu[hidden], #screen-phase[hidden] { display: none; }
+
+.menu-intro {
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-.phase-tab {
+.menu-intro h2 {
+  font-family: 'Special Elite', monospace;
+  color: var(--text-light);
+  font-size: 1.6rem;
+  margin: 0 0 0.4rem;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+}
+
+.menu-hint {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
-  background: var(--ink-panel);
   color: var(--text-dim);
-  border: 1px solid var(--border-ink);
-  border-bottom: none;
-  padding: 0.6em 1.2em;
-  border-radius: var(--radius) var(--radius) 0 0;
-  cursor: pointer;
-  transition: color 0.15s, background 0.15s;
+  font-size: 0.82rem;
 }
 
-.phase-tab:hover { color: var(--text-light); }
+.phase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
 
-.phase-tab.active {
+.phase-card {
+  display: block;
   background: var(--paper);
   color: var(--ink);
-  font-weight: 600;
+  padding: 1.2rem 1.3rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  transition: transform 0.12s, box-shadow 0.12s;
 }
+
+.phase-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.45);
+}
+
+.phase-card-name {
+  font-family: 'Special Elite', monospace;
+  font-size: 1.15rem;
+}
+
+.phase-card-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: #555;
+  margin-top: 0.2rem;
+}
+
+.phase-card-progress-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.9rem;
+}
+
+.progress-track.small { height: 6px; }
+
+.phase-card-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+.back-btn {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  background: transparent;
+  border: 1px solid var(--border-ink);
+  color: var(--text-dim);
+  padding: 0.4em 0.8em;
+  border-radius: var(--radius);
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.back-btn:hover { color: var(--text-light); border-color: var(--teal); }
 
 .dossier {
   max-width: 780px;
