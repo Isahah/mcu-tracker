@@ -25,15 +25,9 @@ Then open **http://localhost:3939** in your browser. Leave the terminal window o
 
 Your watched status, ratings, and timestamps are saved in `data/progress.json` — that file **is your save data**. It updates automatically every time you mark something watched or rate it. Don't delete it unless you want to start over.
 
-## For your brother
+ same folder (zip it up again). He follows the exact same setup steps on his own computer. His `data/progress.json` will be separate from yours, so you each track your own watched status and ratings independently.
 
-Give him this same folder (zip it up again). He follows the exact same setup steps on his own computer. His `data/progress.json` will be separate from yours, so you each track your own watched status and ratings independently.
 
-## Updating later
-
-When Claude builds you a new version with more phases/features, you'll get an updated set of files. Copy your existing `data/progress.json` into the new folder before running `npm install && npm start` again, if you want to keep your saved progress. If you're fine re-logging (as you mentioned), just drop in the new folder and start fresh.
-
-## What's in v1
 
 - Phase One (7 films/appearances), narrative order + release order toggle
 - Movie detail: summary, key characters to track, post-credit scene count (spoiler-free)
