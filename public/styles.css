@@ -444,6 +444,58 @@ body {
 }
 .spoiler-content li:last-child { margin-bottom: 0; }
 
+.spoiler-toggle.future-toggle {
+  background: rgba(194, 59, 46, 0.16);
+}
+
+.spoils-tag {
+  display: inline-block;
+  margin-left: 0.4em;
+  font-size: 0.7rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--stamp-red);
+  border: 1px solid var(--stamp-red);
+  padding: 0.05em 0.4em;
+  border-radius: var(--radius);
+  white-space: nowrap;
+}
+
+/* Season accordion (inside the series picker modal) */
+.season-block {
+  border: 1px solid rgba(16, 19, 31, 0.15);
+  border-radius: var(--radius);
+  margin-bottom: 0.6rem;
+  overflow: hidden;
+}
+
+.season-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(16, 19, 31, 0.06);
+  border: none;
+  padding: 0.7em 0.9em;
+  cursor: pointer;
+  font-family: 'Special Elite', monospace;
+  font-size: 0.95rem;
+  color: var(--ink);
+  text-align: left;
+}
+.season-header:hover { background: rgba(16, 19, 31, 0.1); }
+
+.season-header-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: #6b6a60;
+}
+
+.season-block .episode-list {
+  padding: 0.6rem;
+}
+
+.episode-list[hidden] { display: none; }
+
 .credit-note {
   display: inline-block;
   background: rgba(185, 139, 62, 0.18);

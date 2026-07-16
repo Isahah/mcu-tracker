@@ -14,10 +14,10 @@
           "type": "movie",
           "summary": "Set during World War II, a frail young man is transformed into a super-soldier and takes on a rogue Nazi-science division bent on world domination, ending with him frozen and lost to time.",
           "watchFor": [
-            { "name": "Bucky Barnes", "note": "Presumed dead in a fall from a train; secretly recovered and brainwashed by Hydra as the Winter Soldier, reappearing in Captain America: The Winter Soldier." },
-            { "name": "Red Skull", "note": "Vanishes after touching the Tesseract; resurfaces guarding the Soul Stone on Vormir in Avengers: Infinity War and Endgame." },
-            { "name": "The Tesseract", "note": "Recovered by Howard Stark; becomes central to Loki's invasion in The Avengers and the time-heist plot in Endgame." },
-            { "name": "Peggy Carter", "note": "Goes on to help found S.H.I.E.L.D. and remains an emotional throughline for Steve Rogers all the way through Endgame." }
+            { "name": "Bucky Barnes", "thisFilm": "Falls from a speeding Hydra train and is presumed dead.", "future": "Secretly recovered and brainwashed by Hydra as the Winter Soldier — reappears in Captain America: The Winter Soldier.", "spoils": "Captain America: The Winter Soldier" },
+            { "name": "Red Skull", "thisFilm": "Vanishes after touching the Tesseract's energy, seemingly disintegrated.", "future": "Resurfaces as the guardian of the Soul Stone on Vormir in Avengers: Infinity War and Endgame.", "spoils": "Avengers: Infinity War / Endgame" },
+            { "name": "The Tesseract", "thisFilm": "Recovered from the ocean floor by Howard Stark after the battle.", "future": "Becomes central to Loki's invasion in The Avengers, then the target of a time heist in Avengers: Endgame.", "spoils": "The Avengers / Avengers: Endgame" },
+            { "name": "Peggy Carter", "thisFilm": "Promises to wait for Steve, then loses him to the ice for decades.", "future": "Goes on to help found S.H.I.E.L.D.; remains an emotional throughline for Steve through Avengers: Endgame.", "spoils": "Avengers: Endgame" }
           ],
           "postCredit": { "count": 1, "type": "post" }
         },
@@ -30,9 +30,9 @@
           "type": "movie",
           "summary": "Set in the 1990s, an Air Force pilot with cosmic powers gets caught in a galactic conflict and uncovers hidden memories about her past on Earth.",
           "watchFor": [
-            { "name": "Nick Fury's eye", "note": "Explains why Fury wears an eyepatch in every other MCU film — scratched by Goose the 'cat.'" },
-            { "name": "Talos", "note": "The Skrull leader becomes a recurring ally and, it's later revealed, spends years impersonating Nick Fury (revealed in Spider-Man: Far From Home)." },
-            { "name": "Carol Danvers", "note": "Paged by Fury's modified pager at the end of Infinity War; arrives to help turn the tide in Endgame." }
+            { "name": "Nick Fury's eye", "thisFilm": "Scratched by Goose the 'cat' aboard a Skrull ship.", "future": "Explains the eyepatch Fury wears in every other MCU appearance." },
+            { "name": "Talos", "thisFilm": "Reveals himself as a Skrull leader seeking peace, not conquest.", "future": "Becomes a recurring ally, and is later revealed to have spent years impersonating Nick Fury.", "spoils": "Spider-Man: Far From Home" },
+            { "name": "Carol Danvers", "thisFilm": "Leaves Earth to help resettle the Skrulls, giving Fury a modified pager.", "future": "Answers Fury's distress signal at the end of Infinity War and arrives to help in Endgame.", "spoils": "Avengers: Infinity War / Endgame" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -45,8 +45,8 @@
           "type": "movie",
           "summary": "A billionaire weapons manufacturer is captured and forced to build a weapon, but instead builds a suit of armor and escapes, setting him on a new path.",
           "watchFor": [
-            { "name": "Nick Fury / the Avengers Initiative", "note": "His post-credit reveal ('you've become part of a bigger universe') seeds the entire team-up storyline leading to The Avengers." },
-            { "name": "\"I am Iron Man\"", "note": "Tony's public identity reveal breaks from the usual secret-identity formula, shaping how open he is about being a hero for the rest of the saga." }
+            { "name": "Nick Fury / Avengers Initiative", "thisFilm": "Shows up in Tony's home in the film's post-credit scene.", "future": "Reveals the wider 'Avengers Initiative,' seeding the whole team-up storyline.", "spoils": "The Avengers" },
+            { "name": "\"I am Iron Man\"", "thisFilm": "Tony publicly reveals himself as Iron Man instead of keeping a secret identity.", "future": "Sets a precedent of openness that shapes how he handles being a hero for the rest of the saga." }
           ],
           "postCredit": { "count": 1, "type": "post" }
         },
@@ -59,9 +59,9 @@
           "type": "movie",
           "summary": "A scientist on the run tries to control a rage-fueled transformation caused by a failed experiment, while the military hunts him down.",
           "watchFor": [
-            { "name": "General Ross", "note": "Returns years later as U.S. Secretary of State pushing the Sokovia Accords in Captain America: Civil War, and later becomes President." },
-            { "name": "Emil Blonsky / Abomination", "note": "Resurfaces decades later in She-Hulk: Attorney at Law and as a captured fighter in Shang-Chi's climax." },
-            { "name": "Tony Stark cameo", "note": "First hint that Stark and the super-soldier program world are connected, foreshadowing the Avengers Initiative." }
+            { "name": "General Ross", "thisFilm": "Leads the military manhunt for Bruce Banner.", "future": "Returns years later as U.S. Secretary of State pushing the Sokovia Accords, and eventually becomes President.", "spoils": "Captain America: Civil War / Brave New World" },
+            { "name": "Emil Blonsky / Abomination", "thisFilm": "Injected with a version of the super-soldier serum, becoming the monstrous Abomination.", "future": "Resurfaces decades later, imprisoned, in Shang-Chi and She-Hulk: Attorney at Law.", "spoils": "Shang-Chi / She-Hulk" },
+            { "name": "Tony Stark cameo", "thisFilm": "Meets with General Ross about a 'team' being put together.", "future": "First hint that Stark and the super-soldier program are connected, foreshadowing the Avengers Initiative.", "spoils": "The Avengers" }
           ],
           "postCredit": { "count": 1, "type": "post" }
         },
@@ -74,9 +74,9 @@
           "type": "movie",
           "summary": "Facing pressure from the government and a personal crisis, a hero must deal with a new enemy seeking revenge tied to his father's past, while a former ally's ambitions grow.",
           "watchFor": [
-            { "name": "Black Widow / Natasha Romanoff", "note": "Introduced as a S.H.I.E.L.D. plant inside Stark Industries; becomes a founding Avenger." },
-            { "name": "Nick Fury / S.H.I.E.L.D.", "note": "Formally recruits Tony into the Avengers Initiative by film's end." },
-            { "name": "Mjolnir (post-credit)", "note": "A S.H.I.E.L.D. team discovers Thor's hammer in the New Mexico desert, leading directly into Thor." }
+            { "name": "Black Widow / Natasha Romanoff", "thisFilm": "Introduced as 'Natalie Rushman,' secretly a S.H.I.E.L.D. plant inside Stark Industries.", "future": "Becomes a founding Avenger.", "spoils": "The Avengers" },
+            { "name": "Nick Fury / S.H.I.E.L.D.", "thisFilm": "Formally recruits Tony into the Avengers Initiative by film's end.", "future": "Sets the team-building plot of The Avengers in motion.", "spoils": "The Avengers" },
+            { "name": "Mjolnir (post-credit)", "thisFilm": "A S.H.I.E.L.D. team discovers a hammer embedded in a crater in the desert.", "future": "Leads directly into the plot of Thor.", "spoils": "Thor" }
           ],
           "postCredit": { "count": 1, "type": "post" }
         },
@@ -89,9 +89,9 @@
           "type": "movie",
           "summary": "A powerful but arrogant warrior is cast out of his home realm and stripped of his power, learning humility on Earth while a threat brews back home.",
           "watchFor": [
-            { "name": "Loki", "note": "Falls into the void after losing his claim to the throne; resurfaces as the villain of The Avengers." },
-            { "name": "Hawkeye (cameo)", "note": "Clint Barton appears briefly as a S.H.I.E.L.D. sniper, ahead of joining the team in The Avengers." },
-            { "name": "The Tesseract (mid-credit)", "note": "Nick Fury tells Loki it's 'more than power,' setting up Loki's manipulation by an outside force in The Avengers." }
+            { "name": "Loki", "thisFilm": "Learns the truth about his heritage and falls into the void after losing his claim to the throne.", "future": "Resurfaces as the villain of The Avengers.", "spoils": "The Avengers" },
+            { "name": "Hawkeye (cameo)", "thisFilm": "Appears briefly as a S.H.I.E.L.D. sniper watching Thor.", "future": "Joins the team properly in The Avengers.", "spoils": "The Avengers" },
+            { "name": "The Tesseract (mid-credit)", "thisFilm": "Nick Fury tells Loki (through a possessed Selvig) it's 'more than power.'", "future": "Sets up an outside force manipulating Loki's actions in The Avengers.", "spoils": "The Avengers" }
           ],
           "postCredit": { "count": 1, "type": "mid" }
         },
@@ -104,9 +104,9 @@
           "type": "movie",
           "summary": "A team of powerful individuals is assembled to stop a stolen artifact from being used to open a portal for an invading force.",
           "watchFor": [
-            { "name": "Loki's scepter", "note": "Contains the Mind Stone; later becomes Vision and gives Wanda and Pietro their powers in Age of Ultron." },
-            { "name": "Thanos (post-credit)", "note": "First tease of the Mad Titan, who becomes the driving antagonist behind the whole Infinity Saga." },
-            { "name": "Loki's fate", "note": "Captured and returned to Asgard in chains, setting up Thor: The Dark World." }
+            { "name": "Loki's scepter", "thisFilm": "Used to control minds and open the portal for the Chitauri invasion.", "future": "Later revealed to contain the Mind Stone — becomes Vision, and gives Wanda and Pietro their powers, in Age of Ultron.", "spoils": "Avengers: Age of Ultron" },
+            { "name": "Thanos (post-credit)", "thisFilm": "Shown smiling after learning of the Chitauri's defeat.", "future": "First tease of the Mad Titan, who becomes the driving antagonist of the whole Infinity Saga.", "spoils": "Avengers: Infinity War / Endgame" },
+            { "name": "Loki's fate", "thisFilm": "Captured and placed in chains for the trip back to Asgard.", "future": "Sets up Thor: The Dark World, where he escapes custody again.", "spoils": "Thor: The Dark World" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         }
@@ -126,8 +126,8 @@
           "type": "movie",
           "summary": "In the aftermath of New York, Tony Stark grapples with anxiety while a terrorist calling himself the Mandarin targets him, drawing him into a conspiracy involving a rogue scientist's super-soldier program.",
           "watchFor": [
-            { "name": "Trevor Slattery", "note": "The fake 'Mandarin' — later abducted by the real Ten Rings organization, reappearing years later in Shang-Chi and the Legend of the Ten Rings." },
-            { "name": "Tony's arc reactor removal", "note": "Marks the end of his reliance on the reactor, changing the design of his suits going forward." }
+            { "name": "Trevor Slattery", "thisFilm": "Revealed to be a washed-up actor hired to play a fake 'Mandarin' as a media distraction.", "future": "Later abducted by the real Ten Rings organization, reappearing years later in Shang-Chi.", "spoils": "Shang-Chi and the Legend of the Ten Rings" },
+            { "name": "Tony's arc reactor removal", "thisFilm": "Has the shrapnel and reactor removed from his chest by the end of the film.", "future": "Changes the design and necessity of his suits going forward." }
           ],
           "postCredit": { "count": 1, "type": "post" }
         },
@@ -140,8 +140,8 @@
           "type": "movie",
           "summary": "An ancient race led by the vengeful Malekith returns to plunge the universe into darkness using a weapon called the Aether, forcing Thor to make an uneasy alliance with Loki to save the Nine Realms.",
           "watchFor": [
-            { "name": "The Aether / Reality Stone", "note": "Handed to the Collector for safekeeping (mid-credit); later glimpsed in his collection in Guardians of the Galaxy and eventually claimed by Thanos." },
-            { "name": "Loki (disguised as Odin)", "note": "Secretly takes the throne of Asgard at the very end of the film — a twist revisited at the start of Thor: Ragnarok." }
+            { "name": "The Aether / Reality Stone", "thisFilm": "Handed off to the Collector for safekeeping in the mid-credit scene.", "future": "Later glimpsed in his collection in Guardians of the Galaxy, then eventually claimed by Thanos.", "spoils": "Guardians of the Galaxy / Avengers: Infinity War" },
+            { "name": "Loki (disguised as Odin)", "thisFilm": "Secretly takes the throne of Asgard in the film's final twist.", "future": "The deception is revisited at the start of Thor: Ragnarok.", "spoils": "Thor: Ragnarok" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -154,9 +154,9 @@
           "type": "movie",
           "summary": "Steve Rogers uncovers a conspiracy that has quietly taken root inside S.H.I.E.L.D. itself, and finds himself hunted by a mysterious, deadly assassin known as the Winter Soldier.",
           "watchFor": [
-            { "name": "Bucky Barnes / Winter Soldier", "note": "Survives the Triskelion's collapse and disappears; his search for redemption drives Captain America: Civil War and beyond." },
-            { "name": "Wanda & Pietro Maximoff (mid-credit)", "note": "Introduced in Hydra's experiments alongside Baron Strucker and Loki's scepter; join the fight in Avengers: Age of Ultron." },
-            { "name": "Hydra's infiltration of S.H.I.E.L.D.", "note": "Collapses S.H.I.E.L.D. entirely, reshaping how the Avengers operate in every film afterward." }
+            { "name": "Bucky Barnes / Winter Soldier", "thisFilm": "Survives the Triskelion's collapse and disappears into hiding.", "future": "His search for redemption drives Captain America: Civil War and beyond.", "spoils": "Captain America: Civil War" },
+            { "name": "Wanda & Pietro Maximoff (mid-credit)", "thisFilm": "Shown as twins being experimented on by Hydra alongside Loki's scepter.", "future": "Join the fight against Ultron in Avengers: Age of Ultron.", "spoils": "Avengers: Age of Ultron" },
+            { "name": "Hydra's infiltration of S.H.I.E.L.D.", "thisFilm": "Exposed and dismantled, collapsing S.H.I.E.L.D. as an organization.", "future": "Reshapes how the Avengers operate — with no safety net — in every film afterward." }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -169,9 +169,9 @@
           "type": "movie",
           "summary": "A group of misfit outlaws from across the galaxy is forced to band together to stop a fanatical warrior from acquiring a mysterious orb of immense and destructive power.",
           "watchFor": [
-            { "name": "The Orb / Power Stone", "note": "Delivered to the Nova Corps for safekeeping; the first Infinity Stone the audience sees change hands, foreshadowing Thanos's collection." },
-            { "name": "Thanos", "note": "Appears briefly on-screen, tying the cosmic side of the MCU directly to the coming Avengers films." },
-            { "name": "Yondu & Peter Quill's parentage", "note": "The mystery of who abandoned Peter as a child sets up the reveal of his father, Ego, in Vol. 2." }
+            { "name": "The Orb / Power Stone", "thisFilm": "Delivered to the Nova Corps for safekeeping after Ronan's defeat.", "future": "The first Infinity Stone the audience watches change hands, foreshadowing Thanos's collection.", "spoils": "Avengers: Infinity War" },
+            { "name": "Thanos", "thisFilm": "Appears briefly on-screen receiving news of Ronan's failure.", "future": "Ties the cosmic side of the MCU directly to the coming Avengers films.", "spoils": "Avengers: Infinity War" },
+            { "name": "Yondu & Peter Quill's parentage", "thisFilm": "Yondu is shown to have withheld Quill from his real father for unclear reasons.", "future": "Sets up the reveal of his father, Ego, in Vol. 2.", "spoils": "Guardians of the Galaxy Vol. 2" }
           ],
           "postCredit": { "count": 1, "type": "post" }
         },
@@ -184,9 +184,9 @@
           "type": "movie",
           "summary": "Shortly after escaping other galactic factions, the Guardians must survive the appearance of Peter Quill's mysterious birth father while old grudges within the team come to a head. Set only months after the first film, so it's grouped here narratively even though it released during Phase Three.",
           "watchFor": [
-            { "name": "Adam Warlock's cocoon (post-credit)", "note": "Ayesha vows to create the 'perfect' being to destroy the Guardians — pays off with Adam Warlock's introduction in Vol. 3." },
-            { "name": "Kraglin & Yondu's arrow", "note": "Kraglin inherits Yondu's fin and signature arrow, staying relevant to his role in later Guardians appearances." },
-            { "name": "Groot's growth", "note": "Baby Groot begins aging into the teenage Groot seen in Infinity War and Endgame." }
+            { "name": "Adam Warlock's cocoon (post-credit)", "thisFilm": "Ayesha vows to create a 'perfect' being to destroy the Guardians.", "future": "Pays off with Adam Warlock's introduction in Vol. 3.", "spoils": "Guardians of the Galaxy Vol. 3" },
+            { "name": "Kraglin & Yondu's arrow", "thisFilm": "Kraglin inherits Yondu's fin and signature weapon after his death.", "future": "Stays relevant to Kraglin's role in later Guardians appearances." },
+            { "name": "Groot's growth", "thisFilm": "Baby Groot begins growing throughout the film.", "future": "Ages into the teenage Groot seen in Infinity War and Endgame.", "spoils": "Avengers: Infinity War" }
           ],
           "postCredit": { "count": 5, "type": "mid+post" }
         },
@@ -199,10 +199,10 @@
           "type": "movie",
           "summary": "Tony Stark's attempt to build a peacekeeping artificial intelligence backfires when it becomes the villainous Ultron, forcing the Avengers to confront a new threat alongside a pair of enhanced siblings.",
           "watchFor": [
-            { "name": "Vision & the Mind Stone", "note": "Vision becomes a core Avenger and is later hunted by Thanos specifically for the Mind Stone in Infinity War." },
-            { "name": "Wanda Maximoff", "note": "Joins the Avengers permanently after her brother Pietro's death, an event whose grief becomes central to WandaVision." },
-            { "name": "Thanos and the Gauntlet (mid-credit)", "note": "Thanos decides to gather the Infinity Stones himself, setting the endgame of the whole saga in motion." },
-            { "name": "Wakanda / vibranium", "note": "First real spotlight on Wakanda's vibranium, foreshadowing Black Panther." }
+            { "name": "Vision & the Mind Stone", "thisFilm": "Created using Loki's scepter and its Mind Stone, then joins the Avengers.", "future": "Later hunted by Thanos specifically for the Mind Stone in Infinity War.", "spoils": "Avengers: Infinity War" },
+            { "name": "Wanda Maximoff", "thisFilm": "Joins the Avengers permanently after her brother Pietro's death.", "future": "Her grief becomes the central subject of WandaVision.", "spoils": "WandaVision" },
+            { "name": "Thanos and the Gauntlet (mid-credit)", "thisFilm": "Thanos puts on the Infinity Gauntlet himself, done waiting on subordinates.", "future": "Sets the endgame of the whole saga in motion.", "spoils": "Avengers: Infinity War" },
+            { "name": "Wakanda / vibranium", "thisFilm": "Ultron's body is forged from vibranium sourced from Wakanda.", "future": "First real spotlight on Wakanda, foreshadowing Black Panther.", "spoils": "Black Panther" }
           ],
           "postCredit": { "count": 1, "type": "mid" }
         },
@@ -215,8 +215,8 @@
           "type": "movie",
           "summary": "Con man Scott Lang is recruited by scientist Hank Pym to master a suit that lets him shrink to the size of an insect, using his new ability to pull off a heist that could save the world.",
           "watchFor": [
-            { "name": "Falcon (mid-credit)", "note": "Ant-Man tests his shrinking power against Falcon at the Avengers compound, tying him into the wider team ahead of Civil War." },
-            { "name": "The Wasp suit (post-credit)", "note": "Hope van Dyne receives her own suit, becoming the Wasp in Ant-Man and the Wasp." }
+            { "name": "Falcon (mid-credit)", "thisFilm": "Scott tests his shrinking power in a fight against Falcon at the Avengers compound.", "future": "Ties Ant-Man into the wider team ahead of Civil War.", "spoils": "Captain America: Civil War" },
+            { "name": "The Wasp suit (post-credit)", "thisFilm": "Hank Pym reveals Hope's late mother's suit, now upgraded for her.", "future": "She becomes the Wasp in Ant-Man and the Wasp.", "spoils": "Ant-Man and the Wasp" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         }
@@ -236,10 +236,10 @@
           "type": "movie",
           "summary": "A government oversight act splits the Avengers into two factions, pitting Captain America and his allies against Iron Man's, while a hidden mastermind quietly manipulates the conflict from the shadows.",
           "watchFor": [
-            { "name": "Bucky Barnes", "note": "Frozen in Wakanda to safely purge Hydra's remaining brainwashing triggers, setting up his role in Black Panther and Infinity War." },
-            { "name": "T'Challa / Black Panther", "note": "Becomes king of Wakanda by the film's end, launching directly into his own solo film." },
-            { "name": "Peter Parker (Spider-Man)", "note": "His debut here leads directly into Spider-Man: Homecoming." },
-            { "name": "Zemo", "note": "Survives and resurfaces years later as the Baron Zemo of The Falcon and the Winter Soldier." }
+            { "name": "Bucky Barnes", "thisFilm": "Cleared of some crimes but voluntarily frozen in Wakanda to be safe from remaining Hydra triggers.", "future": "Sets up his role in Black Panther and Avengers: Infinity War.", "spoils": "Black Panther / Avengers: Infinity War" },
+            { "name": "T'Challa / Black Panther", "thisFilm": "Becomes king of Wakanda after his father's death during the UN bombing.", "future": "Launches directly into his own solo film.", "spoils": "Black Panther" },
+            { "name": "Peter Parker (Spider-Man)", "thisFilm": "Recruited by Tony Stark for the airport battle — his MCU debut.", "future": "Leads directly into Spider-Man: Homecoming.", "spoils": "Spider-Man: Homecoming" },
+            { "name": "Zemo", "thisFilm": "Achieves his goal of tearing the Avengers apart, then is imprisoned.", "future": "Resurfaces years later as the Baron Zemo of The Falcon and the Winter Soldier.", "spoils": "The Falcon and the Winter Soldier" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -248,12 +248,12 @@
           "title": "Black Widow",
           "year": 2021,
           "narrativeOrder": 2,
-          "releaseOrder": 25,
+          "releaseOrder": 27,
           "type": "movie",
           "summary": "A fugitive in the fallout of Civil War, Natasha Romanoff is forced to confront dangerous ties from her past when a mysterious figure threatens to unravel the Red Room program that trained her. Released in Phase Four but set in 2016, so it's grouped here narratively, same reasoning as Captain Marvel and Guardians Vol. 2.",
           "watchFor": [
-            { "name": "Yelena Belova", "note": "Becomes the next Black Widow, continuing Natasha's legacy through Hawkeye and beyond." },
-            { "name": "Valentina Allegra de Fontaine (mid-credit)", "note": "A mysterious government operative recruits Yelena — later revealed to be assembling her own team of antiheroes across Phase Four and Five." }
+            { "name": "Yelena Belova", "thisFilm": "Reunites with her 'sister' Natasha and helps take down the Red Room.", "future": "Becomes the next Black Widow, continuing the legacy through Hawkeye and beyond.", "spoils": "Hawkeye" },
+            { "name": "Valentina Allegra de Fontaine (mid-credit)", "thisFilm": "A mysterious government operative approaches Yelena at Natasha's grave.", "future": "Later revealed to be assembling her own team of antiheroes across Phase Four and Five.", "spoils": "Thunderbolts*" }
           ],
           "postCredit": { "count": 1, "type": "mid" }
         },
@@ -266,9 +266,9 @@
           "type": "movie",
           "summary": "After his father's death, T'Challa returns to the technologically advanced nation of Wakanda to claim the throne, but a challenger with ties to his family's past threatens both his crown and Wakanda's secrets.",
           "watchFor": [
-            { "name": "Bucky Barnes (post-credit)", "note": "Revealed alive and recovering in Wakanda under the name 'White Wolf,' ahead of Infinity War." },
-            { "name": "Wakanda opens to the world", "note": "T'Challa's UN reveal shapes Wakanda's global role for the rest of the saga." },
-            { "name": "Shuri", "note": "Becomes central to Wakanda's future, especially after Black Panther: Wakanda Forever." }
+            { "name": "Bucky Barnes (post-credit)", "thisFilm": "Not present in the main story — referenced by Shuri near the end.", "future": "Revealed alive and recovering in Wakanda under the name 'White Wolf,' ahead of Infinity War.", "spoils": "Avengers: Infinity War" },
+            { "name": "Wakanda opens to the world", "thisFilm": "T'Challa reveals Wakanda's true technological nature to the United Nations.", "future": "Shapes Wakanda's global role for the rest of the saga." },
+            { "name": "Shuri", "thisFilm": "Established as Wakanda's chief technological genius.", "future": "Becomes central to Wakanda's future, especially after Black Panther: Wakanda Forever.", "spoils": "Black Panther: Wakanda Forever" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -281,8 +281,8 @@
           "type": "movie",
           "summary": "Still adjusting to his new abilities, Peter Parker balances high school life with his growing responsibilities as Spider-Man while facing a black-market arms dealer wielding stolen alien technology.",
           "watchFor": [
-            { "name": "Adrian Toomes / Vulture", "note": "Kept in prison rather than killed off, leaving the door open for a 'Sinister Six'-style threat later." },
-            { "name": "Tony Stark's mentorship", "note": "Deepens Peter's ties to the Avengers, paying off emotionally in Infinity War and Endgame." }
+            { "name": "Adrian Toomes / Vulture", "thisFilm": "Defeated and imprisoned, but refuses to reveal Spider-Man's identity to a fellow inmate.", "future": "Kept alive rather than killed off, leaving the door open for a larger criminal threat later." },
+            { "name": "Tony Stark's mentorship", "thisFilm": "Tony offers Peter a spot on the Avengers, which Peter turns down.", "future": "Deepens Peter's ties to the Avengers, paying off emotionally in Infinity War and Endgame.", "spoils": "Avengers: Infinity War / Endgame" }
           ],
           "postCredit": { "count": 1, "type": "mid" }
         },
@@ -295,9 +295,9 @@
           "type": "movie",
           "summary": "A brilliant but arrogant surgeon loses the use of his hands in an accident and seeks healing in the mystic arts, discovering a hidden world of sorcery and a looming threat from another dimension.",
           "watchFor": [
-            { "name": "The Time Stone", "note": "Becomes one of the most critical Infinity Stones, central to both Infinity War's ending and Endgame's time heist." },
-            { "name": "Thor cameo (mid-credit)", "note": "Strange helps Thor track down Odin, directly leading into the plot of Thor: Ragnarok." },
-            { "name": "Mordo (post-credit)", "note": "Turns against sorcerers who bend the natural laws, becoming a quiet antagonist thread for future Doctor Strange stories." }
+            { "name": "The Time Stone", "thisFilm": "Kept in the Eye of Agamotto, used to defeat Dormammu.", "future": "Becomes one of the most critical Infinity Stones in Infinity War's ending and Endgame's time heist.", "spoils": "Avengers: Infinity War / Endgame" },
+            { "name": "Thor cameo (mid-credit)", "thisFilm": "Strange offers to help Thor track down Odin.", "future": "Leads directly into the plot of Thor: Ragnarok.", "spoils": "Thor: Ragnarok" },
+            { "name": "Mordo (post-credit)", "thisFilm": "Leaves the order, disillusioned with how casually sorcerers bend natural law.", "future": "Becomes a quiet antagonist thread for future Doctor Strange stories." }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -310,9 +310,9 @@
           "type": "movie",
           "summary": "Imprisoned on the other side of the universe, Thor must race home to stop the fire demon Surtur and his ruthless sister Hela from destroying Asgard, teaming up with the Hulk and a band of misfits along the way.",
           "watchFor": [
-            { "name": "The refugee ship (mid-credit)", "note": "Intercepted by an ominous, much larger vessel — the opening moment of Avengers: Infinity War." },
-            { "name": "Asgard's destruction", "note": "Leaves Thor without a kingdom or a home, shaping his arc all the way through Endgame." },
-            { "name": "Valkyrie", "note": "Becomes the new leader of the Asgardian refugees, continuing into New Asgard and Love and Thunder." }
+            { "name": "The refugee ship (mid-credit)", "thisFilm": "Thor leads Asgard's survivors away from their destroyed home on a massive ship.", "future": "Intercepted by an ominous, much larger vessel — the opening moment of Avengers: Infinity War.", "spoils": "Avengers: Infinity War" },
+            { "name": "Asgard's destruction", "thisFilm": "Thor allows Surtur to destroy Asgard in order to defeat Hela.", "future": "Leaves Thor without a kingdom or home, shaping his arc through Endgame.", "spoils": "Avengers: Endgame" },
+            { "name": "Valkyrie", "thisFilm": "Gives up drinking and rejoins the fight to save Asgard's people.", "future": "Becomes the leader of the Asgardian refugees, continuing into New Asgard and Love and Thunder.", "spoils": "Thor: Love and Thunder" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -325,9 +325,9 @@
           "type": "movie",
           "summary": "The Avengers and their allies unite to stop the Mad Titan Thanos from collecting all six Infinity Stones and using them to wipe out half of all life in the universe.",
           "watchFor": [
-            { "name": "The Snap", "note": "Half of all life turns to dust — the central crisis resolved across Endgame and referenced throughout Phase Four." },
-            { "name": "Nick Fury's pager (post-credit)", "note": "Sends a distress signal to Captain Marvel moments before Fury disintegrates." },
-            { "name": "Gamora's fate", "note": "Her death on Vormir for the Soul Stone becomes a major thread the team tries to reverse in Endgame." }
+            { "name": "The Snap", "thisFilm": "Thanos wipes out half of all life in the universe with a snap of his fingers.", "future": "The central crisis resolved across Endgame and referenced throughout Phase Four.", "spoils": "Avengers: Endgame" },
+            { "name": "Nick Fury's pager (post-credit)", "thisFilm": "Fury sends a distress signal moments before disintegrating.", "future": "The page reaches Captain Marvel, who arrives to help in Endgame.", "spoils": "Avengers: Endgame" },
+            { "name": "Gamora's fate", "thisFilm": "Sacrificed by Thanos on Vormir to obtain the Soul Stone.", "future": "Her death becomes a major thread the team tries to reverse in Endgame.", "spoils": "Avengers: Endgame" }
           ],
           "postCredit": { "count": 1, "type": "post" }
         },
@@ -340,9 +340,9 @@
           "type": "movie",
           "summary": "Scott Lang juggles house arrest with a new mission alongside Hope van Dyne and Hank Pym to rescue Hope's mother, Janet, from the mysterious and dangerous Quantum Realm.",
           "watchFor": [
-            { "name": "The Quantum Realm", "note": "Becomes the mechanism the team uses for time travel in Avengers: Endgame." },
-            { "name": "Janet van Dyne's rescue", "note": "Brings her decades of Quantum Realm knowledge into the eventual fight against Thanos." },
-            { "name": "The credits-scene Snap", "note": "Scott Lang is trapped in the Quantum Realm right as the Snap hits, explaining his absence at the start of Endgame." }
+            { "name": "The Quantum Realm", "thisFilm": "Explored in depth as Hank and Hope search for Janet.", "future": "Becomes the mechanism the team uses for time travel in Avengers: Endgame.", "spoils": "Avengers: Endgame" },
+            { "name": "Janet van Dyne's rescue", "thisFilm": "Successfully rescued after 30 years trapped in the Quantum Realm.", "future": "Brings her decades of Quantum Realm knowledge into the eventual fight against Thanos.", "spoils": "Avengers: Endgame" },
+            { "name": "The credits-scene Snap", "thisFilm": "Scott Lang is left stranded in the Quantum Realm when his team outside disintegrates.", "future": "Explains his absence at the very start of Endgame.", "spoils": "Avengers: Endgame" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -355,9 +355,9 @@
           "type": "movie",
           "summary": "With half of all life gone, the remaining Avengers assemble one final time to undo Thanos's actions, launching a desperate heist through their own history.",
           "watchFor": [
-            { "name": "Steve Rogers' choice", "note": "Passes the shield to Sam Wilson, setting up The Falcon and the Winter Soldier and Captain America: Brave New World." },
-            { "name": "New Asgard / Valkyrie as king", "note": "Continues directly into the setup of Thor: Love and Thunder." },
-            { "name": "Tony Stark's legacy", "note": "His death and daughter Morgan's existence echo through several later films." }
+            { "name": "Steve Rogers' choice", "thisFilm": "Returns the Infinity Stones, then chooses to live out a life in the past.", "future": "Sam Wilson takes up the shield, setting up The Falcon and the Winter Soldier and Captain America: Brave New World.", "spoils": "The Falcon and the Winter Soldier / Brave New World" },
+            { "name": "New Asgard / Valkyrie as king", "thisFilm": "Thor abdicates the throne to Valkyrie and leaves Earth with the Guardians.", "future": "Continues directly into the setup of Thor: Love and Thunder.", "spoils": "Thor: Love and Thunder" },
+            { "name": "Tony Stark's legacy", "thisFilm": "Sacrifices himself using the Infinity Stones to defeat Thanos for good.", "future": "His death and daughter Morgan's existence echo through several later films." }
           ],
           "postCredit": { "count": 0, "type": "none" }
         },
@@ -370,8 +370,8 @@
           "type": "movie",
           "summary": "While on a school trip across Europe, Peter Parker is recruited by Nick Fury to help a mysterious visitor from another dimension battle a string of elemental creatures threatening the world.",
           "watchFor": [
-            { "name": "Mysterio's frame job", "note": "Publicly reveals Peter Parker's identity as Spider-Man — the inciting event of Spider-Man: No Way Home." },
-            { "name": "Nick Fury & Maria Hill (post-credit)", "note": "Revealed to actually be Skrulls Talos and Soren, with the real Fury shown living in space." }
+            { "name": "Mysterio's frame job", "thisFilm": "Exposed as a fraud by Peter, but not before recording a doctored video.", "future": "Publicly reveals Peter Parker's identity as Spider-Man — the inciting event of Spider-Man: No Way Home.", "spoils": "Spider-Man: No Way Home" },
+            { "name": "Nick Fury & Maria Hill (post-credit)", "thisFilm": "Appear to help Peter throughout the film.", "future": "Revealed to actually be Skrulls Talos and Soren, with the real Fury shown living in space.", "spoils": "Secret Invasion" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         }
@@ -391,45 +391,152 @@
           "type": "series",
           "summary": "Grieving in secret, Wanda Maximoff builds an idyllic sitcom life with a resurrected Vision in the town of Westview — a reality that starts to crack the deeper you look.",
           "watchFor": [
-            { "name": "Agatha Harkness", "note": "The meddling neighbor is revealed as the true architect manipulating events, and later gets her own spin-off, Agatha All Along." },
-            { "name": "The Darkhold", "note": "Wanda is shown the 'Book of the Damned,' which fuels her turn toward darkness in Doctor Strange in the Multiverse of Madness." },
-            { "name": "White Vision", "note": "A memory-wiped, reconstructed Vision built by S.W.O.R.D. — his fate is left open for future stories." }
+            { "name": "Agatha Harkness", "thisFilm": "Revealed as the meddling neighbor who's been secretly manipulating events all along.", "future": "Gets her own spin-off, Agatha All Along.", "spoils": "Agatha All Along" },
+            { "name": "The Darkhold", "thisFilm": "Wanda is shown the 'Book of the Damned' by Agatha.", "future": "Fuels her turn toward darkness in Doctor Strange in the Multiverse of Madness.", "spoils": "Doctor Strange in the Multiverse of Madness" },
+            { "name": "White Vision", "thisFilm": "A memory-wiped, reconstructed Vision built by S.W.O.R.D. confronts Wanda's version, then flies off.", "future": "His fate is left open for future stories." }
           ],
-          "episodes": [
-            { "id": "wandavision-e1", "episodeNumber": 1, "title": "Filmed Before a Live Studio Audience", "summary": "Wanda and Vision settle into a black-and-white 1950s sitcom life in Westview, though odd cracks in reality begin to show." },
-            { "id": "wandavision-e2", "episodeNumber": 2, "title": "Don't Touch That Dial", "summary": "The sitcom shifts into the 1960s as Wanda and Vision prepare for a magic show, while stranger anomalies creep into their perfect world." },
-            { "id": "wandavision-e3", "episodeNumber": 3, "title": "Now in Color", "summary": "Now in the 1970s, Wanda's pregnancy accelerates unnaturally fast as the outside world starts to intrude on Westview." },
-            { "id": "wandavision-e4", "episodeNumber": 4, "title": "We Interrupt This Program", "summary": "Jumping outside Westview for the first time, S.W.O.R.D. investigates the strange sitcom-reality surrounding the town." },
-            { "id": "wandavision-e5", "episodeNumber": 5, "title": "On a Very Special Episode...", "summary": "In an '80s-style episode, Wanda and Vision juggle twin toddlers while Vision starts to notice the townspeople aren't acting of their own free will." },
-            { "id": "wandavision-e6", "episodeNumber": 6, "title": "All-New Halloween Spooktacular!", "summary": "A '90s-style Halloween episode as Vision investigates the truth about Westview just as a mysterious 'brother' of Pietro shows up." },
+          "seasons": [
             {
-              "id": "wandavision-e7",
-              "episodeNumber": 7,
-              "title": "Breaking the Fourth Wall",
-              "summary": "The sitcom format collapses as Wanda begins to lose control of the reality she's created, revealing the toll of her grief.",
-              "watchFor": [
-                { "name": "Agatha Harkness", "note": "Revealed as the meddling neighbor who's been secretly manipulating events all along." }
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "wandavision-e1", "episodeNumber": 1, "title": "Filmed Before a Live Studio Audience", "summary": "Wanda and Vision settle into a black-and-white 1950s sitcom life in Westview, though odd cracks in reality begin to show." },
+                { "id": "wandavision-e2", "episodeNumber": 2, "title": "Don't Touch That Dial", "summary": "The sitcom shifts into the 1960s as Wanda and Vision prepare for a magic show, while stranger anomalies creep into their perfect world." },
+                { "id": "wandavision-e3", "episodeNumber": 3, "title": "Now in Color", "summary": "Now in the 1970s, Wanda's pregnancy accelerates unnaturally fast as the outside world starts to intrude on Westview." },
+                { "id": "wandavision-e4", "episodeNumber": 4, "title": "We Interrupt This Program", "summary": "Jumping outside Westview for the first time, S.W.O.R.D. investigates the strange sitcom-reality surrounding the town." },
+                { "id": "wandavision-e5", "episodeNumber": 5, "title": "On a Very Special Episode...", "summary": "In an '80s-style episode, Wanda and Vision juggle twin toddlers while Vision starts to notice the townspeople aren't acting of their own free will." },
+                { "id": "wandavision-e6", "episodeNumber": 6, "title": "All-New Halloween Spooktacular!", "summary": "A '90s-style Halloween episode as Vision investigates the truth about Westview just as a mysterious 'brother' of Pietro shows up." },
+                {
+                  "id": "wandavision-e7",
+                  "episodeNumber": 7,
+                  "title": "Breaking the Fourth Wall",
+                  "summary": "The sitcom format collapses as Wanda begins to lose control of the reality she's created, revealing the toll of her grief.",
+                  "watchFor": [
+                    { "name": "Agatha Harkness", "thisFilm": "Revealed as the meddling neighbor who's been secretly manipulating events all along.", "future": "Becomes the central antagonist of the finale, then gets her own spin-off.", "spoils": "Agatha All Along" }
+                  ]
+                },
+                {
+                  "id": "wandavision-e8",
+                  "episodeNumber": 8,
+                  "title": "Previously On",
+                  "summary": "Flashbacks reveal how Wanda's trauma and grief led her to unknowingly create the Hex and resurrect Vision using the Mind Stone's power.",
+                  "watchFor": [
+                    { "name": "The Darkhold", "thisFilm": "Wanda is shown the Darkhold, the 'Book of the Damned,' by Agatha.", "future": "Becomes central to her descent into darkness in Doctor Strange in the Multiverse of Madness.", "spoils": "Doctor Strange in the Multiverse of Madness" }
+                  ]
+                },
+                {
+                  "id": "wandavision-e9",
+                  "episodeNumber": 9,
+                  "title": "The Series Finale",
+                  "summary": "Wanda confronts Agatha for control of Westview and says goodbye to the family she created, while a mysterious white-caped figure appears in a mid-credit scene.",
+                  "watchFor": [
+                    { "name": "White Vision", "thisFilm": "A reconstructed, memory-wiped version of Vision built by S.W.O.R.D. confronts Wanda's Vision.", "future": "His fate is left open for future stories." },
+                    { "name": "Wanda reading the Darkhold", "thisFilm": "Takes the Darkhold with her as she leaves Westview to study it in isolation.", "future": "Directly leads into her villainous turn in Doctor Strange in the Multiverse of Madness.", "spoils": "Doctor Strange in the Multiverse of Madness" }
+                  ],
+                  "postCredit": { "count": 1, "type": "mid" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "falcon-winter-soldier",
+          "title": "The Falcon and the Winter Soldier",
+          "year": 2021,
+          "narrativeOrder": 2,
+          "releaseOrder": 25,
+          "type": "series",
+          "summary": "With Steve Rogers gone, Sam Wilson and Bucky Barnes are forced to work together against a group of anti-nationalist super soldiers, while a new government-appointed Captain America stirs controversy.",
+          "watchFor": [
+            { "name": "John Walker / U.S. Agent", "thisFilm": "Stripped of the Captain America title after killing a man in public with the shield.", "future": "Recruited by Valentina de Fontaine as U.S. Agent, tying into her growing team of antiheroes.", "spoils": "Thunderbolts*" },
+            { "name": "Zemo", "thisFilm": "Helps Sam and Bucky track down the Flag-Smashers, then is returned to prison.", "future": "Remains imprisoned, but is not forgotten by Valentina's growing web of operatives." }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "fws-e1", "episodeNumber": 1, "title": "New World Order", "summary": "Sam struggles with the weight of Steve's legacy while a new, more radical Captain America is unveiled by the government." },
+                { "id": "fws-e2", "episodeNumber": 2, "title": "The Star-Spangled Man", "summary": "Sam and Bucky reluctantly team up to track down the Flag-Smashers, a group fighting for a borderless world." },
+                { "id": "fws-e3", "episodeNumber": 3, "title": "Power Broker", "summary": "The hunt for the source of the Flag-Smashers' powers leads Sam and Bucky to enlist the unpredictable Baron Zemo." },
+                { "id": "fws-e4", "episodeNumber": 4, "title": "The Whole World is Watching", "summary": "Tensions boil over as John Walker's actions as the new Captain America spiral out of control." },
+                { "id": "fws-e5", "episodeNumber": 5, "title": "Truth", "summary": "Sam confronts the government and Isaiah Bradley, a forgotten Black super-soldier erased from history, about who gets to be a hero." },
+                {
+                  "id": "fws-e6",
+                  "episodeNumber": 6,
+                  "title": "One World, One People",
+                  "summary": "Sam claims the mantle of Captain America for the first time, addressing the world directly about what the shield should stand for.",
+                  "watchFor": [
+                    { "name": "Sam Wilson becomes Captain America", "thisFilm": "Takes up the shield and the Captain America identity Steve left him at the end of Endgame.", "future": "Continues into Captain America: Brave New World as the new Captain America.", "spoils": "Captain America: Brave New World" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "loki",
+          "title": "Loki",
+          "year": 2021,
+          "narrativeOrder": 3,
+          "releaseOrder": 26,
+          "type": "series",
+          "summary": "After stealing the Tesseract during the Avengers' 2012 time heist, a variant of the God of Mischief is arrested by the Time Variance Authority and forced to help hunt an even more dangerous variant of himself.",
+          "watchFor": [
+            { "name": "The Time Variance Authority", "thisFilm": "Reveals the existence of a 'Sacred Timeline' policed by bureaucrats from outside of time itself.", "future": "Its true purpose and master unravel across the show's two seasons, reshaping the entire multiverse." }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "loki-s1e1", "episodeNumber": 1, "title": "Glorious Purpose", "summary": "A 2012 variant of Loki is arrested by the TVA the moment he escapes with the Tesseract, and given an impossible choice to avoid being erased from existence." },
+                { "id": "loki-s1e2", "episodeNumber": 2, "title": "The Variant", "summary": "Loki is recruited to help TVA agent Mobius hunt a mysterious variant who's been killing Minutemen across the timeline." },
+                { "id": "loki-s1e3", "episodeNumber": 3, "title": "Lamentis", "summary": "Loki and the variant Sylvie are stranded together on a moon about to be destroyed, forcing an uneasy alliance." },
+                {
+                  "id": "loki-s1e4",
+                  "episodeNumber": 4,
+                  "title": "The Nexus Event",
+                  "summary": "Loki and Sylvie's growing bond causes a branch in the timeline serious enough to draw the TVA's full attention.",
+                  "watchFor": [
+                    { "name": "The Void's Loki variants", "thisFilm": "A group of Loki variants exiled to the end of time is glimpsed, including a child version and an alligator.", "future": "Expands on just how many timeline branches and variants of a single character can exist." }
+                  ]
+                },
+                { "id": "loki-s1e5", "episodeNumber": 5, "title": "Journey Into Mystery", "summary": "Loki meets a collection of his own variants exiled to a wasteland at the end of time, guarded by a terrifying creature." },
+                {
+                  "id": "loki-s1e6",
+                  "episodeNumber": 6,
+                  "title": "For All Time. Always.",
+                  "summary": "Loki and Sylvie reach the being secretly controlling the TVA from behind the curtain, and must decide the fate of the entire multiverse.",
+                  "watchFor": [
+                    { "name": "He Who Remains", "thisFilm": "Reveals himself as the true architect of the TVA, having ended a war between his own variants by pruning every other timeline.", "future": "His death fractures the Sacred Timeline into a true multiverse, and a variant of him becomes a major villain later.", "spoils": "Ant-Man and the Wasp: Quantumania" }
+                  ]
+                }
               ]
             },
             {
-              "id": "wandavision-e8",
-              "episodeNumber": 8,
-              "title": "Previously On",
-              "summary": "Flashbacks reveal how Wanda's trauma and grief led her to unknowingly create the Hex and resurrect Vision using the Mind Stone's power.",
-              "watchFor": [
-                { "name": "The Darkhold", "note": "Wanda is shown the Darkhold, the 'Book of the Damned,' which becomes central to her descent into darkness in Doctor Strange in the Multiverse of Madness." }
+              "seasonNumber": 2,
+              "episodes": [
+                { "id": "loki-s2e1", "episodeNumber": 1, "title": "Ouroboros", "summary": "Loki is scattered through time by 'time-slipping' after the season one finale and must be rescued by Mobius and the TVA's repair technician, OB." },
+                { "id": "loki-s2e2", "episodeNumber": 2, "title": "Breaking Brad", "summary": "Loki and the team track down a rogue variant impersonating a TV star while the TVA's timeline monitors start to fail." },
+                { "id": "loki-s2e3", "episodeNumber": 3, "title": "1893", "summary": "The hunt for a new variant leads Loki and Mobius to a World's Fair in 19th-century Chicago." },
+                { "id": "loki-s2e4", "episodeNumber": 4, "title": "Heart of the TVA", "summary": "With the timeline branching out of control, the team races to stabilize the Temporal Loom before it destroys everything." },
+                {
+                  "id": "loki-s2e5",
+                  "episodeNumber": 5,
+                  "title": "Science/Fiction",
+                  "summary": "Loki and Sylvie clash over how far to go to save the timeline, as the multiverse teeters on total collapse.",
+                  "watchFor": [
+                    { "name": "Sylvie's choice", "thisFilm": "Chooses to let the multiverse branch freely rather than trust another 'He Who Remains' variant.", "future": "Sets up a multiverse full of unchecked Kang variants as a threat across Phase Five and Six.", "spoils": "Avengers: Doomsday" }
+                  ]
+                },
+                {
+                  "id": "loki-s2e6",
+                  "episodeNumber": 6,
+                  "title": "Glorious Purpose",
+                  "summary": "Loki makes the ultimate sacrifice to hold the multiverse's timelines together himself, becoming the silent god at the center of it all.",
+                  "watchFor": [
+                    { "name": "Loki as the multiverse's anchor", "thisFilm": "Chooses to wind himself around every timeline, permanently sacrificing his own future to keep the multiverse from collapsing.", "future": "Leaves the fate of the branching multiverse (and Loki himself) as an open question for the rest of the Multiverse Saga." }
+                  ]
+                }
               ]
-            },
-            {
-              "id": "wandavision-e9",
-              "episodeNumber": 9,
-              "title": "The Series Finale",
-              "summary": "Wanda confronts Agatha for control of Westview and says goodbye to the family she created, while a mysterious white-caped figure appears in a mid-credit scene.",
-              "watchFor": [
-                { "name": "White Vision", "note": "A reconstructed, memory-wiped version of Vision built by S.W.O.R.D.; his fate is left open for future stories." },
-                { "name": "Wanda reading the Darkhold", "note": "Directly leads into her villainous turn in Doctor Strange in the Multiverse of Madness." }
-              ],
-              "postCredit": { "count": 1, "type": "mid" }
             }
           ]
         },
@@ -437,14 +544,14 @@
           "id": "shang-chi",
           "title": "Shang-Chi and the Legend of the Ten Rings",
           "year": 2021,
-          "narrativeOrder": 2,
-          "releaseOrder": 26,
+          "narrativeOrder": 4,
+          "releaseOrder": 28,
           "type": "movie",
           "summary": "A martial-arts prodigy who has been hiding from his past is drawn back into the orbit of his father's secret organization, the Ten Rings, and must confront a fate he thought he'd escaped.",
           "watchFor": [
-            { "name": "The Ten Rings (mid-credit)", "note": "Examined by Wong, Captain Marvel, and Bruce Banner, who detect a mysterious signal — a thread expected to matter in future cosmic storylines." },
-            { "name": "Xialing", "note": "Takes over the Ten Rings organization, hinting at its criminal network expanding going forward." },
-            { "name": "Trevor Slattery", "note": "Freed after years of captivity, closing the arc first set up in Iron Man 3." }
+            { "name": "The Ten Rings (mid-credit)", "thisFilm": "Examined by Wong, Captain Marvel, and Bruce Banner in a mid-credit scene.", "future": "They detect a mysterious signal — a thread expected to matter in future cosmic storylines." },
+            { "name": "Xialing", "thisFilm": "Takes control of the Ten Rings organization after her father's death.", "future": "Hints at the group's criminal network expanding going forward." },
+            { "name": "Trevor Slattery", "thisFilm": "Freed after years of captivity by the real Ten Rings.", "future": "Closes the arc first set up in Iron Man 3." }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -452,74 +559,335 @@
           "id": "eternals",
           "title": "Eternals",
           "year": 2021,
-          "narrativeOrder": 3,
-          "releaseOrder": 27,
+          "narrativeOrder": 5,
+          "releaseOrder": 29,
           "type": "movie",
           "summary": "A team of immortal beings who have secretly protected Earth for thousands of years are forced to reunite against their ancient enemies, the Deviants, uncovering long-hidden truths about their true purpose.",
           "watchFor": [
-            { "name": "Arishem's judgment", "note": "Leaves Earth's fate hanging in the balance, an unresolved thread for future films." },
-            { "name": "Eros / Starfox & Pip the Troll (mid-credit)", "note": "Recruited to help find the Eternals still missing in action." },
-            { "name": "Dane Whitman / the Ebony Blade (post-credit)", "note": "Warned against picking up the blade, teasing his transformation into the Black Knight." }
+            { "name": "Arishem's judgment", "thisFilm": "Threatens to judge humanity and potentially end the world depending on the outcome.", "future": "Leaves Earth's fate hanging in the balance, an unresolved thread for future films." },
+            { "name": "Eros / Starfox & Pip the Troll (mid-credit)", "thisFilm": "Arrive to help the remaining Eternals search for their missing teammates.", "future": "Sets up a recruitment thread for future cosmic stories." },
+            { "name": "Dane Whitman / the Ebony Blade (post-credit)", "thisFilm": "Opens a case containing the Ebony Blade, warned against picking it up.", "future": "Teases his transformation into the Black Knight." }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "hawkeye",
+          "title": "Hawkeye",
+          "year": 2021,
+          "narrativeOrder": 6,
+          "releaseOrder": 30,
+          "type": "series",
+          "summary": "Clint Barton teams up with young archer Kate Bishop to take down a criminal conspiracy tied to his past as Ronin, just days before Christmas.",
+          "watchFor": [
+            { "name": "Kate Bishop", "thisFilm": "Proves herself as a skilled archer and inherits a version of the Ronin gear.", "future": "Positioned as Clint's successor, expected to carry on the Hawkeye legacy." },
+            { "name": "Yelena Belova", "thisFilm": "Hunts Clint believing he's responsible for Natasha's death, before learning the truth.", "future": "Continues her arc from Black Widow, tying into future antihero team-ups.", "spoils": "Thunderbolts*" }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "hawkeye-e1", "episodeNumber": 1, "title": "Never Meet Your Heroes", "summary": "Kate Bishop accidentally puts on a mysterious Ronin suit at an auction, drawing Clint Barton back into a world he'd hoped to leave behind." },
+                { "id": "hawkeye-e2", "episodeNumber": 2, "title": "Hide and Seek", "summary": "Clint and Kate try to track down the tracksuit-wearing gang hunting the Ronin suit before Christmas gets any more complicated." },
+                { "id": "hawkeye-e3", "episodeNumber": 3, "title": "Echoes", "summary": "The pair run into Maya Lopez, a deaf crime-family enforcer with her own grudge against Ronin." },
+                { "id": "hawkeye-e4", "episodeNumber": 4, "title": "Partners, Am I Right?", "summary": "A captured Clint and Kate must talk their way out of trouble while Yelena Belova closes in on Clint." },
+                { "id": "hawkeye-e5", "episodeNumber": 5, "title": "Ronin", "summary": "Flashbacks reveal what really happened during Clint's brutal Ronin rampage during the Blip." },
+                { "id": "hawkeye-e6", "episodeNumber": 6, "title": "So This Is Christmas?", "summary": "Clint and Kate team up to take down the head of the criminal conspiracy once and for all, on Christmas Eve." }
+              ]
+            }
+          ]
         },
         {
           "id": "spiderman-3",
           "title": "Spider-Man: No Way Home",
           "year": 2021,
-          "narrativeOrder": 4,
-          "releaseOrder": 28,
+          "narrativeOrder": 7,
+          "releaseOrder": 31,
           "type": "movie",
           "summary": "After his identity is exposed, Peter Parker asks Doctor Strange for help, and a spell gone wrong tears open the multiverse, bringing dangerous visitors from other realities into his world.",
           "watchFor": [
-            { "name": "Multiversal visitors", "note": "Confirms the existence of alternate universes, directly enabling Doctor Strange in the Multiverse of Madness." },
-            { "name": "The world forgetting Peter Parker", "note": "Resets Peter's status quo, isolating him from the other Avengers for future stories." }
+            { "name": "Multiversal visitors", "thisFilm": "Villains from other Spider-Man universes are pulled into Peter's world by a broken spell.", "future": "Confirms the existence of alternate universes, directly enabling Doctor Strange in the Multiverse of Madness.", "spoils": "Doctor Strange in the Multiverse of Madness" },
+            { "name": "The world forgetting Peter Parker", "thisFilm": "Strange casts a spell erasing everyone's memory of Peter Parker as Spider-Man.", "future": "Resets Peter's status quo, isolating him from the other Avengers for future stories." }
           ],
           "postCredit": { "count": 1, "type": "post" }
+        },
+        {
+          "id": "moon-knight",
+          "title": "Moon Knight",
+          "year": 2022,
+          "narrativeOrder": 8,
+          "releaseOrder": 32,
+          "type": "series",
+          "summary": "A mild-mannered gift shop worker discovers he shares a body with a mercenary, both serving as the reluctant avatar of an Egyptian moon god.",
+          "watchFor": [
+            { "name": "Khonshu & the Egyptian gods", "thisFilm": "Introduces a pantheon of Egyptian gods operating on Earth in secret.", "future": "Opens the door for street-level supernatural stories outside the main Avengers-focused plotline." }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "moon-knight-e1", "episodeNumber": 1, "title": "The Goldfish Problem", "summary": "Steven Grant starts blacking out and waking up in strange places, unaware that another personality is sharing his body." },
+                { "id": "moon-knight-e2", "episodeNumber": 2, "title": "Summon the Suit", "summary": "Steven learns the truth about Marc Spector and Khonshu, the Egyptian moon god they both serve as an avatar." },
+                { "id": "moon-knight-e3", "episodeNumber": 3, "title": "The Friendly Type", "summary": "Marc and Steven are forced to work together to stop a cult leader from unleashing a vengeful goddess." },
+                { "id": "moon-knight-e4", "episodeNumber": 4, "title": "The Tomb", "summary": "A tomb-raiding expedition goes sideways as ancient traps and old betrayals catch up with the pair." },
+                { "id": "moon-knight-e5", "episodeNumber": 5, "title": "Asylum", "summary": "A trip through a mental institution blurs the line between what's real and what's in Marc and Steven's shared mind." },
+                { "id": "moon-knight-e6", "episodeNumber": 6, "title": "Gods and Monsters", "summary": "A third personality is revealed, and the fate of Egypt's afterlife hangs in the balance." }
+              ]
+            }
+          ]
         },
         {
           "id": "doctor-strange-2",
           "title": "Doctor Strange in the Multiverse of Madness",
           "year": 2022,
-          "narrativeOrder": 5,
-          "releaseOrder": 29,
+          "narrativeOrder": 9,
+          "releaseOrder": 33,
           "type": "movie",
           "summary": "Doctor Strange journeys into the dangerous and mind-bending multiverse with the help of a young woman who can travel between realities, while a powerful force hunts her for her abilities.",
           "watchFor": [
-            { "name": "Incursions", "note": "The multiverse's growing instability sets the stakes for future multiversal threats." },
-            { "name": "America Chavez", "note": "Her ability to travel the multiverse makes her a target again in future stories." },
-            { "name": "Clea (mid-credit)", "note": "Recruits Strange to fix the incursion he caused, teasing his next adventure." }
+            { "name": "Incursions", "thisFilm": "Strange witnesses a universe-ending 'incursion' while multiverse-traveling.", "future": "Sets the stakes for future multiversal threats." },
+            { "name": "America Chavez", "thisFilm": "Escapes with Strange after her powers are hunted by Wanda.", "future": "Her ability to travel the multiverse makes her a target again in future stories." },
+            { "name": "Clea (mid-credit)", "thisFilm": "Approaches Strange after the darkness he dabbled in catches up to him.", "future": "Recruits him to fix the incursion he caused, teasing his next adventure." }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "ms-marvel",
+          "title": "Ms. Marvel",
+          "year": 2022,
+          "narrativeOrder": 10,
+          "releaseOrder": 34,
+          "type": "series",
+          "summary": "New Jersey teenager and superhero fangirl Kamala Khan discovers she has real superpowers of her own, tied to a mysterious family heirloom.",
+          "watchFor": [
+            { "name": "Kamala Khan / Ms. Marvel", "thisFilm": "Discovers her powers come from a bangle passed down through her family.", "future": "Becomes a core member of the young hero team assembled in The Marvels.", "spoils": "The Marvels" }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "ms-marvel-e1", "episodeNumber": 1, "title": "Generation Why", "summary": "Kamala Khan dreams of being a superhero, then unexpectedly gains real powers after putting on her grandmother's bangle." },
+                { "id": "ms-marvel-e2", "episodeNumber": 2, "title": "Crushed", "summary": "Kamala tries to balance her new powers with school, family, and her first crush." },
+                { "id": "ms-marvel-e3", "episodeNumber": 3, "title": "Destined", "summary": "A secret society called the Clandestines reveals the true, otherworldly origin of Kamala's powers." },
+                { "id": "ms-marvel-e4", "episodeNumber": 4, "title": "Seeing Red", "summary": "Kamala's family history and the Partition of India collide with her present-day fight against the Clandestines." },
+                { "id": "ms-marvel-e5", "episodeNumber": 5, "title": "Time and Again", "summary": "A trip into the past reveals how Kamala's grandmother first came into possession of the bangle." },
+                {
+                  "id": "ms-marvel-e6",
+                  "episodeNumber": 6,
+                  "title": "No Normal",
+                  "summary": "Kamala embraces her identity as Ms. Marvel just as a stranger from space takes an interest in her powers.",
+                  "watchFor": [
+                    { "name": "Captain Marvel's interest", "thisFilm": "Kamala and Carol Danvers briefly swap places due to their entangled powers.", "future": "Sets up their team-up in The Marvels.", "spoils": "The Marvels" }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "thor-4",
           "title": "Thor: Love and Thunder",
           "year": 2022,
-          "narrativeOrder": 6,
-          "releaseOrder": 30,
+          "narrativeOrder": 11,
+          "releaseOrder": 35,
           "type": "movie",
           "summary": "Thor's search for inner peace is interrupted by a galactic killer known as Gorr the God Butcher, who seeks the extinction of the gods, forcing Thor to seek help from an old flame wielding his own hammer.",
           "watchFor": [
-            { "name": "Jane Foster / Mighty Thor's fate", "note": "Her sacrifice and journey to Valhalla leaves the door open for a possible future return." },
-            { "name": "Hercules (mid-credit)", "note": "Zeus sends his son to hunt Thor down, setting up a rivalry for a future Thor story." }
+            { "name": "Jane Foster / Mighty Thor's fate", "thisFilm": "Sacrifices herself using Mjolnir to save Thor and the children of Asgard.", "future": "Her journey to Valhalla leaves the door open for a possible future return." },
+            { "name": "Hercules (mid-credit)", "thisFilm": "Not present in the main story.", "future": "Zeus sends his son to hunt Thor down, setting up a rivalry for a future Thor story." }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "she-hulk",
+          "title": "She-Hulk: Attorney at Law",
+          "year": 2022,
+          "narrativeOrder": 12,
+          "releaseOrder": 36,
+          "type": "series",
+          "summary": "Lawyer Jennifer Walters gains the powers of the Hulk after an accident, and must balance a superhero-law specialty with the messiness of everyday life.",
+          "watchFor": [
+            { "name": "Emil Blonsky / Abomination", "thisFilm": "Seeks Jennifer's help for early release from prison, then opens a wellness retreat for former villains.", "future": "Continues his slow redemption arc after The Incredible Hulk." }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "she-hulk-e1", "episodeNumber": 1, "title": "A Normal Amount of Rage", "summary": "A car accident transfers some of Bruce Banner's blood into his cousin Jennifer Walters, unexpectedly turning her into a Hulk." },
+                { "id": "she-hulk-e2", "episodeNumber": 2, "title": "Superhuman Law", "summary": "Jennifer takes a job at a firm's new superhuman law division, complicating her attempt to keep a normal life." },
+                { "id": "she-hulk-e3", "episodeNumber": 3, "title": "The People vs. Emil Blonsky", "summary": "Jennifer represents Emil Blonsky in his bid for parole, drawing unwanted attention from a secretive government agency." },
+                { "id": "she-hulk-e4", "episodeNumber": 4, "title": "Is This Not Real Magic?", "summary": "A run-in with a washed-up sorcerer and a dating app disaster test Jennifer's patience in and out of the courtroom." },
+                { "id": "she-hulk-e5", "episodeNumber": 5, "title": "Mean, Green, and Straight Poured", "summary": "Jennifer deals with online harassment after a video of her as She-Hulk goes viral." },
+                { "id": "she-hulk-e6", "episodeNumber": 6, "title": "Just Jen", "summary": "Jennifer tries dating without turning into She-Hulk, with predictably messy results." },
+                { "id": "she-hulk-e7", "episodeNumber": 7, "title": "The Retreat", "summary": "A trip to Emil Blonsky's villain-wellness retreat reveals a scheme targeting Jennifer's blood." },
+                { "id": "she-hulk-e8", "episodeNumber": 8, "title": "Ribbit and Rip It", "summary": "Jennifer teams up with Daredevil to track down whoever's been stealing her blood." },
+                {
+                  "id": "she-hulk-e9",
+                  "episodeNumber": 9,
+                  "title": "Whose Show Is This?",
+                  "summary": "Jennifer breaks the fourth wall entirely to rewrite her own finale, confronting the show's actual writers' room.",
+                  "watchFor": [
+                    { "name": "Fourth-wall meta finale", "thisFilm": "Jennifer literally walks onto a production set to argue with the writers about her ending.", "future": "A one-of-a-kind, self-aware finale that doesn't so much set up future stories as comment on them." }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "black-panther-2",
           "title": "Black Panther: Wakanda Forever",
           "year": 2022,
-          "narrativeOrder": 7,
-          "releaseOrder": 31,
+          "narrativeOrder": 13,
+          "releaseOrder": 37,
           "type": "movie",
           "summary": "Following the loss of their king, the people of Wakanda must fight to protect their nation from intervening world powers while facing a new threat from a hidden underwater civilization.",
           "watchFor": [
-            { "name": "Namor & Talokan", "note": "Establishes an uneasy truce with Wakanda, leaving room for future conflict or alliance." },
-            { "name": "Shuri as Black Panther", "note": "Takes up her brother's mantle, shaping Wakanda's future direction." },
-            { "name": "Toussaint / T'Challa's son (post-credit)", "note": "Revealed as T'Challa's secret heir, teasing a future Black Panther legacy story." }
+            { "name": "Namor & Talokan", "thisFilm": "Wages war on the surface world before reaching an uneasy truce with Wakanda.", "future": "Leaves room for future conflict or alliance." },
+            { "name": "Shuri as Black Panther", "thisFilm": "Takes up her brother's mantle to defend Wakanda.", "future": "Shapes Wakanda's future direction." },
+            { "name": "Toussaint / T'Challa's son (post-credit)", "thisFilm": "Not present in the main story — revealed only in the post-credit scene.", "future": "Revealed as T'Challa's secret heir, teasing a future Black Panther legacy story." }
           ],
           "postCredit": { "count": 1, "type": "post" }
+        }
+      ]
+    },
+    {
+      "id": "phase-5",
+      "name": "Phase Five",
+      "label": "The Multiverse Saga Continues",
+      "movies": [
+        {
+          "id": "ant-man-3",
+          "title": "Ant-Man and the Wasp: Quantumania",
+          "year": 2023,
+          "narrativeOrder": 1,
+          "releaseOrder": 38,
+          "type": "movie",
+          "summary": "Scott Lang and his family are pulled into the Quantum Realm, where they run headfirst into a powerful being who has been waiting there for a very long time.",
+          "watchFor": [
+            { "name": "Kang the Conqueror", "thisFilm": "Introduced as a powerful exile trapped in the Quantum Realm, revealed to be a conqueror of countless timelines.", "future": "A variant of him becomes the central threat of the Multiverse Saga going forward.", "spoils": "Loki (Season 2) / Avengers: Doomsday" },
+            { "name": "Cassie Lang", "thisFilm": "Takes a more active superhero role alongside her father for the first time.", "future": "Positioned as a potential future Young Avenger." }
+          ],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "guardians-3",
+          "title": "Guardians of the Galaxy Vol. 3",
+          "year": 2023,
+          "narrativeOrder": 2,
+          "releaseOrder": 39,
+          "type": "movie",
+          "summary": "The Guardians must go on one final mission to save Rocket's life, uncovering the traumatic origin of his creation at the hands of a twisted geneticist.",
+          "watchFor": [
+            { "name": "Rocket's origin", "thisFilm": "Reveals the High Evolutionary's cruel experiments that created Rocket.", "future": "Closes out Rocket's backstory for good." },
+            { "name": "The team's farewell", "thisFilm": "Several Guardians go their separate ways by the film's end.", "future": "Sets up a new, smaller lineup of Guardians for any future adventures." }
+          ],
+          "postCredit": { "count": 1, "type": "post" }
+        },
+        {
+          "id": "secret-invasion",
+          "title": "Secret Invasion",
+          "year": 2023,
+          "narrativeOrder": 3,
+          "releaseOrder": 40,
+          "type": "series",
+          "summary": "Nick Fury returns to Earth to stop a faction of Skrulls, led by a former ally, from launching a hostile takeover of human society.",
+          "watchFor": [
+            { "name": "Skrull infiltration", "thisFilm": "Reveals just how deeply Skrulls have infiltrated human institutions over the years.", "future": "Leaves lingering distrust of Nick Fury and S.H.I.E.L.D. across future stories." }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "secret-invasion-e1", "episodeNumber": 1, "title": "Resurrection", "summary": "Nick Fury is pulled back to Earth after a bombing reveals a Skrull faction has turned against humanity." },
+                { "id": "secret-invasion-e2", "episodeNumber": 2, "title": "Promises", "summary": "Fury and Talos dig into who's leading the rogue Skrulls, and how far the conspiracy really goes." },
+                { "id": "secret-invasion-e3", "episodeNumber": 3, "title": "Betrayed", "summary": "A mole within Fury's own inner circle is exposed, upending his plan to stop the invasion quietly." },
+                { "id": "secret-invasion-e4", "episodeNumber": 4, "title": "Beloved", "summary": "The Skrulls' endgame comes into focus as they move against world leaders directly." },
+                { "id": "secret-invasion-e5", "episodeNumber": 5, "title": "Harvest", "summary": "Fury is forced to make an impossible sacrifice to keep the invasion from spiraling into war." },
+                { "id": "secret-invasion-e6", "episodeNumber": 6, "title": "Home", "summary": "The invasion reaches its climax, leaving Fury's relationship with Earth's protectors changed for good." }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "the-marvels",
+          "title": "The Marvels",
+          "year": 2023,
+          "narrativeOrder": 4,
+          "releaseOrder": 41,
+          "type": "movie",
+          "summary": "Carol Danvers, Kamala Khan, and Monica Rambeau find their powers mysteriously entangled, forcing them to swap places with each other and team up against a vengeful Kree revolutionary.",
+          "watchFor": [
+            { "name": "The powers-swapping trio", "thisFilm": "Carol, Kamala, and Monica are forced to literally switch places whenever they use their powers simultaneously.", "future": "Cements the three as an ongoing team." },
+            { "name": "Kate Bishop cameo (mid-credit)", "thisFilm": "Not present in the main story.", "future": "Teases a Young Avengers team assembling from across the franchise's younger heroes." }
+          ],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "echo",
+          "title": "Echo",
+          "year": 2024,
+          "narrativeOrder": 5,
+          "releaseOrder": 42,
+          "type": "series",
+          "summary": "After a violent falling-out with Kingpin's crime empire, Maya Lopez returns to her Choctaw hometown to reconnect with her roots and confront the family and community she left behind.",
+          "watchFor": [
+            { "name": "Kingpin / Wilson Fisk", "thisFilm": "Survives being shot by Maya at the start of the series.", "future": "Continues his rivalry with Maya and remains a recurring MCU crime-boss threat." }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "echo-e1", "episodeNumber": 1, "title": "Home", "summary": "After shooting Kingpin, Maya Lopez flees New York and returns to her hometown for the first time in years." },
+                { "id": "echo-e2", "episodeNumber": 2, "title": "Casino", "summary": "Maya reconnects with her estranged family while trying to stay one step ahead of Kingpin's people." },
+                { "id": "echo-e3", "episodeNumber": 3, "title": "Tuklo", "summary": "Flashbacks reveal the tragic history that first drove a wedge between Maya and her family." },
+                { "id": "echo-e4", "episodeNumber": 4, "title": "Origins", "summary": "Maya taps into her Choctaw ancestry and a mysterious inherited power passed down through generations of women in her family." },
+                { "id": "echo-e5", "episodeNumber": 5, "title": "Storyteller", "summary": "Maya confronts her past and Kingpin's reach once and for all, choosing which legacy she wants to carry forward." }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "deadpool-wolverine",
+          "title": "Deadpool & Wolverine",
+          "year": 2024,
+          "narrativeOrder": 6,
+          "releaseOrder": 43,
+          "type": "movie",
+          "summary": "Recruited by the TVA to help save his own universe from being erased, a reluctant Deadpool drags a jaded variant of Wolverine along on a chaotic, foul-mouthed multiversal detour.",
+          "watchFor": [
+            { "name": "The TVA & universe pruning", "thisFilm": "Deadpool learns his home universe is scheduled to be erased following the death of its 'anchor being.'", "future": "Directly follows up on the TVA and multiverse concepts introduced in Loki.", "spoils": "Loki" },
+            { "name": "Multiversal cameos", "thisFilm": "A host of alternate-universe heroes and villains from the 20th Century Fox X-Men films appear throughout the Void.", "future": "Formally folds the Fox X-Men universe's characters and actors into the mainline MCU multiverse." }
+          ],
+          "postCredit": { "count": 1, "type": "mid" }
+        },
+        {
+          "id": "agatha-all-along",
+          "title": "Agatha All Along",
+          "year": 2024,
+          "narrativeOrder": 7,
+          "releaseOrder": 44,
+          "type": "series",
+          "summary": "Trapped and powerless since the end of WandaVision, Agatha Harkness assembles a coven of misfit witches to help her survive the deadly Witches' Road and reclaim her magic.",
+          "watchFor": [
+            { "name": "The Witches' Road", "thisFilm": "A legendary, dangerous trial said to grant a witch's greatest desire to whoever survives it.", "future": "Its true nature is a mystery the whole season is built around." },
+            { "name": "Agatha's true goal", "thisFilm": "Hides her real reason for walking the Road from the rest of her coven for most of the season.", "future": "Recontextualizes everything once revealed." }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "agatha-e1", "episodeNumber": 1, "title": "Seekest Thou the Road", "summary": "A mysterious detective shows up at Agatha's door with unsettling questions about a road only Agatha can see." },
+                { "id": "agatha-e2", "episodeNumber": 2, "title": "Circle, Cross, Time and Death", "summary": "Agatha realizes her memory and powers have been stripped after her time trapped in Westview, and starts assembling a coven." },
+                { "id": "agatha-e3", "episodeNumber": 3, "title": "Season of the Witch", "summary": "A ragtag group of witches, each hiding their own secret, agrees to walk the deadly Witches' Road with Agatha." },
+                { "id": "agatha-e4", "episodeNumber": 4, "title": "For Whom the Bell Tolls", "summary": "The coven faces their first trial on the Road, and the cost of walking it becomes horrifyingly clear." },
+                { "id": "agatha-e5", "episodeNumber": 5, "title": "Is This Job Insane?", "summary": "A trial designed around illusions forces each witch to confront a private fear or regret." },
+                { "id": "agatha-e6", "episodeNumber": 6, "title": "Death's Hand in Mine", "summary": "The Road claims its first real victim, throwing the coven's fragile trust into chaos." },
+                { "id": "agatha-e7", "episodeNumber": 7, "title": "Follow Me Follow Me", "summary": "The true identity of the mysterious teen following Agatha is revealed." },
+                { "id": "agatha-e8", "episodeNumber": 8, "title": "Scary Movie", "summary": "A flashback-heavy episode reveals how Agatha's coven, and her rivalry with the Salem witches, first began centuries ago." },
+                { "id": "agatha-e9", "episodeNumber": 9, "title": "Practical Magic to Conjure a Witch's Coven", "summary": "Agatha reaches the end of the Witches' Road and confronts the true cost of what she's been seeking all along." }
+              ]
+            }
+          ]
         }
       ]
     }
