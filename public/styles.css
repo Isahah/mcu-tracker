@@ -191,19 +191,6 @@ body {
   font-size: 1.4rem;
 }
 
-.sort-btn {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.72rem;
-  background: transparent;
-  border: 1px solid var(--ink);
-  color: var(--ink);
-  padding: 0.4em 0.7em;
-  border-radius: var(--radius);
-  cursor: pointer;
-  letter-spacing: 0.02em;
-}
-.sort-btn:hover { background: var(--ink); color: var(--paper); }
-
 .progress-row {
   display: flex;
   align-items: center;
@@ -274,6 +261,24 @@ body {
 .case-title {
   font-weight: 600;
   font-size: 0.98rem;
+}
+
+.type-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  color: var(--teal);
+  border: 1px solid var(--teal);
+  padding: 0.1em 0.4em;
+  border-radius: var(--radius);
+  vertical-align: middle;
+  margin-left: 0.3em;
+}
+
+.episode-count-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--text-dim);
 }
 
 .case-meta {
@@ -391,19 +396,53 @@ body {
   font-size: 0.94rem;
 }
 
-.character-tags {
+.watchfor-list {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
 }
 
-.character-tag {
+.watchfor-tag {
   background: rgba(16, 19, 31, 0.08);
   border: 1px solid rgba(16, 19, 31, 0.2);
   padding: 0.25em 0.6em;
   border-radius: var(--radius);
   font-size: 0.82rem;
 }
+
+.spoiler-block { margin-top: 1rem; }
+
+.spoiler-toggle {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.76rem;
+  background: rgba(194, 59, 46, 0.1);
+  border: 1px solid var(--stamp-red);
+  color: var(--stamp-red);
+  padding: 0.4em 0.8em;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.spoiler-toggle:hover { background: rgba(194, 59, 46, 0.18); }
+
+.spoiler-content {
+  margin-top: 0.7rem;
+  padding: 0.8rem 1rem;
+  background: rgba(194, 59, 46, 0.06);
+  border: 1px dashed var(--stamp-red);
+  border-radius: var(--radius);
+}
+
+.spoiler-content ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.spoiler-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+.spoiler-content li:last-child { margin-bottom: 0; }
 
 .credit-note {
   display: inline-block;
@@ -443,16 +482,33 @@ body {
   color: #fff;
 }
 
-.rating-stars {
+.rating-control {
   display: flex;
-  gap: 0.15rem;
-  font-size: 1.3rem;
-  cursor: pointer;
-  user-select: none;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'JetBrains Mono', monospace;
 }
 
-.rating-stars .star { color: #cfc8b0; }
-.rating-stars .star.filled { color: var(--brass); }
+.rating-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--brass);
+  min-width: 4.5em;
+  text-align: center;
+}
+
+.rating-arrow {
+  background: transparent;
+  border: 1px solid var(--brass);
+  color: var(--brass);
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+.rating-arrow:hover { background: var(--brass); color: #fff; }
 
 .watched-timestamp {
   font-family: 'JetBrains Mono', monospace;
@@ -461,7 +517,57 @@ body {
   width: 100%;
 }
 
+/* Detail page (movie / episode) */
+.detail-card {
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+.detail-card h3 {
+  font-family: 'Special Elite', monospace;
+  font-size: 1.5rem;
+  margin: 0 0 0.2rem;
+}
+
+/* Episode picker (inside the series modal) */
+.episode-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.episode-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  width: 100%;
+  background: rgba(16, 19, 31, 0.05);
+  border: 1px solid rgba(16, 19, 31, 0.15);
+  border-radius: var(--radius);
+  padding: 0.6em 0.8em;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+  color: var(--ink);
+}
+.episode-row:hover { background: rgba(16, 19, 31, 0.1); }
+
+.episode-row.watched { border-left: 3px solid var(--teal); }
+
+.episode-num {
+  font-family: 'JetBrains Mono', monospace;
+  color: #6b6a60;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.episode-title { flex: 1; font-size: 0.92rem; }
+
 @media (max-width: 520px) {
   .tape { display: none; }
   .modal { padding: 1.4rem; }
+  .detail-card { padding: 1.4rem; }
 }
