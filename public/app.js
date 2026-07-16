@@ -81,6 +81,7 @@ function seriesEpisodes(series) {
 
 // A "unit" is a movie, or one episode of a series — used for progress counts
 function unitCounts(entry) {
+  if (entry.released === false) return { watched: 0, total: 0 };
   if (entry.type === 'series') {
     const episodes = seriesEpisodes(entry);
     const watched = episodes.reduce((n, ep) => n + (progress[ep.id]?.watched ? 1 : 0), 0);
@@ -140,12 +141,13 @@ function renderPhase() {
 
   entries.forEach(entry => {
     const isSeries = entry.type === 'series';
+    const isUnreleased = entry.released === false;
     const { watched, total } = unitCounts(entry);
     watchedCount += watched;
     totalCount += total;
 
     const card = document.createElement('div');
-    card.className = 'case-card' + (watched === total ? ' watched' : '');
+    card.className = 'case-card' + (isUnreleased ? ' unreleased' : (watched === total && total > 0 ? ' watched' : ''));
     card.addEventListener('click', () => {
       if (isSeries) {
         openEpisodeModal(entry);
@@ -159,7 +161,9 @@ function renderPhase() {
       : '';
 
     let statusHtml;
-    if (isSeries) {
+    if (isUnreleased) {
+      statusHtml = `<span class="unreleased-badge">NOT YET RELEASED</span>`;
+    } else if (isSeries) {
       const sp = progress[entry.id] || {};
       statusHtml = `
         <span class="episode-count-badge">${watched} / ${total} episodes</span>
@@ -175,10 +179,14 @@ function renderPhase() {
       `;
     }
 
+    let typeBadge = '';
+    if (isSeries) typeBadge = '<span class="type-badge">SERIES</span>';
+    else if (entry.type === 'special') typeBadge = '<span class="type-badge">SPECIAL</span>';
+
     card.innerHTML = `
       <div class="case-number">${entry.narrativeOrder}.</div>
       <div class="case-info">
-        <div class="case-title">${entry.title} ${isSeries ? '<span class="type-badge">SERIES</span>' : ''}</div>
+        <div class="case-title">${entry.title} ${typeBadge}</div>
         <div class="case-meta">
           <span>${entry.year}</span>
           ${creditBadge}
@@ -339,11 +347,24 @@ function renderDetail({ item, phase, series, season }) {
   el('detail-back-btn').onclick = () => { location.hash = phase.id; };
 
   const p = progress[item.id] || {};
+  const isUnreleased = item.released === false;
 
   const titleHtml = series ? `${series.title} — S${season.seasonNumber}E${item.episodeNumber}: ${item.title}` : item.title;
   const metaHtml = series
     ? `${series.year} · Season ${season.seasonNumber}, Episode ${item.episodeNumber}`
     : `${item.year} · Narrative #${item.narrativeOrder} · Release #${item.releaseOrder}`;
+
+  const controlsHtml = isUnreleased
+    ? `<div class="modal-section"><span class="unreleased-note">🕒 Not yet released${item.expectedRelease ? ` — expected ${item.expectedRelease}` : ''}. Check back after it premieres to log it here.</span></div>`
+    : `
+      <div class="controls-row">
+        <button class="watch-toggle ${p.watched ? 'is-watched' : ''}" id="watch-toggle-btn">
+          ${p.watched ? '✓ Watched' : 'Mark as Watched'}
+        </button>
+        <div class="rating-control" id="rating-control"></div>
+        ${p.watched && p.watchedAt ? `<div class="watched-timestamp">Logged: ${new Date(p.watchedAt).toLocaleString()}</div>` : ''}
+      </div>
+    `;
 
   el('detail-content').innerHTML = `
     <h3>${titleHtml}</h3>
@@ -358,23 +379,19 @@ function renderDetail({ item, phase, series, season }) {
 
     ${item.postCredit ? `<div class="modal-section"><span class="credit-note">${creditText(item.postCredit)}</span></div>` : ''}
 
-    <div class="controls-row">
-      <button class="watch-toggle ${p.watched ? 'is-watched' : ''}" id="watch-toggle-btn">
-        ${p.watched ? '✓ Watched' : 'Mark as Watched'}
-      </button>
-      <div class="rating-control" id="rating-control"></div>
-      ${p.watched && p.watchedAt ? `<div class="watched-timestamp">Logged: ${new Date(p.watchedAt).toLocaleString()}</div>` : ''}
-    </div>
+    ${controlsHtml}
   `;
 
   bindSpoilerToggles(el('detail-content'));
-  renderRatingControl(item, p.rating || 0, 'rating-control');
 
-  el('watch-toggle-btn').addEventListener('click', async () => {
-    const updated = await updateProgress(item.id, { watched: !p.watched });
-    progress[item.id] = updated;
-    renderDetail({ item, phase, series, season });
-  });
+  if (!isUnreleased) {
+    renderRatingControl(item, p.rating || 0, 'rating-control');
+    el('watch-toggle-btn').addEventListener('click', async () => {
+      const updated = await updateProgress(item.id, { watched: !p.watched });
+      progress[item.id] = updated;
+      renderDetail({ item, phase, series, season });
+    });
+  }
 }
 
 function renderRatingControl(item, currentRating, containerId) {
