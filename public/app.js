@@ -58,26 +58,33 @@ function showScreen(name) {
   el('screen-detail').hidden = name !== 'detail';
 }
 
-// Finds a movie or episode by id anywhere in the data, along with its parent phase (and parent series, for episodes)
+// Finds a movie or episode by id anywhere in the data, along with its parent phase
+// (and parent series/season, for episodes)
 function findItem(id) {
   for (const phase of phasesData) {
     for (const entry of phase.movies) {
-      if (entry.id === id) return { item: entry, phase, series: null };
-      if (entry.type === 'series' && entry.episodes) {
-        const ep = entry.episodes.find(e => e.id === id);
-        if (ep) return { item: ep, phase, series: entry };
+      if (entry.id === id) return { item: entry, phase, series: null, season: null };
+      if (entry.type === 'series' && entry.seasons) {
+        for (const season of entry.seasons) {
+          const ep = season.episodes.find(e => e.id === id);
+          if (ep) return { item: ep, phase, series: entry, season };
+        }
       }
     }
   }
   return null;
 }
 
+function seriesEpisodes(series) {
+  return series.seasons.flatMap(s => s.episodes);
+}
+
 // A "unit" is a movie, or one episode of a series — used for progress counts
 function unitCounts(entry) {
   if (entry.type === 'series') {
-    const total = entry.episodes.length;
-    const watched = entry.episodes.reduce((n, ep) => n + (progress[ep.id]?.watched ? 1 : 0), 0);
-    return { watched, total };
+    const episodes = seriesEpisodes(entry);
+    const watched = episodes.reduce((n, ep) => n + (progress[ep.id]?.watched ? 1 : 0), 0);
+    return { watched, total: episodes.length };
   }
   return { watched: progress[entry.id]?.watched ? 1 : 0, total: 1 };
 }
@@ -151,15 +158,22 @@ function renderPhase() {
       ? `<span class="credit-badge">🎬 ${creditLabel(entry.postCredit)}</span>`
       : '';
 
-    const p = progress[entry.id] || {};
-    const statusHtml = isSeries
-      ? `<span class="episode-count-badge">${watched} / ${total} episodes</span>`
-      : `
+    let statusHtml;
+    if (isSeries) {
+      const sp = progress[entry.id] || {};
+      statusHtml = `
+        <span class="episode-count-badge">${watched} / ${total} episodes</span>
+        ${sp.rating ? `<div class="rating-display">${formatRating(sp.rating)}/10</div>` : ''}
+      `;
+    } else {
+      const p = progress[entry.id] || {};
+      statusHtml = `
         ${p.watched
           ? `<span class="watched-stamp">VIEWED</span>`
           : `<span class="unwatched-mark">unwatched</span>`}
         ${p.rating ? `<div class="rating-display">${formatRating(p.rating)}/10</div>` : ''}
       `;
+    }
 
     card.innerHTML = `
       <div class="case-number">${entry.narrativeOrder}.</div>
@@ -198,37 +212,118 @@ function formatRating(rating) {
   return Number(rating).toFixed(1);
 }
 
-// Series card click opens a picker listing episodes; each episode opens its own detail page
+// Builds the two-tier "watch for" + spoiler markup shared by the detail page and the series modal
+function watchForBlockHtml(entry) {
+  if (!entry.watchFor || !entry.watchFor.length) return '';
+  return `
+    <div class="modal-section">
+      <h4>Important People &amp; Things to Watch For</h4>
+      <div class="watchfor-list">
+        ${entry.watchFor.map(w => `<span class="watchfor-tag">${w.name}</span>`).join('')}
+      </div>
+    </div>
+    <div class="modal-section spoiler-block">
+      <button class="spoiler-toggle" data-tier="film" data-uid="${entry.id}">⚠ Show Spoilers (This Movie)</button>
+      <div class="spoiler-content" data-panel="film" data-uid="${entry.id}" hidden>
+        <ul>
+          ${entry.watchFor.map(w => `<li><strong>${w.name}:</strong> ${w.thisFilm}</li>`).join('')}
+        </ul>
+      </div>
+    </div>
+    <div class="modal-section spoiler-block">
+      <button class="spoiler-toggle future-toggle" data-tier="future" data-uid="${entry.id}">⚠⚠ Show Spoilers (Future Movies)</button>
+      <div class="spoiler-content" data-panel="future" data-uid="${entry.id}" hidden>
+        <ul>
+          ${entry.watchFor.map(w => `<li><strong>${w.name}:</strong> ${w.future}${w.spoils ? ` <span class="spoils-tag">Spoils: ${w.spoils}</span>` : ''}</li>`).join('')}
+        </ul>
+      </div>
+    </div>
+  `;
+}
+
+function bindSpoilerToggles(container) {
+  container.querySelectorAll('.spoiler-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tier = btn.dataset.tier;
+      const uid = btn.dataset.uid;
+      const panel = container.querySelector(`.spoiler-content[data-panel="${tier}"][data-uid="${uid}"]`);
+      panel.hidden = !panel.hidden;
+      const label = tier === 'film' ? 'Spoilers (This Movie)' : 'Spoilers (Future Movies)';
+      const icon = tier === 'film' ? '⚠' : '⚠⚠';
+      btn.textContent = `${icon} ${panel.hidden ? 'Show' : 'Hide'} ${label}`;
+    });
+  });
+}
+
+// Series card click opens a picker: seasons as an accordion, each expanding to its episode list
 function openEpisodeModal(series) {
   const content = el('modal-content');
+  const sp = progress[series.id] || {};
+
   content.innerHTML = `
     <h3>${series.title}</h3>
     <div class="modal-year">${series.year} · Narrative #${series.narrativeOrder}</div>
+
     <div class="modal-section">
       <h4>Summary</h4>
       <p>${series.summary}</p>
     </div>
+
+    ${watchForBlockHtml(series)}
+
     <div class="modal-section">
-      <h4>Episodes</h4>
-      <div class="episode-list" id="episode-list"></div>
+      <h4>Your Rating</h4>
+      <div class="rating-control" id="series-rating-control"></div>
+    </div>
+
+    <div class="modal-section">
+      <h4>Seasons</h4>
+      <div class="season-list" id="season-list"></div>
     </div>
   `;
 
-  const list = el('episode-list');
-  series.episodes.forEach(ep => {
-    const p = progress[ep.id] || {};
-    const row = document.createElement('button');
-    row.className = 'episode-row' + (p.watched ? ' watched' : '');
-    row.innerHTML = `
-      <span class="episode-num">${ep.episodeNumber}.</span>
-      <span class="episode-title">${ep.title}</span>
-      ${p.watched ? `<span class="watched-stamp">VIEWED</span>` : ''}
+  bindSpoilerToggles(content);
+  renderRatingControl(series, sp.rating || 0, 'series-rating-control');
+
+  const seasonListEl = el('season-list');
+  series.seasons.forEach((season, idx) => {
+    const watchedInSeason = season.episodes.filter(ep => progress[ep.id]?.watched).length;
+
+    const block = document.createElement('div');
+    block.className = 'season-block';
+
+    const header = document.createElement('button');
+    header.className = 'season-header';
+    header.innerHTML = `
+      <span>Season ${season.seasonNumber}</span>
+      <span class="season-header-count">${watchedInSeason} / ${season.episodes.length} watched</span>
     `;
-    row.addEventListener('click', () => {
-      closeModal();
-      location.hash = `watch/${ep.id}`;
+
+    const list = document.createElement('div');
+    list.className = 'episode-list';
+    list.hidden = idx !== 0; // first season open by default
+
+    season.episodes.forEach(ep => {
+      const p = progress[ep.id] || {};
+      const row = document.createElement('button');
+      row.className = 'episode-row' + (p.watched ? ' watched' : '');
+      row.innerHTML = `
+        <span class="episode-num">${ep.episodeNumber}.</span>
+        <span class="episode-title">${ep.title}</span>
+        ${p.watched ? `<span class="watched-stamp">VIEWED</span>` : ''}
+      `;
+      row.addEventListener('click', () => {
+        closeModal();
+        location.hash = `watch/${ep.id}`;
+      });
+      list.appendChild(row);
     });
-    list.appendChild(row);
+
+    header.addEventListener('click', () => { list.hidden = !list.hidden; });
+
+    block.appendChild(header);
+    block.appendChild(list);
+    seasonListEl.appendChild(block);
   });
 
   el('modal-backdrop').classList.add('open');
@@ -239,33 +334,16 @@ function closeModal() {
 }
 
 // Full-page detail view for a single movie or episode
-function renderDetail({ item, phase, series }) {
+function renderDetail({ item, phase, series, season }) {
   el('detail-back-btn').textContent = `← ${phase.name}`;
   el('detail-back-btn').onclick = () => { location.hash = phase.id; };
 
   const p = progress[item.id] || {};
 
-  const titleHtml = series ? `${series.title} — Ep. ${item.episodeNumber}: ${item.title}` : item.title;
+  const titleHtml = series ? `${series.title} — S${season.seasonNumber}E${item.episodeNumber}: ${item.title}` : item.title;
   const metaHtml = series
-    ? `${series.year} · Episode ${item.episodeNumber}`
+    ? `${series.year} · Season ${season.seasonNumber}, Episode ${item.episodeNumber}`
     : `${item.year} · Narrative #${item.narrativeOrder} · Release #${item.releaseOrder}`;
-
-  const watchForHtml = (item.watchFor && item.watchFor.length) ? `
-    <div class="modal-section">
-      <h4>Important People &amp; Things to Watch For</h4>
-      <div class="watchfor-list">
-        ${item.watchFor.map(w => `<span class="watchfor-tag">${w.name}</span>`).join('')}
-      </div>
-    </div>
-    <div class="modal-section spoiler-block">
-      <button class="spoiler-toggle" id="spoiler-toggle">⚠ Show Spoilers</button>
-      <div class="spoiler-content" id="spoiler-content" hidden>
-        <ul>
-          ${item.watchFor.map(w => `<li><strong>${w.name}:</strong> ${w.note}</li>`).join('')}
-        </ul>
-      </div>
-    </div>
-  ` : '';
 
   el('detail-content').innerHTML = `
     <h3>${titleHtml}</h3>
@@ -276,7 +354,7 @@ function renderDetail({ item, phase, series }) {
       <p>${item.summary}</p>
     </div>
 
-    ${watchForHtml}
+    ${watchForBlockHtml(item)}
 
     ${item.postCredit ? `<div class="modal-section"><span class="credit-note">${creditText(item.postCredit)}</span></div>` : ''}
 
@@ -289,43 +367,36 @@ function renderDetail({ item, phase, series }) {
     </div>
   `;
 
-  renderRatingControl(item, p.rating || 0);
-
-  if (item.watchFor && item.watchFor.length) {
-    el('spoiler-toggle').addEventListener('click', () => {
-      const box = el('spoiler-content');
-      box.hidden = !box.hidden;
-      el('spoiler-toggle').textContent = box.hidden ? '⚠ Show Spoilers' : '⚠ Hide Spoilers';
-    });
-  }
+  bindSpoilerToggles(el('detail-content'));
+  renderRatingControl(item, p.rating || 0, 'rating-control');
 
   el('watch-toggle-btn').addEventListener('click', async () => {
     const updated = await updateProgress(item.id, { watched: !p.watched });
     progress[item.id] = updated;
-    renderDetail({ item, phase, series });
+    renderDetail({ item, phase, series, season });
   });
 }
 
-function renderRatingControl(item, currentRating) {
-  const container = el('rating-control');
+function renderRatingControl(item, currentRating, containerId) {
+  const container = el(containerId);
   container.innerHTML = `
-    <button class="rating-arrow" id="rating-down" aria-label="Decrease rating">&#9660;</button>
-    <span class="rating-value" id="rating-value">${currentRating ? formatRating(currentRating) : '—'}/10</span>
-    <button class="rating-arrow" id="rating-up" aria-label="Increase rating">&#9650;</button>
+    <button class="rating-arrow" data-action="down" aria-label="Decrease rating">&#9660;</button>
+    <span class="rating-value">${currentRating ? formatRating(currentRating) : '—'}/10</span>
+    <button class="rating-arrow" data-action="up" aria-label="Increase rating">&#9650;</button>
   `;
 
-  el('rating-down').addEventListener('click', async () => {
+  container.querySelector('[data-action="down"]').addEventListener('click', async () => {
     const next = Math.max(0, currentRating - 0.5);
     const updated = await updateProgress(item.id, { rating: next });
     progress[item.id] = updated;
-    renderRatingControl(item, next);
+    renderRatingControl(item, next, containerId);
   });
 
-  el('rating-up').addEventListener('click', async () => {
+  container.querySelector('[data-action="up"]').addEventListener('click', async () => {
     const next = Math.min(10, currentRating + 0.5);
     const updated = await updateProgress(item.id, { rating: next });
     progress[item.id] = updated;
-    renderRatingControl(item, next);
+    renderRatingControl(item, next, containerId);
   });
 }
 
