@@ -319,6 +319,33 @@ body {
   color: var(--text-dim);
 }
 
+.case-card.unreleased {
+  opacity: 0.7;
+  border-left-style: dashed;
+}
+
+.unreleased-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+  border: 1px dashed var(--text-dim);
+  padding: 0.2em 0.5em;
+  border-radius: var(--radius);
+  white-space: nowrap;
+}
+
+.unreleased-note {
+  display: inline-block;
+  background: rgba(163, 162, 154, 0.15);
+  border: 1px dashed #8a8a82;
+  color: #6b6a60;
+  padding: 0.5em 0.9em;
+  border-radius: var(--radius);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+}
+
 .rating-display {
   color: var(--brass);
   margin-top: 0.3rem;

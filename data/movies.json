@@ -747,6 +747,19 @@
             { "name": "Toussaint / T'Challa's son (post-credit)", "thisFilm": "Not present in the main story — revealed only in the post-credit scene.", "future": "Revealed as T'Challa's secret heir, teasing a future Black Panther legacy story." }
           ],
           "postCredit": { "count": 1, "type": "post" }
+        },
+        {
+          "id": "guardians-holiday-special",
+          "title": "The Guardians of the Galaxy Holiday Special",
+          "year": 2022,
+          "narrativeOrder": 14,
+          "releaseOrder": 38,
+          "type": "special",
+          "summary": "While the Guardians spend the holidays quietly grieving and reminiscing on Knowhere, Mantis and Drax journey to Earth on an ill-advised mission to get Peter Quill the perfect Christmas gift: Kevin Bacon.",
+          "watchFor": [
+            { "name": "Mantis is Peter Quill's half-sister", "thisFilm": "Confirms outright that Mantis is secretly Ego's daughter, making her Star-Lord's half-sister — a detail not clearly spelled out anywhere else.", "future": "Recontextualizes Mantis and Peter's relationship heading into Vol. 3.", "spoils": "Guardians of the Galaxy Vol. 3" },
+            { "name": "The team without Gamora", "thisFilm": "Shows the Guardians still adjusting to life on Knowhere, grieving a Gamora who doesn't remember any of them.", "future": "Sets up the team's fractured dynamic at the start of Vol. 3.", "spoils": "Guardians of the Galaxy Vol. 3" }
+          ]
         }
       ]
     },
@@ -760,7 +773,7 @@
           "title": "Ant-Man and the Wasp: Quantumania",
           "year": 2023,
           "narrativeOrder": 1,
-          "releaseOrder": 38,
+          "releaseOrder": 39,
           "type": "movie",
           "summary": "Scott Lang and his family are pulled into the Quantum Realm, where they run headfirst into a powerful being who has been waiting there for a very long time.",
           "watchFor": [
@@ -774,7 +787,7 @@
           "title": "Guardians of the Galaxy Vol. 3",
           "year": 2023,
           "narrativeOrder": 2,
-          "releaseOrder": 39,
+          "releaseOrder": 40,
           "type": "movie",
           "summary": "The Guardians must go on one final mission to save Rocket's life, uncovering the traumatic origin of his creation at the hands of a twisted geneticist.",
           "watchFor": [
@@ -788,7 +801,7 @@
           "title": "Secret Invasion",
           "year": 2023,
           "narrativeOrder": 3,
-          "releaseOrder": 40,
+          "releaseOrder": 41,
           "type": "series",
           "summary": "Nick Fury returns to Earth to stop a faction of Skrulls, led by a former ally, from launching a hostile takeover of human society.",
           "watchFor": [
@@ -813,7 +826,7 @@
           "title": "The Marvels",
           "year": 2023,
           "narrativeOrder": 4,
-          "releaseOrder": 41,
+          "releaseOrder": 42,
           "type": "movie",
           "summary": "Carol Danvers, Kamala Khan, and Monica Rambeau find their powers mysteriously entangled, forcing them to swap places with each other and team up against a vengeful Kree revolutionary.",
           "watchFor": [
@@ -827,7 +840,7 @@
           "title": "Echo",
           "year": 2024,
           "narrativeOrder": 5,
-          "releaseOrder": 42,
+          "releaseOrder": 43,
           "type": "series",
           "summary": "After a violent falling-out with Kingpin's crime empire, Maya Lopez returns to her Choctaw hometown to reconnect with her roots and confront the family and community she left behind.",
           "watchFor": [
@@ -851,7 +864,7 @@
           "title": "Deadpool & Wolverine",
           "year": 2024,
           "narrativeOrder": 6,
-          "releaseOrder": 43,
+          "releaseOrder": 44,
           "type": "movie",
           "summary": "Recruited by the TVA to help save his own universe from being erased, a reluctant Deadpool drags a jaded variant of Wolverine along on a chaotic, foul-mouthed multiversal detour.",
           "watchFor": [
@@ -865,7 +878,7 @@
           "title": "Agatha All Along",
           "year": 2024,
           "narrativeOrder": 7,
-          "releaseOrder": 44,
+          "releaseOrder": 45,
           "type": "series",
           "summary": "Trapped and powerless since the end of WandaVision, Agatha Harkness assembles a coven of misfit witches to help her survive the deadly Witches' Road and reclaim her magic.",
           "watchFor": [
@@ -888,6 +901,88 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "phase-6",
+      "name": "Phase Six",
+      "label": "The Multiverse Saga Concludes",
+      "movies": [
+        {
+          "id": "cap-4",
+          "title": "Captain America: Brave New World",
+          "year": 2025,
+          "narrativeOrder": 1,
+          "releaseOrder": 46,
+          "type": "movie",
+          "summary": "Sam Wilson, the new Captain America, gets pulled into an international incident with the newly elected U.S. President when a covert conspiracy threatens to spiral into war.",
+          "watchFor": [
+            { "name": "Adamantium / the Celestial Island", "thisFilm": "A new metal called adamantium is discovered on an island formed from the corpse of the dead Celestial seen in Eternals.", "future": "Becomes a globally fought-over resource expected to matter to future storylines." },
+            { "name": "Sam Wilson without the serum", "thisFilm": "Chooses to remain Captain America without taking a super-soldier serum.", "future": "Sets him apart as a fully human Captain America going forward." }
+          ],
+          "postCredit": { "count": 1, "type": "mid" }
+        },
+        {
+          "id": "thunderbolts",
+          "title": "Thunderbolts*",
+          "year": 2025,
+          "narrativeOrder": 2,
+          "releaseOrder": 47,
+          "type": "movie",
+          "summary": "A group of morally gray operatives, assembled by Valentina de Fontaine for her own agenda, are betrayed and forced to work together — uncovering a bigger threat that pushes them to become an unlikely team of antiheroes.",
+          "watchFor": [
+            { "name": "Bob / the Sentry", "thisFilm": "A traumatized test subject with god-like power and a destructive alternate persona called the Void.", "future": "Positioned as one of the most powerful beings in the MCU, expected to matter for Avengers: Doomsday.", "spoils": "Avengers: Doomsday" },
+            { "name": "The New Avengers (post-credit)", "thisFilm": "The team publicly rebrands themselves.", "future": "Expected to factor into the roster assembling for Avengers: Doomsday.", "spoils": "Avengers: Doomsday" }
+          ],
+          "postCredit": { "count": 1, "type": "post" }
+        },
+        {
+          "id": "fantastic-four-1",
+          "title": "The Fantastic Four: First Steps",
+          "year": 2025,
+          "narrativeOrder": 3,
+          "releaseOrder": 48,
+          "type": "movie",
+          "summary": "Set on a retro-futuristic alternate Earth, Mister Fantastic, the Invisible Woman, the Human Torch, and the Thing must protect their world from Galactus, a cosmic being that devours planets, after his herald arrives to prepare Earth for consumption.",
+          "watchFor": [
+            { "name": "Galactus", "thisFilm": "A planet-devouring cosmic being who threatens to consume Earth.", "future": "One of the most powerful threats introduced in the MCU, with implications for future cosmic-scale stories." },
+            { "name": "The Fantastic Four join the main timeline (post-credit)", "thisFilm": "Their alternate Earth is drawn closer to the mainline MCU universe.", "future": "Sets up their crossover into Avengers: Doomsday.", "spoils": "Avengers: Doomsday" }
+          ],
+          "postCredit": { "count": 1, "type": "post" }
+        },
+        {
+          "id": "spiderman-4",
+          "title": "Spider-Man: Brand New Day",
+          "year": 2026,
+          "narrativeOrder": 4,
+          "releaseOrder": 49,
+          "type": "movie",
+          "released": false,
+          "expectedRelease": "2026",
+          "summary": "Details are under wraps ahead of release."
+        },
+        {
+          "id": "avengers-5",
+          "title": "Avengers: Doomsday",
+          "year": 2026,
+          "narrativeOrder": 5,
+          "releaseOrder": 50,
+          "type": "movie",
+          "released": false,
+          "expectedRelease": "2026",
+          "summary": "Details are under wraps ahead of release. Publicly confirmed: Robert Downey Jr. returns to the franchise playing Victor Doom, not Tony Stark."
+        },
+        {
+          "id": "avengers-6",
+          "title": "Avengers: Secret Wars",
+          "year": 2027,
+          "narrativeOrder": 6,
+          "releaseOrder": 51,
+          "type": "movie",
+          "released": false,
+          "expectedRelease": "2027",
+          "summary": "Details are under wraps ahead of release."
         }
       ]
     }
