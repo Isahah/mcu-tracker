@@ -356,6 +356,13 @@ body {
   margin-top: 0.3rem;
 }
 
+.credit-reminder {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--brass);
+  margin-top: 0.3rem;
+}
+
 /* Modal */
 .modal-backdrop {
   display: none;
@@ -417,6 +424,12 @@ body {
   border: 1px solid rgba(16, 19, 31, 0.15);
   padding: 0.3em 0.7em;
   border-radius: var(--radius);
+}
+
+.fact-chip.timeline-chip, .fact-chip.timeskip-chip {
+  border-color: var(--teal);
+  color: #245e59;
+  background: rgba(46, 139, 132, 0.08);
 }
 
 .modal-section {
@@ -616,6 +629,23 @@ body {
 .watch-toggle.is-watched {
   background: var(--teal);
   border-color: var(--teal);
+  color: #fff;
+}
+
+.credit-toggle {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  padding: 0.5em 1em;
+  border-radius: var(--radius);
+  border: 2px solid var(--brass);
+  background: transparent;
+  color: #7a5a1f;
+  cursor: pointer;
+}
+
+.credit-toggle.is-seen {
+  background: var(--brass);
+  border-color: var(--brass);
   color: #fff;
 }
 
