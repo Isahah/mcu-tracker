@@ -13,6 +13,11 @@
           "releaseOrder": 5,
           "type": "movie",
           "summary": "Set during World War II, a frail young man is transformed into a super-soldier and takes on a rogue Nazi-science division bent on world domination, ending with him frozen and lost to time.",
+          "deepDive": {
+            "plot": "In WWII, scrawny but big-hearted Steve Rogers volunteers for an experimental super-soldier program and becomes Captain America. He spends the rest of the war fighting Hydra's rogue science division, led by the Red Skull, who is chasing a mystical artifact called the Tesseract to power city-destroying weapons. In the climactic battle, Steve crashes an out-of-control plane into the Arctic ice to save the country, and wakes up decades later in the present day, having lost everything and everyone he knew.",
+            "significance": "This is the emotional and thematic starting point of the entire saga — it establishes Captain America's core values (sacrifice, decency, loyalty) that every other Avenger gets measured against, and plants the Tesseract, Hydra, and the 'man out of time' premise that echo through nearly every later film.",
+            "orderNote": "It's placed first in narrative order because, chronologically, it's simply the earliest MCU story — set in the 1940s, decades before every other film on this list."
+          },
           "watchFor": [
             { "name": "Bucky Barnes", "thisFilm": "Falls from a speeding Hydra train and is presumed dead.", "future": "Secretly recovered and brainwashed by Hydra as the Winter Soldier — reappears in Captain America: The Winter Soldier.", "spoils": "Captain America: The Winter Soldier" },
             { "name": "Red Skull", "thisFilm": "Vanishes after touching the Tesseract's energy, seemingly disintegrated.", "future": "Resurfaces as the guardian of the Soul Stone on Vormir in Avengers: Infinity War and Endgame.", "spoils": "Avengers: Infinity War / Endgame" },
@@ -29,6 +34,11 @@
           "releaseOrder": 21,
           "type": "movie",
           "summary": "Set in the 1990s, an Air Force pilot with cosmic powers gets caught in a galactic conflict and uncovers hidden memories about her past on Earth.",
+          "deepDive": {
+            "plot": "Set in the mid-1990s, an amnesiac Kree soldier named Vers discovers she's actually Carol Danvers, a former U.S. Air Force pilot who gained cosmic powers from an alien energy core. Along the way she uncovers that the 'enemy' Skrulls she's been hunting are actually refugees, and that her own Kree allies have been lying to her for years. She helps the Skrulls find a new home and leaves Earth to help them resettle across the galaxy.",
+            "significance": "Introduces one of the MCU's most powerful heroes and recontextualizes Nick Fury's early career, while quietly seeding two long-term threads: the Tesseract's origins and the Skrulls' true nature, both of which pay off years later.",
+            "orderNote": "Placed second because its 1990s setting comes right after Captain America's origin chronologically, even though it was actually the 21st film released — it's grouped here by timeline, not release date."
+          },
           "watchFor": [
             { "name": "Nick Fury's eye", "thisFilm": "Scratched by Goose the 'cat' aboard a Skrull ship.", "future": "Explains the eyepatch Fury wears in every other MCU appearance." },
             { "name": "Talos", "thisFilm": "Reveals himself as a Skrull leader seeking peace, not conquest.", "future": "Becomes a recurring ally, and is later revealed to have spent years impersonating Nick Fury.", "spoils": "Spider-Man: Far From Home" },
@@ -44,6 +54,11 @@
           "releaseOrder": 1,
           "type": "movie",
           "summary": "A billionaire weapons manufacturer is captured and forced to build a weapon, but instead builds a suit of armor and escapes, setting him on a new path.",
+          "deepDive": {
+            "plot": "Weapons manufacturer Tony Stark is captured by terrorists in Afghanistan and forced to build a weapon; instead, he secretly builds a suit of powered armor and escapes. Back home, he has a change of heart about his company's arms dealing, refines the suit into the Iron Man armor, and exposes and defeats his mentor Obadiah Stane, who tries to steal the technology and kill him.",
+            "significance": "This is the film that started the entire MCU. It establishes the tone (witty, grounded, character-first), Tony Stark as the franchise's flagship personality, and ends with the first hint that a larger team-up is coming.",
+            "orderNote": "Comes third in narrative order because, story-wise, its 2008 'present day' setting happens after Captain America's WWII era and Captain Marvel's 1995 setting, even though it was the very first MCU film ever released."
+          },
           "watchFor": [
             { "name": "Nick Fury / Avengers Initiative", "thisFilm": "Shows up in Tony's home in the film's post-credit scene.", "future": "Reveals the wider 'Avengers Initiative,' seeding the whole team-up storyline.", "spoils": "The Avengers" },
             { "name": "\"I am Iron Man\"", "thisFilm": "Tony publicly reveals himself as Iron Man instead of keeping a secret identity.", "future": "Sets a precedent of openness that shapes how he handles being a hero for the rest of the saga." }
@@ -58,6 +73,11 @@
           "releaseOrder": 2,
           "type": "movie",
           "summary": "A scientist on the run tries to control a rage-fueled transformation caused by a failed experiment, while the military hunts him down.",
+          "deepDive": {
+            "plot": "Scientist Bruce Banner, on the run and trying to cure the gamma radiation accident that turns him into the Hulk, is relentlessly hunted by the U.S. military under General Ross. After a confrontation with a soldier who injects himself with a similar serum and becomes the monstrous Abomination, Banner reluctantly transforms and defeats him, then goes into hiding, trying to control his condition.",
+            "significance": "Establishes the Hulk as a founding Avenger and introduces General Ross, whose vendetta against Banner (and later political rise) recurs across multiple future phases.",
+            "orderNote": "Sits fourth because its story unfolds in the same rough present-day period as Iron Man, just following a different thread of the world."
+          },
           "watchFor": [
             { "name": "General Ross", "thisFilm": "Leads the military manhunt for Bruce Banner.", "future": "Returns years later as U.S. Secretary of State pushing the Sokovia Accords, and eventually becomes President.", "spoils": "Captain America: Civil War / Brave New World" },
             { "name": "Emil Blonsky / Abomination", "thisFilm": "Injected with a version of the super-soldier serum, becoming the monstrous Abomination.", "future": "Resurfaces decades later, imprisoned, in Shang-Chi and She-Hulk: Attorney at Law.", "spoils": "Shang-Chi / She-Hulk" },
@@ -73,6 +93,11 @@
           "releaseOrder": 3,
           "type": "movie",
           "summary": "Facing pressure from the government and a personal crisis, a hero must deal with a new enemy seeking revenge tied to his father's past, while a former ally's ambitions grow.",
+          "deepDive": {
+            "plot": "With his health failing from palladium poisoning caused by his own arc reactor, Tony Stark faces government pressure to hand over his suit technology, a vengeful new enemy named Ivan Vanko seeking payback for his father's mistreatment by Howard Stark, and a scheming rival arms dealer, Justin Hammer, who backs Vanko's attacks.",
+            "significance": "Cures Tony's health crisis, formally introduces Black Widow and War Machine, and ends with Nick Fury officially recruiting Tony into the Avengers Initiative — a direct bridge into the team-up storyline.",
+            "orderNote": "Follows Iron Man directly since it's a straightforward sequel continuing Tony's ongoing story a couple of years later."
+          },
           "watchFor": [
             { "name": "Black Widow / Natasha Romanoff", "thisFilm": "Introduced as 'Natalie Rushman,' secretly a S.H.I.E.L.D. plant inside Stark Industries.", "future": "Becomes a founding Avenger.", "spoils": "The Avengers" },
             { "name": "Nick Fury / S.H.I.E.L.D.", "thisFilm": "Formally recruits Tony into the Avengers Initiative by film's end.", "future": "Sets the team-building plot of The Avengers in motion.", "spoils": "The Avengers" },
@@ -88,6 +113,11 @@
           "releaseOrder": 4,
           "type": "movie",
           "summary": "A powerful but arrogant warrior is cast out of his home realm and stripped of his power, learning humility on Earth while a threat brews back home.",
+          "deepDive": {
+            "plot": "Arrogant Asgardian prince Thor is stripped of his power and banished to Earth by his father Odin as punishment for reigniting an ancient war. Humbled by his time among humans, he earns back his hammer Mjolnir and returns home just in time to stop his adopted brother Loki, who has seized the throne and nearly destroyed a rival realm to prove himself.",
+            "significance": "Opens up the cosmic/godlike side of the MCU and introduces Loki, who becomes one of the franchise's most important recurring characters and eventually one of its best villains-turned-heroes.",
+            "orderNote": "Placed sixth because its story wraps up right before The Avengers, with Loki's escape directly setting up that film's plot."
+          },
           "watchFor": [
             { "name": "Loki", "thisFilm": "Learns the truth about his heritage and falls into the void after losing his claim to the throne.", "future": "Resurfaces as the villain of The Avengers.", "spoils": "The Avengers" },
             { "name": "Hawkeye (cameo)", "thisFilm": "Appears briefly as a S.H.I.E.L.D. sniper watching Thor.", "future": "Joins the team properly in The Avengers.", "spoils": "The Avengers" },
@@ -103,6 +133,11 @@
           "releaseOrder": 6,
           "type": "movie",
           "summary": "A team of powerful individuals is assembled to stop a stolen artifact from being used to open a portal for an invading force.",
+          "deepDive": {
+            "plot": "After Loki steals the Tesseract and a mind-controlling scepter, Nick Fury assembles Iron Man, Captain America, Thor, Hulk, Black Widow, and Hawkeye to stop him before he can open a portal for an alien invasion force called the Chitauri. The team, initially fractured by ego and mistrust, comes together in New York to close the portal and defeat the invasion, cementing them as Earth's protectors.",
+            "significance": "The culmination of Phase One — this is the movie that proved a shared cinematic universe could actually work, and it sets the template (a team-up event capping each phase) that the franchise repeats for over a decade.",
+            "orderNote": "Placed last because it's the direct payoff of every setup planted in the previous six films — Loki's arc, the Tesseract, and each hero's introduction all converge here."
+          },
           "watchFor": [
             { "name": "Loki's scepter", "thisFilm": "Used to control minds and open the portal for the Chitauri invasion.", "future": "Later revealed to contain the Mind Stone — becomes Vision, and gives Wanda and Pietro their powers, in Age of Ultron.", "spoils": "Avengers: Age of Ultron" },
             { "name": "Thanos (post-credit)", "thisFilm": "Shown smiling after learning of the Chitauri's defeat.", "future": "First tease of the Mad Titan, who becomes the driving antagonist of the whole Infinity Saga.", "spoils": "Avengers: Infinity War / Endgame" },
@@ -959,26 +994,37 @@
           "releaseOrder": 49,
           "type": "movie",
           "released": false,
-          "expectedRelease": "2026",
+          "expectedRelease": "July 31, 2026",
           "summary": "Details are under wraps ahead of release."
+        },
+        {
+          "id": "visionquest",
+          "title": "VisionQuest",
+          "year": 2026,
+          "narrativeOrder": 5,
+          "releaseOrder": 50,
+          "type": "series",
+          "released": false,
+          "expectedRelease": "Fall 2026",
+          "summary": "Details are under wraps ahead of release. Follows the White Vision introduced in WandaVision on a journey to reclaim his identity and memories."
         },
         {
           "id": "avengers-5",
           "title": "Avengers: Doomsday",
           "year": 2026,
-          "narrativeOrder": 5,
-          "releaseOrder": 50,
+          "narrativeOrder": 6,
+          "releaseOrder": 51,
           "type": "movie",
           "released": false,
-          "expectedRelease": "2026",
+          "expectedRelease": "December 18, 2026",
           "summary": "Details are under wraps ahead of release. Publicly confirmed: Robert Downey Jr. returns to the franchise playing Victor Doom, not Tony Stark."
         },
         {
           "id": "avengers-6",
           "title": "Avengers: Secret Wars",
           "year": 2027,
-          "narrativeOrder": 6,
-          "releaseOrder": 51,
+          "narrativeOrder": 7,
+          "releaseOrder": 52,
           "type": "movie",
           "released": false,
           "expectedRelease": "2027",

@@ -167,6 +167,11 @@ body {
   max-width: 780px;
   margin: 0 auto;
   padding: 2rem 1.5rem 5rem;
+  transition: max-width 0.15s ease;
+}
+
+.dossier.wide {
+  max-width: 980px;
 }
 
 .dossier-header {
@@ -369,7 +374,7 @@ body {
 .modal {
   background: var(--paper);
   color: var(--ink);
-  max-width: 560px;
+  max-width: 640px;
   width: 100%;
   max-height: 85vh;
   overflow-y: auto;
@@ -397,15 +402,68 @@ body {
   margin: 0 0 0.2rem;
 }
 
-.modal-year {
+.quick-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.fact-chip {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.8rem;
+  font-size: 0.74rem;
   color: #555;
-  margin-bottom: 1rem;
+  background: rgba(16, 19, 31, 0.06);
+  border: 1px solid rgba(16, 19, 31, 0.15);
+  padding: 0.3em 0.7em;
+  border-radius: var(--radius);
 }
 
 .modal-section {
   margin-top: 1.2rem;
+}
+
+.modal-section + .modal-section {
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(16, 19, 31, 0.08);
+}
+
+.deepdive-toggle {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  background: rgba(46, 139, 132, 0.12);
+  border: 1px solid var(--teal);
+  color: #245e59;
+  padding: 0.5em 0.9em;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.deepdive-toggle:hover { background: rgba(46, 139, 132, 0.22); }
+
+.deepdive-content {
+  margin-top: 0.8rem;
+  padding: 1rem 1.2rem;
+  background: rgba(46, 139, 132, 0.05);
+  border: 1px solid rgba(46, 139, 132, 0.3);
+  border-radius: var(--radius);
+}
+
+.deepdive-sub { margin-bottom: 1rem; }
+.deepdive-sub:last-child { margin-bottom: 0; }
+
+.deepdive-sub h5 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #245e59;
+  margin: 0 0 0.3rem;
+}
+
+.deepdive-sub p {
+  margin: 0;
+  line-height: 1.55;
+  font-size: 0.92rem;
 }
 
 .modal-section h4 {
@@ -601,14 +659,14 @@ body {
   background: var(--paper);
   color: var(--ink);
   border-radius: var(--radius);
-  padding: 2rem;
+  padding: 2.4rem 2.6rem;
   box-shadow: 0 8px 24px rgba(0,0,0,0.35);
 }
 
 .detail-card h3 {
   font-family: 'Special Elite', monospace;
-  font-size: 1.5rem;
-  margin: 0 0 0.2rem;
+  font-size: 1.7rem;
+  margin: 0 0 0.3rem;
 }
 
 /* Episode picker (inside the series modal) */

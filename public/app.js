@@ -56,6 +56,7 @@ function showScreen(name) {
   el('screen-menu').hidden = name !== 'menu';
   el('screen-phase').hidden = name !== 'phase';
   el('screen-detail').hidden = name !== 'detail';
+  document.querySelector('.dossier').classList.toggle('wide', name === 'detail');
 }
 
 // Finds a movie or episode by id anywhere in the data, along with its parent phase
@@ -149,7 +150,7 @@ function renderPhase() {
     const card = document.createElement('div');
     card.className = 'case-card' + (isUnreleased ? ' unreleased' : (watched === total && total > 0 ? ' watched' : ''));
     card.addEventListener('click', () => {
-      if (isSeries) {
+      if (isSeries && !isUnreleased) {
         openEpisodeModal(entry);
       } else {
         location.hash = `watch/${entry.id}`;
@@ -249,6 +250,55 @@ function watchForBlockHtml(entry) {
   `;
 }
 
+// Builds the optional "Deep Dive" section: a fuller plot rundown, why it matters, and why
+// it's placed here in narrative order. Collapsed by default since a full plot is a bigger
+// spoiler than the one-line teaser summary.
+function deepDiveBlockHtml(entry) {
+  if (!entry.deepDive) return '';
+  const { plot, significance, orderNote } = entry.deepDive;
+  return `
+    <div class="modal-section deepdive-block">
+      <button class="deepdive-toggle" data-uid="${entry.id}">📖 Show Full Plot &amp; Context</button>
+      <div class="deepdive-content" data-uid="${entry.id}" hidden>
+        ${plot ? `<div class="deepdive-sub"><h5>The Full Plot</h5><p>${plot}</p></div>` : ''}
+        ${significance ? `<div class="deepdive-sub"><h5>Why It Matters</h5><p>${significance}</p></div>` : ''}
+        ${orderNote ? `<div class="deepdive-sub"><h5>Why This Order</h5><p>${orderNote}</p></div>` : ''}
+      </div>
+    </div>
+  `;
+}
+
+function bindDeepDiveToggle(container) {
+  container.querySelectorAll('.deepdive-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const uid = btn.dataset.uid;
+      const panel = container.querySelector(`.deepdive-content[data-uid="${uid}"]`);
+      panel.hidden = !panel.hidden;
+      btn.textContent = panel.hidden ? '📖 Show Full Plot & Context' : '📖 Hide Full Plot & Context';
+    });
+  });
+}
+
+// Small "quick facts" chip row shown near the top of a detail page / series modal
+function quickFactsHtml(item, series, season) {
+  if (series) {
+    return `
+      <div class="quick-facts">
+        <span class="fact-chip">${series.year}</span>
+        <span class="fact-chip">Season ${season.seasonNumber}</span>
+        <span class="fact-chip">Episode ${item.episodeNumber}</span>
+      </div>
+    `;
+  }
+  return `
+    <div class="quick-facts">
+      <span class="fact-chip">${item.year}</span>
+      <span class="fact-chip">Narrative #${item.narrativeOrder}</span>
+      ${item.releaseOrder ? `<span class="fact-chip">Release #${item.releaseOrder}</span>` : ''}
+    </div>
+  `;
+}
+
 function bindSpoilerToggles(container) {
   container.querySelectorAll('.spoiler-toggle').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -270,12 +320,14 @@ function openEpisodeModal(series) {
 
   content.innerHTML = `
     <h3>${series.title}</h3>
-    <div class="modal-year">${series.year} · Narrative #${series.narrativeOrder}</div>
+    ${quickFactsHtml(series, null, null)}
 
     <div class="modal-section">
       <h4>Summary</h4>
       <p>${series.summary}</p>
     </div>
+
+    ${deepDiveBlockHtml(series)}
 
     ${watchForBlockHtml(series)}
 
@@ -291,6 +343,7 @@ function openEpisodeModal(series) {
   `;
 
   bindSpoilerToggles(content);
+  bindDeepDiveToggle(content);
   renderRatingControl(series, sp.rating || 0, 'series-rating-control');
 
   const seasonListEl = el('season-list');
@@ -350,9 +403,6 @@ function renderDetail({ item, phase, series, season }) {
   const isUnreleased = item.released === false;
 
   const titleHtml = series ? `${series.title} — S${season.seasonNumber}E${item.episodeNumber}: ${item.title}` : item.title;
-  const metaHtml = series
-    ? `${series.year} · Season ${season.seasonNumber}, Episode ${item.episodeNumber}`
-    : `${item.year} · Narrative #${item.narrativeOrder} · Release #${item.releaseOrder}`;
 
   const controlsHtml = isUnreleased
     ? `<div class="modal-section"><span class="unreleased-note">🕒 Not yet released${item.expectedRelease ? ` — expected ${item.expectedRelease}` : ''}. Check back after it premieres to log it here.</span></div>`
@@ -368,12 +418,14 @@ function renderDetail({ item, phase, series, season }) {
 
   el('detail-content').innerHTML = `
     <h3>${titleHtml}</h3>
-    <div class="modal-year">${metaHtml}</div>
+    ${quickFactsHtml(item, series, season)}
 
     <div class="modal-section">
       <h4>Summary</h4>
       <p>${item.summary}</p>
     </div>
+
+    ${deepDiveBlockHtml(item)}
 
     ${watchForBlockHtml(item)}
 
@@ -383,6 +435,7 @@ function renderDetail({ item, phase, series, season }) {
   `;
 
   bindSpoilerToggles(el('detail-content'));
+  bindDeepDiveToggle(el('detail-content'));
 
   if (!isUnreleased) {
     renderRatingControl(item, p.rating || 0, 'rating-control');
