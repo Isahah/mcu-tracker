@@ -172,10 +172,12 @@ function renderPhase() {
       `;
     } else {
       const p = progress[entry.id] || {};
+      const needsCreditReminder = p.watched && entry.postCredit && entry.postCredit.count > 0 && !p.postCreditSeen;
       statusHtml = `
         ${p.watched
           ? `<span class="watched-stamp">VIEWED</span>`
           : `<span class="unwatched-mark">unwatched</span>`}
+        ${needsCreditReminder ? `<div class="credit-reminder">🎬 catch the credit scene</div>` : ''}
         ${p.rating ? `<div class="rating-display">${formatRating(p.rating)}/10</div>` : ''}
       `;
     }
@@ -211,10 +213,17 @@ function creditLabel(postCredit) {
 }
 
 function creditText(postCredit) {
-  if (postCredit.count === 0) return 'No credit scene — safe to leave once it ends.';
-  if (postCredit.type === 'mid+post') return `Has both a mid-credit and a post-credit scene (${postCredit.count} total) — stay through the whole credits.`;
-  if (postCredit.type === 'mid') return `Has 1 mid-credit scene — you can leave once credits start rolling.`;
-  return `Has ${postCredit.count} post-credit scene${postCredit.count > 1 ? 's' : ''} — stay through to the very end.`;
+  let base;
+  if (postCredit.count === 0) {
+    base = 'No credit scene — safe to leave once it ends.';
+  } else if (postCredit.type === 'mid+post') {
+    base = `Has both a mid-credit and a post-credit scene (${postCredit.count} total) — stay through the whole credits.`;
+  } else if (postCredit.type === 'mid') {
+    base = `Has 1 mid-credit scene — you can leave once credits start rolling.`;
+  } else {
+    base = `Has ${postCredit.count} post-credit scene${postCredit.count > 1 ? 's' : ''} — stay through to the very end.`;
+  }
+  return postCredit.timing ? `${base} ${postCredit.timing}` : base;
 }
 
 function formatRating(rating) {
@@ -279,6 +288,15 @@ function bindDeepDiveToggle(container) {
   });
 }
 
+// In-universe setting chips ("Set: Spring 2023", "⏳ 5-year time skip") — only rendered
+// when the data actually specifies them, since guessed dates aren't worth showing
+function timelineChipsHtml(entry) {
+  if (!entry.inUniverseSetting) return '';
+  let html = `<span class="fact-chip timeline-chip">📅 Set: ${entry.inUniverseSetting}</span>`;
+  if (entry.timeSkip) html += `<span class="fact-chip timeskip-chip">⏳ ${entry.timeSkip}</span>`;
+  return html;
+}
+
 // Small "quick facts" chip row shown near the top of a detail page / series modal
 function quickFactsHtml(item, series, season) {
   if (series) {
@@ -287,6 +305,7 @@ function quickFactsHtml(item, series, season) {
         <span class="fact-chip">${series.year}</span>
         <span class="fact-chip">Season ${season.seasonNumber}</span>
         <span class="fact-chip">Episode ${item.episodeNumber}</span>
+        ${timelineChipsHtml(series)}
       </div>
     `;
   }
@@ -295,6 +314,7 @@ function quickFactsHtml(item, series, season) {
       <span class="fact-chip">${item.year}</span>
       <span class="fact-chip">Narrative #${item.narrativeOrder}</span>
       ${item.releaseOrder ? `<span class="fact-chip">Release #${item.releaseOrder}</span>` : ''}
+      ${timelineChipsHtml(item)}
     </div>
   `;
 }
@@ -366,12 +386,14 @@ function openEpisodeModal(series) {
 
     season.episodes.forEach(ep => {
       const p = progress[ep.id] || {};
+      const needsCreditReminder = p.watched && ep.postCredit && ep.postCredit.count > 0 && !p.postCreditSeen;
       const row = document.createElement('button');
       row.className = 'episode-row' + (p.watched ? ' watched' : '');
       row.innerHTML = `
         <span class="episode-num">${ep.episodeNumber}.</span>
         <span class="episode-title">${ep.title}</span>
         ${p.watched ? `<span class="watched-stamp">VIEWED</span>` : ''}
+        ${needsCreditReminder ? `<span class="credit-reminder">🎬</span>` : ''}
       `;
       row.addEventListener('click', () => {
         closeModal();
@@ -403,6 +425,13 @@ function renderDetail({ item, phase, series, season }) {
   const isUnreleased = item.released === false;
 
   const titleHtml = series ? `${series.title} — S${season.seasonNumber}E${item.episodeNumber}: ${item.title}` : item.title;
+  const hasCreditScene = item.postCredit && item.postCredit.count > 0;
+
+  const creditToggleHtml = hasCreditScene ? `
+    <button class="credit-toggle ${p.postCreditSeen ? 'is-seen' : ''}" id="credit-toggle-btn">
+      ${p.postCreditSeen ? '🎬 Credit Scene Seen' : '🎬 Mark Credit Scene Seen'}
+    </button>
+  ` : '';
 
   const controlsHtml = isUnreleased
     ? `<div class="modal-section"><span class="unreleased-note">🕒 Not yet released${item.expectedRelease ? ` — expected ${item.expectedRelease}` : ''}. Check back after it premieres to log it here.</span></div>`
@@ -411,6 +440,7 @@ function renderDetail({ item, phase, series, season }) {
         <button class="watch-toggle ${p.watched ? 'is-watched' : ''}" id="watch-toggle-btn">
           ${p.watched ? '✓ Watched' : 'Mark as Watched'}
         </button>
+        ${creditToggleHtml}
         <div class="rating-control" id="rating-control"></div>
         ${p.watched && p.watchedAt ? `<div class="watched-timestamp">Logged: ${new Date(p.watchedAt).toLocaleString()}</div>` : ''}
       </div>
@@ -444,6 +474,14 @@ function renderDetail({ item, phase, series, season }) {
       progress[item.id] = updated;
       renderDetail({ item, phase, series, season });
     });
+
+    if (hasCreditScene) {
+      el('credit-toggle-btn').addEventListener('click', async () => {
+        const updated = await updateProgress(item.id, { postCreditSeen: !p.postCreditSeen });
+        progress[item.id] = updated;
+        renderDetail({ item, phase, series, season });
+      });
+    }
   }
 }
 
