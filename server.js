@@ -6,6 +6,7 @@ const app = express();
 const PORT = 3939;
 
 const MOVIES_PATH = path.join(__dirname, 'data', 'movies.json');
+const CHARACTERS_PATH = path.join(__dirname, 'data', 'characters.json');
 const PROGRESS_PATH = path.join(__dirname, 'data', 'progress.json');
 
 app.use(express.json());
@@ -25,6 +26,12 @@ function saveProgress(progress) {
 // Get all movie/phase data
 app.get('/api/phases', (req, res) => {
   const data = JSON.parse(fs.readFileSync(MOVIES_PATH, 'utf-8'));
+  res.json(data);
+});
+
+// Get the character database
+app.get('/api/characters', (req, res) => {
+  const data = JSON.parse(fs.readFileSync(CHARACTERS_PATH, 'utf-8'));
   res.json(data);
 });
 

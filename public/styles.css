@@ -79,7 +79,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-#screen-menu[hidden], #screen-phase[hidden] { display: none; }
+#screen-menu[hidden], #screen-phase[hidden], #screen-characters[hidden] { display: none; }
 
 .menu-intro {
   text-align: center;
@@ -147,6 +147,111 @@ body {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.7rem;
   white-space: nowrap;
+}
+
+/* Character Database entry card on the main menu */
+.index-card {
+  margin-top: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 1.1rem 1.3rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+
+.index-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.45);
+}
+
+.index-card-name {
+  font-family: 'Special Elite', monospace;
+  font-size: 1.15rem;
+}
+
+.index-card-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: #555;
+  margin-top: 0.2rem;
+}
+
+.index-card-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: #555;
+  white-space: nowrap;
+}
+
+/* Character database screen */
+.db-subnote {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.76rem;
+  color: #6b6a60;
+  margin: 0.8rem 0 0;
+}
+
+.character-grid {
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 0.9rem;
+}
+
+.character-card {
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: var(--radius);
+  padding: 0.8rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.character-portrait {
+  aspect-ratio: 1 / 1;
+  background: rgba(16, 19, 31, 0.06);
+  border: 1px dashed rgba(16, 19, 31, 0.3);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.character-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portrait-placeholder {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  color: #8a8a82;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.character-name {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.98rem;
+  line-height: 1.25;
+}
+
+.character-desc {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: #3a3a33;
 }
 
 .back-btn {

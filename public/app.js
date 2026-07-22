@@ -1,18 +1,25 @@
 let phasesData = [];
+let charactersData = [];
 let progress = {};
 let activePhaseId = null;
 
 const el = (id) => document.getElementById(id);
 
 async function init() {
-  const [phasesRes, progressRes] = await Promise.all([
+  const [phasesRes, progressRes, charactersRes] = await Promise.all([
     fetch('/api/phases').then(r => r.json()),
-    fetch('/api/progress').then(r => r.json())
+    fetch('/api/progress').then(r => r.json()),
+    fetch('/api/characters').then(r => r.json())
   ]);
   phasesData = phasesRes.phases;
   progress = progressRes;
+  charactersData = charactersRes.characters;
 
   el('back-btn').addEventListener('click', () => {
+    location.hash = '';
+  });
+
+  el('characters-back-btn').addEventListener('click', () => {
     location.hash = '';
   });
 
@@ -39,6 +46,13 @@ function route() {
     }
   }
 
+  if (parts[0] === 'characters') {
+    showScreen('characters');
+    renderCharacters();
+    window.scrollTo(0, 0);
+    return;
+  }
+
   const phase = phasesData.find(p => p.id === parts[0]);
   if (phase) {
     activePhaseId = phase.id;
@@ -56,7 +70,8 @@ function showScreen(name) {
   el('screen-menu').hidden = name !== 'menu';
   el('screen-phase').hidden = name !== 'phase';
   el('screen-detail').hidden = name !== 'detail';
-  document.querySelector('.dossier').classList.toggle('wide', name === 'detail');
+  el('screen-characters').hidden = name !== 'characters';
+  document.querySelector('.dossier').classList.toggle('wide', name === 'detail' || name === 'characters');
 }
 
 // Finds a movie or episode by id anywhere in the data, along with its parent phase
@@ -119,6 +134,31 @@ function renderMenu() {
         </div>
         <span class="phase-card-count">${watched} / ${total}</span>
       </div>
+    `;
+    grid.appendChild(card);
+  });
+
+  el('menu-character-count').textContent = `${charactersData.length} files on record`;
+}
+
+// Character database: dense grid of personnel-file cards. Each card reserves a portrait
+// slot (renders the image if the data ever gets one, otherwise a "NO PHOTO ON FILE"
+// placeholder) above the name and a spoiler-light description.
+function renderCharacters() {
+  const grid = el('character-grid');
+  grid.innerHTML = '';
+
+  charactersData.forEach(c => {
+    const card = document.createElement('div');
+    card.className = 'character-card';
+    card.innerHTML = `
+      <div class="character-portrait">
+        ${c.image
+          ? `<img src="${c.image}" alt="${c.name}">`
+          : `<span class="portrait-placeholder">NO PHOTO<br>ON FILE</span>`}
+      </div>
+      <div class="character-name">${c.name}</div>
+      <p class="character-desc">${c.description}</p>
     `;
     grid.appendChild(card);
   });

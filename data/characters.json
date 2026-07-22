@@ -1,0 +1,599 @@
+{
+  "characters": [
+    {
+      "id": "tony-stark",
+      "name": "Tony Stark / Iron Man",
+      "description": "Genius billionaire weapons inventor who builds himself a high-tech suit of armor and kicks off the age of heroes."
+    },
+    {
+      "id": "steve-rogers",
+      "name": "Steve Rogers / Captain America",
+      "description": "A scrawny kid from Brooklyn turned WWII super-soldier; the moral backbone of the Avengers."
+    },
+    {
+      "id": "thor",
+      "name": "Thor",
+      "description": "The Asgardian God of Thunder, heir to the throne, armed with the enchanted hammer Mjolnir."
+    },
+    {
+      "id": "bruce-banner",
+      "name": "Bruce Banner / Hulk",
+      "description": "A brilliant scientist whose gamma-radiation accident turns him into a giant green rage monster whenever he loses control."
+    },
+    {
+      "id": "natasha-romanoff",
+      "name": "Natasha Romanoff / Black Widow",
+      "description": "A former Russian spy and assassin turned S.H.I.E.L.D. agent, working to wipe the red out of her ledger."
+    },
+    {
+      "id": "clint-barton",
+      "name": "Clint Barton / Hawkeye",
+      "description": "S.H.I.E.L.D.'s master archer — the Avenger with no powers, just aim that never misses and a family to protect."
+    },
+    {
+      "id": "nick-fury",
+      "name": "Nick Fury",
+      "description": "Director of S.H.I.E.L.D. and architect of the Avengers Initiative. Always at least three secrets deep."
+    },
+    {
+      "id": "maria-hill",
+      "name": "Maria Hill",
+      "description": "Fury's steely, hyper-competent second-in-command."
+    },
+    {
+      "id": "phil-coulson",
+      "name": "Phil Coulson",
+      "description": "The unflappable S.H.I.E.L.D. agent who ties the early films together — and the Avengers' biggest fan."
+    },
+    {
+      "id": "loki",
+      "name": "Loki",
+      "description": "Thor's adopted brother, the God of Mischief — sometimes villain, sometimes ally, always scheming."
+    },
+    {
+      "id": "sam-wilson",
+      "name": "Sam Wilson / Falcon",
+      "description": "A pararescue veteran with a winged flight suit, and Steve Rogers' most loyal partner."
+    },
+    {
+      "id": "bucky-barnes",
+      "name": "Bucky Barnes",
+      "description": "Steve Rogers' childhood best friend and WWII brother-in-arms, whose story doesn't end where the history books say it does."
+    },
+    {
+      "id": "james-rhodes",
+      "name": "James \"Rhodey\" Rhodes / War Machine",
+      "description": "Air Force officer, Tony Stark's best friend, and pilot of his own heavily armed suit of armor."
+    },
+    {
+      "id": "wanda-maximoff",
+      "name": "Wanda Maximoff / Scarlet Witch",
+      "description": "A Sokovian orphan who gained telekinetic and mind-warping powers through HYDRA experiments with the Mind Stone."
+    },
+    {
+      "id": "pietro-maximoff",
+      "name": "Pietro Maximoff / Quicksilver",
+      "description": "Wanda's twin brother, fast enough that the rest of the world seems frozen."
+    },
+    {
+      "id": "vision",
+      "name": "Vision",
+      "description": "A synthetic being born from an AI and the Mind Stone — thoughtful, immensely powerful, and quietly human."
+    },
+    {
+      "id": "peter-parker",
+      "name": "Peter Parker / Spider-Man",
+      "description": "A Queens high-schooler juggling homework and web-slinging, taken under Tony Stark's wing."
+    },
+    {
+      "id": "stephen-strange",
+      "name": "Stephen Strange / Doctor Strange",
+      "description": "An arrogant, world-class surgeon who loses the use of his hands and finds the mystic arts instead."
+    },
+    {
+      "id": "tchalla",
+      "name": "T'Challa / Black Panther",
+      "description": "King and protector of Wakanda, the hidden, hyper-advanced African nation."
+    },
+    {
+      "id": "carol-danvers",
+      "name": "Carol Danvers / Captain Marvel",
+      "description": "A U.S. Air Force pilot turned cosmic powerhouse, caught in the middle of an alien war."
+    },
+    {
+      "id": "scott-lang",
+      "name": "Scott Lang / Ant-Man",
+      "description": "An ex-con and well-meaning dad who inherits a suit that can shrink him to insect size."
+    },
+    {
+      "id": "hope-van-dyne",
+      "name": "Hope van Dyne / Wasp",
+      "description": "Hank Pym's fiercely capable daughter, who fights with wings, blasters, and shrinking tech of her own."
+    },
+    {
+      "id": "shang-chi",
+      "name": "Shang-Chi",
+      "description": "A San Francisco valet with a hidden past as the meticulously trained son of a legendary warlord."
+    },
+    {
+      "id": "kamala-khan",
+      "name": "Kamala Khan / Ms. Marvel",
+      "description": "A Jersey City teen and Avengers superfan whose grandmother's bangle unlocks cosmic light powers."
+    },
+    {
+      "id": "jennifer-walters",
+      "name": "Jennifer Walters / She-Hulk",
+      "description": "Bruce Banner's cousin — a lawyer who gets Hulk powers and would really rather just do her job."
+    },
+    {
+      "id": "moon-knight",
+      "name": "Marc Spector / Moon Knight",
+      "description": "A mercenary sharing his body with a mild-mannered gift-shop clerk, serving an Egyptian moon god as its avatar."
+    },
+    {
+      "id": "kate-bishop",
+      "name": "Kate Bishop",
+      "description": "A 22-year-old archery prodigy who idolizes Hawkeye and stumbles headfirst into his old mess."
+    },
+    {
+      "id": "yelena-belova",
+      "name": "Yelena Belova",
+      "description": "Natasha's little \"sister\" from her spy days — funnier, arguably deadlier, and done being used."
+    },
+    {
+      "id": "monica-rambeau",
+      "name": "Monica Rambeau",
+      "description": "Daughter of Carol Danvers' best friend, who grows up to become a S.W.O.R.D. agent with a bigger role ahead of her."
+    },
+    {
+      "id": "america-chavez",
+      "name": "America Chavez",
+      "description": "A teenager with the unique power to punch holes between universes — a power she can't control."
+    },
+    {
+      "id": "jane-foster",
+      "name": "Jane Foster",
+      "description": "The astrophysicist who discovers Thor — and whose story with the hammer isn't over."
+    },
+    {
+      "id": "valkyrie",
+      "name": "Valkyrie",
+      "description": "A hard-drinking former member of Asgard's legendary all-female warrior order."
+    },
+    {
+      "id": "matt-murdock",
+      "name": "Matt Murdock / Daredevil",
+      "description": "A blind Hell's Kitchen lawyer with radar-sharp senses and a nighttime hobby."
+    },
+    {
+      "id": "maya-lopez",
+      "name": "Maya Lopez / Echo",
+      "description": "A deaf Choctaw enforcer in New York's underworld who can perfectly mirror any fighting style she sees."
+    },
+    {
+      "id": "riri-williams",
+      "name": "Riri Williams / Ironheart",
+      "description": "An MIT genius building her own suit of armor."
+    },
+    {
+      "id": "cassie-lang",
+      "name": "Cassie Lang",
+      "description": "Scott's daughter, who grows up idolizing her dad and wanting in on the hero business."
+    },
+    {
+      "id": "peter-quill",
+      "name": "Peter Quill / Star-Lord",
+      "description": "A human abducted from Earth as a kid, now a wisecracking outlaw with a walkman full of '70s hits."
+    },
+    {
+      "id": "gamora",
+      "name": "Gamora",
+      "description": "The deadliest woman in the galaxy, raised as a weapon by Thanos and looking for a way out."
+    },
+    {
+      "id": "drax",
+      "name": "Drax the Destroyer",
+      "description": "A relentlessly literal-minded warrior on a quest to avenge his murdered family."
+    },
+    {
+      "id": "rocket",
+      "name": "Rocket",
+      "description": "A genetically engineered raccoon: weapons expert, ace pilot, and professional cynic."
+    },
+    {
+      "id": "groot",
+      "name": "Groot",
+      "description": "A walking tree with a three-word vocabulary and a heart bigger than his trunk."
+    },
+    {
+      "id": "nebula",
+      "name": "Nebula",
+      "description": "Thanos' other daughter, part machine, driven by rivalry with Gamora and rage at her father."
+    },
+    {
+      "id": "mantis",
+      "name": "Mantis",
+      "description": "An empath who can feel and alter emotions with a touch — naive, gentle, and surprisingly funny."
+    },
+    {
+      "id": "yondu",
+      "name": "Yondu Udonta",
+      "description": "The blue-skinned Ravager captain who \"raised\" Peter Quill, armed with a whistle-controlled arrow."
+    },
+    {
+      "id": "kraglin",
+      "name": "Kraglin",
+      "description": "Yondu's scrappy, endlessly loyal first mate."
+    },
+    {
+      "id": "adam-warlock",
+      "name": "Adam Warlock",
+      "description": "A golden artificial being engineered by the Sovereign to be perfect — and decanted a little early."
+    },
+    {
+      "id": "pepper-potts",
+      "name": "Pepper Potts",
+      "description": "Tony Stark's indispensable right hand, and the one person who can actually manage him."
+    },
+    {
+      "id": "happy-hogan",
+      "name": "Happy Hogan",
+      "description": "Stark's driver, head of security, and reluctant den mother to younger heroes."
+    },
+    {
+      "id": "peggy-carter",
+      "name": "Peggy Carter",
+      "description": "A founding agent of S.H.I.E.L.D. and the great love of Steve Rogers' life."
+    },
+    {
+      "id": "sharon-carter",
+      "name": "Sharon Carter",
+      "description": "Peggy's niece — a highly trained agent who keeps ending up on the wrong side of official orders."
+    },
+    {
+      "id": "howard-stark",
+      "name": "Howard Stark",
+      "description": "Tony's father: inventor, wartime industrialist, and a founder of S.H.I.E.L.D."
+    },
+    {
+      "id": "wong",
+      "name": "Wong",
+      "description": "Master of the mystic arts and keeper of Kamar-Taj's library — and eventually far more than a sidekick."
+    },
+    {
+      "id": "ancient-one",
+      "name": "The Ancient One",
+      "description": "The enigmatic Sorcerer Supreme who takes Stephen Strange as a student."
+    },
+    {
+      "id": "karl-mordo",
+      "name": "Karl Mordo",
+      "description": "A devout master of Kamar-Taj and Strange's first ally in the mystic arts."
+    },
+    {
+      "id": "heimdall",
+      "name": "Heimdall",
+      "description": "The all-seeing guardian of Asgard's Bifrost bridge."
+    },
+    {
+      "id": "odin",
+      "name": "Odin",
+      "description": "All-Father of Asgard, whose long reign hides some old secrets."
+    },
+    {
+      "id": "korg",
+      "name": "Korg",
+      "description": "A soft-spoken gladiator made of rocks, with a gentle voice and a revolutionary streak."
+    },
+    {
+      "id": "hank-pym",
+      "name": "Hank Pym",
+      "description": "The original Ant-Man — a brilliant, prickly scientist guarding the secret of the Pym Particle."
+    },
+    {
+      "id": "janet-van-dyne",
+      "name": "Janet van Dyne",
+      "description": "Hank's wife and the original Wasp, lost to the Quantum Realm decades ago."
+    },
+    {
+      "id": "luis",
+      "name": "Luis",
+      "description": "Scott's ex-cellmate and business partner, teller of the MCU's most elaborate secondhand stories."
+    },
+    {
+      "id": "okoye",
+      "name": "Okoye",
+      "description": "General of the Dora Milaje, Wakanda's elite royal guard, and the definition of loyalty."
+    },
+    {
+      "id": "shuri",
+      "name": "Shuri",
+      "description": "T'Challa's little sister and Wakanda's smartest scientist."
+    },
+    {
+      "id": "nakia",
+      "name": "Nakia",
+      "description": "A Wakandan spy and T'Challa's former love, who believes Wakanda should open up and help the world."
+    },
+    {
+      "id": "mbaku",
+      "name": "M'Baku",
+      "description": "Leader of Wakanda's mountain-dwelling Jabari tribe — a rival with his own strict code of honor."
+    },
+    {
+      "id": "ramonda",
+      "name": "Ramonda",
+      "description": "Queen mother of Wakanda."
+    },
+    {
+      "id": "everett-ross",
+      "name": "Everett Ross",
+      "description": "A sharp CIA agent who keeps finding himself tangled up in Wakandan affairs."
+    },
+    {
+      "id": "mj",
+      "name": "Michelle \"MJ\" Jones",
+      "description": "Peter Parker's sardonic classmate — far too observant for anyone's good."
+    },
+    {
+      "id": "ned-leeds",
+      "name": "Ned Leeds",
+      "description": "Peter's best friend and dedicated \"guy in the chair.\""
+    },
+    {
+      "id": "may-parker",
+      "name": "May Parker",
+      "description": "Peter's aunt, guardian, and moral compass."
+    },
+    {
+      "id": "darcy-lewis",
+      "name": "Darcy Lewis",
+      "description": "Jane Foster's snarky intern, eventually a doctor of astrophysics in her own right."
+    },
+    {
+      "id": "jimmy-woo",
+      "name": "Jimmy Woo",
+      "description": "An earnest FBI agent with close-up magic aspirations."
+    },
+    {
+      "id": "talos",
+      "name": "Talos",
+      "description": "A commander of the shapeshifting alien Skrulls."
+    },
+    {
+      "id": "katy-chen",
+      "name": "Katy Chen",
+      "description": "Shang-Chi's best friend, dragged from parking cars into world-saving."
+    },
+    {
+      "id": "xu-xialing",
+      "name": "Xu Xialing",
+      "description": "Shang-Chi's estranged sister, self-taught because no one would train her."
+    },
+    {
+      "id": "alexei-shostakov",
+      "name": "Alexei Shostakov / Red Guardian",
+      "description": "Russia's washed-up super-soldier answer to Captain America — loud, proud, and past his prime."
+    },
+    {
+      "id": "melina-vostokoff",
+      "name": "Melina Vostokoff",
+      "description": "A veteran Black Widow and brilliant scientist from Natasha's fake childhood family."
+    },
+    {
+      "id": "layla-el-faouly",
+      "name": "Layla El-Faouly",
+      "description": "An adventurer and archaeologist tangled up in Marc Spector's past."
+    },
+    {
+      "id": "mobius",
+      "name": "Mobius",
+      "description": "A TVA analyst with a soft spot for jet skis and a knack for getting under Loki's skin."
+    },
+    {
+      "id": "sylvie",
+      "name": "Sylvie",
+      "description": "A dangerous fugitive variant with a lifelong grudge against the TVA."
+    },
+    {
+      "id": "isaiah-bradley",
+      "name": "Isaiah Bradley",
+      "description": "A Black super-soldier from the Korean War era, erased from history."
+    },
+    {
+      "id": "sersi",
+      "name": "Sersi",
+      "description": "An Eternal who genuinely loves humanity, living quietly in London until her people's past resurfaces."
+    },
+    {
+      "id": "ikaris",
+      "name": "Ikaris",
+      "description": "The most powerful of the Eternals — flight, super-strength, and eye-beams."
+    },
+    {
+      "id": "ajak",
+      "name": "Ajak",
+      "description": "The Eternals' healer and leader, their only bridge to their creators."
+    },
+    {
+      "id": "thena",
+      "name": "Thena",
+      "description": "The Eternals' greatest warrior, haunted by memories she shouldn't have."
+    },
+    {
+      "id": "kingo",
+      "name": "Kingo",
+      "description": "An Eternal hiding in plain sight as a century-spanning \"dynasty\" of Bollywood stars — all of them him."
+    },
+    {
+      "id": "agatha-harkness",
+      "name": "Agatha Harkness",
+      "description": "A centuries-old witch with a talent for showing up wherever the magic is."
+    },
+    {
+      "id": "wilson-fisk",
+      "name": "Wilson Fisk / Kingpin",
+      "description": "New York's brutal, immaculately dressed crime boss."
+    },
+    {
+      "id": "wade-wilson",
+      "name": "Wade Wilson / Deadpool",
+      "description": "A fourth-wall-demolishing mercenary with a healing factor and absolutely no filter."
+    },
+    {
+      "id": "logan",
+      "name": "Logan / Wolverine",
+      "description": "A clawed, near-unkillable mutant with a very long list of regrets."
+    },
+    {
+      "id": "reed-richards",
+      "name": "Reed Richards / Mister Fantastic",
+      "description": "The smartest man of his world — an elastic scientist leading Earth's first family of heroes."
+    },
+    {
+      "id": "sue-storm",
+      "name": "Sue Storm / Invisible Woman",
+      "description": "Scientist and diplomat with invisibility and force fields; the family's center of gravity."
+    },
+    {
+      "id": "johnny-storm",
+      "name": "Johnny Storm / Human Torch",
+      "description": "Sue's hotheaded — literally — pilot brother."
+    },
+    {
+      "id": "ben-grimm",
+      "name": "Ben Grimm / The Thing",
+      "description": "The Fantastic Four's rock-skinned strongman with the softest heart on the team."
+    },
+    {
+      "id": "silver-surfer",
+      "name": "Silver Surfer",
+      "description": "A chrome-skinned herald riding ahead of something world-ending."
+    },
+    {
+      "id": "thanos",
+      "name": "Thanos",
+      "description": "The Mad Titan — a warlord pursuing all six Infinity Stones with a terrifying sense of purpose."
+    },
+    {
+      "id": "ultron",
+      "name": "Ultron",
+      "description": "Tony Stark's peacekeeping AI gone horribly right: it looked at the data and decided humanity was the threat."
+    },
+    {
+      "id": "hela",
+      "name": "Hela",
+      "description": "The Goddess of Death, whose return spells doom for Asgard."
+    },
+    {
+      "id": "red-skull",
+      "name": "Red Skull",
+      "description": "Head of HYDRA, the Nazi deep-science division, and the first super-soldier experiment gone wrong."
+    },
+    {
+      "id": "helmut-zemo",
+      "name": "Helmut Zemo",
+      "description": "A meticulous Sokovian mastermind who despises what super-people cost the world."
+    },
+    {
+      "id": "erik-killmonger",
+      "name": "Erik Killmonger",
+      "description": "A black-ops soldier with a righteous grievance and a claim on Wakanda's throne."
+    },
+    {
+      "id": "ulysses-klaue",
+      "name": "Ulysses Klaue",
+      "description": "A cackling arms dealer and one of the only outsiders to have seen the real Wakanda."
+    },
+    {
+      "id": "adrian-toomes",
+      "name": "Adrian Toomes / Vulture",
+      "description": "A blue-collar salvager turned winged, high-tech arms dealer."
+    },
+    {
+      "id": "quentin-beck",
+      "name": "Quentin Beck / Mysterio",
+      "description": "A caped hero who claims to have come from another Earth."
+    },
+    {
+      "id": "xu-wenwu",
+      "name": "Xu Wenwu",
+      "description": "The immortal holder of the Ten Rings and leader of the criminal empire named for them — Shang-Chi's father."
+    },
+    {
+      "id": "gorr",
+      "name": "Gorr the God Butcher",
+      "description": "A grieving zealot armed with a god-killing blade."
+    },
+    {
+      "id": "namor",
+      "name": "Namor",
+      "description": "The winged-ankled king of a hidden undersea civilization."
+    },
+    {
+      "id": "kang",
+      "name": "Kang",
+      "description": "A conqueror with mastery over time — and countless variants of himself scattered across the multiverse."
+    },
+    {
+      "id": "high-evolutionary",
+      "name": "The High Evolutionary",
+      "description": "A god-playing scientist obsessed with engineering a perfect society, no matter the cost."
+    },
+    {
+      "id": "taskmaster",
+      "name": "Taskmaster",
+      "description": "A masked operative who can perfectly mimic any fighting style after seeing it once."
+    },
+    {
+      "id": "ava-starr",
+      "name": "Ava Starr / Ghost",
+      "description": "A woman phasing painfully in and out of solid reality thanks to a childhood quantum accident."
+    },
+    {
+      "id": "emil-blonsky",
+      "name": "Emil Blonsky / Abomination",
+      "description": "A soldier whose super-serum experiment went monstrous — later trying, sincerely or not, to reform."
+    },
+    {
+      "id": "thaddeus-ross",
+      "name": "Thaddeus Ross",
+      "description": "The hard-line general who hunted the Hulk, whose political career keeps on climbing."
+    },
+    {
+      "id": "valentina",
+      "name": "Valentina Allegra de Fontaine",
+      "description": "A silky Washington power broker quietly recruiting \"assets\" for purposes unknown."
+    },
+    {
+      "id": "john-walker",
+      "name": "John Walker",
+      "description": "The government's hand-picked replacement Captain America — a decorated soldier in over his head."
+    },
+    {
+      "id": "gravik",
+      "name": "Gravik",
+      "description": "A young Skrull revolutionary leading a rogue faction that's done waiting for a new homeworld."
+    },
+    {
+      "id": "cassandra-nova",
+      "name": "Cassandra Nova",
+      "description": "A bald, terrifying telepath ruling a wasteland at the edge of existence."
+    },
+    {
+      "id": "galactus",
+      "name": "Galactus",
+      "description": "A cosmic entity that devours entire worlds."
+    },
+    {
+      "id": "ego",
+      "name": "Ego",
+      "description": "Peter Quill's charming, mysterious, very long-lost father."
+    },
+    {
+      "id": "ronan",
+      "name": "Ronan the Accuser",
+      "description": "A Kree fanatic wielding a war hammer and an apocalyptic grudge."
+    }
+  ]
+}
