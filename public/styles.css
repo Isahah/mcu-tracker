@@ -356,13 +356,6 @@ body {
   margin-top: 0.3rem;
 }
 
-.credit-reminder {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.68rem;
-  color: var(--brass);
-  margin-top: 0.3rem;
-}
-
 /* Modal */
 .modal-backdrop {
   display: none;
@@ -493,6 +486,17 @@ body {
   line-height: 1.5;
   font-size: 0.94rem;
 }
+
+.modal-section p.skip-warning {
+  margin-top: 0.8rem;
+  padding: 0.6em 0.9em;
+  background: rgba(194, 59, 46, 0.08);
+  border-left: 3px solid var(--stamp-red);
+  color: #8a3025;
+  font-weight: 600;
+}
+
+.timeline-facts { margin-top: 0.6rem; }
 
 .watchfor-list {
   display: flex;
@@ -629,23 +633,6 @@ body {
 .watch-toggle.is-watched {
   background: var(--teal);
   border-color: var(--teal);
-  color: #fff;
-}
-
-.credit-toggle {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.78rem;
-  padding: 0.5em 1em;
-  border-radius: var(--radius);
-  border: 2px solid var(--brass);
-  background: transparent;
-  color: #7a5a1f;
-  cursor: pointer;
-}
-
-.credit-toggle.is-seen {
-  background: var(--brass);
-  border-color: var(--brass);
   color: #fff;
 }
 

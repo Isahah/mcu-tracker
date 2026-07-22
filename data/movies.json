@@ -355,7 +355,7 @@
             { "name": "Yelena Belova", "thisFilm": "Reunites with her 'sister' Natasha and helps take down the Red Room.", "future": "Becomes the next Black Widow, continuing the legacy through Hawkeye and beyond.", "spoils": "Hawkeye" },
             { "name": "Valentina Allegra de Fontaine (mid-credit)", "thisFilm": "A mysterious government operative approaches Yelena at Natasha's grave.", "future": "Later revealed to be assembling her own team of antiheroes across Phase Four and Five.", "spoils": "Thunderbolts*" }
           ],
-          "postCredit": { "count": 1, "type": "mid" }
+          "postCredit": { "count": 1, "type": "mid", "skipNote": "Skip this scene if you're following narrative order — it's set at Natasha's grave, after her death, which you haven't watched yet at this point. Come back and watch it after Avengers: Endgame, around the same time as Hawkeye." }
         },
         {
           "id": "black-panther",
@@ -483,7 +483,7 @@
             { "name": "Janet van Dyne's rescue", "thisFilm": "Successfully rescued after 30 years trapped in the Quantum Realm.", "future": "Brings her decades of Quantum Realm knowledge into the eventual fight against Thanos.", "spoils": "Avengers: Endgame" },
             { "name": "The credits-scene Snap", "thisFilm": "Scott Lang is left stranded in the Quantum Realm when his team outside disintegrates.", "future": "Explains his absence at the very start of Endgame.", "spoils": "Avengers: Endgame" }
           ],
-          "postCredit": { "count": 2, "type": "mid+post", "timing": "The mid-credit scene plays fairly early; the real post-credit scene (Scott stranded and alone) doesn't hit until after the full cast and crew crawl, so it's easy to miss if you stop early." }
+          "postCredit": { "count": 2, "type": "mid+post", "timing": "The mid-credit scene plays fairly early; the real post-credit scene (Scott stranded and alone) doesn't hit until after the full cast and crew crawl, so it's easy to miss if you stop early.", "skipNote": "Skip both scenes if you're following narrative order — they preview the Snap from Avengers: Infinity War before you've actually watched it happen. Come back after Infinity War; they set up Scott's situation at the start of Endgame." }
         },
         {
           "id": "avengers-4",
