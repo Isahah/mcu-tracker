@@ -172,12 +172,10 @@ function renderPhase() {
       `;
     } else {
       const p = progress[entry.id] || {};
-      const needsCreditReminder = p.watched && entry.postCredit && entry.postCredit.count > 0 && !p.postCreditSeen;
       statusHtml = `
         ${p.watched
           ? `<span class="watched-stamp">VIEWED</span>`
           : `<span class="unwatched-mark">unwatched</span>`}
-        ${needsCreditReminder ? `<div class="credit-reminder">🎬 catch the credit scene</div>` : ''}
         ${p.rating ? `<div class="rating-display">${formatRating(p.rating)}/10</div>` : ''}
       `;
     }
@@ -259,6 +257,17 @@ function watchForBlockHtml(entry) {
   `;
 }
 
+// In-universe setting chips ("Set: Spring 2023", "⏳ 5-year time skip") — only rendered
+// when the data actually specifies them, since guessed dates aren't worth showing. Lives
+// inside the Deep Dive section's "Why This Order" note rather than up top, to keep the
+// top of the page uncluttered.
+function timelineChipsHtml(entry) {
+  if (!entry.inUniverseSetting) return '';
+  let chips = `<span class="fact-chip timeline-chip">📅 Set: ${entry.inUniverseSetting}</span>`;
+  if (entry.timeSkip) chips += `<span class="fact-chip timeskip-chip">⏳ ${entry.timeSkip}</span>`;
+  return `<div class="quick-facts timeline-facts">${chips}</div>`;
+}
+
 // Builds the optional "Deep Dive" section: a fuller plot rundown, why it matters, and why
 // it's placed here in narrative order. Collapsed by default since a full plot is a bigger
 // spoiler than the one-line teaser summary.
@@ -271,7 +280,7 @@ function deepDiveBlockHtml(entry) {
       <div class="deepdive-content" data-uid="${entry.id}" hidden>
         ${plot ? `<div class="deepdive-sub"><h5>The Full Plot</h5><p>${plot}</p></div>` : ''}
         ${significance ? `<div class="deepdive-sub"><h5>Why It Matters</h5><p>${significance}</p></div>` : ''}
-        ${orderNote ? `<div class="deepdive-sub"><h5>Why This Order</h5><p>${orderNote}</p></div>` : ''}
+        ${orderNote ? `<div class="deepdive-sub"><h5>Why This Order</h5><p>${orderNote}</p>${timelineChipsHtml(entry)}</div>` : ''}
       </div>
     </div>
   `;
@@ -288,35 +297,11 @@ function bindDeepDiveToggle(container) {
   });
 }
 
-// In-universe setting chips ("Set: Spring 2023", "⏳ 5-year time skip") — only rendered
-// when the data actually specifies them, since guessed dates aren't worth showing
-function timelineChipsHtml(entry) {
-  if (!entry.inUniverseSetting) return '';
-  let html = `<span class="fact-chip timeline-chip">📅 Set: ${entry.inUniverseSetting}</span>`;
-  if (entry.timeSkip) html += `<span class="fact-chip timeskip-chip">⏳ ${entry.timeSkip}</span>`;
-  return html;
-}
-
-// Small "quick facts" chip row shown near the top of a detail page / series modal
-function quickFactsHtml(item, series, season) {
-  if (series) {
-    return `
-      <div class="quick-facts">
-        <span class="fact-chip">${series.year}</span>
-        <span class="fact-chip">Season ${season.seasonNumber}</span>
-        <span class="fact-chip">Episode ${item.episodeNumber}</span>
-        ${timelineChipsHtml(series)}
-      </div>
-    `;
-  }
-  return `
-    <div class="quick-facts">
-      <span class="fact-chip">${item.year}</span>
-      <span class="fact-chip">Narrative #${item.narrativeOrder}</span>
-      ${item.releaseOrder ? `<span class="fact-chip">Release #${item.releaseOrder}</span>` : ''}
-      ${timelineChipsHtml(item)}
-    </div>
-  `;
+// Static warning for the rare movie whose credit scene reveals something from a later
+// point in the narrative-order watch-through — e.g. Black Widow, Ant-Man and the Wasp
+function skipWarningHtml(postCredit) {
+  if (!postCredit || !postCredit.skipNote) return '';
+  return `<p class="skip-warning">[!] NOTE: ${postCredit.skipNote}</p>`;
 }
 
 function bindSpoilerToggles(container) {
@@ -340,11 +325,11 @@ function openEpisodeModal(series) {
 
   content.innerHTML = `
     <h3>${series.title}</h3>
-    ${quickFactsHtml(series, null, null)}
 
     <div class="modal-section">
       <h4>Summary</h4>
       <p>${series.summary}</p>
+      ${skipWarningHtml(series.postCredit)}
     </div>
 
     ${deepDiveBlockHtml(series)}
@@ -386,14 +371,12 @@ function openEpisodeModal(series) {
 
     season.episodes.forEach(ep => {
       const p = progress[ep.id] || {};
-      const needsCreditReminder = p.watched && ep.postCredit && ep.postCredit.count > 0 && !p.postCreditSeen;
       const row = document.createElement('button');
       row.className = 'episode-row' + (p.watched ? ' watched' : '');
       row.innerHTML = `
         <span class="episode-num">${ep.episodeNumber}.</span>
         <span class="episode-title">${ep.title}</span>
         ${p.watched ? `<span class="watched-stamp">VIEWED</span>` : ''}
-        ${needsCreditReminder ? `<span class="credit-reminder">🎬</span>` : ''}
       `;
       row.addEventListener('click', () => {
         closeModal();
@@ -425,13 +408,6 @@ function renderDetail({ item, phase, series, season }) {
   const isUnreleased = item.released === false;
 
   const titleHtml = series ? `${series.title} — S${season.seasonNumber}E${item.episodeNumber}: ${item.title}` : item.title;
-  const hasCreditScene = item.postCredit && item.postCredit.count > 0;
-
-  const creditToggleHtml = hasCreditScene ? `
-    <button class="credit-toggle ${p.postCreditSeen ? 'is-seen' : ''}" id="credit-toggle-btn">
-      ${p.postCreditSeen ? '🎬 Credit Scene Seen' : '🎬 Mark Credit Scene Seen'}
-    </button>
-  ` : '';
 
   const controlsHtml = isUnreleased
     ? `<div class="modal-section"><span class="unreleased-note">🕒 Not yet released${item.expectedRelease ? ` — expected ${item.expectedRelease}` : ''}. Check back after it premieres to log it here.</span></div>`
@@ -440,7 +416,6 @@ function renderDetail({ item, phase, series, season }) {
         <button class="watch-toggle ${p.watched ? 'is-watched' : ''}" id="watch-toggle-btn">
           ${p.watched ? '✓ Watched' : 'Mark as Watched'}
         </button>
-        ${creditToggleHtml}
         <div class="rating-control" id="rating-control"></div>
         ${p.watched && p.watchedAt ? `<div class="watched-timestamp">Logged: ${new Date(p.watchedAt).toLocaleString()}</div>` : ''}
       </div>
@@ -448,11 +423,11 @@ function renderDetail({ item, phase, series, season }) {
 
   el('detail-content').innerHTML = `
     <h3>${titleHtml}</h3>
-    ${quickFactsHtml(item, series, season)}
 
     <div class="modal-section">
       <h4>Summary</h4>
       <p>${item.summary}</p>
+      ${skipWarningHtml(item.postCredit)}
     </div>
 
     ${deepDiveBlockHtml(item)}
@@ -474,14 +449,6 @@ function renderDetail({ item, phase, series, season }) {
       progress[item.id] = updated;
       renderDetail({ item, phase, series, season });
     });
-
-    if (hasCreditScene) {
-      el('credit-toggle-btn').addEventListener('click', async () => {
-        const updated = await updateProgress(item.id, { postCreditSeen: !p.postCreditSeen });
-        progress[item.id] = updated;
-        renderDetail({ item, phase, series, season });
-      });
-    }
   }
 }
 

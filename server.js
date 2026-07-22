@@ -33,10 +33,10 @@ app.get('/api/progress', (req, res) => {
   res.json(loadProgress());
 });
 
-// Update progress for a single movie: { watched: bool, rating: number|null, postCreditSeen: bool }
+// Update progress for a single movie: { watched: bool, rating: number|null }
 app.post('/api/progress/:movieId', (req, res) => {
   const { movieId } = req.params;
-  const { watched, rating, postCreditSeen } = req.body;
+  const { watched, rating } = req.body;
 
   const progress = loadProgress();
   const existing = progress[movieId] || {};
@@ -55,10 +55,6 @@ app.post('/api/progress/:movieId', (req, res) => {
 
   if (rating !== undefined) {
     updated.rating = rating;
-  }
-
-  if (typeof postCreditSeen === 'boolean') {
-    updated.postCreditSeen = postCreditSeen;
   }
 
   progress[movieId] = updated;
