@@ -16,11 +16,12 @@ A personal, local MCU watch tracker: Express serves a JSON API over two flat fil
 
 ### Server (`server.js`)
 
-A thin Express layer (~70 lines). Two JSON files are read/written directly from disk — no database:
+A thin Express layer (~80 lines). Three JSON files are read/written directly from disk — no database:
 - `data/movies.json` — canonical content (phases, movies, series, episodes)
+- `data/characters.json` — the character database (see below)
 - `data/progress.json` — the user's personal save data (watched/rating/timestamps), gitignored, auto-created empty on first run if missing
 
-Three endpoints: `GET /api/phases` (entire movies.json), `GET /api/progress` (entire progress.json), `POST /api/progress/:id` (merges `{watched, rating}` into that id's entry; `watchedAt` is stamped automatically the first time `watched` flips true, cleared when it flips false).
+Four endpoints: `GET /api/phases` (entire movies.json), `GET /api/characters` (entire characters.json), `GET /api/progress` (entire progress.json), `POST /api/progress/:id` (merges `{watched, rating}` into that id's entry; `watchedAt` is stamped automatically the first time `watched` flips true, cleared when it flips false).
 
 ### Data model (`data/movies.json`)
 
@@ -45,10 +46,11 @@ Flat object keyed by any entry id — a movie id, an episode id, or a series' ow
 
 ### Frontend (`public/app.js`, single file, no framework)
 
-Hash-based client-side router (`route()`) toggles three screens via `showScreen()`:
-- `#/` → menu (phase cards)
+Hash-based client-side router (`route()`) toggles four screens via `showScreen()`:
+- `#/` → menu (phase cards + a Character Database entry card below them)
 - `#/<phase-id>` → phase list (case-cards sorted by `narrativeOrder`)
 - `#/watch/<item-id>` → full-page detail view for a movie, special, or single episode
+- `#/characters` → character database (dense grid of personnel-file cards, uses the same `.dossier.wide` widening as the detail screen)
 
 Series are the one exception to direct navigation: clicking a series card opens a picker modal (`openEpisodeModal`) with seasons as an accordion (first season auto-expanded); only clicking an episode inside it navigates to `#/watch/<episode-id>`. `findItem(id)` resolves any id to `{ item, phase, series, season }` by walking `phasesData` once — `series`/`season` are `null` for a plain movie/special.
 
@@ -62,8 +64,17 @@ Two-tier spoiler system (`watchFor` + `bindSpoilerToggles`): each `watchFor` ite
 - Only add `inUniverseSetting` month/season precision when it's actually confirmed (e.g. Iron Man 3 and Hawkeye are canonically Christmas-set) — otherwise just the year.
 - `postCredit.skipNote` is rare and deliberate, not something to add to every entry with a credit scene.
 
+### Character database (`data/characters.json`)
+
+`{ characters: [ { id, name, description, image? } ] }`, rendered by `renderCharacters()` in curated display order (data order = display order; roughly heroes → supporting cast → antagonists). Conventions:
+
+- `description` is 1–2 sentences, spoiler-light by feel: describe who the character is at their introduction/premise level, never twists, deaths, or late-story turns (e.g. Mysterio "claims to have come from another Earth"; Taskmaster's identity stays unstated).
+- Roster threshold: somewhat-important through really-important characters. Recurring side characters (Luis, Darcy, Korg) are in; one-scene cameos are not.
+- `image` is omitted until a real image exists — the UI renders a "NO PHOTO ON FILE" portrait placeholder when absent, and the card layout already reserves the square slot for it.
+
 ## Not yet built (per project roadmap)
 
-- Character database with phase-aware spoiler control
+- Phase-aware spoiler control for the character database (current descriptions are one static spoiler-light blurb)
+- Character images (the portrait slot is reserved, `image` field supported but unused)
 - Overall stats (hours watched, average rating, etc.)
 - Possibly: Fox-era movies, an anime section
