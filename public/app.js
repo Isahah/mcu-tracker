@@ -37,6 +37,7 @@ async function init() {
 }
 
 function route() {
+  closeModal(); // e.g. following a watchFor character link from inside the series modal
   const hash = location.hash.replace(/^#\/?/, '');
   const parts = hash.split('/').filter(Boolean);
 
@@ -110,6 +111,45 @@ function seriesEpisodes(series) {
   return series.seasons.flatMap(s => s.episodes);
 }
 
+// --- watchFor → character page linking ---
+// A watchFor tag links to #/character/<id> when either:
+//   1. the watchFor item has an explicit "characterId" (always wins — use this in
+//      movies.json when the name is phrasey, e.g. "Mysterio's frame job"), or
+//   2. any "/"-segment of the watchFor name (parentheticals stripped, case-insensitive)
+//      exactly matches any "/"-segment of a character's name in characters.json —
+//      so "Kingpin / Wilson Fisk" or "Hawkeye (cameo)" link with no extra data.
+// Unmatched names just render as plain tags, so nothing breaks if a name is unknown.
+
+function normalizeCharName(s) {
+  return s.toLowerCase().replace(/\(.*?\)/g, '').replace(/["'.’]/g, '').trim();
+}
+
+let charNameLookup = null;
+
+function resolveWatchForCharacter(w) {
+  if (w.characterId) {
+    return charactersData.some(c => c.id === w.characterId) ? w.characterId : null;
+  }
+  if (!charNameLookup) {
+    charNameLookup = new Map();
+    charactersData.forEach(c => {
+      charNameLookup.set(normalizeCharName(c.name), c.id);
+      c.name.split('/').forEach(part => charNameLookup.set(normalizeCharName(part), c.id));
+    });
+  }
+  if (charNameLookup.has(normalizeCharName(w.name))) return charNameLookup.get(normalizeCharName(w.name));
+  for (const part of w.name.split('/')) {
+    if (charNameLookup.has(normalizeCharName(part))) return charNameLookup.get(normalizeCharName(part));
+  }
+  return null;
+}
+
+function watchForTagHtml(w) {
+  const charId = resolveWatchForCharacter(w);
+  if (!charId) return `<span class="watchfor-tag">${w.name}</span>`;
+  return `<a class="watchfor-tag watchfor-link" href="#/character/${charId}" title="Open character file">${w.name} &#128194;</a>`;
+}
+
 // A "unit" is a movie, or one episode of a series — used for progress counts
 function unitCounts(entry) {
   if (entry.released === false) return { watched: 0, total: 0 };
@@ -157,12 +197,14 @@ function renderMenu() {
 }
 
 // Portrait slot shared by the grid cards and the character detail page: renders the
-// image if the data ever gets one, otherwise a "NO PHOTO ON FILE" placeholder.
+// image if the data has one, otherwise a "NO PHOTO ON FILE" placeholder.
+// Optional `imagePosition` shifts which part of the photo the square crop keeps
+// (CSS object-position — e.g. "top", "center", "50% 20%"); default is center.
 function portraitHtml(c) {
   return `
     <div class="character-portrait">
       ${c.image
-        ? `<img src="${c.image}" alt="${c.name}">`
+        ? `<img src="${c.image}" alt="${c.name}"${c.imagePosition ? ` style="object-position: ${c.imagePosition}"` : ''}>`
         : `<span class="portrait-placeholder">NO PHOTO<br>ON FILE</span>`}
     </div>
   `;
@@ -352,7 +394,7 @@ function watchForBlockHtml(entry) {
     <div class="modal-section">
       <h4>Important People &amp; Things to Watch For</h4>
       <div class="watchfor-list">
-        ${entry.watchFor.map(w => `<span class="watchfor-tag">${w.name}</span>`).join('')}
+        ${entry.watchFor.map(watchForTagHtml).join('')}
       </div>
     </div>
     <div class="modal-section spoiler-block">

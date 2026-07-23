@@ -73,7 +73,16 @@ Two-tier spoiler system (`watchFor` + `bindSpoilerToggles`): each `watchFor` ite
 - `phases` is a map of phase id → paragraph (`{ "phase-1": "...", ... }`) covering what the character did in that phase and how they affected it. **Spoiler scoping**: full spoilers for that phase are allowed inside its entry (deaths, twists, reveals) — the reader chooses to expand a phase only after finishing it — but never leak a *later* phase's events into an earlier phase's entry. Omit phases the character isn't in (the UI shows a "no significant activity" line) and phases that only contain unreleased titles. Bucket by this tracker's narrative phases, not release phases (e.g. Captain Marvel content goes under phase-1, Black Widow under phase-3).
 - The detail page renders **all six phases** for **every** character as a collapsed accordion, so the phase list itself reveals nothing about where a character appears.
 - Roster threshold: somewhat-important through really-important characters. Recurring side characters (Luis, Darcy, Korg) are in; one-scene cameos are not.
-- `image` is omitted until a real image exists — the UI renders a "NO PHOTO ON FILE" portrait placeholder when absent, and the card layout already reserves the square slot for it.
+- `image` is omitted until a real image exists — the UI renders a "NO PHOTO ON FILE" portrait placeholder when absent, and the card layout already reserves the square slot for it. To add a photo: drop the file in `public/img/characters/` (convention: `<character-id>.<ext>`) and set `"image": "/img/characters/<file>"` on the character (an external `https://` URL also works). Images are shown square via `object-fit: cover`, centered by default; optional `imagePosition` (CSS `object-position`, e.g. `"top"` or `"50% 20%"`) shifts which part of the photo the crop keeps — prefer that over re-cropping image files.
+
+### watchFor → character linking
+
+`watchFor` name tags on the movie/episode detail page (and series modal) render as links to `#/character/<id>` when they resolve to a character (`watchForTagHtml` / `resolveWatchForCharacter` in `app.js`). Resolution rules, in order:
+
+1. An explicit `"characterId": "<id>"` on the watchFor item in `movies.json` always wins — use this for phrasey names ("Mysterio's frame job", "General Ross"). Invalid ids fail safe to a plain tag.
+2. Otherwise auto-match: any `/`-segment of the watchFor name (parentheticals stripped, case-insensitive, quotes/periods ignored) exactly equals any `/`-segment of a character's `name` in `characters.json` — "Kingpin / Wilson Fisk", "Hawkeye (cameo)", "Peter Parker (Spider-Man)" all link with no extra data.
+
+So when adding a new watchFor item: just use the character's name (or `Name / Alias`) and the link happens automatically; only add `characterId` if the wording doesn't contain the exact name. Unmatched names (plot points like "The Tesseract") stay plain tags on purpose — don't force-link concepts/objects, and leave items naming two characters ("Wanda & Pietro Maximoff") unlinked unless one is clearly the subject.
 
 ## Workflow
 
@@ -81,7 +90,6 @@ Two-tier spoiler system (`watchFor` + `bindSpoilerToggles`): each `watchFor` ite
 
 ## Not yet built (per project roadmap)
 
-- Linking `watchFor` names on the movie/episode detail page to their `#/character/<id>` pages (would need a name→character-id mapping or a `characterId` field on `watchFor` items, since `watchFor` names don't always match `characters.json` names exactly)
-- Character images (the portrait slot is reserved, `image` field supported but unused)
+- Character images (the portrait slot and `public/img/characters/` are ready, `image` field supported but unused)
 - Overall stats (hours watched, average rating, etc.)
 - Possibly: Fox-era movies, an anime section

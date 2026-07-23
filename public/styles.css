@@ -675,6 +675,19 @@ body {
   font-size: 0.82rem;
 }
 
+/* watchFor tags that resolve to a character page render as links */
+a.watchfor-tag.watchfor-link {
+  color: #245e59;
+  background: rgba(46, 139, 132, 0.1);
+  border-color: var(--teal);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.watchfor-tag.watchfor-link:hover {
+  background: rgba(46, 139, 132, 0.22);
+}
+
 .spoiler-block { margin-top: 1rem; }
 
 .spoiler-toggle {
