@@ -50,7 +50,8 @@ Hash-based client-side router (`route()`) toggles four screens via `showScreen()
 - `#/` → menu (phase cards + a Character Database entry card below them)
 - `#/<phase-id>` → phase list (case-cards sorted by `narrativeOrder`)
 - `#/watch/<item-id>` → full-page detail view for a movie, special, or single episode
-- `#/characters` → character database (dense grid of personnel-file cards, uses the same `.dossier.wide` widening as the detail screen)
+- `#/characters` → character database (dense grid of photo + name cards, uses the same `.dossier.wide` widening as the detail screen)
+- `#/character/<char-id>` → full-page personnel file for one character (portrait + name + overview; deliberately nothing on the grid cards themselves beyond photo/name, so browsing can't spoil)
 
 Series are the one exception to direct navigation: clicking a series card opens a picker modal (`openEpisodeModal`) with seasons as an accordion (first season auto-expanded); only clicking an episode inside it navigates to `#/watch/<episode-id>`. `findItem(id)` resolves any id to `{ item, phase, series, season }` by walking `phasesData` once — `series`/`season` are `null` for a plain movie/special.
 
@@ -66,15 +67,21 @@ Two-tier spoiler system (`watchFor` + `bindSpoilerToggles`): each `watchFor` ite
 
 ### Character database (`data/characters.json`)
 
-`{ characters: [ { id, name, description, image? } ] }`, rendered by `renderCharacters()` in curated display order (data order = display order; roughly heroes → supporting cast → antagonists). Conventions:
+`{ characters: [ { id, name, description, image?, phases? } ] }`, rendered by `renderCharacters()` (grid) and `renderCharacter()` (detail page) in curated display order (data order = display order; roughly heroes → supporting cast → antagonists). Conventions:
 
 - `description` is 1–2 sentences, spoiler-light by feel: describe who the character is at their introduction/premise level, never twists, deaths, or late-story turns (e.g. Mysterio "claims to have come from another Earth"; Taskmaster's identity stays unstated).
+- `phases` is a map of phase id → paragraph (`{ "phase-1": "...", ... }`) covering what the character did in that phase and how they affected it. **Spoiler scoping**: full spoilers for that phase are allowed inside its entry (deaths, twists, reveals) — the reader chooses to expand a phase only after finishing it — but never leak a *later* phase's events into an earlier phase's entry. Omit phases the character isn't in (the UI shows a "no significant activity" line) and phases that only contain unreleased titles. Bucket by this tracker's narrative phases, not release phases (e.g. Captain Marvel content goes under phase-1, Black Widow under phase-3).
+- The detail page renders **all six phases** for **every** character as a collapsed accordion, so the phase list itself reveals nothing about where a character appears.
 - Roster threshold: somewhat-important through really-important characters. Recurring side characters (Luis, Darcy, Korg) are in; one-scene cameos are not.
 - `image` is omitted until a real image exists — the UI renders a "NO PHOTO ON FILE" portrait placeholder when absent, and the card layout already reserves the square slot for it.
 
+## Workflow
+
+- **Always ask before committing.** The user wants control over commit granularity — finish and verify the work, then ask. Pushing to a remote needs its own separate ask.
+
 ## Not yet built (per project roadmap)
 
-- Phase-aware spoiler control for the character database (current descriptions are one static spoiler-light blurb)
+- Linking `watchFor` names on the movie/episode detail page to their `#/character/<id>` pages (would need a name→character-id mapping or a `characterId` field on `watchFor` items, since `watchFor` names don't always match `characters.json` names exactly)
 - Character images (the portrait slot is reserved, `image` field supported but unused)
 - Overall stats (hours watched, average rating, etc.)
 - Possibly: Fox-era movies, an anime section

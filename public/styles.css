@@ -79,7 +79,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-#screen-menu[hidden], #screen-phase[hidden], #screen-characters[hidden] { display: none; }
+#screen-menu[hidden], #screen-phase[hidden], #screen-characters[hidden], #screen-character[hidden] { display: none; }
 
 .menu-intro {
   text-align: center;
@@ -200,7 +200,7 @@ body {
 .character-grid {
   margin-top: 1.2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 0.9rem;
 }
 
@@ -213,6 +213,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
+  text-decoration: none;
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+
+.character-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.45);
 }
 
 .character-portrait {
@@ -247,11 +254,62 @@ body {
   line-height: 1.25;
 }
 
-.character-desc {
+/* Character detail page (#/character/<id>) */
+.character-file-header {
+  display: flex;
+  gap: 1.6rem;
+  align-items: flex-start;
+}
+
+.character-file-header .character-portrait {
+  width: 180px;
+  flex-shrink: 0;
+}
+
+.character-file-title h3 {
+  margin: 0.4rem 0 0.6rem;
+}
+
+.file-stamp {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.2em;
+  color: var(--stamp-red);
+  border: 2px solid var(--stamp-red);
+  padding: 0.25em 0.7em;
+  border-radius: var(--radius);
+  transform: rotate(-2deg);
+  opacity: 0.85;
+}
+
+/* Phase-by-phase accordion on the character page */
+.phase-record-hint {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: #6b6a60;
+  margin: 0 0 0.8rem;
+  line-height: 1.5;
+}
+
+.phase-record-body {
+  padding: 0.8rem 1rem;
+  border-top: 1px solid rgba(16, 19, 31, 0.1);
+}
+
+.phase-record-body[hidden] { display: none; }
+
+.phase-record-body p {
   margin: 0;
-  font-size: 0.78rem;
-  line-height: 1.45;
-  color: #3a3a33;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.phase-record-empty {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem !important;
+  color: #8a8a82;
+  font-style: italic;
 }
 
 .back-btn {
