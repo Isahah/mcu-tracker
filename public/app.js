@@ -23,6 +23,10 @@ async function init() {
     location.hash = '';
   });
 
+  el('character-back-btn').addEventListener('click', () => {
+    location.hash = 'characters';
+  });
+
   el('modal-close').addEventListener('click', closeModal);
   el('modal-backdrop').addEventListener('click', (e) => {
     if (e.target.id === 'modal-backdrop') closeModal();
@@ -53,6 +57,16 @@ function route() {
     return;
   }
 
+  if (parts[0] === 'character' && parts[1]) {
+    const character = charactersData.find(c => c.id === parts[1]);
+    if (character) {
+      showScreen('character');
+      renderCharacter(character);
+      window.scrollTo(0, 0);
+      return;
+    }
+  }
+
   const phase = phasesData.find(p => p.id === parts[0]);
   if (phase) {
     activePhaseId = phase.id;
@@ -71,6 +85,7 @@ function showScreen(name) {
   el('screen-phase').hidden = name !== 'phase';
   el('screen-detail').hidden = name !== 'detail';
   el('screen-characters').hidden = name !== 'characters';
+  el('screen-character').hidden = name !== 'character';
   document.querySelector('.dossier').classList.toggle('wide', name === 'detail' || name === 'characters');
 }
 
@@ -141,26 +156,88 @@ function renderMenu() {
   el('menu-character-count').textContent = `${charactersData.length} files on record`;
 }
 
-// Character database: dense grid of personnel-file cards. Each card reserves a portrait
-// slot (renders the image if the data ever gets one, otherwise a "NO PHOTO ON FILE"
-// placeholder) above the name and a spoiler-light description.
+// Portrait slot shared by the grid cards and the character detail page: renders the
+// image if the data ever gets one, otherwise a "NO PHOTO ON FILE" placeholder.
+function portraitHtml(c) {
+  return `
+    <div class="character-portrait">
+      ${c.image
+        ? `<img src="${c.image}" alt="${c.name}">`
+        : `<span class="portrait-placeholder">NO PHOTO<br>ON FILE</span>`}
+    </div>
+  `;
+}
+
+// Character database: dense grid of photo + name cards. All other info lives on the
+// per-character page (#/character/<id>) so browsing the grid can't spoil anything.
 function renderCharacters() {
   const grid = el('character-grid');
   grid.innerHTML = '';
 
   charactersData.forEach(c => {
-    const card = document.createElement('div');
+    const card = document.createElement('a');
     card.className = 'character-card';
+    card.href = `#/character/${c.id}`;
     card.innerHTML = `
-      <div class="character-portrait">
-        ${c.image
-          ? `<img src="${c.image}" alt="${c.name}">`
-          : `<span class="portrait-placeholder">NO PHOTO<br>ON FILE</span>`}
-      </div>
+      ${portraitHtml(c)}
       <div class="character-name">${c.name}</div>
-      <p class="character-desc">${c.description}</p>
     `;
     grid.appendChild(card);
+  });
+}
+
+// Full-page personnel file for one character: portrait, spoiler-light overview, then
+// the phase-by-phase accordion. Every phase is listed for every character — even ones
+// they aren't in — so the accordion itself reveals nothing; expanding a phase shows
+// what they did in it (spoilers scoped to that phase only), or a "no activity" line.
+function renderCharacter(c) {
+  el('character-content').innerHTML = `
+    <div class="character-file-header">
+      ${portraitHtml(c)}
+      <div class="character-file-title">
+        <h3>${c.name}</h3>
+        <span class="file-stamp">PERSONNEL FILE</span>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h4>Overview</h4>
+      <p>${c.description}</p>
+    </div>
+
+    <div class="modal-section">
+      <h4>Phase-by-Phase Record</h4>
+      <p class="phase-record-hint">Every phase is listed for every character, so the list itself spoils nothing. Expanding a phase reveals what they did in it &mdash; only open phases you've finished.</p>
+      <div class="season-list" id="char-phase-list"></div>
+    </div>
+  `;
+
+  const listEl = el('char-phase-list');
+  phasesData.forEach(phase => {
+    const entry = c.phases && c.phases[phase.id];
+
+    const block = document.createElement('div');
+    block.className = 'season-block';
+
+    const header = document.createElement('button');
+    header.className = 'season-header';
+    header.innerHTML = `
+      <span>${phase.name}</span>
+      <span class="season-header-count">${phase.label}</span>
+    `;
+
+    const body = document.createElement('div');
+    body.className = 'phase-record-body';
+    body.hidden = true; // all collapsed by default — that's the spoiler protection
+    body.innerHTML = entry
+      ? `<p>${entry}</p>`
+      : `<p class="phase-record-empty">No significant activity on file for this phase.</p>`;
+
+    header.addEventListener('click', () => { body.hidden = !body.hidden; });
+
+    block.appendChild(header);
+    block.appendChild(body);
+    listEl.appendChild(block);
   });
 }
 
