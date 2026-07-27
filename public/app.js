@@ -28,6 +28,8 @@ async function init() {
     location.hash = 'characters';
   });
 
+  el('char-search').addEventListener('input', renderCharacters);
+
   el('modal-close').addEventListener('click', closeModal);
   el('modal-backdrop').addEventListener('click', (e) => {
     if (e.target.id === 'modal-backdrop') closeModal();
@@ -110,10 +112,14 @@ function renderNowWatching() {
   }).join('');
 }
 
+let lastRouteParts = [];
+
 function route() {
   closeModal(); // e.g. following a watchFor character link from inside the series modal
   const hash = location.hash.replace(/^#\/?/, '');
   const parts = hash.split('/').filter(Boolean);
+  const prev = lastRouteParts;
+  lastRouteParts = parts;
 
   if (parts[0] === 'watch' && parts[1]) {
     const found = findItem(parts[1]);
@@ -126,6 +132,9 @@ function route() {
   }
 
   if (parts[0] === 'characters') {
+    // Keep the filter when backing out of a character file, but clear it when the
+    // database is opened fresh — otherwise it can look empty on a later visit
+    if (prev[0] !== 'character') el('char-search').value = '';
     showScreen('characters');
     renderCharacters();
     window.scrollTo(0, 0);
@@ -286,11 +295,22 @@ function portraitHtml(c) {
 
 // Character database: dense grid of photo + name cards. All other info lives on the
 // per-character page (#/character/<id>) so browsing the grid can't spoil anything.
+// Filtered live by the search box (name match, case-insensitive).
 function renderCharacters() {
   const grid = el('character-grid');
   grid.innerHTML = '';
 
-  charactersData.forEach(c => {
+  const query = el('char-search').value.trim().toLowerCase();
+  const shown = query
+    ? charactersData.filter(c => c.name.toLowerCase().includes(query))
+    : charactersData;
+
+  if (!shown.length) {
+    grid.innerHTML = '<p class="no-matches">NO MATCHING FILES ON RECORD.</p>';
+    return;
+  }
+
+  shown.forEach(c => {
     const card = document.createElement('a');
     card.className = 'character-card';
     card.href = `#/character/${c.id}`;
@@ -568,6 +588,14 @@ function skipWarningHtml(postCredit) {
   return `<p class="skip-warning">[!] NOTE: ${postCredit.skipNote}</p>`;
 }
 
+// Optional-viewing note for titles that lean on movies outside the tracker's order
+// (e.g. No Way Home and the pre-MCU Spider-Man films). Add an "optionalViewing"
+// string to any entry in movies.json and it renders right under the summary.
+function optionalViewingHtml(entry) {
+  if (!entry.optionalViewing) return '';
+  return `<p class="optional-viewing">[+] OPTIONAL VIEWING: ${entry.optionalViewing}</p>`;
+}
+
 function bindSpoilerToggles(container) {
   container.querySelectorAll('.spoiler-toggle').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -593,6 +621,7 @@ function openEpisodeModal(series) {
     <div class="modal-section">
       <h4>Summary</h4>
       <p>${series.summary}</p>
+      ${optionalViewingHtml(series)}
       ${skipWarningHtml(series.postCredit)}
     </div>
 
@@ -696,6 +725,7 @@ function renderDetail({ item, phase, series, season }) {
     <div class="modal-section">
       <h4>Summary</h4>
       <p>${item.summary}</p>
+      ${optionalViewingHtml(item)}
       ${skipWarningHtml(item.postCredit)}
     </div>
 

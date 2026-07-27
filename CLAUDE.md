@@ -33,6 +33,7 @@ Common fields on every top-level entry: `id`, `title`, `year`, `narrativeOrder`,
 - `deepDive: { plot, significance, orderNote }` — a fuller plot rundown, why the title matters to the wider story, and why it's placed at this `narrativeOrder`. Rendered as a collapsed "📖 Show Full Plot & Context" toggle since a full plot is a bigger spoiler than `summary`
 - `watchFor: [{ name, thisFilm, future, spoils? }]` — the two-tier spoiler system (see below)
 - `postCredit: { count, type, timing?, skipNote? }` — `timing` is qualitative guidance on when in the credits a scene lands; `skipNote` is a static warning for the rare title whose credit scene should be skipped and revisited later (added case-by-case, not as a blanket feature — currently only Black Widow and Ant-Man and the Wasp)
+- `optionalViewing` — a plain string listing films *outside* this tracker's order that add context (e.g. No Way Home leaning on the pre-MCU Spider-Man movies). Rendered by `optionalViewingHtml()` directly under the summary, styled like `skipNote` (same red note treatment). Add it to any movie/special/series entry that wants one; phrase it as genuinely optional, never required viewing
 - `released: false` + `expectedRelease` — unreleased/future titles. Excluded from watched-count denominators (`unitCounts()`); don't write `deepDive`/`watchFor` for these since nothing's happened yet, just a summary noting it's unreleased
 - series only: `seasons: [{ seasonNumber, episodes: [{ id, episodeNumber, title, summary, watchFor?, postCredit? }] }]` — always nested under `seasons`, even for a one-season show
 
@@ -50,7 +51,7 @@ Hash-based client-side router (`route()`) toggles four screens via `showScreen()
 - `#/` → menu (phase cards + a Character Database entry card below them)
 - `#/<phase-id>` → phase list (case-cards sorted by `narrativeOrder`)
 - `#/watch/<item-id>` → full-page detail view for a movie, special, or single episode
-- `#/characters` → character database (dense grid of photo + name cards, uses the same `.dossier.wide` widening as the detail screen)
+- `#/characters` → character database (dense grid of photo + name cards, uses the same `.dossier.wide` widening as the detail screen; a search box filters the grid live on character `name`, and the query persists when backing out of a character file but clears when the database is opened fresh)
 - `#/character/<char-id>` → full-page personnel file for one character (portrait + name + overview; deliberately nothing on the grid cards themselves beyond photo/name, so browsing can't spoil)
 
 Series are the one exception to direct navigation: clicking a series card opens a picker modal (`openEpisodeModal`) with seasons as an accordion (first season auto-expanded); only clicking an episode inside it navigates to `#/watch/<episode-id>`. `findItem(id)` resolves any id to `{ item, phase, series, season }` by walking `phasesData` once — `series`/`season` are `null` for a plain movie/special.
