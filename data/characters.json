@@ -80,7 +80,7 @@
         "phase-3": "Dusted in Infinity War's credit scene — but not before paging Captain Marvel. And Far From Home has an asterisk: the 'Fury' shepherding Peter around Europe all movie is actually Talos covering for him, while the real Fury works from a Skrull station in orbit.",
         "phase-5": "Secret Invasion catches him older, wearied, and off his game: a Skrull faction he failed turns on humanity, costing him Maria Hill, Talos, and nearly his Skrull wife, Priscilla, before he stops Gravik's war. By The Marvels he's back upstairs running S.A.B.E.R., playing exasperated mission control."
       },
-      "image": "/img/characters/nick-fury.jpg"
+      "image": "/img/characters/nick-fury.avif"
     },
     {
       "id": "maria-hill",
@@ -92,7 +92,7 @@
         "phase-3": "Dusted alongside Fury in Infinity War's credit scene, mid-sentence.",
         "phase-5": "Secret Invasion kills her for real in its opening act — shot by Gravik while he's wearing Fury's face. Her death is the wound the rest of the series pokes at."
       },
-      "image": "/img/characters/maria-hill.png"
+      "image": "/img/characters/maria-hill.webp"
     },
     {
       "id": "phil-coulson",
@@ -125,7 +125,7 @@
         "phase-4": "The Falcon and the Winter Soldier is him deciding what that means: he surrenders the shield to a museum, watches the government hand it to John Walker, learns what the serum's history did to Isaiah Bradley — and then takes up the mantle anyway, on his own terms. New suit, same conscience: Captain America.",
         "phase-6": "Brave New World tests the title without the serum: untangling a conspiracy around President Ross, an assassination plot, the adamantium scramble, and a Red Hulk over Washington — while bringing on Joaquin Torres as the new Falcon."
       },
-      "image": "/img/characters/sam-wilson.jpeg"
+      "image": "/img/characters/sam-wilson.png"
     },
     {
       "id": "bucky-barnes",
@@ -192,7 +192,7 @@
         "phase-3": "Recruited by Stark for the Civil War airport fight while still keeping his identity from Aunt May. Homecoming pits him against the Vulture — who turns out to be his homecoming date's dad — and he turns down full Avengers membership to stay a friendly neighborhood guy. Infinity War drags him to Titan anyway, where he dusts in Tony's arms; Endgame brings him back for the funeral; and Far From Home saddles him with Tony's legacy, EDITH, and Mysterio's con — which ends with his identity broadcast to the world and a murder pinned on him.",
         "phase-4": "No Way Home is the price: a botched memory spell cracks the multiverse, importing villains (and two other Peter Parkers) from dead universes. He loses May to the Green Goblin, chooses to cure the villains rather than send them home to die — and ends it by having Strange erase Peter Parker from every mind on Earth. Last seen alone in a walk-up with a homemade suit and a GED."
       },
-      "image": "/img/characters/peter-parker.jpg"
+      "image": "/img/characters/peter-parker.avif"
     },
     {
       "id": "stephen-strange",
@@ -223,7 +223,7 @@
         "phase-3": "The pager gets answered: she blazes in during Endgame to haul Tony and Nebula home, single-handedly guts Thanos' flagship, and goes toe-to-toe with him over the gauntlet.",
         "phase-5": "The Marvels forces the loner to team up: her light powers quantum-entangle with Kamala's and Monica's, swapping their places mid-fight while Dar-Benn — fallout of Carol's own war on the Kree, who call her 'the Annihilator' — tears jump points through space. She ends it reigniting Hala's sun, and finally stops carrying the galaxy alone."
       },
-      "image": "/img/characters/carol-danvers.jpeg"
+      "image": "/img/characters/carol-danvers.webp"
     },
     {
       "id": "scott-lang",
@@ -254,7 +254,7 @@
       "phases": {
         "phase-4": "Shang-Chi and the Legend of the Ten Rings: 'Shaun' the valet is outed as the son of Wenwu, the immortal head of the Ten Rings, raised from age seven as an assassin. Dragged home, he faces the family he fled — his sister Xialing, his father's grief-fueled crusade to 'free' his dead wife — and in Ta Lo takes up the Ten Rings himself when Wenwu falls to the Dweller-in-Darkness. The tag confirms the rings are older and stranger than anyone knew, and they're beaconing something."
       },
-      "image": "/img/characters/shang-chi.jpg"
+      "image": "/img/characters/shang-chi.webp"
     },
     {
       "id": "kamala-khan",
@@ -273,7 +273,7 @@
       "phases": {
         "phase-4": "She-Hulk: Attorney at Law: a car crash cross-contaminates her blood with Bruce's, and unlike him she skips the decade of rage management — which she resents being told is impressive. She runs a superhuman-law division (clients include Blonsky and a Megan Thee Stallion twerk-off), gets doxxed and blood-harvested by the Intelligencia, and when the finale goes off the rails she climbs out of the show itself to argue with Marvel's plot-writing AI about it. Fourth wall: demolished."
       },
-      "image": "/img/characters/jennifer-walters.jpg"
+      "image": "/img/characters/jennifer-walters.webp"
     },
     {
       "id": "moon-knight",

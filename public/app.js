@@ -2,6 +2,7 @@ let phasesData = [];
 let charactersData = [];
 let progress = {};
 let activePhaseId = null;
+let watching = []; // up to 2 "currently watching" unit ids, persisted in progress.json under _watching
 
 const el = (id) => document.getElementById(id);
 
@@ -32,8 +33,81 @@ async function init() {
     if (e.target.id === 'modal-backdrop') closeModal();
   });
 
+  watching = (progress._watching || []).filter(id => findItem(id));
+  renderNowWatching();
+
   window.addEventListener('hashchange', route);
   route();
+}
+
+// --- "Currently watching" flags ---
+// Up to 2 units can be flagged; flagging a third replaces the oldest. Marking a
+// flagged unit watched advances its flag to the next unwatched unit in narrative
+// order (see nextUnwatchedAfter); marking anything watched with no flags set
+// bootstraps a flag on whatever comes next.
+
+// Every watchable unit id (movies, specials, episodes) in global narrative order
+function flatUnitIds() {
+  const ids = [];
+  phasesData.forEach(phase => {
+    [...phase.movies].sort((a, b) => a.narrativeOrder - b.narrativeOrder).forEach(entry => {
+      if (entry.released === false) return;
+      if (entry.type === 'series' && entry.seasons) {
+        entry.seasons.forEach(s => s.episodes.forEach(ep => ids.push(ep.id)));
+      } else {
+        ids.push(entry.id);
+      }
+    });
+  });
+  return ids;
+}
+
+function nextUnwatchedAfter(id) {
+  const ids = flatUnitIds();
+  for (let i = ids.indexOf(id) + 1; i < ids.length; i++) {
+    if (!progress[ids[i]]?.watched && !watching.includes(ids[i])) return ids[i];
+  }
+  return null;
+}
+
+async function setWatching(ids) {
+  watching = ids;
+  await fetch('/api/now-watching', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ ids })
+  });
+  renderNowWatching();
+}
+
+async function toggleFlag(id) {
+  if (watching.includes(id)) {
+    await setWatching(watching.filter(w => w !== id));
+  } else {
+    await setWatching([...watching, id].slice(-2)); // cap of 2 — oldest flag drops off
+  }
+}
+
+function isCurrentlyWatching(entry) {
+  if (watching.includes(entry.id)) return true;
+  return entry.type === 'series' && entry.seasons
+    ? seriesEpisodes(entry).some(ep => watching.includes(ep.id))
+    : false;
+}
+
+// Fixed corner dock, visible on every screen; chips link to the flagged unit's page
+function renderNowWatching() {
+  const dock = el('now-watching-dock');
+  if (!watching.length) { dock.hidden = true; dock.innerHTML = ''; return; }
+  dock.hidden = false;
+  dock.innerHTML = '<div class="nw-label">NOW WATCHING</div>' + watching.map(id => {
+    const found = findItem(id);
+    if (!found) return '';
+    const title = found.series
+      ? `${found.series.title} — S${found.season.seasonNumber}E${found.item.episodeNumber}`
+      : found.item.title;
+    return `<a class="nw-chip" href="#/watch/${id}">&#9654; ${title}</a>`;
+  }).join('');
 }
 
 function route() {
@@ -306,8 +380,11 @@ function renderPhase() {
     watchedCount += watched;
     totalCount += total;
 
+    const isCurrent = !isUnreleased && isCurrentlyWatching(entry);
+
     const card = document.createElement('div');
-    card.className = 'case-card' + (isUnreleased ? ' unreleased' : (watched === total && total > 0 ? ' watched' : ''));
+    card.className = 'case-card' + (isUnreleased ? ' unreleased' : (watched === total && total > 0 ? ' watched' : ''))
+      + (isCurrent ? ' watching-now' : '');
     card.addEventListener('click', () => {
       if (isSeries && !isUnreleased) {
         openEpisodeModal(entry);
@@ -353,9 +430,37 @@ function renderPhase() {
         </div>
       </div>
       <div class="case-status">
+        ${isCurrent ? '<div class="watching-badge">&#9654; CURRENTLY WATCHING</div>' : ''}
         ${statusHtml}
       </div>
     `;
+
+    // Pin toggle: flag/unflag straight from the list without opening the page.
+    // For a series, "flag" means its first unwatched episode; "unflag" clears
+    // any flagged episode it contains.
+    if (!isUnreleased) {
+      const pin = document.createElement('button');
+      pin.className = 'pin-btn' + (isCurrent ? ' pinned' : '');
+      pin.title = isCurrent ? 'Unflag currently watching' : 'Flag as currently watching';
+      pin.innerHTML = isCurrent ? '&#9873;' : '&#9872;';
+      pin.addEventListener('click', async (e) => {
+        e.stopPropagation();
+        if (isSeries) {
+          const flaggedEps = seriesEpisodes(entry).filter(ep => watching.includes(ep.id));
+          if (flaggedEps.length) {
+            await setWatching(watching.filter(id => !flaggedEps.some(ep => ep.id === id)));
+          } else {
+            const target = seriesEpisodes(entry).find(ep => !progress[ep.id]?.watched) || seriesEpisodes(entry)[0];
+            await toggleFlag(target.id);
+          }
+        } else {
+          await toggleFlag(entry.id);
+        }
+        renderPhase();
+      });
+      card.appendChild(pin);
+    }
+
     container.appendChild(card);
   });
 
@@ -535,6 +640,7 @@ function openEpisodeModal(series) {
       row.innerHTML = `
         <span class="episode-num">${ep.episodeNumber}.</span>
         <span class="episode-title">${ep.title}</span>
+        ${watching.includes(ep.id) ? `<span class="watching-badge">&#9654; WATCHING</span>` : ''}
         ${p.watched ? `<span class="watched-stamp">VIEWED</span>` : ''}
       `;
       row.addEventListener('click', () => {
@@ -568,12 +674,16 @@ function renderDetail({ item, phase, series, season }) {
 
   const titleHtml = series ? `${series.title} — S${season.seasonNumber}E${item.episodeNumber}: ${item.title}` : item.title;
 
+  const isFlagged = watching.includes(item.id);
   const controlsHtml = isUnreleased
     ? `<div class="modal-section"><span class="unreleased-note">🕒 Not yet released${item.expectedRelease ? ` — expected ${item.expectedRelease}` : ''}. Check back after it premieres to log it here.</span></div>`
     : `
       <div class="controls-row">
         <button class="watch-toggle ${p.watched ? 'is-watched' : ''}" id="watch-toggle-btn">
           ${p.watched ? '✓ Watched' : 'Mark as Watched'}
+        </button>
+        <button class="flag-toggle ${isFlagged ? 'is-flagged' : ''}" id="flag-toggle-btn">
+          ${isFlagged ? '&#9654; Currently Watching' : '&#9655; Flag as Currently Watching'}
         </button>
         <div class="rating-control" id="rating-control"></div>
         ${p.watched && p.watchedAt ? `<div class="watched-timestamp">Logged: ${new Date(p.watchedAt).toLocaleString()}</div>` : ''}
@@ -603,9 +713,26 @@ function renderDetail({ item, phase, series, season }) {
 
   if (!isUnreleased) {
     renderRatingControl(item, p.rating || 0, 'rating-control');
+
     el('watch-toggle-btn').addEventListener('click', async () => {
-      const updated = await updateProgress(item.id, { watched: !p.watched });
+      const nowWatched = !p.watched;
+      const updated = await updateProgress(item.id, { watched: nowWatched });
       progress[item.id] = updated;
+      if (nowWatched) {
+        const next = nextUnwatchedAfter(item.id);
+        if (watching.includes(item.id)) {
+          // advance this unit's flag to the next unwatched thing (or drop it at the end)
+          await setWatching(watching.map(w => w === item.id ? next : w).filter(Boolean).slice(0, 2));
+        } else if (!watching.length && next) {
+          // no flags yet — bootstrap one on whatever comes next
+          await setWatching([next]);
+        }
+      }
+      renderDetail({ item, phase, series, season });
+    });
+
+    el('flag-toggle-btn').addEventListener('click', async () => {
+      await toggleFlag(item.id);
       renderDetail({ item, phase, series, season });
     });
   }

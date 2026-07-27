@@ -21,7 +21,7 @@ A thin Express layer (~80 lines). Three JSON files are read/written directly fro
 - `data/characters.json` — the character database (see below)
 - `data/progress.json` — the user's personal save data (watched/rating/timestamps), gitignored, auto-created empty on first run if missing
 
-Four endpoints: `GET /api/phases` (entire movies.json), `GET /api/characters` (entire characters.json), `GET /api/progress` (entire progress.json), `POST /api/progress/:id` (merges `{watched, rating}` into that id's entry; `watchedAt` is stamped automatically the first time `watched` flips true, cleared when it flips false).
+Five endpoints: `GET /api/phases` (entire movies.json), `GET /api/characters` (entire characters.json), `GET /api/progress` (entire progress.json), `POST /api/progress/:id` (merges `{watched, rating}` into that id's entry; `watchedAt` is stamped automatically the first time `watched` flips true, cleared when it flips false), `POST /api/now-watching` (replaces the "currently watching" flag list — an array of at most 2 unit ids, stored in progress.json under the reserved `_watching` key).
 
 ### Data model (`data/movies.json`)
 
@@ -74,6 +74,15 @@ Two-tier spoiler system (`watchFor` + `bindSpoilerToggles`): each `watchFor` ite
 - The detail page renders **all six phases** for **every** character as a collapsed accordion, so the phase list itself reveals nothing about where a character appears.
 - Roster threshold: somewhat-important through really-important characters. Recurring side characters (Luis, Darcy, Korg) are in; one-scene cameos are not.
 - `image` is omitted until a real image exists — the UI renders a "NO PHOTO ON FILE" portrait placeholder when absent, and the card layout already reserves the square slot for it. To add a photo: drop the file in `public/img/characters/` (convention: `<character-id>.<ext>`) and set `"image": "/img/characters/<file>"` on the character (an external `https://` URL also works). Images are shown square via `object-fit: cover`, centered by default; optional `imagePosition` (CSS `object-position`, e.g. `"top"` or `"50% 20%"`) shifts which part of the photo the crop keeps — prefer that over re-cropping image files.
+
+### "Currently watching" flags
+
+Up to 2 units (movie/special/episode) can be flagged as currently watching; ids live in `progress.json` under `_watching` (a reserved key — never treat it as an entry id) via `POST /api/now-watching`. Behaviors, all in `app.js`:
+
+- A fixed corner dock (`#now-watching-dock`, bottom-right, all screens) shows a clickable chip per flag linking to `#/watch/<id>`; hidden when no flags.
+- Flagging is a toggle button on the detail page, plus a pin icon on each phase-list card (click doesn't navigate; on a series card it flags the series' first unwatched episode, and unpinning clears any flagged episode it contains). Flagging a third unit silently drops the oldest (`toggleFlag`).
+- Marking a **flagged** unit watched auto-advances its flag to the next unwatched unit in global narrative order (`flatUnitIds`/`nextUnwatchedAfter` — phases in data order, entries by `narrativeOrder`, episodes in season order, skipping unreleased/watched/already-flagged). Marking anything watched when **no** flags exist bootstraps a flag on the next unit. Unwatching never touches flags.
+- Phase-list cards (including a series containing a flagged episode) and episode rows get a brass `▶ CURRENTLY WATCHING` badge; flagged case-cards also get a brass left border (`.watching-now`).
 
 ### watchFor → character linking
 

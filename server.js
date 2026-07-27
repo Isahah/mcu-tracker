@@ -69,6 +69,19 @@ app.post('/api/progress/:movieId', (req, res) => {
   res.json({ movieId, ...updated });
 });
 
+// Set the "currently watching" flags: up to 2 unit ids, stored in progress.json
+// under the reserved _watching key (never a real entry id, so it can't collide)
+app.post('/api/now-watching', (req, res) => {
+  const { ids } = req.body;
+  if (!Array.isArray(ids) || ids.length > 2 || !ids.every(i => typeof i === 'string')) {
+    return res.status(400).json({ error: 'ids must be an array of up to 2 id strings' });
+  }
+  const progress = loadProgress();
+  progress._watching = ids;
+  saveProgress(progress);
+  res.json({ _watching: ids });
+});
+
 app.listen(PORT, () => {
   console.log(`\nMCU Tracker running!`);
   console.log(`Open http://localhost:${PORT} in your browser\n`);

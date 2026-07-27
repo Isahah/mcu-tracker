@@ -519,6 +519,102 @@ body {
   margin-top: 0.3rem;
 }
 
+/* "Now Watching" corner dock — fixed on every screen */
+.now-watching-dock {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: flex-end;
+}
+
+.now-watching-dock[hidden] { display: none; }
+
+.nw-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  color: var(--text-dim);
+}
+
+.nw-chip {
+  display: block;
+  background: var(--paper);
+  color: var(--ink);
+  border-left: 3px solid var(--stamp-red);
+  padding: 0.5em 0.85em;
+  border-radius: var(--radius);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+
+.nw-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.55);
+}
+
+/* "Currently watching" markers on lists */
+.watching-badge {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  color: var(--brass);
+  border: 1px solid var(--brass);
+  padding: 0.15em 0.45em;
+  border-radius: var(--radius);
+  margin-bottom: 0.3rem;
+  white-space: nowrap;
+}
+
+.case-card.watching-now {
+  border-left-color: var(--brass);
+}
+
+/* Pin toggle on phase-list cards */
+.pin-btn {
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  font-size: 1.05rem;
+  cursor: pointer;
+  padding: 0.2em 0.35em;
+  line-height: 1;
+  border-radius: var(--radius);
+}
+
+.pin-btn:hover { color: var(--brass); }
+
+.pin-btn.pinned { color: var(--brass); }
+
+/* Flag toggle on the detail page */
+.flag-toggle {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  padding: 0.5em 1em;
+  border-radius: var(--radius);
+  border: 2px solid var(--brass);
+  background: transparent;
+  color: var(--brass);
+  cursor: pointer;
+}
+
+.flag-toggle.is-flagged {
+  background: var(--brass);
+  color: #fff;
+}
+
 /* Modal */
 .modal-backdrop {
   display: none;
@@ -900,4 +996,6 @@ a.watchfor-tag.watchfor-link:hover {
   .tape { display: none; }
   .modal { padding: 1.4rem; }
   .detail-card { padding: 1.4rem; }
+  .now-watching-dock { right: 10px; bottom: 10px; }
+  .nw-chip { max-width: 200px; }
 }
