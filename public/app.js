@@ -130,6 +130,16 @@ function route() {
 
   if (parts[0] === 'watch' && parts[1]) {
     const found = findItem(parts[1]);
+    // A series has no detail page of its own — send it to its phase list and
+    // pop the episode picker, so "watch these first" chips work for shows too
+    if (found && !found.series && found.item.type === 'series' && found.item.released !== false) {
+      activePhaseId = found.phase.id;
+      showScreen('phase');
+      renderPhase();
+      openEpisodeModal(found.item);
+      window.scrollTo(0, 0);
+      return;
+    }
     if (found) {
       showScreen('detail');
       renderDetail(found);
@@ -705,18 +715,46 @@ function whenText(entry) {
 
 // The spoiler-free orientation panel. Its "No spoilers" label is a contract —
 // only put things in here that can't reveal an event from the title itself.
+// "Watch these first" chips — each is an entry id from movies.json, so the label
+// and link come straight from the referenced title
+function prereqChipHtml(id) {
+  const found = findItem(id);
+  if (!found) return '';
+  return `<a class="chip" href="#/watch/${id}">${found.item.title}</a>`;
+}
+
+// "Helps, but optional" chips. An item that matches an entry id links to that
+// title; anything else (films outside this tracker) renders as a plain chip.
+function optionalChipHtml(value) {
+  const found = findItem(value);
+  if (found) return `<a class="chip" href="#/watch/${value}">${found.item.title}</a>`;
+  return `<span class="chip chip--fact">${value}</span>`;
+}
+
 function beforeWatchHtml(entry) {
   const blocks = [];
+  const bw = entry.beforeWatch || {};
   const when = whenText(entry);
   if (when) {
     blocks.push(`<div><p class="kicker">When this happens</p><p style="margin-top:8px">${when}</p></div>`);
+  }
+  if (bw.context) {
+    blocks.push(`<div><p class="kicker">What you need to know going in</p><p style="margin-top:8px">${bw.context}</p></div>`);
   }
   if (entry.watchFor && entry.watchFor.length) {
     blocks.push(`<div><p class="kicker">People &amp; things to watch for</p>
       <div class="chip-row" style="margin-top:10px">${entry.watchFor.map(watchForTagHtml).join('')}</div></div>`);
   }
+  if (bw.watchFirst && bw.watchFirst.length) {
+    blocks.push(`<div><p class="kicker">Watch these first</p>
+      <div class="bw-prereq">${bw.watchFirst.map(prereqChipHtml).join('')}</div></div>`);
+  }
   if (entry.optionalViewing) {
-    blocks.push(`<div><p class="kicker">Helps, but optional</p><p style="margin-top:8px">${entry.optionalViewing}</p></div>`);
+    // an array renders as chips (the usual case); a plain string still renders as prose
+    const body = Array.isArray(entry.optionalViewing)
+      ? `<div class="bw-prereq">${entry.optionalViewing.map(optionalChipHtml).join('')}</div>`
+      : `<p style="margin-top:8px">${entry.optionalViewing}</p>`;
+    blocks.push(`<div><p class="kicker">Helps, but optional</p>${body}</div>`);
   }
   if (!blocks.length) return '';
   return `

@@ -1,0 +1,18 @@
+/* ============================================================
+   LOCAL OVERRIDES — loaded after styles.css
+
+   styles.css is the Ink Navy stylesheet exactly as it came from the
+   design handoff. Anything we change afterwards lives here instead, so
+   a newer version of that file can be dropped straight in without
+   losing our tweaks. Keep this file small and note why each rule exists.
+   ============================================================ */
+
+/* Character portraits ship greyscale-at-rest, colour-on-hover. Preferred
+   full colour everywhere: the grid reads better, and the character file
+   page had no hover state at all, so its portrait was stuck grey. */
+.character-card img,
+.character-card .portrait,
+#character-content .portrait-frame img,
+#character-content .portrait-frame .no-photo {
+  filter: none;
+}

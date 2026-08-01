@@ -13,8 +13,11 @@
           "releaseOrder": 5,
           "type": "movie",
           "summary": "Set during World War II, a frail young man is transformed into a super-soldier and takes on a rogue Nazi-science division bent on world domination, ending with him frozen and lost to time.",
+          "beforeWatch": {
+            "context": "The earliest point on the whole timeline, and a clean starting line — it assumes you know nothing at all. Most of it plays as a 1940s war picture: the Second World War is on, America has just entered it, and the fringe science on both sides is running well ahead of the era. The only thing worth carrying in is that this world's history is our history, right up until the point where it isn't.",
+            "watchFirst": []
+          },
           "inUniverseSetting": "1942–1945",
-          "timeSkip": "Ends with an unplanned ~70-year jump to the present when Steve is found frozen in the ice",
           "deepDive": {
             "plot": "In WWII, scrawny but big-hearted Steve Rogers volunteers for an experimental super-soldier program and becomes Captain America. He spends the rest of the war fighting Hydra's rogue science division, led by the Red Skull, who is chasing a mystical artifact called the Tesseract to power city-destroying weapons. In the climactic battle, Steve crashes an out-of-control plane into the Arctic ice to save the country, and wakes up decades later in the present day, having lost everything and everyone he knew.",
             "significance": "This is the emotional and thematic starting point of the entire saga — it establishes Captain America's core values (sacrifice, decency, loyalty) that every other Avenger gets measured against, and plants the Tesseract, Hydra, and the 'man out of time' premise that echo through nearly every later film.",
@@ -36,6 +39,10 @@
           "releaseOrder": 21,
           "type": "movie",
           "summary": "Set in the 1990s, an Air Force pilot with cosmic powers gets caught in a galactic conflict and uncovers hidden memories about her past on Earth.",
+          "beforeWatch": {
+            "context": "Set in 1995, half a century after the last film and over a decade before the present-day story starts. It stands almost entirely on its own. What it's quietly doing is filling in the era before any of the heroes existed, back when the organisation that eventually assembles them was a much smaller, much less certain outfit.",
+            "watchFirst": []
+          },
           "inUniverseSetting": "1995",
           "deepDive": {
             "plot": "Set in the mid-1990s, an amnesiac Kree soldier named Vers discovers she's actually Carol Danvers, a former U.S. Air Force pilot who gained cosmic powers from an alien energy core. Along the way she uncovers that the 'enemy' Skrulls she's been hunting are actually refugees, and that her own Kree allies have been lying to her for years. She helps the Skrulls find a new home and leaves Earth to help them resettle across the galaxy.",
@@ -57,6 +64,10 @@
           "releaseOrder": 1,
           "type": "movie",
           "summary": "A billionaire weapons manufacturer is captured and forced to build a weapon, but instead builds a suit of armor and escapes, setting him on a new path.",
+          "beforeWatch": {
+            "context": "This is where the modern-day story actually begins, and the film everything else grows out of. Nothing before it is required — the two period pieces you've just watched are background colour, not setup. Go in expecting a grounded film about weapons manufacturing and one man's very expensive change of heart.",
+            "watchFirst": []
+          },
           "inUniverseSetting": "2008",
           "deepDive": {
             "plot": "Weapons manufacturer Tony Stark is captured by terrorists in Afghanistan and forced to build a weapon; instead, he secretly builds a suit of powered armor and escapes. Back home, he has a change of heart about his company's arms dealing, refines the suit into the Iron Man armor, and exposes and defeats his mentor Obadiah Stane, who tries to steal the technology and kill him.",
@@ -77,6 +88,10 @@
           "releaseOrder": 2,
           "type": "movie",
           "summary": "A scientist on the run tries to control a rage-fueled transformation caused by a failed experiment, while the military hunts him down.",
+          "beforeWatch": {
+            "context": "Runs alongside the previous film rather than after it, and needs nothing from it. One heads-up that isn't a plot point: Bruce Banner is played by a different actor here than in every film that follows, which trips people up if nobody warns them. Treat it as a chase film — he's a fugitive when it opens, and the story is already in motion.",
+            "watchFirst": []
+          },
           "inUniverseSetting": "2008",
           "deepDive": {
             "plot": "Scientist Bruce Banner, on the run and trying to cure the gamma radiation accident that turns him into the Hulk, is relentlessly hunted by the U.S. military under General Ross. After a confrontation with a soldier who injects himself with a similar serum and becomes the monstrous Abomination, Banner reluctantly transforms and defeats him, then goes into hiding, trying to control his condition.",
@@ -98,6 +113,10 @@
           "releaseOrder": 3,
           "type": "movie",
           "summary": "Facing pressure from the government and a personal crisis, a hero must deal with a new enemy seeking revenge tied to his father's past, while a former ally's ambitions grow.",
+          "beforeWatch": {
+            "context": "Picks up about six months after the first film, with Tony now a very public figure and enjoying it far too much. The wider organisation that has been hovering at the edges starts stepping properly into frame here, so this is the first film that feels like it's building toward something larger.",
+            "watchFirst": ["iron-man-1"]
+          },
           "inUniverseSetting": "2010",
           "deepDive": {
             "plot": "With his health failing from palladium poisoning caused by his own arc reactor, Tony Stark faces government pressure to hand over his suit technology, a vengeful new enemy named Ivan Vanko seeking payback for his father's mistreatment by Howard Stark, and a scheming rival arms dealer, Justin Hammer, who backs Vanko's attacks.",
@@ -119,6 +138,10 @@
           "releaseOrder": 4,
           "type": "movie",
           "summary": "A powerful but arrogant warrior is cast out of his home realm and stripped of his power, learning humility on Earth while a threat brews back home.",
+          "beforeWatch": {
+            "context": "The first trip off Earth, and your introduction to Asgard — a realm with its own royal family, its own politics and a very long history that the films treat as fact rather than myth. It works cold; nothing from the previous films is needed. Expect a fish-out-of-water story once it reaches Earth.",
+            "watchFirst": []
+          },
           "inUniverseSetting": "2010–2011",
           "deepDive": {
             "plot": "Arrogant Asgardian prince Thor is stripped of his power and banished to Earth by his father Odin as punishment for reigniting an ancient war. Humbled by his time among humans, he earns back his hammer Mjolnir and returns home just in time to stop his adopted brother Loki, who has seized the throne and nearly destroyed a rival realm to prove himself.",
@@ -140,6 +163,10 @@
           "releaseOrder": 6,
           "type": "movie",
           "summary": "A team of powerful individuals is assembled to stop a stolen artifact from being used to open a portal for an invading force.",
+          "beforeWatch": {
+            "context": "The payoff the whole phase has been quietly building toward, and the one film here that genuinely expects you to have done the reading. Everyone arrives with baggage from their own film and none of it gets re-explained. You'll get the most out of it if the four solo films are fresh, and if you remember that the organisation running the operation has been recruiting since the very first post-credits scene you saw.",
+            "watchFirst": ["iron-man-1","incredible-hulk","iron-man-2","thor-1","cap-1"]
+          },
           "inUniverseSetting": "2012",
           "timeSkip": "About a year after Thor",
           "deepDive": {
@@ -169,6 +196,10 @@
           "releaseOrder": 7,
           "type": "movie",
           "summary": "In the aftermath of New York, Tony Stark grapples with anxiety while a terrorist calling himself the Mandarin targets him, drawing him into a conspiracy involving a rogue scientist's super-soldier program.",
+          "beforeWatch": {
+            "context": "Set at Christmas, roughly six months after the Battle of New York, and the first film to deal with the aftermath of that fight rather than the fight itself. Tony is not okay, and the film treats that as its actual subject. Everything you need about the invasion comes from the previous film.",
+            "watchFirst": ["avengers-1","iron-man-1"]
+          },
           "inUniverseSetting": "Christmas 2012",
           "deepDive": {
             "plot": "Tony Stark, suffering panic attacks after the wormhole battle in New York, obsessively builds Iron Man suits while a terrorist calling himself the Mandarin bombs targets across the country. After his home is destroyed, Tony discovers the Mandarin is actually a washed-up actor, and the real threat is Aldrich Killian, a scientist using an unstable regenerative serum called Extremis to create super-soldiers — including a version of Pepper Potts he kidnaps and injects. Tony destroys the Extremis operation, has the shrapnel and reactor removed from his chest, and quietly decides to stop defining himself by the suit.",
@@ -189,6 +220,10 @@
           "releaseOrder": 8,
           "type": "movie",
           "summary": "An ancient race led by the vengeful Malekith returns to plunge the universe into darkness using a weapon called the Aether, forcing Thor to make an uneasy alliance with Loki to save the Nine Realms.",
+          "beforeWatch": {
+            "context": "Thor has spent the time since New York putting out fires across the realms, and Asgard is dealing with the fallout of the first film's ending. Jane Foster has been off-screen the whole time and the film picks her thread back up. Both previous Thor-related films matter more than usual here.",
+            "watchFirst": ["thor-1","avengers-1"]
+          },
           "inUniverseSetting": "2013",
           "deepDive": {
             "plot": "An ancient race of Dark Elves led by Malekith awakens after millennia of dormancy, seeking to use a reality-warping substance called the Aether to plunge the universe back into darkness. When Jane Foster accidentally becomes host to the Aether, Malekith's forces attack Asgard and kill Thor's mother Frigga. Thor breaks Loki out of prison to smuggle Jane through the Nine Realms and defeat Malekith on Earth, at the cost of Asgard being left without its protective shield.",
@@ -209,6 +244,10 @@
           "releaseOrder": 9,
           "type": "movie",
           "summary": "Steve Rogers uncovers a conspiracy that has quietly taken root inside S.H.I.E.L.D. itself, and finds himself hunted by a mysterious, deadly assassin known as the Winter Soldier.",
+          "beforeWatch": {
+            "context": "Steve is two years into the present day now, working full time for the intelligence agency you've watched operate since the first film — and increasingly uneasy about how it does business. This is the most grounded, conspiracy-flavoured film so far, and it assumes you remember both his war-era history and who was running the show in New York.",
+            "watchFirst": ["cap-1","avengers-1"]
+          },
           "inUniverseSetting": "2014",
           "deepDive": {
             "plot": "Two years after the Battle of New York, Steve Rogers discovers that S.H.I.E.L.D. has been secretly infiltrated by Hydra from its very founding, using its own helicarriers and a predictive algorithm to preemptively eliminate future threats to Hydra's rule. Steve, Natasha, and new ally Sam Wilson uncover the conspiracy, only to find that the assassin hunting them, the Winter Soldier, is Steve's presumed-dead best friend Bucky Barnes, brainwashed by Hydra for decades. Steve refuses to fight him, the helicarriers are destroyed, and S.H.I.E.L.D. collapses entirely.",
@@ -230,6 +269,10 @@
           "releaseOrder": 10,
           "type": "movie",
           "summary": "A group of misfit outlaws from across the galaxy is forced to band together to stop a fanatical warrior from acquiring a mysterious orb of immense and destructive power.",
+          "beforeWatch": {
+            "context": "A hard reset into a completely different corner of the universe, with a new cast who have never heard of anyone you've met so far. You can watch this cold — it explains its own world from scratch. The only thread connecting it to what you've seen is one object that behaves a lot like others you've encountered before.",
+            "watchFirst": []
+          },
           "inUniverseSetting": "2014",
           "deepDive": {
             "plot": "Small-time thief Peter Quill, abducted from Earth as a child, steals a mysterious orb that turns out to be an Infinity Stone, drawing the attention of the fanatical Kree warrior Ronan. Quill is forced into an uneasy alliance with the assassin Gamora, the bounty hunters Rocket and Groot, and the vengeful Drax, and together they narrowly stop Ronan from using the Stone to destroy an entire planet, forming an unlikely family in the process.",
@@ -251,6 +294,10 @@
           "releaseOrder": 15,
           "type": "movie",
           "summary": "Shortly after escaping other galactic factions, the Guardians must survive the appearance of Peter Quill's mysterious birth father while old grudges within the team come to a head. Set only months after the first film, so it's grouped here narratively even though it released during Phase Three.",
+          "beforeWatch": {
+            "context": "A couple of months after the first film, with the same crew now working together, badly, as a going concern. It's almost entirely self-contained: no knowledge of Earth's heroes is needed, and the film is much more interested in this crew's family history than in the wider universe.",
+            "watchFirst": ["guardians-1"]
+          },
           "inUniverseSetting": "2014",
           "timeSkip": "A few months after the first Guardians film",
           "deepDive": {
@@ -273,6 +320,10 @@
           "releaseOrder": 11,
           "type": "movie",
           "summary": "Tony Stark's attempt to build a peacekeeping artificial intelligence backfires when it becomes the villainous Ultron, forcing the Avengers to confront a new threat alongside a pair of enhanced siblings.",
+          "beforeWatch": {
+            "context": "The band is back together and has been operating as a unit for a while when this opens — the film drops you into an ongoing campaign rather than reassembling everyone. It leans on the collapse of the organisation from The Winter Soldier and on Tony's state of mind after Iron Man 3, so both are worth having fresh.",
+            "watchFirst": ["avengers-1","cap-2","iron-man-3"]
+          },
           "inUniverseSetting": "2015",
           "deepDive": {
             "plot": "A year after Winter Soldier, the Avengers raid a Hydra base and recover Loki's scepter, inside which Tony Stark and Bruce Banner discover an artificial intelligence they use to build a global peacekeeping program, Ultron. Ultron immediately concludes humanity itself is the threat to peace and tries to trigger an extinction-level event using a floating city and a vibranium-powered synthetic body. The Avengers, aided by two enhanced Hydra experiments (Wanda and Pietro Maximoff), stop Ultron, though Pietro is killed and a new synthetic being, Vision, is created from the very body Ultron built for himself.",
@@ -295,6 +346,10 @@
           "releaseOrder": 12,
           "type": "movie",
           "summary": "Con man Scott Lang is recruited by scientist Hank Pym to master a suit that lets him shrink to the size of an insect, using his new ability to pull off a heist that could save the world.",
+          "beforeWatch": {
+            "context": "A deliberately small film — a heist story about one family, set in a world where the big team exists but is busy elsewhere. It stands alone almost completely, and it's the first film in a while that isn't about saving the planet. A little familiarity with the wider world helps one or two jokes land, nothing more.",
+            "watchFirst": []
+          },
           "inUniverseSetting": "2015",
           "deepDive": {
             "plot": "Recently released ex-con Scott Lang is recruited by scientist Hank Pym to become the new Ant-Man, using a size-changing suit Pym has kept hidden for decades. Pym's plan is to stop his former protégé, Darren Cross, from replicating and weaponizing the same shrinking technology as the Yellowjacket. Scott pulls off a heist inside Cross's own company, defeats Yellowjacket, and earns Hank's trust, while Hank's daughter Hope is finally given her mother's old Wasp suit.",
@@ -322,6 +377,10 @@
           "releaseOrder": 13,
           "type": "movie",
           "summary": "A government oversight act splits the Avengers into two factions, pitting Captain America and his allies against Iron Man's, while a hidden mastermind quietly manipulates the conflict from the shadows.",
+          "beforeWatch": {
+            "context": "The consequences film. Two of the previous films ended with a city badly damaged and a lot of civilians caught in the middle, and the world's governments have finally decided to do something about oversight. It expects you to remember both incidents, and to remember who Steve's oldest friend is and what happened to him.",
+            "watchFirst": ["avengers-2","cap-2"]
+          },
           "inUniverseSetting": "2016",
           "deepDive": {
             "plot": "After an Avengers mission in Lagos causes civilian casualties, the United Nations proposes the Sokovia Accords, an oversight framework for enhanced individuals — splitting the team between Tony Stark's faction, which supports regulation, and Steve Rogers', which doesn't. The rift explodes into open conflict when Bucky Barnes is framed for a bombing at the Accords signing, and Zemo — a grieving Sokovian whose family died in Ultron's battle — manipulates both sides into an airport battle, then reveals that a brainwashed Bucky killed Tony's parents years earlier.",
@@ -344,6 +403,10 @@
           "releaseOrder": 27,
           "type": "movie",
           "summary": "A fugitive in the fallout of Civil War, Natasha Romanoff is forced to confront dangerous ties from her past when a mysterious figure threatens to unravel the Red Room program that trained her. Released in Phase Four but set in 2016, so it's grouped here narratively, same reasoning as Captain Marvel and Guardians Vol. 2.",
+          "beforeWatch": {
+            "context": "Set immediately after the previous film, in the window where Natasha is a fugitive with nowhere to go. It's a prequel to everything that comes after it in this list, and it finally goes back to the history she has been alluding to since her very first appearance. Released years later, so expect a modern look on an older point in the story.",
+            "watchFirst": ["cap-3"]
+          },
           "inUniverseSetting": "2016",
           "timeSkip": "Set right after Civil War, even though it released in 2021",
           "deepDive": {
@@ -365,6 +428,10 @@
           "releaseOrder": 18,
           "type": "movie",
           "summary": "After his father's death, T'Challa returns to the technologically advanced nation of Wakanda to claim the throne, but a challenger with ties to his family's past threatens both his crown and Wakanda's secrets.",
+          "beforeWatch": {
+            "context": "Picks up only days after the last film, with T'Challa heading home to take the throne after events there. Wakanda gets built from the ground up for you — nothing about it is assumed — but the reason he's returning home, and grieving, comes straight out of the previous film.",
+            "watchFirst": ["cap-3"]
+          },
           "inUniverseSetting": "2016",
           "timeSkip": "Set only days after Civil War, though released two years later",
           "deepDive": {
@@ -387,6 +454,10 @@
           "releaseOrder": 16,
           "type": "movie",
           "summary": "Still adjusting to his new abilities, Peter Parker balances high school life with his growing responsibilities as Spider-Man while facing a black-market arms dealer wielding stolen alien technology.",
+          "beforeWatch": {
+            "context": "A few months after the airport fight, told from the point of view of the fifteen-year-old who was briefly flown in for it and then sent home. This is a high-school film first and a superhero film second. You need the previous film for how he got the suit, and very little else.",
+            "watchFirst": ["cap-3"]
+          },
           "inUniverseSetting": "2016",
           "timeSkip": "A few months after Civil War",
           "deepDive": {
@@ -408,6 +479,10 @@
           "releaseOrder": 14,
           "type": "movie",
           "summary": "A brilliant but arrogant surgeon loses the use of his hands in an accident and seeks healing in the mystic arts, discovering a hidden world of sorcery and a looming threat from another dimension.",
+          "beforeWatch": {
+            "context": "A standalone origin story that opens the door on magic, which the films have not seriously dealt with until now. Nothing prior is required. It runs roughly parallel to the films around it rather than after them, so don't worry about slotting it precisely.",
+            "watchFirst": []
+          },
           "inUniverseSetting": "2016",
           "deepDive": {
             "plot": "Brilliant but arrogant surgeon Stephen Strange loses the use of his hands in a car accident and, out of desperation, seeks out a mystical order in Kathmandu led by the Ancient One. He masters the mystic arts faster than anyone before him, only to discover a rogue former student, Kaecilius, is trying to merge Earth with a dark dimension ruled by the entity Dormammu. Strange traps Dormammu in a time loop using the Time Stone to force a bargain, saving Earth and choosing to become the new Sorcerer Supreme.",
@@ -429,6 +504,10 @@
           "releaseOrder": 17,
           "type": "movie",
           "summary": "Imprisoned on the other side of the universe, Thor must race home to stop the fire demon Surtur and his ruthless sister Hela from destroying Asgard, teaming up with the Hulk and a band of misfits along the way.",
+          "beforeWatch": {
+            "context": "Thor has spent two years off-screen chasing the thread he walked away on at the end of Age of Ultron, and comes back to find things at home very different. A hard tonal swerve into comedy compared with the previous two — that's deliberate. Both earlier Thor films and Age of Ultron feed directly into where he is when it opens.",
+            "watchFirst": ["thor-2","avengers-2"]
+          },
           "inUniverseSetting": "2017",
           "deepDive": {
             "plot": "Imprisoned across the universe by the Grandmaster on the trash-planet Sakaar, Thor must escape and race home after learning his long-hidden older sister, Hela, the Goddess of Death, has seized Asgard's throne and set her sights on galactic conquest. Reluctantly teaming up with an exiled Valkyrie, a captive Hulk, and a scheming Loki, Thor allows the fire demon Surtur to destroy Asgard entirely rather than let Hela keep it, saving his people — now refugees — at the cost of his home.",
@@ -450,6 +529,10 @@
           "releaseOrder": 19,
           "type": "movie",
           "summary": "The Avengers and their allies unite to stop the Mad Titan Thanos from collecting all six Infinity Stones and using them to wipe out half of all life in the universe.",
+          "beforeWatch": {
+            "context": "The film every thread so far has been feeding, and the one that assumes the most. It opens mid-crisis with no recap, moves between Earth and deep space constantly, and expects you to already know the cosmic crew, the state of Wakanda, where the team stands after Civil War, and what the various coloured stones people keep chasing actually are.",
+            "watchFirst": ["avengers-2","cap-3","thor-3","black-panther","guardians-2","doctor-strange-1"]
+          },
           "inUniverseSetting": "2018",
           "deepDive": {
             "plot": "Thanos, having gathered several Infinity Stones already, launches a systematic assault across the galaxy to collect the rest — including the Mind Stone from Vision's forehead and the Time Stone from Doctor Strange — so he can snap away half of all life in the universe to 'balance' it. Despite the combined efforts of nearly every hero introduced across a decade of films, Thanos succeeds, and the film ends with half of all life, including many beloved heroes, disintegrating into dust.",
@@ -471,6 +554,10 @@
           "releaseOrder": 20,
           "type": "movie",
           "summary": "Scott Lang juggles house arrest with a new mission alongside Hope van Dyne and Hank Pym to rescue Hope's mother, Janet, from the mysterious and dangerous Quantum Realm.",
+          "beforeWatch": {
+            "context": "Scott is under house arrest for taking part in the airport fight, and the film is a light, self-contained caper — a deliberate breather. Important placement note: it runs alongside the previous film rather than after it, and only catches up to that film's ending in its final moments.",
+            "watchFirst": ["ant-man-1","cap-3"]
+          },
           "inUniverseSetting": "2018",
           "timeSkip": "Set concurrently with, right up to, Infinity War's ending",
           "deepDive": {
@@ -493,6 +580,10 @@
           "releaseOrder": 22,
           "type": "movie",
           "summary": "With half of all life gone, the remaining Avengers assemble one final time to undo Thanos's actions, launching a desperate heist through their own history.",
+          "beforeWatch": {
+            "context": "Direct continuation of Infinity War, opening on the immediate aftermath with the survivors in pieces. It is long, it is a victory lap for eleven years of films, and it rewards recognising faces and callbacks more than any other entry. The pager from the last film's final scene is answered here, so Captain Marvel is worth having fresh.",
+            "watchFirst": ["avengers-3","captain-marvel"]
+          },
           "inUniverseSetting": "2018–2023",
           "timeSkip": "Jumps forward 5 years partway through the film, from 2018 to 2023",
           "deepDive": {
@@ -515,6 +606,10 @@
           "releaseOrder": 23,
           "type": "movie",
           "summary": "While on a school trip across Europe, Peter Parker is recruited by Nick Fury to help a mysterious visitor from another dimension battle a string of elemental creatures threatening the world.",
+          "beforeWatch": {
+            "context": "A few months after Endgame, and the first film to show what the world actually looks like afterwards — grieving, disoriented, and trying to work out who fills the gap. Peter is on a school trip to Europe and would very much like a holiday. The previous film's ending is essential; so is his own.",
+            "watchFirst": ["avengers-4","spiderman-1"]
+          },
           "inUniverseSetting": "2024",
           "timeSkip": "Set 8 years after the 2012 Avengers battle, following the 5-year Blip",
           "deepDive": {
@@ -543,6 +638,10 @@
           "releaseOrder": 24,
           "type": "series",
           "summary": "Grieving in secret, Wanda Maximoff builds an idyllic sitcom life with a resurrected Vision in the town of Westview — a reality that starts to crack the deeper you look.",
+          "beforeWatch": {
+            "context": "A few weeks after Endgame. Wanda has lost more than almost anyone across the last two Avengers films and has had no space to process any of it. The series is formally strange — it opens as a black-and-white sitcom and stays in that register for a while, on purpose. Both Avengers films are essential here; the sitcom pastiche is a bonus, not a requirement.",
+            "watchFirst": ["avengers-3","avengers-4"]
+          },
           "inUniverseSetting": "Fall 2023",
           "deepDive": {
             "plot": "Grieving Vision's death and unable to process her trauma from Thanos's Snap, Wanda Maximoff unknowingly seizes control of a small town, Westview, warping reality into a series of decades-spanning sitcom pastiches with a resurrected version of Vision built from her own grief and power. As S.W.O.R.D. investigates the anomaly from outside, the show reveals that Wanda's neighbor Agatha Harkness has secretly been manipulating events to steal Wanda's uniquely powerful magic. Wanda ultimately defeats Agatha, but has to say goodbye to the family she conjured, releasing the townspeople and leaving with the Darkhold to study her own powers in isolation.",
@@ -605,6 +704,10 @@
           "releaseOrder": 25,
           "type": "series",
           "summary": "With Steve Rogers gone, Sam Wilson and Bucky Barnes are forced to work together against a group of anti-nationalist super soldiers, while a new government-appointed Captain America stirs controversy.",
+          "beforeWatch": {
+            "context": "Around six months after Endgame, following the two men Steve left behind and the question of what happens to the shield now. The world is dealing with the practical mess of half the population returning after five years away. The Winter Soldier is the key film to have fresh — this series is a direct continuation of that story's politics.",
+            "watchFirst": ["avengers-4","cap-2"]
+          },
           "inUniverseSetting": "2023",
           "timeSkip": "Roughly six months after the Blip is reversed",
           "deepDive": {
@@ -646,6 +749,10 @@
           "releaseOrder": 26,
           "type": "series",
           "summary": "After stealing the Tesseract during the Avengers' 2012 time heist, a variant of the God of Mischief is arrested by the Time Variance Authority and forced to help hunt an even more dangerous variant of himself.",
+          "beforeWatch": {
+            "context": "This is not the Loki you last saw. It follows the 2012 version, picked up at the exact moment he escapes with the Tesseract during the time heist, so none of his later development has happened yet. You need The Avengers for who he was, and Endgame for the scene he escapes from — after that it leaves the timeline almost immediately.",
+            "watchFirst": ["avengers-1","avengers-4"]
+          },
           "inUniverseSetting": "Outside time",
           "timeSkip": "Kicks off the instant 2012-Loki escapes with the Tesseract during Endgame's heist, then unfolds 'outside' the main timeline at the TVA",
           "deepDive": {
@@ -721,6 +828,10 @@
           "releaseOrder": 28,
           "type": "movie",
           "summary": "A martial-arts prodigy who has been hiding from his past is drawn back into the orbit of his father's secret organization, the Ten Rings, and must confront a fate he thought he'd escaped.",
+          "beforeWatch": {
+            "context": "Almost entirely standalone, with a new cast and a story about a family rather than a world-ending threat. It builds its own mythology from scratch. The one thread reaching back is an organisation whose name has come up a couple of times before, notably in the first Iron Man film.",
+            "watchFirst": []
+          },
           "inUniverseSetting": "2023",
           "deepDive": {
             "plot": "Shaun, a San Francisco valet who's secretly Shang-Chi, has spent a decade hiding from his father Xu Wenwu, the immortal leader of the Ten Rings organization and wielder of ten mystical rings. When his father hunts him down seeking a pendant tied to Shang-Chi's late mother's home village, Shang-Chi learns his father plans to break through a mystical seal, believing his dead wife is trapped behind it — actually the prison of a soul-devouring creature. Shang-Chi, his sister Xialing, and their allies stop the creature's escape, and Shang-Chi reluctantly accepts his father's rings and legacy.",
@@ -742,6 +853,10 @@
           "releaseOrder": 29,
           "type": "movie",
           "summary": "A team of immortal beings who have secretly protected Earth for thousands of years are forced to reunite against their ancient enemies, the Deviants, uncovering long-hidden truths about their true purpose.",
+          "beforeWatch": {
+            "context": "A near-total reset: a new group who have been on Earth for seven thousand years without ever getting involved in anything you've watched, which the film addresses directly. It works cold. It's also the longest and slowest film here, and jumps between the present day and flashbacks across millennia.",
+            "watchFirst": []
+          },
           "inUniverseSetting": "2023 (with flashbacks spanning 7,000 years)",
           "deepDive": {
             "plot": "A team of ten immortal beings, secretly sent to Earth 7,000 years ago by the cosmic being Arishem to protect humanity from monstrous Deviants, reunite in the present day when the Deviants unexpectedly resurface. The team discovers their true purpose was never protection — they were meant to incubate a Celestial embryo inside the Earth itself, an 'Emergence' that would destroy the planet to birth a new Celestial. Split over whether to let it happen, the Eternals stop the Emergence, but Arishem takes several of them away to judge whether humanity deserves to survive, leaving their fate unresolved.",
@@ -763,6 +878,10 @@
           "releaseOrder": 30,
           "type": "series",
           "summary": "Clint Barton teams up with young archer Kate Bishop to take down a criminal conspiracy tied to his past as Ronin, just days before Christmas.",
+          "beforeWatch": {
+            "context": "Christmas in New York, with Clint trying and failing to get home to his family. It leans on his history more than any other series — specifically the five years covered by Endgame and the partnership at the heart of Black Widow. A cheerful, low-stakes holiday tone sitting on top of some genuinely heavy history.",
+            "watchFirst": ["avengers-4","black-widow"]
+          },
           "inUniverseSetting": "Christmas 2024",
           "deepDive": {
             "plot": "Trying to get home to his family for Christmas, retired Avenger Clint Barton is dragged back into his past as the vigilante Ronin when aspiring young archer Kate Bishop accidentally puts on his old suit at an auction, drawing the attention of a tracksuit-wearing mafia and Yelena Belova, who blames Clint for Natasha's death. Clint and Kate team up, uncovering that the real villain is a mob boss connected to Kate's own family, and Clint clears his name with Yelena while passing his archer's mantle informally to Kate.",
@@ -795,7 +914,11 @@
           "releaseOrder": 31,
           "type": "movie",
           "summary": "After his identity is exposed, Peter Parker asks Doctor Strange for help, and a spell gone wrong tears open the multiverse, bringing dangerous visitors from other realities into his world.",
-          "optionalViewing": "Some context from the older, pre-MCU Spider-Man film series pays off here: Spider-Man (2002), Spider-Man 2 (2004), Spider-Man 3 (2007), The Amazing Spider-Man (2012), and The Amazing Spider-Man 2 (2014). None are required — but the more of them you've seen, the harder this one hits.",
+          "beforeWatch": {
+            "context": "Peter Parker's identity as Spider-Man was broadcast to the world at the end of the last film, and this one opens directly on that fallout — he's still a high-school senior, and college applications drive the early going more than heroics. The other thing worth carrying in is Doctor Strange, so his solo film gives you a sense of what magic can and can't do here.",
+            "watchFirst": ["spiderman-1","spiderman-2","doctor-strange-1","avengers-4"]
+          },
+          "optionalViewing": ["Spider-Man (2002)", "Spider-Man 2 (2004)", "Spider-Man 3 (2007)", "The Amazing Spider-Man (2012)", "The Amazing Spider-Man 2 (2014)"],
           "inUniverseSetting": "2024",
           "timeSkip": "A few months after Far From Home",
           "deepDive": {
@@ -817,6 +940,10 @@
           "releaseOrder": 32,
           "type": "series",
           "summary": "A mild-mannered gift shop worker discovers he shares a body with a mercenary, both serving as the reluctant avatar of an Egyptian moon god.",
+          "beforeWatch": {
+            "context": "The most self-contained thing on this list. New character, new corner of the world, no crossovers and no required reading whatsoever — it never once mentions the Avengers. Go in cold; the disorientation in the opening episode is entirely intentional.",
+            "watchFirst": []
+          },
           "inUniverseSetting": "2023",
           "deepDive": {
             "plot": "Mild-mannered gift shop worker Steven Grant discovers he shares a body with Marc Spector, a mercenary secretly serving as the avatar of the Egyptian moon god Khonshu. As the two struggle for control, they're forced to stop a cult leader, Arthur Harrow, from resurrecting the goddess Ammit to judge humanity for crimes it hasn't committed yet. Along the way, a third personality, Jake Lockley, is revealed to exist within the same body, hinting the full truth of Marc's fractured identity is still not fully understood even by himself.",
@@ -848,6 +975,10 @@
           "releaseOrder": 33,
           "type": "movie",
           "summary": "Doctor Strange journeys into the dangerous and mind-bending multiverse with the help of a young woman who can travel between realities, while a powerful force hunts her for her abilities.",
+          "beforeWatch": {
+            "context": "Follows directly from the end of No Way Home, and takes the door that film opened as its starting premise. It also assumes you've finished WandaVision — that series does far more setup for this film than the first Doctor Strange does. A noticeably darker, more horror-inflected film than anything before it.",
+            "watchFirst": ["doctor-strange-1","spiderman-3","wandavision"]
+          },
           "inUniverseSetting": "2024",
           "timeSkip": "Directly follows No Way Home",
           "deepDive": {
@@ -870,6 +1001,10 @@
           "releaseOrder": 34,
           "type": "series",
           "summary": "New Jersey teenager and superhero fangirl Kamala Khan discovers she has real superpowers of her own, tied to a mysterious family heirloom.",
+          "beforeWatch": {
+            "context": "A teenage coming-of-age story in Jersey City, and a very light lift — it needs no homework beyond knowing that the Avengers are famous in-universe, which the show is largely about. Kamala is a fan of theirs, so the more you've seen the more her enthusiasm lands, but nothing is required.",
+            "watchFirst": []
+          },
           "inUniverseSetting": "2025",
           "deepDive": {
             "plot": "New Jersey teenager and Captain Marvel superfan Kamala Khan discovers her grandmother's old bangle grants her real superpowers, tied to an ancient race called the Clandestines who were stranded on Earth generations ago. As Kamala learns to control her powers and juggle her Muslim-American family life, she uncovers her own family's hidden connection to the bangle through her great-grandmother, who fled during the Partition of India. By the end, Kamala's growing powers briefly cause her to swap places with Carol Danvers herself, catching the cosmic hero's attention for the first time.",
@@ -909,6 +1044,10 @@
           "releaseOrder": 35,
           "type": "movie",
           "summary": "Thor's search for inner peace is interrupted by a galactic killer known as Gorr the God Butcher, who seeks the extinction of the gods, forcing Thor to seek help from an old flame wielding his own hammer.",
+          "beforeWatch": {
+            "context": "Thor has been off with the Guardians since Endgame and is looking for a purpose. Ragnarok's comic register is dialled up further here. The two films that matter going in are Ragnarok, for the tone and the supporting cast, and Endgame, for where he ended up — plus a memory of Jane Foster from the first two Thor films.",
+            "watchFirst": ["thor-3","avengers-4"]
+          },
           "inUniverseSetting": "2025",
           "deepDive": {
             "plot": "Still searching for peace after Endgame, Thor reunites with his ex, astrophysicist Jane Foster, who has used the remains of his old hammer Mjolnir to become the Mighty Thor while secretly battling cancer. Together they must stop Gorr the God Butcher, a grief-stricken former believer slaughtering gods across the universe after his own deity abandoned him, using a weapon capable of killing gods, the Necrosword. Jane sacrifices herself using Mjolnir's power to save the day, and Thor, having lost yet another partner, finds a new sense of purpose raising Gorr's resurrected daughter as his own.",
@@ -929,6 +1068,10 @@
           "releaseOrder": 36,
           "type": "series",
           "summary": "Lawyer Jennifer Walters gains the powers of the Hulk after an accident, and must balance a superhero-law specialty with the messiness of everyday life.",
+          "beforeWatch": {
+            "context": "A half-hour legal comedy that is much more sitcom than superhero show, and it knows it. It expects you to know Bruce Banner's history, so The Incredible Hulk and the Avengers films help — as does Shang-Chi for one recurring supporting character. It also breaks the fourth wall constantly, which is the format, not a glitch.",
+            "watchFirst": ["incredible-hulk","avengers-4","shang-chi"]
+          },
           "inUniverseSetting": "2025",
           "deepDive": {
             "plot": "After a car accident exposes her to her cousin Bruce Banner's blood, lawyer Jennifer Walters unexpectedly gains her own Hulk form, which she can control far more easily than Bruce ever could — to his visible annoyance. Reluctantly stepping into a superhuman law specialty at her firm, Jennifer navigates dating, online harassment, and a conspiracy to steal her blood, culminating in a fourth-wall-breaking finale where Jennifer literally storms the show's own production to demand a more satisfying ending.",
@@ -971,6 +1114,10 @@
           "releaseOrder": 37,
           "type": "movie",
           "summary": "Following the loss of their king, the people of Wakanda must fight to protect their nation from intervening world powers while facing a new threat from a hidden underwater civilization.",
+          "beforeWatch": {
+            "context": "About a year after Endgame, and about a year after the death of T'Challa — which the film treats as real and permanent, and which is also the real-world reason for its shape. It is first and last a film about grief. The first Black Panther is essential; Wakanda's new position in the world follows on directly from it.",
+            "watchFirst": ["black-panther","avengers-4"]
+          },
           "inUniverseSetting": "2025",
           "timeSkip": "Roughly a year after T'Challa's death",
           "deepDive": {
@@ -993,6 +1140,10 @@
           "releaseOrder": 38,
           "type": "special",
           "summary": "While the Guardians spend the holidays quietly grieving and reminiscing on Knowhere, Mantis and Drax journey to Earth on an ill-advised mission to get Peter Quill the perfect Christmas gift: Kevin Bacon.",
+          "beforeWatch": {
+            "context": "A forty-minute comedy, set at Christmas, that exists to give the crew a light moment before their final film. It assumes you know where everyone stands after Endgame and Vol. 2 — particularly who is and isn't on the ship any more. There is no threat and no plot to speak of, which is the point.",
+            "watchFirst": ["guardians-2","avengers-4"]
+          },
           "inUniverseSetting": "Christmas 2022",
           "timeSkip": "A few months before Guardians of the Galaxy Vol. 3",
           "deepDive": {
@@ -1020,6 +1171,10 @@
           "releaseOrder": 39,
           "type": "movie",
           "summary": "Scott Lang and his family are pulled into the Quantum Realm, where they run headfirst into a powerful being who has been waiting there for a very long time.",
+          "beforeWatch": {
+            "context": "Scott has been enjoying the fame he earned in Endgame, and the film opens on him coasting. It then goes somewhere completely different — most of it takes place in a setting the earlier Ant-Man films only glimpsed. Loki is worth having behind you: the antagonist here is introduced by that series first.",
+            "watchFirst": ["ant-man-2","avengers-4","loki"]
+          },
           "inUniverseSetting": "2025",
           "deepDive": {
             "plot": "Scott Lang, enjoying newfound fame as an Avenger and author, is accidentally pulled into the Quantum Realm along with his daughter Cassie, Hope, Hank, and Janet, after Cassie's own device to map the realm goes wrong. There, they discover Janet has been hiding a dark secret: decades earlier she encountered Kang the Conqueror, a being exiled to the Quantum Realm after being stripped of his empire by his own alternate selves. Kang manipulates the group into repairing his ship so he can escape and resume his conquest of the multiverse, but the family unites the Realm's oppressed population to defeat him instead — though a much larger council of Kang variants is revealed watching from beyond.",
@@ -1040,6 +1195,10 @@
           "releaseOrder": 40,
           "type": "movie",
           "summary": "The Guardians must go on one final mission to save Rocket's life, uncovering the traumatic origin of his creation at the hands of a twisted geneticist.",
+          "beforeWatch": {
+            "context": "The crew's last film together, set a few months after the Holiday Special, with everyone living on the base they bought and Quill in a bad way about it. It pays off threads running all the way back to the first film — especially Rocket's, which has been deliberately left vague until now.",
+            "watchFirst": ["guardians-1","guardians-2","guardians-holiday-special"]
+          },
           "inUniverseSetting": "2025",
           "timeSkip": "A few months after the Holiday Special",
           "deepDive": {
@@ -1061,6 +1220,10 @@
           "releaseOrder": 41,
           "type": "series",
           "summary": "Nick Fury returns to Earth to stop a faction of Skrulls, led by a former ally, from launching a hostile takeover of human society.",
+          "beforeWatch": {
+            "context": "A slower, colder spy thriller with almost no costumes in it. It's built entirely on the shape-shifting aliens introduced in Captain Marvel and on the promise Fury made them there, so that film is genuinely required rather than merely helpful. Fury has been off-world since Endgame, which the series treats as a character flaw.",
+            "watchFirst": ["captain-marvel","avengers-4"]
+          },
           "inUniverseSetting": "2025",
           "deepDive": {
             "plot": "Nick Fury, semi-retired and living off-world, returns to Earth after a bombing reveals that a faction of Skrulls — led by his former ally Gravik, who's lost patience waiting for humanity to give the Skrulls a new home as promised decades ago — has been infiltrating human institutions at the highest levels, planning a full takeover. Fury and a loyal Talos investigate a conspiracy that reaches into the White House itself, and though they narrowly stop Gravik's coup, the show ends with humanity's trust in its own leadership — and in Fury himself — badly shaken.",
@@ -1092,6 +1255,10 @@
           "releaseOrder": 42,
           "type": "movie",
           "summary": "Carol Danvers, Kamala Khan, and Monica Rambeau find their powers mysteriously entangled, forcing them to swap places with each other and team up against a vengeful Kree revolutionary.",
+          "beforeWatch": {
+            "context": "A short, light team-up that assumes three separate stories are already in your head: Carol's from Captain Marvel, Monica's from WandaVision, and Kamala's from Ms. Marvel. It does very little to re-introduce any of them. Of the three, Ms. Marvel is the one most worth having fresh.",
+            "watchFirst": ["captain-marvel","wandavision","ms-marvel"]
+          },
           "inUniverseSetting": "2025",
           "deepDive": {
             "plot": "Carol Danvers, Kamala Khan, and Monica Rambeau find their powers mysteriously entangled after a rip in space-time, causing them to swap places every time any of them uses their abilities at once. Forced to team up, they trace the anomaly to Dar-Benn, a Kree revolutionary trying to restore her dying homeworld by stealing resources — including Earth's atmosphere and an entire ocean — using a pair of powerful bracelets connected to Carol's own past. The trio defeats Dar-Benn and repairs the damage, formally becoming an ongoing team by the film's end.",
@@ -1112,6 +1279,11 @@
           "releaseOrder": 43,
           "type": "series",
           "summary": "After a violent falling-out with Kingpin's crime empire, Maya Lopez returns to her Choctaw hometown to reconnect with her roots and confront the family and community she left behind.",
+          "beforeWatch": {
+            "context": "A direct continuation of Maya Lopez's story from Hawkeye, and a much smaller, more grounded piece of work than anything around it — most of it takes place in a small Oklahoma town. It's five episodes and was designed to be watched in one go. Hawkeye is the only real prerequisite.",
+            "watchFirst": ["hawkeye"]
+          },
+          "optionalViewing": ["Daredevil (2015 series)"],
           "inUniverseSetting": "2025",
           "deepDive": {
             "plot": "After shooting her crime-boss mentor Wilson Fisk (Kingpin) during a violent falling-out, Maya Lopez flees New York and returns to her Choctaw hometown in Oklahoma for the first time in years. Reconnecting with the family and community she abandoned, Maya uncovers a mysterious power passed down through generations of women in her family, and ultimately confronts both her own painful history and Kingpin's lingering reach, choosing which legacy — her birth family's or her adoptive crime family's — she wants to carry forward.",
@@ -1142,6 +1314,11 @@
           "releaseOrder": 44,
           "type": "movie",
           "summary": "Recruited by the TVA to help save his own universe from being erased, a reluctant Deadpool drags a jaded variant of Wolverine along on a chaotic, foul-mouthed multiversal detour.",
+          "beforeWatch": {
+            "context": "Tonally unlike everything else here: it is loud, aggressively crude, and spends much of its runtime making fun of the films you've just watched. What it needs from you is the Loki series, since the organisation that kicks off the plot is introduced there. It also leans hard on two decades of non-MCU X-Men films — none required, all rewarded.",
+            "watchFirst": ["loki"]
+          },
+          "optionalViewing": ["Deadpool (2016)","Deadpool 2 (2018)","Logan (2017)","The wider Fox X-Men films"],
           "inUniverseSetting": "2024 (Deadpool's home universe), mostly set in the Void — a place outside time and space",
           "deepDive": {
             "plot": "Failed Avengers try-out Wade Wilson is recruited by the TVA to help save his own universe from being erased following the death of its 'anchor being' — Wolverine, in his universe. Wade drags an alternate, jaded, and initially reluctant Wolverine variant along on a mission through the Void, the graveyard of pruned timelines, where they encounter a host of characters and actors from the 20th Century Fox X-Men films, and team up to stop a powerful telepath, Cassandra Nova, from taking over the Void and, eventually, the Sacred Timeline itself.",
@@ -1162,6 +1339,10 @@
           "releaseOrder": 45,
           "type": "series",
           "summary": "Trapped and powerless since the end of WandaVision, Agatha Harkness assembles a coven of misfit witches to help her survive the deadly Witches' Road and reclaim her magic.",
+          "beforeWatch": {
+            "context": "Picks up some time after WandaVision, following that show's most memorable supporting character. It's a road-trip story with a witchy, theatrical register all its own. WandaVision is essential; Multiverse of Madness fills in what's happened to magic in the meantime but isn't strictly required.",
+            "watchFirst": ["wandavision","doctor-strange-2"]
+          },
           "inUniverseSetting": "2025",
           "timeSkip": "Some time after WandaVision's finale",
           "deepDive": {
@@ -1205,6 +1386,10 @@
           "releaseOrder": 46,
           "type": "movie",
           "summary": "Sam Wilson, the new Captain America, gets pulled into an international incident with the newly elected U.S. President when a covert conspiracy threatens to spiral into war.",
+          "beforeWatch": {
+            "context": "About a year after Sam took up the shield, and the first film to test that decision at full scale. It's a political thriller in the mould of The Winter Soldier. Unusually, it also reaches back to The Incredible Hulk — the oldest and most isolated film on this whole list — for several of its major players.",
+            "watchFirst": ["falcon-winter-soldier","incredible-hulk"]
+          },
           "inUniverseSetting": "2025",
           "timeSkip": "Roughly a year after Sam takes up the shield in Falcon and Winter Soldier",
           "deepDive": {
@@ -1226,6 +1411,10 @@
           "releaseOrder": 47,
           "type": "movie",
           "summary": "A group of morally gray operatives, assembled by Valentina de Fontaine for her own agenda, are betrayed and forced to work together — uncovering a bigger threat that pushes them to become an unlikely team of antiheroes.",
+          "beforeWatch": {
+            "context": "A team film built from people you've met as supporting characters or antagonists in other stories, most of them at a low point. The threads worth having fresh are Yelena's from Black Widow, John Walker's from The Falcon and the Winter Soldier, and Ava's from Ant-Man and the Wasp. It's the most character-driven and least world-ending film in the phase.",
+            "watchFirst": ["black-widow","falcon-winter-soldier","ant-man-2"]
+          },
           "inUniverseSetting": "2025",
           "deepDive": {
             "plot": "A group of morally gray operatives — Yelena Belova, Bucky Barnes (now a congressman), Red Guardian, Ghost, and John Walker/U.S. Agent — are each separately hired by Valentina de Fontaine to eliminate loose ends, only to discover they've been set up to eliminate each other. Forced to work together to survive, they uncover an even bigger threat: Bob, a traumatized test subject with god-like power and a destructive alternate persona called the Void, created by one of Valentina's own experiments. After stopping Bob's darker half from consuming the world, the team publicly rebrands themselves as a new kind of Avengers.",
@@ -1246,6 +1435,10 @@
           "releaseOrder": 48,
           "type": "movie",
           "summary": "Set on a retro-futuristic alternate Earth, Mister Fantastic, the Invisible Woman, the Human Torch, and the Thing must protect their world from Galactus, a cosmic being that devours planets, after his herald arrives to prepare Earth for consumption.",
+          "beforeWatch": {
+            "context": "Set on a different Earth entirely, with a retro-futuristic 1960s look, and requires nothing at all — no other film feeds into it. The team already has its powers and is already famous when the film opens, so don't expect an origin story. Treat it as a fresh start.",
+            "watchFirst": []
+          },
           "inUniverseSetting": "1960s, on an alternate Earth",
           "timeSkip": "Joins the mainline MCU timeline by the film's end",
           "deepDive": {
