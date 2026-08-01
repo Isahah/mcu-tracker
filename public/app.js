@@ -29,6 +29,7 @@ async function init() {
   });
 
   el('char-search').addEventListener('input', renderCharacters);
+  bindTitleBrowse();
 
   // The close button lives inside #modal-content, which is re-rendered on every
   // open — so listen on the backdrop instead of binding the button directly
@@ -149,9 +150,13 @@ function route() {
   }
 
   if (parts[0] === 'characters') {
-    // Keep the filter when backing out of a character file, but clear it when the
+    // Keep filters when backing out of a character file, but clear them when the
     // database is opened fresh — otherwise it can look empty on a later visit
-    if (prev[0] !== 'character') el('char-search').value = '';
+    if (prev[0] !== 'character') {
+      el('char-search').value = '';
+      el('title-input').value = '';
+      charTitleFilter = null;
+    }
     showScreen('characters');
     renderCharacters();
     window.scrollTo(0, 0);
@@ -397,6 +402,7 @@ function phaseIsFinished(phase) {
 
 // UI-local database controls
 let charSort = 'appearance';
+let charTitleFilter = null; // entry id of the title whose cast is being shown, or null
 
 // Earliest phase the character has a record for — used by the "first appearance"
 // sort. Characters with no records sort last, keeping the order stable.
@@ -406,6 +412,74 @@ function firstPhaseIndex(c) {
     if (c.phases[phasesData[i].id]) return i;
   }
   return 99;
+}
+
+// --- Browse by film or series ---
+// Filters the grid to the cast of one title, using each character's `titles`
+// list in characters.json. Deliberately gated behind a collapsed, warning-
+// labelled panel: a cast list gives away who turns up in something.
+
+// Every released title, in narrative order, for the datalist
+function browsableTitles() {
+  return phasesData.flatMap(p =>
+    [...p.movies].sort((a, b) => a.narrativeOrder - b.narrativeOrder).filter(m => m.released !== false)
+  );
+}
+
+function titleIdFromLabel(label) {
+  const match = browsableTitles().find(m => m.title.toLowerCase() === label.trim().toLowerCase());
+  return match ? match.id : null;
+}
+
+function bindTitleBrowse() {
+  el('mcu-titles').innerHTML = browsableTitles()
+    .map(m => `<option value="${m.title.replace(/"/g, '&quot;')}"></option>`).join('');
+
+  const head = el('title-browse-head');
+  head.addEventListener('click', () => {
+    const nowOpen = head.getAttribute('aria-expanded') !== 'true';
+    head.setAttribute('aria-expanded', String(nowOpen));
+    el('title-browse-body').hidden = !nowOpen;
+    head.querySelector('.tb-title').innerHTML = `${nowOpen ? '&#9660;' : '&#9654;'} Browse by film or series`;
+    if (nowOpen) el('title-input').focus();
+  });
+
+  const input = el('title-input');
+  const apply = () => {
+    const id = titleIdFromLabel(input.value);
+    if (id) {
+      charTitleFilter = id;
+      renderCharacters();
+    } else if (!input.value.trim()) {
+      charTitleFilter = null;
+      renderCharacters();
+    }
+  };
+  input.addEventListener('change', apply); // fires when a datalist option is picked
+  input.addEventListener('input', apply);
+}
+
+function clearTitleFilter() {
+  charTitleFilter = null;
+  el('title-input').value = '';
+  renderCharacters();
+}
+
+function renderActiveFilter(shownCount) {
+  const box = el('active-filter');
+  if (!charTitleFilter) {
+    box.innerHTML = `<span class="result-count">${shownCount} characters</span>`;
+    return;
+  }
+  const found = findItem(charTitleFilter);
+  box.innerHTML = `
+    <span class="filter-tag">${found.item.title}<a class="clear" href="#" role="button" aria-label="Clear title filter">&#10005;</a></span>
+    <span class="result-count">${shownCount} character${shownCount === 1 ? '' : 's'} on file</span>
+  `;
+  box.querySelector('.clear').addEventListener('click', e => {
+    e.preventDefault();
+    clearTitleFilter();
+  });
 }
 
 function renderDbControls() {
@@ -437,9 +511,9 @@ function renderCharacters() {
   grid.innerHTML = '';
 
   const query = el('char-search').value.trim().toLowerCase();
-  let shown = query
-    ? charactersData.filter(c => c.name.toLowerCase().includes(query))
-    : charactersData.slice();
+  let shown = charactersData.slice();
+  if (charTitleFilter) shown = shown.filter(c => (c.titles || []).includes(charTitleFilter));
+  if (query) shown = shown.filter(c => c.name.toLowerCase().includes(query));
 
   if (charSort === 'az') {
     shown.sort((a, b) => a.name.localeCompare(b.name));
@@ -448,9 +522,7 @@ function renderCharacters() {
     shown.sort((a, b) => firstPhaseIndex(a) - firstPhaseIndex(b) || order.get(a.id) - order.get(b.id));
   }
 
-  el('char-result-count').textContent = query
-    ? `${shown.length} of ${charactersData.length} characters`
-    : `${charactersData.length} characters`;
+  renderActiveFilter(shown.length);
 
   if (!shown.length) {
     grid.innerHTML = '<p class="kicker" style="grid-column:1/-1; text-align:center; padding:32px 0">No matching files on record</p>';

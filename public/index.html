@@ -93,9 +93,21 @@
 
         <div class="db-controls" id="db-controls"></div>
 
-        <div class="active-filter">
-          <span class="result-count" id="char-result-count"></span>
-        </div>
+        <section class="title-browse">
+          <button class="title-browse__head" id="title-browse-head" type="button" aria-expanded="false">
+            <span class="tb-title">&#9654; Browse by film or series</span>
+            <span class="tb-warn">&#9888; Warning: may spoil who appears in it</span>
+          </button>
+          <div class="title-browse__body" id="title-browse-body" hidden>
+            <div class="title-picker">
+              <input class="title-input" id="title-input" type="text" list="mcu-titles" placeholder="Type a film or series&hellip;" aria-label="Choose a film or series" autocomplete="off">
+              <datalist id="mcu-titles"></datalist>
+            </div>
+            <p class="hint">Pick a title you've already watched &mdash; a cast list tells you who turns up.</p>
+          </div>
+        </section>
+
+        <div class="active-filter" id="active-filter"></div>
 
         <div id="character-grid"></div>
       </div>
