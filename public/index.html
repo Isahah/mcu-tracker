@@ -5,81 +5,123 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MCU Field Log</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="tape tape-tl"></div>
-<div class="tape tape-tr"></div>
+<div class="app-bar">
+  <a class="app-bar__mark" href="#/">MCU Field Log</a>
+  <span class="app-bar__sub" id="app-bar-sub"></span>
+</div>
 
-<header class="masthead">
-  <div class="masthead-inner">
-    <div class="stamp-badge" id="stamp-badge">CLASSIFIED</div>
-    <h1>MCU FIELD LOG</h1>
-    <p class="subtitle">Narrative-order case file &mdash; track what you've watched, avoid what you haven't</p>
-  </div>
-</header>
+<main>
 
-<main class="dossier">
+  <section id="screen-menu">
+    <div class="screen">
+      <div class="screen-inner">
+        <header class="masthead">
+          <h1 class="app-title">MCU Field Log</h1>
+          <p class="tagline">Every film and series in the order the story happens &mdash; spoilers stay hidden until you ask for them</p>
+          <div class="overall">
+            <span class="progress-track"><span class="progress-fill" id="overall-fill"></span></span>
+            <span class="progress-count" id="overall-count"></span>
+          </div>
+        </header>
 
-  <section class="screen" id="screen-menu">
-    <div class="menu-intro">
-      <h2>Select a Phase</h2>
-      <p class="menu-hint">Choose a phase to open its case files.</p>
-    </div>
-    <div class="phase-grid" id="phase-grid"></div>
+        <div id="resume-slot"></div>
 
-    <a class="index-card" href="#/characters">
-      <div>
-        <div class="index-card-name">&#128450; Character Database</div>
-        <div class="index-card-label">Personnel files on the major players &mdash; spoiler-light</div>
-      </div>
-      <span class="index-card-count" id="menu-character-count"></span>
-    </a>
-  </section>
-
-  <section class="screen" id="screen-characters" hidden>
-    <button class="back-btn" id="characters-back-btn">&larr; Main Menu</button>
-
-    <div class="dossier-header">
-      <div class="dossier-title-row">
-        <h2>Character Database</h2>
-      </div>
-      <p class="db-subnote">Personnel files &mdash; who they are, not what happens to them.</p>
-    </div>
-
-    <input type="search" id="char-search" class="char-search" placeholder="&#128269; Search the files&hellip;" autocomplete="off">
-
-    <div class="character-grid" id="character-grid"></div>
-  </section>
-
-  <section class="screen" id="screen-character" hidden>
-    <button class="back-btn" id="character-back-btn">&larr; Character Database</button>
-    <div class="detail-card" id="character-content"></div>
-  </section>
-
-  <section class="screen" id="screen-phase" hidden>
-    <button class="back-btn" id="back-btn">&larr; All Phases</button>
-
-    <div class="dossier-header">
-      <div class="dossier-title-row">
-        <h2 id="phase-title">Loading&hellip;</h2>
-      </div>
-      <div class="progress-row">
-        <div class="progress-track">
-          <div class="progress-fill" id="progress-fill"></div>
+        <div class="menu-block">
+          <div class="menu-head">
+            <h2 class="section-head">Select a phase</h2>
+            <p class="kicker" id="menu-kicker"></p>
+          </div>
+          <div id="phase-grid"></div>
         </div>
-        <span class="progress-label" id="progress-label">0 / 0 viewed</span>
+
+        <a class="dossier wide db-link" href="#/characters">
+          <span>
+            <span class="card-title" style="display:block">Character Database</span>
+            <span class="db-link__desc">Look up who a character is, without learning what happens to them.</span>
+          </span>
+          <span class="db-link__count data" id="menu-character-count"></span>
+        </a>
       </div>
     </div>
-
-    <div class="case-files" id="case-files"></div>
   </section>
 
-  <section class="screen" id="screen-detail" hidden>
-    <button class="back-btn" id="detail-back-btn">&larr; Back</button>
-    <div class="detail-card" id="detail-content"></div>
+  <section id="screen-phase" hidden>
+    <div class="screen">
+      <div class="screen-inner">
+        <div class="phase-nav" id="phase-nav">
+          <button id="back-btn" type="button">&larr; All phases</button>
+          <span class="nav-spacer"></span>
+        </div>
+
+        <div class="dossier wide">
+          <p class="kicker" id="phase-kicker"></p>
+          <h2 id="phase-title" class="section-head" style="margin-top:8px">Loading&hellip;</h2>
+          <div class="progress" style="margin-top:20px">
+            <span class="progress-track"><span id="progress-fill" class="progress-fill"></span></span>
+            <span id="progress-label" class="progress-count">0 / 0</span>
+          </div>
+        </div>
+
+        <div class="filter-strip" id="filter-strip"></div>
+
+        <div id="case-files"></div>
+
+        <div class="list-footer-nav" id="list-footer-nav"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="screen-characters" hidden>
+    <div class="screen">
+      <div class="screen-inner">
+        <button id="characters-back-btn" type="button">&larr; Main menu</button>
+
+        <div class="dossier wide">
+          <p class="kicker" id="char-db-kicker"></p>
+          <h2 class="section-head" style="margin-top:8px">Character Database</h2>
+          <p class="lede" style="margin-top:6px">Personnel files &mdash; who they are, not what happens to them.</p>
+        </div>
+
+        <input id="char-search" type="search" placeholder="Search by name&hellip;" autocomplete="off">
+
+        <div class="db-controls" id="db-controls"></div>
+
+        <div class="active-filter">
+          <span class="result-count" id="char-result-count"></span>
+        </div>
+
+        <div id="character-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="screen-character" hidden>
+    <div class="screen">
+      <div class="screen-inner">
+        <button id="character-back-btn" type="button">&larr; Character database</button>
+        <div id="character-content" class="dossier wide"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="screen-detail" hidden>
+    <div class="screen">
+      <div class="screen-inner">
+        <div class="phase-nav" id="detail-nav">
+          <button id="detail-back-btn" type="button">&larr; Back</button>
+          <span class="nav-spacer"></span>
+        </div>
+        <div class="dossier wide">
+          <div id="detail-content"></div>
+        </div>
+      </div>
+    </div>
   </section>
 
 </main>
@@ -87,10 +129,7 @@
 <div class="now-watching-dock" id="now-watching-dock" hidden></div>
 
 <div class="modal-backdrop" id="modal-backdrop">
-  <div class="modal" id="modal">
-    <button class="modal-close" id="modal-close">&times;</button>
-    <div class="modal-content" id="modal-content"></div>
-  </div>
+  <div id="modal-content"></div>
 </div>
 
 <script src="app.js"></script>

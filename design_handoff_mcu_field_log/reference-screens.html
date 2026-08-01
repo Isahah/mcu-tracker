@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCU Field Log — design reference (Ink Navy)</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mcu-field-log-v4.css">
+<style>body { margin: 0; }</style>
+</head>
+<body>
+<div style="background:#101425; min-height:100vh; padding-bottom:120px">
+
+  <div id="screen-menu" style="position:relative">
+    <div class="app-bar">
+      <span class="app-bar__mark">MCU Field Log</span>
+      <span class="app-bar__sub">Narrative order · 12 / 112</span>
+    </div>
+    <div class="screen">
+      <div class="screen-inner">
+        <header class="masthead">
+          <h1 class="app-title">MCU Field Log</h1>
+          <p class="tagline">Every film and series in the order the story happens — spoilers stay hidden until you ask for them</p>
+          <div class="overall">
+            <span class="progress-track"><span class="progress-fill" style="width:11%"></span></span>
+            <span class="progress-count">12 / 112 watched</span>
+          </div>
+        </header>
+
+        <a class="resume-card" href="#1">
+          <span>
+            <span class="resume-kicker">Currently watching</span>
+            <span class="resume-title">Eternals</span>
+            <span class="resume-meta">Phase four · film · 2021</span>
+          </span>
+          <span class="resume-cta">Open →</span>
+        </a>
+
+        <div class="menu-block">
+          <div class="menu-head">
+            <h2 class="section-head">Select a phase</h2>
+            <p class="kicker">Six phases · 112 titles in story order</p>
+          </div>
+          <div id="phase-grid">
+          <a class="phase-card" href="#1">
+            <span class="phase-index">I</span>
+            <span class="phase-name">Phase One</span>
+            <p class="phase-sub">The Avengers Initiative</p>
+            <span class="progress progress--sm"><span class="progress-track"><span class="progress-fill" style="width:14%"></span></span><span class="progress-count">1 / 7</span></span>
+          </a>
+          <a class="phase-card" href="#1">
+            <span class="phase-index">II</span>
+            <span class="phase-name">Phase Two</span>
+            <p class="phase-sub">Age of Ultron</p>
+            <span class="progress progress--sm"><span class="progress-track"><span class="progress-fill" style="width:0%"></span></span><span class="progress-count">0 / 7</span></span>
+          </a>
+          <a class="phase-card" href="#1">
+            <span class="phase-index">III</span>
+            <span class="phase-name">Phase Three</span>
+            <p class="phase-sub">The Infinity Saga: Endgame</p>
+            <span class="progress progress--sm"><span class="progress-track"><span class="progress-fill" style="width:10%"></span></span><span class="progress-count">1 / 10</span></span>
+          </a>
+          <a class="phase-card" href="#1">
+            <span class="phase-index">IV</span>
+            <span class="phase-name">Phase Four</span>
+            <p class="phase-sub">The Multiverse Saga Begins</p>
+            <span class="progress progress--sm"><span class="progress-track"><span class="progress-fill" style="width:16%"></span></span><span class="progress-count">10 / 61</span></span>
+          </a>
+          <a class="phase-card" href="#1">
+            <span class="phase-index">V</span>
+            <span class="phase-name">Phase Five</span>
+            <p class="phase-sub">The Multiverse Saga Continues</p>
+            <span class="progress progress--sm"><span class="progress-track"><span class="progress-fill" style="width:0%"></span></span><span class="progress-count">0 / 24</span></span>
+          </a>
+          <a class="phase-card" href="#1">
+            <span class="phase-index">VI</span>
+            <span class="phase-name">Phase Six</span>
+            <p class="phase-sub">The Multiverse Saga Concludes</p>
+            <span class="progress progress--sm"><span class="progress-track"><span class="progress-fill" style="width:0%"></span></span><span class="progress-count">0 / 3</span></span>
+          </a>
+          </div>
+        </div>
+
+        <a class="dossier wide db-link" href="#1">
+          <span>
+            <span class="card-title" style="display:block">Character Database</span>
+            <span class="db-link__desc">Look up who a character is, without learning what happens to them.</span>
+          </span>
+          <span class="db-link__count data" id="menu-character-count">119 files</span>
+        </a>
+      </div>
+    </div>
+      <div class="now-watching-dock is-inline" style="right:24px; bottom:24px">
+        <span class="dock-label">Now watching</span>
+        <a class="dock-chip" href="#1"><span>▶ Eternals</span></a>
+      </div>
+  </div>
+
+  <div id="screen-phase" style="position:relative">
+    <div class="screen">
+      <div class="screen-inner">
+        <div class="phase-nav">
+          <button id="back-btn" type="button">← All phases</button>
+          <span class="nav-spacer"></span>
+          <a class="nav-btn" href="#1">← Phase three</a>
+          <a class="nav-btn" href="#1">Phase five →</a>
+        </div>
+        <div class="dossier wide">
+          <p class="kicker">Phase Four</p>
+          <h2 id="phase-title" class="section-head" style="margin-top:8px">The Multiverse Saga Begins</h2>
+          <div class="progress" style="margin-top:20px">
+            <span class="progress-track"><span id="progress-fill" class="progress-fill" style="width:16%"></span></span>
+            <span id="progress-label">10 / 61</span>
+          </div>
+        </div>
+
+        <div class="filter-strip">
+          <a class="filter-chip is-active" href="#1">All</a>
+          <a class="filter-chip" href="#1">Unwatched</a>
+          <a class="filter-chip" href="#1">Watched</a>
+          <a class="filter-chip" href="#1">Series</a>
+          <span class="filter-spacer"></span>
+          <a class="filter-chip" href="#1">Next unwatched ↓</a>
+        </div>
+
+        <div id="case-files">
+          <a class="case-card is-watched" href="#1">
+            <span class="case-num">1</span>
+            <span class="case-main">
+              <span class="case-titleline"><span class="case-title">WandaVision</span><span class="badge">Series</span></span>
+              <span class="case-meta">2021 · series · 9 of 9 eps</span>
+            </span>
+            <span class="case-status"><span class="stamp">Watched</span><span class="case-rating">9.0</span></span>
+            <button class="pin-btn" type="button" aria-label="Flag as currently watching">⚑</button>
+          </a>
+          <a class="case-card" href="#1">
+            <span class="case-num">2</span>
+            <span class="case-main">
+              <span class="case-titleline"><span class="case-title">The Falcon and the Winter Soldier</span><span class="badge">Series</span></span>
+              <span class="case-meta">2021 · series · 0 of 6 eps</span>
+            </span>
+            <span class="case-status"><span class="case-dash">—</span></span>
+            <button class="pin-btn" type="button" aria-label="Flag as currently watching">⚑</button>
+          </a>
+          <a class="case-card is-watched" href="#1">
+            <span class="case-num">3</span>
+            <span class="case-main">
+              <span class="case-titleline"><span class="case-title">Shang-Chi and the Legend of the Ten Rings</span></span>
+              <span class="case-meta">2021 · film</span>
+            </span>
+            <span class="case-status"><span class="stamp">Watched</span><span class="case-rating">8.5</span></span>
+            <button class="pin-btn" type="button" aria-label="Flag as currently watching">⚑</button>
+          </a>
+          <a class="case-card is-watching" href="#1">
+            <span class="case-num">4</span>
+            <span class="case-main">
+              <span class="case-titleline"><span class="case-title">Eternals</span></span>
+              <span class="case-meta">2021 · film</span>
+            </span>
+            <span class="case-status"><span class="badge badge--crimson">▶ Watching</span></span>
+            <button class="pin-btn is-active" type="button" aria-label="Unflag">⚑</button>
+          </a>
+          <a class="case-card" href="#1">
+            <span class="case-num">5</span>
+            <span class="case-main">
+              <span class="case-titleline"><span class="case-title">Hawkeye</span><span class="badge">Series</span></span>
+              <span class="case-meta">2021 · series · 0 of 6 eps</span>
+            </span>
+            <span class="case-status"><span class="case-dash">—</span></span>
+            <button class="pin-btn" type="button" aria-label="Flag as currently watching">⚑</button>
+          </a>
+          <a class="case-card" href="#1">
+            <span class="case-num">6</span>
+            <span class="case-main">
+              <span class="case-titleline"><span class="case-title">Spider-Man: No Way Home</span></span>
+              <span class="case-meta">2021 · film</span>
+            </span>
+            <span class="case-status"><span class="case-dash">—</span></span>
+            <button class="pin-btn" type="button" aria-label="Flag as currently watching">⚑</button>
+          </a>
+          <a class="case-card is-unreleased" href="#1">
+            <span class="case-num">7</span>
+            <span class="case-main">
+              <span class="case-titleline"><span class="case-title">Untitled Special Presentation</span><span class="badge badge--muted">Not yet released</span></span>
+              <span class="case-meta">2026 · special</span>
+            </span>
+            <span class="case-status"></span>
+            <span class="pin-btn" aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div class="list-footer-nav">
+          <a class="nav-btn" href="#1">Phase five →</a>
+        </div>
+      </div>
+    </div>
+      <div class="now-watching-dock is-inline" style="right:24px; bottom:24px">
+        <span class="dock-label">Now watching</span>
+        <a class="dock-chip" href="#1"><span>▶ Eternals</span></a>
+      </div>
+  </div>
+
+  <div id="screen-detail" style="position:relative">
+    <div class="screen">
+      <div class="screen-inner">
+        <button id="detail-back-btn" type="button">← Phase four</button>
+        <div class="dossier wide">
+          <div id="detail-content">
+            <div>
+              <h2 class="page-title" style="font-size:32px">Spider-Man: No Way Home</h2>
+              <p class="kicker" style="margin-top:10px">Movie · Released December 17, 2021</p>
+            </div>
+
+            <div class="section-rule">
+              <p class="kicker">Summary</p>
+              <p style="margin-top:8px">After his identity is exposed, Peter Parker asks Doctor Strange for help, and a spell gone wrong tears open the multiverse, bringing dangerous visitors from other realities into his world.</p>
+            </div>
+
+            <section class="before-watch">
+              <div class="before-watch__head">
+                <h3>Before you watch</h3>
+                <span class="bw-safe">No spoilers</span>
+              </div>
+
+              <div class="bw-body">
+                <div>
+                  <p class="kicker">When this happens</p>
+                  <p style="margin-top:8px">Set in the winter of 2024, roughly eight months after <em>Spider-Man: Far From Home</em> and picking up directly from that film's final scene. It runs 2 hours 28 minutes.</p>
+                </div>
+
+                <div>
+                  <p class="kicker">What you need to know going in</p>
+                  <p style="margin-top:8px">Peter Parker's identity as Spider-Man was broadcast to the world at the end of the last film, and this one opens on the fallout — he is still a high-school senior, and college applications, not superheroics, drive the early going. The other thing worth carrying in is Doctor Strange: he has been established as the Sorcerer Supreme, so if you've seen his solo film and the two Avengers films, you already have a sense of what magic can and cannot do here.</p>
+                </div>
+
+                <div>
+                  <p class="kicker">People &amp; things to watch for</p>
+                  <div class="chip-row" style="margin-top:10px">
+                    <span class="chip">Multiversal visitors</span>
+                    <span class="chip">The world forgetting Peter Parker</span>
+                    <a class="chip" href="#1">Peter Parker</a>
+                    <a class="chip" href="#1">Doctor Strange</a>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="kicker">Watch these first</p>
+                  <div class="bw-prereq">
+                    <a class="chip" href="#1">Spider-Man: Homecoming</a>
+                    <a class="chip" href="#1">Avengers: Endgame</a>
+                    <a class="chip" href="#1">Spider-Man: Far From Home</a>
+                    <a class="chip" href="#1">Doctor Strange</a>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="kicker">Helps, but optional</p>
+                  <div class="bw-prereq">
+                    <span class="chip chip--fact">Spider-Man (2002) trilogy</span>
+                    <span class="chip chip--fact">The Amazing Spider-Man 1 &amp; 2</span>
+                    <span class="chip chip--fact">WandaVision</span>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+            <section class="deep-panel">
+              <button class="deepdive-toggle deepdive-toggle--head" type="button" aria-expanded="true">▼ Plot &amp; context — contains spoilers for this film</button>
+              <div class="reveal-panel">
+                <div>
+                  <p class="kicker">The full plot</p>
+                  <p style="margin-top:6px">With his identity publicly exposed and his loved ones' lives upended, Peter asks Doctor Strange to cast a spell making the world forget he's Spider-Man — but his own hesitations corrupt it, tearing open the multiverse and pulling in villains, and eventually other Spider-Men, from universes entirely their own. After a version of Aunt May is killed trying to save one of the villains, Peter chooses to redeem all of them rather than send them back to certain death, at the cost of having Strange erase the world's memory of him entirely.</p>
+                </div>
+                <div>
+                  <p class="kicker">Why it matters</p>
+                  <p style="margin-top:6px">A crossover that unites three generations of live-action Spider-Man actors, and an ending — nobody remembers Peter Parker — that fundamentally isolates him from the rest of the Avengers for future stories.</p>
+                </div>
+                <div>
+                  <p class="kicker">Why this order</p>
+                  <p style="margin-top:6px">Placed here as the direct continuation of Far From Home's ending, unfolding a few months later.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="deep-panel">
+              <button class="spoiler-toggle spoiler-toggle--head" type="button" aria-expanded="true">▼ Spoilers for future films</button>
+              <div class="reveal-panel reveal-panel--spoiler">
+                <ul class="detail-list">
+                  <li><span class="term">Multiversal visitors:</span> confirms the existence of alternate universes, directly enabling the next Doctor Strange film. <span class="spoils-tag">Spoils: Multiverse of Madness</span></li>
+                  <li><span class="term">The world forgetting Peter Parker:</span> resets Peter's status quo, isolating him from the other Avengers for future stories.</li>
+                </ul>
+              </div>
+            </section>
+
+            <div class="controls-row">
+              <button id="watch-toggle-btn" class="btn btn--primary is-active" type="button">✓ Watched</button>
+              <button id="flag-toggle-btn" class="btn btn--outline" type="button">Flag as watching</button>
+              <span class="rating">
+                <button type="button" aria-label="Lower rating">▼</button>
+                <span class="rating__value">7.5 / 10</span>
+                <button type="button" aria-label="Raise rating">▲</button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="now-watching-dock is-inline" style="right:24px; bottom:24px">
+        <span class="dock-label">Now watching</span>
+        <a class="dock-chip" href="#1"><span>▶ Eternals</span></a>
+      </div>
+  </div>
+
+  <div id="screen-characters" style="position:relative">
+    <div class="screen" style="position: relative">
+      <div class="screen-inner" style="position: relative">
+        <button id="characters-back-btn" type="button">← Main menu</button>
+        <div class="dossier wide">
+          <p class="kicker">119 files on record</p>
+          <h2 class="section-head" style="margin-top:8px">Character Database</h2>
+          <p class="lede" style="margin-top:6px">Personnel files — who they are, not what happens to them.</p>
+        </div>
+        <input id="char-search" type="search" placeholder="Search by name…">
+
+        <div class="db-controls">
+          <span class="segmented">
+            <span class="seg-label">Sort</span>
+            <a class="is-active" href="#1">First appearance</a>
+            <a href="#1">A – Z</a>
+          </span>
+          <span class="spacer"></span>
+        </div>
+
+        <section class="title-browse">
+          <button class="title-browse__head" type="button" aria-expanded="true">
+            <span class="tb-title">▼ Browse by film or series</span>
+            <span class="tb-warn">⚠ Warning: may spoil who appears in it</span>
+          </button>
+          <div class="title-browse__body">
+            <div class="title-picker">
+              <input class="title-input" type="text" list="mcu-titles" placeholder="Type a film or series…" aria-label="Choose a film or series">
+              <datalist id="mcu-titles">
+                <option value="Iron Man"></option>
+                <option value="The Avengers"></option>
+                <option value="WandaVision"></option>
+                <option value="The Falcon and the Winter Soldier"></option>
+                <option value="Eternals"></option>
+                <option value="Hawkeye"></option>
+                <option value="Spider-Man: No Way Home"></option>
+                <option value="Loki"></option>
+              </datalist>
+            </div>
+            <p class="hint">Pick a title you've already watched — a cast list tells you who turns up.</p>
+          </div>
+        </section>
+
+        <div class="active-filter">
+          <span class="result-count">119 characters · no title filter</span>
+        </div>
+
+        <div id="character-grid">
+          <a class="character-card" href="#1"><span class="portrait-wrap"><span class="no-photo no-photo--t1">TS</span></span><span class="char-name"><span>Tony Stark / Iron Man</span></span></a>
+          <a class="character-card" href="#1"><span class="portrait-wrap"><span class="no-photo no-photo--t2">SR</span></span><span class="char-name"><span>Steve Rogers / Captain America</span></span></a>
+          <a class="character-card" href="#1"><span class="portrait-wrap"><span class="no-photo no-photo--t3">TH</span></span><span class="char-name"><span>Thor</span></span></a>
+          <a class="character-card" href="#1"><span class="portrait-wrap"><span class="no-photo no-photo--t4">BB</span></span><span class="char-name"><span>Bruce Banner / Hulk</span></span></a>
+          <a class="character-card" href="#1"><span class="portrait-wrap"><span class="no-photo no-photo--t5">NR</span></span><span class="char-name"><span>Natasha Romanoff / Black Widow</span></span></a>
+          <a class="character-card" href="#1"><span class="portrait-wrap"><span class="no-photo no-photo--t6">CB</span></span><span class="char-name"><span>Clint Barton / Hawkeye</span></span></a>
+          <a class="character-card" href="#1"><span class="portrait-wrap"><span class="no-photo no-photo--t1">NF</span></span><span class="char-name"><span>Nick Fury</span></span></a>
+          <a class="character-card" href="#1"><span class="portrait-wrap"><span class="no-photo no-photo--t2">MH</span></span><span class="char-name"><span>Maria Hill</span></span></a>
+          <a class="character-card" href="#1"><span class="portrait-wrap"><span class="no-photo no-photo--t3">PC</span></span><span class="char-name"><span>Phil Coulson</span></span></a>
+          <a class="character-card" href="#1"><span class="portrait-wrap"><span class="no-photo no-photo--t4">LO</span></span><span class="char-name"><span>Loki</span></span></a>
+          <a class="character-card" href="#1"><span class="portrait-wrap"><span class="no-photo no-photo--t5">WM</span></span><span class="char-name"><span>Wanda Maximoff</span></span></a>
+          <a class="character-card" href="#1"><span class="portrait-wrap"><span class="no-photo no-photo--t6">SS</span></span><span class="char-name"><span>Stephen Strange</span></span></a>
+        </div>
+</div>
+</div>
+      <div class="now-watching-dock is-inline" style="right:24px; bottom:24px">
+        <span class="dock-label">Now watching</span>
+        <a class="dock-chip" href="#1"><span>▶ Eternals</span></a>
+      </div>
+  </div>
+
+  <div id="screen-character" style="position:relative">
+    <div class="screen">
+      <div class="screen-inner">
+        <button id="character-back-btn" type="button">← Character database</button>
+        <div id="character-content" class="dossier wide">
+          <div class="char-head">
+            <div class="portrait-frame">
+              <span class="no-photo no-photo--t1" style="aspect-ratio:3/4; font-size:52px">TS</span>
+            </div>
+            <div>
+              <h2 class="char-name-lg">Tony Stark / Iron Man</h2>
+              <p class="char-overview">Genius billionaire weapons inventor who builds himself a high-tech suit of armour and kicks off the age of heroes.</p>
+            </div>
+          </div>
+
+          <div class="section-rule">
+            <p class="kicker">Phase-by-phase record</p>
+            <p class="lede" style="margin:8px 0 16px; font-size:14px">Every phase is listed for every character, so the list itself spoils nothing. Open only the phases you've finished.</p>
+            <div id="char-phase-list">
+              <div class="has-record"><button class="phase-record-head" type="button" aria-expanded="false">Phase One <span class="phase-record-sub">Avengers Initiative</span></button></div>
+              <div class="has-record">
+                <button class="phase-record-head" type="button" aria-expanded="true">Phase Two <span class="phase-record-sub">Age of Ultron</span></button>
+                <div class="phase-record-body">Iron Man 3 is the hangover: panic attacks after New York and an army of suits he can't stop building. Then in Age of Ultron he and Banner secretly grow an AI peacekeeper out of the Mind Stone — which costs the world Sokovia and plants the distrust that later splits the team.</div>
+              </div>
+              <div class="has-record"><button class="phase-record-head" type="button" aria-expanded="false">Phase Three <span class="phase-record-sub">Infinity Saga: Endgame</span></button></div>
+              <div class="is-unseen">
+                <button class="phase-record-head" type="button" aria-expanded="false">Phase Four <span class="rec-flag rec-flag--unseen">NOT SEEN</span><span class="phase-record-sub">Multiverse Saga Begins</span></button>
+              </div>
+              <div class="is-unseen"><button class="phase-record-head" type="button" aria-expanded="false">Phase Five <span class="rec-flag rec-flag--unseen">NOT SEEN</span><span class="phase-record-sub">Multiverse Saga Continues</span></button></div>
+              <div class="is-unseen"><button class="phase-record-head" type="button" aria-expanded="false">Phase Six <span class="rec-flag rec-flag--unseen">NOT SEEN</span><span class="phase-record-sub">Multiverse Saga Concludes</span></button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="now-watching-dock is-inline" style="right:24px; bottom:24px">
+        <span class="dock-label">Now watching</span>
+        <a class="dock-chip" href="#1"><span>▶ Eternals</span></a>
+      </div>
+  </div>
+
+  <div class="screen">
+    <div class="screen-inner" style="max-width:1020px">
+      <div style="position:relative; display:flex; align-items:flex-start; justify-content:center; padding:32px 16px; background:rgba(6,7,10,0.6); border:1px solid #27314f; border-radius:14px">
+        <div id="modal-content" class="modal--series">
+          <button id="modal-close" type="button">✕</button>
+
+          <div class="modal-head">
+            <h3 class="card-title" style="font-size:26px">Loki</h3>
+            <p class="kicker" style="margin-top:8px">Series · 2 seasons · First aired June 9, 2021</p>
+          </div>
+
+          <div class="progress progress--sm">
+            <span class="progress-track"><span class="progress-fill" style="width:17%"></span></span>
+            <span class="progress-count">2 / 12 watched</span>
+          </div>
+
+          <div class="section-rule">
+            <p class="kicker">Summary</p>
+            <p style="margin-top:8px">After stealing the Tesseract during the Avengers' 2012 time heist, a variant of the God of Mischief is arrested by the Time Variance Authority and forced to help hunt an even more dangerous variant of himself.</p>
+          </div>
+
+          <section class="before-watch">
+            <div class="before-watch__head">
+              <h3>Before you watch</h3>
+              <span class="bw-safe">No spoilers</span>
+            </div>
+            <div class="bw-body">
+              <div>
+                <p class="kicker">When this happens</p>
+                <p style="margin-top:8px">Branches off from the 2012 New York sequence revisited in <em>Avengers: Endgame</em>, then leaves the timeline almost immediately — most of it takes place outside time altogether. Six episodes per season, around 50 minutes each.</p>
+              </div>
+              <div>
+                <p class="kicker">What you need to know going in</p>
+                <p style="margin-top:8px">This is not the Loki you last saw — it's the 2012 version, picked up at the moment he escaped with the Tesseract, so none of his later development has happened yet. You'll want <em>The Avengers</em> and <em>Endgame</em> behind you, mostly so the time-heist scene makes sense.</p>
+              </div>
+              <div>
+                <p class="kicker">People &amp; things to watch for</p>
+                <div class="chip-row" style="margin-top:10px">
+                  <span class="chip">The Time Variance Authority</span>
+                  <a class="chip" href="#1">Loki</a>
+                </div>
+              </div>
+              <div>
+                <p class="kicker">Watch these first</p>
+                <div class="bw-prereq">
+                  <a class="chip" href="#1">The Avengers</a>
+                  <a class="chip" href="#1">Avengers: Endgame</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="deep-panel">
+            <button class="deepdive-toggle deepdive-toggle--head" type="button" aria-expanded="false">▶ Plot &amp; context — contains spoilers for this series</button>
+          </section>
+
+          <section class="deep-panel">
+            <button class="spoiler-toggle spoiler-toggle--head" type="button" aria-expanded="false">▶ Spoilers for future films</button>
+          </section>
+
+          <div class="section-rule">
+            <p class="kicker" style="margin-bottom:12px">Seasons</p>
+            <div id="season-list">
+              <div class="season-block">
+                <button class="season-header" type="button" aria-expanded="true">Season 1 <span class="season-meta">2 of 6 watched</span><span class="season-mark">Mark all</span></button>
+                <div class="episode-list">
+                  <div class="episode-row is-watched">
+                    <button class="ep-check" type="button" role="checkbox" aria-checked="true" aria-label="Mark Glorious Purpose as watched">✓</button>
+                    <span class="ep-num">1.</span>
+                    <button class="ep-title" type="button">Glorious Purpose</button>
+                    <span class="ep-go">›</span>
+                  </div>
+                  <div class="episode-row is-watched">
+                    <button class="ep-check" type="button" role="checkbox" aria-checked="true" aria-label="Mark The Variant as watched">✓</button>
+                    <span class="ep-num">2.</span>
+                    <button class="ep-title" type="button">The Variant</button>
+                    <span class="ep-go">›</span>
+                  </div>
+                  <div class="episode-row">
+                    <button class="ep-check" type="button" role="checkbox" aria-checked="false" aria-label="Mark Lamentis as watched">✓</button>
+                    <span class="ep-num">3.</span>
+                    <button class="ep-title" type="button">Lamentis</button>
+                    <span class="ep-go">›</span>
+                  </div>
+                  <div class="episode-row">
+                    <button class="ep-check" type="button" role="checkbox" aria-checked="false" aria-label="Mark The Nexus Event as watched">✓</button>
+                    <span class="ep-num">4.</span>
+                    <button class="ep-title" type="button">The Nexus Event</button>
+                    <span class="ep-go">›</span>
+                  </div>
+                  <div class="episode-row">
+                    <button class="ep-check" type="button" role="checkbox" aria-checked="false" aria-label="Mark Journey Into Mystery as watched">✓</button>
+                    <span class="ep-num">5.</span>
+                    <button class="ep-title" type="button">Journey Into Mystery</button>
+                    <span class="ep-go">›</span>
+                  </div>
+                  <div class="episode-row">
+                    <button class="ep-check" type="button" role="checkbox" aria-checked="false" aria-label="Mark For All Time. Always. as watched">✓</button>
+                    <span class="ep-num">6.</span>
+                    <button class="ep-title" type="button">For All Time. Always.</button>
+                    <span class="ep-go">›</span>
+                  </div>
+                </div>
+              </div>
+              <div class="season-block">
+                <button class="season-header" type="button" aria-expanded="false">Season 2 <span class="season-meta">0 of 6 watched</span></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="rating-row">
+            <button class="btn btn--primary" type="button">Mark series as watched</button>
+            <button class="btn btn--outline" type="button">Flag as watching</button>
+            <span class="rating">
+              <button type="button" aria-label="Lower rating">▼</button>
+              <span class="rating__value is-empty">— / 10</span>
+              <button type="button" aria-label="Raise rating">▲</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="screen-episode" style="position:relative">
+    <div class="screen">
+      <div class="screen-inner">
+        <div class="phase-nav">
+          <a class="back-btn" href="#1">← Loki</a>
+          <span class="nav-spacer"></span>
+          <a class="nav-btn is-disabled" href="#1">← Previous</a>
+          <a class="nav-btn" href="#1">Next episode →</a>
+        </div>
+
+        <div class="dossier wide">
+          <div>
+            <h2 class="page-title" style="font-size:30px">Glorious Purpose</h2>
+            <p class="kicker" style="margin-top:10px">Loki · Season 1, episode 1 · 51 min</p>
+          </div>
+
+          <div class="section-rule">
+            <p class="kicker">Summary</p>
+            <p style="margin-top:8px">A 2012 variant of Loki is arrested by the TVA the moment he escapes with the Tesseract, and given an impossible choice to avoid being erased from existence.</p>
+          </div>
+
+          <section class="before-watch">
+            <div class="before-watch__head">
+              <h3>Before you watch</h3>
+              <span class="bw-safe">No spoilers</span>
+            </div>
+            <div class="bw-body">
+              <div>
+                <p class="kicker">Where we left off</p>
+                <p style="margin-top:8px">This is the opening episode — nothing to catch up on beyond the 2012 time heist in <em>Avengers: Endgame</em>, where this version of Loki slips away with the Tesseract.</p>
+              </div>
+              <div>
+                <p class="kicker">People &amp; things to watch for</p>
+                <div class="chip-row" style="margin-top:10px">
+                  <span class="chip">The Time Variance Authority</span>
+                  <a class="chip" href="#1">Loki</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="deep-panel">
+            <button class="deepdive-toggle deepdive-toggle--head" type="button" aria-expanded="false">▶ Plot &amp; context — contains spoilers for this episode</button>
+          </section>
+
+          <div class="controls-row">
+            <button class="btn btn--primary" type="button">Mark as watched</button>
+            <button class="btn btn--outline" type="button">Flag as watching</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="now-watching-dock is-inline" style="right:24px; bottom:24px">
+        <span class="dock-label">Now watching</span>
+        <a class="dock-chip" href="#1"><span>▶ Eternals</span></a>
+      </div>
+  </div>
+
+  <div class="screen">
+    <div class="screen-inner">
+      <div class="panel">
+        <p class="kicker">One badge family — colour is the only variable</p>
+        <div class="chip-row" style="margin-top:14px">
+          <span class="stamp">Watched</span>
+          <span class="badge badge--crimson">▶ Watching</span>
+          <span class="badge">Series</span>
+          <span class="badge">Special</span>
+          <span class="badge badge--brass">Rewatch</span>
+          <span class="badge badge--muted">Not yet released</span>
+          <span class="badge badge--count">3 / 6 episodes</span>
+          <span class="case-rating">8.5</span>
+        </div>
+        <p class="kicker" style="margin-top:28px">Currently watching — series variant</p>
+        <a class="resume-card" href="#1" style="margin-top:14px">
+          <span>
+            <span class="resume-kicker">Currently watching</span>
+            <span class="resume-title">Hawkeye</span>
+            <span class="resume-meta">Phase four · series · 2021</span>
+            <span class="resume-episode">Season 1 · on episode 3 of 6</span>
+            <span class="progress"><span class="progress-track"><span class="progress-fill" style="width:33%"></span></span></span>
+          </span>
+          <span class="resume-cta">Open →</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
