@@ -32,35 +32,10 @@
           "postCredit": { "count": 1, "type": "post" }
         },
         {
-          "id": "captain-marvel",
-          "title": "Captain Marvel",
-          "year": 2019,
-          "narrativeOrder": 2,
-          "releaseOrder": 21,
-          "type": "movie",
-          "summary": "Set in the 1990s, an Air Force pilot with cosmic powers gets caught in a galactic conflict and uncovers hidden memories about her past on Earth.",
-          "beforeWatch": {
-            "context": "Set in 1995, half a century after the last film and over a decade before the present-day story starts. It stands almost entirely on its own. What it's quietly doing is filling in the era before any of the heroes existed, back when the organisation that eventually assembles them was a much smaller, much less certain outfit.",
-            "watchFirst": []
-          },
-          "inUniverseSetting": "1995",
-          "deepDive": {
-            "plot": "Set in the mid-1990s, an amnesiac Kree soldier named Vers discovers she's actually Carol Danvers, a former U.S. Air Force pilot who gained cosmic powers from an alien energy core. Along the way she uncovers that the 'enemy' Skrulls she's been hunting are actually refugees, and that her own Kree allies have been lying to her for years. She helps the Skrulls find a new home and leaves Earth to help them resettle across the galaxy.",
-            "significance": "Introduces one of the MCU's most powerful heroes and recontextualizes Nick Fury's early career, while quietly seeding two long-term threads: the Tesseract's origins and the Skrulls' true nature, both of which pay off years later.",
-            "orderNote": "Placed second because its 1990s setting comes right after Captain America's origin chronologically, even though it was actually the 21st film released — it's grouped here by timeline, not release date."
-          },
-          "watchFor": [
-            { "name": "Nick Fury's eye", "characterId": "nick-fury", "thisFilm": "Scratched by Goose the 'cat' aboard a Skrull ship.", "future": "Explains the eyepatch Fury wears in every other MCU appearance." },
-            { "name": "Talos", "thisFilm": "Reveals himself as a Skrull leader seeking peace, not conquest.", "future": "Becomes a recurring ally, and is later revealed to have spent years impersonating Nick Fury.", "spoils": "Spider-Man: Far From Home" },
-            { "name": "Carol Danvers", "thisFilm": "Leaves Earth to help resettle the Skrulls, giving Fury a modified pager.", "future": "Answers Fury's distress signal at the end of Infinity War and arrives to help in Endgame.", "spoils": "Avengers: Infinity War / Endgame" }
-          ],
-          "postCredit": { "count": 2, "type": "mid+post" }
-        },
-        {
           "id": "iron-man-1",
           "title": "Iron Man",
           "year": 2008,
-          "narrativeOrder": 3,
+          "narrativeOrder": 2,
           "releaseOrder": 1,
           "type": "movie",
           "summary": "A billionaire weapons manufacturer is captured and forced to build a weapon, but instead builds a suit of armor and escapes, setting him on a new path.",
@@ -84,7 +59,7 @@
           "id": "incredible-hulk",
           "title": "The Incredible Hulk",
           "year": 2008,
-          "narrativeOrder": 4,
+          "narrativeOrder": 3,
           "releaseOrder": 2,
           "type": "movie",
           "summary": "A scientist on the run tries to control a rage-fueled transformation caused by a failed experiment, while the military hunts him down.",
@@ -109,7 +84,7 @@
           "id": "iron-man-2",
           "title": "Iron Man 2",
           "year": 2010,
-          "narrativeOrder": 5,
+          "narrativeOrder": 4,
           "releaseOrder": 3,
           "type": "movie",
           "summary": "Facing pressure from the government and a personal crisis, a hero must deal with a new enemy seeking revenge tied to his father's past, while a former ally's ambitions grow.",
@@ -134,7 +109,7 @@
           "id": "thor-1",
           "title": "Thor",
           "year": 2011,
-          "narrativeOrder": 6,
+          "narrativeOrder": 5,
           "releaseOrder": 4,
           "type": "movie",
           "summary": "A powerful but arrogant warrior is cast out of his home realm and stripped of his power, learning humility on Earth while a threat brews back home.",
@@ -159,7 +134,7 @@
           "id": "avengers-1",
           "title": "The Avengers",
           "year": 2012,
-          "narrativeOrder": 7,
+          "narrativeOrder": 6,
           "releaseOrder": 6,
           "type": "movie",
           "summary": "A team of powerful individuals is assembled to stop a stolen artifact from being used to open a portal for an invading force.",
@@ -337,12 +312,44 @@
             { "name": "Wakanda / vibranium", "thisFilm": "Ultron's body is forged from vibranium sourced from Wakanda.", "future": "First real spotlight on Wakanda, foreshadowing Black Panther.", "spoils": "Black Panther" }
           ],
           "postCredit": { "count": 1, "type": "mid" }
+        }
+      ]
+    },
+    {
+      "id": "phase-3",
+      "name": "Phase Three",
+      "label": "The Infinity Saga: Endgame",
+      "movies": [
+        {
+          "id": "doctor-strange-1",
+          "title": "Doctor Strange",
+          "year": 2016,
+          "narrativeOrder": 1,
+          "releaseOrder": 14,
+          "type": "movie",
+          "summary": "A brilliant but arrogant surgeon loses the use of his hands in an accident and seeks healing in the mystic arts, discovering a hidden world of sorcery and a looming threat from another dimension.",
+          "beforeWatch": {
+            "context": "A standalone origin story that opens the door on magic, which the films have not seriously dealt with until now. Nothing prior is required. It runs roughly parallel to the films around it rather than after them, so don't worry about slotting it precisely.",
+            "watchFirst": []
+          },
+          "inUniverseSetting": "2016",
+          "deepDive": {
+            "plot": "Brilliant but arrogant surgeon Stephen Strange loses the use of his hands in a car accident and, out of desperation, seeks out a mystical order in Kathmandu led by the Ancient One. He masters the mystic arts faster than anyone before him, only to discover a rogue former student, Kaecilius, is trying to merge Earth with a dark dimension ruled by the entity Dormammu. Strange traps Dormammu in a time loop using the Time Stone to force a bargain, saving Earth and choosing to become the new Sorcerer Supreme.",
+            "significance": "Introduces magic and the multiverse as a real, functioning part of the MCU, and hands Earth its second major Infinity Stone guardian — setting up Strange as one of the most important players in the Infinity Saga's endgame.",
+            "orderNote": "Set the same year as Civil War, but its story is self-contained, so it's placed here as a natural thematic grouping within Phase Three rather than a tight timeline link."
+          },
+          "watchFor": [
+            { "name": "The Time Stone", "thisFilm": "Kept in the Eye of Agamotto, used to defeat Dormammu.", "future": "Becomes one of the most critical Infinity Stones in Infinity War's ending and Endgame's time heist.", "spoils": "Avengers: Infinity War / Endgame" },
+            { "name": "Thor cameo (mid-credit)", "characterId": "thor", "thisFilm": "Strange offers to help Thor track down Odin.", "future": "Leads directly into the plot of Thor: Ragnarok.", "spoils": "Thor: Ragnarok" },
+            { "name": "Mordo (post-credit)", "characterId": "karl-mordo", "thisFilm": "Leaves the order, disillusioned with how casually sorcerers bend natural law.", "future": "Becomes a quiet antagonist thread for future Doctor Strange stories." }
+          ],
+          "postCredit": { "count": 2, "type": "mid+post" }
         },
         {
           "id": "ant-man-1",
           "title": "Ant-Man",
           "year": 2015,
-          "narrativeOrder": 7,
+          "narrativeOrder": 2,
           "releaseOrder": 12,
           "type": "movie",
           "summary": "Con man Scott Lang is recruited by scientist Hank Pym to master a suit that lets him shrink to the size of an insect, using his new ability to pull off a heist that could save the world.",
@@ -361,19 +368,12 @@
             { "name": "The Wasp suit (post-credit)", "characterId": "hope-van-dyne", "thisFilm": "Hank Pym reveals Hope's late mother's suit, now upgraded for her.", "future": "She becomes the Wasp in Ant-Man and the Wasp.", "spoils": "Ant-Man and the Wasp" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
-        }
-      ]
-    },
-    {
-      "id": "phase-3",
-      "name": "Phase Three",
-      "label": "The Infinity Saga: Endgame",
-      "movies": [
+        },
         {
           "id": "cap-3",
           "title": "Captain America: Civil War",
           "year": 2016,
-          "narrativeOrder": 1,
+          "narrativeOrder": 3,
           "releaseOrder": 13,
           "type": "movie",
           "summary": "A government oversight act splits the Avengers into two factions, pitting Captain America and his allies against Iron Man's, while a hidden mastermind quietly manipulates the conflict from the shadows.",
@@ -399,7 +399,7 @@
           "id": "black-widow",
           "title": "Black Widow",
           "year": 2021,
-          "narrativeOrder": 2,
+          "narrativeOrder": 4,
           "releaseOrder": 27,
           "type": "movie",
           "summary": "A fugitive in the fallout of Civil War, Natasha Romanoff is forced to confront dangerous ties from her past when a mysterious figure threatens to unravel the Red Room program that trained her. Released in Phase Four but set in 2016, so it's grouped here narratively, same reasoning as Captain Marvel and Guardians Vol. 2.",
@@ -424,7 +424,7 @@
           "id": "black-panther",
           "title": "Black Panther",
           "year": 2018,
-          "narrativeOrder": 3,
+          "narrativeOrder": 5,
           "releaseOrder": 18,
           "type": "movie",
           "summary": "After his father's death, T'Challa returns to the technologically advanced nation of Wakanda to claim the throne, but a challenger with ties to his family's past threatens both his crown and Wakanda's secrets.",
@@ -450,7 +450,7 @@
           "id": "spiderman-1",
           "title": "Spider-Man: Homecoming",
           "year": 2017,
-          "narrativeOrder": 4,
+          "narrativeOrder": 6,
           "releaseOrder": 16,
           "type": "movie",
           "summary": "Still adjusting to his new abilities, Peter Parker balances high school life with his growing responsibilities as Spider-Man while facing a black-market arms dealer wielding stolen alien technology.",
@@ -472,35 +472,36 @@
           "postCredit": { "count": 1, "type": "mid" }
         },
         {
-          "id": "doctor-strange-1",
-          "title": "Doctor Strange",
-          "year": 2016,
-          "narrativeOrder": 5,
-          "releaseOrder": 14,
+          "id": "ant-man-2",
+          "title": "Ant-Man and the Wasp",
+          "year": 2018,
+          "narrativeOrder": 7,
+          "releaseOrder": 20,
           "type": "movie",
-          "summary": "A brilliant but arrogant surgeon loses the use of his hands in an accident and seeks healing in the mystic arts, discovering a hidden world of sorcery and a looming threat from another dimension.",
+          "summary": "Scott Lang juggles house arrest with a new mission alongside Hope van Dyne and Hank Pym to rescue Hope's mother, Janet, from the mysterious and dangerous Quantum Realm.",
           "beforeWatch": {
-            "context": "A standalone origin story that opens the door on magic, which the films have not seriously dealt with until now. Nothing prior is required. It runs roughly parallel to the films around it rather than after them, so don't worry about slotting it precisely.",
-            "watchFirst": []
+            "context": "Scott is under house arrest for taking part in the airport fight, and the film is a light, self-contained caper — a deliberate breather. Important placement note: it runs alongside the previous film rather than after it, and only catches up to that film's ending in its final moments.",
+            "watchFirst": ["ant-man-1","cap-3"]
           },
-          "inUniverseSetting": "2016",
+          "inUniverseSetting": "2018",
+          "timeSkip": "Set concurrently with, right up to, Infinity War's ending",
           "deepDive": {
-            "plot": "Brilliant but arrogant surgeon Stephen Strange loses the use of his hands in a car accident and, out of desperation, seeks out a mystical order in Kathmandu led by the Ancient One. He masters the mystic arts faster than anyone before him, only to discover a rogue former student, Kaecilius, is trying to merge Earth with a dark dimension ruled by the entity Dormammu. Strange traps Dormammu in a time loop using the Time Stone to force a bargain, saving Earth and choosing to become the new Sorcerer Supreme.",
-            "significance": "Introduces magic and the multiverse as a real, functioning part of the MCU, and hands Earth its second major Infinity Stone guardian — setting up Strange as one of the most important players in the Infinity Saga's endgame.",
-            "orderNote": "Set the same year as Civil War, but its story is self-contained, so it's placed here as a natural thematic grouping within Phase Three rather than a tight timeline link."
+            "plot": "Still under house arrest after Civil War, Scott Lang is pulled back into Hank Pym and Hope van Dyne's world when they need his unique Quantum Realm experience to rescue Hope's mother, Janet, who's been trapped there for three decades. Their efforts to build a working tunnel into the Quantum Realm are complicated by a black-market tech dealer and a mysterious, phasing woman named Ghost, who needs Janet's quantum energy to stabilize her own condition. They successfully retrieve Janet just as the Snap disintegrates half the universe outside — including Hope, Hank, and Janet — leaving Scott alone and stranded in the Quantum Realm.",
+            "significance": "Introduces the Quantum Realm mechanics in enough depth that it becomes the literal basis for the time-travel plan in Endgame, and its ending directly explains Scott's mysterious absence at the start of that film.",
+            "orderNote": "Set concurrently with Infinity War's climax, explaining what the Ant-Man family was doing while the Snap happened elsewhere."
           },
           "watchFor": [
-            { "name": "The Time Stone", "thisFilm": "Kept in the Eye of Agamotto, used to defeat Dormammu.", "future": "Becomes one of the most critical Infinity Stones in Infinity War's ending and Endgame's time heist.", "spoils": "Avengers: Infinity War / Endgame" },
-            { "name": "Thor cameo (mid-credit)", "characterId": "thor", "thisFilm": "Strange offers to help Thor track down Odin.", "future": "Leads directly into the plot of Thor: Ragnarok.", "spoils": "Thor: Ragnarok" },
-            { "name": "Mordo (post-credit)", "characterId": "karl-mordo", "thisFilm": "Leaves the order, disillusioned with how casually sorcerers bend natural law.", "future": "Becomes a quiet antagonist thread for future Doctor Strange stories." }
+            { "name": "The Quantum Realm", "thisFilm": "Explored in depth as Hank and Hope search for Janet.", "future": "Becomes the mechanism the team uses for time travel in Avengers: Endgame.", "spoils": "Avengers: Endgame" },
+            { "name": "Janet van Dyne's rescue", "characterId": "janet-van-dyne", "thisFilm": "Successfully rescued after 30 years trapped in the Quantum Realm.", "future": "Brings her decades of Quantum Realm knowledge into the eventual fight against Thanos.", "spoils": "Avengers: Endgame" },
+            { "name": "The credits-scene Snap", "thisFilm": "Scott Lang is left stranded in the Quantum Realm when his team outside disintegrates.", "future": "Explains his absence at the very start of Endgame.", "spoils": "Avengers: Endgame" }
           ],
-          "postCredit": { "count": 2, "type": "mid+post" }
+          "postCredit": { "count": 2, "type": "mid+post", "timing": "The mid-credit scene plays fairly early; the real post-credit scene (Scott stranded and alone) doesn't hit until after the full cast and crew crawl, so it's easy to miss if you stop early.", "skipNote": "Skip both scenes if you're following narrative order — they preview the Snap from Avengers: Infinity War before you've actually watched it happen. Come back after Infinity War; they set up Scott's situation at the start of Endgame." }
         },
         {
           "id": "thor-3",
           "title": "Thor: Ragnarok",
           "year": 2017,
-          "narrativeOrder": 6,
+          "narrativeOrder": 8,
           "releaseOrder": 17,
           "type": "movie",
           "summary": "Imprisoned on the other side of the universe, Thor must race home to stop the fire demon Surtur and his ruthless sister Hela from destroying Asgard, teaming up with the Hulk and a band of misfits along the way.",
@@ -525,7 +526,7 @@
           "id": "avengers-3",
           "title": "Avengers: Infinity War",
           "year": 2018,
-          "narrativeOrder": 7,
+          "narrativeOrder": 9,
           "releaseOrder": 19,
           "type": "movie",
           "summary": "The Avengers and their allies unite to stop the Mad Titan Thanos from collecting all six Infinity Stones and using them to wipe out half of all life in the universe.",
@@ -547,36 +548,35 @@
           "postCredit": { "count": 1, "type": "post" }
         },
         {
-          "id": "ant-man-2",
-          "title": "Ant-Man and the Wasp",
-          "year": 2018,
-          "narrativeOrder": 8,
-          "releaseOrder": 20,
+          "id": "captain-marvel",
+          "title": "Captain Marvel",
+          "year": 2019,
+          "narrativeOrder": 10,
+          "releaseOrder": 21,
           "type": "movie",
-          "summary": "Scott Lang juggles house arrest with a new mission alongside Hope van Dyne and Hank Pym to rescue Hope's mother, Janet, from the mysterious and dangerous Quantum Realm.",
+          "summary": "Set in the 1990s, an Air Force pilot with cosmic powers gets caught in a galactic conflict and uncovers hidden memories about her past on Earth.",
           "beforeWatch": {
-            "context": "Scott is under house arrest for taking part in the airport fight, and the film is a light, self-contained caper — a deliberate breather. Important placement note: it runs alongside the previous film rather than after it, and only catches up to that film's ending in its final moments.",
-            "watchFirst": ["ant-man-1","cap-3"]
+            "context": "Set in 1995, half a century after the last film and over a decade before the present-day story starts. It stands almost entirely on its own. What it's quietly doing is filling in the era before any of the heroes existed, back when the organisation that eventually assembles them was a much smaller, much less certain outfit.",
+            "watchFirst": []
           },
-          "inUniverseSetting": "2018",
-          "timeSkip": "Set concurrently with, right up to, Infinity War's ending",
+          "inUniverseSetting": "1995",
           "deepDive": {
-            "plot": "Still under house arrest after Civil War, Scott Lang is pulled back into Hank Pym and Hope van Dyne's world when they need his unique Quantum Realm experience to rescue Hope's mother, Janet, who's been trapped there for three decades. Their efforts to build a working tunnel into the Quantum Realm are complicated by a black-market tech dealer and a mysterious, phasing woman named Ghost, who needs Janet's quantum energy to stabilize her own condition. They successfully retrieve Janet just as the Snap disintegrates half the universe outside — including Hope, Hank, and Janet — leaving Scott alone and stranded in the Quantum Realm.",
-            "significance": "Introduces the Quantum Realm mechanics in enough depth that it becomes the literal basis for the time-travel plan in Endgame, and its ending directly explains Scott's mysterious absence at the start of that film.",
-            "orderNote": "Set concurrently with Infinity War's climax, explaining what the Ant-Man family was doing while the Snap happened elsewhere."
+            "plot": "Set in the mid-1990s, an amnesiac Kree soldier named Vers discovers she's actually Carol Danvers, a former U.S. Air Force pilot who gained cosmic powers from an alien energy core. Along the way she uncovers that the 'enemy' Skrulls she's been hunting are actually refugees, and that her own Kree allies have been lying to her for years. She helps the Skrulls find a new home and leaves Earth to help them resettle across the galaxy.",
+            "significance": "Introduces one of the MCU's most powerful heroes and recontextualizes Nick Fury's early career, while quietly seeding two long-term threads: the Tesseract's origins and the Skrulls' true nature, both of which pay off years later.",
+            "orderNote": "Placed second because its 1990s setting comes right after Captain America's origin chronologically, even though it was actually the 21st film released — it's grouped here by timeline, not release date."
           },
           "watchFor": [
-            { "name": "The Quantum Realm", "thisFilm": "Explored in depth as Hank and Hope search for Janet.", "future": "Becomes the mechanism the team uses for time travel in Avengers: Endgame.", "spoils": "Avengers: Endgame" },
-            { "name": "Janet van Dyne's rescue", "characterId": "janet-van-dyne", "thisFilm": "Successfully rescued after 30 years trapped in the Quantum Realm.", "future": "Brings her decades of Quantum Realm knowledge into the eventual fight against Thanos.", "spoils": "Avengers: Endgame" },
-            { "name": "The credits-scene Snap", "thisFilm": "Scott Lang is left stranded in the Quantum Realm when his team outside disintegrates.", "future": "Explains his absence at the very start of Endgame.", "spoils": "Avengers: Endgame" }
+            { "name": "Nick Fury's eye", "characterId": "nick-fury", "thisFilm": "Scratched by Goose the 'cat' aboard a Skrull ship.", "future": "Explains the eyepatch Fury wears in every other MCU appearance." },
+            { "name": "Talos", "thisFilm": "Reveals himself as a Skrull leader seeking peace, not conquest.", "future": "Becomes a recurring ally, and is later revealed to have spent years impersonating Nick Fury.", "spoils": "Spider-Man: Far From Home" },
+            { "name": "Carol Danvers", "thisFilm": "Leaves Earth to help resettle the Skrulls, giving Fury a modified pager.", "future": "Answers Fury's distress signal at the end of Infinity War and arrives to help in Endgame.", "spoils": "Avengers: Infinity War / Endgame" }
           ],
-          "postCredit": { "count": 2, "type": "mid+post", "timing": "The mid-credit scene plays fairly early; the real post-credit scene (Scott stranded and alone) doesn't hit until after the full cast and crew crawl, so it's easy to miss if you stop early.", "skipNote": "Skip both scenes if you're following narrative order — they preview the Snap from Avengers: Infinity War before you've actually watched it happen. Come back after Infinity War; they set up Scott's situation at the start of Endgame." }
+          "postCredit": { "count": 2, "type": "mid+post" }
         },
         {
           "id": "avengers-4",
           "title": "Avengers: Endgame",
           "year": 2019,
-          "narrativeOrder": 9,
+          "narrativeOrder": 11,
           "releaseOrder": 22,
           "type": "movie",
           "summary": "With half of all life gone, the remaining Avengers assemble one final time to undo Thanos's actions, launching a desperate heist through their own history.",
@@ -597,31 +597,6 @@
             { "name": "Tony Stark's legacy", "characterId": "tony-stark", "thisFilm": "Sacrifices himself using the Infinity Stones to defeat Thanos for good.", "future": "His death and daughter Morgan's existence echo through several later films." }
           ],
           "postCredit": { "count": 0, "type": "none" }
-        },
-        {
-          "id": "spiderman-2",
-          "title": "Spider-Man: Far From Home",
-          "year": 2019,
-          "narrativeOrder": 10,
-          "releaseOrder": 23,
-          "type": "movie",
-          "summary": "While on a school trip across Europe, Peter Parker is recruited by Nick Fury to help a mysterious visitor from another dimension battle a string of elemental creatures threatening the world.",
-          "beforeWatch": {
-            "context": "A few months after Endgame, and the first film to show what the world actually looks like afterwards — grieving, disoriented, and trying to work out who fills the gap. Peter is on a school trip to Europe and would very much like a holiday. The previous film's ending is essential; so is his own.",
-            "watchFirst": ["avengers-4","spiderman-1"]
-          },
-          "inUniverseSetting": "2024",
-          "timeSkip": "Set 8 years after the 2012 Avengers battle, following the 5-year Blip",
-          "deepDive": {
-            "plot": "Grieving Tony Stark's death and adjusting to a post-Blip world where their entire class aged five years while they didn't, Peter Parker just wants a normal school trip to Europe — until Nick Fury recruits him to help a mysterious hero named Mysterio battle giant elemental monsters. Mysterio turns out to be a fraud, a former Stark employee using illusion technology to fake a threat and position himself as Tony's successor, and his final act of revenge is publicly outing Peter's secret identity to the world.",
-            "significance": "Closes out the Infinity Saga on a personal note for Peter, dealing with losing his mentor, and ends on the biggest cliffhanger of Phase Three — the whole world now knows Spider-Man's identity — directly setting up No Way Home.",
-            "orderNote": "Placed last in Phase Three as the true epilogue to the Infinity Saga, resolving loose ends from Endgame."
-          },
-          "watchFor": [
-            { "name": "Mysterio's frame job", "characterId": "quentin-beck", "thisFilm": "Exposed as a fraud by Peter, but not before recording a doctored video.", "future": "Publicly reveals Peter Parker's identity as Spider-Man — the inciting event of Spider-Man: No Way Home.", "spoils": "Spider-Man: No Way Home" },
-            { "name": "Nick Fury & Maria Hill (post-credit)", "thisFilm": "Appear to help Peter throughout the film.", "future": "Revealed to actually be Skrulls Talos and Soren, with the real Fury shown living in space.", "spoils": "Secret Invasion" }
-          ],
-          "postCredit": { "count": 2, "type": "mid+post" }
         }
       ]
     },
@@ -742,10 +717,97 @@
           ]
         },
         {
+          "id": "spiderman-2",
+          "title": "Spider-Man: Far From Home",
+          "year": 2019,
+          "narrativeOrder": 3,
+          "releaseOrder": 23,
+          "type": "movie",
+          "summary": "While on a school trip across Europe, Peter Parker is recruited by Nick Fury to help a mysterious visitor from another dimension battle a string of elemental creatures threatening the world.",
+          "beforeWatch": {
+            "context": "A few months after Endgame, and the first film to show what the world actually looks like afterwards — grieving, disoriented, and trying to work out who fills the gap. Peter is on a school trip to Europe and would very much like a holiday. The previous film's ending is essential; so is his own.",
+            "watchFirst": ["avengers-4","spiderman-1"]
+          },
+          "inUniverseSetting": "2024",
+          "timeSkip": "Set 8 years after the 2012 Avengers battle, following the 5-year Blip",
+          "deepDive": {
+            "plot": "Grieving Tony Stark's death and adjusting to a post-Blip world where their entire class aged five years while they didn't, Peter Parker just wants a normal school trip to Europe — until Nick Fury recruits him to help a mysterious hero named Mysterio battle giant elemental monsters. Mysterio turns out to be a fraud, a former Stark employee using illusion technology to fake a threat and position himself as Tony's successor, and his final act of revenge is publicly outing Peter's secret identity to the world.",
+            "significance": "Closes out the Infinity Saga on a personal note for Peter, dealing with losing his mentor, and ends on the biggest cliffhanger of Phase Three — the whole world now knows Spider-Man's identity — directly setting up No Way Home.",
+            "orderNote": "Placed last in Phase Three as the true epilogue to the Infinity Saga, resolving loose ends from Endgame."
+          },
+          "watchFor": [
+            { "name": "Mysterio's frame job", "characterId": "quentin-beck", "thisFilm": "Exposed as a fraud by Peter, but not before recording a doctored video.", "future": "Publicly reveals Peter Parker's identity as Spider-Man — the inciting event of Spider-Man: No Way Home.", "spoils": "Spider-Man: No Way Home" },
+            { "name": "Nick Fury & Maria Hill (post-credit)", "thisFilm": "Appear to help Peter throughout the film.", "future": "Revealed to actually be Skrulls Talos and Soren, with the real Fury shown living in space.", "spoils": "Secret Invasion" }
+          ],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "spiderman-3",
+          "title": "Spider-Man: No Way Home",
+          "year": 2021,
+          "narrativeOrder": 4,
+          "releaseOrder": 31,
+          "type": "movie",
+          "summary": "After his identity is exposed, Peter Parker asks Doctor Strange for help, and a spell gone wrong tears open the multiverse, bringing dangerous visitors from other realities into his world.",
+          "beforeWatch": {
+            "context": "Peter Parker's identity as Spider-Man was broadcast to the world at the end of the last film, and this one opens directly on that fallout — he's still a high-school senior, and college applications drive the early going more than heroics. The other thing worth carrying in is Doctor Strange, so his solo film gives you a sense of what magic can and can't do here.",
+            "watchFirst": ["spiderman-1","spiderman-2","doctor-strange-1","avengers-4"]
+          },
+          "optionalViewing": ["Spider-Man (2002)", "Spider-Man 2 (2004)", "Spider-Man 3 (2007)", "The Amazing Spider-Man (2012)", "The Amazing Spider-Man 2 (2014)"],
+          "inUniverseSetting": "2024",
+          "timeSkip": "A few months after Far From Home",
+          "deepDive": {
+            "plot": "With his identity publicly exposed and his loved ones' lives upended, Peter Parker asks Doctor Strange to cast a spell making the world forget he's Spider-Man — but Peter's own hesitations corrupt the spell, tearing open the multiverse and pulling in villains, and eventually the Spider-Men themselves, from other Spider-Man universes entirely. After a version of Peter's Aunt May is killed trying to save one of the villains, Peter chooses to help redeem all of them rather than send them back to certain death, at the cost of having Strange erase the entire world's memory of him — resetting Peter to a blank slate, alone.",
+            "significance": "A genre-redefining crossover event that unites three generations of live-action Spider-Man actors, and its ending — nobody remembers Peter Parker — fundamentally isolates him from the rest of the Avengers for future stories.",
+            "orderNote": "Placed here as the direct continuation of Far From Home's ending, unfolding a few months later."
+          },
+          "watchFor": [
+            { "name": "Multiversal visitors", "thisFilm": "Villains from other Spider-Man universes are pulled into Peter's world by a broken spell.", "future": "Confirms the existence of alternate universes, directly enabling Doctor Strange in the Multiverse of Madness.", "spoils": "Doctor Strange in the Multiverse of Madness" },
+            { "name": "The world forgetting Peter Parker", "characterId": "peter-parker", "thisFilm": "Strange casts a spell erasing everyone's memory of Peter Parker as Spider-Man.", "future": "Resets Peter's status quo, isolating him from the other Avengers for future stories." }
+          ],
+          "postCredit": { "count": 1, "type": "post" }
+        },
+        {
+          "id": "hawkeye",
+          "title": "Hawkeye",
+          "year": 2021,
+          "narrativeOrder": 5,
+          "releaseOrder": 30,
+          "type": "series",
+          "summary": "Clint Barton teams up with young archer Kate Bishop to take down a criminal conspiracy tied to his past as Ronin, just days before Christmas.",
+          "beforeWatch": {
+            "context": "Christmas in New York, with Clint trying and failing to get home to his family. It leans on his history more than any other series — specifically the five years covered by Endgame and the partnership at the heart of Black Widow. A cheerful, low-stakes holiday tone sitting on top of some genuinely heavy history.",
+            "watchFirst": ["avengers-4","black-widow"]
+          },
+          "inUniverseSetting": "Christmas 2024",
+          "deepDive": {
+            "plot": "Trying to get home to his family for Christmas, retired Avenger Clint Barton is dragged back into his past as the vigilante Ronin when aspiring young archer Kate Bishop accidentally puts on his old suit at an auction, drawing the attention of a tracksuit-wearing mafia and Yelena Belova, who blames Clint for Natasha's death. Clint and Kate team up, uncovering that the real villain is a mob boss connected to Kate's own family, and Clint clears his name with Yelena while passing his archer's mantle informally to Kate.",
+            "significance": "Formally sets up Kate Bishop as Hawkeye's successor and continues Yelena Belova's arc from Black Widow, both recurring across future antihero team-ups.",
+            "orderNote": "Set at Christmas 2024, placed here as the next confirmed dated story after Loki's 'outside time' events."
+          },
+          "watchFor": [
+            { "name": "Kate Bishop", "thisFilm": "Proves herself as a skilled archer and inherits a version of the Ronin gear.", "future": "Positioned as Clint's successor, expected to carry on the Hawkeye legacy." },
+            { "name": "Yelena Belova", "thisFilm": "Hunts Clint believing he's responsible for Natasha's death, before learning the truth.", "future": "Continues her arc from Black Widow, tying into future antihero team-ups.", "spoils": "Thunderbolts*" }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "hawkeye-e1", "episodeNumber": 1, "title": "Never Meet Your Heroes", "summary": "Kate Bishop accidentally puts on a mysterious Ronin suit at an auction, drawing Clint Barton back into a world he'd hoped to leave behind." },
+                { "id": "hawkeye-e2", "episodeNumber": 2, "title": "Hide and Seek", "summary": "Clint and Kate try to track down the tracksuit-wearing gang hunting the Ronin suit before Christmas gets any more complicated." },
+                { "id": "hawkeye-e3", "episodeNumber": 3, "title": "Echoes", "summary": "The pair run into Maya Lopez, a deaf crime-family enforcer with her own grudge against Ronin." },
+                { "id": "hawkeye-e4", "episodeNumber": 4, "title": "Partners, Am I Right?", "summary": "A captured Clint and Kate must talk their way out of trouble while Yelena Belova closes in on Clint." },
+                { "id": "hawkeye-e5", "episodeNumber": 5, "title": "Ronin", "summary": "Flashbacks reveal what really happened during Clint's brutal Ronin rampage during the Blip." },
+                { "id": "hawkeye-e6", "episodeNumber": 6, "title": "So This Is Christmas?", "summary": "Clint and Kate team up to take down the head of the criminal conspiracy once and for all, on Christmas Eve." }
+              ]
+            }
+          ]
+        },
+        {
           "id": "loki",
           "title": "Loki",
           "year": 2021,
-          "narrativeOrder": 3,
+          "narrativeOrder": 6,
           "releaseOrder": 26,
           "type": "series",
           "summary": "After stealing the Tesseract during the Avengers' 2012 time heist, a variant of the God of Mischief is arrested by the Time Variance Authority and forced to help hunt an even more dangerous variant of himself.",
@@ -821,10 +883,59 @@
           ]
         },
         {
+          "id": "ant-man-3",
+          "title": "Ant-Man and the Wasp: Quantumania",
+          "year": 2023,
+          "narrativeOrder": 7,
+          "releaseOrder": 39,
+          "type": "movie",
+          "summary": "Scott Lang and his family are pulled into the Quantum Realm, where they run headfirst into a powerful being who has been waiting there for a very long time.",
+          "beforeWatch": {
+            "context": "Scott has been enjoying the fame he earned in Endgame, and the film opens on him coasting. It then goes somewhere completely different — most of it takes place in a setting the earlier Ant-Man films only glimpsed. Loki is worth having behind you: the antagonist here is introduced by that series first.",
+            "watchFirst": ["ant-man-2","avengers-4","loki"]
+          },
+          "inUniverseSetting": "2025",
+          "deepDive": {
+            "plot": "Scott Lang, enjoying newfound fame as an Avenger and author, is accidentally pulled into the Quantum Realm along with his daughter Cassie, Hope, Hank, and Janet, after Cassie's own device to map the realm goes wrong. There, they discover Janet has been hiding a dark secret: decades earlier she encountered Kang the Conqueror, a being exiled to the Quantum Realm after being stripped of his empire by his own alternate selves. Kang manipulates the group into repairing his ship so he can escape and resume his conquest of the multiverse, but the family unites the Realm's oppressed population to defeat him instead — though a much larger council of Kang variants is revealed watching from beyond.",
+            "significance": "Formally introduces Kang the Conqueror as the driving villain of the Multiverse Saga, expands the Quantum Realm into a fully realized world of its own, and gives Cassie Lang a much larger heroic role.",
+            "orderNote": "Opens Phase Five as the first story to introduce the saga's next big-picture threat."
+          },
+          "watchFor": [
+            { "name": "Kang the Conqueror", "characterId": "kang", "thisFilm": "Introduced as a powerful exile trapped in the Quantum Realm, revealed to be a conqueror of countless timelines.", "future": "A variant of him becomes the central threat of the Multiverse Saga going forward.", "spoils": "Loki (Season 2) / Avengers: Doomsday" },
+            { "name": "Cassie Lang", "thisFilm": "Takes a more active superhero role alongside her father for the first time.", "future": "Positioned as a potential future Young Avenger." }
+          ],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "deadpool-wolverine",
+          "title": "Deadpool & Wolverine",
+          "year": 2024,
+          "narrativeOrder": 8,
+          "releaseOrder": 44,
+          "type": "movie",
+          "summary": "Recruited by the TVA to help save his own universe from being erased, a reluctant Deadpool drags a jaded variant of Wolverine along on a chaotic, foul-mouthed multiversal detour.",
+          "beforeWatch": {
+            "context": "Tonally unlike everything else here: it is loud, aggressively crude, and spends much of its runtime making fun of the films you've just watched. What it needs from you is the Loki series, since the organisation that kicks off the plot is introduced there. It also leans hard on two decades of non-MCU X-Men films — none required, all rewarded.",
+            "watchFirst": ["loki"]
+          },
+          "optionalViewing": ["Deadpool (2016)","Deadpool 2 (2018)","Logan (2017)","The wider Fox X-Men films"],
+          "inUniverseSetting": "2024 (Deadpool's home universe), mostly set in the Void — a place outside time and space",
+          "deepDive": {
+            "plot": "Failed Avengers try-out Wade Wilson is recruited by the TVA to help save his own universe from being erased following the death of its 'anchor being' — Wolverine, in his universe. Wade drags an alternate, jaded, and initially reluctant Wolverine variant along on a mission through the Void, the graveyard of pruned timelines, where they encounter a host of characters and actors from the 20th Century Fox X-Men films, and team up to stop a powerful telepath, Cassandra Nova, from taking over the Void and, eventually, the Sacred Timeline itself.",
+            "significance": "Officially folds the entire Fox X-Men film universe's characters and actors into the mainline MCU multiverse, and gives Wolverine a proper, R-rated MCU debut alongside Deadpool.",
+            "orderNote": "Placed here as the direct continuation of the TVA and multiverse concepts introduced in Loki, unfolding after that show's two seasons."
+          },
+          "watchFor": [
+            { "name": "The TVA & universe pruning", "thisFilm": "Deadpool learns his home universe is scheduled to be erased following the death of its 'anchor being.'", "future": "Directly follows up on the TVA and multiverse concepts introduced in Loki.", "spoils": "Loki" },
+            { "name": "Multiversal cameos", "thisFilm": "A host of alternate-universe heroes and villains from the 20th Century Fox X-Men films appear throughout the Void.", "future": "Formally folds the Fox X-Men universe's characters and actors into the mainline MCU multiverse." }
+          ],
+          "postCredit": { "count": 1, "type": "mid" }
+        },
+        {
           "id": "shang-chi",
           "title": "Shang-Chi and the Legend of the Ten Rings",
           "year": 2021,
-          "narrativeOrder": 4,
+          "narrativeOrder": 9,
           "releaseOrder": 28,
           "type": "movie",
           "summary": "A martial-arts prodigy who has been hiding from his past is drawn back into the orbit of his father's secret organization, the Ten Rings, and must confront a fate he thought he'd escaped.",
@@ -849,7 +960,7 @@
           "id": "eternals",
           "title": "Eternals",
           "year": 2021,
-          "narrativeOrder": 5,
+          "narrativeOrder": 10,
           "releaseOrder": 29,
           "type": "movie",
           "summary": "A team of immortal beings who have secretly protected Earth for thousands of years are forced to reunite against their ancient enemies, the Deviants, uncovering long-hidden truths about their true purpose.",
@@ -871,200 +982,10 @@
           "postCredit": { "count": 2, "type": "mid+post" }
         },
         {
-          "id": "hawkeye",
-          "title": "Hawkeye",
-          "year": 2021,
-          "narrativeOrder": 6,
-          "releaseOrder": 30,
-          "type": "series",
-          "summary": "Clint Barton teams up with young archer Kate Bishop to take down a criminal conspiracy tied to his past as Ronin, just days before Christmas.",
-          "beforeWatch": {
-            "context": "Christmas in New York, with Clint trying and failing to get home to his family. It leans on his history more than any other series — specifically the five years covered by Endgame and the partnership at the heart of Black Widow. A cheerful, low-stakes holiday tone sitting on top of some genuinely heavy history.",
-            "watchFirst": ["avengers-4","black-widow"]
-          },
-          "inUniverseSetting": "Christmas 2024",
-          "deepDive": {
-            "plot": "Trying to get home to his family for Christmas, retired Avenger Clint Barton is dragged back into his past as the vigilante Ronin when aspiring young archer Kate Bishop accidentally puts on his old suit at an auction, drawing the attention of a tracksuit-wearing mafia and Yelena Belova, who blames Clint for Natasha's death. Clint and Kate team up, uncovering that the real villain is a mob boss connected to Kate's own family, and Clint clears his name with Yelena while passing his archer's mantle informally to Kate.",
-            "significance": "Formally sets up Kate Bishop as Hawkeye's successor and continues Yelena Belova's arc from Black Widow, both recurring across future antihero team-ups.",
-            "orderNote": "Set at Christmas 2024, placed here as the next confirmed dated story after Loki's 'outside time' events."
-          },
-          "watchFor": [
-            { "name": "Kate Bishop", "thisFilm": "Proves herself as a skilled archer and inherits a version of the Ronin gear.", "future": "Positioned as Clint's successor, expected to carry on the Hawkeye legacy." },
-            { "name": "Yelena Belova", "thisFilm": "Hunts Clint believing he's responsible for Natasha's death, before learning the truth.", "future": "Continues her arc from Black Widow, tying into future antihero team-ups.", "spoils": "Thunderbolts*" }
-          ],
-          "seasons": [
-            {
-              "seasonNumber": 1,
-              "episodes": [
-                { "id": "hawkeye-e1", "episodeNumber": 1, "title": "Never Meet Your Heroes", "summary": "Kate Bishop accidentally puts on a mysterious Ronin suit at an auction, drawing Clint Barton back into a world he'd hoped to leave behind." },
-                { "id": "hawkeye-e2", "episodeNumber": 2, "title": "Hide and Seek", "summary": "Clint and Kate try to track down the tracksuit-wearing gang hunting the Ronin suit before Christmas gets any more complicated." },
-                { "id": "hawkeye-e3", "episodeNumber": 3, "title": "Echoes", "summary": "The pair run into Maya Lopez, a deaf crime-family enforcer with her own grudge against Ronin." },
-                { "id": "hawkeye-e4", "episodeNumber": 4, "title": "Partners, Am I Right?", "summary": "A captured Clint and Kate must talk their way out of trouble while Yelena Belova closes in on Clint." },
-                { "id": "hawkeye-e5", "episodeNumber": 5, "title": "Ronin", "summary": "Flashbacks reveal what really happened during Clint's brutal Ronin rampage during the Blip." },
-                { "id": "hawkeye-e6", "episodeNumber": 6, "title": "So This Is Christmas?", "summary": "Clint and Kate team up to take down the head of the criminal conspiracy once and for all, on Christmas Eve." }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "spiderman-3",
-          "title": "Spider-Man: No Way Home",
-          "year": 2021,
-          "narrativeOrder": 7,
-          "releaseOrder": 31,
-          "type": "movie",
-          "summary": "After his identity is exposed, Peter Parker asks Doctor Strange for help, and a spell gone wrong tears open the multiverse, bringing dangerous visitors from other realities into his world.",
-          "beforeWatch": {
-            "context": "Peter Parker's identity as Spider-Man was broadcast to the world at the end of the last film, and this one opens directly on that fallout — he's still a high-school senior, and college applications drive the early going more than heroics. The other thing worth carrying in is Doctor Strange, so his solo film gives you a sense of what magic can and can't do here.",
-            "watchFirst": ["spiderman-1","spiderman-2","doctor-strange-1","avengers-4"]
-          },
-          "optionalViewing": ["Spider-Man (2002)", "Spider-Man 2 (2004)", "Spider-Man 3 (2007)", "The Amazing Spider-Man (2012)", "The Amazing Spider-Man 2 (2014)"],
-          "inUniverseSetting": "2024",
-          "timeSkip": "A few months after Far From Home",
-          "deepDive": {
-            "plot": "With his identity publicly exposed and his loved ones' lives upended, Peter Parker asks Doctor Strange to cast a spell making the world forget he's Spider-Man — but Peter's own hesitations corrupt the spell, tearing open the multiverse and pulling in villains, and eventually the Spider-Men themselves, from other Spider-Man universes entirely. After a version of Peter's Aunt May is killed trying to save one of the villains, Peter chooses to help redeem all of them rather than send them back to certain death, at the cost of having Strange erase the entire world's memory of him — resetting Peter to a blank slate, alone.",
-            "significance": "A genre-redefining crossover event that unites three generations of live-action Spider-Man actors, and its ending — nobody remembers Peter Parker — fundamentally isolates him from the rest of the Avengers for future stories.",
-            "orderNote": "Placed here as the direct continuation of Far From Home's ending, unfolding a few months later."
-          },
-          "watchFor": [
-            { "name": "Multiversal visitors", "thisFilm": "Villains from other Spider-Man universes are pulled into Peter's world by a broken spell.", "future": "Confirms the existence of alternate universes, directly enabling Doctor Strange in the Multiverse of Madness.", "spoils": "Doctor Strange in the Multiverse of Madness" },
-            { "name": "The world forgetting Peter Parker", "characterId": "peter-parker", "thisFilm": "Strange casts a spell erasing everyone's memory of Peter Parker as Spider-Man.", "future": "Resets Peter's status quo, isolating him from the other Avengers for future stories." }
-          ],
-          "postCredit": { "count": 1, "type": "post" }
-        },
-        {
-          "id": "moon-knight",
-          "title": "Moon Knight",
-          "year": 2022,
-          "narrativeOrder": 8,
-          "releaseOrder": 32,
-          "type": "series",
-          "summary": "A mild-mannered gift shop worker discovers he shares a body with a mercenary, both serving as the reluctant avatar of an Egyptian moon god.",
-          "beforeWatch": {
-            "context": "The most self-contained thing on this list. New character, new corner of the world, no crossovers and no required reading whatsoever — it never once mentions the Avengers. Go in cold; the disorientation in the opening episode is entirely intentional.",
-            "watchFirst": []
-          },
-          "inUniverseSetting": "2023",
-          "deepDive": {
-            "plot": "Mild-mannered gift shop worker Steven Grant discovers he shares a body with Marc Spector, a mercenary secretly serving as the avatar of the Egyptian moon god Khonshu. As the two struggle for control, they're forced to stop a cult leader, Arthur Harrow, from resurrecting the goddess Ammit to judge humanity for crimes it hasn't committed yet. Along the way, a third personality, Jake Lockley, is revealed to exist within the same body, hinting the full truth of Marc's fractured identity is still not fully understood even by himself.",
-            "significance": "Introduces the Egyptian pantheon of gods as a real, active force in the MCU, opening the door for more street-level, supernatural corners of the universe outside the main Avengers-centric plotlines.",
-            "orderNote": "Placed here as a largely self-contained story with no direct thread into the wider Avengers plotline, grouped by release-era rather than a tight timeline link."
-          },
-          "watchFor": [
-            { "name": "Khonshu & the Egyptian gods", "thisFilm": "Introduces a pantheon of Egyptian gods operating on Earth in secret.", "future": "Opens the door for street-level supernatural stories outside the main Avengers-focused plotline." }
-          ],
-          "seasons": [
-            {
-              "seasonNumber": 1,
-              "episodes": [
-                { "id": "moon-knight-e1", "episodeNumber": 1, "title": "The Goldfish Problem", "summary": "Steven Grant starts blacking out and waking up in strange places, unaware that another personality is sharing his body." },
-                { "id": "moon-knight-e2", "episodeNumber": 2, "title": "Summon the Suit", "summary": "Steven learns the truth about Marc Spector and Khonshu, the Egyptian moon god they both serve as an avatar." },
-                { "id": "moon-knight-e3", "episodeNumber": 3, "title": "The Friendly Type", "summary": "Marc and Steven are forced to work together to stop a cult leader from unleashing a vengeful goddess." },
-                { "id": "moon-knight-e4", "episodeNumber": 4, "title": "The Tomb", "summary": "A tomb-raiding expedition goes sideways as ancient traps and old betrayals catch up with the pair." },
-                { "id": "moon-knight-e5", "episodeNumber": 5, "title": "Asylum", "summary": "A trip through a mental institution blurs the line between what's real and what's in Marc and Steven's shared mind." },
-                { "id": "moon-knight-e6", "episodeNumber": 6, "title": "Gods and Monsters", "summary": "A third personality is revealed, and the fate of Egypt's afterlife hangs in the balance." }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "doctor-strange-2",
-          "title": "Doctor Strange in the Multiverse of Madness",
-          "year": 2022,
-          "narrativeOrder": 9,
-          "releaseOrder": 33,
-          "type": "movie",
-          "summary": "Doctor Strange journeys into the dangerous and mind-bending multiverse with the help of a young woman who can travel between realities, while a powerful force hunts her for her abilities.",
-          "beforeWatch": {
-            "context": "Follows directly from the end of No Way Home, and takes the door that film opened as its starting premise. It also assumes you've finished WandaVision — that series does far more setup for this film than the first Doctor Strange does. A noticeably darker, more horror-inflected film than anything before it.",
-            "watchFirst": ["doctor-strange-1","spiderman-3","wandavision"]
-          },
-          "inUniverseSetting": "2024",
-          "timeSkip": "Directly follows No Way Home",
-          "deepDive": {
-            "plot": "Hunted by a mysterious force after a wedding goes wrong, America Chavez — a young woman who can punch holes between universes — draws Doctor Strange into the multiverse for the first time. They discover the hunter is actually Wanda Maximoff, consumed by the Darkhold and trying to steal America's powers to travel to a universe where she can be reunited with her children. Strange, forced to use dangerously corrupting magic himself to stop her, ultimately convinces Wanda to see what she's become, and she destroys the Darkhold and herself along with it, seemingly ending the Scarlet Witch's story — for now.",
-            "significance": "Pays off Wanda's entire arc from WandaVision in tragic fashion, and formally confirms the multiverse as a huge, story-spanning concept full of alternate versions of familiar heroes.",
-            "orderNote": "Directly follows No Way Home's confirmation of the multiverse, placed right after it."
-          },
-          "watchFor": [
-            { "name": "Incursions", "thisFilm": "Strange witnesses a universe-ending 'incursion' while multiverse-traveling.", "future": "Sets the stakes for future multiversal threats." },
-            { "name": "America Chavez", "thisFilm": "Escapes with Strange after her powers are hunted by Wanda.", "future": "Her ability to travel the multiverse makes her a target again in future stories." },
-            { "name": "Clea (mid-credit)", "thisFilm": "Approaches Strange after the darkness he dabbled in catches up to him.", "future": "Recruits him to fix the incursion he caused, teasing his next adventure." }
-          ],
-          "postCredit": { "count": 2, "type": "mid+post" }
-        },
-        {
-          "id": "ms-marvel",
-          "title": "Ms. Marvel",
-          "year": 2022,
-          "narrativeOrder": 10,
-          "releaseOrder": 34,
-          "type": "series",
-          "summary": "New Jersey teenager and superhero fangirl Kamala Khan discovers she has real superpowers of her own, tied to a mysterious family heirloom.",
-          "beforeWatch": {
-            "context": "A teenage coming-of-age story in Jersey City, and a very light lift — it needs no homework beyond knowing that the Avengers are famous in-universe, which the show is largely about. Kamala is a fan of theirs, so the more you've seen the more her enthusiasm lands, but nothing is required.",
-            "watchFirst": []
-          },
-          "inUniverseSetting": "2025",
-          "deepDive": {
-            "plot": "New Jersey teenager and Captain Marvel superfan Kamala Khan discovers her grandmother's old bangle grants her real superpowers, tied to an ancient race called the Clandestines who were stranded on Earth generations ago. As Kamala learns to control her powers and juggle her Muslim-American family life, she uncovers her own family's hidden connection to the bangle through her great-grandmother, who fled during the Partition of India. By the end, Kamala's growing powers briefly cause her to swap places with Carol Danvers herself, catching the cosmic hero's attention for the first time.",
-            "significance": "Introduces Kamala Khan, one of the most beloved modern Marvel characters, and directly sets up her recruitment into a bigger team alongside Carol Danvers and Monica Rambeau.",
-            "orderNote": "Placed here in the same broad 'a few years post-Blip' period as the rest of Phase Four's later entries, just before Thor: Love and Thunder and She-Hulk."
-          },
-          "watchFor": [
-            { "name": "Kamala Khan / Ms. Marvel", "thisFilm": "Discovers her powers come from a bangle passed down through her family.", "future": "Becomes a core member of the young hero team assembled in The Marvels.", "spoils": "The Marvels" }
-          ],
-          "seasons": [
-            {
-              "seasonNumber": 1,
-              "episodes": [
-                { "id": "ms-marvel-e1", "episodeNumber": 1, "title": "Generation Why", "summary": "Kamala Khan dreams of being a superhero, then unexpectedly gains real powers after putting on her grandmother's bangle." },
-                { "id": "ms-marvel-e2", "episodeNumber": 2, "title": "Crushed", "summary": "Kamala tries to balance her new powers with school, family, and her first crush." },
-                { "id": "ms-marvel-e3", "episodeNumber": 3, "title": "Destined", "summary": "A secret society called the Clandestines reveals the true, otherworldly origin of Kamala's powers." },
-                { "id": "ms-marvel-e4", "episodeNumber": 4, "title": "Seeing Red", "summary": "Kamala's family history and the Partition of India collide with her present-day fight against the Clandestines." },
-                { "id": "ms-marvel-e5", "episodeNumber": 5, "title": "Time and Again", "summary": "A trip into the past reveals how Kamala's grandmother first came into possession of the bangle." },
-                {
-                  "id": "ms-marvel-e6",
-                  "episodeNumber": 6,
-                  "title": "No Normal",
-                  "summary": "Kamala embraces her identity as Ms. Marvel just as a stranger from space takes an interest in her powers.",
-                  "watchFor": [
-                    { "name": "Captain Marvel's interest", "characterId": "carol-danvers", "thisFilm": "Kamala and Carol Danvers briefly swap places due to their entangled powers.", "future": "Sets up their team-up in The Marvels.", "spoils": "The Marvels" }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "thor-4",
-          "title": "Thor: Love and Thunder",
-          "year": 2022,
-          "narrativeOrder": 11,
-          "releaseOrder": 35,
-          "type": "movie",
-          "summary": "Thor's search for inner peace is interrupted by a galactic killer known as Gorr the God Butcher, who seeks the extinction of the gods, forcing Thor to seek help from an old flame wielding his own hammer.",
-          "beforeWatch": {
-            "context": "Thor has been off with the Guardians since Endgame and is looking for a purpose. Ragnarok's comic register is dialled up further here. The two films that matter going in are Ragnarok, for the tone and the supporting cast, and Endgame, for where he ended up — plus a memory of Jane Foster from the first two Thor films.",
-            "watchFirst": ["thor-3","avengers-4"]
-          },
-          "inUniverseSetting": "2025",
-          "deepDive": {
-            "plot": "Still searching for peace after Endgame, Thor reunites with his ex, astrophysicist Jane Foster, who has used the remains of his old hammer Mjolnir to become the Mighty Thor while secretly battling cancer. Together they must stop Gorr the God Butcher, a grief-stricken former believer slaughtering gods across the universe after his own deity abandoned him, using a weapon capable of killing gods, the Necrosword. Jane sacrifices herself using Mjolnir's power to save the day, and Thor, having lost yet another partner, finds a new sense of purpose raising Gorr's resurrected daughter as his own.",
-            "significance": "Gives Jane Foster a definitive, if bittersweet, send-off as the Mighty Thor, and continues Thor's long arc of loss and reinvention that began all the way back in Phase One.",
-            "orderNote": "Placed here in the same broad post-Blip period as Ms. Marvel and She-Hulk."
-          },
-          "watchFor": [
-            { "name": "Jane Foster / Mighty Thor's fate", "characterId": "jane-foster", "thisFilm": "Sacrifices herself using Mjolnir to save Thor and the children of Asgard.", "future": "Her journey to Valhalla leaves the door open for a possible future return." },
-            { "name": "Hercules (mid-credit)", "thisFilm": "Not present in the main story.", "future": "Zeus sends his son to hunt Thor down, setting up a rivalry for a future Thor story." }
-          ],
-          "postCredit": { "count": 2, "type": "mid+post" }
-        },
-        {
           "id": "she-hulk",
           "title": "She-Hulk: Attorney at Law",
           "year": 2022,
-          "narrativeOrder": 12,
+          "narrativeOrder": 11,
           "releaseOrder": 36,
           "type": "series",
           "summary": "Lawyer Jennifer Walters gains the powers of the Hulk after an accident, and must balance a superhero-law specialty with the messiness of everyday life.",
@@ -1107,53 +1028,38 @@
           ]
         },
         {
-          "id": "black-panther-2",
-          "title": "Black Panther: Wakanda Forever",
+          "id": "moon-knight",
+          "title": "Moon Knight",
           "year": 2022,
-          "narrativeOrder": 13,
-          "releaseOrder": 37,
-          "type": "movie",
-          "summary": "Following the loss of their king, the people of Wakanda must fight to protect their nation from intervening world powers while facing a new threat from a hidden underwater civilization.",
+          "narrativeOrder": 12,
+          "releaseOrder": 32,
+          "type": "series",
+          "summary": "A mild-mannered gift shop worker discovers he shares a body with a mercenary, both serving as the reluctant avatar of an Egyptian moon god.",
           "beforeWatch": {
-            "context": "About a year after Endgame, and about a year after the death of T'Challa — which the film treats as real and permanent, and which is also the real-world reason for its shape. It is first and last a film about grief. The first Black Panther is essential; Wakanda's new position in the world follows on directly from it.",
-            "watchFirst": ["black-panther","avengers-4"]
+            "context": "The most self-contained thing on this list. New character, new corner of the world, no crossovers and no required reading whatsoever — it never once mentions the Avengers. Go in cold; the disorientation in the opening episode is entirely intentional.",
+            "watchFirst": []
           },
-          "inUniverseSetting": "2025",
-          "timeSkip": "Roughly a year after T'Challa's death",
+          "inUniverseSetting": "2023",
           "deepDive": {
-            "plot": "Following King T'Challa's death from an unspecified illness, Wakanda must defend itself from world powers seeking vibranium, while a hidden underwater civilization called Talokan, led by the mutant king Namor, declares war after Wakanda is blamed for exposing his people's existence. Shuri, consumed by grief and anger, briefly embraces the Black Panther mantle's power for vengeance, but ultimately chooses mercy over Namor's death, forging an uneasy peace between the two nations instead.",
-            "significance": "Passes the Black Panther mantle to Shuri, introduces Namor and Talokan as a major new nation and faction, and reveals T'Challa's secret son Toussaint as a future heir to Wakanda's legacy.",
-            "orderNote": "Placed at the end of Phase Four as the culmination of Wakanda's post-T'Challa arc, roughly a year after his death."
+            "plot": "Mild-mannered gift shop worker Steven Grant discovers he shares a body with Marc Spector, a mercenary secretly serving as the avatar of the Egyptian moon god Khonshu. As the two struggle for control, they're forced to stop a cult leader, Arthur Harrow, from resurrecting the goddess Ammit to judge humanity for crimes it hasn't committed yet. Along the way, a third personality, Jake Lockley, is revealed to exist within the same body, hinting the full truth of Marc's fractured identity is still not fully understood even by himself.",
+            "significance": "Introduces the Egyptian pantheon of gods as a real, active force in the MCU, opening the door for more street-level, supernatural corners of the universe outside the main Avengers-centric plotlines.",
+            "orderNote": "Placed here as a largely self-contained story with no direct thread into the wider Avengers plotline, grouped by release-era rather than a tight timeline link."
           },
           "watchFor": [
-            { "name": "Namor & Talokan", "characterId": "namor", "thisFilm": "Wages war on the surface world before reaching an uneasy truce with Wakanda.", "future": "Leaves room for future conflict or alliance." },
-            { "name": "Shuri as Black Panther", "characterId": "shuri", "thisFilm": "Takes up her brother's mantle to defend Wakanda.", "future": "Shapes Wakanda's future direction." },
-            { "name": "Toussaint / T'Challa's son (post-credit)", "thisFilm": "Not present in the main story — revealed only in the post-credit scene.", "future": "Revealed as T'Challa's secret heir, teasing a future Black Panther legacy story." }
+            { "name": "Khonshu & the Egyptian gods", "thisFilm": "Introduces a pantheon of Egyptian gods operating on Earth in secret.", "future": "Opens the door for street-level supernatural stories outside the main Avengers-focused plotline." }
           ],
-          "postCredit": { "count": 1, "type": "post" }
-        },
-        {
-          "id": "guardians-holiday-special",
-          "title": "The Guardians of the Galaxy Holiday Special",
-          "year": 2022,
-          "narrativeOrder": 14,
-          "releaseOrder": 38,
-          "type": "special",
-          "summary": "While the Guardians spend the holidays quietly grieving and reminiscing on Knowhere, Mantis and Drax journey to Earth on an ill-advised mission to get Peter Quill the perfect Christmas gift: Kevin Bacon.",
-          "beforeWatch": {
-            "context": "A forty-minute comedy, set at Christmas, that exists to give the crew a light moment before their final film. It assumes you know where everyone stands after Endgame and Vol. 2 — particularly who is and isn't on the ship any more. There is no threat and no plot to speak of, which is the point.",
-            "watchFirst": ["guardians-2","avengers-4"]
-          },
-          "inUniverseSetting": "Christmas 2022",
-          "timeSkip": "A few months before Guardians of the Galaxy Vol. 3",
-          "deepDive": {
-            "plot": "While the rest of the Guardians settle into their new home on Knowhere, still grieving a version of Gamora who doesn't remember loving any of them, Mantis and Drax set off on a chaotic mission to Earth to find Peter Quill the perfect Christmas gift after learning how much he misses the holiday traditions of his childhood. Their well-meaning but destructive attempt to 'borrow' actor Kevin Bacon as a present goes about as well as expected, but it gives the grieving team a much-needed dose of levity and connection before their final adventure together.",
-            "significance": "A small-scale, character-focused breather between Vol. 2 and Vol. 3 that quietly confirms Mantis is Star-Lord's half-sister and shows the team's fractured state heading into the final Guardians film.",
-            "orderNote": "Placed at the very end of Phase Four, set just months before Vol. 3's story begins."
-          },
-          "watchFor": [
-            { "name": "Mantis is Peter Quill's half-sister", "characterId": "mantis", "thisFilm": "Confirms outright that Mantis is secretly Ego's daughter, making her Star-Lord's half-sister — a detail not clearly spelled out anywhere else.", "future": "Recontextualizes Mantis and Peter's relationship heading into Vol. 3.", "spoils": "Guardians of the Galaxy Vol. 3" },
-            { "name": "The team without Gamora", "thisFilm": "Shows the Guardians still adjusting to life on Knowhere, grieving a Gamora who doesn't remember any of them.", "future": "Sets up the team's fractured dynamic at the start of Vol. 3.", "spoils": "Guardians of the Galaxy Vol. 3" }
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "moon-knight-e1", "episodeNumber": 1, "title": "The Goldfish Problem", "summary": "Steven Grant starts blacking out and waking up in strange places, unaware that another personality is sharing his body." },
+                { "id": "moon-knight-e2", "episodeNumber": 2, "title": "Summon the Suit", "summary": "Steven learns the truth about Marc Spector and Khonshu, the Egyptian moon god they both serve as an avatar." },
+                { "id": "moon-knight-e3", "episodeNumber": 3, "title": "The Friendly Type", "summary": "Marc and Steven are forced to work together to stop a cult leader from unleashing a vengeful goddess." },
+                { "id": "moon-knight-e4", "episodeNumber": 4, "title": "The Tomb", "summary": "A tomb-raiding expedition goes sideways as ancient traps and old betrayals catch up with the pair." },
+                { "id": "moon-knight-e5", "episodeNumber": 5, "title": "Asylum", "summary": "A trip through a mental institution blurs the line between what's real and what's in Marc and Steven's shared mind." },
+                { "id": "moon-knight-e6", "episodeNumber": 6, "title": "Gods and Monsters", "summary": "A third personality is revealed, and the fate of Egypt's afterlife hangs in the balance." }
+              ]
+            }
           ]
         }
       ]
@@ -1164,178 +1070,36 @@
       "label": "The Multiverse Saga Continues",
       "movies": [
         {
-          "id": "ant-man-3",
-          "title": "Ant-Man and the Wasp: Quantumania",
-          "year": 2023,
+          "id": "doctor-strange-2",
+          "title": "Doctor Strange in the Multiverse of Madness",
+          "year": 2022,
           "narrativeOrder": 1,
-          "releaseOrder": 39,
+          "releaseOrder": 33,
           "type": "movie",
-          "summary": "Scott Lang and his family are pulled into the Quantum Realm, where they run headfirst into a powerful being who has been waiting there for a very long time.",
+          "summary": "Doctor Strange journeys into the dangerous and mind-bending multiverse with the help of a young woman who can travel between realities, while a powerful force hunts her for her abilities.",
           "beforeWatch": {
-            "context": "Scott has been enjoying the fame he earned in Endgame, and the film opens on him coasting. It then goes somewhere completely different — most of it takes place in a setting the earlier Ant-Man films only glimpsed. Loki is worth having behind you: the antagonist here is introduced by that series first.",
-            "watchFirst": ["ant-man-2","avengers-4","loki"]
+            "context": "Follows directly from the end of No Way Home, and takes the door that film opened as its starting premise. It also assumes you've finished WandaVision — that series does far more setup for this film than the first Doctor Strange does. A noticeably darker, more horror-inflected film than anything before it.",
+            "watchFirst": ["doctor-strange-1","spiderman-3","wandavision"]
           },
-          "inUniverseSetting": "2025",
+          "inUniverseSetting": "2024",
+          "timeSkip": "Directly follows No Way Home",
           "deepDive": {
-            "plot": "Scott Lang, enjoying newfound fame as an Avenger and author, is accidentally pulled into the Quantum Realm along with his daughter Cassie, Hope, Hank, and Janet, after Cassie's own device to map the realm goes wrong. There, they discover Janet has been hiding a dark secret: decades earlier she encountered Kang the Conqueror, a being exiled to the Quantum Realm after being stripped of his empire by his own alternate selves. Kang manipulates the group into repairing his ship so he can escape and resume his conquest of the multiverse, but the family unites the Realm's oppressed population to defeat him instead — though a much larger council of Kang variants is revealed watching from beyond.",
-            "significance": "Formally introduces Kang the Conqueror as the driving villain of the Multiverse Saga, expands the Quantum Realm into a fully realized world of its own, and gives Cassie Lang a much larger heroic role.",
-            "orderNote": "Opens Phase Five as the first story to introduce the saga's next big-picture threat."
+            "plot": "Hunted by a mysterious force after a wedding goes wrong, America Chavez — a young woman who can punch holes between universes — draws Doctor Strange into the multiverse for the first time. They discover the hunter is actually Wanda Maximoff, consumed by the Darkhold and trying to steal America's powers to travel to a universe where she can be reunited with her children. Strange, forced to use dangerously corrupting magic himself to stop her, ultimately convinces Wanda to see what she's become, and she destroys the Darkhold and herself along with it, seemingly ending the Scarlet Witch's story — for now.",
+            "significance": "Pays off Wanda's entire arc from WandaVision in tragic fashion, and formally confirms the multiverse as a huge, story-spanning concept full of alternate versions of familiar heroes.",
+            "orderNote": "Directly follows No Way Home's confirmation of the multiverse, placed right after it."
           },
           "watchFor": [
-            { "name": "Kang the Conqueror", "characterId": "kang", "thisFilm": "Introduced as a powerful exile trapped in the Quantum Realm, revealed to be a conqueror of countless timelines.", "future": "A variant of him becomes the central threat of the Multiverse Saga going forward.", "spoils": "Loki (Season 2) / Avengers: Doomsday" },
-            { "name": "Cassie Lang", "thisFilm": "Takes a more active superhero role alongside her father for the first time.", "future": "Positioned as a potential future Young Avenger." }
+            { "name": "Incursions", "thisFilm": "Strange witnesses a universe-ending 'incursion' while multiverse-traveling.", "future": "Sets the stakes for future multiversal threats." },
+            { "name": "America Chavez", "thisFilm": "Escapes with Strange after her powers are hunted by Wanda.", "future": "Her ability to travel the multiverse makes her a target again in future stories." },
+            { "name": "Clea (mid-credit)", "thisFilm": "Approaches Strange after the darkness he dabbled in catches up to him.", "future": "Recruits him to fix the incursion he caused, teasing his next adventure." }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
-        },
-        {
-          "id": "guardians-3",
-          "title": "Guardians of the Galaxy Vol. 3",
-          "year": 2023,
-          "narrativeOrder": 2,
-          "releaseOrder": 40,
-          "type": "movie",
-          "summary": "The Guardians must go on one final mission to save Rocket's life, uncovering the traumatic origin of his creation at the hands of a twisted geneticist.",
-          "beforeWatch": {
-            "context": "The crew's last film together, set a few months after the Holiday Special, with everyone living on the base they bought and Quill in a bad way about it. It pays off threads running all the way back to the first film — especially Rocket's, which has been deliberately left vague until now.",
-            "watchFirst": ["guardians-1","guardians-2","guardians-holiday-special"]
-          },
-          "inUniverseSetting": "2025",
-          "timeSkip": "A few months after the Holiday Special",
-          "deepDive": {
-            "plot": "When a golden being named Adam Warlock attacks the team on Ayesha's orders, Rocket is critically injured, forcing the Guardians on a desperate mission into his past to find a kill switch buried inside him by his creator, the High Evolutionary — a scientist obsessed with engineering a 'perfect' species and willing to destroy entire worlds of failed experiments to do it. The team frees Rocket and thousands of the High Evolutionary's other test subjects, defeats him, and afterward several members of the team — including Quill, who returns to Earth to reconnect with his grandfather — go their separate ways, closing this chapter of the Guardians.",
-            "significance": "Gives Rocket a long-overdue origin story and a proper emotional resolution, and marks the definitive end of this particular Guardians lineup, making way for a new team under Rocket's leadership.",
-            "orderNote": "Placed after Quantumania as the next confirmed 2025-set story, following directly from the Holiday Special's setup."
-          },
-          "watchFor": [
-            { "name": "Rocket's origin", "characterId": "rocket", "thisFilm": "Reveals the High Evolutionary's cruel experiments that created Rocket.", "future": "Closes out Rocket's backstory for good." },
-            { "name": "The team's farewell", "thisFilm": "Several Guardians go their separate ways by the film's end.", "future": "Sets up a new, smaller lineup of Guardians for any future adventures." }
-          ],
-          "postCredit": { "count": 1, "type": "post" }
-        },
-        {
-          "id": "secret-invasion",
-          "title": "Secret Invasion",
-          "year": 2023,
-          "narrativeOrder": 3,
-          "releaseOrder": 41,
-          "type": "series",
-          "summary": "Nick Fury returns to Earth to stop a faction of Skrulls, led by a former ally, from launching a hostile takeover of human society.",
-          "beforeWatch": {
-            "context": "A slower, colder spy thriller with almost no costumes in it. It's built entirely on the shape-shifting aliens introduced in Captain Marvel and on the promise Fury made them there, so that film is genuinely required rather than merely helpful. Fury has been off-world since Endgame, which the series treats as a character flaw.",
-            "watchFirst": ["captain-marvel","avengers-4"]
-          },
-          "inUniverseSetting": "2025",
-          "deepDive": {
-            "plot": "Nick Fury, semi-retired and living off-world, returns to Earth after a bombing reveals that a faction of Skrulls — led by his former ally Gravik, who's lost patience waiting for humanity to give the Skrulls a new home as promised decades ago — has been infiltrating human institutions at the highest levels, planning a full takeover. Fury and a loyal Talos investigate a conspiracy that reaches into the White House itself, and though they narrowly stop Gravik's coup, the show ends with humanity's trust in its own leadership — and in Fury himself — badly shaken.",
-            "significance": "Recontextualizes decades of MCU history by revealing just how deep Skrull infiltration has run, and leaves lingering paranoia and distrust that colors Nick Fury's role in future stories.",
-            "orderNote": "Placed here in the same broad 2025 'present day' period as Quantumania and Vol. 3."
-          },
-          "watchFor": [
-            { "name": "Skrull infiltration", "thisFilm": "Reveals just how deeply Skrulls have infiltrated human institutions over the years.", "future": "Leaves lingering distrust of Nick Fury and S.H.I.E.L.D. across future stories." }
-          ],
-          "seasons": [
-            {
-              "seasonNumber": 1,
-              "episodes": [
-                { "id": "secret-invasion-e1", "episodeNumber": 1, "title": "Resurrection", "summary": "Nick Fury is pulled back to Earth after a bombing reveals a Skrull faction has turned against humanity." },
-                { "id": "secret-invasion-e2", "episodeNumber": 2, "title": "Promises", "summary": "Fury and Talos dig into who's leading the rogue Skrulls, and how far the conspiracy really goes." },
-                { "id": "secret-invasion-e3", "episodeNumber": 3, "title": "Betrayed", "summary": "A mole within Fury's own inner circle is exposed, upending his plan to stop the invasion quietly." },
-                { "id": "secret-invasion-e4", "episodeNumber": 4, "title": "Beloved", "summary": "The Skrulls' endgame comes into focus as they move against world leaders directly." },
-                { "id": "secret-invasion-e5", "episodeNumber": 5, "title": "Harvest", "summary": "Fury is forced to make an impossible sacrifice to keep the invasion from spiraling into war." },
-                { "id": "secret-invasion-e6", "episodeNumber": 6, "title": "Home", "summary": "The invasion reaches its climax, leaving Fury's relationship with Earth's protectors changed for good." }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "the-marvels",
-          "title": "The Marvels",
-          "year": 2023,
-          "narrativeOrder": 4,
-          "releaseOrder": 42,
-          "type": "movie",
-          "summary": "Carol Danvers, Kamala Khan, and Monica Rambeau find their powers mysteriously entangled, forcing them to swap places with each other and team up against a vengeful Kree revolutionary.",
-          "beforeWatch": {
-            "context": "A short, light team-up that assumes three separate stories are already in your head: Carol's from Captain Marvel, Monica's from WandaVision, and Kamala's from Ms. Marvel. It does very little to re-introduce any of them. Of the three, Ms. Marvel is the one most worth having fresh.",
-            "watchFirst": ["captain-marvel","wandavision","ms-marvel"]
-          },
-          "inUniverseSetting": "2025",
-          "deepDive": {
-            "plot": "Carol Danvers, Kamala Khan, and Monica Rambeau find their powers mysteriously entangled after a rip in space-time, causing them to swap places every time any of them uses their abilities at once. Forced to team up, they trace the anomaly to Dar-Benn, a Kree revolutionary trying to restore her dying homeworld by stealing resources — including Earth's atmosphere and an entire ocean — using a pair of powerful bracelets connected to Carol's own past. The trio defeats Dar-Benn and repairs the damage, formally becoming an ongoing team by the film's end.",
-            "significance": "Officially unites three of the MCU's most powerful heroes as a working team, and its mid-credit scene teases a Young Avengers-style team assembling from the franchise's younger heroes.",
-            "orderNote": "Placed after Secret Invasion in the same 2025 stretch, following Ms. Marvel's own ending directly."
-          },
-          "watchFor": [
-            { "name": "The powers-swapping trio", "thisFilm": "Carol, Kamala, and Monica are forced to literally switch places whenever they use their powers simultaneously.", "future": "Cements the three as an ongoing team." },
-            { "name": "Kate Bishop cameo (mid-credit)", "characterId": "kate-bishop", "thisFilm": "Not present in the main story.", "future": "Teases a Young Avengers team assembling from across the franchise's younger heroes." }
-          ],
-          "postCredit": { "count": 2, "type": "mid+post" }
-        },
-        {
-          "id": "echo",
-          "title": "Echo",
-          "year": 2024,
-          "narrativeOrder": 5,
-          "releaseOrder": 43,
-          "type": "series",
-          "summary": "After a violent falling-out with Kingpin's crime empire, Maya Lopez returns to her Choctaw hometown to reconnect with her roots and confront the family and community she left behind.",
-          "beforeWatch": {
-            "context": "A direct continuation of Maya Lopez's story from Hawkeye, and a much smaller, more grounded piece of work than anything around it — most of it takes place in a small Oklahoma town. It's five episodes and was designed to be watched in one go. Hawkeye is the only real prerequisite.",
-            "watchFirst": ["hawkeye"]
-          },
-          "optionalViewing": ["Daredevil (2015 series)"],
-          "inUniverseSetting": "2025",
-          "deepDive": {
-            "plot": "After shooting her crime-boss mentor Wilson Fisk (Kingpin) during a violent falling-out, Maya Lopez flees New York and returns to her Choctaw hometown in Oklahoma for the first time in years. Reconnecting with the family and community she abandoned, Maya uncovers a mysterious power passed down through generations of women in her family, and ultimately confronts both her own painful history and Kingpin's lingering reach, choosing which legacy — her birth family's or her adoptive crime family's — she wants to carry forward.",
-            "significance": "The first MCU show to center a deaf, Indigenous American superhero, and deepens the Kingpin/Daredevil corner of the MCU introduced in She-Hulk.",
-            "orderNote": "Placed here following Maya's introduction in Hawkeye, unfolding in the same broad 2025 period."
-          },
-          "watchFor": [
-            { "name": "Kingpin / Wilson Fisk", "thisFilm": "Survives being shot by Maya at the start of the series.", "future": "Continues his rivalry with Maya and remains a recurring MCU crime-boss threat." }
-          ],
-          "seasons": [
-            {
-              "seasonNumber": 1,
-              "episodes": [
-                { "id": "echo-e1", "episodeNumber": 1, "title": "Home", "summary": "After shooting Kingpin, Maya Lopez flees New York and returns to her hometown for the first time in years." },
-                { "id": "echo-e2", "episodeNumber": 2, "title": "Casino", "summary": "Maya reconnects with her estranged family while trying to stay one step ahead of Kingpin's people." },
-                { "id": "echo-e3", "episodeNumber": 3, "title": "Tuklo", "summary": "Flashbacks reveal the tragic history that first drove a wedge between Maya and her family." },
-                { "id": "echo-e4", "episodeNumber": 4, "title": "Origins", "summary": "Maya taps into her Choctaw ancestry and a mysterious inherited power passed down through generations of women in her family." },
-                { "id": "echo-e5", "episodeNumber": 5, "title": "Storyteller", "summary": "Maya confronts her past and Kingpin's reach once and for all, choosing which legacy she wants to carry forward." }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "deadpool-wolverine",
-          "title": "Deadpool & Wolverine",
-          "year": 2024,
-          "narrativeOrder": 6,
-          "releaseOrder": 44,
-          "type": "movie",
-          "summary": "Recruited by the TVA to help save his own universe from being erased, a reluctant Deadpool drags a jaded variant of Wolverine along on a chaotic, foul-mouthed multiversal detour.",
-          "beforeWatch": {
-            "context": "Tonally unlike everything else here: it is loud, aggressively crude, and spends much of its runtime making fun of the films you've just watched. What it needs from you is the Loki series, since the organisation that kicks off the plot is introduced there. It also leans hard on two decades of non-MCU X-Men films — none required, all rewarded.",
-            "watchFirst": ["loki"]
-          },
-          "optionalViewing": ["Deadpool (2016)","Deadpool 2 (2018)","Logan (2017)","The wider Fox X-Men films"],
-          "inUniverseSetting": "2024 (Deadpool's home universe), mostly set in the Void — a place outside time and space",
-          "deepDive": {
-            "plot": "Failed Avengers try-out Wade Wilson is recruited by the TVA to help save his own universe from being erased following the death of its 'anchor being' — Wolverine, in his universe. Wade drags an alternate, jaded, and initially reluctant Wolverine variant along on a mission through the Void, the graveyard of pruned timelines, where they encounter a host of characters and actors from the 20th Century Fox X-Men films, and team up to stop a powerful telepath, Cassandra Nova, from taking over the Void and, eventually, the Sacred Timeline itself.",
-            "significance": "Officially folds the entire Fox X-Men film universe's characters and actors into the mainline MCU multiverse, and gives Wolverine a proper, R-rated MCU debut alongside Deadpool.",
-            "orderNote": "Placed here as the direct continuation of the TVA and multiverse concepts introduced in Loki, unfolding after that show's two seasons."
-          },
-          "watchFor": [
-            { "name": "The TVA & universe pruning", "thisFilm": "Deadpool learns his home universe is scheduled to be erased following the death of its 'anchor being.'", "future": "Directly follows up on the TVA and multiverse concepts introduced in Loki.", "spoils": "Loki" },
-            { "name": "Multiversal cameos", "thisFilm": "A host of alternate-universe heroes and villains from the 20th Century Fox X-Men films appear throughout the Void.", "future": "Formally folds the Fox X-Men universe's characters and actors into the mainline MCU multiverse." }
-          ],
-          "postCredit": { "count": 1, "type": "mid" }
         },
         {
           "id": "agatha-all-along",
           "title": "Agatha All Along",
           "year": 2024,
-          "narrativeOrder": 7,
+          "narrativeOrder": 2,
           "releaseOrder": 45,
           "type": "series",
           "summary": "Trapped and powerless since the end of WandaVision, Agatha Harkness assembles a coven of misfit witches to help her survive the deadly Witches' Road and reclaim her magic.",
@@ -1367,6 +1131,241 @@
                 { "id": "agatha-e7", "episodeNumber": 7, "title": "Follow Me Follow Me", "summary": "The true identity of the mysterious teen following Agatha is revealed." },
                 { "id": "agatha-e8", "episodeNumber": 8, "title": "Scary Movie", "summary": "A flashback-heavy episode reveals how Agatha's coven, and her rivalry with the Salem witches, first began centuries ago." },
                 { "id": "agatha-e9", "episodeNumber": 9, "title": "Practical Magic to Conjure a Witch's Coven", "summary": "Agatha reaches the end of the Witches' Road and confronts the true cost of what she's been seeking all along." }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "black-panther-2",
+          "title": "Black Panther: Wakanda Forever",
+          "year": 2022,
+          "narrativeOrder": 3,
+          "releaseOrder": 37,
+          "type": "movie",
+          "summary": "Following the loss of their king, the people of Wakanda must fight to protect their nation from intervening world powers while facing a new threat from a hidden underwater civilization.",
+          "beforeWatch": {
+            "context": "About a year after Endgame, and about a year after the death of T'Challa — which the film treats as real and permanent, and which is also the real-world reason for its shape. It is first and last a film about grief. The first Black Panther is essential; Wakanda's new position in the world follows on directly from it.",
+            "watchFirst": ["black-panther","avengers-4"]
+          },
+          "inUniverseSetting": "2025",
+          "timeSkip": "Roughly a year after T'Challa's death",
+          "deepDive": {
+            "plot": "Following King T'Challa's death from an unspecified illness, Wakanda must defend itself from world powers seeking vibranium, while a hidden underwater civilization called Talokan, led by the mutant king Namor, declares war after Wakanda is blamed for exposing his people's existence. Shuri, consumed by grief and anger, briefly embraces the Black Panther mantle's power for vengeance, but ultimately chooses mercy over Namor's death, forging an uneasy peace between the two nations instead.",
+            "significance": "Passes the Black Panther mantle to Shuri, introduces Namor and Talokan as a major new nation and faction, and reveals T'Challa's secret son Toussaint as a future heir to Wakanda's legacy.",
+            "orderNote": "Placed at the end of Phase Four as the culmination of Wakanda's post-T'Challa arc, roughly a year after his death."
+          },
+          "watchFor": [
+            { "name": "Namor & Talokan", "characterId": "namor", "thisFilm": "Wages war on the surface world before reaching an uneasy truce with Wakanda.", "future": "Leaves room for future conflict or alliance." },
+            { "name": "Shuri as Black Panther", "characterId": "shuri", "thisFilm": "Takes up her brother's mantle to defend Wakanda.", "future": "Shapes Wakanda's future direction." },
+            { "name": "Toussaint / T'Challa's son (post-credit)", "thisFilm": "Not present in the main story — revealed only in the post-credit scene.", "future": "Revealed as T'Challa's secret heir, teasing a future Black Panther legacy story." }
+          ],
+          "postCredit": { "count": 1, "type": "post" }
+        },
+        {
+          "id": "thor-4",
+          "title": "Thor: Love and Thunder",
+          "year": 2022,
+          "narrativeOrder": 4,
+          "releaseOrder": 35,
+          "type": "movie",
+          "summary": "Thor's search for inner peace is interrupted by a galactic killer known as Gorr the God Butcher, who seeks the extinction of the gods, forcing Thor to seek help from an old flame wielding his own hammer.",
+          "beforeWatch": {
+            "context": "Thor has been off with the Guardians since Endgame and is looking for a purpose. Ragnarok's comic register is dialled up further here. The two films that matter going in are Ragnarok, for the tone and the supporting cast, and Endgame, for where he ended up — plus a memory of Jane Foster from the first two Thor films.",
+            "watchFirst": ["thor-3","avengers-4"]
+          },
+          "inUniverseSetting": "2025",
+          "deepDive": {
+            "plot": "Still searching for peace after Endgame, Thor reunites with his ex, astrophysicist Jane Foster, who has used the remains of his old hammer Mjolnir to become the Mighty Thor while secretly battling cancer. Together they must stop Gorr the God Butcher, a grief-stricken former believer slaughtering gods across the universe after his own deity abandoned him, using a weapon capable of killing gods, the Necrosword. Jane sacrifices herself using Mjolnir's power to save the day, and Thor, having lost yet another partner, finds a new sense of purpose raising Gorr's resurrected daughter as his own.",
+            "significance": "Gives Jane Foster a definitive, if bittersweet, send-off as the Mighty Thor, and continues Thor's long arc of loss and reinvention that began all the way back in Phase One.",
+            "orderNote": "Placed here in the same broad post-Blip period as Ms. Marvel and She-Hulk."
+          },
+          "watchFor": [
+            { "name": "Jane Foster / Mighty Thor's fate", "characterId": "jane-foster", "thisFilm": "Sacrifices herself using Mjolnir to save Thor and the children of Asgard.", "future": "Her journey to Valhalla leaves the door open for a possible future return." },
+            { "name": "Hercules (mid-credit)", "thisFilm": "Not present in the main story.", "future": "Zeus sends his son to hunt Thor down, setting up a rivalry for a future Thor story." }
+          ],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },{
+          "id": "guardians-holiday-special",
+          "title": "The Guardians of the Galaxy Holiday Special",
+          "year": 2022,
+          "narrativeOrder": 5,
+          "releaseOrder": 38,
+          "type": "special",
+          "summary": "While the Guardians spend the holidays quietly grieving and reminiscing on Knowhere, Mantis and Drax journey to Earth on an ill-advised mission to get Peter Quill the perfect Christmas gift: Kevin Bacon.",
+          "beforeWatch": {
+            "context": "A forty-minute comedy, set at Christmas, that exists to give the crew a light moment before their final film. It assumes you know where everyone stands after Endgame and Vol. 2 — particularly who is and isn't on the ship any more. There is no threat and no plot to speak of, which is the point.",
+            "watchFirst": ["guardians-2","avengers-4"]
+          },
+          "inUniverseSetting": "Christmas 2022",
+          "timeSkip": "A few months before Guardians of the Galaxy Vol. 3",
+          "deepDive": {
+            "plot": "While the rest of the Guardians settle into their new home on Knowhere, still grieving a version of Gamora who doesn't remember loving any of them, Mantis and Drax set off on a chaotic mission to Earth to find Peter Quill the perfect Christmas gift after learning how much he misses the holiday traditions of his childhood. Their well-meaning but destructive attempt to 'borrow' actor Kevin Bacon as a present goes about as well as expected, but it gives the grieving team a much-needed dose of levity and connection before their final adventure together.",
+            "significance": "A small-scale, character-focused breather between Vol. 2 and Vol. 3 that quietly confirms Mantis is Star-Lord's half-sister and shows the team's fractured state heading into the final Guardians film.",
+            "orderNote": "Placed at the very end of Phase Four, set just months before Vol. 3's story begins."
+          },
+          "watchFor": [
+            { "name": "Mantis is Peter Quill's half-sister", "characterId": "mantis", "thisFilm": "Confirms outright that Mantis is secretly Ego's daughter, making her Star-Lord's half-sister — a detail not clearly spelled out anywhere else.", "future": "Recontextualizes Mantis and Peter's relationship heading into Vol. 3.", "spoils": "Guardians of the Galaxy Vol. 3" },
+            { "name": "The team without Gamora", "thisFilm": "Shows the Guardians still adjusting to life on Knowhere, grieving a Gamora who doesn't remember any of them.", "future": "Sets up the team's fractured dynamic at the start of Vol. 3.", "spoils": "Guardians of the Galaxy Vol. 3" }
+          ]
+        },
+        {
+          "id": "guardians-3",
+          "title": "Guardians of the Galaxy Vol. 3",
+          "year": 2023,
+          "narrativeOrder": 6,
+          "releaseOrder": 40,
+          "type": "movie",
+          "summary": "The Guardians must go on one final mission to save Rocket's life, uncovering the traumatic origin of his creation at the hands of a twisted geneticist.",
+          "beforeWatch": {
+            "context": "The crew's last film together, set a few months after the Holiday Special, with everyone living on the base they bought and Quill in a bad way about it. It pays off threads running all the way back to the first film — especially Rocket's, which has been deliberately left vague until now.",
+            "watchFirst": ["guardians-1","guardians-2","guardians-holiday-special"]
+          },
+          "inUniverseSetting": "2025",
+          "timeSkip": "A few months after the Holiday Special",
+          "deepDive": {
+            "plot": "When a golden being named Adam Warlock attacks the team on Ayesha's orders, Rocket is critically injured, forcing the Guardians on a desperate mission into his past to find a kill switch buried inside him by his creator, the High Evolutionary — a scientist obsessed with engineering a 'perfect' species and willing to destroy entire worlds of failed experiments to do it. The team frees Rocket and thousands of the High Evolutionary's other test subjects, defeats him, and afterward several members of the team — including Quill, who returns to Earth to reconnect with his grandfather — go their separate ways, closing this chapter of the Guardians.",
+            "significance": "Gives Rocket a long-overdue origin story and a proper emotional resolution, and marks the definitive end of this particular Guardians lineup, making way for a new team under Rocket's leadership.",
+            "orderNote": "Placed after Quantumania as the next confirmed 2025-set story, following directly from the Holiday Special's setup."
+          },
+          "watchFor": [
+            { "name": "Rocket's origin", "characterId": "rocket", "thisFilm": "Reveals the High Evolutionary's cruel experiments that created Rocket.", "future": "Closes out Rocket's backstory for good." },
+            { "name": "The team's farewell", "thisFilm": "Several Guardians go their separate ways by the film's end.", "future": "Sets up a new, smaller lineup of Guardians for any future adventures." }
+          ],
+          "postCredit": { "count": 1, "type": "post" }
+        },
+        {
+          "id": "ms-marvel",
+          "title": "Ms. Marvel",
+          "year": 2022,
+          "narrativeOrder": 7,
+          "releaseOrder": 34,
+          "type": "series",
+          "summary": "New Jersey teenager and superhero fangirl Kamala Khan discovers she has real superpowers of her own, tied to a mysterious family heirloom.",
+          "beforeWatch": {
+            "context": "A teenage coming-of-age story in Jersey City, and a very light lift — it needs no homework beyond knowing that the Avengers are famous in-universe, which the show is largely about. Kamala is a fan of theirs, so the more you've seen the more her enthusiasm lands, but nothing is required.",
+            "watchFirst": []
+          },
+          "inUniverseSetting": "2025",
+          "deepDive": {
+            "plot": "New Jersey teenager and Captain Marvel superfan Kamala Khan discovers her grandmother's old bangle grants her real superpowers, tied to an ancient race called the Clandestines who were stranded on Earth generations ago. As Kamala learns to control her powers and juggle her Muslim-American family life, she uncovers her own family's hidden connection to the bangle through her great-grandmother, who fled during the Partition of India. By the end, Kamala's growing powers briefly cause her to swap places with Carol Danvers herself, catching the cosmic hero's attention for the first time.",
+            "significance": "Introduces Kamala Khan, one of the most beloved modern Marvel characters, and directly sets up her recruitment into a bigger team alongside Carol Danvers and Monica Rambeau.",
+            "orderNote": "Placed here in the same broad 'a few years post-Blip' period as the rest of Phase Four's later entries, just before Thor: Love and Thunder and She-Hulk."
+          },
+          "watchFor": [
+            { "name": "Kamala Khan / Ms. Marvel", "thisFilm": "Discovers her powers come from a bangle passed down through her family.", "future": "Becomes a core member of the young hero team assembled in The Marvels.", "spoils": "The Marvels" }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "ms-marvel-e1", "episodeNumber": 1, "title": "Generation Why", "summary": "Kamala Khan dreams of being a superhero, then unexpectedly gains real powers after putting on her grandmother's bangle." },
+                { "id": "ms-marvel-e2", "episodeNumber": 2, "title": "Crushed", "summary": "Kamala tries to balance her new powers with school, family, and her first crush." },
+                { "id": "ms-marvel-e3", "episodeNumber": 3, "title": "Destined", "summary": "A secret society called the Clandestines reveals the true, otherworldly origin of Kamala's powers." },
+                { "id": "ms-marvel-e4", "episodeNumber": 4, "title": "Seeing Red", "summary": "Kamala's family history and the Partition of India collide with her present-day fight against the Clandestines." },
+                { "id": "ms-marvel-e5", "episodeNumber": 5, "title": "Time and Again", "summary": "A trip into the past reveals how Kamala's grandmother first came into possession of the bangle." },
+                {
+                  "id": "ms-marvel-e6",
+                  "episodeNumber": 6,
+                  "title": "No Normal",
+                  "summary": "Kamala embraces her identity as Ms. Marvel just as a stranger from space takes an interest in her powers.",
+                  "watchFor": [
+                    { "name": "Captain Marvel's interest", "characterId": "carol-danvers", "thisFilm": "Kamala and Carol Danvers briefly swap places due to their entangled powers.", "future": "Sets up their team-up in The Marvels.", "spoils": "The Marvels" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "the-marvels",
+          "title": "The Marvels",
+          "year": 2023,
+          "narrativeOrder": 8,
+          "releaseOrder": 42,
+          "type": "movie",
+          "summary": "Carol Danvers, Kamala Khan, and Monica Rambeau find their powers mysteriously entangled, forcing them to swap places with each other and team up against a vengeful Kree revolutionary.",
+          "beforeWatch": {
+            "context": "A short, light team-up that assumes three separate stories are already in your head: Carol's from Captain Marvel, Monica's from WandaVision, and Kamala's from Ms. Marvel. It does very little to re-introduce any of them. Of the three, Ms. Marvel is the one most worth having fresh.",
+            "watchFirst": ["captain-marvel","wandavision","ms-marvel"]
+          },
+          "inUniverseSetting": "2025",
+          "deepDive": {
+            "plot": "Carol Danvers, Kamala Khan, and Monica Rambeau find their powers mysteriously entangled after a rip in space-time, causing them to swap places every time any of them uses their abilities at once. Forced to team up, they trace the anomaly to Dar-Benn, a Kree revolutionary trying to restore her dying homeworld by stealing resources — including Earth's atmosphere and an entire ocean — using a pair of powerful bracelets connected to Carol's own past. The trio defeats Dar-Benn and repairs the damage, formally becoming an ongoing team by the film's end.",
+            "significance": "Officially unites three of the MCU's most powerful heroes as a working team, and its mid-credit scene teases a Young Avengers-style team assembling from the franchise's younger heroes.",
+            "orderNote": "Placed after Secret Invasion in the same 2025 stretch, following Ms. Marvel's own ending directly."
+          },
+          "watchFor": [
+            { "name": "The powers-swapping trio", "thisFilm": "Carol, Kamala, and Monica are forced to literally switch places whenever they use their powers simultaneously.", "future": "Cements the three as an ongoing team." },
+            { "name": "Kate Bishop cameo (mid-credit)", "characterId": "kate-bishop", "thisFilm": "Not present in the main story.", "future": "Teases a Young Avengers team assembling from across the franchise's younger heroes." }
+          ],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "secret-invasion",
+          "title": "Secret Invasion",
+          "year": 2023,
+          "narrativeOrder": 9,
+          "releaseOrder": 41,
+          "type": "series",
+          "summary": "Nick Fury returns to Earth to stop a faction of Skrulls, led by a former ally, from launching a hostile takeover of human society.",
+          "beforeWatch": {
+            "context": "A slower, colder spy thriller with almost no costumes in it. It's built entirely on the shape-shifting aliens introduced in Captain Marvel and on the promise Fury made them there, so that film is genuinely required rather than merely helpful. Fury has been off-world since Endgame, which the series treats as a character flaw.",
+            "watchFirst": ["captain-marvel","avengers-4"]
+          },
+          "inUniverseSetting": "2025",
+          "deepDive": {
+            "plot": "Nick Fury, semi-retired and living off-world, returns to Earth after a bombing reveals that a faction of Skrulls — led by his former ally Gravik, who's lost patience waiting for humanity to give the Skrulls a new home as promised decades ago — has been infiltrating human institutions at the highest levels, planning a full takeover. Fury and a loyal Talos investigate a conspiracy that reaches into the White House itself, and though they narrowly stop Gravik's coup, the show ends with humanity's trust in its own leadership — and in Fury himself — badly shaken.",
+            "significance": "Recontextualizes decades of MCU history by revealing just how deep Skrull infiltration has run, and leaves lingering paranoia and distrust that colors Nick Fury's role in future stories.",
+            "orderNote": "Placed here in the same broad 2025 'present day' period as Quantumania and Vol. 3."
+          },
+          "watchFor": [
+            { "name": "Skrull infiltration", "thisFilm": "Reveals just how deeply Skrulls have infiltrated human institutions over the years.", "future": "Leaves lingering distrust of Nick Fury and S.H.I.E.L.D. across future stories." }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "secret-invasion-e1", "episodeNumber": 1, "title": "Resurrection", "summary": "Nick Fury is pulled back to Earth after a bombing reveals a Skrull faction has turned against humanity." },
+                { "id": "secret-invasion-e2", "episodeNumber": 2, "title": "Promises", "summary": "Fury and Talos dig into who's leading the rogue Skrulls, and how far the conspiracy really goes." },
+                { "id": "secret-invasion-e3", "episodeNumber": 3, "title": "Betrayed", "summary": "A mole within Fury's own inner circle is exposed, upending his plan to stop the invasion quietly." },
+                { "id": "secret-invasion-e4", "episodeNumber": 4, "title": "Beloved", "summary": "The Skrulls' endgame comes into focus as they move against world leaders directly." },
+                { "id": "secret-invasion-e5", "episodeNumber": 5, "title": "Harvest", "summary": "Fury is forced to make an impossible sacrifice to keep the invasion from spiraling into war." },
+                { "id": "secret-invasion-e6", "episodeNumber": 6, "title": "Home", "summary": "The invasion reaches its climax, leaving Fury's relationship with Earth's protectors changed for good." }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "echo",
+          "title": "Echo",
+          "year": 2024,
+          "narrativeOrder": 10,
+          "releaseOrder": 43,
+          "type": "series",
+          "summary": "After a violent falling-out with Kingpin's crime empire, Maya Lopez returns to her Choctaw hometown to reconnect with her roots and confront the family and community she left behind.",
+          "beforeWatch": {
+            "context": "A direct continuation of Maya Lopez's story from Hawkeye, and a much smaller, more grounded piece of work than anything around it — most of it takes place in a small Oklahoma town. It's five episodes and was designed to be watched in one go. Hawkeye is the only real prerequisite.",
+            "watchFirst": ["hawkeye"]
+          },
+          "optionalViewing": ["Daredevil (2015 series)"],
+          "inUniverseSetting": "2025",
+          "deepDive": {
+            "plot": "After shooting her crime-boss mentor Wilson Fisk (Kingpin) during a violent falling-out, Maya Lopez flees New York and returns to her Choctaw hometown in Oklahoma for the first time in years. Reconnecting with the family and community she abandoned, Maya uncovers a mysterious power passed down through generations of women in her family, and ultimately confronts both her own painful history and Kingpin's lingering reach, choosing which legacy — her birth family's or her adoptive crime family's — she wants to carry forward.",
+            "significance": "The first MCU show to center a deaf, Indigenous American superhero, and deepens the Kingpin/Daredevil corner of the MCU introduced in She-Hulk.",
+            "orderNote": "Placed here following Maya's introduction in Hawkeye, unfolding in the same broad 2025 period."
+          },
+          "watchFor": [
+            { "name": "Kingpin / Wilson Fisk", "thisFilm": "Survives being shot by Maya at the start of the series.", "future": "Continues his rivalry with Maya and remains a recurring MCU crime-boss threat." }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "echo-e1", "episodeNumber": 1, "title": "Home", "summary": "After shooting Kingpin, Maya Lopez flees New York and returns to her hometown for the first time in years." },
+                { "id": "echo-e2", "episodeNumber": 2, "title": "Casino", "summary": "Maya reconnects with her estranged family while trying to stay one step ahead of Kingpin's people." },
+                { "id": "echo-e3", "episodeNumber": 3, "title": "Tuklo", "summary": "Flashbacks reveal the tragic history that first drove a wedge between Maya and her family." },
+                { "id": "echo-e4", "episodeNumber": 4, "title": "Origins", "summary": "Maya taps into her Choctaw ancestry and a mysterious inherited power passed down through generations of women in her family." },
+                { "id": "echo-e5", "episodeNumber": 5, "title": "Storyteller", "summary": "Maya confronts her past and Kingpin's reach once and for all, choosing which legacy she wants to carry forward." }
               ]
             }
           ]
