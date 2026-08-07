@@ -90,7 +90,7 @@ img { display: block; max-width: 100%; }
    ------------------------------------------------ */
 h1, h2, h3, h4 { margin: 0; font-weight: 400; font-family: var(--font-type); }
 .page-title   { font-size: clamp(28px, 4.4vw, 40px); line-height: 1.06; letter-spacing: 0.005em; color: var(--fg-strong); }
-.section-head { font-size: 24px; line-height: 1.15; color: var(--fg-strong); }
+.section-head { font-size: 28px; line-height: 1.15; color: var(--fg-strong); }
 .card-title   { font-size: 18px; line-height: 1.25; color: var(--fg-strong); }
 .kicker {
   margin: 0;
@@ -127,9 +127,9 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; font-family: var(--font-type); }
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--fg-faint);
 }
 .screen { padding: var(--s6) var(--s5) 110px; }
-.screen-inner { width: 100%; max-width: 820px; margin: 0 auto; }
+.screen-inner { width: 100%; max-width: 1040px; margin: 0 auto; }
 .screen-inner > * + * { margin-top: var(--s5); }
-#screen-characters .screen-inner { max-width: 1020px; }
+#screen-characters .screen-inner { max-width: 1200px; }
 
 /* back buttons */
 #back-btn, #detail-back-btn, #characters-back-btn, #character-back-btn, .back-btn {
@@ -186,8 +186,8 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; font-family: var(--font-type); }
 /* ---------------- 7. PHASE CARDS (main menu) ---------------- */
 #phase-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
-  gap: var(--s3);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--s4);
 }
 .phase-card {
   position: relative;
@@ -237,8 +237,8 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; font-family: var(--font-type); }
 .case-card {
   display: grid;
   grid-template-columns: 34px 1fr auto 32px;
-  align-items: center; gap: var(--s3);
-  padding: var(--s3) var(--s4);
+  align-items: center; gap: var(--s4);
+  padding: var(--s3) var(--s5);
   background: var(--surface);
   border: 1px solid var(--line);
   border-left: 4px solid var(--line-hi);
@@ -248,18 +248,18 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; font-family: var(--font-type); }
 }
 .case-card:hover { background: var(--surface-hi); transform: translateX(3px); text-decoration: none; }
 .case-num {
-  font-family: var(--font-type); font-size: 19px; line-height: 1;
+  font-family: var(--font-type); font-size: 23px; line-height: 1;
   text-align: center; color: var(--fg-faint);
 }
 .case-main { min-width: 0; }
 .case-titleline { display: flex; align-items: baseline; gap: var(--s2); flex-wrap: wrap; }
 .case-title {
-  font-family: var(--font-body); font-size: 15.5px; font-weight: 650;
+  font-family: var(--font-body); font-size: 16.5px; font-weight: 650;
   letter-spacing: -0.012em; color: var(--fg-strong);
 }
 .case-meta {
   display: block; margin-top: 3px;
-  font-family: var(--font-mono); font-size: 10.5px; font-weight: 500;
+  font-family: var(--font-mono); font-size: 11px; font-weight: 500;
   letter-spacing: 0.11em; text-transform: uppercase; color: var(--fg-faint);
 }
 .case-status { display: flex; align-items: center; gap: var(--s2); justify-self: end; }
@@ -522,16 +522,17 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; font-family: var(--font-type); }
 }
 @keyframes pop { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; } }
 #modal-close {
-  position: absolute; top: var(--s3); right: var(--s3);
+  position: absolute; top: var(--s3); right: var(--s3); z-index: 2;
   width: 34px; height: 34px; display: grid; place-items: center;
+  background: rgba(16, 20, 37, 0.72);
+  backdrop-filter: blur(4px);
   border-radius: var(--r-pill);
-  font-family: var(--font-mono); font-size: 14px; color: var(--fg-faint); cursor: pointer;
+  font-family: var(--font-mono); font-size: 14px; color: var(--fg-dim); cursor: pointer;
 }
-#modal-close:hover { background: var(--surface-hi); color: var(--fg-strong); }
+#modal-close:hover { background: rgba(16, 20, 37, 0.92); color: var(--fg-strong); }
 
 /* series modal: wider, and its sections match the movie detail page */
-#modal-content.modal--series { max-width: 620px; }
-#modal-content .modal-head { padding-right: 40px; }
+#modal-content.modal--series { max-width: 720px; }
 #modal-content > * + * { margin-top: var(--s4); }
 #modal-content .season-block { border-radius: var(--r-row); }
 .rating-row {
@@ -600,7 +601,7 @@ a.chip::after { content: "›"; font-family: var(--font-mono); opacity: 0.75; }
 /* ---------------- 16. CHARACTER DATABASE ---------------- */
 #character-grid, .character-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(152px, 1fr));
   grid-auto-rows: 1fr;
   gap: var(--s3);
 }
@@ -622,12 +623,8 @@ a.chip::after { content: "›"; font-family: var(--font-mono); opacity: 0.75; }
 .character-card img, .character-card .portrait, .character-card .no-photo {
   width: 100%; height: 100%; object-fit: cover;
   transform: scale(1);
-  transition: transform 420ms var(--ease), filter 260ms var(--ease);
+  transition: transform 420ms var(--ease);
 }
-.character-card img, .character-card .portrait {
-  filter: grayscale(1) contrast(1.06) brightness(0.94);
-}
-.character-card:hover img, .character-card:hover .portrait { filter: none; }
 .character-card:hover img,
 .character-card:hover .portrait,
 .character-card:hover .no-photo { transform: scale(1.07); }
@@ -833,7 +830,6 @@ a.chip::after { content: "›"; font-family: var(--font-mono); opacity: 0.75; }
 #character-content .portrait-frame .no-photo {
   width: 100%; aspect-ratio: 3 / 4; object-fit: cover;
   border-radius: var(--r-sm);
-  filter: grayscale(1) contrast(1.05) brightness(0.96);
 }
 #character-content .char-name-lg { font-family: var(--font-type); font-size: 30px; line-height: 1.1; color: var(--fg-strong); }
 .spec-list { display: grid; grid-template-columns: max-content 1fr; gap: 6px var(--s4); margin: 0; }
@@ -1136,6 +1132,8 @@ a.chip::after { content: "›"; font-family: var(--font-mono); opacity: 0.75; }
 /* ---------------- 19. RESPONSIVE (to 375px) ---------------- */
 @media (max-width: 760px) {
   .screen { padding: var(--s5) var(--s4) 118px; }
+  .case-card { padding: var(--s3) var(--s4); column-gap: var(--s3); }
+  .section-head { font-size: 23px; }
   .app-bar { padding: 0 var(--s4); }
   .dossier, .panel, .dossier.wide { padding: var(--s4); }
   #phase-grid { grid-template-columns: 1fr 1fr; }
@@ -1162,7 +1160,9 @@ a.chip::after { content: "›"; font-family: var(--font-mono); opacity: 0.75; }
   .phase-card .phase-sub { min-height: 0; }
   .case-card { grid-template-columns: 28px 1fr 32px; row-gap: var(--s2); padding: var(--s3); }
   .case-status { grid-column: 1 / 4; justify-self: start; }
-  .pin-btn { grid-row: 1; grid-column: 3; }
+  /* last explicit track, whatever the column count — the poster grid has
+     four columns, the compact grid three */
+  .pin-btn { grid-row: 1; grid-column: -2; }
   #character-grid { grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: var(--s2); }
   .controls-row { flex-direction: column; align-items: stretch; }
   .controls-row .btn, .controls-row .rating { width: 100%; }
@@ -1204,4 +1204,423 @@ a.chip::after { content: "›"; font-family: var(--font-mono); opacity: 0.75; }
   .character-card:hover .no-photo {
     transition-duration: 420ms !important;
   }
+}
+
+
+/* ============================================================
+   21. TITLE ARTWORK  (TMDB posters + backdrops)
+
+   RATIO LAW — three ratios, each with one meaning:
+     2 : 3   title artwork (poster)       .art--poster
+     16 : 9  title artwork (backdrop)     .art--backdrop
+     1 : 1   a person, in a grid          .character-card
+     3 : 4   a person, on their own page  .portrait-frame
+
+   The image is NEVER filtered, tinted or overlaid — TMDB artwork must
+   read as the studio's. Status therefore lives OUTSIDE the image: the
+   row keeps its left edge, numeral and pill, and the art box gains a
+   brass (or crimson) ring. Nothing is done to the pixels.
+   ============================================================ */
+.art {
+  position: relative;
+  display: block;
+  flex: none;
+  overflow: hidden;
+  border-radius: var(--r-sm);
+  background-color: var(--mono-bg, var(--surface-lo));
+}
+/* skeleton: visible until the image paints, and permanently behind a
+   fallback tile. Same hatch as the character monograms. */
+.art::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: repeating-linear-gradient(45deg,
+    rgba(255,255,255,0.02) 0 1px, transparent 1px 6px);
+}
+.art img {
+  position: relative;
+  display: block; width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 240ms var(--ease);
+}
+.art img.is-loaded { opacity: 1; }
+.art--poster { aspect-ratio: 2 / 3; }
+
+/* fallback when TMDB has no artwork (unreleased titles, most teasers).
+   Put the title's initials in as text; add .no-photo--t1 … --t6 on .art,
+   hashed from the title, so the fallbacks form a mosaic not a wall. */
+.art-none {
+  position: absolute; inset: 0;
+  display: grid; place-items: center;
+  padding: 6px;
+  font-family: var(--font-type);
+  font-size: 15px; line-height: 1.05; text-align: center;
+  color: var(--mono-fg, var(--fg-faint));
+}
+.art--backdrop .art-none { font-size: 20px; }
+
+/* --- phase-list thumbnail --- */
+.case-card { grid-template-columns: 30px 52px 1fr auto 32px; }
+.case-card .art--poster { width: 52px; }
+.case-card.is-watched  .art { box-shadow: 0 0 0 2px var(--brass); }
+.case-card.is-watching .art { box-shadow: 0 0 0 2px var(--crimson); }
+.case-card.is-unreleased .art { opacity: 0.8; }
+/* density toggle — artwork off restores the original compact row */
+#case-files.is-compact .art { display: none; }
+#case-files.is-compact .case-card { grid-template-columns: 38px 1fr auto 32px; }
+
+/* --- backdrop band: detail page + series modal ---
+   The band lives on .art--backdrop itself; no wrapper element. Negative
+   margins bleed it to the card edges, and it caps its height so the title
+   is never pushed below the fold. --- */
+.art--backdrop {
+  /* width MUST stay auto: a block box with auto width stretch-fits across
+     its negative side margins, so the band reaches both card edges. A
+     percentage width resolves against the containing block instead and
+     only shifts the box left. Height is definite and aspect-ratio is
+     omitted, or the height clamp re-derives the width from the ratio. */
+  width: auto;
+  height: 260px;
+  margin: calc(var(--s5) * -1) calc(var(--s5) * -1) var(--s5);
+  border-radius: var(--r-card) var(--r-card) 0 0;
+  border-bottom: 1px solid var(--line);
+}
+.art--backdrop img { object-fit: cover; object-position: center 40%; }
+/* #modal-close is an absolutely-positioned first child, so the band would
+   otherwise pick up the generic sibling margin and lose its bleed */
+#modal-content > .art--backdrop { margin-top: calc(var(--s5) * -1); }
+.art--backdrop .art-none { font-size: 20px; }
+
+/* --- poster beside the currently-watching card --- */
+.resume-card { grid-template-columns: auto 1fr auto; }
+.resume-card .art--poster { width: 64px; box-shadow: 0 0 0 2px var(--crimson); }
+
+/* --- artwork toggle chip sits in the existing filter strip --- */
+.filter-chip .chip-swatch {
+  width: 9px; height: 9px; border-radius: 2px;
+  background: var(--fg-faint); flex: none;
+}
+.filter-chip.is-active .chip-swatch { background: var(--brass-soft); }
+
+/* ============================================================
+   22. FOOTER  (attribution + fan-project disclaimer)
+   Quiet, in flow at the end of every screen, and kept clear of the
+   fixed dock in the bottom-right corner.
+   ============================================================ */
+.site-footer {
+  margin-top: var(--s7);
+  padding: var(--s4) 200px 0 0;
+  border-top: 1px solid var(--line);
+  display: flex; flex-direction: column; gap: var(--s2);
+  font-family: var(--font-mono);
+  font-size: 10px; font-weight: 500;
+  letter-spacing: 0.07em; line-height: 1.75;
+  color: var(--fg-faint);
+  text-transform: none;
+}
+.site-footer p { margin: 0; max-width: 78ch; }
+.site-footer a { color: var(--fg-dim); }
+.site-footer a:hover { color: var(--brass-soft); }
+.site-footer .tmdb-credit { display: flex; align-items: center; gap: var(--s2); flex-wrap: wrap; }
+/* Drop TMDB's OFFICIAL logo file in here — never redraw or restyle it.
+   <img class="tmdb-logo" src="tmdb.svg" alt="TMDB"> */
+.site-footer .tmdb-logo { height: 13px; width: auto; flex: none; opacity: 0.9; }
+/* preview-only stand-in for the real asset */
+.site-footer .tmdb-logo--slot {
+  display: inline-flex; align-items: center;
+  height: 15px; padding: 0 6px;
+  border: 1px dashed var(--line-hi); border-radius: 3px;
+  font-size: 8.5px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--fg-faint);
+}
+
+@media (max-width: 760px) {
+  .site-footer { padding-right: 0; margin-top: var(--s6); }
+  .art--backdrop {
+    width: auto;
+    height: 180px;
+    margin: calc(var(--s4) * -1) calc(var(--s4) * -1) var(--s4);
+  }
+  #modal-content > .art--backdrop { margin-top: calc(var(--s4) * -1); }
+}
+@media (max-width: 480px) {
+  .case-card {
+    grid-template-columns: 24px 44px 1fr 32px;
+    column-gap: var(--s3); row-gap: 6px;
+    padding: var(--s3);
+  }
+  .case-card .art--poster { width: 44px; }
+  .case-card .case-status { grid-column: 1 / 5; justify-self: start; }
+  .case-title { font-size: 15.5px; }
+  .case-num { font-size: 19px; }
+  #case-files.is-compact .case-card { grid-template-columns: 30px 1fr 32px; }
+  .resume-card { grid-template-columns: auto 1fr; }
+  .resume-card .art--poster { width: 56px; }
+  .resume-card .resume-cta { grid-column: 1 / 3; justify-content: center; }
+  .site-footer { font-size: 9.5px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .art img { transition-duration: 0.01ms !important; }
+}
+
+
+/* ============================================================
+   23. MASTHEAD MARKS  (three options — keep one, delete the rest)
+   Built only from Inter and JetBrains Mono. No emblem, no shield, no
+   block-and-knockout device — the genre feeling comes from scale,
+   stroke and letterspacing, so nothing resembles a studio's real mark.
+   ============================================================ */
+.mark { display: flex; flex-direction: column; align-items: center; gap: var(--s3); }
+.mark-sub {
+  font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+  letter-spacing: 0.28em; text-transform: uppercase; color: var(--fg-faint);
+}
+
+/* --- A. Stencil title card: outlined word over solid word --- */
+.mark--stencil .mark-line {
+  display: block;
+  font-family: var(--font-body); font-weight: 800;
+  font-size: clamp(46px, 8.5vw, 92px); line-height: 0.92;
+  letter-spacing: -0.035em; text-transform: uppercase; text-align: center;
+}
+.mark--stencil .mark-line--out {
+  color: var(--brass);
+  letter-spacing: 0.06em;
+}
+@supports (-webkit-text-stroke: 2px black) {
+  .mark--stencil .mark-line--out {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--brass);
+  }
+}
+.mark--stencil .mark-line--solid { color: var(--fg-strong); }
+
+/* --- B. Credit bar: one line, wide tracking, rules above and below --- */
+.mark--bar { width: 100%; gap: 0; }
+.mark--bar .mark-rule { width: 100%; height: 1px; background: var(--brass); opacity: 0.75; }
+.mark--bar .mark-line {
+  padding: var(--s4) 0;
+  font-family: var(--font-body); font-weight: 700;
+  font-size: clamp(19px, 3.4vw, 38px); line-height: 1.1;
+  letter-spacing: 0.30em; text-transform: uppercase;
+  color: var(--fg-strong); text-align: center;
+  text-indent: 0.30em;            /* balances the trailing letterspace */
+}
+.mark--bar .mark-sub { padding-top: var(--s3); }
+
+/* --- C. Slab + keyline: heavy word, rule, stacked mono --- */
+.mark--slab { flex-direction: row; align-items: stretch; gap: var(--s4); justify-content: center; }
+.mark--slab .mark-big {
+  font-family: var(--font-body); font-weight: 800;
+  font-size: clamp(52px, 9vw, 104px); line-height: 0.86;
+  letter-spacing: -0.05em; color: var(--brass);
+}
+.mark--slab .mark-key { width: 3px; background: var(--crimson); flex: none; }
+.mark--slab .mark-words {
+  display: flex; flex-direction: column; justify-content: center; gap: 2px;
+}
+.mark--slab .mark-word {
+  font-family: var(--font-body); font-weight: 700;
+  font-size: clamp(18px, 3vw, 34px); line-height: 1;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-strong);
+}
+.mark--slab .mark-sub { align-self: flex-start; margin-top: 4px; }
+
+@media (max-width: 480px) {
+  .mark--bar .mark-line { letter-spacing: 0.18em; text-indent: 0.18em; }
+  .mark--slab { gap: var(--s3); }
+}
+
+
+/* --- 9C variants: same lockup, comic-print treatments on the big word.
+   Halftone dots and misregistration are artifacts of four-colour comic
+   printing — a genre convention, owned by nobody. --- */
+.mark--slab.is-heavy .mark-big { font-weight: 900; letter-spacing: -0.06em; }
+
+/* D. Misregistration — the colour plates slightly out of alignment */
+.mark--slab.is-offset .mark-big {
+  color: var(--fg-strong);
+  text-shadow: 3px 0 0 var(--crimson), -3px 0 0 var(--brass);
+}
+
+/* E. Halftone fill — brass letters screened with dark dots */
+.mark--slab.is-halftone .mark-big {
+  color: var(--brass);
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .mark--slab.is-halftone .mark-big {
+    color: transparent;
+    background-color: var(--brass);
+    background-image: radial-gradient(rgba(16, 20, 37, 0.55) 1.1px, transparent 1.2px);
+    background-size: 5px 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+
+/* ============================================================
+   24. TITLE HERO  (backdrop behind the type, poster on top)
+   The backdrop is a background layer, the poster sits over it, and a
+   two-axis scrim carries the type. The scrim is an overlay in the page,
+   not an edit to the file — TMDB still serves the artwork intact.
+   Replaces the plain .art--backdrop band on the detail page and the
+   series pop-up.
+   ============================================================ */
+.title-hero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 340px;
+  margin: calc(var(--s5) * -1) calc(var(--s5) * -1) var(--s5);
+  border-radius: var(--r-card) var(--r-card) 0 0;
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+  isolation: isolate;
+}
+.title-hero__bg {
+  position: absolute; inset: 0; z-index: 0;
+  /* background-color, never the shorthand — the ::after scrim and the hatch
+     below are background layers the shorthand would wipe */
+  background-color: var(--mono-bg, var(--surface-lo));
+}
+/* artwork-less hero: same hatch as the poster and character-tile fallbacks */
+.title-hero__bg::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: repeating-linear-gradient(45deg,
+    rgba(255,255,255,0.02) 0 1px, transparent 1px 6px);
+}
+.title-hero__bg img {
+  /* relative so the loaded backdrop paints ABOVE the ::before placeholder
+     hatch — an absolutely-positioned pseudo would otherwise sit on top of
+     the artwork. Same reason .art img carries it. */
+  position: relative;
+  width: 100%; height: 100%; object-fit: cover; object-position: center 35%;
+  opacity: 0;
+  transition: opacity 320ms var(--ease);
+}
+.title-hero__bg img.is-loaded { opacity: 1; }
+/* vertical melt into the card + horizontal wash under the type */
+.title-hero__bg::after {
+  content: "";
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(to right,  var(--surface) 0%, rgba(25, 32, 58, 0.72) 46%, rgba(25, 32, 58, 0.18) 100%),
+    linear-gradient(to bottom, rgba(16, 20, 37, 0.30) 0%, rgba(16, 20, 37, 0.55) 55%, var(--surface) 100%);
+}
+.title-hero__body {
+  position: relative; z-index: 1;
+  display: flex; align-items: flex-end; gap: var(--s5);
+  width: 100%; padding: var(--s5);
+}
+.title-hero__poster {
+  width: 150px; flex: none;
+  border-radius: var(--r-sm);
+  box-shadow: 0 14px 30px -12px rgba(0, 0, 0, 0.85), 0 0 0 1px var(--line-hi);
+}
+.title-hero__text { min-width: 0; }
+.title-hero__text > * + * { margin-top: var(--s3); }
+.title-hero__text .page-title { text-wrap: balance; }
+
+/* series pop-up runs the same hero at a smaller scale */
+#modal-content > .title-hero { margin-top: calc(var(--s5) * -1); }
+#modal-content .title-hero { min-height: 260px; }
+/* keep the title clear of the close button when the hero is short */
+#modal-content .title-hero__body { padding-right: var(--s7); }
+#modal-content .title-hero__poster { width: 112px; }
+
+/* --- Hero variant: vignette bleed -------------------------------------
+   The backdrop runs larger than its frame and dissolves at every edge
+   into the card's navy, instead of ending on a scrimmed band. Text sits
+   where the image has already faded out, so it needs almost no scrim. */
+.title-hero--bleed { min-height: 400px; }
+.title-hero--bleed .title-hero__bg {
+  inset: -8%;
+  background-color: transparent;
+  -webkit-mask-image: radial-gradient(ellipse 66% 76% at 60% 44%, #000 26%, rgba(0,0,0,0.6) 58%, transparent 88%);
+          mask-image: radial-gradient(ellipse 66% 76% at 60% 44%, #000 26%, rgba(0,0,0,0.6) 58%, transparent 88%);
+}
+.title-hero--bleed .title-hero__bg::before { display: none; }
+.title-hero--bleed .title-hero__bg::after {
+  background-image:
+    linear-gradient(to right, rgba(16, 20, 37, 0.78) 0%, rgba(16, 20, 37, 0.22) 52%, transparent 100%);
+}
+/* the frame itself keeps the card colour so the dissolve lands on navy */
+.title-hero--bleed { background: var(--surface); }
+
+/* --- Hero variant: card wash ------------------------------------------
+   The backdrop is a card-level layer, not a header band: it starts at the
+   top, runs down behind the summary and panels, and is masked out entirely
+   by about 70% of the way down. Panels stay fully opaque, so the image
+   only ever reads in the header and the space around the content. --- */
+.dossier.has-wash {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+/* the modal must keep its own overflow:auto — it is what makes a long
+   series pop-up scrollable. auto already clips the wash to the padding
+   box and the border radius, so hidden would only break scrolling. */
+#modal-content.has-wash { position: relative; isolation: isolate; }
+.card-wash {
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 760px; z-index: 0;
+  pointer-events: none;
+  background-color: var(--mono-bg, var(--surface-lo));
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 24%, rgba(0,0,0,0.45) 46%, rgba(0,0,0,0.14) 60%, transparent 74%);
+          mask-image: linear-gradient(to bottom, #000 0%, #000 24%, rgba(0,0,0,0.45) 46%, rgba(0,0,0,0.14) 60%, transparent 74%);
+}
+.card-wash img {
+  position: relative;
+  width: 100%; height: 100%; object-fit: cover; object-position: center 22%;
+  opacity: 0;
+  transition: opacity 320ms var(--ease);
+}
+.card-wash img.is-loaded { opacity: 1; }
+.card-wash::after {
+  content: "";
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(to right,  rgba(16, 20, 37, 0.80) 0%, rgba(16, 20, 37, 0.34) 54%, rgba(16, 20, 37, 0.10) 100%),
+    linear-gradient(to bottom, rgba(16, 20, 37, 0.30) 0%, rgba(16, 20, 37, 0.62) 100%);
+}
+/* everything in the card rides above the wash */
+/* lift content above the wash — but never re-position children that are
+   already positioned on purpose (#modal-close is absolute at z-index 2) */
+.dossier.has-wash > *:not(.card-wash),
+#modal-content.has-wash > *:not(.card-wash):not(#modal-close) { position: relative; z-index: 1; }
+/* the header loses its own background — the wash is doing that job */
+.has-wash .title-hero {
+  min-height: 300px;
+  background: transparent;
+  border-bottom: 0;
+}
+.has-wash .title-hero__bg { display: none; }
+/* panels must stay opaque or the artwork muddies the type */
+.has-wash .before-watch,
+.has-wash .deep-panel,
+.has-wash .note,
+.has-wash .reveal-panel { background-color: var(--surface-lo); }
+
+@media (max-width: 760px) {
+  .title-hero {
+    min-height: 0;
+    margin: calc(var(--s4) * -1) calc(var(--s4) * -1) var(--s4);
+  }
+  .title-hero__body { flex-direction: column; align-items: flex-start; gap: var(--s4); padding: var(--s6) var(--s4) var(--s4); }
+  .title-hero__poster, #modal-content .title-hero__poster { width: 108px; }
+  .title-hero--bleed { min-height: 0; }
+  .has-wash .title-hero { min-height: 0; }
+  .card-wash { height: 520px; }
+  #modal-content > .title-hero { margin-top: calc(var(--s4) * -1); }
+  #modal-content .title-hero__body { padding-right: var(--s6); }
+  .title-hero__bg::after {
+    background-image:
+      linear-gradient(to bottom, rgba(16, 20, 37, 0.45) 0%, rgba(16, 20, 37, 0.78) 50%, var(--surface) 100%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .title-hero__bg img { transition-duration: 0.01ms !important; }
 }

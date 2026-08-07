@@ -39,6 +39,7 @@ async function init() {
 
   watching = (progress._watching || []).filter(id => findItem(id));
   renderNowWatching();
+  mountFooters();
 
   window.addEventListener('hashchange', route);
   route();
@@ -283,6 +284,104 @@ function phaseCounts(phase) {
 
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
 
+// --- Title artwork (TMDB) ---
+// An entry can carry `art: { poster, backdrop }` holding TMDB path fragments
+// (e.g. "/abc123.jpg"). Until those are filled in, every art box falls back to
+// a tinted monogram tile, so the layout is identical either way and nothing
+// looks broken. The image itself is never filtered or overlaid — status is
+// signalled by the ring on the box, which the stylesheet handles.
+const TMDB_IMG = 'https://image.tmdb.org/t/p/';
+
+const SMALL_WORDS = new Set(['a', 'an', 'the', 'of', 'and', 'in', 'to', 'is']);
+
+function titleInitials(title) {
+  const words = title.replace(/[:&—-]/g, ' ').split(/\s+/)
+    .filter(w => w && !SMALL_WORDS.has(w.toLowerCase()));
+  if (!words.length) return title.slice(0, 2).toUpperCase();
+  // one-word titles read better as two letters than a lone initial
+  if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
+  return words.slice(0, 3).map(w => w[0]).join('').toUpperCase();
+}
+
+// posterHtml(entry, tmdbSize, cssWidth, cssHeight, extraClass)
+function posterHtml(entry, size, w, h, extraClass) {
+  const cls = ['art', 'art--poster', extraClass].filter(Boolean).join(' ');
+  const path = entry.art && entry.art.poster;
+  if (!path) {
+    return `<span class="${cls} no-photo--t${tintFor(entry.title)}"><span class="art-none">${titleInitials(entry.title)}</span></span>`;
+  }
+  return `<span class="${cls}"><img src="${TMDB_IMG}${size}${path}" alt="" width="${w}" height="${h}"`
+    + ` loading="lazy" decoding="async" onload="this.classList.add('is-loaded')"></span>`;
+}
+
+function backdropSize() {
+  return window.innerWidth > 1024 ? 'w1280' : 'w780';
+}
+
+// 10c "card wash": the backdrop becomes a card-level layer that fades out
+// behind the content. Must be the FIRST child of the .dossier / #modal-content,
+// which must in turn carry `has-wash`.
+function cardWashHtml(entry) {
+  const path = entry.art && entry.art.backdrop;
+  if (!path) return `<span class="card-wash no-photo--t${tintFor(entry.title)}"></span>`;
+  return `<span class="card-wash"><img src="${TMDB_IMG}${backdropSize()}${path}" alt=""`
+    + ` loading="lazy" decoding="async" onload="this.classList.add('is-loaded')"></span>`;
+}
+
+// The hero carries the poster and the title. Inside a washed card the hero
+// drops its own background, so no .title-hero__bg here — the wash does that job.
+// `artEntry` is the title the artwork belongs to (a series, for an episode).
+function titleHeroHtml(artEntry, titleText, kickerText, titleSize) {
+  const chips = [];
+  if (artEntry.inUniverseSetting) chips.push(`<span class="chip chip--fact">Set: ${artEntry.inUniverseSetting}</span>`);
+  // long time-skip notes read badly as a chip; they're still in "When this happens"
+  if (artEntry.timeSkip && artEntry.timeSkip.length <= 60) {
+    chips.push(`<span class="chip chip--fact">${artEntry.timeSkip}</span>`);
+  }
+  return `
+    <header class="title-hero">
+      <div class="title-hero__body">
+        ${posterHtml(artEntry, 'w342', 150, 225, 'title-hero__poster')}
+        <div class="title-hero__text">
+          <h2 class="page-title" style="font-size:${titleSize}px">${titleText}</h2>
+          <p class="kicker">${kickerText}</p>
+          ${chips.length ? `<div class="chip-row">${chips.join('')}</div>` : ''}
+        </div>
+      </div>
+    </header>
+  `;
+}
+
+// Artwork on/off for the phase list — a local display preference, so it lives
+// in localStorage rather than the save file
+function artEnabled() {
+  return localStorage.getItem('mcu-art') !== 'off';
+}
+
+function setArtEnabled(on) {
+  localStorage.setItem('mcu-art', on ? 'on' : 'off');
+}
+
+// The credit line every screen carries, per the artwork handoff
+function footerHtml() {
+  return `
+    <footer class="site-footer">
+      <p class="tmdb-credit">
+        <span class="tmdb-logo--slot">TMDB</span>
+        This product uses the TMDB API but is not endorsed or certified by TMDB.
+      </p>
+      <p>Unofficial fan project. Not affiliated with, endorsed by or sponsored by Marvel or
+         Disney. All titles, characters and logos are the property of their respective owners.</p>
+    </footer>
+  `;
+}
+
+function mountFooters() {
+  document.querySelectorAll('.screen-inner').forEach(inner => {
+    if (!inner.querySelector('.site-footer')) inner.insertAdjacentHTML('beforeend', footerHtml());
+  });
+}
+
 function overallCounts() {
   return phasesData.reduce((acc, phase) => {
     const { watched, total } = phaseCounts(phase);
@@ -318,6 +417,7 @@ function resumeCardHtml(id) {
 
   return `
     <a class="resume-card" href="#/watch/${id}">
+      ${posterHtml(series || item, 'w154', 64, 96)}
       <span>
         <span class="resume-kicker">Currently watching</span>
         <span class="resume-title">${title}</span>
@@ -640,6 +740,7 @@ function renderFilterStrip(entries) {
     return `<a class="filter-chip${f.id === phaseFilter ? ' is-active' : ''}" href="#" data-filter="${f.id}">${f.label}<span class="filter-count">${n}</span></a>`;
   }).join('')
     + '<span class="filter-spacer"></span>'
+    + `<a class="filter-chip${artEnabled() ? ' is-active' : ''}" href="#" data-density><span class="chip-swatch"></span>Artwork</a>`
     + '<a class="filter-chip" href="#" data-jump="next">Next unwatched &darr;</a>';
 
   el('filter-strip').querySelectorAll('[data-filter]').forEach(chip => {
@@ -648,6 +749,12 @@ function renderFilterStrip(entries) {
       phaseFilter = chip.dataset.filter;
       renderPhase();
     });
+  });
+
+  el('filter-strip').querySelector('[data-density]').addEventListener('click', e => {
+    e.preventDefault();
+    setArtEnabled(!artEnabled());
+    renderPhase();
   });
 
   el('filter-strip').querySelector('[data-jump]').addEventListener('click', e => {
@@ -687,6 +794,7 @@ function renderPhase() {
 
   const container = el('case-files');
   container.innerHTML = '';
+  container.classList.toggle('is-compact', !artEnabled());
 
   const activeFilter = PHASE_FILTERS.find(f => f.id === phaseFilter) || PHASE_FILTERS[0];
   const shown = entries.filter(activeFilter.test);
@@ -730,6 +838,7 @@ function renderPhase() {
 
     card.innerHTML = `
       <span class="case-num">${entry.narrativeOrder}</span>
+      ${posterHtml(entry, 'w92', 52, 78)}
       <span class="case-main">
         <span class="case-titleline"><span class="case-title">${entry.title}</span>${typeBadge}</span>
         <span class="case-meta">${caseMetaText(entry)}</span>
@@ -960,14 +1069,16 @@ function openEpisodeModal(series, openSeasons) {
   // A one-season show doesn't need an accordion — show its episodes directly
   const multiSeason = series.seasons.length > 1;
 
-  content.className = 'modal--series';
+  const seasonLabel = `Series &middot; ${series.seasons.length} season${series.seasons.length > 1 ? 's' : ''} &middot; ${series.year}`;
+
+  // The wash has to be the modal's first child, and the modal keeps its own
+  // overflow:auto — never add overflow:hidden here or long pop-ups stop scrolling
+  content.className = 'modal--series has-wash';
   content.innerHTML = `
+    ${cardWashHtml(series)}
     <button id="modal-close" type="button" aria-label="Close">&#10005;</button>
 
-    <div class="modal-head">
-      <h3 class="card-title" style="font-size:26px">${series.title}</h3>
-      <p class="kicker" style="margin-top:8px">Series &middot; ${series.seasons.length} season${series.seasons.length > 1 ? 's' : ''} &middot; ${series.year}</p>
-    </div>
+    ${titleHeroHtml(series, series.title, seasonLabel, 30)}
 
     <div class="progress progress--sm">
       <span class="progress-track"><span class="progress-fill" style="width:${pct(watchedCount, eps.length)}%"></span></span>
@@ -1159,8 +1270,9 @@ function renderDetail(found) {
     detailNav(`&larr; ${phase.name}`, () => { location.hash = phase.id; }, '');
   }
 
+  // the season now lives in the series title, so don't repeat it here
   const kindLabel = series
-    ? `${series.title} &middot; Season ${season.seasonNumber}, episode ${item.episodeNumber}`
+    ? `${series.title} &middot; Episode ${item.episodeNumber}`
     : `${item.type === 'special' ? 'Special' : 'Movie'} &middot; ${item.year}`;
 
   const controlsHtml = isUnreleased
@@ -1177,11 +1289,16 @@ function renderDetail(found) {
       </div>
     `;
 
+  // An episode borrows its series' artwork — same screen, so a bare episode
+  // page next to a hero'd movie page would look broken
+  const artEntry = series || item;
+  const card = el('detail-card');
+  card.querySelectorAll('.card-wash').forEach(w => w.remove());
+  card.classList.toggle('has-wash', !isUnreleased || !!(artEntry.art && artEntry.art.backdrop));
+  card.insertAdjacentHTML('afterbegin', cardWashHtml(artEntry));
+
   el('detail-content').innerHTML = `
-    <div>
-      <h2 class="page-title" style="font-size:${series ? 30 : 32}px">${item.title}</h2>
-      <p class="kicker" style="margin-top:10px">${kindLabel}</p>
-    </div>
+    ${titleHeroHtml(artEntry, item.title, kindLabel, series ? 30 : 34)}
 
     ${summaryBlockHtml(item)}
     ${beforeWatchHtml(item)}

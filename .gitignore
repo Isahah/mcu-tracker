@@ -1,3 +1,6 @@
 node_modules/
 data/progress.json
 .claude/settings.local.json
+
+# TMDB API key — personal credential, never commit it
+tmdb.key
