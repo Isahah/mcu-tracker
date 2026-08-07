@@ -4,103 +4,139 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A personal, local MCU watch tracker: Express serves a JSON API over two flat files (no database), and a vanilla-JS frontend (no framework, no build step, no bundler) consumes it. Runs entirely on the user's own machine.
+A personal MCU watch tracker: Express serves a JSON API over flat files (no database), and a vanilla-JS frontend (no framework, no build step, no bundler) consumes it. Runs locally; the user eventually wants it public and free (never monetised — see Licensing below).
+
+Its whole point is **narrative order without spoilers**: every title is placed by when the story happens, and anything that could spoil sits behind a toggle the reader opens deliberately.
 
 ## Commands
 
 - `npm install` — one-time dependency install (Express is the only dependency)
-- `npm start` — runs `node server.js`, serves the app at http://localhost:3939
-- There is no test suite, linter, or build step in this project.
+- `npm start` — runs `node server.js`, serves at http://localhost:3939
+- `node scripts/fetch-artwork.js` — pull TMDB poster/backdrop paths (`--refresh` re-fetches everything, `--dry-run` writes nothing)
+- No test suite, linter, or build step.
 
 ## Architecture
 
 ### Server (`server.js`)
 
-A thin Express layer (~80 lines). Three JSON files are read/written directly from disk — no database:
+A thin Express layer (~80 lines). Three JSON files read/written directly from disk:
 - `data/movies.json` — canonical content (phases, movies, series, episodes)
-- `data/characters.json` — the character database (see below)
-- `data/progress.json` — the user's personal save data (watched/rating/timestamps), gitignored, auto-created empty on first run if missing
+- `data/characters.json` — the character database
+- `data/progress.json` — personal save data, gitignored, auto-created empty
 
-Five endpoints: `GET /api/phases` (entire movies.json), `GET /api/characters` (entire characters.json), `GET /api/progress` (entire progress.json), `POST /api/progress/:id` (merges `{watched, rating}` into that id's entry; `watchedAt` is stamped automatically the first time `watched` flips true, cleared when it flips false), `POST /api/now-watching` (replaces the "currently watching" flag list — an array of at most 2 unit ids, stored in progress.json under the reserved `_watching` key).
+Five endpoints: `GET /api/phases`, `GET /api/characters`, `GET /api/progress`, `POST /api/progress/:id` (merges `{watched, rating}`; `watchedAt` stamped on first true, cleared on false), `POST /api/now-watching` (replaces the flag list — up to 2 unit ids under the reserved `_watching` key).
 
 ### Data model (`data/movies.json`)
 
-`{ phases: [ { id, name, label, movies: [...] } ] }`. Despite the array being called `movies`, each phase can contain movies, one-off TV specials, or full TV series — distinguished by `type: "movie" | "series" | "special"`.
+`{ phases: [ { id, name, label, movies: [...] } ] }`. Each phase holds movies, TV specials and full series, distinguished by `type: "movie" | "series" | "special"`.
 
-Common fields on every top-level entry: `id`, `title`, `year`, `narrativeOrder`, `releaseOrder`, `type`, `summary`. Optional fields (all gracefully omitted from the UI when absent — don't add empty/placeholder values just to fill them in):
+Required on every entry: `id`, `title`, `year`, `narrativeOrder`, `releaseOrder`, `type`, `summary`. Optional (all gracefully omitted from the UI when absent — never add empty placeholders):
 
-- `inUniverseSetting` / `timeSkip` — only set when genuinely well-established, never guessed
-- `deepDive: { plot, significance, orderNote }` — a fuller plot rundown, why the title matters to the wider story, and why it's placed at this `narrativeOrder`. Rendered as a collapsed "📖 Show Full Plot & Context" toggle since a full plot is a bigger spoiler than `summary`
-- `watchFor: [{ name, thisFilm, future, spoils? }]` — the two-tier spoiler system (see below)
-- `postCredit: { count, type, timing?, skipNote? }` — `timing` is qualitative guidance on when in the credits a scene lands; `skipNote` is a static warning for the rare title whose credit scene should be skipped and revisited later (added case-by-case, not as a blanket feature — currently only Black Widow and Ant-Man and the Wasp)
-- `optionalViewing` — a plain string listing films *outside* this tracker's order that add context (e.g. No Way Home leaning on the pre-MCU Spider-Man movies). Rendered by `optionalViewingHtml()` directly under the summary, styled like `skipNote` (same red note treatment). Add it to any movie/special/series entry that wants one; phrase it as genuinely optional, never required viewing
-- `released: false` + `expectedRelease` — unreleased/future titles. Excluded from watched-count denominators (`unitCounts()`); don't write `deepDive`/`watchFor` for these since nothing's happened yet, just a summary noting it's unreleased
-- series only: `seasons: [{ seasonNumber, episodes: [{ id, episodeNumber, title, summary, watchFor?, postCredit? }] }]` — always nested under `seasons`, even for a one-season show
+- `art: { tmdbId, poster, backdrop }` — TMDB **path fragments** only, written by `scripts/fetch-artwork.js`. Never hand-edit; re-run the script instead.
+- `beforeWatch: { context, watchFirst }` — `context` is spoiler-free prose ("what you need to know going in"); `watchFirst` is an array of entry ids rendered as linked chips. **Spoiler rule for `context`**: it may reference outcomes of titles *earlier* in narrative order (the viewer has seen them), never this title's own events or anything later.
+- `optionalViewing` — an **array** of strings rendered as chips under "Helps, but optional" (a plain string still renders as prose). An item matching an entry id becomes a link to that title; anything else (films outside the tracker) renders as a plain chip.
+- `inUniverseSetting` / `timeSkip` — only when genuinely established, never guessed. Both render as hero chips; `timeSkip` is skipped as a chip if over 60 chars (still appears in "When this happens").
+- `deepDive: { plot, significance, orderNote }` — full plot, why it matters, why it sits here.
+- `watchFor: [{ name, thisFilm, future, spoils?, characterId? }]` — the two-tier spoiler system.
+- `postCredit: { count, type, timing?, skipNote? }` — **only `skipNote` still renders.** Counts and timing were removed as noise by the design. `skipNote` survives because it's spoiler protection, not trivia (currently Black Widow and Ant-Man and the Wasp only).
+- `released: false` + `expectedRelease` — excluded from watched-count denominators.
+- series only: `seasons: [{ seasonNumber, episodes: [...] }]` — always nested under `seasons`, even for one season.
 
-**narrativeOrder vs. releaseOrder**: `narrativeOrder` is scoped per-phase and drives all sorting/display (there is no release-order sort toggle in the UI — it was built, then removed by request). `releaseOrder` is a single global 1–N sequence across the whole dataset, shown only as trivia inside the Deep Dive section. Phases group entries by narrative/story fit, not by official Marvel Studios release-phase branding — e.g. Captain Marvel (released in Phase Three) lives in Phase One's array because it's set in 1995; Black Widow lives in Phase Three because it's set in 2016. Follow this precedent for new entries: bucket by when the story happens, not when it released.
+**narrativeOrder vs releaseOrder**: `narrativeOrder` is per-phase and drives all display. `releaseOrder` is a global sequence kept as trivia. Phases group by *when the story happens*, not Marvel's release branding — Captain Marvel sits in Phase One (1995), Black Widow in Phase Three (2016). Follow that precedent.
 
-**Series get one Deep Dive, not per-episode**: `deepDive` and `inUniverseSetting` are only written at the series level (shown in the episode-picker modal), never per-episode — writing full deep dives for all ~74 episodes was judged excessive. Only a handful of pivotal episodes carry their own `watchFor`.
+**Multi-season shows split into separate entries** when their seasons belong at different points in the watch order. Loki is the precedent: `loki` ("Loki: Season 1") and `loki-s2` ("Loki: Season 2") with Quantumania between them, because Kang is introduced in that film. Episode ids stay `loki-s1e1` … `loki-s2e6` so watch history survives. Keep the `seasons` wrapper on both.
+
+**Series get one Deep Dive**, at the series level, never per-episode. Only a few pivotal episodes carry their own `watchFor`.
 
 ### Save data (`data/progress.json`)
 
-Flat object keyed by any entry id — a movie id, an episode id, or a series' own id (for a series-level rating, independent of episode-level watched status). Shape per key: `{ watched?, watchedAt?, rating? }`. `rating` is 0–10 in 0.5 steps. This file is gitignored and personal; don't hand-edit it or assume specific contents when reasoning about app behavior.
+Flat object keyed by entry id (movie, episode, or series id for a series-level rating). Shape: `{ watched?, watchedAt?, rating? }`, rating 0–10 in 0.5 steps. Gitignored and personal — **never hand-edit, and back it up before any test that writes progress.** Purely local UI preferences (e.g. the artwork density toggle) go in `localStorage`, not here.
 
 ### Frontend (`public/app.js`, single file, no framework)
 
-Hash-based client-side router (`route()`) toggles four screens via `showScreen()`:
-- `#/` → menu (phase cards + a Character Database entry card below them)
-- `#/<phase-id>` → phase list (case-cards sorted by `narrativeOrder`)
-- `#/watch/<item-id>` → full-page detail view for a movie, special, or single episode
-- `#/characters` → character database (dense grid of photo + name cards, uses the same `.dossier.wide` widening as the detail screen; a search box filters the grid live on character `name`, and the query persists when backing out of a character file but clears when the database is opened fresh)
-- `#/character/<char-id>` → full-page personnel file for one character (portrait + name + overview; deliberately nothing on the grid cards themselves beyond photo/name, so browsing can't spoil)
+Hash router (`route()`) toggles five screens via `showScreen()`:
+- `#/` → menu: masthead, resume card(s) for currently-watching, roman-numeral phase cards, Character Database card
+- `#/<phase-id>` → phase list with phase-to-phase nav, filter strip, poster rows
+- `#/watch/<item-id>` → detail page for a movie, special or episode
+- `#/characters` → character database (search, sort, browse-by-title)
+- `#/character/<char-id>` → personnel file
 
-Series are the one exception to direct navigation: clicking a series card opens a picker modal (`openEpisodeModal`) with seasons as an accordion (first season auto-expanded); only clicking an episode inside it navigates to `#/watch/<episode-id>`. `findItem(id)` resolves any id to `{ item, phase, series, season }` by walking `phasesData` once — `series`/`season` are `null` for a plain movie/special.
+Series have no detail page: `#/watch/<series-id>` redirects to the phase list and opens the episode picker (`openEpisodeModal`). `findItem(id)` resolves any id to `{ item, phase, series, season }`.
 
-The detail screen widens its container (`.dossier.wide`, toggled in `showScreen()`) — this is deliberate, from user feedback that the detail view felt like a cramped "little box." Don't reintroduce a chip row (year/narrative#/release#) at the top of the detail page — that was tried and explicitly removed as clutter; in-universe timeline chips now live inside the Deep Dive section's "Why This Order" subsection instead (`timelineChipsHtml`).
+A **sticky app bar** sits above every screen with the overall watched count; the wordmark links home. A **footer** (`mountFooters()`) is appended to every `.screen-inner` with the TMDB attribution and the not-affiliated-with-Marvel disclaimer.
 
-Two-tier spoiler system (`watchFor` + `bindSpoilerToggles`): each `watchFor` item renders under two independently-toggled buttons — "Show Spoilers (This Movie)" reveals `thisFilm` (safe once you've seen *this* title), "Show Spoilers (Future Movies)" reveals `future` (safe only once you've also seen whatever `spoils` names). Don't collapse these back into one spoiler blob — the point is that finishing one movie shouldn't spoil a different, unwatched one.
+### Design system
 
-## Content conventions when adding new movies/shows
+`public/styles.css` is the **Ink Navy** stylesheet, copied verbatim from `design_handoff_mcu_field_log/mcu-field-log-v4.css`. **Don't edit it** — local changes go in `public/app-tweaks.css`, which loads after, so a newer handoff can be dropped straight in.
 
-- Keep `summary` to one spoiler-light sentence; put anything more revealing in `deepDive.plot`.
-- Only add `inUniverseSetting` month/season precision when it's actually confirmed (e.g. Iron Man 3 and Hawkeye are canonically Christmas-set) — otherwise just the year.
-- `postCredit.skipNote` is rare and deliberate, not something to add to every entry with a credit scene.
+The system rests on a status colour law: **brass = watched, crimson = in progress / spoilers, grey = unwatched**. Every status is signalled three ways at once (left edge, numeral, pill). Don't introduce other colours.
+
+Three image ratios, each with one meaning: **2:3** title poster, **16:9** title backdrop, **1:1** person in a grid, **3:4** person on their own page.
+
+Disclosure panels use `aria-expanded` on the button plus a hidden body (`bindReveals`). A button must never sit at `aria-expanded="true"` with no body.
+
+### Title artwork (TMDB)
+
+`scripts/fetch-artwork.js` looks up every title and writes `art` blocks. The key lives in **`tmdb.key`** (gitignored; `tmdb.key.example` is the committed template).
+
+- Only path fragments are stored; images always load from TMDB's CDN. **TMDB's terms cap caching at six months** — re-run with `--refresh` periodically.
+- Sizes: `w92` phase-list thumb, `w154` resume poster, `w342` hero poster, `w1280`/`w780` backdrop.
+- Images are **never** filtered, tinted or overlaid — status is signalled by a ring on the `.art` box instead.
+- No artwork → a hashed monogram tile (`.art--poster.no-photo--tN` + `.art-none` initials). Everything works without TMDB.
+- Detail pages and the series pop-up use the **10c card wash**: `.card-wash` as first child of `.dossier`/`#modal-content`, which carries `has-wash`. The alternative `.title-hero--bleed` (10b) is a one-class swap if bright backdrops wash out. Never add `overflow: hidden` to the modal.
+- Artwork can be toggled off per-user via the density chip (`is-compact` on `#case-files`, persisted in localStorage).
+
+### Two-tier spoiler system
+
+Each `watchFor` item has two payloads. **Plot & context** (brass panel) holds the deep dive plus each item's `thisFilm`; **Spoilers for future films** (crimson panel) holds each `future` with its `spoils` tag. Don't merge them — finishing one title must not spoil a different one.
 
 ### Character database (`data/characters.json`)
 
-`{ characters: [ { id, name, description, image?, phases? } ] }`, rendered by `renderCharacters()` (grid) and `renderCharacter()` (detail page) in curated display order (data order = display order; roughly heroes → supporting cast → antagonists). Conventions:
+`{ characters: [ { id, name, description, titles, image?, imagePosition?, phases } ] }`, in curated display order (roughly heroes → supporting → antagonists).
 
-- `description` is 1–2 sentences, spoiler-light by feel: describe who the character is at their introduction/premise level, never twists, deaths, or late-story turns (e.g. Mysterio "claims to have come from another Earth"; Taskmaster's identity stays unstated).
-- `titles` is a single-line array of `movies.json` entry ids, in narrative order — every released title the character appears in. It powers the "Browse by film or series" cast filter on the database screen, which is deliberately collapsed behind a spoiler warning (a cast list gives away who turns up). Ids are validated at render; an unknown id just drops out of the filter. Unreleased titles are deliberately excluded.
-- `phases` is a map of phase id → paragraph (`{ "phase-1": "...", ... }`) covering what the character did in that phase and how they affected it. **Spoiler scoping**: full spoilers for that phase are allowed inside its entry (deaths, twists, reveals) — the reader chooses to expand a phase only after finishing it — but never leak a *later* phase's events into an earlier phase's entry. Omit phases the character isn't in (the UI shows a "no significant activity" line) and phases that only contain unreleased titles. Bucket by this tracker's narrative phases, not release phases (e.g. Captain Marvel content goes under phase-1, Black Widow under phase-3).
-- The detail page renders **all six phases** for **every** character as a collapsed accordion, so the phase list itself reveals nothing about where a character appears.
-- Roster threshold: somewhat-important through really-important characters. Recurring side characters (Luis, Darcy, Korg) are in; one-scene cameos are not.
-- `image` is omitted until a real image exists — the UI renders a "NO PHOTO ON FILE" portrait placeholder when absent, and the card layout already reserves the square slot for it. To add a photo: drop the file in `public/img/characters/` (convention: `<character-id>.<ext>`) and set `"image": "/img/characters/<file>"` on the character (an external `https://` URL also works). Images are shown square via `object-fit: cover`, centered by default; optional `imagePosition` (CSS `object-position`, e.g. `"top"` or `"50% 20%"`) shifts which part of the photo the crop keeps — prefer that over re-cropping image files.
+- `description` — 1–2 sentences at introduction/premise level. Never twists, deaths or late turns.
+- `titles` — single-line array of entry ids in narrative order; powers the "Browse by film or series" cast filter, which is collapsed behind a spoiler warning. Unreleased titles excluded.
+- `phases` — map of phase id → paragraph. Full spoilers for *that* phase are fine; never leak a later phase into an earlier entry.
+- The file page shows **all six phases** for every character, so the list itself reveals nothing. Row state is driven by the **user's own progress**: brass `has-record` for a phase they've finished, crimson `is-unseen` with a "NOT SEEN" chip otherwise.
+- Roster threshold: somewhat-important through really-important. Recurring side characters in, one-scene cameos out.
+- `image` → `public/img/characters/<id>.<ext>`. Portraits are full colour (greyscale was removed). `imagePosition` (CSS `object-position`) shifts the square crop — use `"top"` for tall portraits rather than re-cropping files. Most images came from the MCU Fandom wiki; note their served files are often WebP regardless of extension.
 
 ### "Currently watching" flags
 
-Up to 2 units (movie/special/episode) can be flagged as currently watching; ids live in `progress.json` under `_watching` (a reserved key — never treat it as an entry id) via `POST /api/now-watching`. Behaviors, all in `app.js`:
+Up to 2 units flagged; ids in `progress.json` under `_watching`. A fixed corner dock shows a chip per flag on every screen (the label is dropped when two are flagged so both fit). Flagging is a detail-page button plus a pin on each phase-list row. Marking a flagged unit watched **auto-advances** the flag to the next unwatched unit in global narrative order; marking anything watched with no flags bootstraps one. Unwatching never touches flags.
 
-- A fixed corner dock (`#now-watching-dock`, bottom-right, all screens) shows a clickable chip per flag linking to `#/watch/<id>`; hidden when no flags.
-- Flagging is a toggle button on the detail page, plus a pin icon on each phase-list card (click doesn't navigate; on a series card it flags the series' first unwatched episode, and unpinning clears any flagged episode it contains). Flagging a third unit silently drops the oldest (`toggleFlag`).
-- Marking a **flagged** unit watched auto-advances its flag to the next unwatched unit in global narrative order (`flatUnitIds`/`nextUnwatchedAfter` — phases in data order, entries by `narrativeOrder`, episodes in season order, skipping unreleased/watched/already-flagged). Marking anything watched when **no** flags exist bootstraps a flag on the next unit. Unwatching never touches flags.
-- Phase-list cards (including a series containing a flagged episode) and episode rows get a brass `▶ CURRENTLY WATCHING` badge; flagged case-cards also get a brass left border (`.watching-now`).
+### Series pop-up
+
+Episodes have checkboxes (`.ep-check`) so you can tick them without leaving; `.season-mark` bulk-toggles a season and **needs `stopPropagation`** since it sits inside the header button. Ticking anything redraws the phase list behind the modal. **Single-season shows render their episodes directly with no accordion** — the bulk toggle moves to the `.episodes-head` heading.
 
 ### watchFor → character linking
 
-`watchFor` name tags on the movie/episode detail page (and series modal) render as links to `#/character/<id>` when they resolve to a character (`watchForTagHtml` / `resolveWatchForCharacter` in `app.js`). Resolution rules, in order:
+Tags render as links to `#/character/<id>` when they resolve. Order: an explicit `characterId` always wins; otherwise any `/`-segment of the name (parentheticals stripped, case-insensitive) matching a character's name. Unmatched names (concepts like "The Tesseract") stay plain chips on purpose.
 
-1. An explicit `"characterId": "<id>"` on the watchFor item in `movies.json` always wins — use this for phrasey names ("Mysterio's frame job", "General Ross"). Invalid ids fail safe to a plain tag.
-2. Otherwise auto-match: any `/`-segment of the watchFor name (parentheticals stripped, case-insensitive, quotes/periods ignored) exactly equals any `/`-segment of a character's `name` in `characters.json` — "Kingpin / Wilson Fisk", "Hawkeye (cameo)", "Peter Parker (Spider-Man)" all link with no extra data.
+## Content conventions
 
-So when adding a new watchFor item: just use the character's name (or `Name / Alias`) and the link happens automatically; only add `characterId` if the wording doesn't contain the exact name. Unmatched names (plot points like "The Tesseract") stay plain tags on purpose — don't force-link concepts/objects, and leave items naming two characters ("Wanda & Pietro Maximoff") unlinked unless one is clearly the subject.
+- `summary` — one spoiler-light sentence; anything more revealing goes in `deepDive.plot`.
+- Only add month/season precision to `inUniverseSetting` when confirmed.
+- `postCredit.skipNote` is rare and deliberate.
+- When editing `movies.json` programmatically: entries are **not** uniformly formatted (hand-edits have left some as `},{` on one line). Find entry bounds by brace-matching from the nearest `{` before `"id"`, never by assuming a newline. Insert new keys **before** the `summary` line — on unreleased entries `summary` is last and has no trailing comma.
+
+## Licensing / legal posture
+
+- TMDB free tier is **non-commercial**. Ads, affiliate links or donations would require a separate commercial agreement with TiVo. The user has decided to keep it free.
+- Attribution is mandatory and lives in the footer. The **official TMDB logo** must be used as a file, never redrawn (currently a dashed stand-in awaits `public/assets/tmdb.svg`).
+- Character portraits are studio stills sourced from fan wikis — the same posture as comparable fan trackers. Fine for a free project; would need revisiting if monetised.
 
 ## Workflow
 
-- **Always ask before committing.** The user wants control over commit granularity — finish and verify the work, then ask. Pushing to a remote needs its own separate ask.
+- **Always ask before committing.** Pushing needs its own separate ask.
+- The user's own small content tweaks (image swaps, data edits) don't need their own commit — let them ride along.
+- **Back up `data/progress.json` before any test that writes progress**, and restore it afterwards.
+- The user welcomes unprompted suggestions — offer them.
 
-## Not yet built (per project roadmap)
+## Not yet built
 
-- Character images (the portrait slot and `public/img/characters/` are ready, `image` field supported but unused)
-- Overall stats (hours watched, average rating, etc.)
+- Overall stats (hours watched, average rating, etc.) — the last item from the original roadmap
+- Export/import of `progress.json` (it's gitignored, so nothing backs it up)
+- Public deploy (would mean moving save data to localStorage; see the session notes)
+- 14 character portraits still to be hand-picked
 - Possibly: Fox-era movies, an anime section
