@@ -67,6 +67,13 @@ All tokens are CSS custom properties on `:root` in `mcu-field-log-v4.css` §1.
 | `--crimson-wash` | `rgba(224,86,74,0.10)` | crimson fill |
 | `--crimson-ink` | `#260705` | text on solid crimson |
 
+### Layout width
+
+`.screen-inner` is `max-width: 1040px` (1200px on the character database, 720px on the
+series modal). Prose keeps its own measure inside that: `.lede` 62ch,
+`.phase-record-body` 70ch, `.site-footer p` 78ch. Do not narrow the column to fix a long
+line — cap the paragraph instead.
+
 ### Spacing
 
 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 px → `--s1` … `--s8`. No other values.

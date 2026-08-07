@@ -805,7 +805,7 @@
         },
         {
           "id": "loki",
-          "title": "Loki",
+          "title": "Loki: Season 1",
           "year": 2021,
           "narrativeOrder": 6,
           "releaseOrder": 26,
@@ -813,14 +813,14 @@
           "summary": "After stealing the Tesseract during the Avengers' 2012 time heist, a variant of the God of Mischief is arrested by the Time Variance Authority and forced to help hunt an even more dangerous variant of himself.",
           "beforeWatch": {
             "context": "This is not the Loki you last saw. It follows the 2012 version, picked up at the exact moment he escapes with the Tesseract during the time heist, so none of his later development has happened yet. You need The Avengers for who he was, and Endgame for the scene he escapes from — after that it leaves the timeline almost immediately.",
-            "watchFirst": ["avengers-1","avengers-4"]
+            "watchFirst": ["avengers-1", "avengers-4"]
           },
           "inUniverseSetting": "Outside time",
           "timeSkip": "Kicks off the instant 2012-Loki escapes with the Tesseract during Endgame's heist, then unfolds 'outside' the main timeline at the TVA",
           "deepDive": {
-            "plot": "A variant of Loki, plucked from 2012 the instant he escapes with the Tesseract during the Avengers' Endgame heist, is arrested by the Time Variance Authority for the crime of deviating from the 'Sacred Timeline.' Recruited to hunt an even more elusive variant of himself, Loki discovers the TVA's own leadership has been lying about its true purpose — it was built by a variant of a being called He Who Remains to prevent an all-out war between infinite versions of himself. After Loki and fellow variant Sylvie kill He Who Remains, the timeline fractures into a true, chaotic multiverse, and in Season 2, Loki ultimately sacrifices his own future, winding himself around every remaining timeline to hold the fracturing multiverse together as a silent, watchful god.",
-            "significance": "Formally introduces the multiverse as a story-driving concept, introduces the Kang the Conqueror lineage as the MCU's next big-picture threat, and gives Loki himself the most complete redemption arc of any MCU character.",
-            "orderNote": "Placed after WandaVision and Falcon/Winter Soldier since, while it unfolds 'outside time,' it's triggered by and threaded through that same early post-Endgame period."
+            "plot": "A variant of Loki, plucked from 2012 the instant he escapes with the Tesseract during the Avengers' time heist, is arrested by the Time Variance Authority for deviating from the 'Sacred Timeline.' Given the choice between erasure and helping the TVA hunt a far more dangerous variant of himself, he takes the job — and finds that the fugitive, Sylvie, has a better grasp of the TVA's lies than its own agents do. Their hunt ends at a citadel outside time, where the being who built the whole apparatus offers them his chair, and Sylvie's answer shatters the single timeline into many.",
+            "significance": "Formally opens the multiverse as a story engine, introduces the Kang lineage as the saga's next big-picture threat, and starts the most complete redemption arc any MCU character gets.",
+            "orderNote": "Placed after Hawkeye since, while it unfolds 'outside time,' it's triggered by the 2012 scene revisited during Endgame's heist and threaded through that same post-Endgame period. Watch it before Quantumania — that film's villain only lands once you've met the man in the citadel."
           },
           "watchFor": [
             { "name": "The Time Variance Authority", "thisFilm": "Reveals the existence of a 'Sacred Timeline' policed by bureaucrats from outside of time itself.", "future": "Its true purpose and master unravel across the show's two seasons, reshaping the entire multiverse." }
@@ -852,7 +852,57 @@
                   ]
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "ant-man-3",
+          "title": "Ant-Man and the Wasp: Quantumania",
+          "year": 2023,
+          "narrativeOrder": 7,
+          "releaseOrder": 39,
+          "type": "movie",
+          "summary": "Scott Lang and his family are pulled into the Quantum Realm, where they run headfirst into a powerful being who has been waiting there for a very long time.",
+          "beforeWatch": {
+            "context": "Scott has been enjoying the fame he earned in Endgame, and the film opens on him coasting. It then goes somewhere completely different — most of it takes place in a setting the earlier Ant-Man films only glimpsed. Loki is worth having behind you: the antagonist here is introduced by that series first.",
+            "watchFirst": ["ant-man-2","avengers-4","loki"]
+          },
+          "inUniverseSetting": "2025",
+          "deepDive": {
+            "plot": "Scott Lang, enjoying newfound fame as an Avenger and author, is accidentally pulled into the Quantum Realm along with his daughter Cassie, Hope, Hank, and Janet, after Cassie's own device to map the realm goes wrong. There, they discover Janet has been hiding a dark secret: decades earlier she encountered Kang the Conqueror, a being exiled to the Quantum Realm after being stripped of his empire by his own alternate selves. Kang manipulates the group into repairing his ship so he can escape and resume his conquest of the multiverse, but the family unites the Realm's oppressed population to defeat him instead — though a much larger council of Kang variants is revealed watching from beyond.",
+            "significance": "Formally introduces Kang the Conqueror as the driving villain of the Multiverse Saga, expands the Quantum Realm into a fully realized world of its own, and gives Cassie Lang a much larger heroic role.",
+            "orderNote": "Opens Phase Five as the first story to introduce the saga's next big-picture threat."
+          },
+          "watchFor": [
+            { "name": "Kang the Conqueror", "characterId": "kang", "thisFilm": "Introduced as a powerful exile trapped in the Quantum Realm, revealed to be a conqueror of countless timelines.", "future": "A variant of him becomes the central threat of the Multiverse Saga going forward.", "spoils": "Loki (Season 2) / Avengers: Doomsday" },
+            { "name": "Cassie Lang", "thisFilm": "Takes a more active superhero role alongside her father for the first time.", "future": "Positioned as a potential future Young Avenger." }
+          ],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "loki-s2",
+          "title": "Loki: Season 2",
+          "year": 2023,
+          "narrativeOrder": 8,
+          "releaseOrder": 54,
+          "type": "series",
+          "summary": "With the timeline shattered and the TVA in disarray, Loki is torn loose in time itself and races to hold the fraying agency together before its machinery — and every branching reality it was built to police — comes apart.",
+          "beforeWatch": {
+            "context": "Picks up in the immediate aftermath of season one, so that needs to be fresh — this season assumes you remember exactly who Loki met at the end of it and what Sylvie chose to do. Watch Quantumania first as well: it properly introduces Kang the Conqueror, and this season deals with the wider problem that film sets up. Much more of a workplace ensemble than season one, and considerably more technical.",
+            "watchFirst": ["loki", "ant-man-3"]
+          },
+          "inUniverseSetting": "Outside time",
+          "deepDive": {
+            "plot": "Loki finds himself 'time-slipping' — yanked helplessly between past and future versions of the TVA — while the agency reels from what happened at the citadel. As the Temporal Loom that processes the branching timelines strains past its limits, Loki, Mobius and OB chase a nineteenth-century inventor with a very familiar face, hunt a rogue agent, and try every engineering fix available to them. When none of them hold, Loki is left choosing between the version of the multiverse he wanted and the one that survives.",
+            "significance": "Resolves the TVA arc and settles what the multiverse actually is going forward, while turning Loki from a schemer chasing a throne into someone who accepts a purpose with no glory in it at all.",
+            "orderNote": "Placed after Quantumania because that film introduces Kang the Conqueror properly, and this season is the direct answer to the problem season one's ending created."
+          },
+          "watchFor": [
+            { "name": "Victor Timely", "thisFilm": "A nineteenth-century inventor whose face and inventions are far more significant than his era suggests.", "future": "Deepens the Kang lineage seeded at the end of season one." },
+            { "name": "The Temporal Loom", "thisFilm": "The machine holding the branching timelines together, and the season's central engineering crisis.", "future": "How it's resolved sets the shape of the multiverse for everything after." },
+            { "name": "Mobius", "thisFilm": "The analyst whose faith in Loki is tested against what the TVA turns out to be.", "future": "Ends the season stepping away from the job entirely." }
+          ],
+          "seasons": [
             {
               "seasonNumber": 2,
               "episodes": [
@@ -883,34 +933,10 @@
           ]
         },
         {
-          "id": "ant-man-3",
-          "title": "Ant-Man and the Wasp: Quantumania",
-          "year": 2023,
-          "narrativeOrder": 7,
-          "releaseOrder": 39,
-          "type": "movie",
-          "summary": "Scott Lang and his family are pulled into the Quantum Realm, where they run headfirst into a powerful being who has been waiting there for a very long time.",
-          "beforeWatch": {
-            "context": "Scott has been enjoying the fame he earned in Endgame, and the film opens on him coasting. It then goes somewhere completely different — most of it takes place in a setting the earlier Ant-Man films only glimpsed. Loki is worth having behind you: the antagonist here is introduced by that series first.",
-            "watchFirst": ["ant-man-2","avengers-4","loki"]
-          },
-          "inUniverseSetting": "2025",
-          "deepDive": {
-            "plot": "Scott Lang, enjoying newfound fame as an Avenger and author, is accidentally pulled into the Quantum Realm along with his daughter Cassie, Hope, Hank, and Janet, after Cassie's own device to map the realm goes wrong. There, they discover Janet has been hiding a dark secret: decades earlier she encountered Kang the Conqueror, a being exiled to the Quantum Realm after being stripped of his empire by his own alternate selves. Kang manipulates the group into repairing his ship so he can escape and resume his conquest of the multiverse, but the family unites the Realm's oppressed population to defeat him instead — though a much larger council of Kang variants is revealed watching from beyond.",
-            "significance": "Formally introduces Kang the Conqueror as the driving villain of the Multiverse Saga, expands the Quantum Realm into a fully realized world of its own, and gives Cassie Lang a much larger heroic role.",
-            "orderNote": "Opens Phase Five as the first story to introduce the saga's next big-picture threat."
-          },
-          "watchFor": [
-            { "name": "Kang the Conqueror", "characterId": "kang", "thisFilm": "Introduced as a powerful exile trapped in the Quantum Realm, revealed to be a conqueror of countless timelines.", "future": "A variant of him becomes the central threat of the Multiverse Saga going forward.", "spoils": "Loki (Season 2) / Avengers: Doomsday" },
-            { "name": "Cassie Lang", "thisFilm": "Takes a more active superhero role alongside her father for the first time.", "future": "Positioned as a potential future Young Avenger." }
-          ],
-          "postCredit": { "count": 2, "type": "mid+post" }
-        },
-        {
           "id": "deadpool-wolverine",
           "title": "Deadpool & Wolverine",
           "year": 2024,
-          "narrativeOrder": 8,
+          "narrativeOrder": 9,
           "releaseOrder": 44,
           "type": "movie",
           "summary": "Recruited by the TVA to help save his own universe from being erased, a reluctant Deadpool drags a jaded variant of Wolverine along on a chaotic, foul-mouthed multiversal detour.",
@@ -935,7 +961,7 @@
           "id": "shang-chi",
           "title": "Shang-Chi and the Legend of the Ten Rings",
           "year": 2021,
-          "narrativeOrder": 9,
+          "narrativeOrder": 10,
           "releaseOrder": 28,
           "type": "movie",
           "summary": "A martial-arts prodigy who has been hiding from his past is drawn back into the orbit of his father's secret organization, the Ten Rings, and must confront a fate he thought he'd escaped.",
@@ -960,7 +986,7 @@
           "id": "eternals",
           "title": "Eternals",
           "year": 2021,
-          "narrativeOrder": 10,
+          "narrativeOrder": 11,
           "releaseOrder": 29,
           "type": "movie",
           "summary": "A team of immortal beings who have secretly protected Earth for thousands of years are forced to reunite against their ancient enemies, the Deviants, uncovering long-hidden truths about their true purpose.",
@@ -985,7 +1011,7 @@
           "id": "she-hulk",
           "title": "She-Hulk: Attorney at Law",
           "year": 2022,
-          "narrativeOrder": 11,
+          "narrativeOrder": 12,
           "releaseOrder": 36,
           "type": "series",
           "summary": "Lawyer Jennifer Walters gains the powers of the Hulk after an accident, and must balance a superhero-law specialty with the messiness of everyday life.",
@@ -1031,7 +1057,7 @@
           "id": "moon-knight",
           "title": "Moon Knight",
           "year": 2022,
-          "narrativeOrder": 12,
+          "narrativeOrder": 13,
           "releaseOrder": 32,
           "type": "series",
           "summary": "A mild-mannered gift shop worker discovers he shares a body with a mercenary, both serving as the reluctant avatar of an Egyptian moon god.",
@@ -1366,6 +1392,43 @@
                 { "id": "echo-e3", "episodeNumber": 3, "title": "Tuklo", "summary": "Flashbacks reveal the tragic history that first drove a wedge between Maya and her family." },
                 { "id": "echo-e4", "episodeNumber": 4, "title": "Origins", "summary": "Maya taps into her Choctaw ancestry and a mysterious inherited power passed down through generations of women in her family." },
                 { "id": "echo-e5", "episodeNumber": 5, "title": "Storyteller", "summary": "Maya confronts her past and Kingpin's reach once and for all, choosing which legacy she wants to carry forward." }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ironheart",
+          "title": "Ironheart",
+          "year": 2025,
+          "narrativeOrder": 11,
+          "releaseOrder": 53,
+          "type": "series",
+          "summary": "Back home in Chicago after her time in Wakanda, genius inventor Riri Williams falls in with a crew of high-tech thieves led by a charismatic stranger while chasing the money to finish the armour she can't stop building.",
+          "beforeWatch": {
+            "context": "Riri built her first suit as a college student in Black Panther: Wakanda Forever and went home with the knowledge but none of the resources — this picks her up back in Chicago, broke and out of options. It's a street-level story about who funds a genius, and it leans much harder on magic than her engineering background would suggest. Wakanda Forever is the only real prerequisite.",
+            "watchFirst": ["black-panther-2"]
+          },
+          "inUniverseSetting": "2025",
+          "deepDive": {
+            "plot": "Expelled from MIT for selling her coursework, Riri Williams returns to Chicago determined to finish the powered armour she has been building since Wakanda. Short on money and parts, she takes work with Parker Robbins, a charming crew leader whose crimes are pulled off with technology — and eventually magic — that shouldn't exist. As Riri builds an AI companion modelled on her dead best friend, she is forced to choose between the resources Robbins offers and the person she wants to be, and to reckon with grief she has spent the whole series engineering her way around.",
+            "significance": "Pushes the MCU's street-level corner into the collision between technology and magic, and gives Riri the origin proper that Wakanda Forever only sketched — establishing her as the next generation's armoured hero in Tony Stark's absence.",
+            "orderNote": "Placed after Wakanda Forever, which introduces Riri, and near the end of this phase since it unfolds in the same broad 2025 period as the shows around it."
+          },
+          "watchFor": [
+            { "name": "Riri Williams / Ironheart", "thisFilm": "Builds her armour for real, on her own terms, and gains an AI companion built out of her own grief.", "future": "Established as the MCU's next armoured hero, with her story left deliberately unfinished." },
+            { "name": "Parker Robbins / The Hood", "thisFilm": "A crew leader whose gear turns out to run on something far older and stranger than technology.", "future": "Sets up a magic-powered criminal threat with ambitions well beyond Chicago." },
+            { "name": "Technology meeting magic", "thisFilm": "The series' central collision — engineering repeatedly runs into forces it cannot model.", "future": "Widens the door between the MCU's science and mystic corners." }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "ironheart-e1", "episodeNumber": 1, "title": "Take Me Home", "summary": "Expelled from MIT, Riri returns to Chicago with nothing but her designs and no way to fund them." },
+                { "id": "ironheart-e2", "episodeNumber": 2, "title": "Will the Real Natalie Please Stand Up?", "summary": "Riri's new AI companion takes on a form she wasn't prepared for, while the crew's first job tests her limits." },
+                { "id": "ironheart-e3", "episodeNumber": 3, "title": "We in Danger, Girl", "summary": "A job goes wrong and Riri starts to see what her new employer's technology can really do." },
+                { "id": "ironheart-e4", "episodeNumber": 4, "title": "Bad Magic", "summary": "The line between engineering and something far older gets much harder for Riri to ignore." },
+                { "id": "ironheart-e5", "episodeNumber": 5, "title": "Karma's a Glitch", "summary": "Riri's choices catch up with her, and the cost of the armour becomes personal." },
+                { "id": "ironheart-e6", "episodeNumber": 6, "title": "The Past Is the Past", "summary": "Riri confronts both her employer and the grief she has been building around, and decides what kind of hero she wants to be." }
               ]
             }
           ]

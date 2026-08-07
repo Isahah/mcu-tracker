@@ -119,7 +119,7 @@
       "id": "loki",
       "name": "Loki",
       "description": "Thor's adopted brother, the God of Mischief — sometimes villain, sometimes ally, always scheming.",
-      "titles": ["thor-1", "avengers-1", "thor-2", "thor-3", "avengers-3", "avengers-4", "loki"],
+      "titles": ["thor-1", "avengers-1", "thor-2", "thor-3", "avengers-3", "avengers-4", "loki", "loki-s2"],
       "image": "/img/characters/loki.avif",
       "phases": {
         "phase-1": "Thor detonates his identity: he's a Frost Giant foundling Odin took from Jotunheim, and the discovery curdles into a grab for the throne that ends with him letting go into the void. He returns in The Avengers as the scepter-wielding face of the Chitauri invasion — beaten, memorably, into the floor by the Hulk.",
@@ -413,7 +413,7 @@
       "id": "riri-williams",
       "name": "Riri Williams / Ironheart",
       "description": "An MIT genius building her own suit of armor.",
-      "titles": ["black-panther-2"],
+      "titles": ["black-panther-2", "ironheart"],
       "image": "/img/characters/riri-williams.webp",
       "imagePosition": "top",
       "phases": {
@@ -932,7 +932,7 @@
       "id": "mobius",
       "name": "Mobius",
       "description": "A TVA analyst with a soft spot for jet skis and a knack for getting under Loki's skin.",
-      "titles": ["loki"],
+      "titles": ["loki", "loki-s2"],
       "image": "/img/characters/mobius.webp",
       "imagePosition": "top",
       "phases": {
@@ -943,7 +943,7 @@
       "id": "sylvie",
       "name": "Sylvie",
       "description": "A dangerous fugitive variant with a lifelong grudge against the TVA.",
-      "titles": ["loki"],
+      "titles": ["loki", "loki-s2"],
       "image": "/img/characters/sylvie.jpeg",
       "imagePosition": "top",
       "phases": {
@@ -1251,7 +1251,7 @@
       "id": "kang",
       "name": "Kang",
       "description": "A conqueror with mastery over time — and countless variants of himself scattered across the multiverse.",
-      "titles": ["loki", "ant-man-3"],
+      "titles": ["loki", "loki-s2", "ant-man-3"],
       "image": "/img/characters/kang.webp",
       "imagePosition": "top",
       "phases": {
@@ -1352,6 +1352,15 @@
       "imagePosition": "top",
       "phases": {
         "phase-5": "Secret Invasion: radicalized by Fury's broken promise, he runs the rebellion from a repurposed reactor — false-flag bombings, a Super-Skrull program built from harvested Avengers DNA, and infiltrators as deep as War Machine's armor. G'iah, powered by the same Harvest he sought, kills him in the finale."
+      }
+    },
+    {
+      "id": "parker-robbins",
+      "name": "Parker Robbins / The Hood",
+      "description": "A charismatic Chicago crew leader who recruits Riri Williams for a string of high-tech heists, and whose gear works better than it has any right to.",
+      "titles": ["ironheart"],
+      "phases": {
+        "phase-5": "Recruits Riri into his crew in Ironheart, offering her the funding her armour needs — and turning out to be powered by a cloak whose bargain runs on something far older and hungrier than technology. His pull on Riri is the season's real conflict: he offers her everything she says she wants, at a price she keeps agreeing to pay."
       }
     },
     {

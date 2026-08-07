@@ -957,6 +957,8 @@ function openEpisodeModal(series, openSeasons) {
   const allWatched = watchedCount === eps.length && eps.length > 0;
   const isFlagged = eps.some(e => watching.includes(e.id));
   const open = openSeasons || new Set([series.seasons[0].seasonNumber]);
+  // A one-season show doesn't need an accordion — show its episodes directly
+  const multiSeason = series.seasons.length > 1;
 
   content.className = 'modal--series';
   content.innerHTML = `
@@ -978,7 +980,10 @@ function openEpisodeModal(series, openSeasons) {
     ${futureSpoilersPanelHtml(series)}
 
     <div class="section-rule">
-      <p class="kicker" style="margin-bottom:12px">Seasons</p>
+      <div class="episodes-head">
+        <p class="kicker">${multiSeason ? 'Seasons' : 'Episodes'}</p>
+        ${multiSeason ? '' : `<span class="season-mark" role="button" tabindex="0" data-mark-all>${allWatched ? 'Unmark all' : 'Mark all'}</span>`}
+      </div>
       <div id="season-list"></div>
     </div>
 
@@ -1013,18 +1018,21 @@ function openEpisodeModal(series, openSeasons) {
     const block = document.createElement('div');
     block.className = 'season-block';
 
-    const header = document.createElement('button');
-    header.className = 'season-header';
-    header.type = 'button';
-    header.setAttribute('aria-expanded', String(isOpen));
-    header.dataset.season = season.seasonNumber;
-    header.innerHTML = `Season ${season.seasonNumber}
-      <span class="season-meta">${watchedInSeason} of ${season.episodes.length} watched</span>
-      <span class="season-mark" role="button" tabindex="0">${watchedInSeason === season.episodes.length ? 'Unmark all' : 'Mark all'}</span>`;
+    let header = null;
+    if (multiSeason) {
+      header = document.createElement('button');
+      header.className = 'season-header';
+      header.type = 'button';
+      header.setAttribute('aria-expanded', String(isOpen));
+      header.dataset.season = season.seasonNumber;
+      header.innerHTML = `Season ${season.seasonNumber}
+        <span class="season-meta">${watchedInSeason} of ${season.episodes.length} watched</span>
+        <span class="season-mark" role="button" tabindex="0">${watchedInSeason === season.episodes.length ? 'Unmark all' : 'Mark all'}</span>`;
+    }
 
     const list = document.createElement('div');
     list.className = 'episode-list';
-    list.hidden = !isOpen;
+    list.hidden = multiSeason && !isOpen;
 
     season.episodes.forEach(ep => {
       const p = progress[ep.id] || {};
@@ -1049,12 +1057,7 @@ function openEpisodeModal(series, openSeasons) {
       list.appendChild(row);
     });
 
-    // "Mark all" sits inside the season header button, so its click must not
-    // also toggle the accordion
-    const mark = header.querySelector('.season-mark');
-    mark.addEventListener('click', async (e) => {
-      e.preventDefault();
-      e.stopPropagation();
+    const markSeason = async () => {
       const target = watchedInSeason !== season.episodes.length;
       for (const ep of season.episodes) {
         if (!!progress[ep.id]?.watched !== target) {
@@ -1062,15 +1065,29 @@ function openEpisodeModal(series, openSeasons) {
         }
       }
       reopen();
-    });
+    };
 
-    header.addEventListener('click', () => {
-      const nowOpen = header.getAttribute('aria-expanded') !== 'true';
-      header.setAttribute('aria-expanded', String(nowOpen));
-      list.hidden = !nowOpen;
-    });
+    if (header) {
+      // "Mark all" sits inside the season header button, so its click must not
+      // also toggle the accordion
+      header.querySelector('.season-mark').addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        markSeason();
+      });
 
-    block.appendChild(header);
+      header.addEventListener('click', () => {
+        const nowOpen = header.getAttribute('aria-expanded') !== 'true';
+        header.setAttribute('aria-expanded', String(nowOpen));
+        list.hidden = !nowOpen;
+      });
+      block.appendChild(header);
+    } else {
+      // single-season show: the bulk toggle lives in the section heading instead
+      const headMark = content.querySelector('[data-mark-all]');
+      if (headMark) headMark.addEventListener('click', (e) => { e.preventDefault(); markSeason(); });
+    }
+
     block.appendChild(list);
     seasonListEl.appendChild(block);
   });

@@ -7,10 +7,176 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="mcu-field-log-v4.css">
-<style>body { margin: 0; }</style>
+<style>
+body { margin: 0; }
+/* preview-only: fakes a film still so the hero fades are judgeable.
+   Intentionally NOT in mcu-field-log-v4.css — do not port this. */
+/* --- preview-only stand-in for a real still --------------------------
+   A flat tile cannot show a fade, so this paints a photograph-like
+   colour field. Delete once TMDB images are wired in. */
+.demo-still {
+  background-image:
+    radial-gradient(circle at 28% 32%, rgba(72, 116, 180, 0.95) 0%, transparent 52%),
+    radial-gradient(circle at 72% 62%, rgba(168, 74, 58, 0.9) 0%, transparent 48%),
+    radial-gradient(circle at 58% 18%, rgba(210, 164, 76, 0.75) 0%, transparent 34%),
+    radial-gradient(circle at 88% 30%, rgba(120, 90, 170, 0.6) 0%, transparent 40%),
+    linear-gradient(158deg, #22304e 0%, #101a2c 62%, #0b1220 100%);
+  background-size: cover;
+}
+.demo-still.title-hero__bg::before { display: none; }
+</style>
 </head>
 <body>
 <div style="background:#101425; min-height:100vh; padding-bottom:120px">
+  <div class="screen" style="padding-bottom:32px">
+    <div class="screen-inner">
+      <p class="lede" style="margin:0 0 8px">All three use the same stand-in colour field instead of a flat tile, so the fade is actually visible. A real still will read busier than this.</p>
+
+      <p class="kicker" style="margin-top:24px">10a · Scrim band — current. Image fills the frame, edges hard, bottom melts into the card.</p>
+        <div class="dossier wide">
+          <header class="title-hero">
+            <span class="title-hero__bg demo-still no-photo--t6"></span>
+            <div class="title-hero__body">
+              <span class="art art--poster title-hero__poster no-photo--t6"><span class="art-none">SM</span></span>
+              <div class="title-hero__text">
+                <h2 class="page-title" style="font-size:34px">Spider-Man: No Way Home</h2>
+                <p class="kicker">Movie · Released December 17, 2021</p>
+                <div class="chip-row">
+                  <span class="chip chip--fact">Set: 2024</span>
+                  <span class="chip chip--fact">Months after Far From Home</span>
+                </div>
+              </div>
+            </div>
+          </header>
+          <p class="kicker">Summary</p>
+          <p style="margin-top:8px">After his identity is exposed, Peter Parker asks Doctor Strange for help, and a spell gone wrong tears open the multiverse.</p>
+        </div>
+
+      <p class="kicker" style="margin-top:32px">10b · Vignette bleed — image runs 8% oversized and dissolves at every edge into navy.</p>
+        <div class="dossier wide">
+          <header class="title-hero title-hero--bleed">
+            <span class="title-hero__bg demo-still no-photo--t6"></span>
+            <div class="title-hero__body">
+              <span class="art art--poster title-hero__poster no-photo--t6"><span class="art-none">SM</span></span>
+              <div class="title-hero__text">
+                <h2 class="page-title" style="font-size:34px">Spider-Man: No Way Home</h2>
+                <p class="kicker">Movie · Released December 17, 2021</p>
+                <div class="chip-row">
+                  <span class="chip chip--fact">Set: 2024</span>
+                  <span class="chip chip--fact">Months after Far From Home</span>
+                </div>
+              </div>
+            </div>
+          </header>
+          <p class="kicker">Summary</p>
+          <p style="margin-top:8px">After his identity is exposed, Peter Parker asks Doctor Strange for help, and a spell gone wrong tears open the multiverse.</p>
+        </div>
+
+      <p class="kicker" style="margin-top:32px">10c · Card wash — image runs the whole card and fades out behind the content.</p>
+        <div class="dossier wide has-wash">
+          <span class="card-wash demo-still no-photo--t6"></span>
+          <header class="title-hero">
+            <div class="title-hero__body">
+              <span class="art art--poster title-hero__poster no-photo--t6"><span class="art-none">SM</span></span>
+              <div class="title-hero__text">
+                <h2 class="page-title" style="font-size:34px">Spider-Man: No Way Home</h2>
+                <p class="kicker">Movie · Released December 17, 2021</p>
+                <div class="chip-row">
+                  <span class="chip chip--fact">Set: 2024</span>
+                  <span class="chip chip--fact">Months after Far From Home</span>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="section-rule">
+            <p class="kicker">Summary</p>
+            <p style="margin-top:8px">After his identity is exposed, Peter Parker asks Doctor Strange for help, and a spell gone wrong tears open the multiverse, bringing dangerous visitors from other realities into his world.</p>
+          </div>
+          <section class="before-watch">
+            <div class="before-watch__head">
+              <h3>Before you watch</h3>
+              <span class="bw-safe">No spoilers</span>
+            </div>
+            <div class="bw-body">
+              <div>
+                <p class="kicker">When this happens</p>
+                <p style="margin-top:8px">Set in the winter of 2024, roughly eight months after <em>Spider-Man: Far From Home</em> and picking up directly from that film's final scene.</p>
+              </div>
+            </div>
+          </section>
+          <section class="deep-panel">
+            <button class="deepdive-toggle deepdive-toggle--head" type="button" aria-expanded="false">▶ Plot &amp; context — contains spoilers for this film</button>
+          </section>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="screen" style="padding-bottom:32px">
+    <div class="screen-inner">
+      <p class="lede" style="margin:0 0 8px">Only Inter and JetBrains Mono. No emblem, no wordmark lookalike, no knockout block — nothing here resembles a studio's real mark. 9a–9c work through scale, stroke and letterspacing; 9d and 9e borrow from four-colour comic printing instead, using plate misregistration and halftone screening, which are genre conventions rather than anyone's property.</p>
+
+      <div class="panel" style="padding:48px 32px">
+        <p class="kicker" style="margin-bottom:32px">9a · Stencil title card</p>
+        <div class="mark mark--stencil">
+          <span>
+            <span class="mark-line mark-line--out">MCU</span>
+            <span class="mark-line mark-line--solid">Field Log</span>
+          </span>
+          <span class="mark-sub">Narrative order · 112 titles</span>
+        </div>
+      </div>
+
+      <div class="panel" style="padding:48px 32px">
+        <p class="kicker" style="margin-bottom:32px">9b · Credit bar</p>
+        <div class="mark mark--bar">
+          <span class="mark-rule"></span>
+          <span class="mark-line">MCU Field Log</span>
+          <span class="mark-rule"></span>
+          <span class="mark-sub">Narrative order · 112 titles</span>
+        </div>
+      </div>
+
+      <div class="panel" style="padding:48px 32px">
+        <p class="kicker" style="margin-bottom:32px">9c · Slab and keyline</p>
+        <div class="mark mark--slab">
+          <span class="mark-big">MCU</span>
+          <span class="mark-key"></span>
+          <span class="mark-words">
+            <span class="mark-word">Field</span>
+            <span class="mark-word">Log</span>
+            <span class="mark-sub">Narrative order</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="panel" style="padding:48px 32px">
+        <p class="kicker" style="margin-bottom:32px">9d · Misregistration — plates out of alignment</p>
+        <div class="mark mark--slab is-heavy is-offset">
+          <span class="mark-big">MCU</span>
+          <span class="mark-key"></span>
+          <span class="mark-words">
+            <span class="mark-word">Field</span>
+            <span class="mark-word">Log</span>
+            <span class="mark-sub">Narrative order</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="panel" style="padding:48px 32px">
+        <p class="kicker" style="margin-bottom:32px">9e · Halftone fill — brass screened with dots</p>
+        <div class="mark mark--slab is-heavy is-halftone">
+          <span class="mark-big">MCU</span>
+          <span class="mark-key"></span>
+          <span class="mark-words">
+            <span class="mark-word">Field</span>
+            <span class="mark-word">Log</span>
+            <span class="mark-sub">Narrative order</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div id="screen-menu" style="position:relative">
     <div class="app-bar">
@@ -29,6 +195,7 @@
         </header>
 
         <a class="resume-card" href="#1">
+          <span class="art art--poster no-photo--t4"><span class="art-none">ET</span></span>
           <span>
             <span class="resume-kicker">Currently watching</span>
             <span class="resume-title">Eternals</span>
@@ -89,6 +256,10 @@
           </span>
           <span class="db-link__count data" id="menu-character-count">119 files</span>
         </a>
+        <footer class="site-footer">
+          <p class="tmdb-credit"><span class="tmdb-logo tmdb-logo--slot">TMDB logo</span>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+          <p>Unofficial fan project. Not affiliated with, endorsed by or sponsored by Marvel or Disney. All titles, characters and logos are the property of their respective owners.</p>
+        </footer>
       </div>
     </div>
       <div class="now-watching-dock is-inline" style="right:24px; bottom:24px">
@@ -115,18 +286,22 @@
           </div>
         </div>
 
+
+
         <div class="filter-strip">
           <a class="filter-chip is-active" href="#1">All</a>
           <a class="filter-chip" href="#1">Unwatched</a>
           <a class="filter-chip" href="#1">Watched</a>
           <a class="filter-chip" href="#1">Series</a>
           <span class="filter-spacer"></span>
+          <a class="filter-chip is-active" href="#1"><span class="chip-swatch"></span>Artwork</a>
           <a class="filter-chip" href="#1">Next unwatched ↓</a>
         </div>
 
         <div id="case-files">
           <a class="case-card is-watched" href="#1">
             <span class="case-num">1</span>
+            <span class="art art--poster no-photo--t1"><span class="art-none">WV</span></span>
             <span class="case-main">
               <span class="case-titleline"><span class="case-title">WandaVision</span><span class="badge">Series</span></span>
               <span class="case-meta">2021 · series · 9 of 9 eps</span>
@@ -136,6 +311,7 @@
           </a>
           <a class="case-card" href="#1">
             <span class="case-num">2</span>
+            <span class="art art--poster no-photo--t2"><span class="art-none">FWS</span></span>
             <span class="case-main">
               <span class="case-titleline"><span class="case-title">The Falcon and the Winter Soldier</span><span class="badge">Series</span></span>
               <span class="case-meta">2021 · series · 0 of 6 eps</span>
@@ -145,6 +321,7 @@
           </a>
           <a class="case-card is-watched" href="#1">
             <span class="case-num">3</span>
+            <span class="art art--poster no-photo--t3"><span class="art-none">SC</span></span>
             <span class="case-main">
               <span class="case-titleline"><span class="case-title">Shang-Chi and the Legend of the Ten Rings</span></span>
               <span class="case-meta">2021 · film</span>
@@ -154,6 +331,7 @@
           </a>
           <a class="case-card is-watching" href="#1">
             <span class="case-num">4</span>
+            <span class="art art--poster no-photo--t4"><span class="art-none">ET</span></span>
             <span class="case-main">
               <span class="case-titleline"><span class="case-title">Eternals</span></span>
               <span class="case-meta">2021 · film</span>
@@ -163,6 +341,7 @@
           </a>
           <a class="case-card" href="#1">
             <span class="case-num">5</span>
+            <span class="art art--poster no-photo--t5"><span class="art-none">HK</span></span>
             <span class="case-main">
               <span class="case-titleline"><span class="case-title">Hawkeye</span><span class="badge">Series</span></span>
               <span class="case-meta">2021 · series · 0 of 6 eps</span>
@@ -172,6 +351,7 @@
           </a>
           <a class="case-card" href="#1">
             <span class="case-num">6</span>
+            <span class="art art--poster no-photo--t6"><span class="art-none">SM</span></span>
             <span class="case-main">
               <span class="case-titleline"><span class="case-title">Spider-Man: No Way Home</span></span>
               <span class="case-meta">2021 · film</span>
@@ -181,6 +361,7 @@
           </a>
           <a class="case-card is-unreleased" href="#1">
             <span class="case-num">7</span>
+            <span class="art art--poster no-photo--t3"><span class="art-none">??</span></span>
             <span class="case-main">
               <span class="case-titleline"><span class="case-title">Untitled Special Presentation</span><span class="badge badge--muted">Not yet released</span></span>
               <span class="case-meta">2026 · special</span>
@@ -193,6 +374,10 @@
         <div class="list-footer-nav">
           <a class="nav-btn" href="#1">Phase five →</a>
         </div>
+        <footer class="site-footer">
+          <p class="tmdb-credit"><span class="tmdb-logo tmdb-logo--slot">TMDB logo</span>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+          <p>Unofficial fan project. Not affiliated with, endorsed by or sponsored by Marvel or Disney. All titles, characters and logos are the property of their respective owners.</p>
+        </footer>
       </div>
     </div>
       <div class="now-watching-dock is-inline" style="right:24px; bottom:24px">
@@ -207,10 +392,20 @@
         <button id="detail-back-btn" type="button">← Phase four</button>
         <div class="dossier wide">
           <div id="detail-content">
-            <div>
-              <h2 class="page-title" style="font-size:32px">Spider-Man: No Way Home</h2>
-              <p class="kicker" style="margin-top:10px">Movie · Released December 17, 2021</p>
-            </div>
+            <header class="title-hero">
+              <span class="title-hero__bg no-photo--t6"></span>
+              <div class="title-hero__body">
+                <span class="art art--poster title-hero__poster no-photo--t6"><span class="art-none">SM</span></span>
+                <div class="title-hero__text">
+                  <h2 class="page-title" style="font-size:34px">Spider-Man: No Way Home</h2>
+                  <p class="kicker">Movie · Released December 17, 2021</p>
+                  <div class="chip-row">
+                    <span class="chip chip--fact">Set: 2024</span>
+                    <span class="chip chip--fact">Months after Far From Home</span>
+                  </div>
+                </div>
+              </div>
+            </header>
 
             <div class="section-rule">
               <p class="kicker">Summary</p>
@@ -305,6 +500,10 @@
             </div>
           </div>
         </div>
+        <footer class="site-footer">
+          <p class="tmdb-credit"><span class="tmdb-logo tmdb-logo--slot">TMDB logo</span>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+          <p>Unofficial fan project. Not affiliated with, endorsed by or sponsored by Marvel or Disney. All titles, characters and logos are the property of their respective owners.</p>
+        </footer>
       </div>
     </div>
       <div class="now-watching-dock is-inline" style="right:24px; bottom:24px">
@@ -374,6 +573,10 @@
           <a class="character-card" href="#1"><span class="portrait-wrap"><span class="no-photo no-photo--t5">WM</span></span><span class="char-name"><span>Wanda Maximoff</span></span></a>
           <a class="character-card" href="#1"><span class="portrait-wrap"><span class="no-photo no-photo--t6">SS</span></span><span class="char-name"><span>Stephen Strange</span></span></a>
         </div>
+        <footer class="site-footer">
+          <p class="tmdb-credit"><span class="tmdb-logo tmdb-logo--slot">TMDB logo</span>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+          <p>Unofficial fan project. Not affiliated with, endorsed by or sponsored by Marvel or Disney. All titles, characters and logos are the property of their respective owners.</p>
+        </footer>
 </div>
 </div>
       <div class="now-watching-dock is-inline" style="right:24px; bottom:24px">
@@ -415,6 +618,10 @@
             </div>
           </div>
         </div>
+        <footer class="site-footer">
+          <p class="tmdb-credit"><span class="tmdb-logo tmdb-logo--slot">TMDB logo</span>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+          <p>Unofficial fan project. Not affiliated with, endorsed by or sponsored by Marvel or Disney. All titles, characters and logos are the property of their respective owners.</p>
+        </footer>
       </div>
     </div>
       <div class="now-watching-dock is-inline" style="right:24px; bottom:24px">
@@ -428,11 +635,16 @@
       <div style="position:relative; display:flex; align-items:flex-start; justify-content:center; padding:32px 16px; background:rgba(6,7,10,0.6); border:1px solid #27314f; border-radius:14px">
         <div id="modal-content" class="modal--series">
           <button id="modal-close" type="button">✕</button>
-
-          <div class="modal-head">
-            <h3 class="card-title" style="font-size:26px">Loki</h3>
-            <p class="kicker" style="margin-top:8px">Series · 2 seasons · First aired June 9, 2021</p>
-          </div>
+          <header class="title-hero">
+            <span class="title-hero__bg no-photo--t4"></span>
+            <div class="title-hero__body">
+              <span class="art art--poster title-hero__poster no-photo--t4"><span class="art-none">LK</span></span>
+              <div class="title-hero__text">
+                <h2 class="page-title" style="font-size:30px">Loki</h2>
+                <p class="kicker">Series · 2 seasons · First aired June 9, 2021</p>
+              </div>
+            </div>
+          </header>
 
           <div class="progress progress--sm">
             <span class="progress-track"><span class="progress-fill" style="width:17%"></span></span>
@@ -597,6 +809,10 @@
             <button class="btn btn--outline" type="button">Flag as watching</button>
           </div>
         </div>
+        <footer class="site-footer">
+          <p class="tmdb-credit"><span class="tmdb-logo tmdb-logo--slot">TMDB logo</span>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+          <p>Unofficial fan project. Not affiliated with, endorsed by or sponsored by Marvel or Disney. All titles, characters and logos are the property of their respective owners.</p>
+        </footer>
       </div>
     </div>
       <div class="now-watching-dock is-inline" style="right:24px; bottom:24px">
@@ -621,6 +837,7 @@
         </div>
         <p class="kicker" style="margin-top:28px">Currently watching — series variant</p>
         <a class="resume-card" href="#1" style="margin-top:14px">
+          <span class="art art--poster no-photo--t4"><span class="art-none">ET</span></span>
           <span>
             <span class="resume-kicker">Currently watching</span>
             <span class="resume-title">Hawkeye</span>

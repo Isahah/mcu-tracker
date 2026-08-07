@@ -16,3 +16,29 @@
 #character-content .portrait-frame .no-photo {
   filter: none;
 }
+
+/* A one-season show has no accordion to hang the bulk toggle off, so its
+   "Mark all" pill moves up beside the Episodes heading. Mirrors the styling
+   of .season-header .season-mark, which is scoped to the header it sits in. */
+.episodes-head {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  margin-bottom: var(--s3);
+}
+
+.episodes-head .season-mark {
+  display: inline-flex; align-items: center; gap: 5px;
+  margin-left: auto; padding: 4px 10px 3px;
+  border: 1px solid var(--line-hi); border-radius: var(--r-pill);
+  font-family: var(--font-mono); font-size: 9.5px; font-weight: 700;
+  letter-spacing: 0.13em; text-transform: uppercase; color: var(--fg-faint);
+  cursor: pointer;
+  transition: color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+
+.episodes-head .season-mark:hover { color: var(--brass); border-color: var(--brass); }
+
+/* Without a header, the episode list is the whole block — give it the padding
+   the season-header used to provide. */
+.season-block > .episode-list:only-child { padding: var(--s2); }
