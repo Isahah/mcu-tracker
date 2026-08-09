@@ -35,3 +35,33 @@
 /* Without a header, the episode list is the whole block — give it the padding
    the season-header used to provide. */
 .season-block > .episode-list:only-child { padding: var(--s2); }
+
+/* ---- Save data (menu screen, last row before the footer) ----
+   Export/import is housekeeping, not a destination, so it gets no card at all
+   — it reads as a footer utility, in the footer's own quiet mono type. It's
+   left in normal flow rather than fixed to a corner: a fixed control would
+   follow you onto every screen (and crowd the now-watching dock), which is
+   more prominence than this deserves, not less. */
+.save-utility {
+  display: flex; align-items: baseline; gap: var(--s2); flex-wrap: wrap;
+  margin-top: var(--s6);
+  font-family: var(--font-mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.10em; text-transform: uppercase; color: var(--fg-faint);
+}
+.save-utility__label { font-weight: 700; }
+.save-utility__sep { opacity: 0.5; }
+.save-utility__btn {
+  padding: 0; background: none; border: 0;
+  font: inherit; letter-spacing: inherit; text-transform: inherit;
+  color: var(--fg-dim); text-decoration: underline;
+  text-decoration-color: var(--line-hi); text-underline-offset: 3px;
+  cursor: pointer;
+  transition: color var(--dur) var(--ease), text-decoration-color var(--dur) var(--ease);
+}
+.save-utility__btn:hover { color: var(--brass-soft); text-decoration-color: var(--brass-soft); }
+
+/* The status line only reports what just happened, so it stays out of the
+   status colour law — faint by default, crimson only when something failed. */
+.save-utility__status { flex-basis: 100%; color: var(--fg-faint); }
+.save-utility__status:empty { display: none; }
+.save-utility__status.is-error { color: var(--crimson-soft); }

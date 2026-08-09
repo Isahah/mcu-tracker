@@ -48,6 +48,15 @@
           </span>
           <span class="db-link__count data" id="menu-character-count"></span>
         </a>
+
+        <div class="save-utility">
+          <span class="save-utility__label">Save data</span>
+          <button class="save-utility__btn" id="export-btn" type="button">Export a copy</button>
+          <span class="save-utility__sep" aria-hidden="true">&middot;</span>
+          <button class="save-utility__btn" id="import-btn" type="button">Restore from file</button>
+          <input type="file" id="import-file" accept="application/json,.json" hidden>
+          <span class="save-utility__status" id="save-data-status" role="status"></span>
+        </div>
       </div>
     </div>
   </section>

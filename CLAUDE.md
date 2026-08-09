@@ -24,7 +24,9 @@ A thin Express layer (~80 lines). Three JSON files read/written directly from di
 - `data/characters.json` — the character database
 - `data/progress.json` — personal save data, gitignored, auto-created empty
 
-Five endpoints: `GET /api/phases`, `GET /api/characters`, `GET /api/progress`, `POST /api/progress/:id` (merges `{watched, rating}`; `watchedAt` stamped on first true, cleared on false), `POST /api/now-watching` (replaces the flag list — up to 2 unit ids under the reserved `_watching` key).
+Six endpoints: `GET /api/phases`, `GET /api/characters`, `GET /api/progress`, `POST /api/progress/import` (replaces the whole save file — see below), `POST /api/progress/:id` (merges `{watched, rating}`; `watchedAt` stamped on first true, cleared on false), `POST /api/now-watching` (replaces the flag list — up to 2 unit ids under the reserved `_watching` key).
+
+`/api/progress/import` **must stay registered before `/api/progress/:id`**, or Express matches `import` as a movie id. The port is `process.env.PORT || 3939`, so a second instance can run alongside the usual one for testing.
 
 ### Data model (`data/movies.json`)
 
@@ -50,12 +52,14 @@ Required on every entry: `id`, `title`, `year`, `narrativeOrder`, `releaseOrder`
 
 ### Save data (`data/progress.json`)
 
-Flat object keyed by entry id (movie, episode, or series id for a series-level rating). Shape: `{ watched?, watchedAt?, rating? }`, rating 0–10 in 0.5 steps. Gitignored and personal — **never hand-edit, and back it up before any test that writes progress.** Purely local UI preferences (e.g. the artwork density toggle) go in `localStorage`, not here.
+Flat object keyed by entry id (movie, episode, or series id for a series-level rating). Shape: `{ watched?, watchedAt?, rating? }`, rating 0–10 in 0.5 steps. A few entries also carry `postCreditSeen` from an earlier feature — nothing reads it, but nothing may drop it either. Gitignored and personal — **never hand-edit, and back it up before any test that writes progress.** Purely local UI preferences (e.g. the artwork density toggle) go in `localStorage`, not here.
+
+**Export / import** (the `.save-utility` row at the foot of the menu — deliberately not a card, since housekeeping shouldn't outrank the phases). Export is client-side: it re-fetches `/api/progress` and downloads `mcu-field-log-<date>.json`, a wrapper of `{ app, version, exportedAt, progress }`. Import posts to `/api/progress/import`, which accepts either that wrapper or a bare copy of `progress.json`, validates the payload **whole** (any bad entry rejects the lot — never a half-written save), copies the current file to `data/progress.backup.json`, then writes. Unknown keys on an entry are copied through deliberately. The page reloads afterwards rather than re-syncing each screen.
 
 ### Frontend (`public/app.js`, single file, no framework)
 
 Hash router (`route()`) toggles five screens via `showScreen()`:
-- `#/` → menu: masthead, resume card(s) for currently-watching, roman-numeral phase cards, Character Database card
+- `#/` → menu: masthead, resume card(s) for currently-watching, roman-numeral phase cards, Character Database card, Save data utility row
 - `#/<phase-id>` → phase list with phase-to-phase nav, filter strip, poster rows
 - `#/watch/<item-id>` → detail page for a movie, special or episode
 - `#/characters` → character database (search, sort, browse-by-title)
@@ -123,7 +127,7 @@ Tags render as links to `#/character/<id>` when they resolve. Order: an explicit
 ## Licensing / legal posture
 
 - TMDB free tier is **non-commercial**. Ads, affiliate links or donations would require a separate commercial agreement with TiVo. The user has decided to keep it free.
-- Attribution is mandatory and lives in the footer. The **official TMDB logo** must be used as a file, never redrawn (currently a dashed stand-in awaits `public/assets/tmdb.svg`).
+- Attribution is mandatory and lives in the footer. The **official TMDB logo** must be used as a file, never redrawn — TMDB's `blue_short` SVG sits at `public/assets/tmdb.svg`, sized by `.tmdb-logo` in the handoff stylesheet and never recoloured or filtered.
 - Character portraits are studio stills sourced from fan wikis — the same posture as comparable fan trackers. Fine for a free project; would need revisiting if monetised.
 
 ## Workflow
@@ -136,7 +140,6 @@ Tags render as links to `#/character/<id>` when they resolve. Order: an explicit
 ## Not yet built
 
 - Overall stats (hours watched, average rating, etc.) — the last item from the original roadmap
-- Export/import of `progress.json` (it's gitignored, so nothing backs it up)
 - Public deploy (would mean moving save data to localStorage; see the session notes)
 - 14 character portraits still to be hand-picked
 - Possibly: Fox-era movies, an anime section

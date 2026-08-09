@@ -30,6 +30,7 @@ async function init() {
 
   el('char-search').addEventListener('input', renderCharacters);
   bindTitleBrowse();
+  bindSaveData();
 
   // The close button lives inside #modal-content, which is re-rendered on every
   // open — so listen on the backdrop instead of binding the button directly
@@ -367,7 +368,7 @@ function footerHtml() {
   return `
     <footer class="site-footer">
       <p class="tmdb-credit">
-        <span class="tmdb-logo--slot">TMDB</span>
+        <img class="tmdb-logo" src="assets/tmdb.svg" alt="TMDB" width="273" height="36">
         This product uses the TMDB API but is not endorsed or certified by TMDB.
       </p>
       <p>Unofficial fan project. Not affiliated with, endorsed by or sponsored by Marvel or
@@ -379,6 +380,102 @@ function footerHtml() {
 function mountFooters() {
   document.querySelectorAll('.screen-inner').forEach(inner => {
     if (!inner.querySelector('.site-footer')) inner.insertAdjacentHTML('beforeend', footerHtml());
+  });
+}
+
+// --- Save data: export / import ---
+// progress.json is the one file in the project that can't be regenerated, and
+// it's gitignored, so nothing backs it up. Export writes a self-describing
+// wrapper; import hands the file to the server, which validates it whole and
+// keeps a copy of what it replaced.
+
+function saveDataStatus(message, isError) {
+  const node = el('save-data-status');
+  if (!node) return;
+  node.textContent = message;
+  node.classList.toggle('is-error', !!isError);
+}
+
+// A save file is either an export wrapper or a bare copy of progress.json
+function progressFromFile(parsed) {
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return null;
+  const p = parsed.progress && typeof parsed.progress === 'object' ? parsed.progress : parsed;
+  return (p && typeof p === 'object' && !Array.isArray(p)) ? p : null;
+}
+
+function describeSave(p) {
+  const entries = Object.entries(p).filter(([id]) => id !== '_watching');
+  const watched = entries.filter(([, v]) => v && v.watched).length;
+  const rated = entries.filter(([, v]) => v && typeof v.rating === 'number').length;
+  return `${watched} watched, ${rated} rated`;
+}
+
+async function exportProgress() {
+  try {
+    // Read from disk rather than the in-memory copy, so the file is what's saved
+    const data = await fetch('/api/progress').then(r => r.json());
+    const stamp = new Date().toISOString().slice(0, 10);
+    const name = `mcu-field-log-${stamp}.json`;
+    const payload = {
+      app: 'mcu-field-log',
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      progress: data
+    };
+    const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }));
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = name;
+    a.click();
+    URL.revokeObjectURL(url);
+    saveDataStatus(`Saved ${name} — ${describeSave(data)}.`);
+  } catch (err) {
+    saveDataStatus(`Export failed: ${err.message}`, true);
+  }
+}
+
+async function importProgress(file) {
+  let incoming;
+  try {
+    incoming = progressFromFile(JSON.parse(await file.text()));
+  } catch (err) {
+    return saveDataStatus(`That file isn't valid JSON (${err.message}).`, true);
+  }
+  if (!incoming) return saveDataStatus("That file doesn't look like an MCU Field Log save.", true);
+
+  const ok = confirm(
+    `Restore from ${file.name}?\n\n` +
+    `That file: ${describeSave(incoming)}\n` +
+    `Right now: ${describeSave(progress)}\n\n` +
+    `Your current save will be replaced. A copy of it is kept at data/progress.backup.json.`
+  );
+  if (!ok) return saveDataStatus('Import cancelled — nothing changed.');
+
+  const res = await fetch('/api/progress/import', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(incoming)
+  });
+  const body = await res.json();
+  if (!res.ok) return saveDataStatus(`Import refused: ${body.error}`, true);
+
+  // Every screen reads from the progress we loaded at startup — reload rather
+  // than try to re-sync each one
+  location.reload();
+}
+
+function bindSaveData() {
+  const exportBtn = el('export-btn');
+  const importBtn = el('import-btn');
+  const fileInput = el('import-file');
+  if (!exportBtn || !importBtn || !fileInput) return;
+
+  exportBtn.addEventListener('click', exportProgress);
+  importBtn.addEventListener('click', () => fileInput.click());
+  fileInput.addEventListener('change', () => {
+    const file = fileInput.files[0];
+    fileInput.value = ''; // so picking the same file twice still fires change
+    if (file) importProgress(file);
   });
 }
 
