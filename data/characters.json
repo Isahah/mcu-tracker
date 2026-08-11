@@ -124,7 +124,7 @@
       "phases": {
         "phase-1": "Thor detonates his identity: he's a Frost Giant foundling Odin took from Jotunheim, and the discovery curdles into a grab for the throne that ends with him letting go into the void. He returns in The Avengers as the scepter-wielding face of the Chitauri invasion — beaten, memorably, into the floor by the Hulk.",
         "phase-2": "In The Dark World he's let out of prison to help avenge Frigga — the one person he never stopped loving — fakes his death in Svartalfheim, and quietly takes Asgard's throne wearing Odin's face.",
-        "phase-3": "Ragnarok exposes the con and drags him through Sakaar toward something like redemption — he comes back for Thor when it counts. He also pockets the Tesseract as Asgard burns, which is why Thanos' ship finds them: Infinity War opens with Thanos killing him, for real, 'no resurrections this time.'",
+        "phase-3": " Loki arrives on Sakaar after Hela knocks both him and Thor out of the Bifrost stream. Loki used his charm to quickly befriend Sakaar's ruler, the Grandmaster. After escaping and returning to Asgard he pockets the Tesseract as Asgard burns, which is why Thanos' ship finds them: Infinity War opens with Thanos killing him, for real, 'no resurrections this time.'",
         "phase-4": "Except a 2012 variant escaped with the Tesseract during Endgame's heist — and the Loki series is what the TVA does about it. Two seasons take him from prisoner to believer: Mobius, Sylvie, He Who Remains' throne at the end of time, and finally Loki seizing a purpose that was never glorious — holding every dying timeline together himself, alone, as the God of Stories."
       }
     },
@@ -247,6 +247,39 @@
         "phase-1": "Captain Marvel (set in 1995): a Kree-brainwashed soldier called 'Vers' crash-lands into her own erased past, discovers she's human test pilot Carol Danvers, and that her Kree mentors are the villains of the story. She unlocks her full Binary power, sends the Skrulls off to find a home, and leaves Fury a modified pager — and the name for his initiative.",
         "phase-3": "The pager gets answered: she blazes in during Endgame to haul Tony and Nebula home, single-handedly guts Thanos' flagship, and goes toe-to-toe with him over the gauntlet.",
         "phase-5": "The Marvels forces the loner to team up: her light powers quantum-entangle with Kamala's and Monica's, swapping their places mid-fight while Dar-Benn — fallout of Carol's own war on the Kree, who call her 'the Annihilator' — tears jump points through space. She ends it reigniting Hala's sun, and finally stops carrying the galaxy alone."
+      }
+    },
+    {
+      "id": "maria-rambeau",
+      "name": "Maria Rambeau",
+      "description": "A former United States Air Force pilot and Carol Danvers' best friend, who becomes a skilled fighter pilot and a loving mother of Monica Rambeau.",
+      "titles": ["captain-marvel", "doctor-strange-2", "the-marvels"],
+      "image": "/img/characters/maria-rambeau.webp",
+      "phases": {
+        "phase-3": "Maria Rambeau, who went by the call sign 'Photon', was an American military pilot. When Carol went missing in a plane crash and was thought to be dead, Maria was heartbroken. However, the two reunited six years later during a space war, and Maria helped Carol remember her past life on Earth. Maria then teamed up with Carol, Nick Fury, and an alien named Talos to find a hidden space lab and save a group of alien refugees. During a spaceship chase in the desert, Maria outsmarted and defeated a Kree warrior named Minn-Erva.",
+        "phase-4": "Years later, Maria became the boss of S.W.O.R.D., but she sadly got very sick with cancer in 2018. While she was in the hospital, her daughter vanished in Thanos's famous snap. Though Maria's health briefly improved, she ultimately passed away from her illness in 2020 before her daughter could return.",
+        "phase-5": "While the main version of Maria died, different versions of her exist across the multiverse. In one parallel universe, she became Captain Marvel and joined a superhero group called the Illuminati before fighting the Scarlet Witch. In another alternate reality, she operates as the powerful hero Binary alongside the X-Men, where she eventually meets a stranded Monica."
+      }
+    },
+    {
+      "id": "yon-rogg",
+      "name": "Yon-Rogg",
+      "description": "Yon-Rogg is a high-ranking military leader for the Kree Empire who runs an elite team called Starforce. He completely believes in the Kree way of life and is totally loyal to their leader, the Supreme Intelligence.",
+      "titles": ["captain-marvel"],
+      "image": "/img/characters/yon-rogg.webp",
+      "phases": {
+        "phase-3": "During a war between two alien groups called the Kree and the Skrulls, Yon-Rogg and his partner Minn-Erva were sent to Earth.Mar-Vell and steal a powerful energy core she was building. The core was destroyed, but an American pilot absorbed its energy. Yon-Rogg took this pilot back with him, named her Vers, and trained her. Years later, the Kree team trapped a group of Skrull refugees on Earth. Vers eventually found out that Earth was her real home and that the Kree had lied to her. Yon-Rogg got permission from his boss, Ronan, to capture her. In the end, Yon-Rogg lost the battle. He failed to kill the Skrulls or get the power core back. Vers beat him easily and sent him packing back to his home planet with a warning for his leader."
+      }
+    },
+    {
+      "id": "goose",
+      "name": "Goose the Flerken",
+      "description": "A cat-like alien with tentacles and a pocket dimension in its stomach.",
+      "titles": ["captain-marvel", "the-marvels"],
+      "image": "/img/characters/goose.webp",
+      "phases": {
+        "phase-3": "Goose is an alien creature called a Flerken who originally belonged to the scientist Mar-Vell. After her owner died, Goose teamed up with Carol Danvers and Nick Fury on a mission into outer space to locate Mar-Vell's hidden laboratory. During the adventure, Goose helped rescue a group of Skrull refugees and swallowed the powerful Tesseract to keep it safe from invading Kree soldiers. Despite being a helpful ally, Goose was also the one who permanently blinded Nick Fury's left eye after scratching him with her sharp claws.",
+        "phase-5": "During an emergency on the S.A.B.E.R. space station, Nick Fury found Goose hiding inside a wall panel full of eggs. As the eggs started to hatch, Fury realized they could use the baby Flerkens to help evacuate the crowded station. Goose reunited with Carol Danvers, and together they watched as the tiny kittens used their giant hidden tentacles to safely swallow all the human agents. Because it was much easier to carry a bunch of little cats than hundreds of large people, Goose, her new kittens, Nick Fury, and Kamala Khan's family all crammed into an escape pod and safely flew back down to Earth."
       }
     },
     {
@@ -1332,6 +1365,51 @@
       }
     },
     {
+      "id": "dane-whitman",
+      "name": "Dane Whitman",
+      "description": "A history professor at the Natural History Museum in London, and the closest thing Sersi has to a normal life.",
+      "titles": ["eternals"],
+      "phases": {
+        "phase-4": "Eternals: Sersi's boyfriend, kept outside the plot for most of the film and told the truth about her only once there's no way around it. He takes it about as well as anyone could. The post-credits scene is the point of him: he opens an old case containing the Ebony Blade, a sword with his family name on it, and an unseen voice asks whether he's sure he's ready for that. Nothing has been done with him since."
+      }
+    },
+    {
+      "id": "eros",
+      "name": "Eros / Starfox",
+      "description": "A Titan-born Eternal with more charm than sense, who turns up looking for the members of the team who went missing.",
+      "titles": ["eternals"],
+      "phases": {
+        "phase-4": "Eternals: arrives in the mid-credits aboard Ted the ship, introduced by Pip the Troll as the prince of Titan and Thanos's brother. He tells the remaining Eternals he knows where their captured friends have been taken and offers to help get them back. That thread has not been picked up since."
+      }
+    },
+    {
+      "id": "khonshu",
+      "name": "Khonshu",
+      "description": "The Egyptian god of the moon, who speaks through a chosen avatar and is only ever heard by the person he has chosen.",
+      "titles": ["moon-knight"],
+      "phases": {
+        "phase-4": "Moon Knight: the voice in Marc Spector's head and the source of his powers, kept alive by a bargain Marc made when he was dying. Khonshu wants wrongdoers punished, and the other gods have no patience for how he goes about it, so they seal him in stone partway through. He is not a benevolent patron. He picked Marc partly because a fractured mind is easier to steer, he threatens to take Layla as a replacement, and the final scene reveals he kept a third personality, Jake Lockley, as his own avatar the whole time, doing the killing Marc refused to do."
+      }
+    },
+    {
+      "id": "victor-timely",
+      "name": "Victor Timely",
+      "description": "An inventor and showman at the turn of the twentieth century, selling machines that are far too advanced for the year he's selling them in.",
+      "titles": ["ant-man-3", "loki-s2"],
+      "phases": {
+        "phase-4": "First glimpsed in the Quantumania post-credits, lecturing to a small crowd in 1901 while Loki and Mobius watch from the back. In Loki season two he's the man they need: a variant of He Who Remains, working from a technical manual that Ravonna Renslayer and Miss Minutes handed to him as a child, which makes him the only person alive who can repair the Temporal Loom. He is nothing like the version who built the TVA. He's nervous, decent and badly out of his depth, and he's killed on the gangway by temporal radiation before he can finish the job."
+      }
+    },
+    {
+      "id": "bob-reynolds",
+      "name": "Bob Reynolds / Sentry",
+      "description": "A quiet man with a history of addiction and depression, who volunteered for something he didn't understand.",
+      "titles": ["thunderbolts"],
+      "phases": {
+        "phase-6": "Thunderbolts*: Valentina's real project, and the reason she wanted the rest of the team dead. Bob was a test subject in a programme meant to reproduce the super-soldier serum, and it worked far past anyone's intention, leaving him with something close to unlimited power. The problem is that it came with the depression rather than instead of it. His low is a separate thing called the Void, which blacks out Manhattan and pulls people into their own worst memories, and it can't be fought, only talked down. The team reaches him rather than beating him, which is the whole argument of the film."
+      }
+    },
+    {
       "id": "john-walker",
       "name": "John Walker",
       "description": "The government's hand-picked replacement Captain America — a decorated soldier in over his head.",
@@ -1404,6 +1482,38 @@
       "phases": {
         "phase-1": "Captain Marvel (1995): a decade-younger Ronan leads the Accusers' bombardment of Earth until Carol swats his missiles — and his fleet — out of the sky personally. 'We'll be back for the weapon.' He means her.",
         "phase-2": "Guardians of the Galaxy: the zealot who breaks his deal with Thanos the moment the orb shows him what's inside — planet-killing power in his hammer and Xandar in his sights. He's undone by a dance-off and a held hand."
+      }
+    },
+    {
+      "id": "ebony-maw",
+      "name": "Ebony Maw",
+      "description": "A member of the Black Order gifted with telekinetic abilities and loyal servant to the mad Titan Thanos.",
+      "titles": ["avengers-3", "avengers-4"],
+      "image": "/img/characters/ebony-maw_.webp",
+      "phases": {
+        "phase-3": "Following his involvement in the massacre of half the Asgardian race, Maw was sent to Earth with Cull Obsidian to seize the Time Stone, a mission that culminated in him abducting and torturing Doctor Strange to break his protective enchantments. His campaign was cut short aboard his own spaceship, where a rescue exploit by Iron Man blew Maw out into the deadly vacuum of open space, ending his life."
+      }
+    },
+    {
+      "id": "cull-obsidian",
+      "name": "Cull Obsidian",
+      "description": "A member of the Black Order and loyal servant to the mad Titan Thanos.",
+      "titles": ["avengers-3", "avengers-4"],
+      "image": "/img/characters/cull-obsidian.webp",
+      "phases": {
+        "phase-3": "Helped Thanos to gather all the Infinity Stones. He fought against the Avengers on earth after attacking the ship carrying the homeless Asgardians. He receoved a prosthetic arm after losing his original against Iron Man, Doctor Strange, Wong, and Spider-Man. He was later killed by Banner in their attack on Wakanda."
+      }
+    },
+    {
+      "id": "collector",
+      "name": "The Collector",
+      "description": "A cosmic entity who collects rare and valuable items from across the universe.",
+      "titles": ["thor-2", "guardians-1", "avengers-3"],
+      "image": "/img/characters/collector.webp",
+      "phases": {
+        "phase-2": "The Collector, whose real name is Taneleer Tivan, set up his famous museum on Knowhere, a busy space station built inside a giant mining colony. His obsession with finding the Infinity Stones started in 2013 when the Asgardians gave him the Reality Stone to keep safe. The next year, he tried to buy the Power Stone from the Guardians of the Galaxy, but that deal fell apart completely.",
+        "phase-3": "in 2018 when Thanos attacked Knowhere, wrecked the place, and stole the Reality Stone. After everyone was brought back from the Blip, Tivan decided to leave it all behind and sold what was left of Knowhere to the Guardians of the Galaxy."
+        
       }
     }
   ]

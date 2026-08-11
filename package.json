@@ -4,7 +4,8 @@
   "description": "Personal Marvel watch tracker - narrative order, ratings, spoiler-safe post-credit indicators",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "check": "node scripts/check-data.js"
   },
   "dependencies": {
     "express": "^4.19.2"

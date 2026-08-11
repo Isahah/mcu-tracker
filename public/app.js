@@ -1019,9 +1019,14 @@ function beforeWatchHtml(entry) {
   if (bw.context) {
     blocks.push(`<div><p class="kicker">What you need to know going in</p><p style="margin-top:8px">${bw.context}</p></div>`);
   }
-  if (entry.watchFor && entry.watchFor.length) {
+  // The chip row sits inside "Before you watch", so it's bound by the same
+  // no-spoilers contract as everything else in here: naming someone can itself
+  // give the game away. nameIsSpoiler keeps an item out of this row while it
+  // still appears in whichever panels its payloads earn it.
+  const namable = (entry.watchFor || []).filter(w => !w.nameIsSpoiler);
+  if (namable.length) {
     blocks.push(`<div><p class="kicker">People &amp; things to watch for</p>
-      <div class="chip-row" style="margin-top:10px">${entry.watchFor.map(watchForTagHtml).join('')}</div></div>`);
+      <div class="chip-row" style="margin-top:10px">${namable.map(watchForTagHtml).join('')}</div></div>`);
   }
   if (bw.watchFirst && bw.watchFirst.length) {
     blocks.push(`<div><p class="kicker">Watch these first</p>

@@ -13,6 +13,7 @@ Its whole point is **narrative order without spoilers**: every title is placed b
 - `npm install` — one-time dependency install (Express is the only dependency)
 - `npm start` — runs `node server.js`, serves at http://localhost:3939
 - `node scripts/fetch-artwork.js` — pull TMDB poster/backdrop paths (`--refresh` re-fetches everything, `--dry-run` writes nothing)
+- `npm run check` — read-only validator over the three data files. Run it after hand-editing. Catches JSON syntax errors with a line number, missing required fields, duplicate ids, `narrativeOrder` collisions and gaps, references that point at nothing (`watchFirst`, `characterId`, character `titles`), misspelled field names, missing portrait files, and save keys orphaned by a renamed id. Exits non-zero on errors. `MCU_DATA=<dir>` points it at a copy.
 - No test suite, linter, or build step.
 
 ## Architecture
@@ -39,7 +40,7 @@ Required on every entry: `id`, `title`, `year`, `narrativeOrder`, `releaseOrder`
 - `optionalViewing` — an **array** of strings rendered as chips under "Helps, but optional" (a plain string still renders as prose). An item matching an entry id becomes a link to that title; anything else (films outside the tracker) renders as a plain chip.
 - `inUniverseSetting` / `timeSkip` — only when genuinely established, never guessed. Both render as hero chips; `timeSkip` is skipped as a chip if over 60 chars (still appears in "When this happens").
 - `deepDive: { plot, significance, orderNote }` — full plot, why it matters, why it sits here.
-- `watchFor: [{ name, thisFilm, future, spoils?, characterId? }]` — the two-tier spoiler system.
+- `watchFor: [{ name, thisFilm, future, spoils?, characterId?, nameIsSpoiler? }]` — the two-tier spoiler system. Each payload is optional and independently placed: `thisFilm` puts the item in the brass panel, `future` in the crimson one, and the name alone appears as a chip under "People & things to watch for". Omit a field (don't write `""`) to keep the item out of that panel. `nameIsSpoiler: true` withholds the name from the chip row — for when naming someone up front is itself the spoiler — while its payloads still render; if every item is hidden, the whole row and its heading disappear.
 - `postCredit: { count, type, timing?, skipNote? }` — **only `skipNote` still renders.** Counts and timing were removed as noise by the design. `skipNote` survives because it's spoiler protection, not trivia (currently Black Widow and Ant-Man and the Wasp only).
 - `released: false` + `expectedRelease` — excluded from watched-count denominators.
 - series only: `seasons: [{ seasonNumber, episodes: [...] }]` — always nested under `seasons`, even for one season.
@@ -93,6 +94,8 @@ Disclosure panels use `aria-expanded` on the button plus a hidden body (`bindRev
 ### Two-tier spoiler system
 
 Each `watchFor` item has two payloads. **Plot & context** (brass panel) holds the deep dive plus each item's `thisFilm`; **Spoilers for future films** (crimson panel) holds each `future` with its `spoils` tag. Don't merge them — finishing one title must not spoil a different one.
+
+The chip row under "People & things to watch for" is inside **Before you watch**, so it carries the same no-spoilers contract as the rest of that panel: a name printed there is a promise that the name alone gives nothing away. When it does, set `nameIsSpoiler: true` rather than dropping the item — the payoff still gets written down, just behind a toggle.
 
 ### Character database (`data/characters.json`)
 

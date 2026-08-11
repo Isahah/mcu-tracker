@@ -25,10 +25,10 @@
             "orderNote": "It's placed first in narrative order because, chronologically, it's simply the earliest MCU story — set in the 1940s, decades before every other film on this list."
           },
           "watchFor": [
-            { "name": "Bucky Barnes", "thisFilm": "Falls from a speeding Hydra train and is presumed dead.", "future": "Secretly recovered and brainwashed by Hydra as the Winter Soldier — reappears in Captain America: The Winter Soldier.", "spoils": "Captain America: The Winter Soldier" },
-            { "name": "Red Skull", "thisFilm": "Vanishes after touching the Tesseract's energy, seemingly disintegrated.", "future": "Resurfaces as the guardian of the Soul Stone on Vormir in Avengers: Infinity War and Endgame.", "spoils": "Avengers: Infinity War / Endgame" },
+            { "name": "Bucky Barnes", "characterId": "bucky-barnes", "thisFilm": "Falls from a speeding Hydra train and is presumed dead.", "future": "Secretly recovered and brainwashed by Hydra as the Winter Soldier — reappears in Captain America: The Winter Soldier.", "spoils": "Captain America: The Winter Soldier" },
+            { "name": "Red Skull", "characterId": "red-skull", "thisFilm": "Vanishes after touching the Tesseract's energy, seemingly disintegrated.", "future": "Resurfaces as the guardian of the Soul Stone on Vormir in Avengers: Infinity War and Endgame.", "spoils": "Avengers: Infinity War / Endgame" },
             { "name": "The Tesseract", "thisFilm": "Recovered from the ocean floor by Howard Stark after the battle.", "future": "Becomes central to Loki's invasion in The Avengers, then the target of a time heist in Avengers: Endgame.", "spoils": "The Avengers / Avengers: Endgame" },
-            { "name": "Peggy Carter", "thisFilm": "Promises to wait for Steve, then loses him to the ice for decades.", "future": "Goes on to help found S.H.I.E.L.D.; remains an emotional throughline for Steve through Avengers: Endgame.", "spoils": "Avengers: Endgame" }
+            { "name": "Peggy Carter", "characterId": "peggy-carter", "thisFilm": "Promises to wait for Steve, then loses him to the ice for decades.", "future": "Goes on to help found S.H.I.E.L.D.; remains an emotional throughline for Steve through Avengers: Endgame.", "spoils": "Avengers: Endgame" }
           ],
           "postCredit": { "count": 1, "type": "post" }
         },
@@ -52,7 +52,7 @@
             "orderNote": "Comes third in narrative order because, story-wise, its 2008 'present day' setting happens after Captain America's WWII era and Captain Marvel's 1995 setting, even though it was the very first MCU film ever released."
           },
           "watchFor": [
-            { "name": "Nick Fury / Avengers Initiative", "thisFilm": "Shows up in Tony's home in the film's post-credit scene.", "future": "Reveals the wider 'Avengers Initiative,' seeding the whole team-up storyline.", "spoils": "The Avengers" },
+            { "name": "Nick Fury / Avengers Initiative", "characterId": "nick-fury", "thisFilm": "Shows up in Tony's home in the film's post-credit scene.", "future": "Reveals the wider 'Avengers Initiative,' seeding the whole team-up storyline.", "spoils": "The Avengers" },
             { "name": "\"I am Iron Man\"", "thisFilm": "Tony publicly reveals himself as Iron Man instead of keeping a secret identity.", "future": "Sets a precedent of openness that shapes how he handles being a hero for the rest of the saga." }
           ],
           "postCredit": { "count": 1, "type": "post" }
@@ -78,7 +78,7 @@
           },
           "watchFor": [
             { "name": "General Ross", "characterId": "thaddeus-ross", "thisFilm": "Leads the military manhunt for Bruce Banner.", "future": "Returns years later as U.S. Secretary of State pushing the Sokovia Accords, and eventually becomes President.", "spoils": "Captain America: Civil War / Brave New World" },
-            { "name": "Emil Blonsky / Abomination", "thisFilm": "Injected with a version of the super-soldier serum, becoming the monstrous Abomination.", "future": "Resurfaces decades later, imprisoned, in Shang-Chi and She-Hulk: Attorney at Law.", "spoils": "Shang-Chi / She-Hulk" },
+            { "name": "Emil Blonsky / Abomination", "characterId": "emil-blonsky", "thisFilm": "Injected with a version of the super-soldier serum, becoming the monstrous Abomination.", "future": "Resurfaces decades later, imprisoned, in Shang-Chi and She-Hulk: Attorney at Law.", "spoils": "Shang-Chi / She-Hulk" },
             { "name": "Tony Stark cameo", "characterId": "tony-stark", "thisFilm": "Meets with General Ross about a 'team' being put together.", "future": "First hint that Stark and the super-soldier program are connected, foreshadowing the Avengers Initiative.", "spoils": "The Avengers" }
           ],
           "postCredit": { "count": 1, "type": "post" }
@@ -103,8 +103,8 @@
             "orderNote": "Follows Iron Man directly since it's a straightforward sequel continuing Tony's ongoing story a couple of years later."
           },
           "watchFor": [
-            { "name": "Black Widow / Natasha Romanoff", "thisFilm": "Introduced as 'Natalie Rushman,' secretly a S.H.I.E.L.D. plant inside Stark Industries.", "future": "Becomes a founding Avenger.", "spoils": "The Avengers" },
-            { "name": "Nick Fury / S.H.I.E.L.D.", "thisFilm": "Formally recruits Tony into the Avengers Initiative by film's end.", "future": "Sets the team-building plot of The Avengers in motion.", "spoils": "The Avengers" },
+            { "name": "Black Widow / Natasha Romanoff", "characterId": "natasha-romanoff", "thisFilm": "Introduced as 'Natalie Rushman,' secretly a S.H.I.E.L.D. plant inside Stark Industries.", "future": "Becomes a founding Avenger.", "spoils": "The Avengers" },
+            { "name": "Nick Fury / S.H.I.E.L.D.", "characterId": "nick-fury", "thisFilm": "Formally recruits Tony into the Avengers Initiative by film's end.", "future": "Sets the team-building plot of The Avengers in motion.", "spoils": "The Avengers" },
             { "name": "Mjolnir (post-credit)", "thisFilm": "A S.H.I.E.L.D. team discovers a hammer embedded in a crater in the desert.", "future": "Leads directly into the plot of Thor.", "spoils": "Thor" }
           ],
           "postCredit": { "count": 1, "type": "post" }
@@ -129,8 +129,8 @@
             "orderNote": "Placed sixth because its story wraps up right before The Avengers, with Loki's escape directly setting up that film's plot."
           },
           "watchFor": [
-            { "name": "Loki", "thisFilm": "Learns the truth about his heritage and falls into the void after losing his claim to the throne.", "future": "Resurfaces as the villain of The Avengers.", "spoils": "The Avengers" },
-            { "name": "Hawkeye (cameo)", "thisFilm": "Appears briefly as a S.H.I.E.L.D. sniper watching Thor.", "future": "Joins the team properly in The Avengers.", "spoils": "The Avengers" },
+            { "name": "Loki", "characterId": "loki", "thisFilm": "Learns the truth about his heritage and falls into the void after losing his claim to the throne.", "future": "Resurfaces as the villain of The Avengers.", "spoils": "The Avengers" },
+            { "name": "Hawkeye (cameo)", "characterId": "clint-barton", "thisFilm": "Appears briefly as a S.H.I.E.L.D. sniper watching Thor.", "future": "Joins the team properly in The Avengers.", "spoils": "The Avengers" },
             { "name": "The Tesseract (mid-credit)", "thisFilm": "Nick Fury tells Loki (through a possessed Selvig) it's 'more than power.'", "future": "Sets up an outside force manipulating Loki's actions in The Avengers.", "spoils": "The Avengers" }
           ],
           "postCredit": { "count": 1, "type": "mid" }
@@ -157,7 +157,7 @@
           },
           "watchFor": [
             { "name": "Loki's scepter", "thisFilm": "Used to control minds and open the portal for the Chitauri invasion.", "future": "Later revealed to contain the Mind Stone — becomes Vision, and gives Wanda and Pietro their powers, in Age of Ultron.", "spoils": "Avengers: Age of Ultron" },
-            { "name": "Thanos (post-credit)", "thisFilm": "Shown smiling after learning of the Chitauri's defeat.", "future": "First tease of the Mad Titan, who becomes the driving antagonist of the whole Infinity Saga.", "spoils": "Avengers: Infinity War / Endgame" },
+            { "name": "Thanos (post-credit)", "characterId": "thanos", "thisFilm": "Shown smiling after learning of the Chitauri's defeat.", "future": "First tease of the Mad Titan, who becomes the driving antagonist of the whole Infinity Saga.", "spoils": "Avengers: Infinity War / Endgame" },
             { "name": "Loki's fate", "characterId": "loki", "thisFilm": "Captured and placed in chains for the trip back to Asgard.", "future": "Sets up Thor: The Dark World, where he escapes custody again.", "spoils": "Thor: The Dark World" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
@@ -215,7 +215,7 @@
           },
           "watchFor": [
             { "name": "The Aether / Reality Stone", "thisFilm": "Handed off to the Collector for safekeeping in the mid-credit scene.", "future": "Later glimpsed in his collection in Guardians of the Galaxy, then eventually claimed by Thanos.", "spoils": "Guardians of the Galaxy / Avengers: Infinity War" },
-            { "name": "Loki (disguised as Odin)", "thisFilm": "Secretly takes the throne of Asgard in the film's final twist.", "future": "The deception is revisited at the start of Thor: Ragnarok.", "spoils": "Thor: Ragnarok" }
+            { "name": "Loki (disguised as Odin)", "characterId": "loki", "thisFilm": "Secretly takes the throne of Asgard in the film's final twist.", "future": "The deception is revisited at the start of Thor: Ragnarok.", "spoils": "Thor: Ragnarok" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -239,7 +239,7 @@
             "orderNote": "A direct sequel to Cap's arc, unfolding two years after The Avengers — the same rough period as Iron Man 3 and Thor: The Dark World."
           },
           "watchFor": [
-            { "name": "Bucky Barnes / Winter Soldier", "thisFilm": "Survives the Triskelion's collapse and disappears into hiding.", "future": "His search for redemption drives Captain America: Civil War and beyond.", "spoils": "Captain America: Civil War" },
+            { "name": "Bucky Barnes / Winter Soldier", "characterId": "bucky-barnes", "thisFilm": "Survives the Triskelion's collapse and disappears into hiding.", "future": "His search for redemption drives Captain America: Civil War and beyond.", "spoils": "Captain America: Civil War" },
             { "name": "Wanda & Pietro Maximoff (mid-credit)", "thisFilm": "Shown as twins being experimented on by Hydra alongside Loki's scepter.", "future": "Join the fight against Ultron in Avengers: Age of Ultron.", "spoils": "Avengers: Age of Ultron" },
             { "name": "Hydra's infiltration of S.H.I.E.L.D.", "thisFilm": "Exposed and dismantled, collapsing S.H.I.E.L.D. as an organization.", "future": "Reshapes how the Avengers operate — with no safety net — in every film afterward." }
           ],
@@ -266,7 +266,7 @@
           },
           "watchFor": [
             { "name": "The Orb / Power Stone", "thisFilm": "Delivered to the Nova Corps for safekeeping after Ronan's defeat.", "future": "The first Infinity Stone the audience watches change hands, foreshadowing Thanos's collection.", "spoils": "Avengers: Infinity War" },
-            { "name": "Thanos", "thisFilm": "Appears briefly on-screen receiving news of Ronan's failure.", "future": "Ties the cosmic side of the MCU directly to the coming Avengers films.", "spoils": "Avengers: Infinity War" },
+            { "name": "Thanos", "characterId": "thanos", "thisFilm": "Appears briefly on-screen receiving news of Ronan's failure.", "future": "Ties the cosmic side of the MCU directly to the coming Avengers films.", "spoils": "Avengers: Infinity War" },
             { "name": "Yondu & Peter Quill's parentage", "thisFilm": "Yondu is shown to have withheld Quill from his real father for unclear reasons.", "future": "Sets up the reveal of his father, Ego, in Vol. 2.", "spoils": "Guardians of the Galaxy Vol. 2" }
           ],
           "postCredit": { "count": 1, "type": "post" }
@@ -319,7 +319,7 @@
           },
           "watchFor": [
             { "name": "Vision & the Mind Stone", "characterId": "vision", "thisFilm": "Created using Loki's scepter and its Mind Stone, then joins the Avengers.", "future": "Later hunted by Thanos specifically for the Mind Stone in Infinity War.", "spoils": "Avengers: Infinity War" },
-            { "name": "Wanda Maximoff", "thisFilm": "Joins the Avengers permanently after her brother Pietro's death.", "future": "Her grief becomes the central subject of WandaVision.", "spoils": "WandaVision" },
+            { "name": "Wanda Maximoff", "characterId": "wanda-maximoff", "thisFilm": "Joins the Avengers permanently after her brother Pietro's death.", "future": "Her grief becomes the central subject of WandaVision.", "spoils": "WandaVision" },
             { "name": "Thanos and the Gauntlet (mid-credit)", "characterId": "thanos", "thisFilm": "Thanos puts on the Infinity Gauntlet himself, done waiting on subordinates.", "future": "Sets the endgame of the whole saga in motion.", "spoils": "Avengers: Infinity War" },
             { "name": "Wakanda / vibranium", "thisFilm": "Ultron's body is forged from vibranium sourced from Wakanda.", "future": "First real spotlight on Wakanda, foreshadowing Black Panther.", "spoils": "Black Panther" }
           ],
@@ -378,7 +378,7 @@
             "orderNote": "Placed last in Phase Two as the most 'street level' story, unfolding shortly after Age of Ultron with a brief cameo tying Scott into the wider Avengers world."
           },
           "watchFor": [
-            { "name": "Falcon (mid-credit)", "thisFilm": "Scott tests his shrinking power in a fight against Falcon at the Avengers compound.", "future": "Ties Ant-Man into the wider team ahead of Civil War.", "spoils": "Captain America: Civil War" },
+            { "name": "Falcon (mid-credit)", "characterId": "sam-wilson", "thisFilm": "Scott tests his shrinking power in a fight against Falcon at the Avengers compound.", "future": "Ties Ant-Man into the wider team ahead of Civil War.", "spoils": "Captain America: Civil War" },
             { "name": "The Wasp suit (post-credit)", "characterId": "hope-van-dyne", "thisFilm": "Hank Pym reveals Hope's late mother's suit, now upgraded for her.", "future": "She becomes the Wasp in Ant-Man and the Wasp.", "spoils": "Ant-Man and the Wasp" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
@@ -403,9 +403,9 @@
             "orderNote": "Opens Phase Three as the direct fallout of Age of Ultron's collateral damage, about a year later."
           },
           "watchFor": [
-            { "name": "Bucky Barnes", "thisFilm": "Cleared of some crimes but voluntarily frozen in Wakanda to be safe from remaining Hydra triggers.", "future": "Sets up his role in Black Panther and Avengers: Infinity War.", "spoils": "Black Panther / Avengers: Infinity War" },
-            { "name": "T'Challa / Black Panther", "thisFilm": "Becomes king of Wakanda after his father's death during the UN bombing.", "future": "Launches directly into his own solo film.", "spoils": "Black Panther" },
-            { "name": "Peter Parker (Spider-Man)", "thisFilm": "Recruited by Tony Stark for the airport battle — his MCU debut.", "future": "Leads directly into Spider-Man: Homecoming.", "spoils": "Spider-Man: Homecoming" },
+            { "name": "Bucky Barnes", "characterId": "bucky-barnes", "thisFilm": "Cleared of some crimes but voluntarily frozen in Wakanda to be safe from remaining Hydra triggers.", "future": "Sets up his role in Black Panther and Avengers: Infinity War.", "spoils": "Black Panther / Avengers: Infinity War" },
+            { "name": "T'Challa / Black Panther", "characterId": "tchalla", "thisFilm": "Becomes king of Wakanda after his father's death during the UN bombing.", "future": "Launches directly into his own solo film.", "spoils": "Black Panther" },
+            { "name": "Peter Parker (Spider-Man)", "characterId": "peter-parker", "thisFilm": "Recruited by Tony Stark for the airport battle — his MCU debut.", "future": "Leads directly into Spider-Man: Homecoming.", "spoils": "Spider-Man: Homecoming" },
             { "name": "Zemo", "characterId": "helmut-zemo", "thisFilm": "Achieves his goal of tearing the Avengers apart, then is imprisoned.", "future": "Resurfaces years later as the Baron Zemo of The Falcon and the Winter Soldier.", "spoils": "The Falcon and the Winter Soldier" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
@@ -431,10 +431,10 @@
             "orderNote": "Set in 2016, directly after Civil War, so it's grouped here narratively rather than by its actual 2021 release."
           },
           "watchFor": [
-            { "name": "Yelena Belova", "thisFilm": "Reunites with her 'sister' Natasha and helps take down the Red Room.", "future": "Becomes the next Black Widow, continuing the legacy through Hawkeye and beyond.", "spoils": "Hawkeye" },
-            { "name": "Valentina Allegra de Fontaine (mid-credit)", "thisFilm": "A mysterious government operative approaches Yelena at Natasha's grave.", "future": "Later revealed to be assembling her own team of antiheroes across Phase Four and Five.", "spoils": "Thunderbolts*" }
+            { "name": "Yelena Belova", "characterId": "yelena-belova", "thisFilm": "Reunites with her 'sister' Natasha and helps take down the Red Room.", "future": "Becomes the next Black Widow, continuing the legacy through Hawkeye and beyond.", "spoils": "Hawkeye" },
+            { "name": "Valentina Allegra de Fontaine (mid-credit)", "characterId": "valentina", "thisFilm": "A mysterious government operative approaches Yelena at Natasha's grave.", "future": "Later revealed to be assembling her own team of antiheroes across Phase Four and Five.", "spoils": "Thunderbolts*" }
           ],
-          "postCredit": { "count": 1, "type": "mid", "skipNote": "Skip this scene if you're following narrative order — it's set after her Endgame, which you haven't watched yet at this point. Come back and watch it right before Hawkeye, S1 Disney+." }
+          "postCredit": { "count": 1, "type": "mid", "skipNote": "Skip this movie's credit scene if you're following narrative order. It's set after her Endgame, which you haven't watched yet at this point. Come back and watch it right before Hawkeye, S1 Disney+." }
         },
         {
           "id": "black-panther",
@@ -457,9 +457,9 @@
             "orderNote": "Set only days after Civil War, so it's placed right behind it even though it released two years later."
           },
           "watchFor": [
-            { "name": "Bucky Barnes (post-credit)", "thisFilm": "Not present in the main story — referenced by Shuri near the end.", "future": "Revealed alive and recovering in Wakanda under the name 'White Wolf,' ahead of Infinity War.", "spoils": "Avengers: Infinity War" },
+            { "name": "Bucky Barnes (post-credit)", "characterId": "bucky-barnes", "thisFilm": "Not present in the main story — referenced by Shuri near the end.", "future": "Revealed alive and recovering in Wakanda under the name 'White Wolf,' ahead of Infinity War.", "spoils": "Avengers: Infinity War" },
             { "name": "Wakanda opens to the world", "thisFilm": "T'Challa reveals Wakanda's true technological nature to the United Nations.", "future": "Shapes Wakanda's global role for the rest of the saga." },
-            { "name": "Shuri", "thisFilm": "Established as Wakanda's chief technological genius.", "future": "Becomes central to Wakanda's future, especially after Black Panther: Wakanda Forever.", "spoils": "Black Panther: Wakanda Forever" }
+            { "name": "Shuri", "characterId": "shuri", "thisFilm": "Established as Wakanda's chief technological genius.", "future": "Becomes central to Wakanda's future, especially after Black Panther: Wakanda Forever.", "spoils": "Black Panther: Wakanda Forever" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -484,10 +484,10 @@
             "orderNote": "Set a couple of months after Civil War, continuing straight from Peter's MCU debut there."
           },
           "watchFor": [
-            { "name": "Adrian Toomes / Vulture", "thisFilm": "Defeated and imprisoned, but refuses to reveal Spider-Man's identity to a fellow inmate.", "future": "Kept alive rather than killed off, leaving the door open for a larger criminal threat later." },
+            { "name": "Adrian Toomes / Vulture", "characterId": "adrian-toomes", "thisFilm": "Defeated and imprisoned, but refuses to reveal Spider-Man's identity to a fellow inmate.", "future": "Kept alive rather than killed off, leaving the door open for a larger criminal threat later." },
             { "name": "Tony Stark's mentorship", "characterId": "tony-stark", "thisFilm": "Tony offers Peter a spot on the Avengers, which Peter turns down.", "future": "Deepens Peter's ties to the Avengers, paying off emotionally in Infinity War and Endgame.", "spoils": "Avengers: Infinity War / Endgame" }
           ],
-          "postCredit": { "count": 1, "type": "mid" }
+          "postCredit": { "count": 1, "type": "mid"}
         },
         {
           "id": "ant-man-2",
@@ -514,7 +514,7 @@
             { "name": "Janet van Dyne's rescue", "characterId": "janet-van-dyne", "thisFilm": "Successfully rescued after 30 years trapped in the Quantum Realm.", "future": "Brings her decades of Quantum Realm knowledge into the eventual fight against Thanos.", "spoils": "Avengers: Endgame" },
             { "name": "The credits-scene Snap", "thisFilm": "Scott Lang is left stranded in the Quantum Realm when his team outside disintegrates.", "future": "Explains his absence at the very start of Endgame.", "spoils": "Avengers: Endgame" }
           ],
-          "postCredit": { "count": 2, "type": "mid+post", "timing": "The mid-credit scene plays fairly early; the real post-credit scene (Scott stranded and alone) doesn't hit until after the full cast and crew crawl, so it's easy to miss if you stop early.", "skipNote": "Skip both scenes if you're following narrative order — they preview the Snap from Avengers: Infinity War before you've actually watched it happen. Come back after Infinity War; they set up Scott's situation at the start of Endgame." }
+          "postCredit": { "count": 2, "type": "mid+post", "timing": "The mid-credit scene plays fairly early; the real post-credit scene (Scott stranded and alone) doesn't hit until after the full cast and crew crawl, so it's easy to miss if you stop early.", "skipNote": "Skip both credit scenes if you're following the narative order! Come back after Infinity War." }
         },
         {
           "id": "thor-3",
@@ -538,7 +538,7 @@
           "watchFor": [
             { "name": "The refugee ship (mid-credit)", "thisFilm": "Thor leads Asgard's survivors away from their destroyed home on a massive ship.", "future": "Intercepted by an ominous, much larger vessel — the opening moment of Avengers: Infinity War.", "spoils": "Avengers: Infinity War" },
             { "name": "Asgard's destruction", "thisFilm": "Thor allows Surtur to destroy Asgard in order to defeat Hela.", "future": "Leaves Thor without a kingdom or home, shaping his arc through Endgame.", "spoils": "Avengers: Endgame" },
-            { "name": "Valkyrie", "thisFilm": "Gives up drinking and rejoins the fight to save Asgard's people.", "future": "Becomes the leader of the Asgardian refugees, continuing into New Asgard and Love and Thunder.", "spoils": "Thor: Love and Thunder" }
+            { "name": "Valkyrie", "characterId": "valkyrie", "thisFilm": "Gives up drinking and rejoins the fight to save Asgard's people.", "future": "Becomes the leader of the Asgardian refugees, continuing into New Asgard and Love and Thunder.", "spoils": "Thor: Love and Thunder" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -552,21 +552,26 @@
           "art": { "tmdbId": 299536, "poster": "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg", "backdrop": "/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg" },
           "summary": "The Avengers and their allies unite to stop the Mad Titan Thanos from collecting all six Infinity Stones and using them to wipe out half of all life in the universe.",
           "beforeWatch": {
-            "context": "The film every thread so far has been feeding, and the one that assumes the most. It opens mid-crisis with no recap, moves between Earth and deep space constantly, and expects you to already know the cosmic crew, the state of Wakanda, where the team stands after Civil War, and what the various coloured stones people keep chasing actually are.",
-            "watchFirst": ["avengers-2","cap-3","thor-3","black-panther","guardians-2","doctor-strange-1"]
+            "context": "This is the film that every film so far has been leading up to. This movie moves between Earth and deep space constantly, and expects you to already know the cosmic crew, the state of Wakanda, where the team stands after Civil War, and what the various coloured stones people keep chasing actually are. Keep a mental tally of the stones we already know about: Space Stone (Tesseract): Last seen on Asgard - Mind Stone: On Earth, embedded in Vision's forehead - Time Stone (Eye of Agamotto): Around Strange's neck in New York - Reality Stone (Aether): Left with the Collector on Knowhere - Power Stone: Locked away on Xandar in a Nova Corps vault - Soul Stone: No one knows its location.",
+            "watchFirst": ["avengers-2","cap-3","thor-3","black-panther","guardians-2","doctor-strange-1", "ant-man-2", "spiderman-1"]
           },
-          "inUniverseSetting": "2018",
+          "inUniverseSetting": "Spring of 2018",
+          "timeSkip": "Directly after the mid-credit scene of Thor: Ragnarok",
           "deepDive": {
-            "plot": "Thanos, having gathered several Infinity Stones already, launches a systematic assault across the galaxy to collect the rest — including the Mind Stone from Vision's forehead and the Time Stone from Doctor Strange — so he can snap away half of all life in the universe to 'balance' it. Despite the combined efforts of nearly every hero introduced across a decade of films, Thanos succeeds, and the film ends with half of all life, including many beloved heroes, disintegrating into dust.",
+            "plot": "Thanos, having gathered several Infinity Stones already, launches an assault across the galaxy to collect the rest, including the Mind Stone from Vision's forehead and the Time Stone from Doctor Strange, so he can snap away half of all life in the universe to 'balance' it. Despite the combined efforts of nearly every hero introduced across a decade of films, Thanos succeeds, and the film ends with half of all life, including many beloved heroes, disintegrating into dust.",
             "significance": "The culmination of the entire Infinity Saga's setup — every Infinity Stone thread from every prior film pays off here, and its devastating ending redefines the stakes for the rest of the franchise.",
             "orderNote": "Placed near the end of Phase Three as the direct payoff of a decade of Infinity Stone setups across nearly every prior film."
           },
           "watchFor": [
-            { "name": "The Snap", "thisFilm": "Thanos wipes out half of all life in the universe with a snap of his fingers.", "future": "The central crisis resolved across Endgame and referenced throughout Phase Four.", "spoils": "Avengers: Endgame" },
+            { "name": "The Snap", "thisFilm": "Thanos wipes out half of all life in the universe with a snap of his fingers.", "spoils": "Avengers: Endgame", "nameIsSpoiler": true },
+            { "name": "Avengers' team dynamic post Civil War"},
+            { "name": "Bruce Banner's memory gap", "characterId": "bruce-banner"},
+            { "name": "Wanda and Vision's relationship", "characterId": "wanda-maximoff"},
             { "name": "Nick Fury's pager (post-credit)", "characterId": "nick-fury", "thisFilm": "Fury sends a distress signal moments before disintegrating.", "future": "The page reaches Captain Marvel, who arrives to help in Endgame.", "spoils": "Avengers: Endgame" },
-            { "name": "Gamora's fate", "characterId": "gamora", "thisFilm": "Sacrificed by Thanos on Vormir to obtain the Soul Stone.", "future": "Her death becomes a major thread the team tries to reverse in Endgame.", "spoils": "Avengers: Endgame" }
+            { "name": "Gamora's fate", "characterId": "gamora", "thisFilm": "Sacrificed by Thanos on Vormir to obtain the Soul Stone.", "future": "After the death of Gamora, and the new Gamora takes her place, Peter Quill is left in a state of denial and grief.", "spoils": "Guardians of the Galaxy Vol. 3", "nameIsSpoiler": true },
+            { "name": "Loki's fate", "characterId": "loki", "thisFilm": "Loki officially dies at the hands of Thanos, trying to save his brother and the Space Stone.", "nameIsSpoiler": true }
           ],
-          "postCredit": { "count": 1, "type": "post" }
+          "postCredit": { "count": 1, "type": "post", "skipNote": "Make sure to go back and watch the Ant-Man and the Wasp post-credit scene after this movie if you're following the narrative order, as it takes place after the events of Infinity War." }
         },
         {
           "id": "captain-marvel",
@@ -576,21 +581,29 @@
           "releaseOrder": 21,
           "type": "movie",
           "art": { "tmdbId": 299537, "poster": "/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg", "backdrop": "/qAzYK4YPSWDc7aa4R43LcwRIAyb.jpg" },
-          "summary": "Set in the 1990s, an Air Force pilot with cosmic powers gets caught in a galactic conflict and uncovers hidden memories about her past on Earth.",
+          "summary": "The story follows Vers as she transforms into one of the most powerful heroes in the universe. When a huge space war between two alien groups ends up coming to Earth, she and a small group of friends find themselves trapped right in the middle of the chaos.",
           "beforeWatch": {
-            "context": "Set in 1995, half a century after the last film and over a decade before the present-day story starts. It stands almost entirely on its own. What it's quietly doing is filling in the era before any of the heroes existed, back when the organisation that eventually assembles them was a much smaller, much less certain outfit.",
+            "context": "Set in 1995, half a century after the WWII film and over a decade before the present day story starts. Watch for younger versions of Fury and Coulson. This takes place long before they became high-ranking S.H.I.E.L.D. figures we know from The Avengers.",
             "watchFirst": []
           },
           "inUniverseSetting": "1995",
           "deepDive": {
             "plot": "Set in the mid-1990s, an amnesiac Kree soldier named Vers discovers she's actually Carol Danvers, a former U.S. Air Force pilot who gained cosmic powers from an alien energy core. Along the way she uncovers that the 'enemy' Skrulls she's been hunting are actually refugees, and that her own Kree allies have been lying to her for years. She helps the Skrulls find a new home and leaves Earth to help them resettle across the galaxy.",
-            "significance": "Introduces one of the MCU's most powerful heroes and recontextualizes Nick Fury's early career, while quietly seeding two long-term threads: the Tesseract's origins and the Skrulls' true nature, both of which pay off years later.",
-            "orderNote": "Placed second because its 1990s setting comes right after Captain America's origin chronologically, even though it was actually the 21st film released — it's grouped here by timeline, not release date."
+            "significance": "Introduces one of the MCU's most powerful heroes and recontextualizes Nick Fury's early career. It stands almost entirely on its own. What it's quietly doing is filling in the era before any of the heroes existed, back when the organisation that eventually assembles them was a much smaller outfit. It seeds two long-term threads: the Tesseract's origins and the Skrulls' true nature, both of which pay off years later. The mid-credits scene jumps straight from 1995 into the immediate aftermath of Infinity War, showing the remaining Avengers gathered around the pager Fury sent. It's also revealed that the Avengers' name was inspired by Carol's Air Force call sign, 'Avenger.'",
+            "orderNote": "Chronologically this film could be placed after Captain America: The First Avenger, but narratively this is the best place to have it. This film matches the intergalactic setting the surrounding films have, rather than placing it right after a more grounded WWII movie. This film also sets up the pager that Nick Fury uses to call Captain Marvel in Endgame, so it makes sense to place it right before Endgame."
           },
           "watchFor": [
-            { "name": "Nick Fury's eye", "characterId": "nick-fury", "thisFilm": "Scratched by Goose the 'cat' aboard a Skrull ship.", "future": "Explains the eyepatch Fury wears in every other MCU appearance." },
-            { "name": "Talos", "thisFilm": "Reveals himself as a Skrull leader seeking peace, not conquest.", "future": "Becomes a recurring ally, and is later revealed to have spent years impersonating Nick Fury.", "spoils": "Spider-Man: Far From Home" },
-            { "name": "Carol Danvers", "thisFilm": "Leaves Earth to help resettle the Skrulls, giving Fury a modified pager.", "future": "Answers Fury's distress signal at the end of Infinity War and arrives to help in Endgame.", "spoils": "Avengers: Infinity War / Endgame" }
+            { "name": "Tesseract", "thisFilm": "The last time we saw it chronologically was in Captain America: The First Avenger, when it fell into the ocean. At the end of the film we see Goose regurgitate it explaining how S.H.I.E.L.D. has it in The Avengers." },
+            { "name": "The Skrulls", "thisFilm": "Introduce the Skrulls as a distinct alien race with their own culture and motivations. They're not conquerors, but are actually refugees fleeing Kree genocide.", "future": "Sets up the Skrull-Kree conflict that will play out in later films.", "spoils": "Secret Invasion" },
+            { "name": "Return of the Kree"},
+            { "name": "Ronan the Accuser's Rank", "thisFilm": "When we met him in Guardians of the Galaxy, he was a rogue Kree extremist. In this movie, he is still an official high-ranking military leader." },
+            { "name": "Planet Hala", "future": "The planet Hala later shows up as an important location in The Marvels.", "spoils": "The Marvels" },
+            { "name": "The Supreme Intelligence", "future": "Carol Danvers later returns to Hala to destroy the Supreme Intelligence which sparks the Kree Civil War.", "spoils": "The Marvels" },
+            { "name": "Maria Rambeau", "characterId": "maria-rambeau", "future": "Carol's best friend, whose inclusion here is a setup for the broader multiverse as alternative versions of Maria appear later in the series.", "spoils": "Doctor Strange in the Multiverse of Madness/The Marvels" },
+            { "name": "Monica Rambeau", "characterId": "monica-rambeau", "thisFilm": "First appearance as Maria Rambeau's daughter as a little girl.", "future": "This movie sets up her growing up to get her own cosmic powers in WandaVision and fighting alongside Carol as an adult in The Marvels.", "spoils": "WandaVision/The Marvels" },
+            { "name": "Nick Fury's eye", "characterId": "nick-fury", "thisFilm": "Scratched by Goose the Flerken aboard a Skrull ship. A dissapointit sight" },
+            { "name": "Talos","characterId": "talos", "thisFilm": "Reveals himself as a Skrull leader seeking peace, not conquest. Is promised at the end of the film by Nick that he will find a new home for the Skrulls.", "future": "Becomes a recurring ally, and is later revealed to have spent years impersonating Nick Fury and becomes an important character in the D+ series Secret Invasion.", "spoils": "Spider-Man: Far From Home/Secret Invasion" },
+            { "name": "Goose the Flerken","characterId": "goose", "thisFilm": "A cat-like alien with tentacles and a pocket dimension in its stomach. Goose is a Flerken, an alien species that looks like cats but has dangerous abilities and a recurring presence in the MCU." }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -604,20 +617,28 @@
           "art": { "tmdbId": 299534, "poster": "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", "backdrop": "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg" },
           "summary": "With half of all life gone, the remaining Avengers assemble one final time to undo Thanos's actions, launching a desperate heist through their own history.",
           "beforeWatch": {
-            "context": "Direct continuation of Infinity War, opening on the immediate aftermath with the survivors in pieces. It is long, it is a victory lap for eleven years of films, and it rewards recognising faces and callbacks more than any other entry. The pager from the last film's final scene is answered here, so Captain Marvel is worth having fresh.",
+            "context": "Picks up in the immediate aftermath of the Snap, with the survivors in pieces. It runs three hours and it leans on recognition harder than anything else in the run, so the more of the Infinity Saga you still have fresh, the more it hands back to you. The pager Fury sent as he was dusted gets answered here, which is why Captain Marvel sits directly in front of it. Worth having straight going in, who is still standing: Tony and Nebula are stranded in space on Titan, and back on Earth it's Steve, Natasha, Thor, Bruce, Clint, Rhodey, Rocket and Okoye.",
             "watchFirst": ["avengers-3","captain-marvel"]
           },
           "inUniverseSetting": "2018–2023",
           "timeSkip": "Jumps forward 5 years partway through the film, from 2018 to 2023",
           "deepDive": {
             "plot": "Three weeks after the Snap, the surviving Avengers track down and kill Thanos, only to discover he's already destroyed the Infinity Stones, making his actions permanent. Five years later, Scott Lang's escape from the Quantum Realm reveals the possibility of time travel, and the remaining Avengers stage a 'time heist' across several past MCU films to collect past versions of the Stones and undo the Snap. Reversing the Snap brings back everyone who was dusted, but draws past-Thanos into the present for one final battle, which Tony Stark wins at the cost of his own life.",
-            "significance": "The direct culmination of the entire Infinity Saga (2008–2019), resolving the Snap, giving nearly every original Avenger a proper send-off, and passing the torch — the shield, the hammer, the mantle — to the next generation of heroes.",
-            "orderNote": "Placed near the very end of Phase Three as the literal endgame of the saga, resolving Infinity War's cliffhanger."
+            "significance": "Closes out the Infinity Saga, eleven years and twenty-two films. Every original Avenger either dies, retires or hands their job to someone else here, which is why so much of Phase Four is about people stepping into roles that used to belong to somebody more famous. It also sets the rules the rest of the MCU runs on: the way this film handles time travel, and what the Ancient One says about what happens when you remove a stone from its timeline, is the foundation the Loki series and everything multiverse-related is built on.",
+            "orderNote": "Sits at the end of Phase Three because it answers Infinity War directly. Captain Marvel goes in front of it rather than back in the 1990s where it actually takes place, so that the pager Fury sends at the end of Infinity War gets answered by someone you've already met."
           },
           "watchFor": [
-            { "name": "Steve Rogers' choice", "characterId": "steve-rogers", "thisFilm": "Returns the Infinity Stones, then chooses to live out a life in the past.", "future": "Sam Wilson takes up the shield, setting up The Falcon and the Winter Soldier and Captain America: Brave New World.", "spoils": "The Falcon and the Winter Soldier / Brave New World" },
-            { "name": "New Asgard / Valkyrie as king", "characterId": "valkyrie", "thisFilm": "Thor abdicates the throne to Valkyrie and leaves Earth with the Guardians.", "future": "Continues directly into the setup of Thor: Love and Thunder.", "spoils": "Thor: Love and Thunder" },
-            { "name": "Tony Stark's legacy", "characterId": "tony-stark", "thisFilm": "Sacrifices himself using the Infinity Stones to defeat Thanos for good.", "future": "His death and daughter Morgan's existence echo through several later films." }
+            { "name": "How the world handled five years of loss" },
+            { "name": "Professor Hulk", "characterId": "bruce-banner", "thisFilm": "Bruce turns up already merged with the Hulk, Banner's head on the Hulk's body. The film skips past how he got there and never goes back to it." },
+            { "name": "Thor's grief", "characterId": "thor", "thisFilm": "Takes the five years badly. The film plays a lot of it for laughs, which people still argue about.", "future": "Love and Thunder picks him up partway through working it out.", "spoils": "Thor: Love and Thunder" },
+            { "name": "The Ancient One's rules", "characterId": "ancient-one", "thisFilm": "Explains to Bruce that pulling a stone out of its own time doesn't rewrite history, it splits off a new branch that keeps running.", "future": "That one conversation is the whole basis for the TVA and every multiverse story that follows.", "spoils": "Loki" },
+            { "name": "Cassie Lang", "characterId": "cassie-lang", "thisFilm": "Five years older than Scott left her, which is the film's clearest measure of what the gap cost.", "future": "Grown up and building her own suit by Quantumania.", "spoils": "Ant-Man and the Wasp: Quantumania" },
+            { "name": "New Asgard", "characterId": "valkyrie", "thisFilm": "Thor hands the throne to Valkyrie and leaves with the Guardians.", "future": "Love and Thunder opens with both of those still true.", "spoils": "Thor: Love and Thunder" },
+            { "name": "Black Widow's fate", "characterId": "natasha-romanoff", "thisFilm": "Dies on Vormir, trading herself for the Soul Stone after she and Clint each try to be the one who goes.", "future": "Her death is what the Hawkeye series is reacting to, and what Yelena is still angry about years later.", "spoils": "Hawkeye/Thunderbolts*", "nameIsSpoiler": true },
+            { "name": "Tony Stark's fate", "characterId": "tony-stark", "thisFilm": "Takes the stones off Thanos and uses them himself, and it kills him.", "future": "Peter Parker spends two films out from under his shadow, and half of Phase Four is people arguing over what he left behind.", "spoils": "Spider-Man: Far From Home/Ironheart", "nameIsSpoiler": true },
+            { "name": "Steve Rogers' choice", "characterId": "steve-rogers", "thisFilm": "Goes back to return the stones and stays there, living the life he missed with Peggy.", "future": "The shield goes to Sam, which is where The Falcon and the Winter Soldier starts.", "spoils": "The Falcon and the Winter Soldier/Brave New World", "nameIsSpoiler": true },
+            { "name": "The 2012 Loki", "characterId": "loki", "thisFilm": "The heist goes wrong in 2012 and that version of Loki grabs the Tesseract and vanishes.", "future": "That's the Loki the TVA arrests in the first minutes of his series. He's a different person from the one who died in Infinity War, and the series never pretends otherwise.", "spoils": "Loki", "nameIsSpoiler": true },
+            { "name": "The 2014 Gamora", "characterId": "gamora", "thisFilm": "A Gamora from before she ever met the Guardians is pulled into the present and walks off on her own.", "future": "She's the Gamora in Vol. 3, and she doesn't remember Quill at all.", "spoils": "Guardians of the Galaxy Vol. 3", "nameIsSpoiler": true }
           ],
           "postCredit": { "count": 0, "type": "none" }
         }
@@ -644,13 +665,19 @@
           "inUniverseSetting": "Fall 2023",
           "deepDive": {
             "plot": "Grieving Vision's death and unable to process her trauma from Thanos's Snap, Wanda Maximoff unknowingly seizes control of a small town, Westview, warping reality into a series of decades-spanning sitcom pastiches with a resurrected version of Vision built from her own grief and power. As S.W.O.R.D. investigates the anomaly from outside, the show reveals that Wanda's neighbor Agatha Harkness has secretly been manipulating events to steal Wanda's uniquely powerful magic. Wanda ultimately defeats Agatha, but has to say goodbye to the family she conjured, releasing the townspeople and leaving with the Darkhold to study her own powers in isolation.",
-            "significance": "The first Disney+ MCU series, and the true beginning of Wanda's transformation from grieving Avenger into the Scarlet Witch — a title and power set that becomes central to her villainous turn two years later.",
+            "significance": "The first Disney+ series, and the show that turns Wanda from an Avenger who has lost people into the Scarlet Witch. It's also the first time the MCU spends nine episodes on one person's grief instead of a fight, and the ending sets up almost everything Wanda does afterwards.",
             "orderNote": "Placed first in Phase Four as the earliest post-Endgame story chronologically, unfolding just months after the Blip is reversed."
           },
           "watchFor": [
-            { "name": "Agatha Harkness", "thisFilm": "Revealed as the meddling neighbor who's been secretly manipulating events all along.", "future": "Gets her own spin-off, Agatha All Along.", "spoils": "Agatha All Along" },
-            { "name": "The Darkhold", "thisFilm": "Wanda is shown the 'Book of the Damned' by Agatha.", "future": "Fuels her turn toward darkness in Doctor Strange in the Multiverse of Madness.", "spoils": "Doctor Strange in the Multiverse of Madness" },
-            { "name": "White Vision", "characterId": "vision", "thisFilm": "A memory-wiped, reconstructed Vision built by S.W.O.R.D. confronts Wanda's version, then flies off.", "future": "His fate is left open for future stories." }
+            { "name": "The sitcom decades" },
+            { "name": "Monica Rambeau", "characterId": "monica-rambeau", "thisFilm": "The girl from Captain Marvel, grown up and working for S.W.O.R.D. She was dusted, came back to find her mother had died during the five years she missed, and crosses the barrier twice.", "future": "Those crossings are what give her powers, which she's still working out how to use in The Marvels.", "spoils": "The Marvels" },
+            { "name": "Jimmy Woo", "characterId": "jimmy-woo", "thisFilm": "The FBI agent from Ant-Man and the Wasp, here as the only person outside Westview treating any of it seriously." },
+            { "name": "Darcy Lewis", "characterId": "darcy-lewis", "thisFilm": "Jane Foster's intern from the Thor films, turning up with an actual doctorate and doing most of the useful thinking." },
+            { "name": "Agatha Harkness", "characterId": "agatha-harkness", "thisFilm": "The nosy neighbour, and the one who's been prodding Wanda's grief all season to work out how she does what she does.", "future": "Wanda leaves her locked inside the neighbour persona, which is exactly where Agatha All Along picks her up.", "spoils": "Agatha All Along" },
+            { "name": "The Darkhold", "thisFilm": "Agatha's book, which Wanda takes with her at the end and starts reading.", "future": "It's what she's studying when Strange comes looking for her, and it's what turns her into the villain of that film.", "spoils": "Doctor Strange in the Multiverse of Madness" },
+            { "name": "Wanda's real title", "characterId": "wanda-maximoff", "thisFilm": "Agatha names her. Not a witch with too much power, but the Scarlet Witch of prophecy, a being everyone assumed was a story.", "future": "That name is the entire reason Strange goes looking for her.", "spoils": "Doctor Strange in the Multiverse of Madness", "nameIsSpoiler": true },
+            { "name": "The twins", "thisFilm": "Wanda has Billy and Tommy inside the Hex, and they go when it does.", "future": "Hearing them call for her is what sends her across the multiverse. Billy turns up again, reincarnated and looking for his brother, in Agatha All Along.", "spoils": "Doctor Strange in the Multiverse of Madness/Agatha All Along", "nameIsSpoiler": true },
+            { "name": "The second Vision", "characterId": "vision", "thisFilm": "S.W.O.R.D. rebuilds the real body, white and blank. The two Visions talk each other to a standstill instead of fighting, and the rebuilt one leaves with his memories back and no idea what to do with them.", "future": "Nothing picks that thread up until VisionQuest.", "spoils": "VisionQuest", "nameIsSpoiler": true }
           ],
           "seasons": [
             {
@@ -668,7 +695,7 @@
                   "title": "Breaking the Fourth Wall",
                   "summary": "The sitcom format collapses as Wanda begins to lose control of the reality she's created, revealing the toll of her grief.",
                   "watchFor": [
-                    { "name": "Agatha Harkness", "thisFilm": "Revealed as the meddling neighbor who's been secretly manipulating events all along.", "future": "Becomes the central antagonist of the finale, then gets her own spin-off.", "spoils": "Agatha All Along" }
+                    { "name": "Agatha Harkness", "characterId": "agatha-harkness", "thisFilm": "Revealed as the meddling neighbor who's been secretly manipulating events all along.", "future": "Becomes the central antagonist of the finale, then gets her own spin-off.", "spoils": "Agatha All Along" }
                   ]
                 },
                 {
@@ -716,8 +743,14 @@
             "orderNote": "Follows WandaVision as the next chronological post-Blip story, unfolding over the following months."
           },
           "watchFor": [
-            { "name": "John Walker / U.S. Agent", "characterId": "john-walker", "thisFilm": "Stripped of the Captain America title after killing a man in public with the shield.", "future": "Recruited by Valentina de Fontaine as U.S. Agent, tying into her growing team of antiheroes.", "spoils": "Thunderbolts*" },
-            { "name": "Zemo", "characterId": "helmut-zemo", "thisFilm": "Helps Sam and Bucky track down the Flag-Smashers, then is returned to prison.", "future": "Remains imprisoned, but is not forgotten by Valentina's growing web of operatives." }
+            { "name": "What the shield costs" },
+            { "name": "Sam Wilson", "characterId": "sam-wilson", "thisFilm": "Hands the shield to the government in the first episode because he doesn't think it's his to carry, and spends the rest of the series working out that he was wrong about why.", "future": "He's Captain America from here on, which is where Brave New World starts.", "spoils": "Captain America: Brave New World" },
+            { "name": "Bucky Barnes", "characterId": "bucky-barnes", "thisFilm": "Out of prison, in court-ordered therapy, working through a list of people he needs to make amends to. The list is the spine of his half of the story.", "future": "Turns up on Yelena's team years later, still trying to be useful to someone.", "spoils": "Thunderbolts*" },
+            { "name": "Isaiah Bradley", "characterId": "isaiah-bradley", "thisFilm": "A super soldier from the Korean War the country used, jailed and erased. Nothing about him gets resolved, which is the point.", "future": "His grandson Eli is quietly set up, and Isaiah himself matters again in Brave New World.", "spoils": "Captain America: Brave New World" },
+            { "name": "John Walker", "characterId": "john-walker", "thisFilm": "The government's replacement Captain America, who kills a surrendering man in a public square with the shield and is stripped of the title for it.", "future": "Valentina picks him up almost immediately as U.S. Agent, and he's on the team in Thunderbolts*.", "spoils": "Thunderbolts*" },
+            { "name": "Helmut Zemo", "characterId": "helmut-zemo", "thisFilm": "Broken out of prison because they need him, useful for exactly as long as it suits him, and handed to the Dora Milaje at the end.", "future": "The Raft doesn't hold him forever.", "spoils": "Thunderbolts*" },
+            { "name": "Valentina Allegra de Fontaine", "characterId": "valentina", "thisFilm": "Turns up unannounced to recruit Walker, gives no straight answer about who she works for, and leaves.", "future": "She's been assembling a team this whole time, which is what Thunderbolts* is.", "spoils": "Thunderbolts*" },
+            { "name": "Sharon Carter", "characterId": "sharon-carter", "thisFilm": "Living in Madripoor since Civil War, abandoned by the people she helped. The last scene reveals she's the Power Broker, and she gets her pardon and her old clearance back anyway.", "future": "Left sitting inside the government with every reason to resent it, and nothing has been done with it yet.", "nameIsSpoiler": true }
           ],
           "seasons": [
             {
@@ -758,12 +791,18 @@
           "timeSkip": "Set 8 years after the 2012 Avengers battle, following the 5-year Blip",
           "deepDive": {
             "plot": "Grieving Tony Stark's death and adjusting to a post-Blip world where their entire class aged five years while they didn't, Peter Parker just wants a normal school trip to Europe — until Nick Fury recruits him to help a mysterious hero named Mysterio battle giant elemental monsters. Mysterio turns out to be a fraud, a former Stark employee using illusion technology to fake a threat and position himself as Tony's successor, and his final act of revenge is publicly outing Peter's secret identity to the world.",
-            "significance": "Closes out the Infinity Saga on a personal note for Peter, dealing with losing his mentor, and ends on the biggest cliffhanger of Phase Three — the whole world now knows Spider-Man's identity — directly setting up No Way Home.",
-            "orderNote": "Placed last in Phase Three as the true epilogue to the Infinity Saga, resolving loose ends from Endgame."
+            "significance": "The first film to show what the world is actually like after everyone came back, and the last one billed as part of the Infinity Saga. It's mostly about Peter being handed Tony's job at sixteen and not wanting it. Then it ends on the cliffhanger that the next film is entirely about.",
+            "orderNote": "Sits after the two Disney+ series because it takes place a few months further on, and because arriving here with Endgame fresh makes the grief in it land properly."
           },
           "watchFor": [
-            { "name": "Mysterio's frame job", "characterId": "quentin-beck", "thisFilm": "Exposed as a fraud by Peter, but not before recording a doctored video.", "future": "Publicly reveals Peter Parker's identity as Spider-Man — the inciting event of Spider-Man: No Way Home.", "spoils": "Spider-Man: No Way Home" },
-            { "name": "Nick Fury & Maria Hill (post-credit)", "thisFilm": "Appear to help Peter throughout the film.", "future": "Revealed to actually be Skrulls Talos and Soren, with the real Fury shown living in space.", "spoils": "Secret Invasion" }
+            { "name": "How the world talks about the Blip" },
+            { "name": "EDITH", "thisFilm": "Tony leaves Peter a pair of glasses wired to Stark defence systems, including a drone array, and the film is largely about a teenager being handed that and not being ready." },
+            { "name": "Quentin Beck", "characterId": "quentin-beck", "thisFilm": "Presents himself as a hero from another Earth. He's a former Stark employee with a grudge and a very good illusion rig, and the whole crisis is staged.", "future": "His last move is a doctored video naming Peter, which is the entire premise of No Way Home.", "spoils": "Spider-Man: No Way Home" },
+            { "name": "The multiverse pitch", "thisFilm": "Beck's cover story is that he's from another universe. It's a lie here, told before the multiverse is real, and Fury buys it without much resistance.", "future": "By the next film it isn't a lie any more.", "spoils": "Spider-Man: No Way Home" },
+            { "name": "Happy Hogan", "characterId": "happy-hogan", "thisFilm": "The last piece of Tony's world still checking in on Peter, and the one who tells him the shoes were never going to fit." },
+            { "name": "MJ and Ned", "thisFilm": "MJ works out who he is on her own, well before he tells her. It matters later that she knew first.", "future": "Both of them lose that entirely at the end of No Way Home.", "spoils": "Spider-Man: No Way Home" },
+            { "name": "J. Jonah Jameson", "thisFilm": "The mid-credits hands the doctored footage to a screaming tabloid broadcaster, played by the same actor who played him in the Raimi films twenty years earlier.", "future": "He's still at it in No Way Home.", "spoils": "Spider-Man: No Way Home", "nameIsSpoiler": true },
+            { "name": "Nick Fury & Maria Hill (post-credit)", "characterId": "nick-fury", "thisFilm": "The Fury and Hill who've been running Peter this whole film are Talos and Soren wearing their faces. The real Fury is off-world on a Skrull ship.", "future": "That's the setup Secret Invasion opens from, and it recasts every Fury scene in the film.", "spoils": "Secret Invasion" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -785,12 +824,19 @@
           "timeSkip": "A few months after Far From Home",
           "deepDive": {
             "plot": "With his identity publicly exposed and his loved ones' lives upended, Peter Parker asks Doctor Strange to cast a spell making the world forget he's Spider-Man — but Peter's own hesitations corrupt the spell, tearing open the multiverse and pulling in villains, and eventually the Spider-Men themselves, from other Spider-Man universes entirely. After a version of Peter's Aunt May is killed trying to save one of the villains, Peter chooses to help redeem all of them rather than send them back to certain death, at the cost of having Strange erase the entire world's memory of him — resetting Peter to a blank slate, alone.",
-            "significance": "A genre-redefining crossover event that unites three generations of live-action Spider-Man actors, and its ending — nobody remembers Peter Parker — fundamentally isolates him from the rest of the Avengers for future stories.",
+            "significance": "The film that made the multiverse real to people on Earth rather than to the TVA, and the one that finally strips Peter back to a Spider-Man with no money, no mentor and nobody who knows him. It also settles twenty years of Sony continuity by treating the older films as real rather than as a joke.",
             "orderNote": "Placed here as the direct continuation of Far From Home's ending, unfolding a few months later."
           },
           "watchFor": [
-            { "name": "Multiversal visitors", "thisFilm": "Villains from other Spider-Man universes are pulled into Peter's world by a broken spell.", "future": "Confirms the existence of alternate universes, directly enabling Doctor Strange in the Multiverse of Madness.", "spoils": "Doctor Strange in the Multiverse of Madness" },
-            { "name": "The world forgetting Peter Parker", "characterId": "peter-parker", "thisFilm": "Strange casts a spell erasing everyone's memory of Peter Parker as Spider-Man.", "future": "Resets Peter's status quo, isolating him from the other Avengers for future stories." }
+            { "name": "Peter causes all of this himself" },
+            { "name": "Doctor Strange", "thisFilm": "Agrees to cast a memory spell as a favour, lets Peter talk over him while he's casting it, and spends the rest of the film cleaning up. He's noticeably worse at saying no than he was in his own film." },
+            { "name": "Multiversal visitors", "thisFilm": "The broken spell pulls in people who knew Peter Parker was Spider-Man in their own universes, which is why it drags in villains from the Raimi and Webb films rather than random ones. The rule is tighter than it first looks.", "future": "First hard proof the multiverse is real to people on Earth, and Strange spends his next film dealing with the consequences.", "spoils": "Doctor Strange in the Multiverse of Madness" },
+            { "name": "Norman Osborn", "thisFilm": "The film's actual antagonist, and the one who forces the turn. Willem Dafoe plays him as genuinely split rather than as a callback." },
+            { "name": "Curing them instead of sending them back", "thisFilm": "May's argument, and the thing that separates this Peter from the other two. It also gets her killed." },
+            { "name": "May Parker", "thisFilm": "Dies at Osborn's hands, and the with-great-power line lands here for the first time in this trilogy because it's her saying it.", "nameIsSpoiler": true },
+            { "name": "The other two", "thisFilm": "Tobey Maguire and Andrew Garfield turn up as their own Peters. Garfield catching MJ is the film's best single moment, and both of them are given something to resolve rather than just cameos.", "nameIsSpoiler": true },
+            { "name": "What the last spell costs", "characterId": "peter-parker", "thisFilm": "Strange erases Peter Parker from everyone's memory to close the multiverse. Not just his identity. Him. MJ and Ned don't know he exists, and he chooses not to tell them.", "future": "He ends the film broke, alone, in a bedsit, sewing his own suit with no Stark tech and no Avengers connections. Brand New Day starts from there.", "spoils": "Spider-Man: Brand New Day", "nameIsSpoiler": true },
+            { "name": "Eddie Brock (post-credit)", "thisFilm": "Blips out of the bar mid-sentence and leaves a piece of the symbiote behind on the counter.", "future": "The only thing from that universe left in this one, and it hasn't been picked up yet.", "nameIsSpoiler": true }
           ],
           "postCredit": { "count": 1, "type": "post" }
         },
@@ -810,12 +856,18 @@
           "inUniverseSetting": "Christmas 2024",
           "deepDive": {
             "plot": "Trying to get home to his family for Christmas, retired Avenger Clint Barton is dragged back into his past as the vigilante Ronin when aspiring young archer Kate Bishop accidentally puts on his old suit at an auction, drawing the attention of a tracksuit-wearing mafia and Yelena Belova, who blames Clint for Natasha's death. Clint and Kate team up, uncovering that the real villain is a mob boss connected to Kate's own family, and Clint clears his name with Yelena while passing his archer's mantle informally to Kate.",
-            "significance": "Formally sets up Kate Bishop as Hawkeye's successor and continues Yelena Belova's arc from Black Widow, both recurring across future antihero team-ups.",
+            "significance": "Hands the name to Kate Bishop, and gives Clint the only real reckoning anyone has with what the five years after the Snap actually did to people. It also brings Kingpin back from the Netflix shows, which is where that whole corner of the MCU restarts.",
             "orderNote": "Set at Christmas 2024, placed here as the next confirmed dated story after Loki's 'outside time' events."
           },
           "watchFor": [
-            { "name": "Kate Bishop", "thisFilm": "Proves herself as a skilled archer and inherits a version of the Ronin gear.", "future": "Positioned as Clint's successor, expected to carry on the Hawkeye legacy." },
-            { "name": "Yelena Belova", "thisFilm": "Hunts Clint believing he's responsible for Natasha's death, before learning the truth.", "future": "Continues her arc from Black Widow, tying into future antihero team-ups.", "spoils": "Thunderbolts*" }
+            { "name": "Clint just wants to get home for Christmas" },
+            { "name": "Kate Bishop", "characterId": "kate-bishop", "thisFilm": "Twenty-two, extremely good, and completely unprepared for what the job actually involves. She saw Clint fight in New York as a child and has been aiming at this ever since.", "future": "Ends the series with the name, and she's one of the Young Avengers the MCU keeps quietly assembling." },
+            { "name": "The Ronin years", "characterId": "clint-barton", "thisFilm": "The five years Clint spent killing people after the Snap. He's not proud of it, the suit resurfaces, and the series is largely about him being made to account for it.", "future": "It's what Yelena and Maya are both here about." },
+            { "name": "Yelena Belova", "characterId": "yelena-belova", "thisFilm": "Turns up hunting Clint because Valentina told her he killed Natasha. The rooftop conversation where she finds out otherwise is the best scene in the show.", "future": "She's on Valentina's team by Thunderbolts*, still carrying this.", "spoils": "Thunderbolts*" },
+            { "name": "Maya Lopez", "characterId": "maya-lopez", "thisFilm": "Deaf, reading lips, running the Tracksuit Mafia and after Ronin for killing her father. Her uncle turns out to be the man who ordered it.", "future": "Walks away from all of it, which is where Echo starts.", "spoils": "Echo" },
+            { "name": "Eleanor Bishop", "thisFilm": "Kate's mother, and the person paying Ronin's old employers. The series makes you like her for five episodes first." },
+            { "name": "Laura Barton", "thisFilm": "Clint's wife, who identifies a Rolex by its lot number and turns out to have been an agent long before she was a farmhouse. Watch her, not the watch." },
+            { "name": "Kingpin", "characterId": "wilson-fisk", "thisFilm": "Maya's uncle and the man behind the Tracksuits, brought back for the first time since the Netflix run. Maya shoots him and the show leaves it there.", "future": "He's alive, and both Echo and Daredevil pick him up.", "spoils": "Echo", "nameIsSpoiler": true }
           ],
           "seasons": [
             {
@@ -852,7 +904,12 @@
             "orderNote": "Placed after Hawkeye since, while it unfolds 'outside time,' it's triggered by the 2012 scene revisited during Endgame's heist and threaded through that same post-Endgame period. Watch it before Quantumania — that film's villain only lands once you've met the man in the citadel."
           },
           "watchFor": [
-            { "name": "The Time Variance Authority", "thisFilm": "Reveals the existence of a 'Sacred Timeline' policed by bureaucrats from outside of time itself.", "future": "Its true purpose and master unravel across the show's two seasons, reshaping the entire multiverse." }
+            { "name": "The office aesthetic" },
+            { "name": "The Time Variance Authority", "thisFilm": "An organisation outside time that prunes any timeline branching off the approved one, staffed by people who believe they were created for the job. They weren't. They're all variants themselves, taken from their own lives and mind-wiped.", "future": "Everything multiverse-shaped in the MCU runs through this idea." },
+            { "name": "Which Loki this is", "characterId": "loki", "thisFilm": "The 2012 version who grabbed the Tesseract during the Endgame heist. He hasn't had Thor: The Dark World or Ragnarok. He's still the man from the first Avengers film, and the series makes him earn everything from there.", "future": "Runs straight into season two." },
+            { "name": "Mobius", "characterId": "mobius", "thisFilm": "The analyst assigned to him, and the first person to treat Loki as someone worth arguing with rather than containing." },
+            { "name": "Sylvie", "characterId": "sylvie", "thisFilm": "A Loki variant taken by the TVA as a child, who has spent her whole life since trying to burn it down. She's the season's other half, not a love interest bolted on.", "future": "Her choice at the end is what season two spends ten hours dealing with." },
+            { "name": "The man at the end of time", "thisFilm": "The citadel at the end of the season holds a tired man who set the TVA up to stop his own variants from finding each other. He offers Loki and Sylvie the job, tells them what happens if they refuse, and Sylvie kills him anyway.", "future": "Quantumania introduces one of the variants he was afraid of, and season two is entirely about whether he was telling the truth.", "spoils": "Ant-Man and the Wasp: Quantumania/Loki: Season 2", "nameIsSpoiler": true }
           ],
           "seasons": [
             {
@@ -904,8 +961,13 @@
             "orderNote": "Opens Phase Five as the first story to introduce the saga's next big-picture threat."
           },
           "watchFor": [
-            { "name": "Kang the Conqueror", "characterId": "kang", "thisFilm": "Introduced as a powerful exile trapped in the Quantum Realm, revealed to be a conqueror of countless timelines.", "future": "A variant of him becomes the central threat of the Multiverse Saga going forward.", "spoils": "Loki (Season 2) / Avengers: Doomsday" },
-            { "name": "Cassie Lang", "thisFilm": "Takes a more active superhero role alongside her father for the first time.", "future": "Positioned as a potential future Young Avenger." }
+            { "name": "Scott has gotten comfortable", "characterId": "scott-lang" },
+            { "name": "Kang the Conqueror", "characterId": "kang", "thisFilm": "Exiled to the Quantum Realm by his own variants and stripped of his ship. He isn't a man who wants to conquer, he's a man who already did it across countless timelines and got outvoted.", "future": "The Council of Kangs in the mid-credits is the point of the whole film.", "spoils": "Avengers: Doomsday" },
+            { "name": "Janet van Dyne's thirty years", "characterId": "janet-van-dyne", "thisFilm": "The film finally answers what she was doing down there, and the answer is that she met Kang, helped him, worked out what he was, and stranded him. She's been not telling anyone since.", "future": "It reframes her silence in the previous film." },
+            { "name": "Cassie Lang", "characterId": "cassie-lang", "thisFilm": "Built her own shrinking tech, has been arrested for protesting, and is far more willing to be a hero than her father would like.", "future": "One of the Young Avengers the MCU keeps setting up without assembling." },
+            { "name": "MODOK", "thisFilm": "Darren Cross from the first Ant-Man, rebuilt by Kang into something with a very large head. The film plays him for laughs, which people either loved or hated." },
+            { "name": "The Council of Kangs", "thisFilm": "The mid-credits fills an arena with variants of the man Scott just beat, and they're annoyed that he was killed rather than worried about it.", "future": "This was the setup for the next two Avengers films before the casting changed and Doomsday went in a different direction.", "spoils": "Avengers: Doomsday", "nameIsSpoiler": true },
+            { "name": "Victor Timely (post-credit)", "characterId": "victor-timely", "thisFilm": "The post-credits drops into 1901, where a nervous inventor is demonstrating impossible machines while Loki and Mobius watch from the back of the room.", "future": "It's a direct trailer for Loki season two.", "spoils": "Loki: Season 2", "nameIsSpoiler": true }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -929,9 +991,13 @@
             "orderNote": "Placed after Quantumania because that film introduces Kang the Conqueror properly, and this season is the direct answer to the problem season one's ending created."
           },
           "watchFor": [
-            { "name": "Victor Timely", "thisFilm": "A nineteenth-century inventor whose face and inventions are far more significant than his era suggests.", "future": "Deepens the Kang lineage seeded at the end of season one." },
-            { "name": "The Temporal Loom", "thisFilm": "The machine holding the branching timelines together, and the season's central engineering crisis.", "future": "How it's resolved sets the shape of the multiverse for everything after." },
-            { "name": "Mobius", "thisFilm": "The analyst whose faith in Loki is tested against what the TVA turns out to be.", "future": "Ends the season stepping away from the job entirely." }
+            { "name": "Time-slipping" },
+            { "name": "The Temporal Loom", "thisFilm": "The machine the TVA uses to weave branching timelines into one, failing because it was built for a single thread and there are now far too many. Most of the season is an engineering problem." },
+            { "name": "Victor Timely", "characterId": "victor-timely", "thisFilm": "A variant of the man from the citadel, working in 1903 from a technical manual Ravonna handed him as a child. He's decent and frightened and nothing like the original, which is the point the season is making about variants." },
+            { "name": "Ravonna Renslayer", "thisFilm": "Follows her belief in the TVA all the way down and finds nothing at the bottom of it. Ends the season abandoned in the Void." },
+            { "name": "Miss Minutes", "thisFilm": "The cartoon mascot, which was never a mascot. Her loyalty is to the man who built her, and she's been steering things since before the series started." },
+            { "name": "Mobius", "characterId": "mobius", "thisFilm": "Learns what his life was before the TVA took it, goes to look at it, and doesn't knock on the door.", "future": "Leaves the job at the end." },
+            { "name": "What Loki chooses", "characterId": "loki", "thisFilm": "He stops trying to fix the Loom and takes its place instead, holding every branch himself, alone, forever. It's the throne he wanted in the first film, redefined into the loneliest job that exists.", "future": "This is where the multiverse comes from as a working thing rather than a threat, and it's why every branch is allowed to keep running.", "spoils": "Avengers: Doomsday", "nameIsSpoiler": true }
           ],
           "seasons": [
             {
@@ -980,12 +1046,19 @@
           "inUniverseSetting": "2024 (Deadpool's home universe), mostly set in the Void — a place outside time and space",
           "deepDive": {
             "plot": "Failed Avengers try-out Wade Wilson is recruited by the TVA to help save his own universe from being erased following the death of its 'anchor being' — Wolverine, in his universe. Wade drags an alternate, jaded, and initially reluctant Wolverine variant along on a mission through the Void, the graveyard of pruned timelines, where they encounter a host of characters and actors from the 20th Century Fox X-Men films, and team up to stop a powerful telepath, Cassandra Nova, from taking over the Void and, eventually, the Sacred Timeline itself.",
-            "significance": "Officially folds the entire Fox X-Men film universe's characters and actors into the mainline MCU multiverse, and gives Wolverine a proper, R-rated MCU debut alongside Deadpool.",
+            "significance": "Brings the Fox era into the MCU without merging it, by making the Void a place where discarded universes end up. It also lets the MCU acknowledge out loud that it bought a film library, which is the actual subject of the film.",
             "orderNote": "Placed here as the direct continuation of the TVA and multiverse concepts introduced in Loki, unfolding after that show's two seasons."
           },
           "watchFor": [
-            { "name": "The TVA & universe pruning", "thisFilm": "Deadpool learns his home universe is scheduled to be erased following the death of its 'anchor being.'", "future": "Directly follows up on the TVA and multiverse concepts introduced in Loki.", "spoils": "Loki" },
-            { "name": "Multiversal cameos", "thisFilm": "A host of alternate-universe heroes and villains from the 20th Century Fox X-Men films appear throughout the Void.", "future": "Formally folds the Fox X-Men universe's characters and actors into the mainline MCU multiverse." }
+            { "name": "How much of this is about Fox being bought" },
+            { "name": "The TVA, post-Loki", "thisFilm": "Still pruning, still convinced it knows best, now run by an ambitious analyst called Paradox who wants to speed a dying universe along rather than wait it out.", "future": "It's the same organisation from Loki, operating as if that season never happened to it, which is deliberate.", "spoils": "Loki" },
+            { "name": "Anchor beings", "thisFilm": "The film's rule is that some universes are held together by one person, and when that person dies the universe unravels. Wade's anchor was his Logan, and his Logan is dead when the film opens." },
+            { "name": "Wade Wilson", "characterId": "wade-wilson", "thisFilm": "Failed the Avengers audition years ago, gave up being Deadpool, and sells cars. The whole film is him deciding he's worth something to the people who already know him." },
+            { "name": "Logan", "characterId": "logan", "thisFilm": "Not the Logan from the Fox films' ending. A variant who was too late to save his X-Men and has been drinking about it since, wearing the yellow suit for the first time on screen." },
+            { "name": "Cassandra Nova", "characterId": "cassandra-nova", "thisFilm": "Charles Xavier's twin sister, exiled to the Void as a child, running it by the time they arrive. She is by some distance the most frightening thing in the film." },
+            { "name": "The Void", "thisFilm": "Where the TVA dumps whatever it prunes, and therefore where every discarded Fox-era character has ended up. That's the joke and the plot at the same time." },
+            { "name": "Who turns up in the Void", "thisFilm": "Elektra, Blade, Gambit and X-23 make up the resistance, and the cameos elsewhere run deeper than that. Nothing is explained, which is the right call.", "nameIsSpoiler": true },
+            { "name": "What actually changes", "thisFilm": "The Fox universe isn't merged into the main one. It's saved and left alone, and Wade goes home. The MCU gains a doorway rather than a roster.", "future": "Which characters walk through it is still open.", "nameIsSpoiler": true }
           ],
           "postCredit": { "count": 1, "type": "mid" }
         },
@@ -1009,9 +1082,14 @@
             "orderNote": "Placed in the same broad post-Blip 'present day' period as WandaVision and Falcon/Winter Soldier, though its story is self-contained."
           },
           "watchFor": [
-            { "name": "The Ten Rings (mid-credit)", "thisFilm": "Examined by Wong, Captain Marvel, and Bruce Banner in a mid-credit scene.", "future": "They detect a mysterious signal — a thread expected to matter in future cosmic storylines." },
-            { "name": "Xialing", "characterId": "xu-xialing", "thisFilm": "Takes control of the Ten Rings organization after her father's death.", "future": "Hints at the group's criminal network expanding going forward." },
-            { "name": "Trevor Slattery", "thisFilm": "Freed after years of captivity by the real Ten Rings.", "future": "Closes the arc first set up in Iron Man 3." }
+            { "name": "A film that assumes almost nothing" },
+            { "name": "Xu Wenwu", "characterId": "xu-wenwu", "thisFilm": "The actual Mandarin, a thousand years old, and the film's best argument that a villain works better when you understand him. Grief is doing all of it." },
+            { "name": "Trevor Slattery", "thisFilm": "The actor Killian hired to play the Mandarin in Iron Man 3, imprisoned by the real organisation for the insult and kept alive because he's entertaining. The joke from that film gets a proper ending." },
+            { "name": "Katy", "thisFilm": "Refuses to be the friend who gets left behind, and the film gives her a real arc rather than a punchline." },
+            { "name": "Xialing", "characterId": "xu-xialing", "thisFilm": "Built her own fight club after being shut out of her father's training, and takes over the organisation at the end while telling Shang-Chi she's shutting it down.", "future": "That last shot leaves her running a criminal network nobody has followed up on." },
+            { "name": "Abomination", "characterId": "emil-blonsky", "thisFilm": "Turns up in the cage fight against Wong, apparently on friendly terms with him. First sight of Blonsky since The Incredible Hulk.", "future": "She-Hulk explains what he's been doing.", "spoils": "She-Hulk: Attorney at Law" },
+            { "name": "Wong", "thisFilm": "Recruits both Shang-Chi and, seemingly, half the MCU's loose ends. He's quietly become the person who handles anything strange." },
+            { "name": "The rings themselves (mid-credit)", "thisFilm": "Wong, Carol Danvers and Bruce Banner examine them and find they're far older than anyone thought, and that they've started sending a signal to something.", "future": "Still unanswered.", "spoils": "Avengers: Doomsday" }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -1031,13 +1109,21 @@
           "inUniverseSetting": "2023 (with flashbacks spanning 7,000 years)",
           "deepDive": {
             "plot": "A team of ten immortal beings, secretly sent to Earth 7,000 years ago by the cosmic being Arishem to protect humanity from monstrous Deviants, reunite in the present day when the Deviants unexpectedly resurface. The team discovers their true purpose was never protection — they were meant to incubate a Celestial embryo inside the Earth itself, an 'Emergence' that would destroy the planet to birth a new Celestial. Split over whether to let it happen, the Eternals stop the Emergence, but Arishem takes several of them away to judge whether humanity deserves to survive, leaving their fate unresolved.",
-            "significance": "Massively expands the MCU's cosmic mythology — the Celestials, the Deviants, and the true origin of Thanos's worldview — and quietly plants the Black Knight and Ebony Blade for future stories.",
+            "significance": "Puts the Celestials on screen as the things that made the galaxy work, and answers where Earth came from in a way no other film has touched. It also leaves more unresolved threads than anything else in Phase Four, and almost none have been picked up.",
             "orderNote": "Grouped with Shang-Chi and other 2021-released stories in the broad post-Blip period, since its 'present day' scenes align with them despite its ancient flashbacks."
           },
           "watchFor": [
-            { "name": "Arishem's judgment", "thisFilm": "Threatens to judge humanity and potentially end the world depending on the outcome.", "future": "Leaves Earth's fate hanging in the balance, an unresolved thread for future films." },
-            { "name": "Eros / Starfox & Pip the Troll (mid-credit)", "thisFilm": "Arrive to help the remaining Eternals search for their missing teammates.", "future": "Sets up a recruitment thread for future cosmic stories." },
-            { "name": "Dane Whitman / the Ebony Blade (post-credit)", "thisFilm": "Opens a case containing the Ebony Blade, warned against picking it up.", "future": "Teases his transformation into the Black Knight." }
+            { "name": "Why they sat out everything else" },
+            { "name": "The Celestials", "thisFilm": "Arishem made the Eternals, sends them to protect developing planets, and wipes their memories between assignments. They aren't gods and they aren't free." },
+            { "name": "Sersi", "characterId": "sersi", "thisFilm": "Handed the leadership she never wanted, and the film's argument is that caring about individual people is a qualification rather than a weakness." },
+            { "name": "Thena and Gilgamesh", "thisFilm": "Millennia of memory doing to Thena what it would do to anyone, and Gilgamesh quietly looking after her for centuries. The best relationship in the film." },
+            { "name": "Druig", "thisFilm": "Can control minds and has spent thousands of years being told not to. The film takes his objection seriously rather than treating it as villainy." },
+            { "name": "Phastos", "thisFilm": "Gave humanity technology, watched it used on Hiroshima, and stopped. Also the first Eternal to have an ordinary family." },
+            { "name": "What Earth actually is", "thisFilm": "A Celestial called Tiamut has been gestating in the planet's core the whole time, and every civilisation the Eternals helped grow was feeding it. The Emergence would hatch it and destroy the world.", "future": "They stop it, and Tiamut's hand is left standing out of the ocean. Nothing has addressed it since.", "nameIsSpoiler": true },
+            { "name": "Ikaris", "characterId": "ikaris", "thisFilm": "Knew all of it from the start, killed Ajak to keep it quiet, and flies into the sun when he can't go through with stopping Sersi.", "nameIsSpoiler": true },
+            { "name": "Arishem's judgment", "thisFilm": "Takes three of them to be judged, and tells Sersi he'll decide whether humanity is worth keeping by looking through her memories.", "future": "Left hanging entirely.", "nameIsSpoiler": true },
+            { "name": "Eros / Starfox & Pip the Troll (mid-credit)", "characterId": "eros", "thisFilm": "Turn up aboard their ship offering to help find the three who were taken. Eros introduces himself as Thanos's brother.", "future": "Nothing since." },
+            { "name": "Dane Whitman / the Ebony Blade (post-credit)", "characterId": "dane-whitman", "thisFilm": "Opens a case with his family's cursed sword in it, and an unseen voice asks if he's sure he's ready. The voice is Blade.", "future": "Also nothing since." }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -1057,11 +1143,18 @@
           "inUniverseSetting": "2025",
           "deepDive": {
             "plot": "After a car accident exposes her to her cousin Bruce Banner's blood, lawyer Jennifer Walters unexpectedly gains her own Hulk form, which she can control far more easily than Bruce ever could — to his visible annoyance. Reluctantly stepping into a superhuman law specialty at her firm, Jennifer navigates dating, online harassment, and a conspiracy to steal her blood, culminating in a fourth-wall-breaking finale where Jennifer literally storms the show's own production to demand a more satisfying ending.",
-            "significance": "A legal-comedy spin on the MCU formula that also continues Emil Blonsky/Abomination's redemption arc and formally introduces Daredevil into the MCU proper.",
+            "significance": "Brings Daredevil back properly and picks up The Incredible Hulk fourteen years later, both inside a legal sitcom that spends its finale arguing with its own writers about how MCU shows end.",
             "orderNote": "Placed near the end of Phase Four in the same 'present day' period as Ms. Marvel and Love and Thunder."
           },
           "watchFor": [
-            { "name": "Emil Blonsky / Abomination", "thisFilm": "Seeks Jennifer's help for early release from prison, then opens a wellness retreat for former villains.", "future": "Continues his slow redemption arc after The Incredible Hulk." }
+            { "name": "It is a sitcom, on purpose" },
+            { "name": "Jennifer Walters", "characterId": "jennifer-walters", "thisFilm": "Gets her powers from Bruce's blood in a car accident and spends the series annoyed that having them is treated as more interesting than being extremely good at her job." },
+            { "name": "Emil Blonsky", "characterId": "emil-blonsky", "thisFilm": "Up for parole, claiming reform, running a wellness retreat for former villains. The seven-limerick apology is real. Whether he's genuine is left deliberately unclear.", "future": "First proper follow-up to The Incredible Hulk in fourteen years." },
+            { "name": "Wong", "thisFilm": "Turns up constantly, breaks Blonsky out of prison for a sorcerers' duel, and is a terrible witness. He's the connective tissue of this whole stretch of the MCU." },
+            { "name": "Matt Murdock", "characterId": "matt-murdock", "thisFilm": "Arrives in the yellow suit, wins his case, and leaves in the morning. Played much lighter here than in his own show, which the series knows.", "future": "Daredevil: Born Again picks him up in a very different register." },
+            { "name": "Titania", "thisFilm": "An influencer who trademarks the She-Hulk name, which is a more accurate depiction of what would happen than most of the MCU manages." },
+            { "name": "The finale", "thisFilm": "Jennifer breaks out of the show, walks across the Disney+ menu, and argues with the writers' room about her own ending. Nothing else in the MCU does this.", "nameIsSpoiler": true },
+            { "name": "Skaar", "thisFilm": "Bruce returns from Sakaar with a teenage son, introduced in the last minute and given nothing to do.", "future": "Unfollowed so far.", "nameIsSpoiler": true }
           ],
           "seasons": [
             {
@@ -1104,11 +1197,18 @@
           "inUniverseSetting": "2023",
           "deepDive": {
             "plot": "Mild-mannered gift shop worker Steven Grant discovers he shares a body with Marc Spector, a mercenary secretly serving as the avatar of the Egyptian moon god Khonshu. As the two struggle for control, they're forced to stop a cult leader, Arthur Harrow, from resurrecting the goddess Ammit to judge humanity for crimes it hasn't committed yet. Along the way, a third personality, Jake Lockley, is revealed to exist within the same body, hinting the full truth of Marc's fractured identity is still not fully understood even by himself.",
-            "significance": "Introduces the Egyptian pantheon of gods as a real, active force in the MCU, opening the door for more street-level, supernatural corners of the universe outside the main Avengers-centric plotlines.",
+            "significance": "Establishes that the Egyptian gods are real and active, and does it in a series that touches nothing else in the MCU. It is the clearest proof that these stories can be told without a single Avenger in them.",
             "orderNote": "Placed here as a largely self-contained story with no direct thread into the wider Avengers plotline, grouped by release-era rather than a tight timeline link."
           },
           "watchFor": [
-            { "name": "Khonshu & the Egyptian gods", "thisFilm": "Introduces a pantheon of Egyptian gods operating on Earth in secret.", "future": "Opens the door for street-level supernatural stories outside the main Avengers-focused plotline." }
+            { "name": "It connects to nothing, and that's the appeal" },
+            { "name": "Steven Grant", "characterId": "moon-knight", "thisFilm": "A gift-shop worker in London who loses time, wakes up in the wrong places, and ropes his ankle to the bed. The series opens inside his version of events, so you learn what's happening at the same rate he does." },
+            { "name": "Marc Spector", "characterId": "moon-knight", "thisFilm": "The mercenary Steven shares a body with, and the one who made the bargain. The show treats dissociative identity disorder as the actual subject rather than a twist." },
+            { "name": "Khonshu", "characterId": "khonshu", "thisFilm": "The Egyptian moon god in Marc's head, demanding punishment and offering power. Not a benevolent patron. The other gods seal him in stone partway through, and his own account of why he chose Marc is worse than Marc's." },
+            { "name": "Layla El-Faouly", "characterId": "layla-el-faouly", "thisFilm": "Marc's wife, an archaeologist, and the one person who knew him before any of this. Becomes the Scarlet Scarab as an avatar on her own terms rather than by being cornered into it." },
+            { "name": "Arthur Harrow", "thisFilm": "A former avatar of Khonshu who left, and now serves Ammit, who judges people for crimes they haven't committed yet. He's calm and reasonable and completely certain, which is what makes him work." },
+            { "name": "The asylum episode", "thisFilm": "Halfway through, the series stops and offers a reading in which none of it is real. It doesn't fully take it back either." },
+            { "name": "Jake Lockley", "thisFilm": "A third personality neither of the others knew about, doing the killing Marc refuses to do. The last scene reveals Khonshu kept him as his real avatar the whole time.", "nameIsSpoiler": true }
           ],
           "seasons": [
             {
@@ -1153,7 +1253,7 @@
           },
           "watchFor": [
             { "name": "Incursions", "thisFilm": "Strange witnesses a universe-ending 'incursion' while multiverse-traveling.", "future": "Sets the stakes for future multiversal threats." },
-            { "name": "America Chavez", "thisFilm": "Escapes with Strange after her powers are hunted by Wanda.", "future": "Her ability to travel the multiverse makes her a target again in future stories." },
+            { "name": "America Chavez", "characterId": "america-chavez", "thisFilm": "Escapes with Strange after her powers are hunted by Wanda.", "future": "Her ability to travel the multiverse makes her a target again in future stories." },
             { "name": "Clea (mid-credit)", "thisFilm": "Approaches Strange after the darkness he dabbled in catches up to him.", "future": "Recruits him to fix the incursion he caused, teasing his next adventure." }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
@@ -1321,7 +1421,7 @@
             "orderNote": "Placed here in the same broad 'a few years post-Blip' period as the rest of Phase Four's later entries, just before Thor: Love and Thunder and She-Hulk."
           },
           "watchFor": [
-            { "name": "Kamala Khan / Ms. Marvel", "thisFilm": "Discovers her powers come from a bangle passed down through her family.", "future": "Becomes a core member of the young hero team assembled in The Marvels.", "spoils": "The Marvels" }
+            { "name": "Kamala Khan / Ms. Marvel", "characterId": "kamala-khan", "thisFilm": "Discovers her powers come from a bangle passed down through her family.", "future": "Becomes a core member of the young hero team assembled in The Marvels.", "spoils": "The Marvels" }
           ],
           "seasons": [
             {
@@ -1427,7 +1527,7 @@
             "orderNote": "Placed here following Maya's introduction in Hawkeye, unfolding in the same broad 2025 period."
           },
           "watchFor": [
-            { "name": "Kingpin / Wilson Fisk", "thisFilm": "Survives being shot by Maya at the start of the series.", "future": "Continues his rivalry with Maya and remains a recurring MCU crime-boss threat." }
+            { "name": "Kingpin / Wilson Fisk", "characterId": "wilson-fisk", "thisFilm": "Survives being shot by Maya at the start of the series.", "future": "Continues his rivalry with Maya and remains a recurring MCU crime-boss threat." }
           ],
           "seasons": [
             {
@@ -1462,8 +1562,8 @@
             "orderNote": "Placed after Wakanda Forever, which introduces Riri, and near the end of this phase since it unfolds in the same broad 2025 period as the shows around it."
           },
           "watchFor": [
-            { "name": "Riri Williams / Ironheart", "thisFilm": "Builds her armour for real, on her own terms, and gains an AI companion built out of her own grief.", "future": "Established as the MCU's next armoured hero, with her story left deliberately unfinished." },
-            { "name": "Parker Robbins / The Hood", "thisFilm": "A crew leader whose gear turns out to run on something far older and stranger than technology.", "future": "Sets up a magic-powered criminal threat with ambitions well beyond Chicago." },
+            { "name": "Riri Williams / Ironheart", "characterId": "riri-williams", "thisFilm": "Builds her armour for real, on her own terms, and gains an AI companion built out of her own grief.", "future": "Established as the MCU's next armoured hero, with her story left deliberately unfinished." },
+            { "name": "Parker Robbins / The Hood", "characterId": "parker-robbins", "thisFilm": "A crew leader whose gear turns out to run on something far older and stranger than technology.", "future": "Sets up a magic-powered criminal threat with ambitions well beyond Chicago." },
             { "name": "Technology meeting magic", "thisFilm": "The series' central collision — engineering repeatedly runs into forces it cannot model.", "future": "Widens the door between the MCU's science and mystic corners." }
           ],
           "seasons": [
@@ -1533,7 +1633,7 @@
             "orderNote": "Placed after Brave New World in the same 2025 period, with its own team formally rebranding by the film's end."
           },
           "watchFor": [
-            { "name": "Bob / the Sentry", "thisFilm": "A traumatized test subject with god-like power and a destructive alternate persona called the Void.", "future": "Positioned as one of the most powerful beings in the MCU, expected to matter for Avengers: Doomsday.", "spoils": "Avengers: Doomsday" },
+            { "name": "Bob / the Sentry", "characterId": "bob-reynolds", "thisFilm": "A traumatized test subject with god-like power and a destructive alternate persona called the Void.", "future": "Positioned as one of the most powerful beings in the MCU, expected to matter for Avengers: Doomsday.", "spoils": "Avengers: Doomsday" },
             { "name": "The New Avengers (post-credit)", "thisFilm": "The team publicly rebrands themselves.", "future": "Expected to factor into the roster assembling for Avengers: Doomsday.", "spoils": "Avengers: Doomsday" }
           ],
           "postCredit": { "count": 1, "type": "post" }
@@ -1559,7 +1659,7 @@
             "orderNote": "Placed last among the fully released Phase Six films, since its ending is what draws this alternate Earth into the mainline timeline just before Doomsday."
           },
           "watchFor": [
-            { "name": "Galactus", "thisFilm": "A planet-devouring cosmic being who threatens to consume Earth.", "future": "One of the most powerful threats introduced in the MCU, with implications for future cosmic-scale stories." },
+            { "name": "Galactus", "characterId": "galactus", "thisFilm": "A planet-devouring cosmic being who threatens to consume Earth.", "future": "One of the most powerful threats introduced in the MCU, with implications for future cosmic-scale stories." },
             { "name": "The Fantastic Four join the main timeline (post-credit)", "thisFilm": "Their alternate Earth is drawn closer to the mainline MCU universe.", "future": "Sets up their crossover into Avengers: Doomsday.", "spoils": "Avengers: Doomsday" }
           ],
           "postCredit": { "count": 1, "type": "post" }
