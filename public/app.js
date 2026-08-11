@@ -2,19 +2,80 @@ let phasesData = [];
 let charactersData = [];
 let progress = {};
 let activePhaseId = null;
-let watching = []; // up to 2 "currently watching" unit ids, persisted in progress.json under _watching
+let watching = []; // up to 2 "currently watching" unit ids, kept in the save under _watching
 
 const el = (id) => document.getElementById(id);
 
+// --- The save file ---------------------------------------------------------
+// Watch history lives in this browser, not on a server. That's what lets the
+// site be hosted as static files with no backend: every visitor gets their own
+// save, and nobody can overwrite anybody else's. The trade is that it's per
+// browser and per device, and clearing site data wipes it, which is what the
+// Export button on the menu is for.
+
+const SAVE_KEY = 'mcu-field-log-progress';
+const MIGRATED_KEY = 'mcu-field-log-migrated-from-server';
+
+function readSave() {
+  try {
+    const raw = localStorage.getItem(SAVE_KEY);
+    const parsed = raw ? JSON.parse(raw) : null;
+    return (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) ? parsed : {};
+  } catch (err) {
+    // A corrupted save shouldn't take the whole app down
+    console.warn('Could not read save data, starting empty:', err);
+    return {};
+  }
+}
+
+function writeSave() {
+  try {
+    localStorage.setItem(SAVE_KEY, JSON.stringify(progress));
+    return true;
+  } catch (err) {
+    // Private-browsing modes and a full quota both land here
+    saveDataStatus('Could not save. Your browser is blocking local storage.', true);
+    return false;
+  }
+}
+
+// One-time lift of an existing data/progress.json into this browser, so the
+// switch away from the server doesn't look like the save was lost. Only fires
+// when running against the local Express server; on the hosted site the fetch
+// fails and a new visitor simply starts empty.
+async function migrateFromServerOnce() {
+  if (localStorage.getItem(MIGRATED_KEY)) return;
+  // Only ever relevant against the local dev server. Skipping it elsewhere
+  // keeps a failed request out of every public visitor's console.
+  const isLocal = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname);
+  if (!isLocal) { localStorage.setItem(MIGRATED_KEY, 'not-applicable'); return; }
+  if (Object.keys(readSave()).length) { localStorage.setItem(MIGRATED_KEY, 'skipped'); return; }
+  try {
+    const res = await fetch('/api/progress');
+    if (!res.ok) throw new Error(String(res.status));
+    const fromServer = await res.json();
+    if (fromServer && typeof fromServer === 'object' && Object.keys(fromServer).length) {
+      progress = fromServer;
+      writeSave();
+      console.info('Moved your existing save into this browser.');
+    }
+  } catch {
+    // No server here, which is the normal case once this is hosted
+  }
+  localStorage.setItem(MIGRATED_KEY, 'done');
+}
+
 async function init() {
-  const [phasesRes, progressRes, charactersRes] = await Promise.all([
-    fetch('/api/phases').then(r => r.json()),
-    fetch('/api/progress').then(r => r.json()),
-    fetch('/api/characters').then(r => r.json())
+  // Relative, not root-absolute, so the site also works from a subfolder
+  const [phasesRes, charactersRes] = await Promise.all([
+    fetch('data/movies.json').then(r => r.json()),
+    fetch('data/characters.json').then(r => r.json())
   ]);
   phasesData = phasesRes.phases;
-  progress = progressRes;
   charactersData = charactersRes.characters;
+
+  progress = readSave();
+  await migrateFromServerOnce();
 
   el('back-btn').addEventListener('click', () => {
     location.hash = '';
@@ -78,11 +139,8 @@ function nextUnwatchedAfter(id) {
 
 async function setWatching(ids) {
   watching = ids;
-  await fetch('/api/now-watching', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ ids })
-  });
+  progress._watching = ids;
+  writeSave();
   renderNowWatching();
 }
 
@@ -410,10 +468,31 @@ function describeSave(p) {
   return `${watched} watched, ${rated} rated`;
 }
 
+// Validation moved here from server.js when the save moved into the browser.
+// The payload is checked whole: one bad entry rejects the lot, so a corrupt
+// file can never half-overwrite a good save. Returns an error string, or null.
+function validateSave(incoming) {
+  for (const [id, value] of Object.entries(incoming)) {
+    if (id === '_watching') {
+      if (!Array.isArray(value) || value.length > 2 || !value.every(i => typeof i === 'string')) {
+        return 'The "currently watching" list is not up to 2 ids.';
+      }
+      continue;
+    }
+    if (!value || typeof value !== 'object' || Array.isArray(value)) return `Entry "${id}" is not an object.`;
+    const { watched, watchedAt, rating } = value;
+    if (watched !== undefined && typeof watched !== 'boolean') return `Entry "${id}" has a non-boolean "watched".`;
+    if (watchedAt !== undefined && watchedAt !== null && typeof watchedAt !== 'string') return `Entry "${id}" has an invalid "watchedAt".`;
+    if (rating !== undefined && rating !== null && (typeof rating !== 'number' || rating < 0 || rating > 10)) {
+      return `Entry "${id}" has a rating outside 0–10.`;
+    }
+  }
+  return null;
+}
+
 async function exportProgress() {
   try {
-    // Read from disk rather than the in-memory copy, so the file is what's saved
-    const data = await fetch('/api/progress').then(r => r.json());
+    const data = readSave();
     const stamp = new Date().toISOString().slice(0, 10);
     const name = `mcu-field-log-${stamp}.json`;
     const payload = {
@@ -428,7 +507,7 @@ async function exportProgress() {
     a.download = name;
     a.click();
     URL.revokeObjectURL(url);
-    saveDataStatus(`Saved ${name} — ${describeSave(data)}.`);
+    saveDataStatus(`Saved ${name} (${describeSave(data)}).`);
   } catch (err) {
     saveDataStatus(`Export failed: ${err.message}`, true);
   }
@@ -443,24 +522,26 @@ async function importProgress(file) {
   }
   if (!incoming) return saveDataStatus("That file doesn't look like an MCU Field Log save.", true);
 
+  const problem = validateSave(incoming);
+  if (problem) return saveDataStatus(`Import refused: ${problem}`, true);
+
   const ok = confirm(
     `Restore from ${file.name}?\n\n` +
     `That file: ${describeSave(incoming)}\n` +
     `Right now: ${describeSave(progress)}\n\n` +
-    `Your current save will be replaced. A copy of it is kept at data/progress.backup.json.`
+    `This replaces your current save. The one it replaces is kept in this browser ` +
+    `as a single undo step, but only until the next import, so export a copy first if you're unsure.`
   );
-  if (!ok) return saveDataStatus('Import cancelled — nothing changed.');
+  if (!ok) return saveDataStatus('Import cancelled. Nothing changed.');
 
-  const res = await fetch('/api/progress/import', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(incoming)
-  });
-  const body = await res.json();
-  if (!res.ok) return saveDataStatus(`Import refused: ${body.error}`, true);
+  // One level of undo, since there's no longer a server keeping a backup file
+  try { localStorage.setItem(SAVE_KEY + '-previous', JSON.stringify(progress)); } catch { /* not fatal */ }
 
-  // Every screen reads from the progress we loaded at startup — reload rather
-  // than try to re-sync each one
+  progress = incoming;
+  if (!writeSave()) return;
+
+  // Every screen reads the progress loaded at startup, so reload rather than
+  // trying to re-sync each one
   location.reload();
 }
 
@@ -585,8 +666,10 @@ function tintFor(name) {
 function portraitInnerHtml(c, extraStyle) {
   const style = [c.imagePosition ? `object-position:${c.imagePosition}` : '', extraStyle || '']
     .filter(Boolean).join(';');
+  // characters.json stores "/img/characters/x.png"; drop the leading slash so
+  // the page works from a subfolder as well as from a domain root
   return c.image
-    ? `<img src="${c.image}" alt="${c.name}"${style ? ` style="${style}"` : ''}>`
+    ? `<img src="${c.image.replace(/^\//, '')}" alt="${c.name}"${style ? ` style="${style}"` : ''}>`
     : `<span class="no-photo no-photo--t${tintFor(c.name)}"${extraStyle ? ` style="${extraStyle}"` : ''}>${initialsFor(c.name)}</span>`;
 }
 
@@ -1089,7 +1172,7 @@ function deepDivePanelHtml(entry, noun) {
     inTitle.length ? `<div><p class="kicker">What to watch for, in this ${noun}</p>
       <ul class="detail-list">${inTitle.map(w => `<li><span class="term">${w.name}:</span> ${w.thisFilm}</li>`).join('')}</ul></div>` : ''
   ].join('');
-  return revealPanelHtml('deepdive', `dd-${entry.id}`, `Plot &amp; context — contains spoilers for this ${noun}`, parts);
+  return revealPanelHtml('deepdive', `dd-${entry.id}`, `Plot &amp; context: spoilers for this ${noun}`, parts);
 }
 
 // Tier two: what these people and things mean for titles you haven't reached yet.
@@ -1428,13 +1511,25 @@ function renderDetail(found) {
   }
 }
 
+// Merge a change into one entry and save. The watchedAt rules are copied from
+// server.js exactly: stamped when marked watched if there's no date already,
+// cleared when unmarked. Since unmarking clears it, marking again gives a new
+// date; changing only a rating leaves the existing date alone. Unknown fields
+// on an existing entry (postCreditSeen) are carried through untouched.
 async function updateProgress(itemId, body) {
-  const res = await fetch(`/api/progress/${itemId}`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body)
-  });
-  return res.json();
+  const existing = progress[itemId] || {};
+  const updated = { ...existing };
+
+  if (typeof body.watched === 'boolean') {
+    updated.watched = body.watched;
+    if (body.watched && !existing.watchedAt) updated.watchedAt = new Date().toISOString();
+    if (!body.watched) updated.watchedAt = null;
+  }
+  if (body.rating !== undefined) updated.rating = body.rating;
+
+  progress[itemId] = updated;
+  writeSave();
+  return { movieId: itemId, ...updated };
 }
 
 init();

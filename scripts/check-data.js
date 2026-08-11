@@ -21,9 +21,11 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-// MCU_DATA points the checker at a copy — used to test the checker itself
-// without going anywhere near the real data/ directory
-const DATA = process.env.MCU_DATA || path.join(ROOT, 'data');
+// movies.json and characters.json live inside public/ so a static host serves
+// them; progress.json stays outside it, since it must never be served.
+// MCU_DATA points the checker at a copy, used to test the checker itself.
+const DATA = process.env.MCU_DATA || path.join(ROOT, 'public', 'data');
+const LEGACY_DATA = process.env.MCU_DATA || path.join(ROOT, 'data');
 
 const errors = [];
 const warnings = [];
@@ -35,8 +37,8 @@ const note = (where, msg) => notes.push({ where, msg });
 // --- load ----------------------------------------------------------------
 // A JSON syntax error is fatal and worth reporting precisely: node gives a
 // character offset, which is useless on its own in a 10k-line file.
-function loadJson(file, { optional = false } = {}) {
-  const full = path.join(DATA, file);
+function loadJson(file, { optional = false, dir = DATA } = {}) {
+  const full = path.join(dir, file);
   if (!fs.existsSync(full)) {
     if (!optional) err(file, 'File is missing.');
     return null;
@@ -66,7 +68,8 @@ function loadJson(file, { optional = false } = {}) {
 
 const movies = loadJson('movies.json');
 const chars = loadJson('characters.json');
-const progress = loadJson('progress.json', { optional: true });
+// The legacy save file, still worth checking for ids orphaned by a rename
+const progress = loadJson('progress.json', { optional: true, dir: LEGACY_DATA });
 
 if (!movies) {
   report();
@@ -383,6 +386,36 @@ if (chars) {
     });
   });
   if (missing.length) note('characters ↔ watchFor', `${missing.length} mismatch(es):\n    ` + missing.join('\n    '));
+}
+
+// --- house style: em dashes -----------------------------------------------
+// Not an error, and not a grammar problem. Em dashes are correct punctuation.
+// They're counted because LLMs overuse them badly, so a page full of them
+// reads as machine-written, and the prose here is being rewritten by hand to
+// avoid exactly that. Counts per phase, so progress is visible.
+{
+  const perPhase = new Map();
+  (movies.phases || []).forEach(phase => {
+    let n = 0;
+    const look = s => { if (typeof s === 'string' && s.includes('—')) n++; };
+    (phase.movies || []).forEach(entry => {
+      look(entry.summary);
+      look(entry.beforeWatch && entry.beforeWatch.context);
+      if (entry.deepDive) ['plot', 'significance', 'orderNote'].forEach(k => look(entry.deepDive[k]));
+      (entry.watchFor || []).forEach(w => { look(w.thisFilm); look(w.future); });
+      if (entry.postCredit) look(entry.postCredit.skipNote);
+      (entry.seasons || []).forEach(s => (s.episodes || []).forEach(ep => {
+        look(ep.summary);
+        (ep.watchFor || []).forEach(w => { look(w.thisFilm); look(w.future); });
+      }));
+    });
+    if (n) perPhase.set(phase.id, n);
+  });
+  if (perPhase.size) {
+    const total = [...perPhase.values()].reduce((a, b) => a + b, 0);
+    note('house style', `${total} field(s) still contain an em dash: ` +
+      [...perPhase].map(([p, n]) => `${p} ${n}`).join(', '));
+  }
 }
 
 // --- progress.json: orphaned save keys ------------------------------------

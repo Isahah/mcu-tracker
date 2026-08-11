@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A personal MCU watch tracker: Express serves a JSON API over flat files (no database), and a vanilla-JS frontend (no framework, no build step, no bundler) consumes it. Runs locally; the user eventually wants it public and free (never monetised — see Licensing below).
+A personal MCU watch tracker: a vanilla-JS frontend (no framework, no build step, no bundler) reading flat JSON files, with watch history in the browser. **No database and no backend** — it runs locally via a small dev server and deploys as a static site. Free, and never monetised (see Licensing below).
 
 Its whole point is **narrative order without spoilers**: every title is placed by when the story happens, and anything that could spoil sits behind a toggle the reader opens deliberately.
 
@@ -18,18 +18,21 @@ Its whole point is **narrative order without spoilers**: every title is placed b
 
 ## Architecture
 
-### Server (`server.js`)
+### It is a static site
 
-A thin Express layer (~80 lines). Three JSON files read/written directly from disk:
-- `data/movies.json` — canonical content (phases, movies, series, episodes)
-- `data/characters.json` — the character database
-- `data/progress.json` — personal save data, gitignored, auto-created empty
+**There is no backend.** Everything the site needs is inside `public/`, and watch history lives in each visitor's browser, so the whole thing deploys as static files to Netlify, Cloudflare Pages or anything similar. Verified by serving `public/` with a plain file server and no `/api` routes at all.
 
-Six endpoints: `GET /api/phases`, `GET /api/characters`, `GET /api/progress`, `POST /api/progress/import` (replaces the whole save file — see below), `POST /api/progress/:id` (merges `{watched, rating}`; `watchedAt` stamped on first true, cleared on false), `POST /api/now-watching` (replaces the flag list — up to 2 unit ids under the reserved `_watching` key).
+- `public/data/movies.json` — canonical content (phases, movies, series, episodes)
+- `public/data/characters.json` — the character database
+- `data/progress.json` — **legacy** personal save, gitignored, deliberately **outside `public/`** so it is never served. Migration source only; nothing writes to it.
 
-`/api/progress/import` **must stay registered before `/api/progress/:id`**, or Express matches `import` as a movie id. The port is `process.env.PORT || 3939`, so a second instance can run alongside the usual one for testing.
+Paths in the frontend are **relative** (`data/movies.json`, `img/characters/x.png` with the stored leading slash stripped at render time), so the site works from a domain root or a subfolder.
 
-### Data model (`data/movies.json`)
+### Dev server (`server.js`)
+
+~40 lines, and only for working locally without a build step: it serves `public/` and exposes one read-only `GET /api/progress` so `migrateFromServerOnce()` can lift an existing `data/progress.json` into the browser the first time. That probe is skipped unless the hostname is localhost, which keeps a failed request out of every public visitor's console. Port is `process.env.PORT || 3939`. Once every browser you use has migrated, `server.js` could be replaced by any static server.
+
+### Data model (`public/data/movies.json`)
 
 `{ phases: [ { id, name, label, movies: [...] } ] }`. Each phase holds movies, TV specials and full series, distinguished by `type: "movie" | "series" | "special"`.
 
@@ -51,7 +54,13 @@ Required on every entry: `id`, `title`, `year`, `narrativeOrder`, `releaseOrder`
 
 **Series get one Deep Dive**, at the series level, never per-episode. Only a few pivotal episodes carry their own `watchFor`.
 
-### Save data (`data/progress.json`)
+### Save data (browser `localStorage`)
+
+**Watch history lives in the browser, not on the server** (`localStorage` key `mcu-field-log-progress`). That's what allows a static public deploy: every visitor gets their own save and nobody can overwrite anyone else's. Consequences: it's per browser and per device with no sync, and clearing site data wipes it, so Export is the only backup. `updateProgress()` in `app.js` owns the `watchedAt` rules that used to be in `server.js`, and `validateSave()` owns the import validation.
+
+On first load, `migrateFromServerOnce()` pulls an existing `data/progress.json` in through `/api/progress` and marks itself done in `localStorage`. That only succeeds against the local Express server; on the hosted site the fetch fails and a new visitor starts empty, which is correct. **`data/progress.json` is now legacy** — it's the migration source and nothing writes to it.
+
+### Legacy save file (`data/progress.json`)
 
 Flat object keyed by entry id (movie, episode, or series id for a series-level rating). Shape: `{ watched?, watchedAt?, rating? }`, rating 0–10 in 0.5 steps. A few entries also carry `postCreditSeen` from an earlier feature — nothing reads it, but nothing may drop it either. Gitignored and personal — **never hand-edit, and back it up before any test that writes progress.** Purely local UI preferences (e.g. the artwork density toggle) go in `localStorage`, not here.
 
@@ -97,7 +106,7 @@ Each `watchFor` item has two payloads. **Plot & context** (brass panel) holds th
 
 The chip row under "People & things to watch for" is inside **Before you watch**, so it carries the same no-spoilers contract as the rest of that panel: a name printed there is a promise that the name alone gives nothing away. When it does, set `nameIsSpoiler: true` rather than dropping the item — the payoff still gets written down, just behind a toggle.
 
-### Character database (`data/characters.json`)
+### Character database (`public/data/characters.json`)
 
 `{ characters: [ { id, name, description, titles, image?, imagePosition?, phases } ] }`, in curated display order (roughly heroes → supporting → antagonists).
 
@@ -125,7 +134,7 @@ Tags render as links to `#/character/<id>` when they resolve. Order: an explicit
 - `summary` — one spoiler-light sentence; anything more revealing goes in `deepDive.plot`.
 - Only add month/season precision to `inUniverseSetting` when confirmed.
 - `postCredit.skipNote` is rare and deliberate.
-- When editing `movies.json` programmatically: entries are **not** uniformly formatted (hand-edits have left some as `},{` on one line). Find entry bounds by brace-matching from the nearest `{` before `"id"`, never by assuming a newline. Insert new keys **before** the `summary` line — on unreleased entries `summary` is last and has no trailing comma.
+- When editing `public/data/movies.json` programmatically: entries are **not** uniformly formatted (hand-edits have left some as `},{` on one line). Find entry bounds by brace-matching from the nearest `{` before `"id"`, never by assuming a newline. Insert new keys **before** the `summary` line — on unreleased entries `summary` is last and has no trailing comma.
 
 ## Licensing / legal posture
 

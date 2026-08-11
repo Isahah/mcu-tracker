@@ -17,7 +17,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const MOVIES = path.join(ROOT, 'data', 'movies.json');
+const MOVIES = path.join(ROOT, 'public', 'data', 'movies.json');
 const KEY_FILE = path.join(ROOT, 'tmdb.key');
 
 const REFRESH = process.argv.includes('--refresh');

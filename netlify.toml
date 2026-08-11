@@ -1,0 +1,14 @@
+# Netlify reads this on first import, so the deploy settings live in the repo
+# instead of only in the web dashboard.
+#
+# There is no build step. public/ already contains everything the site needs:
+# index.html, app.js, the stylesheets, img/, assets/, and data/*.json. Watch
+# history lives in each visitor's browser, so there is nothing server-side.
+#
+# No SPA redirect rule is needed: routing is done with the URL hash
+# (#/watch/avengers-4), so every request is just "/" as far as the host is
+# concerned, and deep links work without any rewrite configuration.
+
+[build]
+  publish = "public"
+  command = ""
