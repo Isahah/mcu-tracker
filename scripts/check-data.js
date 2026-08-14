@@ -84,7 +84,10 @@ const ENTRY_KEYS = new Set([
 ]);
 const EPISODE_KEYS = new Set([
   'id', 'episodeNumber', 'title', 'summary', 'watchFor', 'postCredit',
-  'inUniverseSetting', 'timeSkip', 'runtime', 'art'
+  'inUniverseSetting', 'timeSkip', 'runtime', 'art',
+  // Episodes carry their own deepDive.plot now, so each one has a recap behind
+  // the spoiler toggle instead of only the series having one.
+  'deepDive'
 ]);
 const REQUIRED = ['id', 'title', 'year', 'narrativeOrder', 'releaseOrder', 'type', 'summary'];
 const TYPES = new Set(['movie', 'series', 'special']);

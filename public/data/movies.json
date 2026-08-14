@@ -711,8 +711,8 @@
             { "name": "Maria Rambeau", "characterId": "maria-rambeau", "future": "Carol's best friend, whose inclusion here is a setup for the broader multiverse as alternative versions of Maria appear later in the series.", "spoils": "Doctor Strange in the Multiverse of Madness/The Marvels" },
             { "name": "Monica Rambeau", "characterId": "monica-rambeau", "thisFilm": "First appearance as Maria Rambeau's daughter as a little girl.", "future": "This movie sets up her growing up to get her own cosmic powers in WandaVision and fighting alongside Carol as an adult in The Marvels.", "spoils": "WandaVision/The Marvels" },
             { "name": "Nick Fury's eye", "characterId": "nick-fury", "thisFilm": "Scratched by Goose the Flerken aboard a Skrull ship. A dissapointit sight" },
-            { "name": "Talos","characterId": "talos", "thisFilm": "Reveals himself as a Skrull leader seeking peace, not conquest. Is promised at the end of the film by Nick that he will find a new home for the Skrulls.", "future": "Becomes a recurring ally, and is later revealed to have spent years impersonating Nick Fury and becomes an important character in the D+ series Secret Invasion.", "spoils": "Spider-Man: Far From Home/Secret Invasion" },
-            { "name": "Goose the Flerken","characterId": "goose", "thisFilm": "A cat-like alien with tentacles and a pocket dimension in its stomach. Goose is a Flerken, an alien species that looks like cats but has dangerous abilities and a recurring presence in the MCU." }
+            { "name": "Talos", "characterId": "talos", "thisFilm": "Reveals himself as a Skrull leader seeking peace, not conquest. Is promised at the end of the film by Nick that he will find a new home for the Skrulls.", "future": "Becomes a recurring ally, and is later revealed to have spent years impersonating Nick Fury and becomes an important character in the D+ series Secret Invasion.", "spoils": "Spider-Man: Far From Home/Secret Invasion" },
+            { "name": "Goose the Flerken", "characterId": "goose", "thisFilm": "A cat-like alien with tentacles and a pocket dimension in its stomach. Goose is a Flerken, an alien species that looks like cats but has dangerous abilities and a recurring presence in the MCU." }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -724,29 +724,29 @@
           "releaseOrder": 22,
           "type": "movie",
           "art": { "tmdbId": 299534, "poster": "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", "backdrop": "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg" },
-          "summary": "With half of all life gone, the remaining Avengers assemble one final time to undo Thanos's actions, launching a desperate heist through their own history.",
+          "summary": "With half of all life gone, the remaining Avengers assemble one final time to undo Thanos's actions.",
           "beforeWatch": {
-            "context": "Picks up in the immediate aftermath of the Snap, with the survivors in pieces. It runs three hours and it leans on recognition harder than anything else in the run, so the more of the Infinity Saga you still have fresh, the more it hands back to you. The pager Fury sent as he was dusted gets answered here, which is why Captain Marvel sits directly in front of it. Worth having straight going in, who is still standing: Tony and Nebula are stranded in space on Titan, and back on Earth it's Steve, Natasha, Thor, Bruce, Clint, Rhodey, Rocket and Okoye.",
+            "context": "Picks up about 23 days after the Snap, with the survivors in pieces. It runs three hours and it leans on recognition harder than anything else in the run, so the more of the Infinity Saga you still have fresh, the more it hands back to you. Worth having straight going in, who is still standing: Tony and Nebula are stranded in space on Titan, and back on Earth it's Steve, Natasha, Thor, Bruce, Clint, Rhodey, Rocket and Okoye.",
             "watchFirst": ["avengers-3","captain-marvel"]
           },
           "inUniverseSetting": "2018–2023",
           "timeSkip": "Jumps forward 5 years partway through the film, from 2018 to 2023",
           "deepDive": {
-            "plot": "Three weeks after the Snap, the surviving Avengers track down and kill Thanos, only to discover he's already destroyed the Infinity Stones, making his actions permanent. Five years later, Scott Lang's escape from the Quantum Realm reveals the possibility of time travel, and the remaining Avengers stage a 'time heist' across several past MCU films to collect past versions of the Stones and undo the Snap. Reversing the Snap brings back everyone who was dusted, but draws past-Thanos into the present for one final battle, which Tony Stark wins at the cost of his own life.",
-            "significance": "Closes out the Infinity Saga, eleven years and twenty-two films. Every original Avenger either dies, retires or hands their job to someone else here, which is why so much of Phase Four is about people stepping into roles that used to belong to somebody more famous. It also sets the rules the rest of the MCU runs on: the way this film handles time travel, and what the Ancient One says about what happens when you remove a stone from its timeline, is the foundation the Loki series and everything multiverse-related is built on.",
+            "plot": "Three weeks after the Snap, the surviving Avengers track down and kill Thanos, only to discover he's already destroyed the Infinity Stones. Five years later, Scott Lang's escape from the Quantum Realm reveals the possibility of time travel, and the remaining Avengers stage a 'time heist' across several past MCU films to collect past versions of the Stones and undo the Snap. Reversing the Snap brings back everyone who was dusted, but draws past Thanos into the present for one final battle, which Tony Stark wins at the cost of his own life.",
+            "significance": "Closes out the Infinity Saga, eleven years and twenty-two films. It reads like a grand ending, but it mostly sets up the characters and events the MCU spends the following phases building on. Every original Avenger either dies, retires or hands their job to someone else here, which is why so much of Phase Four is about people stepping into roles that used to belong to somebody more famous.",
             "orderNote": "Sits at the end of Phase Three because it answers Infinity War directly. Captain Marvel goes in front of it rather than back in the 1990s where it actually takes place, so that the pager Fury sends at the end of Infinity War gets answered by someone you've already met."
           },
           "watchFor": [
             { "name": "How the world handled five years of loss" },
-            { "name": "Professor Hulk", "characterId": "bruce-banner", "thisFilm": "Bruce turns up already merged with the Hulk, Banner's head on the Hulk's body. The film skips past how he got there and never goes back to it." },
-            { "name": "Thor's grief", "characterId": "thor", "thisFilm": "Takes the five years badly. The film plays a lot of it for laughs, which people still argue about.", "future": "Love and Thunder picks him up partway through working it out.", "spoils": "Thor: Love and Thunder" },
-            { "name": "The Ancient One's rules", "characterId": "ancient-one", "thisFilm": "Explains to Bruce that pulling a stone out of its own time doesn't rewrite history, it splits off a new branch that keeps running.", "future": "That one conversation is the whole basis for the TVA and every multiverse story that follows.", "spoils": "Loki" },
-            { "name": "Cassie Lang", "characterId": "cassie-lang", "thisFilm": "Five years older than Scott left her, which is the film's clearest measure of what the gap cost.", "future": "Grown up and building her own suit by Quantumania.", "spoils": "Ant-Man and the Wasp: Quantumania" },
+            { "name": "How time works in the Quantum Realm", "thisFilm": "Scott Lang experiences five hours in the Quantum Realm while five years pass outside it." },
+            { "name": "Professor Hulk", "characterId": "bruce-banner", "thisFilm": "Bruce turns up already merged with the Hulk, Banner's head on the Hulk's body.", "future": "Before Spider-Man: Brand New Day, most people assumed Hulk and Banner had come to an agreement, and that this was what produced Professor Hulk. Now that the film is out, it looks like the process was forced rather than the two coming to terms.", "spoils": "Spider-Man: Brand New Day" },
+            { "name": "The Ancient One's rules", "characterId": "ancient-one", "thisFilm": "Explains to Bruce that pulling a stone out of its own time doesn't rewrite history, it splits off a new branch that keeps running.", "future": "What the Ancient One says here about removing a stone from its own timeline is the foundation everything multiverse-related is built on.", "spoils": "Spider-Man: No Way Home/Loki/Ant-Man and the Wasp: Quantumania/Doctor Strange in the Multiverse of Madness" },
+            { "name": "Cassie Lang", "characterId": "cassie-lang", "thisFilm": "Five years older than Scott left her.", "future": "Grown up and building her own suit by Quantumania.", "spoils": "Ant-Man and the Wasp: Quantumania" },
             { "name": "New Asgard", "characterId": "valkyrie", "thisFilm": "Thor hands the throne to Valkyrie and leaves with the Guardians.", "future": "Love and Thunder opens with both of those still true.", "spoils": "Thor: Love and Thunder" },
-            { "name": "Black Widow's fate", "characterId": "natasha-romanoff", "thisFilm": "Dies on Vormir, trading herself for the Soul Stone after she and Clint each try to be the one who goes.", "future": "Her death is what the Hawkeye series is reacting to, and what Yelena is still angry about years later.", "spoils": "Hawkeye/Thunderbolts*", "nameIsSpoiler": true },
-            { "name": "Tony Stark's fate", "characterId": "tony-stark", "thisFilm": "Takes the stones off Thanos and uses them himself, and it kills him.", "future": "Peter Parker spends two films out from under his shadow, and half of Phase Four is people arguing over what he left behind.", "spoils": "Spider-Man: Far From Home/Ironheart", "nameIsSpoiler": true },
-            { "name": "Steve Rogers' choice", "characterId": "steve-rogers", "thisFilm": "Goes back to return the stones and stays there, living the life he missed with Peggy.", "future": "The shield goes to Sam, which is where The Falcon and the Winter Soldier starts.", "spoils": "The Falcon and the Winter Soldier/Brave New World", "nameIsSpoiler": true },
-            { "name": "The 2012 Loki", "characterId": "loki", "thisFilm": "The heist goes wrong in 2012 and that version of Loki grabs the Tesseract and vanishes.", "future": "That's the Loki the TVA arrests in the first minutes of his series. He's a different person from the one who died in Infinity War, and the series never pretends otherwise.", "spoils": "Loki", "nameIsSpoiler": true },
+            { "name": "Black Widow's fate", "characterId": "natasha-romanoff", "thisFilm": "Dies on Vormir, trading herself for the Soul Stone after she and Clint each try to be the one who goes.", "future": "Her death is what the Hawkeye series is reacting to, and what Yelena is still angry about years later.", "spoils": "Hawkeye", "nameIsSpoiler": true },
+            { "name": "Tony Stark's fate", "characterId": "tony-stark", "thisFilm": "Takes the stones off Thanos and uses them himself, and it kills him.", "nameIsSpoiler": true },
+            { "name": "Steve Rogers' choice", "characterId": "steve-rogers", "thisFilm": "Goes back to return the stones and stays there, living the life he missed with Peggy.", "future": "This action is theorised to have created a branch timeline now known as Earth-828, the Fantastic Four universe.", "spoils": "The Fantastic Four: First Steps/Avengers: Doomsday", "nameIsSpoiler": true },
+            { "name": "The 2012 Loki", "characterId": "loki", "thisFilm": "The heist goes wrong in 2012 and that version of Loki grabs the Tesseract and vanishes.", "future": "That's the Loki the TVA arrests in the first minutes of his series. He's a different person from the one who died in Infinity War.", "spoils": "Loki", "nameIsSpoiler": true },
             { "name": "The 2014 Gamora", "characterId": "gamora", "thisFilm": "A Gamora from before she ever met the Guardians is pulled into the present and walks off on her own.", "future": "She's the Gamora in Vol. 3, and she doesn't remember Quill at all.", "spoils": "Guardians of the Galaxy Vol. 3", "nameIsSpoiler": true }
           ],
           "postCredit": { "count": 0, "type": "none" }
@@ -766,38 +766,99 @@
           "releaseOrder": 24,
           "type": "series",
           "art": { "tmdbId": 85271, "poster": "/ijWWwINc8h71NQ8j1LTJMFSj5wr.jpg", "backdrop": "/lOr9NKxh4vMweufMOUDJjJhCRHW.jpg" },
-          "summary": "Grieving in secret, Wanda Maximoff builds an idyllic sitcom life with a resurrected Vision in the town of Westview, a reality that starts to crack the deeper you look.",
+          "summary": "Grieving in secret, Wanda Maximoff builds a sitcom life with a resurrected Vision in the town of Westview.",
           "beforeWatch": {
-            "context": "A few weeks after Endgame. Wanda has lost more than almost anyone across the last two Avengers films and has had no space to process any of it. The series is formally strange. It opens as a black-and-white sitcom and stays in that register for a while, and it is doing that on purpose. Both Avengers films are essential here; the sitcom pastiche is a bonus, not a requirement.",
-            "watchFirst": ["avengers-3","avengers-4"]
+            "context": "Set about three weeks after the Blip, with some of the scenes outside Westview only a few days after it. Wanda lost her brother, her home and Vision across the last two Avengers films, and has had no time and nobody to process any of it with. The show opens as a black-and-white 1950s sitcom and stays in that format for several episodes. That is deliberate, not a mistake, and the decade it appears to be set in is never the decade it is actually set in.",
+            "watchFirst": ["avengers-4"]
           },
           "inUniverseSetting": "Fall 2023",
           "deepDive": {
             "plot": "Grieving Vision's death and unable to process her trauma from Thanos's Snap, Wanda Maximoff unknowingly seizes control of a small town, Westview, warping reality into a series of decades-spanning sitcom pastiches with a resurrected version of Vision built from her own grief and power. As S.W.O.R.D. investigates the anomaly from outside, the show reveals that Wanda's neighbor Agatha Harkness has secretly been manipulating events to steal Wanda's uniquely powerful magic. Wanda ultimately defeats Agatha, but has to say goodbye to the family she conjured, releasing the townspeople and leaving with the Darkhold to study her own powers in isolation.",
-            "significance": "The first Disney+ series, and the show that turns Wanda from an Avenger who has lost people into the Scarlet Witch. It's also the first time the MCU spends nine episodes on one person's grief instead of a fight, and the ending sets up almost everything Wanda does afterwards.",
-            "orderNote": "Placed first in Phase Four as the earliest post-Endgame story chronologically, unfolding just months after the Blip is reversed."
+            "significance": "The first Disney+ series, and the show that turns Wanda from an Avenger who has lost people into the Scarlet Witch. It introduces S.W.O.R.D., the off-world agency Monica's mother Maria Rambeau founded, and confirms the Skrulls are still operating on Earth. It also reopens where Wanda's powers came from: the films had them coming from the Mind Stone, and this show raises the possibility that the stone only amplified something she and Pietro already had, which is the closest the MCU has come to calling them mutants. White Vision and Agatha Harkness both start here and get picked up later.",
+            "orderNote": "Placed first in Phase Four as the earliest post-Endgame story, set only a few weeks after the Blip is reversed."
           },
           "watchFor": [
-            { "name": "The sitcom decades" },
-            { "name": "Monica Rambeau", "characterId": "monica-rambeau", "thisFilm": "The girl from Captain Marvel, grown up and working for S.W.O.R.D. She was dusted, came back to find her mother had died during the five years she missed, and crosses the barrier twice.", "future": "Those crossings are what give her powers, which she's still working out how to use in The Marvels.", "spoils": "The Marvels" },
-            { "name": "Jimmy Woo", "characterId": "jimmy-woo", "thisFilm": "The FBI agent from Ant-Man and the Wasp, here as the only person outside Westview treating any of it seriously." },
-            { "name": "Darcy Lewis", "characterId": "darcy-lewis", "thisFilm": "Jane Foster's intern from the Thor films, turning up with an actual doctorate and doing most of the useful thinking." },
-            { "name": "Agatha Harkness", "characterId": "agatha-harkness", "thisFilm": "The nosy neighbour, and the one who's been prodding Wanda's grief all season to work out how she does what she does.", "future": "Wanda leaves her locked inside the neighbour persona, which is exactly where Agatha All Along picks her up.", "spoils": "Agatha All Along" },
-            { "name": "The Darkhold", "thisFilm": "Agatha's book, which Wanda takes with her at the end and starts reading.", "future": "It's what she's studying when Strange comes looking for her, and it's what turns her into the villain of that film.", "spoils": "Doctor Strange in the Multiverse of Madness" },
-            { "name": "Wanda's real title", "characterId": "wanda-maximoff", "thisFilm": "Agatha names her. Not a witch with too much power, but the Scarlet Witch of prophecy, a being everyone assumed was a story.", "future": "That name is the entire reason Strange goes looking for her.", "spoils": "Doctor Strange in the Multiverse of Madness", "nameIsSpoiler": true },
-            { "name": "The twins", "thisFilm": "Wanda has Billy and Tommy inside the Hex, and they go when it does.", "future": "Hearing them call for her is what sends her across the multiverse. Billy turns up again, reincarnated and looking for his brother, in Agatha All Along.", "spoils": "Doctor Strange in the Multiverse of Madness/Agatha All Along", "nameIsSpoiler": true },
-            { "name": "The second Vision", "characterId": "vision", "thisFilm": "S.W.O.R.D. rebuilds the real body, white and blank. The two Visions talk each other to a standstill instead of fighting, and the rebuilt one leaves with his memories back and no idea what to do with them.", "future": "Nothing picks that thread up until VisionQuest.", "spoils": "VisionQuest", "nameIsSpoiler": true }
+            { "name": "Monica Rambeau", "characterId": "monica-rambeau", "thisFilm": "The girl from Captain Marvel, grown up and working for S.W.O.R.D. She came back from the Blip to find her mother had died during the five years she missed.", "future": "Passing through Wanda's barrier is what gives Monica her powers, and she is still working out how to use them in The Marvels.", "spoils": "The Marvels" },
+            { "name": "Darcy Lewis", "characterId": "darcy-lewis", "thisFilm": "Jane Foster's intern from the Thor films, back with an actual doctorate and doing most of the useful thinking.", "nameIsSpoiler": true },
+            { "name": "Mrs. Hart", "future": "Mrs. Hart turns up again in Agatha All Along.", "spoils": "Agatha All Along", "nameIsSpoiler": true },
+            { "name": "Agatha Harkness", "characterId": "agatha-harkness", "thisFilm": "The nosy neighbour, and the one who has been prodding Wanda's grief all season to work out how she does what she does. Wanda beats her and then locks her inside the Agnes persona permanently.", "future": "Agatha All Along opens with her still trapped in it.", "spoils": "Agatha All Along" },
+            { "name": "The Darkhold", "thisFilm": "Agatha's book, which Wanda takes with her at the end and starts reading.", "future": "The Darkhold is what Wanda is studying when Strange comes looking for her, and it is what turns her into the villain of that film.", "spoils": "Doctor Strange in the Multiverse of Madness", "nameIsSpoiler": true },
+            { "name": "The post-credit scene", "thisFilm": "A S.W.O.R.D. agent pulls Monica aside after everything is over. The agent is a Skrull, and she says someone off world wants to meet her.", "future": "That meeting is what puts Monica in space for The Marvels.", "spoils": "The Marvels", "nameIsSpoiler": true },
+            { "name": "The twins", "thisFilm": "Wanda has Billy and Tommy inside the Hex, and they go when it does.", "future": "Hearing the twins call for her is what sends Wanda across the multiverse in Doctor Strange in the Multiverse of Madness. Billy comes back in Agatha All Along, reincarnated and looking for his brother.", "spoils": "Doctor Strange in the Multiverse of Madness/Agatha All Along", "nameIsSpoiler": true },
+            { "name": "The second Vision", "characterId": "vision", "thisFilm": "S.W.O.R.D. rebuilds the real body, white and blank. The two Visions talk each other to a standstill instead of fighting, and the rebuilt one leaves with his memories back and no idea what to do with them.", "future": "Nothing picks up the white Vision until VisionQuest.", "spoils": "VisionQuest", "nameIsSpoiler": true }
           ],
           "seasons": [
             {
               "seasonNumber": 1,
               "episodes": [
-                { "id": "wandavision-e1", "episodeNumber": 1, "title": "Filmed Before a Live Studio Audience", "summary": "Wanda and Vision settle into a black-and-white 1950s sitcom life in Westview, though odd cracks in reality begin to show." },
-                { "id": "wandavision-e2", "episodeNumber": 2, "title": "Don't Touch That Dial", "summary": "The sitcom shifts into the 1960s as Wanda and Vision prepare for a magic show, while stranger anomalies creep into their perfect world." },
-                { "id": "wandavision-e3", "episodeNumber": 3, "title": "Now in Color", "summary": "Now in the 1970s, Wanda's pregnancy accelerates unnaturally fast as the outside world starts to intrude on Westview." },
-                { "id": "wandavision-e4", "episodeNumber": 4, "title": "We Interrupt This Program", "summary": "Jumping outside Westview for the first time, S.W.O.R.D. investigates the strange sitcom-reality surrounding the town." },
-                { "id": "wandavision-e5", "episodeNumber": 5, "title": "On a Very Special Episode...", "summary": "In an '80s-style episode, Wanda and Vision juggle twin toddlers while Vision starts to notice the townspeople aren't acting of their own free will." },
-                { "id": "wandavision-e6", "episodeNumber": 6, "title": "All-New Halloween Spooktacular!", "summary": "A '90s-style Halloween episode as Vision investigates the truth about Westview just as a mysterious 'brother' of Pietro shows up." },
+                {
+                  "id": "wandavision-e1",
+                  "episodeNumber": 1,
+                  "title": "Filmed Before a Live Studio Audience",
+                  "summary": "Wanda and Vision move into the town of Westview and settle into a black-and-white 1950s sitcom life, hiding what they can do from the neighbours, while a dinner with Vision's boss goes badly wrong.",
+                  "watchFor": [
+                    { "name": "Mrs. Hart", "characterId": "mrs-hart", "future": "Mrs. Hart turns up again in Agatha All Along.", "spoils": "Agatha All Along" }
+                  ],
+                  "deepDive": {
+                    "plot": "Wanda and Vision arrive in Westview as newlyweds in a black-and-white 1950s sitcom, with a heart drawn on the calendar and neither of them able to say what it marks. Vision hides that he is a synthezoid at work; Wanda uses her powers around the house whenever nobody is looking. The circled date turns out to be dinner with Vision's boss, Mr. Hart, and his wife, which Wanda has made no preparations for and improvises with magic. Mr. Hart begins choking at the table and Mrs. Hart keeps repeating at him to stop it, smiling, unable to do anything else. Wanda says stop it, and the moment resets as though it never happened. The episode ends with the whole thing revealed to be a broadcast that somebody is watching on a monitor."
+                  }
+                },
+                {
+                  "id": "wandavision-e2",
+                  "episodeNumber": 2,
+                  "title": "Don't Touch That Dial",
+                  "summary": "The sitcom shifts into the 1960s as Wanda and Vision prepare for a magic show, while stranger anomalies creep into their perfect world.",
+                  "deepDive": {
+                    "plot": "The 1960s. Wanda and Vision rehearse a magic act for the neighbourhood talent show, with Agnes next door helping. A radio in the house cuts through the programme with a voice asking Wanda who is doing this to her. Vision accidentally swallows chewing gum and short-circuits, so the act has to be carried by real powers disguised as tricks. A beekeeper climbs out of a manhole in the street; Wanda says no and the episode rewinds itself. She is suddenly visibly pregnant, and as she and Vision stand outside, the world turns to colour."
+                  }
+                },
+                {
+                  "id": "wandavision-e3",
+                  "episodeNumber": 3,
+                  "title": "Now in Color",
+                  "summary": "Now in the 1970s, Wanda's pregnancy accelerates unnaturally fast as the outside world starts to intrude on Westview.",
+                  "deepDive": {
+                    "plot": "The 1970s. Wanda's pregnancy runs from a bump to full term in a single afternoon, with Vision trying to arrange a doctor and the town behaving strangely around it. She gives birth to twins, Tommy and Billy. Their neighbour Geraldine is present, and when she mentions Ultron by name Wanda realises she is not part of the town at all. Wanda throws her out through the barrier, and outside, Geraldine lands in a field surrounded by military vehicles."
+                  }
+                },
+                {
+                  "id": "wandavision-e4",
+                  "episodeNumber": 4,
+                  "title": "We Interrupt This Program",
+                  "summary": "Jumping outside Westview for the first time, S.W.O.R.D. investigates the strange sitcom-reality surrounding the town.",
+                  "watchFor": [
+                    { "name": "Who Geraldine really is", "characterId": "monica-rambeau", "thisFilm": "The neighbour who never quite fitted is Monica Rambeau, an agent who went into Westview from the outside and lost her own memory on the way in." },
+                    { "name": "The Rambeaus", "characterId": "monica-rambeau", "thisFilm": "Monica is the girl from Captain Marvel, grown up. Her mother Maria was Carol Danvers' closest friend, and Monica returns from five years of the Blip to find that Maria died of cancer while she was gone." },
+                    { "name": "S.W.O.R.D.", "thisFilm": "The agency running the perimeter, set up to handle threats from off-world. Maria Rambeau founded it." },
+                    { "name": "Seeing it from outside", "thisFilm": "The episode restarts the series from the outside, and everything you have watched so far turns out to have been broadcast." }
+                  ],
+                  "deepDive": {
+                    "plot": "The series restarts from the outside. Monica Rambeau returns from the Blip in a hospital that is refilling with people, and learns her mother Maria died of cancer three years into the five she missed. She reports to S.W.O.R.D., the agency Maria founded, now run by Tyler Hayward. FBI agent Jimmy Woo has a missing persons case in Westview, a town nobody outside can remember exists, and astrophysicist Darcy Lewis picks up a broadcast signal coming out of it in the shape of a 1950s sitcom. Monica is sent in and comes out again after Wanda expels her. The episode replays that expulsion from Wanda's side, where Vision briefly appears as the corpse he actually is."
+                  }
+                },
+                {
+                  "id": "wandavision-e5",
+                  "episodeNumber": 5,
+                  "title": "On a Very Special Episode...",
+                  "summary": "In an '80s-style episode, Wanda and Vision juggle twin toddlers while Vision starts to notice the townspeople aren't acting of their own free will.",
+                  "watchFor": [
+                    { "name": "The twins", "thisFilm": "Wanda's sons age themselves from babies to ten-year-olds in an afternoon and are named Billy and Tommy." },
+                    { "name": "What becomes of Billy", "future": "Billy is the teenager at the centre of Agatha All Along, reincarnated and looking for his brother, and he takes the name Wiccan.", "spoils": "Agatha All Along" },
+                    { "name": "Vision starts asking questions", "characterId": "vision", "thisFilm": "He works out that the townspeople are not choosing anything, and it is the first real argument he and Wanda have." }
+                  ],
+                  "deepDive": {
+                    "plot": "The 1980s. The twins age themselves to five and then to ten, and adopt a dog. Vision begins waking his colleagues out of Wanda's control at work and comes home to argue with her about whether any of this is a choice anyone is making. S.W.O.R.D. sends a drone in and Hayward fires on Wanda, who walks out of the Hex to tell them to leave her alone. Hayward shows the room security footage of Wanda stealing Vision's body from S.W.O.R.D., which is not what happened. The episode ends with someone knocking at the door: Wanda's brother Pietro, played by a different actor than the one who died in Sokovia."
+                  }
+                },
+                {
+                  "id": "wandavision-e6",
+                  "episodeNumber": 6,
+                  "title": "All-New Halloween Spooktacular!",
+                  "summary": "A '90s-style Halloween episode as Vision investigates the truth about Westview just as a mysterious 'brother' of Pietro shows up.",
+                  "deepDive": {
+                    "plot": "A 1990s Halloween episode, with Pietro in the house and asking questions Wanda cannot answer. Billy and Tommy come into their powers, Billy hearing thoughts and Tommy running. Vision leaves the house and heads for the edge of town, finding the residents frozen mid-task the further out he goes, and begins tearing apart as he crosses the barrier. Darcy, inside the Hex and recruited into the sitcom as an escape artist, gets a message to him. To keep Vision alive Wanda expands the Hex outward, swallowing the S.W.O.R.D. camp and everyone in it."
+                  }
+                },
                 {
                   "id": "wandavision-e7",
                   "episodeNumber": 7,
@@ -805,7 +866,10 @@
                   "summary": "The sitcom format collapses as Wanda begins to lose control of the reality she's created, revealing the toll of her grief.",
                   "watchFor": [
                     { "name": "Agatha Harkness", "characterId": "agatha-harkness", "thisFilm": "Revealed as the meddling neighbor who's been secretly manipulating events all along.", "future": "Becomes the central antagonist of the finale, then gets her own spin-off.", "spoils": "Agatha All Along" }
-                  ]
+                  ],
+                  "deepDive": {
+                    "plot": "A 2000s mockumentary, with Wanda talking to camera and her control slipping: objects change decade mid-shot and she cannot make them hold. Vision and Darcy make their way back into town. Monica forces her way through the barrier a second time and comes out the other side with her cells rewritten, seeing energy. Agnes takes the twins to her house. When Wanda follows, the basement is not a basement, and Agnes explains what she has been doing all season: she is Agatha Harkness, she has been there since the beginning, and none of it has been an accident."
+                  }
                 },
                 {
                   "id": "wandavision-e8",
@@ -814,18 +878,24 @@
                   "summary": "Flashbacks reveal how Wanda's trauma and grief led her to unknowingly create the Hex and resurrect Vision using the Mind Stone's power.",
                   "watchFor": [
                     { "name": "The Darkhold", "thisFilm": "Wanda is shown the Darkhold, the 'Book of the Damned,' by Agatha.", "future": "Becomes central to her descent into darkness in Doctor Strange in the Multiverse of Madness.", "spoils": "Doctor Strange in the Multiverse of Madness" }
-                  ]
+                  ],
+                  "deepDive": {
+                    "plot": "Agatha walks Wanda back through her own memories. A sitcom night in Sokovia interrupted by a Stark shell that killed her parents and then failed to go off for two days. The Hydra experiment with the Mind Stone, which did not give her power so much as find what was already there and make it enormous. Vision talking her through grief in the Avengers compound. Wanda going to S.W.O.R.D. to bury Vision and being refused, then walking to the plot of land in Westview he had bought for them, and creating everything out of nothing without meaning to. Agatha tells her what she is: the Scarlet Witch, a being that was supposed to be a myth. In the post-credits, Hayward brings the real Vision's body online, white and blank."
+                  }
                 },
                 {
                   "id": "wandavision-e9",
                   "episodeNumber": 9,
                   "title": "The Series Finale",
                   "summary": "Wanda confronts Agatha for control of Westview and says goodbye to the family she created, while a mysterious white-caped figure appears in a mid-credit scene.",
+                  "postCredit": {"count":1,"type":"mid"},
                   "watchFor": [
-                    { "name": "White Vision", "characterId": "vision", "thisFilm": "A reconstructed, memory-wiped version of Vision built by S.W.O.R.D. confronts Wanda's Vision.", "future": "His fate is left open for future stories." },
-                    { "name": "Wanda reading the Darkhold", "characterId": "wanda-maximoff", "thisFilm": "Takes the Darkhold with her as she leaves Westview to study it in isolation.", "future": "Directly leads into her villainous turn in Doctor Strange in the Multiverse of Madness.", "spoils": "Doctor Strange in the Multiverse of Madness" }
+                    { "name": "White Vision", "characterId": "vision", "thisFilm": "A reconstructed, memory-wiped version of Vision built by S.W.O.R.D. confronts Wanda's Vision.", "future": "Nothing picks up the white Vision until VisionQuest.", "spoils": "VisionQuest", "nameIsSpoiler": true },
+                    { "name": "Wanda reading the Darkhold", "characterId": "wanda-maximoff", "thisFilm": "Takes the Darkhold with her as she leaves Westview to study it in isolation.", "future": "The Darkhold is what turns her into the villain of Doctor Strange in the Multiverse of Madness.", "spoils": "Doctor Strange in the Multiverse of Madness", "nameIsSpoiler": true }
                   ],
-                  "postCredit": { "count": 1, "type": "mid" }
+                  "deepDive": {
+                    "plot": "Wanda fights Agatha over Westview while Vision meets the rebuilt version of himself. The two Visions talk each other out of it instead of fighting, and the white one leaves with his memories restored and no idea what he is. Wanda lets Agatha drain her, having covered the Hex in runes so that only one witch can use magic inside it, and takes the Scarlet Witch title for herself. She traps Agatha inside the Agnes persona permanently. Then she takes the Hex down, which means saying goodbye to Vision and to the twins, and the townspeople look at her with no gratitude at all. In the mid-credits Monica is approached by a S.W.O.R.D. agent who is a Skrull, with a message that somebody off-world wants to meet her. In the post-credits Wanda is alone in a cabin in the mountains, astral-projecting over the Darkhold, and hears the twins calling for her."
+                  }
                 }
               ]
             }
@@ -841,43 +911,97 @@
           "art": { "tmdbId": 88396, "poster": "/6kbAMLteGO8yyewYau6bJ683sw7.jpg", "backdrop": "/aTjbqMONy77fHJrIYu14g1F0d5h.jpg" },
           "summary": "With Steve Rogers gone, Sam Wilson and Bucky Barnes are forced to work together against a group of anti-nationalist super soldiers, while a new government-appointed Captain America stirs controversy.",
           "beforeWatch": {
-            "context": "Around six months after Endgame, following the two men Steve left behind and the question of what happens to the shield now. The world is dealing with the practical mess of half the population returning after five years away. The Winter Soldier is the key film to have fresh, since this series carries straight on from that story's politics.",
+            "context": "At the end of Endgame, Steve handed the shield to Sam Wilson. Sam has not decided what to do with it and is still serving, flying missions for the Air Force as Falcon. Bucky spent seventy years as a Hydra assassin with his memory wiped between jobs, chose to go back under in Wakanda after Civil War rather than risk being triggered again, and was deprogrammed there, which is where the Black Panther post-credits scene left him. Both of them are living in a world where half the population came back at once after five years away, and nobody has worked out what to do about the borders, the housing, or the people who filled the gap. The Winter Soldier is the film to have fresh.",
             "watchFirst": ["avengers-4","cap-2"]
           },
-          "inUniverseSetting": "2023",
+          "inUniverseSetting": "Spring 2024",
           "timeSkip": "Roughly six months after the Blip is reversed",
           "deepDive": {
             "plot": "With Steve Rogers retired, Sam Wilson struggles with the weight of the shield he was given, ultimately donating it to a museum, while the government hands the Captain America mantle to a decorated but volatile soldier, John Walker. Sam and a restless Bucky Barnes reluctantly team up to stop the Flag-Smashers, a group of super-soldiers who believe the world was better during the Blip's more equal chaos. After Walker publicly kills a Flag-Smasher with the shield and is stripped of the title, Sam reclaims the mantle himself, becoming the first Black Captain America and confronting the government about America's history of failing Black soldiers like the forgotten super-soldier Isaiah Bradley.",
-            "significance": "Passes the Captain America identity to Sam Wilson for good, and introduces both U.S. Agent and a returning Zemo, both of whom recur across later Phase Four and Five stories.",
+            "significance": "The first thing the MCU made that is properly about the aftermath of the Blip rather than about a fight, which turns out to be the shape of most of Phase Four. It introduces Joaquin Torres and Isaiah Bradley, ends with Sam taking the name in a Wakandan-made suit, and turns John Walker into U.S. Agent working for Valentina. Sharon comes out of it pardoned and back inside the CIA, running something nobody in the series finds out about.",
             "orderNote": "Follows WandaVision as the next chronological post-Blip story, unfolding over the following months."
           },
           "watchFor": [
-            { "name": "What the shield costs" },
-            { "name": "Sam Wilson", "characterId": "sam-wilson", "thisFilm": "Hands the shield to the government in the first episode because he doesn't think it's his to carry, and spends the rest of the series working out that he was wrong about why.", "future": "He's Captain America from here on, which is where Brave New World starts.", "spoils": "Captain America: Brave New World" },
-            { "name": "Bucky Barnes", "characterId": "bucky-barnes", "thisFilm": "Out of prison, in court-ordered therapy, working through a list of people he needs to make amends to. The list is the spine of his half of the story.", "future": "Turns up on Yelena's team years later, still trying to be useful to someone.", "spoils": "Thunderbolts*" },
-            { "name": "Isaiah Bradley", "characterId": "isaiah-bradley", "thisFilm": "A super soldier from the Korean War the country used, jailed and erased. Nothing about him gets resolved, which is the point.", "future": "His grandson Eli is quietly set up, and Isaiah himself matters again in Brave New World.", "spoils": "Captain America: Brave New World" },
-            { "name": "John Walker", "characterId": "john-walker", "thisFilm": "The government's replacement Captain America, who kills a surrendering man in a public square with the shield and is stripped of the title for it.", "future": "Valentina picks him up almost immediately as U.S. Agent, and he's on the team in Thunderbolts*.", "spoils": "Thunderbolts*" },
-            { "name": "Helmut Zemo", "characterId": "helmut-zemo", "thisFilm": "Broken out of prison because they need him, useful for exactly as long as it suits him, and handed to the Dora Milaje at the end.", "future": "The Raft doesn't hold him forever.", "spoils": "Thunderbolts*" },
-            { "name": "Valentina Allegra de Fontaine", "characterId": "valentina", "thisFilm": "Turns up unannounced to recruit Walker, gives no straight answer about who she works for, and leaves.", "future": "She's been assembling a team this whole time, which is what Thunderbolts* is.", "spoils": "Thunderbolts*" },
-            { "name": "Sharon Carter", "characterId": "sharon-carter", "thisFilm": "Living in Madripoor since Civil War, abandoned by the people she helped. The last scene reveals she's the Power Broker, and she gets her pardon and her old clearance back anyway.", "future": "Left sitting inside the government with every reason to resent it, and nothing has been done with it yet.", "nameIsSpoiler": true }
+            { "name": "Sam Wilson", "characterId": "sam-wilson", "thisFilm": "Gives the shield up in the first episode because he does not think it is his to carry, and spends the series working out that he was wrong about why. He ends it as Captain America, in a suit Wakanda built for him, having taken the name on his own terms rather than the government's.", "future": "He is Captain America from here, which is where Brave New World starts.", "spoils": "Captain America: Brave New World" },
+            { "name": "Bucky Barnes", "characterId": "bucky-barnes", "thisFilm": "Out of prison, in court-ordered therapy, working through a list of people he needs to make amends to. The list is the spine of his half of the series.", "future": "He ends up in government himself years later, and on Valentina's team.", "spoils": "Thunderbolts*" },
+            { "name": "Isaiah Bradley", "characterId": "isaiah-bradley", "thisFilm": "A super soldier from the Korean War who was used, imprisoned for thirty years, experimented on, and erased from the record by his own government." },
+            { "name": "John Walker", "characterId": "john-walker", "thisFilm": "The government's replacement Captain America, who kills a surrendering man in a public square with the shield and is stripped of the title for it. Valentina recruits him before the episode is over and gives him a new suit and the name U.S. Agent.", "future": "He is on the team in Thunderbolts*, still working for her.", "spoils": "Thunderbolts*" },
+            { "name": "Valentina Allegra de Fontaine", "characterId": "valentina", "thisFilm": "Turns up unannounced to recruit Walker, gives no straight answer about who she works for, and leaves.", "future": "She has been assembling a team this whole time, which is what Thunderbolts* is.", "spoils": "Thunderbolts*" },
+            { "name": "Sharon Carter", "characterId": "sharon-carter", "thisFilm": "Living in Madripoor since Civil War, abandoned by the people she helped. The last episode reveals she is the Power Broker, and she gets her pardon and her old CIA clearance back anyway.", "nameIsSpoiler": true }
           ],
           "seasons": [
             {
               "seasonNumber": 1,
               "episodes": [
-                { "id": "fws-e1", "episodeNumber": 1, "title": "New World Order", "summary": "Sam struggles with the weight of Steve's legacy while a new, more radical Captain America is unveiled by the government." },
-                { "id": "fws-e2", "episodeNumber": 2, "title": "The Star-Spangled Man", "summary": "Sam and Bucky reluctantly team up to track down the Flag-Smashers, a group fighting for a borderless world." },
-                { "id": "fws-e3", "episodeNumber": 3, "title": "Power Broker", "summary": "The hunt for the source of the Flag-Smashers' powers leads Sam and Bucky to enlist the unpredictable Baron Zemo." },
-                { "id": "fws-e4", "episodeNumber": 4, "title": "The Whole World is Watching", "summary": "Tensions boil over as John Walker's actions as the new Captain America spiral out of control." },
-                { "id": "fws-e5", "episodeNumber": 5, "title": "Truth", "summary": "Sam confronts the government and Isaiah Bradley, a forgotten Black super-soldier erased from history, about who gets to be a hero." },
+                {
+                  "id": "fws-e1",
+                  "episodeNumber": 1,
+                  "title": "New World Order",
+                  "summary": "Sam struggles with the weight of Steve's legacy while a new, more radical Captain America is unveiled by the government.",
+                  "deepDive": {
+                    "plot": "Sam flies an Air Force rescue over Tunisian airspace, pulling a hostage out of a hijacked transport while Georges Batroc's mercenaries try to stop him. Back home he hands the shield to the Smithsonian, saying it belongs in a museum rather than on a person. He and his sister Sarah are refused a bank loan on the family fishing boat despite Sam being an Avenger. Bucky is in court-ordered therapy, working through a list of people he wronged as the Winter Soldier, and is not telling Yori Nakajima that his son is on it. In Switzerland an organised group calling themselves the Flag-Smashers robs a bank with strength no ordinary person has. The episode ends with the government unveiling its own Captain America, holding the shield Sam gave away."
+                  },
+                  "watchFor": [
+                    { "name": "Captain America", "thisFilm": "Sam gives the shield up on the grounds that it belongs in a museum. The last shot of the episode is the government putting it on somebody else." },
+                    { "name": "Georges Batroc", "thisFilm": "The mercenary from the opening of The Winter Soldier, back leading the hijacking Sam breaks up. He was captured in that film and is working again here.", "nameIsSpoiler": true }
+                  ]
+                },
+                {
+                  "id": "fws-e2",
+                  "episodeNumber": 2,
+                  "title": "The Star-Spangled Man",
+                  "summary": "Sam and Bucky reluctantly team up to track down the Flag-Smashers, a group fighting for a borderless world.",
+                  "deepDive": {
+                    "plot": "John Walker and his partner Lemar Hoskins do the press rounds, then turn up wanting Sam and Bucky's help. Sam and Bucky ambush a Flag-Smasher convoy in Munich and are comprehensively beaten: every one of them is a super soldier. Walker and Hoskins arrive and it still goes badly. Bucky takes Sam to Baltimore to meet Isaiah Bradley, a super soldier from the Korean War who fought the Winter Soldier in 1951, and who was imprisoned and experimented on for thirty years afterwards while his records were erased. Bucky is arrested for skipping therapy and Walker gets him out. Out of options, they decide to go and see the one man who understands super soldiers better than anyone."
+                  }
+                },
+                {
+                  "id": "fws-e3",
+                  "episodeNumber": 3,
+                  "title": "Power Broker",
+                  "summary": "The hunt for the source of the Flag-Smashers' powers leads Sam and Bucky to enlist the unpredictable Baron Zemo.",
+                  "deepDive": {
+                    "plot": "Bucky breaks Helmut Zemo out of a Berlin prison. The three go to Madripoor, where Sam has to impersonate the crime lord Smiling Tiger and Bucky has to pretend to still be the Winter Soldier. They find Sharon Carter, living there as a fugitive, and through her the scientist Wilfred Nagel, who recreated the super soldier serum for the Power Broker and produced twenty vials that Karli Morgenthau stole. Zemo kills Nagel. Karli bombs a Global Repatriation Council facility. The episode ends in Latvia with Ayo of the Dora Milaje telling Bucky she has come for Zemo."
+                  },
+                  "watchFor": [
+                    { "name": "Helmut Zemo", "thisFilm": "The Sokovian colonel from Civil War, who lost his wife, son and father when Ultron dropped their city, and who worked out that the Avengers could be broken from the inside rather than beaten. He was serving a life sentence in Berlin for it. He is not enhanced, he is not strong, and he is one of the most dangerous in the series.", "nameIsSpoiler": true },
+                    { "name": "Sharon Carter", "characterId": "sharon-carter", "thisFilm": "Peggy Carter's great-niece, the S.H.I.E.L.D. agent who stole the shield and the wings back for Steve and Sam during Civil War. That made her a criminal under the Sokovia Accords, and unlike them she had no Wakanda to disappear into and nobody lobbying for a pardon. She has been on the run in Madripoor ever since, and she is not warm about it.", "nameIsSpoiler": true }
+                  ]
+                },
+                {
+                  "id": "fws-e4",
+                  "episodeNumber": 4,
+                  "title": "The Whole World is Watching",
+                  "summary": "Tensions boil over as John Walker's actions as the new Captain America spiral out of control.",
+                  "deepDive": {
+                    "plot": "A flashback shows Ayo deprogramming Bucky in Wakanda, breaking Hydra's trigger words for good. In the present the Dora Milaje come to take Zemo, and Walker tries to pull rank on them and is put on the floor. Sam gets a conversation with Karli that is close to working before Walker interrupts it. Zemo destroys the remaining serum vials, but Walker has already pocketed one and takes it. Karli kills Lemar Hoskins in the fight that follows. Walker chases one of the Flag-Smashers into a public square and beats him to death with the shield in front of a crowd of phones."
+                  },
+                  "watchFor": [
+                    { "name": "The Dora Milaje", "thisFilm": "Wakanda's royal guard, introduced in Black Panther as the king's personal protection and the country's standing army. Ayo leads the detail that spent years undoing what Hydra did to Bucky's head, which is why they have a claim on Zemo and why Bucky will not fight them." }
+                  ]
+                },
+                {
+                  "id": "fws-e5",
+                  "episodeNumber": 5,
+                  "title": "Truth",
+                  "summary": "Sam confronts the government and Isaiah Bradley, a forgotten Black super-soldier erased from history, about who gets to be a hero.",
+                  "deepDive": {
+                    "plot": "Sam and Bucky take the shield off Walker by force. Walker is stripped of rank and of the title in a hearing, and is approached immediately afterwards by a woman who declines to explain who she works for. Sam goes back to Baltimore and Isaiah tells him the whole of it: sent to destroy the Winter Soldier, imprisoned for thirty years, experimented on by his own government, his existence deleted from the record. Sam takes the shield home to Louisiana, works on the boat with Sarah, and starts training with it. Bucky arrives with a case from Wakanda. Zemo is taken to the Raft by the Dora Milaje."
+                  }
+                },
                 {
                   "id": "fws-e6",
                   "episodeNumber": 6,
                   "title": "One World, One People",
                   "summary": "Sam claims the mantle of Captain America for the first time, addressing the world directly about what the shield should stand for.",
                   "watchFor": [
-                    { "name": "Sam Wilson becomes Captain America", "characterId": "sam-wilson", "thisFilm": "Takes up the shield and the Captain America identity Steve left him at the end of Endgame.", "future": "Continues into Captain America: Brave New World as the new Captain America.", "spoils": "Captain America: Brave New World" }
-                  ]
+                    { "name": "Sam Wilson becomes Captain America", "characterId": "sam-wilson", "thisFilm": "Takes up the shield and the name, in a suit Wakanda built for him, and does it on his own terms rather than the government's.", "future": "He is Captain America from here, which is where Brave New World starts.", "spoils": "Captain America: Brave New World" },
+                    { "name": "Isaiah Bradley's memorial", "characterId": "isaiah-bradley", "thisFilm": "Sam gets an exhibit put into the Smithsonian for him. Isaiah spends the scene not believing anyone would do it. He stops being a man the country erased and becomes a man it has to admit to.", "future": "That public existence is what makes him matter again in Brave New World.", "spoils": "Captain America: Brave New World", "nameIsSpoiler": true },
+                    { "name": "Sharon back inside the CIA", "characterId": "sharon-carter", "thisFilm": "Pardoned, reinstated, and on the phone within the hour arranging to sell government secrets and prototypes. Nobody in the series finds out.", "nameIsSpoiler": true }
+                  ],
+                  "deepDive": {
+                    "plot": "Sam arrives at the Global Repatriation Council vote in a Wakandan-made suit as Captain America. The Flag-Smashers' attack is stopped, Sharon shoots Karli, and Sam refuses to let the moment end there: he makes the GRC listen to why people were desperate enough to follow her. Walker helps rather than pursues. Afterwards Sharon is pardoned and reinstated at the CIA, and the last thing she does is make a call proving she is still the Power Broker, now with clearance. Valentina hands Walker a new suit and a new name. Sam takes Isaiah and his grandson Eli to the Smithsonian, where an exhibit has been added for a super soldier nobody was allowed to know about."
+                  }
                 }
               ]
             }

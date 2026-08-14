@@ -34,7 +34,7 @@
         "phase-1": "Banished to New Mexico powerless in Thor for reigniting a war out of arrogance, he learns humility (and meets Jane Foster), proves worthy of Mjolnir again, and breaks the Bifrost to stop Loki's genocide of Jotunheim. In The Avengers he comes to Earth to bring his brother home and ends up defending it.",
         "phase-2": "The Dark World costs him his mother, Frigga, killed protecting Jane from Malekith's hunt for the Aether. He turns down Asgard's throne to protect Earth — not knowing the 'Odin' he told is Loki wearing his face. In Age of Ultron a vision in the water shows him the Infinity Stones behind everything, and he leaves Earth to chase the thread.",
         "phase-3": "Ragnarok strips him of everything — hammer, father, home planet, an eye — and he discovers the lightning was never in the hammer. Infinity War immediately takes half his surviving people and his brother; he forges Stormbreaker and buries it in Thanos' chest, but doesn't go for the head. Five years of guilt and beer later, Endgame proves he's still worthy, and he leaves Earth with the Guardians.",
-        "phase-4": "In Love and Thunder he shakes off the dad-bod era, reunites with a cancer-stricken Jane now wielding a reforged Mjolnir, and faces Gorr the God Butcher. It ends with him raising Gorr's resurrected daughter, Love — the God of Thunder, now a single dad."
+        "phase-5": "In Love and Thunder he shakes off the dad-bod era, reunites with a cancer-stricken Jane now wielding a reforged Mjolnir, and faces Gorr the God Butcher. It ends with him raising Gorr's resurrected daughter, Love — the God of Thunder, now a single dad."
       }
     },
     {
@@ -82,7 +82,7 @@
       "id": "nick-fury",
       "name": "Nick Fury",
       "description": "Director of S.H.I.E.L.D. and architect of the Avengers Initiative. Always at least three secrets deep.",
-      "titles": ["captain-marvel", "iron-man-1", "iron-man-2", "thor-1", "avengers-1", "cap-2", "avengers-2", "avengers-3", "avengers-4", "spiderman-2", "secret-invasion", "the-marvels"],
+      "titles": ["iron-man-1", "iron-man-2", "thor-1", "avengers-1", "cap-2", "avengers-2", "avengers-3", "captain-marvel", "avengers-4", "spiderman-2", "the-marvels", "secret-invasion"],
       "image": "/img/characters/nick-fury.avif",
       "phases": {
         "phase-1": "Captain Marvel shows him as a '90s desk agent who meets Carol Danvers and the Skrulls, loses the eye to a cat that isn't a cat, and names a certain initiative after her call sign. From there he assembles the board: recruiting Stark, running Romanoff's evaluation, and in The Avengers defying the Council's nuke order over New York because he believes in his team.",
@@ -109,7 +109,7 @@
       "id": "phil-coulson",
       "name": "Phil Coulson",
       "description": "The unflappable S.H.I.E.L.D. agent who ties the early films together — and the Avengers' biggest fan.",
-      "titles": ["captain-marvel", "iron-man-1", "iron-man-2", "thor-1", "avengers-1"],
+      "titles": ["iron-man-1", "iron-man-2", "thor-1", "avengers-1", "captain-marvel"],
       "image": "/img/characters/phil-coulson.jpg",
       "phases": {
         "phase-1": "A rookie sidekick to Fury in '90s-set Captain Marvel, then the connective tissue of the early files: babysitting Stark, confiscating Mjolnir's crater in Thor, always politely immovable. In The Avengers, Loki runs him through — and Fury weaponizes his death (and his vintage trading cards) to give a bickering team something to avenge. The first Avenger, in the way that counts."
@@ -204,6 +204,36 @@
       }
     },
     {
+      "id": "billy-maximoff",
+      "name": "Billy Maximoff / Wiccan",
+      "description": "One of Wanda's twin sons, born inside Westview, with his mother's talent for magic.",
+      "titles": ["wandavision", "agatha-all-along"],
+      "phases": {
+        "phase-4": "WandaVision: conjured rather than conceived. Wanda's pregnancy runs its course in a single episode inside the Hex, and the twins are born the same day. They age themselves to five and then to ten because the sitcom needs them to, and Billy's powers arrive with the growth spurt: he hears thoughts, and by the finale he is throwing magic in a way that plainly comes from his mother. When Wanda takes the Hex down at the end, both boys go with it. She tells them she will find them again.",
+        "phase-5": "Agatha All Along: the Teen who springs Agatha from the Agnes persona and will not give his name, because he cannot say it out loud without a sigil blocking him. He is Billy, and the way he survived is that his consciousness went somewhere when the Hex fell. It landed in William Kaplan, a boy who died in a car crash at that exact moment, and Billy has been living that boy's life since, with that boy's parents. He takes the name Wiccan, and the series ends with him setting out to find Tommy, with Agatha's ghost attached to him."
+      }
+    },
+    {
+      "id": "tommy-maximoff",
+      "name": "Tommy Maximoff / Speed",
+      "description": "One of Wanda's twin sons, born inside Westview, who takes after his uncle rather than his mother.",
+      "titles": ["wandavision"],
+      "phases": {
+        "phase-4": "WandaVision: born alongside Billy inside the Hex and aged up the same way. His power is speed, which the show makes the obvious point about, since Pietro is the reason Wanda's grief built any of this. He goes when the Hex goes.",
+        "phase-5": "Agatha All Along: not seen, but the whole reason Billy is on the Road. Billy works out that if his own consciousness landed somewhere, Tommy's could have too, and the series ends with him going to look. Nothing has confirmed where Tommy is."
+      }
+    },
+    {
+      "id": "mrs-hart",
+      "name": "Sharon Davis / Mrs. Hart",
+      "description": "A Westview resident, and one of the few people caught up in Wanda's sitcom who turns up again afterwards.",
+      "titles": ["wandavision", "agatha-all-along"],
+      "phases": {
+        "phase-4": "WandaVision: cast as the boss's wife in the first episode, at the dinner party that goes wrong. Wanda tells her to stop laughing and she cannot, which is the earliest sign that nobody in the town is choosing anything. She is one of the residents Wanda releases at the end.",
+        "phase-5": "Agatha All Along: still living in Westview and still going by Mrs. Hart, which is not her name. She attaches herself to Agatha's coven as their fake witch, having no power at all, and walks the Witches' Road on enthusiasm alone. It does not go well for her."
+      }
+    },
+    {
       "id": "peter-parker",
       "name": "Peter Parker / Spider-Man",
       "description": "A Queens high-schooler juggling homework and web-slinging, taken under Tony Stark's wing.",
@@ -234,7 +264,7 @@
       "image": "/img/characters/tchalla.jpg",
       "phases": {
         "phase-3": "Civil War introduces him mid-tragedy — his father dies in the Vienna bombing, and his hunt for Bucky ends with him choosing justice over vengeance, refusing to let Zemo's plan claim him too. Black Panther crowns him, tests the throne against Killmonger's righteous fury, and ends with Wakanda unmasked to the world. He hosts the last stand in Infinity War, dusts, and returns for Endgame's battle.",
-        "phase-4": "Wakanda Forever opens with his death from an unnamed illness (the film's real-world farewell to Chadwick Boseman); the entire story is Wakanda — and Shuri especially — learning to grieve him. The ending reveals a secret: a son, Toussaint, whose Wakandan name is T'Challa."
+        "phase-5": "Wakanda Forever opens with his death from an unnamed illness (the film's real-world farewell to Chadwick Boseman); the entire story is Wakanda — and Shuri especially — learning to grieve him. The ending reveals a secret: a son, Toussaint, whose Wakandan name is T'Challa."
       }
     },
     {
@@ -244,8 +274,7 @@
       "titles": ["captain-marvel", "avengers-4", "ms-marvel", "the-marvels"],
       "image": "/img/characters/carol-danvers.webp",
       "phases": {
-        "phase-1": "Captain Marvel (set in 1995): a Kree-brainwashed soldier called 'Vers' crash-lands into her own erased past, discovers she's human test pilot Carol Danvers, and that her Kree mentors are the villains of the story. She unlocks her full Binary power, sends the Skrulls off to find a home, and leaves Fury a modified pager — and the name for his initiative.",
-        "phase-3": "The pager gets answered: she blazes in during Endgame to haul Tony and Nebula home, single-handedly guts Thanos' flagship, and goes toe-to-toe with him over the gauntlet.",
+        "phase-3": "Captain Marvel (set in 1995): a Kree-brainwashed soldier called 'Vers' crash-lands into her own erased past, discovers she's human test pilot Carol Danvers, and that her Kree mentors are the villains of the story. She unlocks her full Binary power, sends the Skrulls off to find a home, and leaves Fury a modified pager — and the name for his initiative. The pager gets answered: she blazes in during Endgame to haul Tony and Nebula home, single-handedly guts Thanos' flagship, and goes toe-to-toe with him over the gauntlet.",
         "phase-5": "The Marvels forces the loner to team up: her light powers quantum-entangle with Kamala's and Monica's, swapping their places mid-fight while Dar-Benn — fallout of Carol's own war on the Kree, who call her 'the Annihilator' — tears jump points through space. She ends it reigniting Hala's sun, and finally stops carrying the galaxy alone."
       }
     },
@@ -289,9 +318,8 @@
       "titles": ["ant-man-1", "cap-3", "ant-man-2", "avengers-4", "ant-man-3"],
       "image": "/img/characters/scott-lang.jpg",
       "phases": {
-        "phase-2": "Ant-Man: a burglary-with-a-conscience conviction ends in Hank Pym recruiting him to steal his own suit, stop Darren Cross' Yellowjacket, and — for one desperate moment — go subatomic and come back. All of it to be worthy of Cassie.",
-        "phase-3": "The airport fight in Civil War (going Giant-Man in public) buys him house arrest, which Ant-Man and the Wasp spends winding down — until the credit scene strands him in the Quantum Realm mid-snap while the Pyms dust. Five years later a rat frees him: he's the one who walks into Avengers HQ with the time-heist idea. Endgame doesn't happen without him.",
-        "phase-5": "Quantumania: his memoir tour is interrupted when Cassie's signal beacon sucks the whole family into the Quantum Realm — where the exile Janet never talked about, Kang the Conqueror, needs a Pym particle engine fixed. Scott beats a multiversal warlord with ants and stubbornness, and tries very hard not to think about whether it stuck."
+        "phase-3": "Ant-Man: a burglary-with-a-conscience conviction ends in Hank Pym recruiting him to steal his own suit, stop Darren Cross' Yellowjacket, and — for one desperate moment — go subatomic and come back. All of it to be worthy of Cassie. The airport fight in Civil War (going Giant-Man in public) buys him house arrest, which Ant-Man and the Wasp spends winding down — until the credit scene strands him in the Quantum Realm mid-snap while the Pyms dust. Five years later a rat frees him: he's the one who walks into Avengers HQ with the time-heist idea. Endgame doesn't happen without him.",
+        "phase-4": "Quantumania: his memoir tour is interrupted when Cassie's signal beacon sucks the whole family into the Quantum Realm — where the exile Janet never talked about, Kang the Conqueror, needs a Pym particle engine fixed. Scott beats a multiversal warlord with ants and stubbornness, and tries very hard not to think about whether it stuck."
       }
     },
     {
@@ -302,9 +330,8 @@
       "image": "/img/characters/hope-van-dyne.jpeg",
       "imagePosition": "top",
       "phases": {
-        "phase-2": "Ant-Man has her training Scott to do a job she could do better herself — her father won't risk losing her like he lost her mother. The tag finally shows her the wings.",
-        "phase-3": "Ant-Man and the Wasp makes her the first title heroine: she runs the mission to pull Janet out of the Quantum Realm, out-fights everyone in the film, gets her mother back — and dusts in the credit scene mid-operation, alongside both parents. Endgame restores her for the final battle.",
-        "phase-5": "In Quantumania she's running the Pym-van Dyne Foundation when the family is pulled under; she fights Kang beside Scott and gets them home. Probably."
+        "phase-3": "Ant-Man has her training Scott to do a job she could do better herself — her father won't risk losing her like he lost her mother. The tag finally shows her the wings. Ant-Man and the Wasp makes her the first title heroine: she runs the mission to pull Janet out of the Quantum Realm, out-fights everyone in the film, gets her mother back — and dusts in the credit scene mid-operation, alongside both parents. Endgame restores her for the final battle.",
+        "phase-4": "In Quantumania she's running the Pym-van Dyne Foundation when the family is pulled under; she fights Kang beside Scott and gets them home. Probably."
       }
     },
     {
@@ -324,8 +351,7 @@
       "titles": ["ms-marvel", "the-marvels"],
       "image": "/img/characters/kamala-khan.png",
       "phases": {
-        "phase-4": "Ms. Marvel: the bangle wakes hard-light powers tied to the Noor dimension and the Clandestines, and the family history runs through the Partition of India — where Kamala herself, via a time slip, turns out to be the trail of stars that saved her own grandmother. The finale drops a bomb in passing: there's something different in her genes. 'Mutation.'",
-        "phase-5": "The Marvels teams her with her actual idol when her bangle entangles her light powers with Carol's and Monica's. She holds her own, loses the bangle's twin to Dar-Benn, keeps her family hilariously in the loop — and in the tag, goes full Fury: recruiting Kate Bishop for something that sounds a lot like the Young Avengers."
+        "phase-5": "Ms. Marvel: the bangle wakes hard-light powers tied to the Noor dimension and the Clandestines, and the family history runs through the Partition of India — where Kamala herself, via a time slip, turns out to be the trail of stars that saved her own grandmother. The finale drops a bomb in passing: there's something different in her genes. 'Mutation.' The Marvels teams her with her actual idol when her bangle entangles her light powers with Carol's and Monica's. She holds her own, loses the bangle's twin to Dar-Benn, keeps her family hilariously in the loop — and in the tag, goes full Fury: recruiting Kate Bishop for something that sounds a lot like the Young Avengers."
       }
     },
     {
@@ -379,8 +405,8 @@
       "image": "/img/characters/monica-rambeau.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-1": "The kid in Captain Marvel — Maria's daughter, 'Lieutenant Trouble,' who helps pick the colors of Carol's suit and watches her aunt fly off promising to come back.",
-        "phase-4": "WandaVision: now a S.W.O.R.D. captain (returned from the blip to learn her mother died during it), she's pulled into the Hex — and punching through Wanda's barrier three times rewrites her cells. She comes out seeing energy itself, the MCU's first look at Photon.",
+        "phase-3": "The kid in Captain Marvel. Maria's daughter, 'Lieutenant Trouble', who helps pick the colours of Carol's suit and watches her fly off promising to come back.",
+        "phase-4": "WandaVision: first seen inside the sitcom as Geraldine, the neighbour who never quite fits. She is really Captain Monica Rambeau of S.W.O.R.D., who was blipped for five years and came back to find her mother Maria had died of cancer while she was gone. When she pushes Wanda about Pietro, Wanda throws her out through the barrier. She spends the rest of the series investigating the Westview anomaly from outside, and going back through the barrier rewrites her on a cellular level, which is where her powers come from.",
         "phase-5": "The Marvels: entangled with Carol and Kamala, she works through the abandonment she never forgave Carol for — then closes Dar-Benn's incursion rift from the wrong side. She wakes in another universe entirely, in a hospital bed next to her mother's face, with someone who looks a lot like an X-Man taking notes."
       }
     },
@@ -392,7 +418,7 @@
       "image": "/img/characters/america-chavez.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-4": "Multiverse of Madness: the only America Chavez in the multiverse, orphaned by her own untrained power, hunted across realities by the Scarlet Witch, who wants to carve the ability out of her. Strange's bet — that she can control it when it counts — pays off, and she ends the film training at Kamar-Taj, portals on demand."
+        "phase-5": "Multiverse of Madness: the only America Chavez in the multiverse, orphaned by her own untrained power, hunted across realities by the Scarlet Witch, who wants to carve the ability out of her. Strange's bet — that she can control it when it counts — pays off, and she ends the film training at Kamar-Taj, portals on demand."
       }
     },
     {
@@ -405,7 +431,7 @@
       "phases": {
         "phase-1": "The scientist who literally runs into Thor in the New Mexico desert (twice, with a van), and whose research into wormholes turns out to be the Bifrost. She spends the film teaching a god humility by accident.",
         "phase-2": "The Dark World makes her the Aether's unwilling host — carrying an Infinity Stone in her bloodstream — and takes her to Asgard, where Frigga dies protecting her.",
-        "phase-4": "Love and Thunder: years after the breakup, stage-four cancer leads her to Mjolnir's shards — which reforge around her. As the Mighty Thor she fights Gorr knowing every transformation burns through what chemo bought her. She chooses the fight anyway, dies in Thor's arms, and gets the on-screen title: Valhalla."
+        "phase-5": "Love and Thunder: years after the breakup, stage-four cancer leads her to Mjolnir's shards — which reforge around her. As the Mighty Thor she fights Gorr knowing every transformation burns through what chemo bought her. She chooses the fight anyway, dies in Thor's arms, and gets the on-screen title: Valhalla."
       }
     },
     {
@@ -417,7 +443,7 @@
       "imagePosition": "top",
       "phases": {
         "phase-3": "Ragnarok finds her as 'Scrapper 142,' drinking Sakaar dry to forget being the last survivor of the Valkyrior's charge against Hela. She sobers up enough to join the Revengers and fly refugees off a dying Asgard. Endgame's epilogue makes it official: Thor hands her New Asgard.",
-        "phase-4": "Love and Thunder: King Valkyrie, bored to death of ribbon-cuttings, gleefully back in the field against Gorr — where she's wounded badly enough to sit the ending out."
+        "phase-5": "Love and Thunder: King Valkyrie, bored to death of ribbon-cuttings, gleefully back in the field against Gorr — where she's wounded badly enough to sit the ending out."
       }
     },
     {
@@ -450,7 +476,7 @@
       "image": "/img/characters/riri-williams.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-4": "Wakanda Forever: the student whose classroom-project vibranium detector accidentally paints a target on her — both Wakanda and Talokan come for her. She builds her Mark II in Shuri's lab and flies it in the final battle, then goes home with the blueprint in her head, not her hands."
+        "phase-5": "Wakanda Forever: the student whose classroom-project vibranium detector accidentally paints a target on her — both Wakanda and Talokan come for her. She builds her Mark II in Shuri's lab and flies it in the final battle, then goes home with the blueprint in her head, not her hands."
       }
     },
     {
@@ -461,9 +487,8 @@
       "image": "/img/characters/cassie-lang.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-2": "Ant-Man's whole engine: the daughter Scott is trying to be worthy of. Age six, delighted by her giant-ant pet.",
-        "phase-3": "The blip skips her from ten to fifteen — Endgame's quiet gut-punch is Scott finding her grown. Her existence is why he never gives up on the Quantum Realm.",
-        "phase-5": "Quantumania: now a teen activist with a rap sheet and a secret suit, whose Quantum Realm beacon is what drags the family down to Kang. She fights, frees prisoners, and earns the suit for real."
+        "phase-3": "Ant-Man's whole engine: the daughter Scott is trying to be worthy of. Age six, delighted by her giant-ant pet. The blip skips her from ten to fifteen — Endgame's quiet gut-punch is Scott finding her grown. Her existence is why he never gives up on the Quantum Realm.",
+        "phase-4": "Quantumania: now a teen activist with a rap sheet and a secret suit, whose Quantum Realm beacon is what drags the family down to Kang. She fights, frees prisoners, and earns the suit for real."
       }
     },
     {
@@ -476,8 +501,7 @@
       "phases": {
         "phase-2": "Guardians of the Galaxy: steals the wrong orb, assembles the galaxy's most dysfunctional found family, and holds an Infinity Stone with a hand-hold and a dance-off. Vol. 2 answers where he came from — his father is Ego, a living planet, who killed his mother; the family he chose kills the one he inherited, and Yondu's funeral says the quiet part out loud.",
         "phase-3": "Infinity War: reunites with a Thanos-traumatized Gamora, and when Thanos reveals he killed her, Quill's fist unravels the one plan that was working. He dusts on Titan; Endgame revives him searching star charts for the 2014 Gamora who doesn't know him.",
-        "phase-4": "The Holiday Special: his crew kidnaps Kevin Bacon to cheer him up. It mostly works.",
-        "phase-5": "Vol. 3: he drinks through the Gamora wound, helps tear the High Evolutionary's empire down for Rocket — and finally goes home. 'Legendary Star-Lord will return,' but for now he's eating cereal with his grandfather in Missouri."
+        "phase-5": "The Holiday Special: his crew kidnaps Kevin Bacon to cheer him up. It mostly works. Vol. 3: he drinks through the Gamora wound, helps tear the High Evolutionary's empire down for Rocket — and finally goes home. 'Legendary Star-Lord will return,' but for now he's eating cereal with his grandfather in Missouri."
       }
     },
     {
@@ -502,8 +526,7 @@
       "phases": {
         "phase-2": "Guardians of the Galaxy: in prison for a rampage toward Ronan — the man who slaughtered his wife and daughter — he joins the crew, nearly gets everyone killed calling Ronan early, and gets his vengeance. Vol. 2 gives him belly-laughs and Mantis, the only person more literal than he is.",
         "phase-3": "Dusts on Titan in Infinity War (after achieving perfect stillness, invisibly eating snacks); back for Endgame's battle.",
-        "phase-4": "The Holiday Special: co-mastermind of the Kevin Bacon abduction. No notes.",
-        "phase-5": "Vol. 3 reframes him: not a destroyer but a dad, the only one who can talk to the High Evolutionary's engineered kids. He retires from the roster to help raise Knowhere's children."
+        "phase-5": "The Holiday Special: co-mastermind of the Kevin Bacon abduction. No notes. Vol. 3 reframes him: not a destroyer but a dad, the only one who can talk to the High Evolutionary's engineered kids. He retires from the roster to help raise Knowhere's children."
       }
     },
     {
@@ -515,8 +538,7 @@
       "phases": {
         "phase-2": "Guardians of the Galaxy: bounty hunter, jailbreak architect, and the loudest small mammal in the galaxy — with hints of the lab that made him. Vol. 2 pairs his self-loathing with Yondu's in the film's best scene.",
         "phase-3": "The only original Guardian to survive the snap — he spends Endgame's five years as an actual Avenger, and rebuilds the team's tech for the heist.",
-        "phase-4": "The Holiday Special: reveals he bought Bucky's arm from that auction chatter. It's his now.",
-        "phase-5": "Vol. 3 is his film: flashbacks to the High Evolutionary's cages — Lylla, Teefs, Floor, the friends who never made it out — while the present-day crew races to save his life. He faces his maker, frees the cages, and ends the film as captain of the Guardians."
+        "phase-5": "The Holiday Special: reveals he bought Bucky's arm from that auction chatter. It's his now. Vol. 3 is his film: flashbacks to the High Evolutionary's cages — Lylla, Teefs, Floor, the friends who never made it out — while the present-day crew races to save his life. He faces his maker, frees the cages, and ends the film as captain of the Guardians."
       }
     },
     {
@@ -528,8 +550,7 @@
       "phases": {
         "phase-2": "Guardians of the Galaxy: muscle, houseplant, and the sacrifice that saves everyone — 'We are Groot.' The twig that survives becomes Baby Groot, who spends Vol. 2 adorably failing to fetch Yondu's fin.",
         "phase-3": "Teenage Groot: video games, attitude, and handing Thor an arm for Stormbreaker's handle. Dusts in Wakanda; returns for Endgame.",
-        "phase-4": "Holiday Special Groot: big, festive, decorates himself.",
-        "phase-5": "Vol. 3: full Colossus-sized Groot, ship-grower, and — as the crew finally hears — 'I love you guys.' Everyone understood him all along; now the audience does too."
+        "phase-5": "Holiday Special Groot: big, festive, decorates himself. Vol. 3: full Colossus-sized Groot, ship-grower, and — as the crew finally hears — 'I love you guys.' Everyone understood him all along; now the audience does too."
       }
     },
     {
@@ -554,8 +575,7 @@
       "phases": {
         "phase-2": "Vol. 2: Ego's live-in sleep aid, kept like a pet, who defects the moment someone treats her like a person. Drax's bluntness and her innocence become the film's oddest, sweetest friendship.",
         "phase-3": "She's the one holding Thanos sedated on Titan when the plan collapses. Dusts; returns for Endgame.",
-        "phase-4": "The Holiday Special drops its bomb mid-musical-number: she's Quill's half-sister, another of Ego's children. She finally tells him, and gets a brother for Christmas.",
-        "phase-5": "Vol. 3: done being underestimated — she leaves the team at the end to find out who she is when she isn't managing everyone else's feelings, three Abilisks in tow."
+        "phase-5": "The Holiday Special drops its bomb mid-musical-number: she's Quill's half-sister, another of Ego's children. She finally tells him, and gets a brother for Christmas. Vol. 3: done being underestimated — she leaves the team at the end to find out who she is when she isn't managing everyone else's feelings, three Abilisks in tow."
       }
     },
     {
@@ -578,8 +598,7 @@
       "imagePosition": "top",
       "phases": {
         "phase-2": "Vol. 2: his one mutinous complaint snowballs into Yondu losing his crew — a guilt he carries into inheriting the fin and the arrow he can't whistle straight.",
-        "phase-4": "Holiday Special: still with the Guardians on Knowhere, still practicing.",
-        "phase-5": "Vol. 3: finally masters the arrow mid-battle — Yondu's ghost giving him a nod — and takes his place on the new Guardians roster."
+        "phase-5": "Holiday Special: still with the Guardians on Knowhere, still practicing. Vol. 3: finally masters the arrow mid-battle — Yondu's ghost giving him a nod — and takes his place on the new Guardians roster."
       }
     },
     {
@@ -655,15 +674,14 @@
       "imagePosition": "top",
       "phases": {
         "phase-1": "The First Avenger's gadget man — he builds Cap's shield and flies Steve behind enemy lines. Iron Man 2 reveals his longest game: the new element Tony needs, hidden in the Stark Expo model decades in advance, with a filmed message: 'my greatest creation is you.'",
-        "phase-2": "Ant-Man opens in 1989 with Hank Pym resigning to Howard's face over the Pym Particle.",
-        "phase-3": "Civil War shows how he and Maria really died in 1991: the Winter Soldier, on HYDRA's orders — the reveal that breaks Tony and Steve apart. In Endgame, Tony time-travels into 1970 and gets an accidental goodbye: advice from a father about to have a son."
+        "phase-3": "Ant-Man opens in 1989 with Hank Pym resigning to Howard's face over the Pym Particle. Civil War shows how he and Maria really died in 1991: the Winter Soldier, on HYDRA's orders — the reveal that breaks Tony and Steve apart. In Endgame, Tony time-travels into 1970 and gets an accidental goodbye: advice from a father about to have a son."
       }
     },
     {
       "id": "wong",
       "name": "Wong",
       "description": "Master of the mystic arts and keeper of Kamar-Taj's library — and eventually far more than a sidekick.",
-      "titles": ["doctor-strange-1", "avengers-3", "avengers-4", "shang-chi", "spiderman-3", "doctor-strange-2", "she-hulk"],
+      "titles": ["doctor-strange-1", "avengers-3", "avengers-4", "spiderman-3", "shang-chi", "she-hulk", "doctor-strange-2"],
       "image": "/img/characters/wong.jpg",
       "phases": {
         "phase-3": "Doctor Strange: the librarian who does not laugh at Strange's jokes and drills the rules into him. Holds the line in Infinity War's New York fight, then opens portals with the rest in Endgame.",
@@ -688,7 +706,7 @@
       "image": "/img/characters/karl-mordo.webp",
       "phases": {
         "phase-3": "Doctor Strange: recruits Strange off the street and fights beside him — until learning the Ancient One fed on the very darkness she banned, and that Strange broke natural law to win. He walks away from Kamar-Taj with a new conviction: 'too many sorcerers.' The tag shows him start collecting.",
-        "phase-4": "Multiverse of Madness sidesteps the payoff: the Mordo we meet is a different universe's variant, an Illuminati member who sentences Strange with a smile. Our Mordo is still out there."
+        "phase-5": "Multiverse of Madness sidesteps the payoff: the Mordo we meet is a different universe's variant, an Illuminati member who sentences Strange with a smile. Our Mordo is still out there."
       }
     },
     {
@@ -702,7 +720,7 @@
         "phase-1": "Thor: the gatekeeper who sees ten trillion souls — and lets Thor's friends through against orders, freezing rather than kneeling to Loki.",
         "phase-2": "The Dark World: gets a rare action beat taking down a cloaked ship with his bare hands, and commits treason with a clean conscience to help Thor stop Malekith.",
         "phase-3": "Ragnarok: leading Asgard's refugee resistance from the mountains. Infinity War gives him his last act — his dying breath spends the Bifrost's dark magic sending the Hulk to Earth to raise the alarm. Thanos kills him for it.",
-        "phase-4": "Love and Thunder: greets Jane at Valhalla's door in the tag — and his son Axl, who inherited a splinter of the sight, helps Thor track Gorr."
+        "phase-5": "Love and Thunder: greets Jane at Valhalla's door in the tag — and his son Axl, who inherited a splinter of the sight, helps Thor track Gorr."
       }
     },
     {
@@ -727,7 +745,7 @@
       "imagePosition": "top",
       "phases": {
         "phase-3": "Ragnarok: Sakaar's friendliest gladiator, whose failed revolution ('I didn't print enough pamphlets') finally succeeds when he leads the arena uprising. Endgame finds him five years deep in Fortnite with Thor in New Asgard.",
-        "phase-4": "Love and Thunder: the saga's narrator, reduced briefly to a living face after Zeus shatters him — he recovers, finds love with another Kronan, and explains how rock guys make babies. You didn't need to know; he told you anyway."
+        "phase-5": "Love and Thunder: the saga's narrator, reduced briefly to a living face after Zeus shatters him — he recovers, finds love with another Kronan, and explains how rock guys make babies. You didn't need to know; he told you anyway."
       }
     },
     {
@@ -738,9 +756,8 @@
       "image": "/img/characters/hank-pym.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-2": "Ant-Man: the Cold War's secret shrinking operative, who quit S.H.I.E.L.D. rather than hand over the particle and lost Janet to the Quantum Realm decades ago. He recruits a burglar rather than let his protégé Darren Cross weaponize the tech — and rather than risk Hope.",
-        "phase-3": "Ant-Man and the Wasp: builds the tunnel, goes into the Quantum Realm himself, and brings Janet home — then dusts in the credit scene beside her. Endgame restores them.",
-        "phase-5": "Quantumania: pulled into the realm with the family, where he learns what Janet never said — and his ant colony, evolved centuries ahead in a time dilation, arrives as literal cavalry. Techno-ants. He's insufferably proud."
+        "phase-3": "Ant-Man: the Cold War's secret shrinking operative, who quit S.H.I.E.L.D. rather than hand over the particle and lost Janet to the Quantum Realm decades ago. He recruits a burglar rather than let his protégé Darren Cross weaponize the tech — and rather than risk Hope. Ant-Man and the Wasp: builds the tunnel, goes into the Quantum Realm himself, and brings Janet home — then dusts in the credit scene beside her. Endgame restores them.",
+        "phase-4": "Quantumania: pulled into the realm with the family, where he learns what Janet never said — and his ant colony, evolved centuries ahead in a time dilation, arrives as literal cavalry. Techno-ants. He's insufferably proud."
       }
     },
     {
@@ -752,7 +769,7 @@
       "imagePosition": "top",
       "phases": {
         "phase-3": "Ant-Man and the Wasp: after thirty years subatomic she's found alive — changed, a little uncanny, and briefly telepathic through Scott. She dusts on the parking lot beside her family minutes after coming home.",
-        "phase-5": "Quantumania is her secret history: those thirty years were spent surviving the realm — and befriending a stranded traveler whose engine she repaired, until she saw what he was. She's the reason Kang was trapped, and the reason the family knows how to fight him."
+        "phase-4": "Quantumania is her secret history: those thirty years were spent surviving the realm — and befriending a stranded traveler whose engine she repaired, until she saw what he was. She's the reason Kang was trapped, and the reason the family knows how to fight him."
       }
     },
     {
@@ -762,8 +779,7 @@
       "titles": ["ant-man-1", "ant-man-2"],
       "image": "/img/characters/luis.webp",
       "phases": {
-        "phase-2": "Ant-Man: Scott's cellmate-turned-crewmate, whose waterfall-recap storytelling style becomes a franchise institution. He's the tipper who sets the whole heist in motion.",
-        "phase-3": "Ant-Man and the Wasp: co-founder of X-Con Security, truth-serum'd into the single greatest recap in Marvel history — narrating Scott's entire romantic arc while the goons just wanted an address."
+        "phase-3": "Ant-Man: Scott's cellmate-turned-crewmate, whose waterfall-recap storytelling style becomes a franchise institution. He's the tipper who sets the whole heist in motion. Ant-Man and the Wasp: co-founder of X-Con Security, truth-serum'd into the single greatest recap in Marvel history — narrating Scott's entire romantic arc while the goons just wanted an address."
       }
     },
     {
@@ -774,7 +790,7 @@
       "image": "/img/characters/okoye.webp",
       "phases": {
         "phase-3": "Introduced guarding T'Challa in Civil War, then Black Panther gives her the sharpest arc in the room: loyal to the throne even when Killmonger sits on it — until he threatens what the throne exists to protect. Spears through Infinity War and Endgame's battles for Wakanda.",
-        "phase-4": "Wakanda Forever breaks her: defeated by Namor and stripped of her rank for losing Shuri, she re-enters the fight out of uniform in the Midnight Angel armor — loyalty to people over position, finally chosen out loud."
+        "phase-5": "Wakanda Forever breaks her: defeated by Namor and stripped of her rank for losing Shuri, she re-enters the fight out of uniform in the Midnight Angel armor — loyalty to people over position, finally chosen out loud."
       }
     },
     {
@@ -785,7 +801,7 @@
       "image": "/img/characters/shuri.jpg",
       "phases": {
         "phase-3": "Black Panther: sixteen, running Wakanda's most advanced lab, roasting her brother's sandals. She deprograms Bucky between films and spends Infinity War racing to save Vision — the last domino before the snap. Dusts; returns.",
-        "phase-4": "Wakanda Forever is hers: she fails to save T'Challa, loses her mother to Namor's attack, synthesizes the heart-shaped herb from Talokan's flower, and becomes the Black Panther with vengeance in her teeth — then spares Namor at the brink, choosing who her brother was over what her grief wants. She burns the funeral robes on Haiti's shore, finally grieving."
+        "phase-5": "Wakanda Forever is hers: she fails to save T'Challa, loses her mother to Namor's attack, synthesizes the heart-shaped herb from Talokan's flower, and becomes the Black Panther with vengeance in her teeth — then spares Namor at the brink, choosing who her brother was over what her grief wants. She burns the funeral robes on Haiti's shore, finally grieving."
       }
     },
     {
@@ -796,7 +812,7 @@
       "image": "/img/characters/nakia.webp",
       "phases": {
         "phase-3": "Black Panther: a War Dog who'd rather free trafficking victims than watch borders — the argument for engagement that T'Challa ultimately adopts as policy. She steals the last heart-shaped herb that saves him.",
-        "phase-4": "Wakanda Forever: living quietly in Haiti until Ramonda calls in the one operative she trusts — Nakia extracts Shuri from Talokan. The ending explains the distance: she's been raising T'Challa's son."
+        "phase-5": "Wakanda Forever: living quietly in Haiti until Ramonda calls in the one operative she trusts — Nakia extracts Shuri from Talokan. The ending explains the distance: she's been raising T'Challa's son."
       }
     },
     {
@@ -808,7 +824,7 @@
       "imagePosition": "top",
       "phases": {
         "phase-3": "Black Panther: challenges T'Challa at the waterfall, loses honorably, then repays the debt at the perfect moment — sheltering the royal family and marching the Jabari into a war he could have sat out. Fights through Infinity War and Endgame.",
-        "phase-4": "Wakanda Forever: the war council's loudest realist and Shuri's blunt-force conscience about vengeance. The film ends with him striding into the challenge circle — the Jabari claim the throne."
+        "phase-5": "Wakanda Forever: the war council's loudest realist and Shuri's blunt-force conscience about vengeance. The film ends with him striding into the challenge circle — the Jabari claim the throne."
       }
     },
     {
@@ -819,7 +835,7 @@
       "image": "/img/characters/ramonda.webp",
       "phases": {
         "phase-3": "Black Panther: the steel behind the throne through T'Challa's coronation and the Killmonger coup, fleeing to the Jabari with the last of the herb.",
-        "phase-4": "Wakanda Forever: a queen who has buried her whole family and still faces down the UN — 'I am queen of the most powerful nation in the world, and my entire family is gone.' She strips Okoye's rank to protect Shuri, and drowns saving Riri when Namor floods the throne room. Her death is what tips Shuri toward the herb."
+        "phase-5": "Wakanda Forever: a queen who has buried her whole family and still faces down the UN — 'I am queen of the most powerful nation in the world, and my entire family is gone.' She strips Okoye's rank to protect Shuri, and drowns saving Riri when Namor floods the throne room. Her death is what tips Shuri toward the herb."
       }
     },
     {
@@ -830,7 +846,7 @@
       "image": "/img/characters/everett-ross.webp",
       "phases": {
         "phase-3": "Civil War: the bureaucrat holding Zemo's leash, briefly. Black Panther upgrades him: takes a bullet for Nakia, gets rebuilt by Shuri's tech, and flies the remote dogfight that stops the vibranium shipments.",
-        "phase-4": "Wakanda Forever: feeding Wakanda intel against his own agency — which his ex-wife, Director Valentina de Fontaine, has him arrested for. Wakanda repays the favor with a jailbreak."
+        "phase-5": "Wakanda Forever: feeding Wakanda intel against his own agency — which his ex-wife, Director Valentina de Fontaine, has him arrested for. Wakanda repays the favor with a jailbreak."
       }
     },
     {
@@ -900,8 +916,8 @@
       "image": "/img/characters/talos.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-1": "Captain Marvel's great rug-pull: the sinister shapeshifting general is actually a refugee commander looking for his hidden family and the light-speed engine — the Skrulls were the victims all along. His 'good science-guy' impression is a franchise highlight.",
-        "phase-3": "Far From Home's tag reveals he spent the whole film being Nick Fury — glasses, growl, and all — while the real one was off-world.",
+        "phase-3": "Captain Marvel's great rug-pull: the sinister shapeshifting general is actually a refugee commander looking for his hidden family and the light-speed engine — the Skrulls were the victims all along. His 'good science-guy' impression is a franchise highlight.",
+        "phase-4": "Far From Home's tag reveals he spent the whole film being Nick Fury — glasses, growl, and all — while the real one was off-world.",
         "phase-5": "Secret Invasion: thirty years of broken promises later, his own people's radicals follow Gravik instead. He dies taking a bullet in the extraction op — the cost of staying loyal to both species, and the loss the finale hangs on. His daughter G'iah inherits the fight."
       }
     },
@@ -1077,7 +1093,7 @@
       "image": "/img/characters/wade-wilson.jpg",
       "imagePosition": "top",
       "phases": {
-        "phase-5": "Deadpool & Wolverine: yanked out of retirement (and a Honda Odyssey) by the TVA with news that his universe is dying — its anchor being, Logan, is dead. His solution: kidnap-a-Wolverine. One Void road trip, a Cassandra Nova problem, and several hundred crimes against the fourth wall later, he saves his timeline and his found family, officially aboard the MCU while roasting it from inside."
+        "phase-4": "Deadpool & Wolverine: yanked out of retirement (and a Honda Odyssey) by the TVA with news that his universe is dying — its anchor being, Logan, is dead. His solution: kidnap-a-Wolverine. One Void road trip, a Cassandra Nova problem, and several hundred crimes against the fourth wall later, he saves his timeline and his found family, officially aboard the MCU while roasting it from inside."
       }
     },
     {
@@ -1087,7 +1103,7 @@
       "titles": ["deadpool-wolverine"],
       "image": "/img/characters/logan.png",
       "phases": {
-        "phase-5": "Deadpool & Wolverine: not the Logan who died a hero — the 'worst Wolverine,' the one who wasn't there when his X-Men were slaughtered, drinking his way through the multiverse in the yellow suit he never earned. Wade drags him into being the anchor his own world lost, and by the end the suit fits. He stays — Wade's roommate now, to both their horror."
+        "phase-4": "Deadpool & Wolverine: not the Logan who died a hero — the 'worst Wolverine,' the one who wasn't there when his X-Men were slaughtered, drinking his way through the multiverse in the yellow suit he never earned. Wade drags him into being the anchor his own world lost, and by the end the suit fits. He stays — Wade's roommate now, to both their horror."
       }
     },
     {
@@ -1098,7 +1114,7 @@
       "image": "/img/characters/reed-richards.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-4": "A variant cameo in Multiverse of Madness: the Illuminati's Reed, who explains exactly how dangerous Wanda is shortly before demonstrating it, fatally.",
+        "phase-5": "A variant cameo in Multiverse of Madness: the Illuminati's Reed, who explains exactly how dangerous Wanda is shortly before demonstrating it, fatally.",
         "phase-6": "First Steps (on retro-future Earth-828): four years into being his world's beloved first family, Reed faces the problem he can't out-think — Galactus wants his newborn son, Franklin, as the price of sparing Earth. He refuses the trade, evacuates a planet's worth of panic into a plan, and helps banish the Devourer through a teleport portal. New address, per the tag: the MCU's main universe."
       }
     },
@@ -1211,7 +1227,7 @@
       "imagePosition": "top",
       "phases": {
         "phase-3": "Black Panther: N'Jadaka, the cousin Wakanda abandoned in Oakland after T'Chaka killed his father. He wins the throne fair by Wakandan law — that's the sting — and his plan is his father's dream weaponized: vibranium for every oppressed people on Earth. T'Challa beats the man but keeps the question. 'Bury me in the ocean, with my ancestors that jumped from the ships.'",
-        "phase-4": "Wakanda Forever: waiting on the ancestral plane when Shuri burns the herb — exactly the ancestor her vengeance deserves, asking whether she'll be noble like her brother, or like him."
+        "phase-5": "Wakanda Forever: waiting on the ancestral plane when Shuri burns the herb — exactly the ancestor her vengeance deserves, asking whether she'll be noble like her brother, or like him."
       }
     },
     {
@@ -1244,8 +1260,7 @@
       "image": "/img/characters/quentin-beck.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-3": "Far From Home: the multiverse claim is theater — Beck is a fired Stark illusion-engineer running a con with drones, projectors, and a disgruntled-employee support group. He plays mentor to grieving Peter to inherit EDITH, nearly wins, and weaponizes his death: the posthumous deepfake outs Peter's identity and frames him for murder.",
-        "phase-4": "That lie is the doorway No Way Home walks through — every consequence in it traces back to Beck's parting shot."
+        "phase-4": "Far From Home: the multiverse claim is theater — Beck is a fired Stark illusion-engineer running a con with drones, projectors, and a disgruntled-employee support group. He plays mentor to grieving Peter to inherit EDITH, nearly wins, and weaponizes his death: the posthumous deepfake outs Peter's identity and frames him for murder. That lie is the doorway No Way Home walks through — every consequence in it traces back to Beck's parting shot."
       }
     },
     {
@@ -1266,7 +1281,7 @@
       "image": "/img/characters/gorr.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-4": "Love and Thunder: the last believer on a dead world, whose god laughed at his daughter's grave — so the Necrosword found a perfect hand. His crusade drags Thor through kidnapped children and a shadow realm to Eternity's altar, where he gets one wish... and, talked down by two dying Thors, spends it not on deicide but on his daughter, alive again. Thor inherits the kid."
+        "phase-5": "Love and Thunder: the last believer on a dead world, whose god laughed at his daughter's grave — so the Necrosword found a perfect hand. His crusade drags Thor through kidnapped children and a shadow realm to Eternity's altar, where he gets one wish... and, talked down by two dying Thors, spends it not on deicide but on his daughter, alive again. Thor inherits the kid."
       }
     },
     {
@@ -1277,19 +1292,18 @@
       "image": "/img/characters/namor.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-4": "Wakanda Forever: K'uk'ulkan, the feathered serpent god — a centuries-old mutant born of the same vibranium desperation that hid Wakanda, ruling Talokan, the ocean's answer to it. The surface world's vibranium hunt makes him strike first: he floods Wakanda's capital and kills its queen. Shuri beats him and spares him — and his tag-scene smile says the concession was strategy: let Wakanda absorb the world's anger first."
+        "phase-5": "Wakanda Forever: K'uk'ulkan, the feathered serpent god — a centuries-old mutant born of the same vibranium desperation that hid Wakanda, ruling Talokan, the ocean's answer to it. The surface world's vibranium hunt makes him strike first: he floods Wakanda's capital and kills its queen. Shuri beats him and spares him — and his tag-scene smile says the concession was strategy: let Wakanda absorb the world's anger first."
       }
     },
     {
       "id": "kang",
       "name": "Kang",
       "description": "A conqueror with mastery over time — and countless variants of himself scattered across the multiverse.",
-      "titles": ["loki", "loki-s2", "ant-man-3"],
+      "titles": ["loki", "ant-man-3", "loki-s2"],
       "image": "/img/characters/kang.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-4": "Loki reveals the original: He Who Remains, the variant who won the multiwar and caged every timeline into one to keep his other selves out. Sylvie's blade frees them all. Season two rewinds his echo — Victor Timely, a nineteenth-century inventor with the same face and none of the menace.",
-        "phase-5": "Quantumania: Kang the Conqueror, the exiled variant Janet met — timeline-eraser, civilization-farmer, beaten in the Quantum Realm by ants and Langs and left to his own collapsing engine. The tag shows the real problem: a stadium of Kangs, annoyed."
+        "phase-4": "Loki reveals the original: He Who Remains, the variant who won the multiwar and caged every timeline into one to keep his other selves out. Sylvie's blade frees them all. Quantumania: Kang the Conqueror, the exiled variant Janet met — timeline-eraser, civilization-farmer, beaten in the Quantum Realm by ants and Langs and left to his own collapsing engine. The tag shows the real problem: a stadium of Kangs, annoyed. Season two rewinds his echo — Victor Timely, a nineteenth-century inventor with the same face and none of the menace."
       }
     },
     {
@@ -1362,6 +1376,18 @@
         "phase-3": "Black Widow's credit scene introduces the shopping spree: at Natasha's grave, she hands Yelena a target — Clint Barton.",
         "phase-4": "The Falcon and the Winter Soldier: materializes beside a court-martialed John Walker with a card that isn't printed yet and the title 'U.S. Agent.' Wakanda Forever confirms the day job: Director of the CIA, and Everett Ross's ex-wife, arresting him personally.",
         "phase-6": "Thunderbolts*: her ledger comes due — the containment-room trap was her shredding evidence, personnel included. When the survivors walk out alive with Bob in tow, she pivots mid-press-conference: meet 'the New Avengers.' She creates the team by failing to kill it."
+      }
+    },
+    {
+      "id": "erik-selvig",
+      "name": "Erik Selvig",
+      "description": "An astrophysicist, Jane Foster's mentor, and one of the first scientists on Earth to treat Asgard as a physics problem rather than a myth.",
+      "titles": ["thor-1", "avengers-1", "thor-2"],
+      "phases": {
+        "phase-1": "Thor: a colleague of Jane's father who thinks her Einstein-Rosen bridge research is a career-ender, right up until a man falls out of the sky. He is the one who gets Thor out of S.H.I.E.L.D. custody, and by the mid-credits Loki is already standing behind him, telling him what to say about the Tesseract.\n\nThe Avengers: taken by Loki in the opening scene and put under the sceptre's control. He is the reason the portal works, having built the device that stabilises the Tesseract on top of Stark Tower, and also the reason it can be closed, because he built in a failsafe while he was under and left Loki's own sceptre as the way to shut it. He is snapped out of it when Selvig is knocked unconscious.",
+        "phase-2": "Thor: The Dark World: has not recovered from being used. He was institutionalised after New York and turns up lecturing at Stonehenge with no trousers on, which the film plays for laughs and then quietly takes seriously. His gravimetric spikes are what let them fight through the Convergence at all, and they are the closest thing anyone has to a working theory of the nine realms.",
+        "phase-4": "He stops appearing after Phase Three, but his work does not stop being used. Spider-Man: Far From Home refers back to him, which is the point at which his research has outlived his own involvement in it.",
+        "phase-5": "Ms. Marvel: name-checked again by Bruno, Kamala's friend, in a scientific context. Two mentions across two phases, from characters with no connection to each other, which is a reasonable measure of how much of Earth's understanding of this stuff started with him."
       }
     },
     {
@@ -1449,7 +1475,7 @@
       "image": "/img/characters/cassandra-nova.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-5": "Deadpool & Wolverine: Charles Xavier's twin sister, dumped in the Void as an infant and grown into its warlord — a telepath who walks her fingers through people's skulls for fun. Wade and Logan's road trip runs straight through her court; ending her costs them most of a universe's worth of trouble."
+        "phase-4": "Deadpool & Wolverine: Charles Xavier's twin sister, dumped in the Void as an infant and grown into its warlord — a telepath who walks her fingers through people's skulls for fun. Wade and Logan's road trip runs straight through her court; ending her costs them most of a universe's worth of trouble."
       }
     },
     {
@@ -1477,10 +1503,10 @@
       "id": "ronan",
       "name": "Ronan the Accuser",
       "description": "A Kree fanatic wielding a war hammer and an apocalyptic grudge.",
-      "titles": ["captain-marvel", "guardians-1"],
+      "titles": ["guardians-1", "captain-marvel"],
       "image": "/img/characters/ronan.webp",
       "phases": {
-        "phase-1": "Captain Marvel (1995): a decade-younger Ronan leads the Accusers' bombardment of Earth until Carol swats his missiles — and his fleet — out of the sky personally. 'We'll be back for the weapon.' He means her.",
+        "phase-3": "Captain Marvel (1995): a decade-younger Ronan leads the Accusers' bombardment of Earth until Carol swats his missiles — and his fleet — out of the sky personally. 'We'll be back for the weapon.' He means her.",
         "phase-2": "Guardians of the Galaxy: the zealot who breaks his deal with Thanos the moment the orb shows him what's inside — planet-killing power in his hammer and Xandar in his sights. He's undone by a dance-off and a held hand."
       }
     },

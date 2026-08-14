@@ -52,7 +52,7 @@ Required on every entry: `id`, `title`, `year`, `narrativeOrder`, `releaseOrder`
 
 **Multi-season shows split into separate entries** when their seasons belong at different points in the watch order. Loki is the precedent: `loki` ("Loki: Season 1") and `loki-s2` ("Loki: Season 2") with Quantumania between them, because Kang is introduced in that film. Episode ids stay `loki-s1e1` … `loki-s2e6` so watch history survives. Keep the `seasons` wrapper on both.
 
-**Series get one Deep Dive**, at the series level, never per-episode. Only a few pivotal episodes carry their own `watchFor`.
+**Series carry a Deep Dive at the series level, and each episode carries its own `deepDive.plot`** — a recap of that episode behind the spoiler toggle, so the episode page has something more than its one-line `summary`. Episodes don't get `significance` or `orderNote`. Only some episodes carry their own `watchFor`.
 
 ### Save data (browser `localStorage`)
 
@@ -113,6 +113,7 @@ The chip row under "People & things to watch for" is inside **Before you watch**
 - `description` — 1–2 sentences at introduction/premise level. Never twists, deaths or late turns.
 - `titles` — single-line array of entry ids in narrative order; powers the "Browse by film or series" cast filter, which is collapsed behind a spoiler warning. Unreleased titles excluded.
 - `phases` — map of phase id → paragraph. Full spoilers for *that* phase are fine; never leak a later phase into an earlier entry.
+- **Moving a film between phases silently breaks character files.** A character's `phases` key is the phase the paragraph is *filed under*, not the phase the film is in, so re-bucketing a title leaves every mention of it showing on the wrong row, one phase too early or late. That happened to 45 paragraphs when Captain Marvel, the Ant-Man films, Wakanda Forever, Love and Thunder, Quantumania, the Holiday Special and Deadpool & Wolverine were moved. **After any re-bucketing, re-check** that each `phases` key matches where its film now lives, and that `titles` is still in narrative order. Fixing it is not a blind key rename: if a paragraph already exists at the destination the two must be merged, oldest film first, or one silently overwrites the other.
 - The file page shows **all six phases** for every character, so the list itself reveals nothing. Row state is driven by the **user's own progress**: brass `has-record` for a phase they've finished, crimson `is-unseen` with a "NOT SEEN" chip otherwise.
 - Roster threshold: somewhat-important through really-important. Recurring side characters in, one-scene cameos out.
 - `image` → `public/img/characters/<id>.<ext>`. Portraits are full colour (greyscale was removed). `imagePosition` (CSS `object-position`) shifts the square crop — use `"top"` for tall portraits rather than re-cropping files. Most images came from the MCU Fandom wiki; note their served files are often WebP regardless of extension.
@@ -128,6 +129,20 @@ Episodes have checkboxes (`.ep-check`) so you can tick them without leaving; `.s
 ### watchFor → character linking
 
 Tags render as links to `#/character/<id>` when they resolve. Order: an explicit `characterId` always wins; otherwise any `/`-segment of the name (parentheticals stripped, case-insensitive) matching a character's name. Unmatched names (concepts like "The Tesseract") stay plain chips on purpose.
+
+## House writing style
+
+The user is rewriting all of this by hand because the original was AI-written and obviously so. Match these or the work gets thrown away:
+
+- **No em dashes.** Commas or full stops. `npm run check` counts what's left, per phase.
+- **Cut the trailing clause that re-frames a fact instead of adding one.** This is the note the user has given most often, and it has three shapes, all of which they delete on sight:
+  - meta-commentary about the film as a film — "the film skips past how he got there", "which people still argue about", "and the series never pretends otherwise"
+  - telling the reader what to conclude — "which is the film's clearest measure of what the gap cost", "which is the whole argument of the film in one line"
+  - sweeping thematic claims that can't be checked — "half of Phase Four is people arguing over what he left behind"
+
+  The test: if the clause could be deleted without losing a fact, delete it. There is usually *some* truth in these, which is exactly why they read as filler rather than as wrong.
+- **`beforeWatch.context` is orientation, not a second summary.** What the reader needs to know *going in*: when it's set, what state the characters are in, what format surprises to expect. Not a preview of what happens.
+- **Don't write a `future` payload that continues a sentence from `thisFilm`.** They render in separate panels and most readers open one or neither. Each must stand alone — "Passing through Wanda's barrier is what gives Monica her powers", never "Those crossings are what give her powers".
 
 ## Content conventions
 
@@ -149,9 +164,18 @@ Tags render as links to `#/character/<id>` when they resolve. Order: an explicit
 - **Back up `data/progress.json` before any test that writes progress**, and restore it afterwards.
 - The user welcomes unprompted suggestions — offer them.
 
+## Where the content rewrite has got to
+
+Phases One to Four are rewritten to the house style above. WandaVision and The Falcon and the Winter Soldier are done to episode level: every episode has its own `deepDive.plot`, and several carry their own `watchFor`. **Phases Five and Six are not** — they're still original AI prose and hold the last 28 em dashes (`npm run check` reports the count per phase). Phase Six's three released films and Phase Five's eleven entries are the remaining work.
+
+**`public/data/characters.json` prose has not been touched at all.** All 135 files are still the original AI writing, em dashes and all, and it's a larger body of text than the entries were. The user knows and wants to deal with it later.
+
+The user writes or corrects the content; the assistant does the structural pass (expanding `watchFor`, splitting payloads, `characterId`, `nameIsSpoiler`, de-dashing) unless asked otherwise. They then edit on top, so don't be precious about the wording.
+
+**Known stale data:** `spiderman-4` (Spider-Man: Brand New Day) released 31 July 2026 but is still `released: false` with no `watchFor` or `deepDive`. The user is aware and wants it handled during the Phase Five and Six pass.
+
 ## Not yet built
 
 - Overall stats (hours watched, average rating, etc.) — the last item from the original roadmap
-- Public deploy (would mean moving save data to localStorage; see the session notes)
-- 14 character portraits still to be hand-picked
+- Character portraits still to be hand-picked (Selvig, and the five added earlier, have no `image` and fall back to monogram tiles)
 - Possibly: Fox-era movies, an anime section
