@@ -5,7 +5,8 @@
       "name": "mcu-tracker",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["start"],
-      "port": 3939
+      "port": 3939,
+      "autoPort": true
     }
   ]
 }

@@ -839,6 +839,17 @@
       }
     },
     {
+      "id": "ayo",
+      "name": "Ayo",
+      "description": "A senior member of the Dora Milaje, Wakanda's royal guard, who has stood post for T'Chaka, T'Challa and Ramonda in turn.",
+      "titles": ["cap-3", "black-panther", "avengers-3", "avengers-4", "falcon-winter-soldier", "black-panther-2"],
+      "phases": {
+        "phase-3": "Civil War puts her on T'Chaka's detail at the Vienna conference, where she blocks Natasha Romanoff from getting near the king hours before the building comes down. In Black Panther she is in the Dora line through T'Challa's coronation, Killmonger's challenge at Warrior Falls and the fight for the throne that follows. She holds the line at the Battle of Wakanda in Infinity War and comes back through the portals for the last fight in Endgame.",
+        "phase-4": "The Falcon and the Winter Soldier: she leads the Dora Milaje detail that comes to Latvia for Zemo and gives Bucky a deadline to hand him over. She is also the one who spent years in Wakanda pulling Hydra's conditioning out of his head, and she had tested that work herself by reading the trigger words to his face. When John Walker will not stand aside, three of them take him apart. Later she does Bucky a favour and carries the case out of Wakanda with the suit Sam wears at the end.",
+        "phase-5": "Wakanda Forever: still Dora Milaje in the year after T'Challa's death, and standing with Aneka when Okoye disciplines her for taking the Midnight Angel prototype out without clearance. After Ramonda is killed and Wakanda goes to war, Shuri finishes the armour and hands it to the pair of them, and they fight Namor's forces in it."
+      }
+    },
+    {
       "id": "everett-ross",
       "name": "Everett Ross",
       "description": "A sharp CIA agent who keeps finding himself tangled up in Wakandan affairs.",
@@ -1009,6 +1020,16 @@
       "phases": {
         "phase-4": "The Falcon and the Winter Soldier: the government's secret Korean War super-soldier — rewarded with thirty years of imprisonment and experimentation, then erased. His story nearly convinces Sam to drop the shield; instead Sam makes the world remember, putting Isaiah's statue in the Smithsonian beside Steve's exhibit.",
         "phase-6": "Brave New World: mind-controlled by Sterns into an assassination attempt on President Ross — the frame job that drives the film. Sam clears him, but the sight of Isaiah back in a cell is the point: the system's reflexes haven't changed."
+      }
+    },
+    {
+      "id": "joaquin-torres",
+      "name": "Joaquin Torres",
+      "description": "An Air Force first lieutenant stationed in Tunisia, and Sam Wilson's man on the ground for intelligence.",
+      "titles": ["falcon-winter-soldier", "cap-4"],
+      "phases": {
+        "phase-4": "The Falcon and the Winter Soldier: Sam's Air Force liaison, flying support on the hostage rescue over Tunisia and running down leads on the Flag Smashers afterwards. He walks into one of their meetings in Munich on his own and gets a broken nose out of it, then keeps feeding Sam names and locations for the rest of the series. By the end he has Sam's wrecked EXO-7 wings in his hands and a standing offer to fly as Sam's wingman.",
+        "phase-6": "Brave New World: the new Falcon, in the wings and beside Sam from the opening raid in Mexico to take back a stolen adamantium sample. He is in the room when the assassination attempt goes off at the White House, and he is shot down over the Indian Ocean when the Japanese fleet opens fire during the standoff at Celestial Island. Sam gets him out of the water alive, and he spends the last stretch of the film in a hospital bed."
       }
     },
     {
@@ -1539,7 +1560,17 @@
       "phases": {
         "phase-2": "The Collector, whose real name is Taneleer Tivan, set up his famous museum on Knowhere, a busy space station built inside a giant mining colony. His obsession with finding the Infinity Stones started in 2013 when the Asgardians gave him the Reality Stone to keep safe. The next year, he tried to buy the Power Stone from the Guardians of the Galaxy, but that deal fell apart completely.",
         "phase-3": "in 2018 when Thanos attacked Knowhere, wrecked the place, and stole the Reality Stone. After everyone was brought back from the Blip, Tivan decided to leave it all behind and sold what was left of Knowhere to the Guardians of the Galaxy."
-        
+
+      }
+    },
+    {
+      "id": "georges-batroc",
+      "name": "Georges Batroc / Batroc the Leaper",
+      "description": "A French mercenary and pirate for hire, quick enough on his feet to go hand to hand with a super soldier.",
+      "titles": ["cap-2", "falcon-winter-soldier"],
+      "phases": {
+        "phase-2": "The Winter Soldier: hijacks the Lemurian Star with a crew of pirates and takes its engineers hostage, which is what puts Steve and Natasha on board in the first place. Steve goes at him hand to hand on deck and loses the mask doing it. Batroc ends the film in custody.",
+        "phase-4": "The Falcon and the Winter Soldier: out again and running the hijacking Sam breaks up over Tunisia in the first episode, gone by parachute before Sam can get hold of him. Karli Morgenthau hires him with the Power Broker's own money for the fight in New York. He works out who has been paying him all along, tries to sell that back to her, and Sharon Carter shoots him for it."
       }
     }
   ]

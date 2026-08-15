@@ -141,6 +141,13 @@ The user is rewriting all of this by hand because the original was AI-written an
   - sweeping thematic claims that can't be checked — "half of Phase Four is people arguing over what he left behind"
 
   The test: if the clause could be deleted without losing a fact, delete it. There is usually *some* truth in these, which is exactly why they read as filler rather than as wrong.
+- **But do not over-apply the rule above.** Enforcing it on every single sentence is its own failure, and the user has called out the result as formulaic. It bans empty re-framing clauses, not stating significance. "This cameo brings Charlie Cox's Daredevil into the main timeline" is a fact and belongs in the text; "which is the whole argument of the film in one line" is filler. When something matters, say plainly why, once.
+- **Write informative, not literary.** The user rewrote a whole Spider-Man pass in August 2026 because the prose "didn't feel natural", and what they cut was consistent:
+  - compressed set-ups landing on a dry ironic beat: "he gives EDITH away to the first one who asks, and the last act is him taking it back"
+  - clipped fragments used as a tic: "Beck is lying." / "Not just his identity. Him."
+  - conclusions left implied for the reader to infer
+  What they wrote instead is plain declarative exposition with explicit connective glue ("In a tragic twist", "To fight these charges", "Ultimately"), stating outright what happened and why it matters. Prefer that.
+- **Spell out full titles** on first mention in a field: "Spider-Man: Homecoming", not "Homecoming".
 - **`beforeWatch.context` is orientation, not a second summary.** What the reader needs to know *going in*: when it's set, what state the characters are in, what format surprises to expect. Not a preview of what happens.
 - **Don't write a `future` payload that continues a sentence from `thisFilm`.** They render in separate panels and most readers open one or neither. Each must stand alone — "Passing through Wanda's barrier is what gives Monica her powers", never "Those crossings are what give her powers".
 
@@ -149,6 +156,7 @@ The user is rewriting all of this by hand because the original was AI-written an
 - `summary` — one spoiler-light sentence; anything more revealing goes in `deepDive.plot`.
 - Only add month/season precision to `inUniverseSetting` when confirmed.
 - `postCredit.skipNote` is rare and deliberate.
+- `spoils` — slash-separated, and each segment should be an **exact entry title** ("She-Hulk: Attorney at Law/Echo"), since the tag is what tells the reader which title they're about to have spoiled. `Loki` is the one established shorthand. A film that isn't in the tracker (Daredevil: Born Again, Wonder Man, the Sony Spider-Man films) can be named in the prose but must not go in the tag. Nothing validates this, so it drifts.
 - When editing `public/data/movies.json` programmatically: entries are **not** uniformly formatted (hand-edits have left some as `},{` on one line). Find entry bounds by brace-matching from the nearest `{` before `"id"`, never by assuming a newline. Insert new keys **before** the `summary` line — on unreleased entries `summary` is last and has no trailing comma.
 
 ## Licensing / legal posture
@@ -166,7 +174,7 @@ The user is rewriting all of this by hand because the original was AI-written an
 
 ## Where the content rewrite has got to
 
-Phases One to Four are rewritten to the house style above. WandaVision and The Falcon and the Winter Soldier are done to episode level: every episode has its own `deepDive.plot`, and several carry their own `watchFor`. **Phases Five and Six are not** — they're still original AI prose and hold the last 28 em dashes (`npm run check` reports the count per phase). Phase Six's three released films and Phase Five's eleven entries are the remaining work.
+Phases One to Four are rewritten to the house style above. WandaVision and The Falcon and the Winter Soldier are done to episode level: every episode has its own `deepDive.plot`, and several carry their own `watchFor`. Far From Home and No Way Home had a second pass in August 2026 and are the best current example of the voice the user actually wants. **Hawkeye is next.** **Phases Five and Six are not** — they're still original AI prose and hold the last 28 em dashes (`npm run check` reports the count per phase). Phase Six's three released films and Phase Five's eleven entries are the remaining work.
 
 **`public/data/characters.json` prose has not been touched at all.** All 135 files are still the original AI writing, em dashes and all, and it's a larger body of text than the entries were. The user knows and wants to deal with it later.
 
