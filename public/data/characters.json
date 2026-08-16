@@ -208,6 +208,7 @@
       "name": "Billy Maximoff / Wiccan",
       "description": "One of Wanda's twin sons, born inside Westview, with his mother's talent for magic.",
       "titles": ["wandavision", "agatha-all-along"],
+      "image": "/img/characters/billy-maximoff.webp",
       "phases": {
         "phase-4": "WandaVision: conjured rather than conceived. Wanda's pregnancy runs its course in a single episode inside the Hex, and the twins are born the same day. They age themselves to five and then to ten because the sitcom needs them to, and Billy's powers arrive with the growth spurt: he hears thoughts, and by the finale he is throwing magic in a way that plainly comes from his mother. When Wanda takes the Hex down at the end, both boys go with it. She tells them she will find them again.",
         "phase-5": "Agatha All Along: the Teen who springs Agatha from the Agnes persona and will not give his name, because he cannot say it out loud without a sigil blocking him. He is Billy, and the way he survived is that his consciousness went somewhere when the Hex fell. It landed in William Kaplan, a boy who died in a car crash at that exact moment, and Billy has been living that boy's life since, with that boy's parents. He takes the name Wiccan, and the series ends with him setting out to find Tommy, with Agatha's ghost attached to him."
@@ -218,6 +219,7 @@
       "name": "Tommy Maximoff / Speed",
       "description": "One of Wanda's twin sons, born inside Westview, who takes after his uncle rather than his mother.",
       "titles": ["wandavision"],
+      "image": "/img/characters/tommy-maximoff.webp",
       "phases": {
         "phase-4": "WandaVision: born alongside Billy inside the Hex and aged up the same way. His power is speed, which the show makes the obvious point about, since Pietro is the reason Wanda's grief built any of this. He goes when the Hex goes.",
         "phase-5": "Agatha All Along: not seen, but the whole reason Billy is on the Road. Billy works out that if his own consciousness landed somewhere, Tommy's could have too, and the series ends with him going to look. Nothing has confirmed where Tommy is."
@@ -228,6 +230,7 @@
       "name": "Sharon Davis / Mrs. Hart",
       "description": "A Westview resident, and one of the few people caught up in Wanda's sitcom who turns up again afterwards.",
       "titles": ["wandavision", "agatha-all-along"],
+      "image": "/img/characters/mrs-hart.webp",
       "phases": {
         "phase-4": "WandaVision: cast as the boss's wife in the first episode, at the dinner party that goes wrong. Wanda tells her to stop laughing and she cannot, which is the earliest sign that nobody in the town is choosing anything. She is one of the residents Wanda releases at the end.",
         "phase-5": "Agatha All Along: still living in Westview and still going by Mrs. Hart, which is not her name. She attaches herself to Agatha's coven as their fake witch, having no power at all, and walks the Witches' Road on enthusiasm alone. It does not go well for her."
@@ -843,6 +846,7 @@
       "name": "Ayo",
       "description": "A senior member of the Dora Milaje, Wakanda's royal guard, who has stood post for T'Chaka, T'Challa and Ramonda in turn.",
       "titles": ["cap-3", "black-panther", "avengers-3", "avengers-4", "falcon-winter-soldier", "black-panther-2"],
+      "image": "/img/characters/ayo.webp",
       "phases": {
         "phase-3": "Civil War puts her on T'Chaka's detail at the Vienna conference, where she blocks Natasha Romanoff from getting near the king hours before the building comes down. In Black Panther she is in the Dora line through T'Challa's coronation, Killmonger's challenge at Warrior Falls and the fight for the throne that follows. She holds the line at the Battle of Wakanda in Infinity War and comes back through the portals for the last fight in Endgame.",
         "phase-4": "The Falcon and the Winter Soldier: she leads the Dora Milaje detail that comes to Latvia for Zemo and gives Bucky a deadline to hand him over. She is also the one who spent years in Wakanda pulling Hydra's conditioning out of his head, and she had tested that work herself by reading the trigger words to his face. When John Walker will not stand aside, three of them take him apart. Later she does Bucky a favour and carries the case out of Wakanda with the suit Sam wears at the end.",
@@ -1011,6 +1015,24 @@
       }
     },
     {
+      "id": "hunter-b15",
+      "name": "Hunter B-15",
+      "description": "The TVA hunter who leads the field teams that arrest variants off the timeline.",
+      "titles": ["loki", "loki-s2"],
+      "phases": {
+        "phase-4": "Loki: the hunter who arrests Loki in the Gobi Desert in the first episode, and for most of the season the TVA's blunt instrument. Sylvie enchants her during the hurricane in Alabama and uses her as a mouthpiece, and what B-15 sees inside her own head while it is happening starts the crack. She is the one who takes Loki and Sylvie to the Time-Keepers' chamber, and she is standing there when the three rulers of the organisation turn out to be androids with nobody behind them. In Season 2 she is running what is left of the place from the inside, arguing that the workforce deserve to be told they were all people before they were taken. She comes out of the Loom crisis promoted into one of the senior roles at the TVA."
+      }
+    },
+    {
+      "id": "ravonna-renslayer",
+      "name": "Ravonna Renslayer",
+      "description": "A TVA judge who sentences variants for stepping off the Sacred Timeline, and one of the organisation's true believers.",
+      "titles": ["loki", "loki-s2"],
+      "phases": {
+        "phase-4": "Loki: the judge who sentences Loki to be reset in the first episode, and the closest thing the TVA has to a believer. She was a hunter long before she was a judge, and the flashback to Sylvie's arrest as a child on Asgard is her. She prunes Mobius when he starts reading his own file, and she prunes Loki in the Time-Keepers' chamber. Finding out the Time-Keepers are hollow does not break her the way it breaks B-15, it just makes her want to know who is really in charge, and she walks out to go and find them. Season 2 has her chasing that answer alongside Miss Minutes and what He Who Remains left behind, and it ends with her thrown into the Void with Alioth coming."
+      }
+    },
+    {
       "id": "isaiah-bradley",
       "name": "Isaiah Bradley",
       "description": "A Black super-soldier from the Korean War era, erased from history.",
@@ -1027,6 +1049,7 @@
       "name": "Joaquin Torres",
       "description": "An Air Force first lieutenant stationed in Tunisia, and Sam Wilson's man on the ground for intelligence.",
       "titles": ["falcon-winter-soldier", "cap-4"],
+      "image": "/img/characters/joaquin-torres.webp",
       "phases": {
         "phase-4": "The Falcon and the Winter Soldier: Sam's Air Force liaison, flying support on the hostage rescue over Tunisia and running down leads on the Flag Smashers afterwards. He walks into one of their meetings in Munich on his own and gets a broken nose out of it, then keeps feeding Sam names and locations for the rest of the series. By the end he has Sam's wrecked EXO-7 wings in his hands and a standing offer to fly as Sam's wingman.",
         "phase-6": "Brave New World: the new Falcon, in the wings and beside Sam from the opening raid in Mexico to take back a stolen adamantium sample. He is in the room when the assassination attempt goes off at the White House, and he is shot down over the Indian Ocean when the Japanese fleet opens fire during the standoff at Celestial Island. Sam gets him out of the water alive, and he spends the last stretch of the film in a hospital bed."
@@ -1037,6 +1060,7 @@
       "name": "Jack Duquesne",
       "description": "A master fencer and old-money socialite, engaged to Kate Bishop's mother Eleanor.",
       "titles": ["hawkeye"],
+      "image": "/img/characters/jack-duquesne.webp",
       "phases": {
         "phase-4": "Hawkeye introduces him as Eleanor Bishop's fiancé and spends five episodes pointing at him. He is a genuinely dangerous swordsman with a collection of blades, one of which matches the wound that kills his uncle Armand Duquesne, and Kate is certain he is behind everything happening to her family. He is not. Eleanor had installed him as CEO of Sloan Limited, the company laundering money for the Tracksuit Mafia, and on Christmas Eve he is arrested over it while Eleanor is arrested for Armand's murder.",
         "phase-6": "Daredevil: Born Again brings him back as the vigilante Swordsman."
@@ -1338,6 +1362,15 @@
       }
     },
     {
+      "id": "alioth",
+      "name": "Alioth",
+      "description": "A living storm the size of a weather front that grazes at the end of time and consumes whatever it finds there.",
+      "titles": ["loki", "deadpool-wolverine"],
+      "phases": {
+        "phase-4": "Loki introduces it as the thing patrolling the Void, the wasteland where everything the TVA prunes gets dumped rather than destroyed. Sylvie works out that it is not a scavenger but a guard, which is the clue that something worth guarding sits behind it, and she and Loki only get through by enchanting it together. Deadpool & Wolverine spends most of its running time in that same Void, where Alioth is still the apex predator and Cassandra Nova uses it to dispose of anyone she has finished with."
+      }
+    },
+    {
       "id": "high-evolutionary",
       "name": "The High Evolutionary",
       "description": "A god-playing scientist obsessed with engineering a perfect society, no matter the cost.",
@@ -1358,6 +1391,16 @@
       "phases": {
         "phase-3": "Black Widow: the Red Room's mirror-fighter — and its cruelest secret. Under the mask is Antonia Dreykov, the daughter Natasha's defection bombing maimed, rebuilt by her father into a photographic-reflex weapon. The antidote frees her with the rest of the Widows.",
         "phase-6": "Thunderbolts*: recruited into Val's containment-room cleanup — and killed in the opening crossfire, the film's first lesson in how disposable the roster is."
+      }
+    },
+    {
+      "id": "darren-cross",
+      "name": "Darren Cross / Yellowjacket",
+      "description": "Hank Pym's former protégé at Pym Technologies, and the man who pushed him out of his own company.",
+      "titles": ["ant-man-1", "ant-man-3"],
+      "phases": {
+        "phase-3": "Ant-Man: Hank's protégé turned successor, running Pym Technologies after forcing Hank off his own board, and obsessed with recreating the Pym Particle Hank refused to hand over. He gets there eventually and builds the Yellowjacket suit, a weaponised version he intends to sell. The instability he never solved is what finishes him. During the fight with Scott in Cassie's bedroom, Scott gets inside the suit and sabotages the regulator, and Cross shrinks uncontrollably until there is nothing left of him.",
+        "phase-4": "Quantumania: he did not die. Shrinking out of control dropped him into the Quantum Realm, where Kang found what was left and rebuilt it into MODOK, a Mechanized Organism Designed Only for Killing, which in practice is Cross's face on an enormous head bolted to a small armoured body. He works as Kang's hunter until Cassie Lang tells him he does not have to be a weapon, and he turns on Kang in the final fight and is killed doing it."
       }
     },
     {
@@ -1414,6 +1457,7 @@
       "name": "Erik Selvig",
       "description": "An astrophysicist, Jane Foster's mentor, and one of the first scientists on Earth to treat Asgard as a physics problem rather than a myth.",
       "titles": ["thor-1", "avengers-1", "thor-2"],
+      "image": "/img/characters/erik-selvig.webp",
       "phases": {
         "phase-1": "Thor: a colleague of Jane's father who thinks her Einstein-Rosen bridge research is a career-ender, right up until a man falls out of the sky. He is the one who gets Thor out of S.H.I.E.L.D. custody, and by the mid-credits Loki is already standing behind him, telling him what to say about the Tesseract.\n\nThe Avengers: taken by Loki in the opening scene and put under the sceptre's control. He is the reason the portal works, having built the device that stabilises the Tesseract on top of Stark Tower, and also the reason it can be closed, because he built in a failsafe while he was under and left Loki's own sceptre as the way to shut it. He is snapped out of it when Selvig is knocked unconscious.",
         "phase-2": "Thor: The Dark World: has not recovered from being used. He was institutionalised after New York and turns up lecturing at Stonehenge with no trousers on, which the film plays for laughs and then quietly takes seriously. His gravimetric spikes are what let them fight through the Convergence at all, and they are the closest thing anyone has to a working theory of the nine realms.",
@@ -1426,6 +1470,7 @@
       "name": "Dane Whitman",
       "description": "A history professor at the Natural History Museum in London, and the closest thing Sersi has to a normal life.",
       "titles": ["eternals"],
+      "image": "/img/characters/dane-whitman.webp",
       "phases": {
         "phase-4": "Eternals: Sersi's boyfriend, kept outside the plot for most of the film and told the truth about her only once there's no way around it. He takes it about as well as anyone could. The post-credits scene is the point of him: he opens an old case containing the Ebony Blade, a sword with his family name on it, and an unseen voice asks whether he's sure he's ready for that. Nothing has been done with him since."
       }
@@ -1435,6 +1480,7 @@
       "name": "Eros / Starfox",
       "description": "A Titan-born Eternal with more charm than sense, who turns up looking for the members of the team who went missing.",
       "titles": ["eternals"],
+      "image": "/img/characters/eros.webp",
       "phases": {
         "phase-4": "Eternals: arrives in the mid-credits aboard Ted the ship, introduced by Pip the Troll as the prince of Titan and Thanos's brother. He tells the remaining Eternals he knows where their captured friends have been taken and offers to help get them back. That thread has not been picked up since."
       }
@@ -1444,6 +1490,8 @@
       "name": "Khonshu",
       "description": "The Egyptian god of the moon, who speaks through a chosen avatar and is only ever heard by the person he has chosen.",
       "titles": ["moon-knight"],
+      "image": "/img/characters/khonshu.webp",
+
       "phases": {
         "phase-4": "Moon Knight: the voice in Marc Spector's head and the source of his powers, kept alive by a bargain Marc made when he was dying. Khonshu wants wrongdoers punished, and the other gods have no patience for how he goes about it, so they seal him in stone partway through. He is not a benevolent patron. He picked Marc partly because a fractured mind is easier to steer, he threatens to take Layla as a replacement, and the final scene reveals he kept a third personality, Jake Lockley, as his own avatar the whole time, doing the killing Marc refused to do."
       }
@@ -1453,6 +1501,7 @@
       "name": "Victor Timely",
       "description": "An inventor and showman at the turn of the twentieth century, selling machines that are far too advanced for the year he's selling them in.",
       "titles": ["ant-man-3", "loki-s2"],
+      "image": "/img/characters/victor-timely.webp",
       "phases": {
         "phase-4": "First glimpsed in the Quantumania post-credits, lecturing to a small crowd in 1901 while Loki and Mobius watch from the back. In Loki season two he's the man they need: a variant of He Who Remains, working from a technical manual that Ravonna Renslayer and Miss Minutes handed to him as a child, which makes him the only person alive who can repair the Temporal Loom. He is nothing like the version who built the TVA. He's nervous, decent and badly out of his depth, and he's killed on the gangway by temporal radiation before he can finish the job."
       }
@@ -1462,6 +1511,7 @@
       "name": "Bob Reynolds / Sentry",
       "description": "A quiet man with a history of addiction and depression, who volunteered for something he didn't understand.",
       "titles": ["thunderbolts"],
+      "image": "/img/characters/bob-reynolds.webp",
       "phases": {
         "phase-6": "Thunderbolts*: Valentina's real project, and the reason she wanted the rest of the team dead. Bob was a test subject in a programme meant to reproduce the super-soldier serum, and it worked far past anyone's intention, leaving him with something close to unlimited power. The problem is that it came with the depression rather than instead of it. His low is a separate thing called the Void, which blacks out Manhattan and pulls people into their own worst memories, and it can't be fought, only talked down. The team reaches him rather than beating him, which is the whole argument of the film."
       }
@@ -1494,6 +1544,7 @@
       "name": "Parker Robbins / The Hood",
       "description": "A charismatic Chicago crew leader who recruits Riri Williams for a string of high-tech heists, and whose gear works better than it has any right to.",
       "titles": ["ironheart"],
+      "image": "/img/characters/parker-robbins.webp",
       "phases": {
         "phase-5": "Recruits Riri into his crew in Ironheart, offering her the funding her armour needs — and turning out to be powered by a cloak whose bargain runs on something far older and hungrier than technology. His pull on Riri is the season's real conflict: he offers her everything she says she wants, at a price she keeps agreeing to pay."
       }
@@ -1574,10 +1625,11 @@
       }
     },
     {
-      "id": "georges-batroc",
+      "id": "george-batroc",
       "name": "Georges Batroc / Batroc the Leaper",
       "description": "A French mercenary and pirate for hire, quick enough on his feet to go hand to hand with a super soldier.",
       "titles": ["cap-2", "falcon-winter-soldier"],
+      "image": "/img/characters/george-batroc.webp",
       "phases": {
         "phase-2": "The Winter Soldier: hijacks the Lemurian Star with a crew of pirates and takes its engineers hostage, which is what puts Steve and Natasha on board in the first place. Steve goes at him hand to hand on deck and loses the mask doing it. Batroc ends the film in custody.",
         "phase-4": "The Falcon and the Winter Soldier: out again and running the hijacking Sam breaks up over Tunisia in the first episode, gone by parachute before Sam can get hold of him. Karli Morgenthau hires him with the Power Broker's own money for the fight in New York. He works out who has been paying him all along, tries to sell that back to her, and Sharon Carter shoots him for it."
