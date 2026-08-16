@@ -1033,6 +1033,16 @@
       }
     },
     {
+      "id": "jack-duquesne",
+      "name": "Jack Duquesne",
+      "description": "A master fencer and old-money socialite, engaged to Kate Bishop's mother Eleanor.",
+      "titles": ["hawkeye"],
+      "phases": {
+        "phase-4": "Hawkeye introduces him as Eleanor Bishop's fiancé and spends five episodes pointing at him. He is a genuinely dangerous swordsman with a collection of blades, one of which matches the wound that kills his uncle Armand Duquesne, and Kate is certain he is behind everything happening to her family. He is not. Eleanor had installed him as CEO of Sloan Limited, the company laundering money for the Tracksuit Mafia, and on Christmas Eve he is arrested over it while Eleanor is arrested for Armand's murder.",
+        "phase-6": "Daredevil: Born Again brings him back as the vigilante Swordsman."
+      }
+    },
+    {
       "id": "sersi",
       "name": "Sersi",
       "description": "An Eternal who genuinely loves humanity, living quietly in London until her people's past resurfaces.",
