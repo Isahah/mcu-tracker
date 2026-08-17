@@ -48,7 +48,9 @@ Required on every entry: `id`, `title`, `year`, `narrativeOrder`, `releaseOrder`
 - `released: false` + `expectedRelease` — excluded from watched-count denominators.
 - series only: `seasons: [{ seasonNumber, episodes: [...] }]` — always nested under `seasons`, even for one season.
 
-**narrativeOrder vs releaseOrder**: `narrativeOrder` is per-phase and drives all display. `releaseOrder` is a global sequence kept as trivia. Phases group by *when the story happens*, not Marvel's release branding — Captain Marvel sits in Phase One (1995), Black Widow in Phase Three (2016). Follow that precedent.
+**narrativeOrder vs releaseOrder**: `narrativeOrder` is per-phase and drives all display. `releaseOrder` is a global sequence kept as trivia. Phases group by *when the story happens*, not Marvel's release branding — Black Widow sits in Phase Three (2016) rather than Four. Follow that precedent, but narrative usefulness wins over strict chronology when the two fight: Captain Marvel is filed in Phase Three immediately before Endgame, not back in 1995, because that is where it pays off.
+
+**A character's `phases` key must match the phase its film is filed under, not when the story happens.** Row state on a personnel file is gated by the reader's own progress, so a paragraph filed too early shows content from a film they haven't watched. Fury's 1995 material sat under Phase One for exactly this reason and leaked Captain Marvel to anyone who had only finished Phase One.
 
 **Multi-season shows split into separate entries** when their seasons belong at different points in the watch order. Loki is the precedent: `loki` ("Loki: Season 1") and `loki-s2` ("Loki: Season 2") with Quantumania between them, because Kang is introduced in that film. Episode ids stay `loki-s1e1` … `loki-s2e6` so watch history survives. Keep the `seasons` wrapper on both.
 

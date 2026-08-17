@@ -48,7 +48,7 @@
         "phase-1": "The Incredible Hulk finds him a fugitive in Brazil, hunted by General Ross and chased into a Harlem street war with Blonsky's Abomination. By The Avengers he's coaxed out of hiding to find the Tesseract, drops the 'I'm always angry' bomb, and smashes Loki into the floor.",
         "phase-2": "In Age of Ultron he co-creates Ultron with Tony — and, after a rampage in Johannesburg and a near-something with Natasha, decides the world is safer without him and flies the Quinjet into nowhere.",
         "phase-3": "The Quinjet dumped him on Sakaar, where he stayed Hulk for two straight years until Ragnarok. After Thanos batters Hulk in Infinity War's opening, the big guy refuses to come out for the entire war. Endgame reveals his answer: eighteen months in a gamma lab merging both selves into Smart Hulk — who wields the completed gauntlet and un-snaps half the universe, at the cost of a ruined arm.",
-        "phase-4": "A car crash in She-Hulk accidentally gives his cousin Jen his powers, so he trains her — his own arm now healed, the rage long since made peace with. He leaves for Sakaar mid-season and comes back with a surprise: a son, Skaar."
+        "phase-5": "A car crash in She-Hulk accidentally gives his cousin Jen his powers, so he trains her — his own arm now healed, the rage long since made peace with. He leaves for Sakaar mid-season and comes back with a surprise: a son, Skaar."
       }
     },
     {
@@ -82,12 +82,13 @@
       "id": "nick-fury",
       "name": "Nick Fury",
       "description": "Director of S.H.I.E.L.D. and architect of the Avengers Initiative. Always at least three secrets deep.",
-      "titles": ["iron-man-1", "iron-man-2", "thor-1", "avengers-1", "cap-2", "avengers-2", "avengers-3", "captain-marvel", "avengers-4", "spiderman-2", "the-marvels", "secret-invasion"],
+      "titles": ["iron-man-1", "iron-man-2", "thor-1", "avengers-1", "cap-2", "avengers-2", "avengers-3", "captain-marvel", "avengers-4", "spiderman-2", "secret-invasion", "the-marvels"],
       "image": "/img/characters/nick-fury.avif",
       "phases": {
-        "phase-1": "Captain Marvel shows him as a '90s desk agent who meets Carol Danvers and the Skrulls, loses the eye to a cat that isn't a cat, and names a certain initiative after her call sign. From there he assembles the board: recruiting Stark, running Romanoff's evaluation, and in The Avengers defying the Council's nuke order over New York because he believes in his team.",
+        "phase-1": "Assembles the board across the early files: recruiting Stark, running Romanoff's evaluation, and in The Avengers defying the Council's nuke order over New York because he believes in his team.",
         "phase-2": "The Winter Soldier nearly kills him — HYDRA's ambush forces him to fake his death and run S.H.I.E.L.D.'s collapse from the shadows. He resurfaces in Age of Ultron with a helicarrier at exactly the right moment.",
-        "phase-3": "Dusted in Infinity War's credit scene — but not before paging Captain Marvel. And Far From Home has an asterisk: the 'Fury' shepherding Peter around Europe all movie is actually Talos covering for him, while the real Fury works from a Skrull station in orbit.",
+        "phase-3": "Dusted in Infinity War's credit scene, but not before paging Captain Marvel. Captain Marvel itself, set in 1995, has him as a desk agent who meets Carol Danvers and the Skrulls, loses the eye to a cat that isn't a cat, and names a certain initiative after her call sign.",
+        "phase-4": "Far From Home comes with an asterisk: the 'Fury' shepherding Peter around Europe all movie is actually Talos covering for him, while the real Fury works from a Skrull station in orbit.",
         "phase-5": "Secret Invasion catches him older, wearied, and off his game: a Skrull faction he failed turns on humanity, costing him Maria Hill, Talos, and nearly his Skrull wife, Priscilla, before he stops Gravik's war. By The Marvels he's back upstairs running S.A.B.E.R., playing exasperated mission control."
       }
     },
@@ -102,6 +103,7 @@
         "phase-1": "Introduced in The Avengers as Fury's right hand on the helicarrier, questioning his every unorthodox call and executing them anyway.",
         "phase-2": "Helps fake Fury's death and take down Project Insight in The Winter Soldier, then lands at Stark Industries — still feeding the Avengers intel through Age of Ultron.",
         "phase-3": "Dusted alongside Fury in Infinity War's credit scene, mid-sentence.",
+        "phase-4": "The Hill running Peter around Europe in Far From Home is not her either. She is Soren, Talos's wife, wearing Hill's face while the real one is off-world with Fury.",
         "phase-5": "Secret Invasion kills her for real in its opening act — shot by Gravik while he's wearing Fury's face. Her death is the wound the rest of the series pokes at."
       }
     },
@@ -112,7 +114,8 @@
       "titles": ["iron-man-1", "iron-man-2", "thor-1", "avengers-1", "captain-marvel"],
       "image": "/img/characters/phil-coulson.jpg",
       "phases": {
-        "phase-1": "A rookie sidekick to Fury in '90s-set Captain Marvel, then the connective tissue of the early files: babysitting Stark, confiscating Mjolnir's crater in Thor, always politely immovable. In The Avengers, Loki runs him through — and Fury weaponizes his death (and his vintage trading cards) to give a bickering team something to avenge. The first Avenger, in the way that counts."
+        "phase-3": "Captain Marvel, set in 1995, has him as a rookie riding along with Fury, years before any of the rest of it.",
+        "phase-1": "The connective tissue of the early files: babysitting Stark, confiscating Mjolnir's crater in Thor, always politely immovable. In The Avengers, Loki runs him through — and Fury weaponizes his death (and his vintage trading cards) to give a bickering team something to avenge. The first Avenger, in the way that counts."
       }
     },
     {
@@ -210,8 +213,7 @@
       "titles": ["wandavision", "agatha-all-along"],
       "image": "/img/characters/billy-maximoff.webp",
       "phases": {
-        "phase-4": "WandaVision: conjured rather than conceived. Wanda's pregnancy runs its course in a single episode inside the Hex, and the twins are born the same day. They age themselves to five and then to ten because the sitcom needs them to, and Billy's powers arrive with the growth spurt: he hears thoughts, and by the finale he is throwing magic in a way that plainly comes from his mother. When Wanda takes the Hex down at the end, both boys go with it. She tells them she will find them again.",
-        "phase-5": "Agatha All Along: the Teen who springs Agatha from the Agnes persona and will not give his name, because he cannot say it out loud without a sigil blocking him. He is Billy, and the way he survived is that his consciousness went somewhere when the Hex fell. It landed in William Kaplan, a boy who died in a car crash at that exact moment, and Billy has been living that boy's life since, with that boy's parents. He takes the name Wiccan, and the series ends with him setting out to find Tommy, with Agatha's ghost attached to him."
+        "phase-4": "WandaVision: conjured rather than conceived. Wanda's pregnancy runs its course in a single episode inside the Hex, and the twins are born the same day. They age themselves to five and then to ten because the sitcom needs them to, and Billy's powers arrive with the growth spurt: he hears thoughts, and by the finale he is throwing magic in a way that plainly comes from his mother. When Wanda takes the Hex down at the end, both boys go with it. She tells them she will find them again. Agatha All Along: the Teen who springs Agatha from the Agnes persona and will not give his name, because he cannot say it out loud without a sigil blocking him. He is Billy, and the way he survived is that his consciousness went somewhere when the Hex fell. It landed in William Kaplan, a boy who died in a car crash at that exact moment, and Billy has been living that boy's life since, with that boy's parents. He takes the name Wiccan, and the series ends with him setting out to find Tommy, with Agatha's ghost attached to him."
       }
     },
     {
@@ -221,8 +223,7 @@
       "titles": ["wandavision"],
       "image": "/img/characters/tommy-maximoff.webp",
       "phases": {
-        "phase-4": "WandaVision: born alongside Billy inside the Hex and aged up the same way. His power is speed, which the show makes the obvious point about, since Pietro is the reason Wanda's grief built any of this. He goes when the Hex goes.",
-        "phase-5": "Agatha All Along: not seen, but the whole reason Billy is on the Road. Billy works out that if his own consciousness landed somewhere, Tommy's could have too, and the series ends with him going to look. Nothing has confirmed where Tommy is."
+        "phase-4": "WandaVision: born alongside Billy inside the Hex and aged up the same way. His power is speed, which the show makes the obvious point about, since Pietro is the reason Wanda's grief built any of this. He goes when the Hex goes. Agatha All Along: not seen, but the whole reason Billy is on the Road. Billy works out that if his own consciousness landed somewhere, Tommy's could have too, and the series ends with him going to look. Nothing has confirmed where Tommy is."
       }
     },
     {
@@ -232,8 +233,7 @@
       "titles": ["wandavision", "agatha-all-along"],
       "image": "/img/characters/mrs-hart.webp",
       "phases": {
-        "phase-4": "WandaVision: cast as the boss's wife in the first episode, at the dinner party that goes wrong. Wanda tells her to stop laughing and she cannot, which is the earliest sign that nobody in the town is choosing anything. She is one of the residents Wanda releases at the end.",
-        "phase-5": "Agatha All Along: still living in Westview and still going by Mrs. Hart, which is not her name. She attaches herself to Agatha's coven as their fake witch, having no power at all, and walks the Witches' Road on enthusiasm alone. It does not go well for her."
+        "phase-4": "WandaVision: cast as the boss's wife in the first episode, at the dinner party that goes wrong. Wanda tells her to stop laughing and she cannot, which is the earliest sign that nobody in the town is choosing anything. She is one of the residents Wanda releases at the end. Agatha All Along: still living in Westview and still going by Mrs. Hart, which is not her name. She attaches herself to Agatha's coven as their fake witch, having no power at all, and walks the Witches' Road on enthusiasm alone. It does not go well for her."
       }
     },
     {
@@ -243,8 +243,8 @@
       "titles": ["cap-3", "spiderman-1", "avengers-3", "avengers-4", "spiderman-2", "spiderman-3"],
       "image": "/img/characters/peter-parker.avif",
       "phases": {
-        "phase-3": "Recruited by Stark for the Civil War airport fight while still keeping his identity from Aunt May. Homecoming pits him against the Vulture — who turns out to be his homecoming date's dad — and he turns down full Avengers membership to stay a friendly neighborhood guy. Infinity War drags him to Titan anyway, where he dusts in Tony's arms; Endgame brings him back for the funeral; and Far From Home saddles him with Tony's legacy, EDITH, and Mysterio's con — which ends with his identity broadcast to the world and a murder pinned on him.",
-        "phase-4": "No Way Home is the price: a botched memory spell cracks the multiverse, importing villains (and two other Peter Parkers) from dead universes. He loses May to the Green Goblin, chooses to cure the villains rather than send them home to die — and ends it by having Strange erase Peter Parker from every mind on Earth. Last seen alone in a walk-up with a homemade suit and a GED."
+        "phase-3": "Recruited by Stark for the Civil War airport fight while still keeping his identity from Aunt May. Homecoming pits him against the Vulture — who turns out to be his homecoming date's dad — and he turns down full Avengers membership to stay a friendly neighborhood guy. Infinity War drags him to Titan anyway, where he dusts in Tony's arms, and Endgame brings him back for the funeral.",
+        "phase-4": "Far From Home saddles him with Tony's legacy, EDITH, and Mysterio's con, which ends with his identity broadcast to the world and a murder pinned on him. No Way Home is the price: a botched memory spell cracks the multiverse, importing villains (and two other Peter Parkers) from dead universes. He loses May to the Green Goblin, chooses to cure the villains rather than send them home to die — and ends it by having Strange erase Peter Parker from every mind on Earth. Last seen alone in a walk-up with a homemade suit and a GED."
       }
     },
     {
@@ -289,8 +289,8 @@
       "image": "/img/characters/maria-rambeau.webp",
       "phases": {
         "phase-3": "Maria Rambeau, who went by the call sign 'Photon', was an American military pilot. When Carol went missing in a plane crash and was thought to be dead, Maria was heartbroken. However, the two reunited six years later during a space war, and Maria helped Carol remember her past life on Earth. Maria then teamed up with Carol, Nick Fury, and an alien named Talos to find a hidden space lab and save a group of alien refugees. During a spaceship chase in the desert, Maria outsmarted and defeated a Kree warrior named Minn-Erva.",
-        "phase-4": "Years later, Maria became the boss of S.W.O.R.D., but she sadly got very sick with cancer in 2018. While she was in the hospital, her daughter vanished in Thanos's famous snap. Though Maria's health briefly improved, she ultimately passed away from her illness in 2020 before her daughter could return.",
-        "phase-5": "While the main version of Maria died, different versions of her exist across the multiverse. In one parallel universe, she became Captain Marvel and joined a superhero group called the Illuminati before fighting the Scarlet Witch. In another alternate reality, she operates as the powerful hero Binary alongside the X-Men, where she eventually meets a stranded Monica."
+        "phase-4": "Years later, Maria became the boss of S.W.O.R.D., but she sadly got very sick with cancer in 2018. While she was in the hospital, her daughter vanished in Thanos's famous snap. Though Maria's health briefly improved, she ultimately passed away from her illness in 2020 before her daughter could return. While the main version of Maria died, different versions of her exist across the multiverse. In one parallel universe, she became Captain Marvel and joined a superhero group called the Illuminati before fighting the Scarlet Witch.",
+        "phase-5": "In another alternate reality, she operates as the powerful hero Binary alongside the X-Men, where she eventually meets a stranded Monica."
       }
     },
     {
@@ -344,7 +344,7 @@
       "titles": ["shang-chi"],
       "image": "/img/characters/shang-chi.webp",
       "phases": {
-        "phase-4": "Shang-Chi and the Legend of the Ten Rings: 'Shaun' the valet is outed as the son of Wenwu, the immortal head of the Ten Rings, raised from age seven as an assassin. Dragged home, he faces the family he fled — his sister Xialing, his father's grief-fueled crusade to 'free' his dead wife — and in Ta Lo takes up the Ten Rings himself when Wenwu falls to the Dweller-in-Darkness. The tag confirms the rings are older and stranger than anyone knew, and they're beaconing something."
+        "phase-5": "Shang-Chi and the Legend of the Ten Rings: 'Shaun' the valet is outed as the son of Wenwu, the immortal head of the Ten Rings, raised from age seven as an assassin. Dragged home, he faces the family he fled — his sister Xialing, his father's grief-fueled crusade to 'free' his dead wife — and in Ta Lo takes up the Ten Rings himself when Wenwu falls to the Dweller-in-Darkness. The tag confirms the rings are older and stranger than anyone knew, and they're beaconing something."
       }
     },
     {
@@ -364,7 +364,7 @@
       "titles": ["she-hulk"],
       "image": "/img/characters/jennifer-walters.webp",
       "phases": {
-        "phase-4": "She-Hulk: Attorney at Law: a car crash cross-contaminates her blood with Bruce's, and unlike him she skips the decade of rage management — which she resents being told is impressive. She runs a superhuman-law division (clients include Blonsky and a Megan Thee Stallion twerk-off), gets doxxed and blood-harvested by the Intelligencia, and when the finale goes off the rails she climbs out of the show itself to argue with Marvel's plot-writing AI about it. Fourth wall: demolished."
+        "phase-5": "She-Hulk: Attorney at Law: a car crash cross-contaminates her blood with Bruce's, and unlike him she skips the decade of rage management — which she resents being told is impressive. She runs a superhuman-law division (clients include Blonsky and a Megan Thee Stallion twerk-off), gets doxxed and blood-harvested by the Intelligencia, and when the finale goes off the rails she climbs out of the show itself to argue with Marvel's plot-writing AI about it. Fourth wall: demolished."
       }
     },
     {
@@ -374,7 +374,7 @@
       "titles": ["moon-knight"],
       "image": "/img/characters/moon-knight.jpg",
       "phases": {
-        "phase-4": "Moon Knight: gift-shop clerk Steven Grant discovers he's an alter of mercenary Marc Spector, avatar of the moon god Khonshu — and both are being hunted by Arthur Harrow, who wants to unleash the judgment-goddess Ammit. The series runs through tomb raids, a psych-ward afterlife, the scales of Duat, and the childhood trauma that split Marc in the first place. They win, they make peace with each other — and the tag reveals a third alter, Jake Lockley, still doing Khonshu's wetwork."
+        "phase-5": "Moon Knight: gift-shop clerk Steven Grant discovers he's an alter of mercenary Marc Spector, avatar of the moon god Khonshu — and both are being hunted by Arthur Harrow, who wants to unleash the judgment-goddess Ammit. The series runs through tomb raids, a psych-ward afterlife, the scales of Duat, and the childhood trauma that split Marc in the first place. They win, they make peace with each other — and the tag reveals a third alter, Jake Lockley, still doing Khonshu's wetwork."
       }
     },
     {
@@ -421,7 +421,7 @@
       "image": "/img/characters/america-chavez.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-5": "Multiverse of Madness: the only America Chavez in the multiverse, orphaned by her own untrained power, hunted across realities by the Scarlet Witch, who wants to carve the ability out of her. Strange's bet — that she can control it when it counts — pays off, and she ends the film training at Kamar-Taj, portals on demand."
+        "phase-4": "Multiverse of Madness: the only America Chavez in the multiverse, orphaned by her own untrained power, hunted across realities by the Scarlet Witch, who wants to carve the ability out of her. Strange's bet — that she can control it when it counts — pays off, and she ends the film training at Kamar-Taj, portals on demand."
       }
     },
     {
@@ -434,6 +434,7 @@
       "phases": {
         "phase-1": "The scientist who literally runs into Thor in the New Mexico desert (twice, with a van), and whose research into wormholes turns out to be the Bifrost. She spends the film teaching a god humility by accident.",
         "phase-2": "The Dark World makes her the Aether's unwilling host — carrying an Infinity Stone in her bloodstream — and takes her to Asgard, where Frigga dies protecting her.",
+        "phase-3": "Endgame's time heist drops Thor and Rocket into Asgard in 2013 to pull the Aether out of her, so she appears without ever knowing she was in the film. It is also the last time Thor sees his mother.",
         "phase-5": "Love and Thunder: years after the breakup, stage-four cancer leads her to Mjolnir's shards — which reforge around her. As the Mighty Thor she fights Gorr knowing every transformation burns through what chemo bought her. She chooses the fight anyway, dies in Thor's arms, and gets the on-screen title: Valhalla."
       }
     },
@@ -453,11 +454,11 @@
       "id": "matt-murdock",
       "name": "Matt Murdock / Daredevil",
       "description": "A blind Hell's Kitchen lawyer with radar-sharp senses and a nighttime hobby.",
-      "titles": ["spiderman-3", "she-hulk", "echo"],
+      "titles": ["spiderman-3", "echo", "she-hulk"],
       "image": "/img/characters/matt-murdock.jpg",
       "phases": {
-        "phase-4": "Reappears in No Way Home as Peter Parker's very good lawyer (and bare-hand brick-catcher), then suits up in She-Hulk — yellow-and-red armor, a hallway fight, and a walk of shame out of Jen's place that broke the internet.",
-        "phase-5": "Echo's flashbacks put him in Maya Lopez's path back in New York — a brutal warehouse fight that reminds everyone what he does after dark."
+        "phase-4": "Reappears in No Way Home as Peter Parker's very good lawyer (and bare-hand brick-catcher). Echo's flashbacks put him in Maya Lopez's path back in New York — a brutal warehouse fight that reminds everyone what he does after dark.",
+        "phase-5": "Suits up in She-Hulk — yellow-and-red armor, a hallway fight, and a walk of shame out of Jen's place that broke the internet."
       }
     },
     {
@@ -467,8 +468,7 @@
       "titles": ["hawkeye", "echo"],
       "image": "/img/characters/maya-lopez.png",
       "phases": {
-        "phase-4": "Hawkeye: a lieutenant in the tracksuit mafia hunting Ronin — the vigilante who killed her father. The truth is worse: her 'uncle' Wilson Fisk arranged the killing. The season ends with her shooting him point-blank.",
-        "phase-5": "Echo: on the run from Fisk's empire (he survived, minus an eye), she goes home to Oklahoma and her estranged Choctaw family. Ancestral gifts running back generations surface in her, and instead of taking Fisk's empire she uses that power on him — leaving him scrambled, and choosing family over the throne he offered."
+        "phase-4": "Hawkeye: a lieutenant in the tracksuit mafia hunting Ronin — the vigilante who killed her father. The truth is worse: her 'uncle' Wilson Fisk arranged the killing. The season ends with her shooting him point-blank. Echo: on the run from Fisk's empire (he survived, minus an eye), she goes home to Oklahoma and her estranged Choctaw family. Ancestral gifts running back generations surface in her, and instead of taking Fisk's empire she uses that power on him — leaving him scrambled, and choosing family over the throne he offered."
       }
     },
     {
@@ -639,8 +639,8 @@
       "phases": {
         "phase-1": "Tony's driver and sparring partner through Iron Man and Iron Man 2 — landing exactly one (1) proud punch on a Black Widow target who handled the other ten guys herself.",
         "phase-2": "Iron Man 3: promoted to head of security, blown into a coma investigating Extremis — the reason Tony publicly threatens the Mandarin.",
-        "phase-3": "Peter Parker's exasperated handler in Homecoming and grief counselor in Far From Home. Also: a thing with May.",
-        "phase-4": "No Way Home: harbors fugitive Spider-Men, loses the condo, and — at May's grave — doesn't remember why the kid at the funeral matters to him."
+        "phase-3": "Peter Parker's exasperated handler in Homecoming.",
+        "phase-4": "Grief counselor in Far From Home, and the start of a thing with May. No Way Home: harbors fugitive Spider-Men, loses the condo, and — at May's grave — doesn't remember why the kid at the funeral matters to him."
       }
     },
     {
@@ -684,11 +684,12 @@
       "id": "wong",
       "name": "Wong",
       "description": "Master of the mystic arts and keeper of Kamar-Taj's library — and eventually far more than a sidekick.",
-      "titles": ["doctor-strange-1", "avengers-3", "avengers-4", "spiderman-3", "shang-chi", "she-hulk", "doctor-strange-2"],
+      "titles": ["doctor-strange-1", "avengers-3", "avengers-4", "spiderman-3", "doctor-strange-2", "shang-chi", "she-hulk"],
       "image": "/img/characters/wong.jpg",
       "phases": {
         "phase-3": "Doctor Strange: the librarian who does not laugh at Strange's jokes and drills the rules into him. Holds the line in Infinity War's New York fight, then opens portals with the rest in Endgame.",
-        "phase-4": "The Blip's technicality made him Sorcerer Supreme (Strange was dust for five years, seniority is seniority). The phase runs him everywhere: cage-matching Abomination in Shang-Chi, refusing Peter's spell in No Way Home, holding Kamar-Taj against Wanda in Multiverse of Madness, and moonlighting as Jen's best recurring guest star in She-Hulk."
+        "phase-4": "The Blip's technicality made him Sorcerer Supreme (Strange was dust for five years, seniority is seniority). He refuses Peter's spell in No Way Home, then holds Kamar-Taj against Wanda in Multiverse of Madness.",
+        "phase-5": "Cage-matches Abomination in Shang-Chi, and moonlights as Jen's best recurring guest star in She-Hulk."
       }
     },
     {
@@ -709,7 +710,7 @@
       "image": "/img/characters/karl-mordo.webp",
       "phases": {
         "phase-3": "Doctor Strange: recruits Strange off the street and fights beside him — until learning the Ancient One fed on the very darkness she banned, and that Strange broke natural law to win. He walks away from Kamar-Taj with a new conviction: 'too many sorcerers.' The tag shows him start collecting.",
-        "phase-5": "Multiverse of Madness sidesteps the payoff: the Mordo we meet is a different universe's variant, an Illuminati member who sentences Strange with a smile. Our Mordo is still out there."
+        "phase-4": "Multiverse of Madness sidesteps the payoff: the Mordo we meet is a different universe's variant, an Illuminati member who sentences Strange with a smile. Our Mordo is still out there."
       }
     },
     {
@@ -871,8 +872,8 @@
       "titles": ["spiderman-1", "spiderman-2", "spiderman-3"],
       "image": "/img/characters/mj.jpeg",
       "phases": {
-        "phase-3": "Homecoming's deadpan background genius ('My friends call me MJ'), who by Far From Home has deduced Peter's identity herself — their first relationship milestone is him confirming what she already worked out.",
-        "phase-4": "No Way Home: his anchor through the multiverse mess — she catches the falling detail everyone else misses, and then the spell takes him from her. The film ends with Peter deciding not to reintroduce himself. She's fine. She doesn't know what she's missing. That's the tragedy."
+        "phase-3": "Homecoming's deadpan background genius ('My friends call me MJ').",
+        "phase-4": "By Far From Home she has deduced Peter's identity herself, and their first relationship milestone is him confirming what she already worked out. No Way Home: his anchor through the multiverse mess — she catches the falling detail everyone else misses, and then the spell takes him from her. The film ends with Peter deciding not to reintroduce himself. She's fine. She doesn't know what she's missing. That's the tragedy."
       }
     },
     {
@@ -883,8 +884,8 @@
       "image": "/img/characters/ned-leeds.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-3": "Homecoming: discovers Spider-Man in his bedroom (mid-LEGO Death Star) and becomes mission control. Far From Home: a summer romance with Betty conducted entirely at superhero-plot-adjacent volume.",
-        "phase-4": "No Way Home: turns out he can use a sling ring — first try. He fishes two alternate Peter Parkers out of the multiverse by accident, makes them promise the 'best friend betrays you' cliché won't happen to them... and then forgets Peter ever existed."
+        "phase-3": "Homecoming: discovers Spider-Man in his bedroom (mid-LEGO Death Star) and becomes mission control.",
+        "phase-4": "Far From Home: a summer romance with Betty conducted entirely at superhero-plot-adjacent volume. No Way Home: turns out he can use a sling ring — first try. He fishes two alternate Peter Parkers out of the multiverse by accident, makes them promise the 'best friend betrays you' cliché won't happen to them... and then forgets Peter ever existed."
       }
     },
     {
@@ -894,8 +895,8 @@
       "titles": ["cap-3", "spiderman-1", "spiderman-2", "spiderman-3"],
       "image": "/img/characters/may-parker.webp",
       "phases": {
-        "phase-3": "Homecoming ends on her discovering the suit mid-scream; Far From Home has her running blip-displacement charity and enjoying being in on the secret (and flirting with Happy).",
-        "phase-4": "No Way Home makes her the conscience of the whole film: curing the villains instead of dumping them back to die is her call. The Green Goblin kills her for it — but not before she hands Peter the line the character was always built on: 'With great power, there must also come great responsibility.'"
+        "phase-3": "Homecoming ends on her discovering the suit mid-scream.",
+        "phase-4": "Far From Home has her running blip-displacement charity and enjoying being in on the secret (and flirting with Happy). No Way Home makes her the conscience of the whole film: curing the villains instead of dumping them back to die is her call. The Green Goblin kills her for it — but not before she hands Peter the line the character was always built on: 'With great power, there must also come great responsibility.'"
       }
     },
     {
@@ -944,7 +945,7 @@
       "image": "/img/characters/katy-chen.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-4": "Shang-Chi: ten years of karaoke and valet shifts, then one bus fight rewrites everything she knows about her best friend. In Ta Lo she picks up a bow, trains for roughly a day, and still fires the dragon-scale arrow that matters. Ends the film casually name-dropping dragons at brunch, ten seconds from being portaled off by Wong."
+        "phase-5": "Shang-Chi: ten years of karaoke and valet shifts, then one bus fight rewrites everything she knows about her best friend. In Ta Lo she picks up a bow, trains for roughly a day, and still fires the dragon-scale arrow that matters. Ends the film casually name-dropping dragons at brunch, ten seconds from being portaled off by Wong."
       }
     },
     {
@@ -955,7 +956,7 @@
       "image": "/img/characters/xu-xialing.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-4": "Shang-Chi: abandoned twice over — by the brother who ran and the father who only saw his son — she built her own underground fight empire from nothing. She fights for Ta Lo, buries her father, and then takes his chair: the credit scene shows her running the Ten Rings, remade in her image. She said she'd never sit around watching. She wasn't kidding."
+        "phase-5": "Shang-Chi: abandoned twice over — by the brother who ran and the father who only saw his son — she built her own underground fight empire from nothing. She fights for Ta Lo, buries her father, and then takes his chair: the credit scene shows her running the Ten Rings, remade in her image. She said she'd never sit around watching. She wasn't kidding."
       }
     },
     {
@@ -989,7 +990,7 @@
       "image": "/img/characters/layla-el-faouly.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-4": "Moon Knight: Marc's estranged wife, who married a man without knowing he was two — and whose father's death is the wound between them. In the finale she becomes the goddess Taweret's temporary avatar: golden wings over Cairo, and a little girl asking if she's an Egyptian superhero. 'Yes.'"
+        "phase-5": "Moon Knight: Marc's estranged wife, who married a man without knowing he was two — and whose father's death is the wound between them. In the finale she becomes the goddess Taweret's temporary avatar: golden wings over Cairo, and a little girl asking if she's an Egyptian superhero. 'Yes.'"
       }
     },
     {
@@ -1074,7 +1075,7 @@
       "image": "/img/characters/sersi.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-4": "Eternals: the matter-transmuter who chose museum work and a human boyfriend over cosmic purpose. Ajak's death makes her the reluctant new Prime Eternal — and the truth (they're Celestial robots shepherding a birth that will crack the planet) makes her the one who defies it. She turns the emerging Celestial Tiamut to marble mid-birth. Arishem yanks her off Earth for judgment in the tag."
+        "phase-5": "Eternals: the matter-transmuter who chose museum work and a human boyfriend over cosmic purpose. Ajak's death makes her the reluctant new Prime Eternal — and the truth (they're Celestial robots shepherding a birth that will crack the planet) makes her the one who defies it. She turns the emerging Celestial Tiamut to marble mid-birth. Arishem yanks her off Earth for judgment in the tag."
       }
     },
     {
@@ -1084,7 +1085,7 @@
       "titles": ["eternals"],
       "image": "/img/characters/ikaris.webp",
       "phases": {
-        "phase-4": "Eternals: the loyal soldier of the group — loyal, it turns out, to Arishem rather than Earth. He fed Ajak to the Deviants to keep the emergence on schedule, fights his own family over it, and — unable to kill Sersi or live with what he's done — flies into the sun."
+        "phase-5": "Eternals: the loyal soldier of the group — loyal, it turns out, to Arishem rather than Earth. He fed Ajak to the Deviants to keep the emergence on schedule, fights his own family over it, and — unable to kill Sersi or live with what he's done — flies into the sun."
       }
     },
     {
@@ -1094,7 +1095,7 @@
       "titles": ["eternals"],
       "image": "/img/characters/ajak.webp",
       "phases": {
-        "phase-4": "Eternals: the Prime Eternal who spent five thousand years midwifing civilization — then, after Endgame's population rebound put the emergence back on schedule, chose Earth over Arishem. Ikaris killed her for it before the film's first act; the mystery of her death is the thread the family pulls."
+        "phase-5": "Eternals: the Prime Eternal who spent five thousand years midwifing civilization — then, after Endgame's population rebound put the emergence back on schedule, chose Earth over Arishem. Ikaris killed her for it before the film's first act; the mystery of her death is the thread the family pulls."
       }
     },
     {
@@ -1104,7 +1105,7 @@
       "titles": ["eternals"],
       "image": "/img/characters/thena.webp",
       "phases": {
-        "phase-4": "Eternals: her 'Mahd Wy'ry' isn't madness — it's leakage from prior emergences, every erased planet's worth of memory their masters kept resetting. Gilgamesh spent centuries steadying her; after his death she fights through the fog and beats the Deviant that took him. She leaves aboard the Domo with Druig and Makkari to warn other Eternals."
+        "phase-5": "Eternals: her 'Mahd Wy'ry' isn't madness — it's leakage from prior emergences, every erased planet's worth of memory their masters kept resetting. Gilgamesh spent centuries steadying her; after his death she fights through the fog and beats the Deviant that took him. She leaves aboard the Domo with Druig and Makkari to warn other Eternals."
       }
     },
     {
@@ -1114,7 +1115,7 @@
       "titles": ["eternals"],
       "image": "/img/characters/kingo.webp",
       "phases": {
-        "phase-4": "Eternals: brings a one-man documentary crew (Karun, the film's MVP) to the apocalypse. When the family splits over letting Earth die, he takes the third option nobody respects but everybody understands: he won't fight his family, and he won't fight for Arishem — he leaves. He still narrates like they'll win."
+        "phase-5": "Eternals: brings a one-man documentary crew (Karun, the film's MVP) to the apocalypse. When the family splits over letting Earth die, he takes the third option nobody respects but everybody understands: he won't fight his family, and he won't fight for Arishem — he leaves. He still narrates like they'll win."
       }
     },
     {
@@ -1124,8 +1125,7 @@
       "titles": ["wandavision", "agatha-all-along"],
       "image": "/img/characters/agatha-harkness.png",
       "phases": {
-        "phase-4": "WandaVision: nosy neighbor 'Agnes' is the season's rug-pull — a Salem-era witch who's been poking Wanda's grief like a lab experiment to learn how she casts. ('Agatha All Along' becomes a Billboard-charting confession.) Wanda drains her runes trick against her and leaves her imprisoned in the Agnes persona.",
-        "phase-5": "Agatha All Along: sprung from the sitcom spell by a mysterious Teen, she cons a scratch coven onto the Witches' Road — which, it turns out, was never real: it's a ballad-shaped scam she's run for centuries, and this time a reality-warper made it literal. The Teen is Billy Maximoff, Wanda's son reborn; Death herself (Rio) is Agatha's old flame; and Agatha dies mid-season — continuing as a ghost, attached to Billy, off to find his brother."
+        "phase-4": "WandaVision: nosy neighbor 'Agnes' is the season's rug-pull — a Salem-era witch who's been poking Wanda's grief like a lab experiment to learn how she casts. ('Agatha All Along' becomes a Billboard-charting confession.) Wanda drains her runes trick against her and leaves her imprisoned in the Agnes persona. Agatha All Along: sprung from the sitcom spell by a mysterious Teen, she cons a scratch coven onto the Witches' Road — which, it turns out, was never real: it's a ballad-shaped scam she's run for centuries, and this time a reality-warper made it literal. The Teen is Billy Maximoff, Wanda's son reborn; Death herself (Rio) is Agatha's old flame; and Agatha dies mid-season — continuing as a ghost, attached to Billy, off to find his brother."
       }
     },
     {
@@ -1136,8 +1136,7 @@
       "image": "/img/characters/wilson-fisk.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-4": "Hawkeye: the power behind the tracksuits, Eleanor Bishop's employer, and 'Uncle' to Maya Lopez — whose father he had killed to shape her. The finale ends with Maya's gun going off-screen.",
-        "phase-5": "Echo: survived, one eye down, and comes to Oklahoma personally to reclaim his 'daughter.' The show digs into the boy with the hammer who became the King. Maya's ancestral power leaves his mind scrambled — and the last scene points him at a new kind of throne: a mayoral race."
+        "phase-4": "Hawkeye: the power behind the tracksuits, Eleanor Bishop's employer, and 'Uncle' to Maya Lopez — whose father he had killed to shape her. The finale ends with Maya's gun going off-screen. Echo: survived, one eye down, and comes to Oklahoma personally to reclaim his 'daughter.' The show digs into the boy with the hammer who became the King. Maya's ancestral power leaves his mind scrambled — and the last scene points him at a new kind of throne: a mayoral race."
       }
     },
     {
@@ -1169,7 +1168,7 @@
       "image": "/img/characters/reed-richards.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-5": "A variant cameo in Multiverse of Madness: the Illuminati's Reed, who explains exactly how dangerous Wanda is shortly before demonstrating it, fatally.",
+        "phase-4": "A variant cameo in Multiverse of Madness: the Illuminati's Reed, who explains exactly how dangerous Wanda is shortly before demonstrating it, fatally.",
         "phase-6": "First Steps (on retro-future Earth-828): four years into being his world's beloved first family, Reed faces the problem he can't out-think — Galactus wants his newborn son, Franklin, as the price of sparing Earth. He refuses the trade, evacuates a planet's worth of panic into a plan, and helps banish the Devourer through a teleport portal. New address, per the tag: the MCU's main universe."
       }
     },
@@ -1325,7 +1324,7 @@
       "titles": ["shang-chi"],
       "image": "/img/characters/xu-wenwu.webp",
       "phases": {
-        "phase-4": "Shang-Chi: a thousand years of conquest, one decade of retirement for love — and when Li died, the rings went back on and the children got an assassin's education. The film's tragedy is that his villainy is grief: the Dweller-in-Darkness wears his dead wife's voice, and he tears open Ta Lo's gate to reach her. His last act is passing the rings to his son. (He'd also like a word about the fake 'Mandarin' who borrowed his organization's name.)"
+        "phase-5": "Shang-Chi: a thousand years of conquest, one decade of retirement for love — and when Li died, the rings went back on and the children got an assassin's education. The film's tragedy is that his villainy is grief: the Dweller-in-Darkness wears his dead wife's voice, and he tears open Ta Lo's gate to reach her. His last act is passing the rings to his son. (He'd also like a word about the fake 'Mandarin' who borrowed his organization's name.)"
       }
     },
     {
@@ -1424,7 +1423,7 @@
       "imagePosition": "top",
       "phases": {
         "phase-1": "The Incredible Hulk: a career commando who chased the Hulk's power through serum and Banner's blood into becoming the Abomination — wrecking Harlem until the Hulk chokes him down.",
-        "phase-4": "Reappears cage-fighting Wong in Shang-Chi (they have an arrangement), then She-Hulk makes him a case file: Jen's client at his parole hearing, running a wellness retreat with seven soul mates and a lot of haiku. The reform is genuine-ish; the paid Abomination appearances violating parole are also real. Back to the Raft, zen intact."
+        "phase-5": "Reappears cage-fighting Wong in Shang-Chi (they have an arrangement), then She-Hulk makes him a case file: Jen's client at his parole hearing, running a wellness retreat with seven soul mates and a lot of haiku. The reform is genuine-ish; the paid Abomination appearances violating parole are also real. Back to the Raft, zen intact."
       }
     },
     {
@@ -1448,7 +1447,8 @@
       "image": "/img/characters/valentina.webp",
       "phases": {
         "phase-3": "Black Widow's credit scene introduces the shopping spree: at Natasha's grave, she hands Yelena a target — Clint Barton.",
-        "phase-4": "The Falcon and the Winter Soldier: materializes beside a court-martialed John Walker with a card that isn't printed yet and the title 'U.S. Agent.' Wakanda Forever confirms the day job: Director of the CIA, and Everett Ross's ex-wife, arresting him personally.",
+        "phase-4": "The Falcon and the Winter Soldier: materializes beside a court-martialed John Walker with a card that isn't printed yet and the title 'U.S. Agent.'",
+        "phase-5": "Wakanda Forever confirms the day job: Director of the CIA, and Everett Ross's ex-wife, arresting him personally.",
         "phase-6": "Thunderbolts*: her ledger comes due — the containment-room trap was her shredding evidence, personnel included. When the survivors walk out alive with Bob in tow, she pivots mid-press-conference: meet 'the New Avengers.' She creates the team by failing to kill it."
       }
     },
@@ -1472,7 +1472,7 @@
       "titles": ["eternals"],
       "image": "/img/characters/dane-whitman.webp",
       "phases": {
-        "phase-4": "Eternals: Sersi's boyfriend, kept outside the plot for most of the film and told the truth about her only once there's no way around it. He takes it about as well as anyone could. The post-credits scene is the point of him: he opens an old case containing the Ebony Blade, a sword with his family name on it, and an unseen voice asks whether he's sure he's ready for that. Nothing has been done with him since."
+        "phase-5": "Eternals: Sersi's boyfriend, kept outside the plot for most of the film and told the truth about her only once there's no way around it. He takes it about as well as anyone could. The post-credits scene is the point of him: he opens an old case containing the Ebony Blade, a sword with his family name on it, and an unseen voice asks whether he's sure he's ready for that. Nothing has been done with him since."
       }
     },
     {
@@ -1482,7 +1482,7 @@
       "titles": ["eternals"],
       "image": "/img/characters/eros.webp",
       "phases": {
-        "phase-4": "Eternals: arrives in the mid-credits aboard Ted the ship, introduced by Pip the Troll as the prince of Titan and Thanos's brother. He tells the remaining Eternals he knows where their captured friends have been taken and offers to help get them back. That thread has not been picked up since."
+        "phase-5": "Eternals: arrives in the mid-credits aboard Ted the ship, introduced by Pip the Troll as the prince of Titan and Thanos's brother. He tells the remaining Eternals he knows where their captured friends have been taken and offers to help get them back. That thread has not been picked up since."
       }
     },
     {
@@ -1493,7 +1493,7 @@
       "image": "/img/characters/khonshu.webp",
 
       "phases": {
-        "phase-4": "Moon Knight: the voice in Marc Spector's head and the source of his powers, kept alive by a bargain Marc made when he was dying. Khonshu wants wrongdoers punished, and the other gods have no patience for how he goes about it, so they seal him in stone partway through. He is not a benevolent patron. He picked Marc partly because a fractured mind is easier to steer, he threatens to take Layla as a replacement, and the final scene reveals he kept a third personality, Jake Lockley, as his own avatar the whole time, doing the killing Marc refused to do."
+        "phase-5": "Moon Knight: the voice in Marc Spector's head and the source of his powers, kept alive by a bargain Marc made when he was dying. Khonshu wants wrongdoers punished, and the other gods have no patience for how he goes about it, so they seal him in stone partway through. He is not a benevolent patron. He picked Marc partly because a fractured mind is easier to steer, he threatens to take Layla as a replacement, and the final scene reveals he kept a third personality, Jake Lockley, as his own avatar the whole time, doing the killing Marc refused to do."
       }
     },
     {

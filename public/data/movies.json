@@ -1117,10 +1117,46 @@
           ]
         },
         {
+          "id": "echo",
+          "title": "Echo",
+          "year": 2024,
+          "narrativeOrder": 6,
+          "releaseOrder": 43,
+          "type": "series",
+          "art": { "tmdbId": 122226, "poster": "/vFyJH630cF68LohVYjQW49074Sy.jpg", "backdrop": "/u3ySnWqSjM3jedYgJZTR7RWRDDm.jpg" },
+          "summary": "After a violent falling-out with Kingpin's crime empire, Maya Lopez returns to her Choctaw hometown to reconnect with her roots and confront the family and community she left behind.",
+          "beforeWatch": {
+            "context": "A direct continuation of Maya Lopez's story from Hawkeye, and a much smaller, more grounded piece of work than anything around it — most of it takes place in a small Oklahoma town. It's five episodes and was designed to be watched in one go. Hawkeye is the only real prerequisite.",
+            "watchFirst": ["hawkeye"]
+          },
+          "optionalViewing": ["Daredevil (2015 series)"],
+          "inUniverseSetting": "2025",
+          "deepDive": {
+            "plot": "After shooting her crime-boss mentor Wilson Fisk (Kingpin) during a violent falling-out, Maya Lopez flees New York and returns to her Choctaw hometown in Oklahoma for the first time in years. Reconnecting with the family and community she abandoned, Maya uncovers a mysterious power passed down through generations of women in her family, and ultimately confronts both her own painful history and Kingpin's lingering reach, choosing which legacy — her birth family's or her adoptive crime family's — she wants to carry forward.",
+            "significance": "The first MCU show to center a deaf, Indigenous American superhero, and deepens the Kingpin/Daredevil corner of the MCU introduced in She-Hulk.",
+            "orderNote": "Placed here following Maya's introduction in Hawkeye, unfolding in the same broad 2025 period."
+          },
+          "watchFor": [
+            { "name": "Kingpin / Wilson Fisk", "characterId": "wilson-fisk", "thisFilm": "Survives being shot by Maya at the start of the series.", "future": "Continues his rivalry with Maya and remains a recurring MCU crime-boss threat." }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "echo-e1", "episodeNumber": 1, "title": "Home", "summary": "After shooting Kingpin, Maya Lopez flees New York and returns to her hometown for the first time in years." },
+                { "id": "echo-e2", "episodeNumber": 2, "title": "Casino", "summary": "Maya reconnects with her estranged family while trying to stay one step ahead of Kingpin's people." },
+                { "id": "echo-e3", "episodeNumber": 3, "title": "Tuklo", "summary": "Flashbacks reveal the tragic history that first drove a wedge between Maya and her family." },
+                { "id": "echo-e4", "episodeNumber": 4, "title": "Origins", "summary": "Maya taps into her Choctaw ancestry and a mysterious inherited power passed down through generations of women in her family." },
+                { "id": "echo-e5", "episodeNumber": 5, "title": "Storyteller", "summary": "Maya confronts her past and Kingpin's reach once and for all, choosing which legacy she wants to carry forward." }
+              ]
+            }
+          ]
+        },
+        {
           "id": "loki",
           "title": "Loki: Season 1",
           "year": 2021,
-          "narrativeOrder": 6,
+          "narrativeOrder": 7,
           "releaseOrder": 26,
           "type": "series",
           "art": { "tmdbId": 84958, "poster": "/rX1wQMTKFqF0gvZyS0DDQqgnQPB.jpg", "backdrop": "/q3jHCb4dMfYF6ojikKuHd6LscxC.jpg" },
@@ -1181,7 +1217,7 @@
           "id": "ant-man-3",
           "title": "Ant-Man and the Wasp: Quantumania",
           "year": 2023,
-          "narrativeOrder": 7,
+          "narrativeOrder": 8,
           "releaseOrder": 39,
           "type": "movie",
           "art": { "tmdbId": 640146, "poster": "/qnqGbB22YJ7dSs4o6M7exTpNxPz.jpg", "backdrop": "/m8JTwHFwX7I7JY5fPe4SjqejWag.jpg" },
@@ -1212,7 +1248,7 @@
           "id": "loki-s2",
           "title": "Loki: Season 2",
           "year": 2023,
-          "narrativeOrder": 8,
+          "narrativeOrder": 9,
           "releaseOrder": 54,
           "type": "series",
           "art": { "tmdbId": 84958, "poster": "/rX1wQMTKFqF0gvZyS0DDQqgnQPB.jpg", "backdrop": "/q3jHCb4dMfYF6ojikKuHd6LscxC.jpg" },
@@ -1274,7 +1310,7 @@
           "id": "deadpool-wolverine",
           "title": "Deadpool & Wolverine",
           "year": 2024,
-          "narrativeOrder": 9,
+          "narrativeOrder": 10,
           "releaseOrder": 44,
           "type": "movie",
           "art": { "tmdbId": 533535, "poster": "/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg", "backdrop": "/by8z9Fe8y7p4jo2YlW2SZDnptyT.jpg" },
@@ -1303,10 +1339,86 @@
           "postCredit": { "count": 1, "type": "mid", "skipNote": "This film is a continuation of the Fox Deadpool movies, and it is built on top of two decades of Fox X-Men films all the way up to Logan, plus a few smaller titles. Watching them first is strongly recommended, and at the very least watch Logan and the two Deadpool films. The context below contains spoilers for those films. Both lists below are in the order that makes the most narrative sense to watch them in, which is not release order. In Helps, but optional, anything wrapped in brackets is barely touched on by this film and is the easiest to skip." }
         },
         {
+          "id": "doctor-strange-2",
+          "title": "Doctor Strange in the Multiverse of Madness",
+          "year": 2022,
+          "narrativeOrder": 11,
+          "releaseOrder": 33,
+          "type": "movie",
+          "art": { "tmdbId": 453395, "poster": "/ddJcSKbcp4rKZTmuyWaMhuwcfMz.jpg", "backdrop": "/lv3TXqhpaIxkclIHbhN2MRMOemQ.jpg" },
+          "summary": "Doctor Strange journeys into the dangerous and mind-bending multiverse with the help of a young woman who can travel between realities, while a powerful force hunts her for her abilities.",
+          "beforeWatch": {
+            "context": "Follows directly from the end of No Way Home, and takes the door that film opened as its starting premise. It also assumes you've finished WandaVision — that series does far more setup for this film than the first Doctor Strange does. A noticeably darker, more horror-inflected film than anything before it.",
+            "watchFirst": ["doctor-strange-1","spiderman-3","wandavision"]
+          },
+          "optionalViewing": ["What If...? Season 2 (Disney+, 2023)"],
+          "inUniverseSetting": "2024",
+          "timeSkip": "Directly follows No Way Home",
+          "deepDive": {
+            "plot": "Hunted by a mysterious force after a wedding goes wrong, America Chavez — a young woman who can punch holes between universes — draws Doctor Strange into the multiverse for the first time. They discover the hunter is actually Wanda Maximoff, consumed by the Darkhold and trying to steal America's powers to travel to a universe where she can be reunited with her children. Strange, forced to use dangerously corrupting magic himself to stop her, ultimately convinces Wanda to see what she's become, and she destroys the Darkhold and herself along with it, seemingly ending the Scarlet Witch's story — for now.",
+            "significance": "Pays off Wanda's entire arc from WandaVision in tragic fashion, and formally confirms the multiverse as a huge, story-spanning concept full of alternate versions of familiar heroes.",
+            "orderNote": "Follows on from No Way Home's confirmation that the multiverse is real, but sits back here rather than immediately after it so that Loki has laid out the rules first. The main reason it's this far up the phase is Wanda: her story runs straight from WandaVision into this film, and leaving too much between the two means forgetting where she started."
+          },
+          "watchFor": [
+            { "name": "Incursions", "thisFilm": "Strange witnesses a universe-ending 'incursion' while multiverse-traveling.", "future": "Sets the stakes for future multiversal threats." },
+            { "name": "America Chavez", "characterId": "america-chavez", "thisFilm": "Escapes with Strange after her powers are hunted by Wanda.", "future": "Her ability to travel the multiverse makes her a target again in future stories." },
+            { "name": "Clea (mid-credit)", "thisFilm": "Approaches Strange after the darkness he dabbled in catches up to him.", "future": "Recruits him to fix the incursion he caused, teasing his next adventure." }
+          ],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "agatha-all-along",
+          "title": "Agatha All Along",
+          "year": 2024,
+          "narrativeOrder": 12,
+          "releaseOrder": 45,
+          "type": "series",
+          "art": { "tmdbId": 138501, "poster": "/mGsxKwXUjojitRv2E9qMTbxbBRd.jpg", "backdrop": "/tYLXJW1sZQU09VWY1BhSVPKGIwc.jpg" },
+          "summary": "Trapped and powerless since the end of WandaVision, Agatha Harkness assembles a coven of misfit witches to help her survive the deadly Witches' Road and reclaim her magic.",
+          "beforeWatch": {
+            "context": "Picks up some time after WandaVision, following that show's most memorable supporting character. It's a road-trip story with a witchy, theatrical register all its own. WandaVision is essential; Multiverse of Madness fills in what's happened to magic in the meantime but isn't strictly required.",
+            "watchFirst": ["wandavision","doctor-strange-2"]
+          },
+          "inUniverseSetting": "2025",
+          "timeSkip": "Some time after WandaVision's finale",
+          "deepDive": {
+            "plot": "Trapped and stripped of most of her memory and power since the end of WandaVision, Agatha Harkness is freed by a mysterious teenage boy who leads her to a legendary, deadly trial called the Witches' Road, said to grant whoever survives it their heart's greatest desire. Agatha assembles a ragtag coven of witches, each hiding a secret of their own, to walk the Road with her, and as they face trial after trial — losing members along the way — the boy's true identity and Agatha's real, long-hidden motive for seeking the Road are finally revealed.",
+            "significance": "Expands the MCU's magic-focused corner of the universe introduced in WandaVision, giving Agatha Harkness — one of the most acclaimed side characters of Phase Four — her own complete story.",
+            "orderNote": "Placed at the end of Phase Four as a direct continuation of Agatha's arc from WandaVision, set some time after that show's finale."
+          },
+          "watchFor": [
+            { "name": "The Witches' Road", "thisFilm": "A legendary, dangerous trial said to grant a witch's greatest desire to whoever survives it.", "future": "Its true nature is a mystery the whole season is built around." },
+            { "name": "Agatha's true goal", "characterId": "agatha-harkness", "thisFilm": "Hides her real reason for walking the Road from the rest of her coven for most of the season.", "future": "Recontextualizes everything once revealed." }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "agatha-e1", "episodeNumber": 1, "title": "Seekest Thou the Road", "summary": "A mysterious detective shows up at Agatha's door with unsettling questions about a road only Agatha can see." },
+                { "id": "agatha-e2", "episodeNumber": 2, "title": "Circle, Cross, Time and Death", "summary": "Agatha realizes her memory and powers have been stripped after her time trapped in Westview, and starts assembling a coven." },
+                { "id": "agatha-e3", "episodeNumber": 3, "title": "Season of the Witch", "summary": "A ragtag group of witches, each hiding their own secret, agrees to walk the deadly Witches' Road with Agatha." },
+                { "id": "agatha-e4", "episodeNumber": 4, "title": "For Whom the Bell Tolls", "summary": "The coven faces their first trial on the Road, and the cost of walking it becomes horrifyingly clear." },
+                { "id": "agatha-e5", "episodeNumber": 5, "title": "Is This Job Insane?", "summary": "A trial designed around illusions forces each witch to confront a private fear or regret." },
+                { "id": "agatha-e6", "episodeNumber": 6, "title": "Death's Hand in Mine", "summary": "The Road claims its first real victim, throwing the coven's fragile trust into chaos." },
+                { "id": "agatha-e7", "episodeNumber": 7, "title": "Follow Me Follow Me", "summary": "The true identity of the mysterious teen following Agatha is revealed." },
+                { "id": "agatha-e8", "episodeNumber": 8, "title": "Scary Movie", "summary": "A flashback-heavy episode reveals how Agatha's coven, and her rivalry with the Salem witches, first began centuries ago." },
+                { "id": "agatha-e9", "episodeNumber": 9, "title": "Practical Magic to Conjure a Witch's Coven", "summary": "Agatha reaches the end of the Witches' Road and confronts the true cost of what she's been seeking all along." }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-5",
+      "name": "Phase Five",
+      "label": "The Multiverse Saga Continues",
+      "movies": [
+        {
           "id": "shang-chi",
           "title": "Shang-Chi and the Legend of the Ten Rings",
           "year": 2021,
-          "narrativeOrder": 10,
+          "narrativeOrder": 1,
           "releaseOrder": 28,
           "type": "movie",
           "art": { "tmdbId": 566525, "poster": "/9f2Q0U3IOsLgrI2HkvldwSABZy5.jpg", "backdrop": "/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg" },
@@ -1337,7 +1449,7 @@
           "id": "eternals",
           "title": "Eternals",
           "year": 2021,
-          "narrativeOrder": 11,
+          "narrativeOrder": 2,
           "releaseOrder": 29,
           "type": "movie",
           "art": { "tmdbId": 524434, "poster": "/lFByFSLV5WDJEv3KabbdAF959F2.jpg", "backdrop": "/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg" },
@@ -1368,64 +1480,10 @@
           "postCredit": { "count": 2, "type": "mid+post" }
         },
         {
-          "id": "she-hulk",
-          "title": "She-Hulk: Attorney at Law",
-          "year": 2022,
-          "narrativeOrder": 12,
-          "releaseOrder": 36,
-          "type": "series",
-          "art": { "tmdbId": 92783, "poster": "/5xz2orV8f0usyrfGNshcoXHmiaV.jpg", "backdrop": "/eljErfkQUcFUgQkI4I1soZcH8MW.jpg" },
-          "summary": "Lawyer Jennifer Walters gains the powers of the Hulk after an accident, and must balance a superhero-law specialty with the messiness of everyday life.",
-          "beforeWatch": {
-            "context": "A half-hour legal comedy that is much more sitcom than superhero show, and it knows it. It expects you to know Bruce Banner's history, so The Incredible Hulk and the Avengers films help, as does Shang-Chi for one recurring supporting character. It also breaks the fourth wall constantly, which is the format, not a glitch.",
-            "watchFirst": ["incredible-hulk","avengers-4","shang-chi"]
-          },
-          "inUniverseSetting": "2025",
-          "deepDive": {
-            "plot": "After a car accident exposes her to her cousin Bruce Banner's blood, lawyer Jennifer Walters unexpectedly gains her own Hulk form, which she can control far more easily than Bruce ever could, to his visible annoyance. Reluctantly stepping into a superhuman law specialty at her firm, Jennifer navigates dating, online harassment, and a conspiracy to steal her blood, culminating in a fourth-wall-breaking finale where Jennifer literally storms the show's own production to demand a more satisfying ending.",
-            "significance": "Brings Daredevil back properly and picks up The Incredible Hulk fourteen years later, both inside a legal sitcom that spends its finale arguing with its own writers about how MCU shows end.",
-            "orderNote": "Placed near the end of Phase Four in the same 'present day' period as Ms. Marvel and Love and Thunder."
-          },
-          "watchFor": [
-            { "name": "It is a sitcom, on purpose" },
-            { "name": "Jennifer Walters", "characterId": "jennifer-walters", "thisFilm": "Gets her powers from Bruce's blood in a car accident and spends the series annoyed that having them is treated as more interesting than being extremely good at her job." },
-            { "name": "Emil Blonsky", "characterId": "emil-blonsky", "thisFilm": "Up for parole, claiming reform, running a wellness retreat for former villains. The seven-limerick apology is real. Whether he's genuine is left deliberately unclear.", "future": "First proper follow-up to The Incredible Hulk in fourteen years." },
-            { "name": "Wong", "thisFilm": "Turns up constantly, breaks Blonsky out of prison for a sorcerers' duel, and is a terrible witness. He's the connective tissue of this whole stretch of the MCU." },
-            { "name": "Matt Murdock", "characterId": "matt-murdock", "thisFilm": "Arrives in the yellow suit, wins his case, and leaves in the morning. Played much lighter here than in his own show, which the series knows.", "future": "Daredevil: Born Again picks him up in a very different register." },
-            { "name": "Titania", "thisFilm": "An influencer who trademarks the She-Hulk name, which is a more accurate depiction of what would happen than most of the MCU manages." },
-            { "name": "The finale", "thisFilm": "Jennifer breaks out of the show, walks across the Disney+ menu, and argues with the writers' room about her own ending. Nothing else in the MCU does this.", "nameIsSpoiler": true },
-            { "name": "Skaar", "thisFilm": "Bruce returns from Sakaar with a teenage son, introduced in the last minute and given nothing to do.", "future": "Unfollowed so far.", "nameIsSpoiler": true }
-          ],
-          "seasons": [
-            {
-              "seasonNumber": 1,
-              "episodes": [
-                { "id": "she-hulk-e1", "episodeNumber": 1, "title": "A Normal Amount of Rage", "summary": "A car accident transfers some of Bruce Banner's blood into his cousin Jennifer Walters, unexpectedly turning her into a Hulk." },
-                { "id": "she-hulk-e2", "episodeNumber": 2, "title": "Superhuman Law", "summary": "Jennifer takes a job at a firm's new superhuman law division, complicating her attempt to keep a normal life." },
-                { "id": "she-hulk-e3", "episodeNumber": 3, "title": "The People vs. Emil Blonsky", "summary": "Jennifer represents Emil Blonsky in his bid for parole, drawing unwanted attention from a secretive government agency." },
-                { "id": "she-hulk-e4", "episodeNumber": 4, "title": "Is This Not Real Magic?", "summary": "A run-in with a washed-up sorcerer and a dating app disaster test Jennifer's patience in and out of the courtroom." },
-                { "id": "she-hulk-e5", "episodeNumber": 5, "title": "Mean, Green, and Straight Poured", "summary": "Jennifer deals with online harassment after a video of her as She-Hulk goes viral." },
-                { "id": "she-hulk-e6", "episodeNumber": 6, "title": "Just Jen", "summary": "Jennifer tries dating without turning into She-Hulk, with predictably messy results." },
-                { "id": "she-hulk-e7", "episodeNumber": 7, "title": "The Retreat", "summary": "A trip to Emil Blonsky's villain-wellness retreat reveals a scheme targeting Jennifer's blood." },
-                { "id": "she-hulk-e8", "episodeNumber": 8, "title": "Ribbit and Rip It", "summary": "Jennifer teams up with Daredevil to track down whoever's been stealing her blood." },
-                {
-                  "id": "she-hulk-e9",
-                  "episodeNumber": 9,
-                  "title": "Whose Show Is This?",
-                  "summary": "Jennifer breaks the fourth wall entirely to rewrite her own finale, confronting the show's actual writers' room.",
-                  "watchFor": [
-                    { "name": "Fourth-wall meta finale", "thisFilm": "Jennifer literally walks onto a production set to argue with the writers about her ending.", "future": "A one-of-a-kind, self-aware finale that doesn't so much set up future stories as comment on them." }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "id": "moon-knight",
           "title": "Moon Knight",
           "year": 2022,
-          "narrativeOrder": 13,
+          "narrativeOrder": 3,
           "releaseOrder": 32,
           "type": "series",
           "art": { "tmdbId": 92749, "poster": "/x6FsYvt33846IQnDSFxla9j0RX8.jpg", "backdrop": "/iux1vKPT7Vw1AzetZb4Jz6wfYsm.jpg" },
@@ -1463,79 +1521,57 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "phase-5",
-      "name": "Phase Five",
-      "label": "The Multiverse Saga Continues",
-      "movies": [
-        {
-          "id": "doctor-strange-2",
-          "title": "Doctor Strange in the Multiverse of Madness",
-          "year": 2022,
-          "narrativeOrder": 1,
-          "releaseOrder": 33,
-          "type": "movie",
-          "art": { "tmdbId": 453395, "poster": "/ddJcSKbcp4rKZTmuyWaMhuwcfMz.jpg", "backdrop": "/lv3TXqhpaIxkclIHbhN2MRMOemQ.jpg" },
-          "summary": "Doctor Strange journeys into the dangerous and mind-bending multiverse with the help of a young woman who can travel between realities, while a powerful force hunts her for her abilities.",
-          "beforeWatch": {
-            "context": "Follows directly from the end of No Way Home, and takes the door that film opened as its starting premise. It also assumes you've finished WandaVision — that series does far more setup for this film than the first Doctor Strange does. A noticeably darker, more horror-inflected film than anything before it.",
-            "watchFirst": ["doctor-strange-1","spiderman-3","wandavision"]
-          },
-          "optionalViewing": ["What If...? Season 2 (Disney+, 2023)"],
-          "inUniverseSetting": "2024",
-          "timeSkip": "Directly follows No Way Home",
-          "deepDive": {
-            "plot": "Hunted by a mysterious force after a wedding goes wrong, America Chavez — a young woman who can punch holes between universes — draws Doctor Strange into the multiverse for the first time. They discover the hunter is actually Wanda Maximoff, consumed by the Darkhold and trying to steal America's powers to travel to a universe where she can be reunited with her children. Strange, forced to use dangerously corrupting magic himself to stop her, ultimately convinces Wanda to see what she's become, and she destroys the Darkhold and herself along with it, seemingly ending the Scarlet Witch's story — for now.",
-            "significance": "Pays off Wanda's entire arc from WandaVision in tragic fashion, and formally confirms the multiverse as a huge, story-spanning concept full of alternate versions of familiar heroes.",
-            "orderNote": "Directly follows No Way Home's confirmation of the multiverse, placed right after it."
-          },
-          "watchFor": [
-            { "name": "Incursions", "thisFilm": "Strange witnesses a universe-ending 'incursion' while multiverse-traveling.", "future": "Sets the stakes for future multiversal threats." },
-            { "name": "America Chavez", "characterId": "america-chavez", "thisFilm": "Escapes with Strange after her powers are hunted by Wanda.", "future": "Her ability to travel the multiverse makes her a target again in future stories." },
-            { "name": "Clea (mid-credit)", "thisFilm": "Approaches Strange after the darkness he dabbled in catches up to him.", "future": "Recruits him to fix the incursion he caused, teasing his next adventure." }
-          ],
-          "postCredit": { "count": 2, "type": "mid+post" }
         },
         {
-          "id": "agatha-all-along",
-          "title": "Agatha All Along",
-          "year": 2024,
-          "narrativeOrder": 2,
-          "releaseOrder": 45,
+          "id": "she-hulk",
+          "title": "She-Hulk: Attorney at Law",
+          "year": 2022,
+          "narrativeOrder": 4,
+          "releaseOrder": 36,
           "type": "series",
-          "art": { "tmdbId": 138501, "poster": "/mGsxKwXUjojitRv2E9qMTbxbBRd.jpg", "backdrop": "/tYLXJW1sZQU09VWY1BhSVPKGIwc.jpg" },
-          "summary": "Trapped and powerless since the end of WandaVision, Agatha Harkness assembles a coven of misfit witches to help her survive the deadly Witches' Road and reclaim her magic.",
+          "art": { "tmdbId": 92783, "poster": "/5xz2orV8f0usyrfGNshcoXHmiaV.jpg", "backdrop": "/eljErfkQUcFUgQkI4I1soZcH8MW.jpg" },
+          "summary": "Lawyer Jennifer Walters gains the powers of the Hulk after an accident, and must balance a superhero-law specialty with the messiness of everyday life.",
           "beforeWatch": {
-            "context": "Picks up some time after WandaVision, following that show's most memorable supporting character. It's a road-trip story with a witchy, theatrical register all its own. WandaVision is essential; Multiverse of Madness fills in what's happened to magic in the meantime but isn't strictly required.",
-            "watchFirst": ["wandavision","doctor-strange-2"]
+            "context": "A half-hour legal comedy that is much more sitcom than superhero show, and it knows it. It expects you to know Bruce Banner's history, so The Incredible Hulk and the Avengers films help, as does Shang-Chi for one recurring supporting character. It also breaks the fourth wall constantly, which is the format, not a glitch.",
+            "watchFirst": ["incredible-hulk","avengers-4","shang-chi"]
           },
           "inUniverseSetting": "2025",
-          "timeSkip": "Some time after WandaVision's finale",
           "deepDive": {
-            "plot": "Trapped and stripped of most of her memory and power since the end of WandaVision, Agatha Harkness is freed by a mysterious teenage boy who leads her to a legendary, deadly trial called the Witches' Road, said to grant whoever survives it their heart's greatest desire. Agatha assembles a ragtag coven of witches, each hiding a secret of their own, to walk the Road with her, and as they face trial after trial — losing members along the way — the boy's true identity and Agatha's real, long-hidden motive for seeking the Road are finally revealed.",
-            "significance": "Expands the MCU's magic-focused corner of the universe introduced in WandaVision, giving Agatha Harkness — one of the most acclaimed side characters of Phase Four — her own complete story.",
-            "orderNote": "Placed at the end of Phase Five as a direct continuation of Agatha's arc from WandaVision, set some time after that show's finale."
+            "plot": "After a car accident exposes her to her cousin Bruce Banner's blood, lawyer Jennifer Walters unexpectedly gains her own Hulk form, which she can control far more easily than Bruce ever could, to his visible annoyance. Reluctantly stepping into a superhuman law specialty at her firm, Jennifer navigates dating, online harassment, and a conspiracy to steal her blood, culminating in a fourth-wall-breaking finale where Jennifer literally storms the show's own production to demand a more satisfying ending.",
+            "significance": "Brings Daredevil back properly and picks up The Incredible Hulk fourteen years later, both inside a legal sitcom that spends its finale arguing with its own writers about how MCU shows end.",
+            "orderNote": "Placed early in Phase Five, in the same 'present day' period as Ms. Marvel and Love and Thunder."
           },
           "watchFor": [
-            { "name": "The Witches' Road", "thisFilm": "A legendary, dangerous trial said to grant a witch's greatest desire to whoever survives it.", "future": "Its true nature is a mystery the whole season is built around." },
-            { "name": "Agatha's true goal", "characterId": "agatha-harkness", "thisFilm": "Hides her real reason for walking the Road from the rest of her coven for most of the season.", "future": "Recontextualizes everything once revealed." }
+            { "name": "It is a sitcom, on purpose" },
+            { "name": "Jennifer Walters", "characterId": "jennifer-walters", "thisFilm": "Gets her powers from Bruce's blood in a car accident and spends the series annoyed that having them is treated as more interesting than being extremely good at her job." },
+            { "name": "Emil Blonsky", "characterId": "emil-blonsky", "thisFilm": "Up for parole, claiming reform, running a wellness retreat for former villains. The seven-limerick apology is real. Whether he's genuine is left deliberately unclear.", "future": "First proper follow-up to The Incredible Hulk in fourteen years." },
+            { "name": "Wong", "thisFilm": "Turns up constantly, breaks Blonsky out of prison for a sorcerers' duel, and is a terrible witness. He's the connective tissue of this whole stretch of the MCU." },
+            { "name": "Matt Murdock", "characterId": "matt-murdock", "thisFilm": "Arrives in the yellow suit, wins his case, and leaves in the morning. Played much lighter here than in his own show, which the series knows.", "future": "Daredevil: Born Again picks him up in a very different register." },
+            { "name": "Titania", "thisFilm": "An influencer who trademarks the She-Hulk name, which is a more accurate depiction of what would happen than most of the MCU manages." },
+            { "name": "The finale", "thisFilm": "Jennifer breaks out of the show, walks across the Disney+ menu, and argues with the writers' room about her own ending. Nothing else in the MCU does this.", "nameIsSpoiler": true },
+            { "name": "Skaar", "thisFilm": "Bruce returns from Sakaar with a teenage son, introduced in the last minute and given nothing to do.", "future": "Unfollowed so far.", "nameIsSpoiler": true }
           ],
           "seasons": [
             {
               "seasonNumber": 1,
               "episodes": [
-                { "id": "agatha-e1", "episodeNumber": 1, "title": "Seekest Thou the Road", "summary": "A mysterious detective shows up at Agatha's door with unsettling questions about a road only Agatha can see." },
-                { "id": "agatha-e2", "episodeNumber": 2, "title": "Circle, Cross, Time and Death", "summary": "Agatha realizes her memory and powers have been stripped after her time trapped in Westview, and starts assembling a coven." },
-                { "id": "agatha-e3", "episodeNumber": 3, "title": "Season of the Witch", "summary": "A ragtag group of witches, each hiding their own secret, agrees to walk the deadly Witches' Road with Agatha." },
-                { "id": "agatha-e4", "episodeNumber": 4, "title": "For Whom the Bell Tolls", "summary": "The coven faces their first trial on the Road, and the cost of walking it becomes horrifyingly clear." },
-                { "id": "agatha-e5", "episodeNumber": 5, "title": "Is This Job Insane?", "summary": "A trial designed around illusions forces each witch to confront a private fear or regret." },
-                { "id": "agatha-e6", "episodeNumber": 6, "title": "Death's Hand in Mine", "summary": "The Road claims its first real victim, throwing the coven's fragile trust into chaos." },
-                { "id": "agatha-e7", "episodeNumber": 7, "title": "Follow Me Follow Me", "summary": "The true identity of the mysterious teen following Agatha is revealed." },
-                { "id": "agatha-e8", "episodeNumber": 8, "title": "Scary Movie", "summary": "A flashback-heavy episode reveals how Agatha's coven, and her rivalry with the Salem witches, first began centuries ago." },
-                { "id": "agatha-e9", "episodeNumber": 9, "title": "Practical Magic to Conjure a Witch's Coven", "summary": "Agatha reaches the end of the Witches' Road and confronts the true cost of what she's been seeking all along." }
+                { "id": "she-hulk-e1", "episodeNumber": 1, "title": "A Normal Amount of Rage", "summary": "A car accident transfers some of Bruce Banner's blood into his cousin Jennifer Walters, unexpectedly turning her into a Hulk." },
+                { "id": "she-hulk-e2", "episodeNumber": 2, "title": "Superhuman Law", "summary": "Jennifer takes a job at a firm's new superhuman law division, complicating her attempt to keep a normal life." },
+                { "id": "she-hulk-e3", "episodeNumber": 3, "title": "The People vs. Emil Blonsky", "summary": "Jennifer represents Emil Blonsky in his bid for parole, drawing unwanted attention from a secretive government agency." },
+                { "id": "she-hulk-e4", "episodeNumber": 4, "title": "Is This Not Real Magic?", "summary": "A run-in with a washed-up sorcerer and a dating app disaster test Jennifer's patience in and out of the courtroom." },
+                { "id": "she-hulk-e5", "episodeNumber": 5, "title": "Mean, Green, and Straight Poured", "summary": "Jennifer deals with online harassment after a video of her as She-Hulk goes viral." },
+                { "id": "she-hulk-e6", "episodeNumber": 6, "title": "Just Jen", "summary": "Jennifer tries dating without turning into She-Hulk, with predictably messy results." },
+                { "id": "she-hulk-e7", "episodeNumber": 7, "title": "The Retreat", "summary": "A trip to Emil Blonsky's villain-wellness retreat reveals a scheme targeting Jennifer's blood." },
+                { "id": "she-hulk-e8", "episodeNumber": 8, "title": "Ribbit and Rip It", "summary": "Jennifer teams up with Daredevil to track down whoever's been stealing her blood." },
+                {
+                  "id": "she-hulk-e9",
+                  "episodeNumber": 9,
+                  "title": "Whose Show Is This?",
+                  "summary": "Jennifer breaks the fourth wall entirely to rewrite her own finale, confronting the show's actual writers' room.",
+                  "watchFor": [
+                    { "name": "Fourth-wall meta finale", "thisFilm": "Jennifer literally walks onto a production set to argue with the writers about her ending.", "future": "A one-of-a-kind, self-aware finale that doesn't so much set up future stories as comment on them." }
+                  ]
+                }
               ]
             }
           ]
@@ -1544,7 +1580,7 @@
           "id": "black-panther-2",
           "title": "Black Panther: Wakanda Forever",
           "year": 2022,
-          "narrativeOrder": 3,
+          "narrativeOrder": 5,
           "releaseOrder": 37,
           "type": "movie",
           "art": { "tmdbId": 505642, "poster": "/sv1xJUazXeYqALzczSZ3O6nkH75.jpg", "backdrop": "/83H0C66AcvkwpG2738VCTHMY9uv.jpg" },
@@ -1558,7 +1594,7 @@
           "deepDive": {
             "plot": "Following King T'Challa's death from an unspecified illness, Wakanda must defend itself from world powers seeking vibranium, while a hidden underwater civilization called Talokan, led by the mutant king Namor, declares war after Wakanda is blamed for exposing his people's existence. Shuri, consumed by grief and anger, briefly embraces the Black Panther mantle's power for vengeance, but ultimately chooses mercy over Namor's death, forging an uneasy peace between the two nations instead.",
             "significance": "Passes the Black Panther mantle to Shuri, introduces Namor and Talokan as a major new nation and faction, and reveals T'Challa's secret son Toussaint as a future heir to Wakanda's legacy.",
-            "orderNote": "Placed at the end of Phase Four as the culmination of Wakanda's post-T'Challa arc, roughly a year after his death."
+            "orderNote": "Placed in the middle of Phase Five as the culmination of Wakanda's post-T'Challa arc, roughly a year after his death."
           },
           "watchFor": [
             { "name": "Namor & Talokan", "characterId": "namor", "thisFilm": "Wages war on the surface world before reaching an uneasy truce with Wakanda.", "future": "Leaves room for future conflict or alliance." },
@@ -1571,7 +1607,7 @@
           "id": "thor-4",
           "title": "Thor: Love and Thunder",
           "year": 2022,
-          "narrativeOrder": 4,
+          "narrativeOrder": 6,
           "releaseOrder": 35,
           "type": "movie",
           "art": { "tmdbId": 774752, "poster": "/8dqXyslZ2hv49Oiob9UjlGSHSTR.jpg", "backdrop": "/rfnmMYuZ6EKOBvQLp2wqP21v7sI.jpg" },
@@ -1591,11 +1627,51 @@
             { "name": "Hercules (mid-credit)", "thisFilm": "Not present in the main story.", "future": "Zeus sends his son to hunt Thor down, setting up a rivalry for a future Thor story." }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
-        },{
+        },
+        {
+          "id": "ironheart",
+          "title": "Ironheart",
+          "year": 2025,
+          "narrativeOrder": 7,
+          "releaseOrder": 53,
+          "type": "series",
+          "art": { "tmdbId": 114471, "poster": "/dOh6MJpdlQhYpLBhzhNQeYGKTZ5.jpg", "backdrop": "/kiOEVg5BkzLE0pWoPKecXd7wZ2Q.jpg" },
+          "summary": "Back home in Chicago after her time in Wakanda, genius inventor Riri Williams falls in with a crew of high-tech thieves led by a charismatic stranger while chasing the money to finish the armour she can't stop building.",
+          "beforeWatch": {
+            "context": "Riri built her first suit as a college student in Black Panther: Wakanda Forever and went home with the knowledge but none of the resources — this picks her up back in Chicago, broke and out of options. It's a street-level story about who funds a genius, and it leans much harder on magic than her engineering background would suggest. Wakanda Forever is the only real prerequisite.",
+            "watchFirst": ["black-panther-2"]
+          },
+          "optionalViewing": ["What If...? Season 3 (Disney+, 2024)"],
+          "inUniverseSetting": "2025",
+          "deepDive": {
+            "plot": "Expelled from MIT for selling her coursework, Riri Williams returns to Chicago determined to finish the powered armour she has been building since Wakanda. Short on money and parts, she takes work with Parker Robbins, a charming crew leader whose crimes are pulled off with technology — and eventually magic — that shouldn't exist. As Riri builds an AI companion modelled on her dead best friend, she is forced to choose between the resources Robbins offers and the person she wants to be, and to reckon with grief she has spent the whole series engineering her way around.",
+            "significance": "Pushes the MCU's street-level corner into the collision between technology and magic, and gives Riri the origin proper that Wakanda Forever only sketched — establishing her as the next generation's armoured hero in Tony Stark's absence.",
+            "orderNote": "Placed after Wakanda Forever, which introduces Riri, and after Love and Thunder, in the same broad 2025 period as the stories around it."
+          },
+          "watchFor": [
+            { "name": "Riri Williams / Ironheart", "characterId": "riri-williams", "thisFilm": "Builds her armour for real, on her own terms, and gains an AI companion built out of her own grief.", "future": "Established as the MCU's next armoured hero, with her story left deliberately unfinished." },
+            { "name": "Parker Robbins / The Hood", "characterId": "parker-robbins", "thisFilm": "A crew leader whose gear turns out to run on something far older and stranger than technology.", "future": "Sets up a magic-powered criminal threat with ambitions well beyond Chicago." },
+            { "name": "Technology meeting magic", "thisFilm": "The series' central collision — engineering repeatedly runs into forces it cannot model.", "future": "Widens the door between the MCU's science and mystic corners." }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "ironheart-e1", "episodeNumber": 1, "title": "Take Me Home", "summary": "Expelled from MIT, Riri returns to Chicago with nothing but her designs and no way to fund them." },
+                { "id": "ironheart-e2", "episodeNumber": 2, "title": "Will the Real Natalie Please Stand Up?", "summary": "Riri's new AI companion takes on a form she wasn't prepared for, while the crew's first job tests her limits." },
+                { "id": "ironheart-e3", "episodeNumber": 3, "title": "We in Danger, Girl", "summary": "A job goes wrong and Riri starts to see what her new employer's technology can really do." },
+                { "id": "ironheart-e4", "episodeNumber": 4, "title": "Bad Magic", "summary": "The line between engineering and something far older gets much harder for Riri to ignore." },
+                { "id": "ironheart-e5", "episodeNumber": 5, "title": "Karma's a Glitch", "summary": "Riri's choices catch up with her, and the cost of the armour becomes personal." },
+                { "id": "ironheart-e6", "episodeNumber": 6, "title": "The Past Is the Past", "summary": "Riri confronts both her employer and the grief she has been building around, and decides what kind of hero she wants to be." }
+              ]
+            }
+          ]
+        },
+        {
           "id": "guardians-holiday-special",
           "title": "The Guardians of the Galaxy Holiday Special",
           "year": 2022,
-          "narrativeOrder": 5,
+          "narrativeOrder": 8,
           "releaseOrder": 38,
           "type": "special",
           "art": { "tmdbId": 774752, "poster": "/8dqXyslZ2hv49Oiob9UjlGSHSTR.jpg", "backdrop": "/rfnmMYuZ6EKOBvQLp2wqP21v7sI.jpg" },
@@ -1609,7 +1685,7 @@
           "deepDive": {
             "plot": "While the rest of the Guardians settle into their new home on Knowhere, still grieving a version of Gamora who doesn't remember loving any of them, Mantis and Drax set off on a chaotic mission to Earth to find Peter Quill the perfect Christmas gift after learning how much he misses the holiday traditions of his childhood. Their well-meaning but destructive attempt to 'borrow' actor Kevin Bacon as a present goes about as well as expected, but it gives the grieving team a much-needed dose of levity and connection before their final adventure together.",
             "significance": "A small-scale, character-focused breather between Vol. 2 and Vol. 3 that quietly confirms Mantis is Star-Lord's half-sister and shows the team's fractured state heading into the final Guardians film.",
-            "orderNote": "Placed at the very end of Phase Four, set just months before Vol. 3's story begins."
+            "orderNote": "Placed directly before Guardians of the Galaxy Vol. 3, set just months before that film's story begins."
           },
           "watchFor": [
             { "name": "Mantis is Peter Quill's half-sister", "characterId": "mantis", "thisFilm": "Confirms outright that Mantis is secretly Ego's daughter, making her Star-Lord's half-sister — a detail not clearly spelled out anywhere else.", "future": "Recontextualizes Mantis and Peter's relationship heading into Vol. 3.", "spoils": "Guardians of the Galaxy Vol. 3" },
@@ -1620,7 +1696,7 @@
           "id": "guardians-3",
           "title": "Guardians of the Galaxy Vol. 3",
           "year": 2023,
-          "narrativeOrder": 6,
+          "narrativeOrder": 9,
           "releaseOrder": 40,
           "type": "movie",
           "art": { "tmdbId": 447365, "poster": "/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg", "backdrop": "/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg" },
@@ -1643,10 +1719,46 @@
           "postCredit": { "count": 1, "type": "post" }
         },
         {
+          "id": "secret-invasion",
+          "title": "Secret Invasion",
+          "year": 2023,
+          "narrativeOrder": 10,
+          "releaseOrder": 41,
+          "type": "series",
+          "art": { "tmdbId": 114472, "poster": "/3rINdUPSy9AklJg74jWHOyUXuZd.jpg", "backdrop": "/6mOK9j99OFlxGc3ird2jWUeUha9.jpg" },
+          "summary": "Nick Fury returns to Earth to stop a faction of Skrulls, led by a former ally, from launching a hostile takeover of human society.",
+          "beforeWatch": {
+            "context": "A slower, colder spy thriller with almost no costumes in it. It's built entirely on the shape-shifting aliens introduced in Captain Marvel and on the promise Fury made them there, so that film is genuinely required rather than merely helpful. Fury has been off-world since Endgame, which the series treats as a character flaw.",
+            "watchFirst": ["captain-marvel","avengers-4"]
+          },
+          "inUniverseSetting": "2025",
+          "deepDive": {
+            "plot": "Nick Fury, semi-retired and living off-world, returns to Earth after a bombing reveals that a faction of Skrulls — led by his former ally Gravik, who's lost patience waiting for humanity to give the Skrulls a new home as promised decades ago — has been infiltrating human institutions at the highest levels, planning a full takeover. Fury and a loyal Talos investigate a conspiracy that reaches into the White House itself, and though they narrowly stop Gravik's coup, the show ends with humanity's trust in its own leadership — and in Fury himself — badly shaken.",
+            "significance": "Recontextualizes decades of MCU history by revealing just how deep Skrull infiltration has run, and leaves lingering paranoia and distrust that colors Nick Fury's role in future stories.",
+            "orderNote": "Placed before The Marvels because this one ends with Fury going back to space and that one has him already stationed there, which makes the handoff continuous. Sources disagree on the real order, and the two were not built to interlock cleanly, so this is a judgement call rather than a settled fact."
+          },
+          "watchFor": [
+            { "name": "Skrull infiltration", "thisFilm": "Reveals just how deeply Skrulls have infiltrated human institutions over the years.", "future": "Leaves lingering distrust of Nick Fury and S.H.I.E.L.D. across future stories." }
+          ],
+          "seasons": [
+            {
+              "seasonNumber": 1,
+              "episodes": [
+                { "id": "secret-invasion-e1", "episodeNumber": 1, "title": "Resurrection", "summary": "Nick Fury is pulled back to Earth after a bombing reveals a Skrull faction has turned against humanity." },
+                { "id": "secret-invasion-e2", "episodeNumber": 2, "title": "Promises", "summary": "Fury and Talos dig into who's leading the rogue Skrulls, and how far the conspiracy really goes." },
+                { "id": "secret-invasion-e3", "episodeNumber": 3, "title": "Betrayed", "summary": "A mole within Fury's own inner circle is exposed, upending his plan to stop the invasion quietly." },
+                { "id": "secret-invasion-e4", "episodeNumber": 4, "title": "Beloved", "summary": "The Skrulls' endgame comes into focus as they move against world leaders directly." },
+                { "id": "secret-invasion-e5", "episodeNumber": 5, "title": "Harvest", "summary": "Fury is forced to make an impossible sacrifice to keep the invasion from spiraling into war." },
+                { "id": "secret-invasion-e6", "episodeNumber": 6, "title": "Home", "summary": "The invasion reaches its climax, leaving Fury's relationship with Earth's protectors changed for good." }
+              ]
+            }
+          ]
+        },
+        {
           "id": "ms-marvel",
           "title": "Ms. Marvel",
           "year": 2022,
-          "narrativeOrder": 7,
+          "narrativeOrder": 11,
           "releaseOrder": 34,
           "type": "series",
           "art": { "tmdbId": 92782, "poster": "/3HWWh92kZbD7odwJX7nKmXNZsYo.jpg", "backdrop": "/mfcLUWASJghU8MTNK38eYktfE83.jpg" },
@@ -1659,7 +1771,7 @@
           "deepDive": {
             "plot": "New Jersey teenager and Captain Marvel superfan Kamala Khan discovers her grandmother's old bangle grants her real superpowers, tied to an ancient race called the Clandestines who were stranded on Earth generations ago. As Kamala learns to control her powers and juggle her Muslim-American family life, she uncovers her own family's hidden connection to the bangle through her great-grandmother, who fled during the Partition of India. By the end, Kamala's growing powers briefly cause her to swap places with Carol Danvers herself, catching the cosmic hero's attention for the first time.",
             "significance": "Introduces Kamala Khan, one of the most beloved modern Marvel characters, and directly sets up her recruitment into a bigger team alongside Carol Danvers and Monica Rambeau.",
-            "orderNote": "Placed here in the same broad 'a few years post-Blip' period as the rest of Phase Four's later entries, just before Thor: Love and Thunder and She-Hulk."
+            "orderNote": "Placed directly before The Marvels, because this series ends on the swap that film opens with, in the same broad 2025 period as the rest of Phase Five."
           },
           "watchFor": [
             { "name": "Kamala Khan / Ms. Marvel", "characterId": "kamala-khan", "thisFilm": "Discovers her powers come from a bangle passed down through her family.", "future": "Becomes a core member of the young hero team assembled in The Marvels.", "spoils": "The Marvels" }
@@ -1690,7 +1802,7 @@
           "id": "the-marvels",
           "title": "The Marvels",
           "year": 2023,
-          "narrativeOrder": 8,
+          "narrativeOrder": 12,
           "releaseOrder": 42,
           "type": "movie",
           "art": { "tmdbId": 609681, "poster": "/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg", "backdrop": "/feSiISwgEpVzR1v3zv2n2AU4ANJ.jpg" },
@@ -1703,124 +1815,13 @@
           "deepDive": {
             "plot": "Carol Danvers, Kamala Khan, and Monica Rambeau find their powers mysteriously entangled after a rip in space-time, causing them to swap places every time any of them uses their abilities at once. Forced to team up, they trace the anomaly to Dar-Benn, a Kree revolutionary trying to restore her dying homeworld by stealing resources — including Earth's atmosphere and an entire ocean — using a pair of powerful bracelets connected to Carol's own past. The trio defeats Dar-Benn and repairs the damage, formally becoming an ongoing team by the film's end.",
             "significance": "Officially unites three of the MCU's most powerful heroes as a working team, and its mid-credit scene teases a Young Avengers-style team assembling from the franchise's younger heroes.",
-            "orderNote": "Placed after Secret Invasion in the same 2025 stretch, following Ms. Marvel's own ending directly."
+            "orderNote": "Follows Ms. Marvel's ending directly, since that series closes on the swap this film opens with. Placed after Secret Invasion in the same 2025 stretch."
           },
           "watchFor": [
             { "name": "The powers-swapping trio", "thisFilm": "Carol, Kamala, and Monica are forced to literally switch places whenever they use their powers simultaneously.", "future": "Cements the three as an ongoing team." },
             { "name": "Kate Bishop cameo (mid-credit)", "characterId": "kate-bishop", "thisFilm": "Not present in the main story.", "future": "Teases a Young Avengers team assembling from across the franchise's younger heroes." }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
-        },
-        {
-          "id": "secret-invasion",
-          "title": "Secret Invasion",
-          "year": 2023,
-          "narrativeOrder": 9,
-          "releaseOrder": 41,
-          "type": "series",
-          "art": { "tmdbId": 114472, "poster": "/3rINdUPSy9AklJg74jWHOyUXuZd.jpg", "backdrop": "/6mOK9j99OFlxGc3ird2jWUeUha9.jpg" },
-          "summary": "Nick Fury returns to Earth to stop a faction of Skrulls, led by a former ally, from launching a hostile takeover of human society.",
-          "beforeWatch": {
-            "context": "A slower, colder spy thriller with almost no costumes in it. It's built entirely on the shape-shifting aliens introduced in Captain Marvel and on the promise Fury made them there, so that film is genuinely required rather than merely helpful. Fury has been off-world since Endgame, which the series treats as a character flaw.",
-            "watchFirst": ["captain-marvel","avengers-4"]
-          },
-          "inUniverseSetting": "2025",
-          "deepDive": {
-            "plot": "Nick Fury, semi-retired and living off-world, returns to Earth after a bombing reveals that a faction of Skrulls — led by his former ally Gravik, who's lost patience waiting for humanity to give the Skrulls a new home as promised decades ago — has been infiltrating human institutions at the highest levels, planning a full takeover. Fury and a loyal Talos investigate a conspiracy that reaches into the White House itself, and though they narrowly stop Gravik's coup, the show ends with humanity's trust in its own leadership — and in Fury himself — badly shaken.",
-            "significance": "Recontextualizes decades of MCU history by revealing just how deep Skrull infiltration has run, and leaves lingering paranoia and distrust that colors Nick Fury's role in future stories.",
-            "orderNote": "Placed here in the same broad 2025 'present day' period as Quantumania and Vol. 3."
-          },
-          "watchFor": [
-            { "name": "Skrull infiltration", "thisFilm": "Reveals just how deeply Skrulls have infiltrated human institutions over the years.", "future": "Leaves lingering distrust of Nick Fury and S.H.I.E.L.D. across future stories." }
-          ],
-          "seasons": [
-            {
-              "seasonNumber": 1,
-              "episodes": [
-                { "id": "secret-invasion-e1", "episodeNumber": 1, "title": "Resurrection", "summary": "Nick Fury is pulled back to Earth after a bombing reveals a Skrull faction has turned against humanity." },
-                { "id": "secret-invasion-e2", "episodeNumber": 2, "title": "Promises", "summary": "Fury and Talos dig into who's leading the rogue Skrulls, and how far the conspiracy really goes." },
-                { "id": "secret-invasion-e3", "episodeNumber": 3, "title": "Betrayed", "summary": "A mole within Fury's own inner circle is exposed, upending his plan to stop the invasion quietly." },
-                { "id": "secret-invasion-e4", "episodeNumber": 4, "title": "Beloved", "summary": "The Skrulls' endgame comes into focus as they move against world leaders directly." },
-                { "id": "secret-invasion-e5", "episodeNumber": 5, "title": "Harvest", "summary": "Fury is forced to make an impossible sacrifice to keep the invasion from spiraling into war." },
-                { "id": "secret-invasion-e6", "episodeNumber": 6, "title": "Home", "summary": "The invasion reaches its climax, leaving Fury's relationship with Earth's protectors changed for good." }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "echo",
-          "title": "Echo",
-          "year": 2024,
-          "narrativeOrder": 10,
-          "releaseOrder": 43,
-          "type": "series",
-          "art": { "tmdbId": 122226, "poster": "/vFyJH630cF68LohVYjQW49074Sy.jpg", "backdrop": "/u3ySnWqSjM3jedYgJZTR7RWRDDm.jpg" },
-          "summary": "After a violent falling-out with Kingpin's crime empire, Maya Lopez returns to her Choctaw hometown to reconnect with her roots and confront the family and community she left behind.",
-          "beforeWatch": {
-            "context": "A direct continuation of Maya Lopez's story from Hawkeye, and a much smaller, more grounded piece of work than anything around it — most of it takes place in a small Oklahoma town. It's five episodes and was designed to be watched in one go. Hawkeye is the only real prerequisite.",
-            "watchFirst": ["hawkeye"]
-          },
-          "optionalViewing": ["Daredevil (2015 series)"],
-          "inUniverseSetting": "2025",
-          "deepDive": {
-            "plot": "After shooting her crime-boss mentor Wilson Fisk (Kingpin) during a violent falling-out, Maya Lopez flees New York and returns to her Choctaw hometown in Oklahoma for the first time in years. Reconnecting with the family and community she abandoned, Maya uncovers a mysterious power passed down through generations of women in her family, and ultimately confronts both her own painful history and Kingpin's lingering reach, choosing which legacy — her birth family's or her adoptive crime family's — she wants to carry forward.",
-            "significance": "The first MCU show to center a deaf, Indigenous American superhero, and deepens the Kingpin/Daredevil corner of the MCU introduced in She-Hulk.",
-            "orderNote": "Placed here following Maya's introduction in Hawkeye, unfolding in the same broad 2025 period."
-          },
-          "watchFor": [
-            { "name": "Kingpin / Wilson Fisk", "characterId": "wilson-fisk", "thisFilm": "Survives being shot by Maya at the start of the series.", "future": "Continues his rivalry with Maya and remains a recurring MCU crime-boss threat." }
-          ],
-          "seasons": [
-            {
-              "seasonNumber": 1,
-              "episodes": [
-                { "id": "echo-e1", "episodeNumber": 1, "title": "Home", "summary": "After shooting Kingpin, Maya Lopez flees New York and returns to her hometown for the first time in years." },
-                { "id": "echo-e2", "episodeNumber": 2, "title": "Casino", "summary": "Maya reconnects with her estranged family while trying to stay one step ahead of Kingpin's people." },
-                { "id": "echo-e3", "episodeNumber": 3, "title": "Tuklo", "summary": "Flashbacks reveal the tragic history that first drove a wedge between Maya and her family." },
-                { "id": "echo-e4", "episodeNumber": 4, "title": "Origins", "summary": "Maya taps into her Choctaw ancestry and a mysterious inherited power passed down through generations of women in her family." },
-                { "id": "echo-e5", "episodeNumber": 5, "title": "Storyteller", "summary": "Maya confronts her past and Kingpin's reach once and for all, choosing which legacy she wants to carry forward." }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "ironheart",
-          "title": "Ironheart",
-          "year": 2025,
-          "narrativeOrder": 11,
-          "releaseOrder": 53,
-          "type": "series",
-          "art": { "tmdbId": 114471, "poster": "/dOh6MJpdlQhYpLBhzhNQeYGKTZ5.jpg", "backdrop": "/kiOEVg5BkzLE0pWoPKecXd7wZ2Q.jpg" },
-          "summary": "Back home in Chicago after her time in Wakanda, genius inventor Riri Williams falls in with a crew of high-tech thieves led by a charismatic stranger while chasing the money to finish the armour she can't stop building.",
-          "beforeWatch": {
-            "context": "Riri built her first suit as a college student in Black Panther: Wakanda Forever and went home with the knowledge but none of the resources — this picks her up back in Chicago, broke and out of options. It's a street-level story about who funds a genius, and it leans much harder on magic than her engineering background would suggest. Wakanda Forever is the only real prerequisite.",
-            "watchFirst": ["black-panther-2"]
-          },
-          "optionalViewing": ["What If...? Season 3 (Disney+, 2024)"],
-          "inUniverseSetting": "2025",
-          "deepDive": {
-            "plot": "Expelled from MIT for selling her coursework, Riri Williams returns to Chicago determined to finish the powered armour she has been building since Wakanda. Short on money and parts, she takes work with Parker Robbins, a charming crew leader whose crimes are pulled off with technology — and eventually magic — that shouldn't exist. As Riri builds an AI companion modelled on her dead best friend, she is forced to choose between the resources Robbins offers and the person she wants to be, and to reckon with grief she has spent the whole series engineering her way around.",
-            "significance": "Pushes the MCU's street-level corner into the collision between technology and magic, and gives Riri the origin proper that Wakanda Forever only sketched — establishing her as the next generation's armoured hero in Tony Stark's absence.",
-            "orderNote": "Placed after Wakanda Forever, which introduces Riri, and near the end of this phase since it unfolds in the same broad 2025 period as the shows around it."
-          },
-          "watchFor": [
-            { "name": "Riri Williams / Ironheart", "characterId": "riri-williams", "thisFilm": "Builds her armour for real, on her own terms, and gains an AI companion built out of her own grief.", "future": "Established as the MCU's next armoured hero, with her story left deliberately unfinished." },
-            { "name": "Parker Robbins / The Hood", "characterId": "parker-robbins", "thisFilm": "A crew leader whose gear turns out to run on something far older and stranger than technology.", "future": "Sets up a magic-powered criminal threat with ambitions well beyond Chicago." },
-            { "name": "Technology meeting magic", "thisFilm": "The series' central collision — engineering repeatedly runs into forces it cannot model.", "future": "Widens the door between the MCU's science and mystic corners." }
-          ],
-          "seasons": [
-            {
-              "seasonNumber": 1,
-              "episodes": [
-                { "id": "ironheart-e1", "episodeNumber": 1, "title": "Take Me Home", "summary": "Expelled from MIT, Riri returns to Chicago with nothing but her designs and no way to fund them." },
-                { "id": "ironheart-e2", "episodeNumber": 2, "title": "Will the Real Natalie Please Stand Up?", "summary": "Riri's new AI companion takes on a form she wasn't prepared for, while the crew's first job tests her limits." },
-                { "id": "ironheart-e3", "episodeNumber": 3, "title": "We in Danger, Girl", "summary": "A job goes wrong and Riri starts to see what her new employer's technology can really do." },
-                { "id": "ironheart-e4", "episodeNumber": 4, "title": "Bad Magic", "summary": "The line between engineering and something far older gets much harder for Riri to ignore." },
-                { "id": "ironheart-e5", "episodeNumber": 5, "title": "Karma's a Glitch", "summary": "Riri's choices catch up with her, and the cost of the armour becomes personal." },
-                { "id": "ironheart-e6", "episodeNumber": 6, "title": "The Past Is the Past", "summary": "Riri confronts both her employer and the grief she has been building around, and decides what kind of hero she wants to be." }
-              ]
-            }
-          ]
         }
       ]
     },
