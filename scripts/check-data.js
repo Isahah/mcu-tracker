@@ -217,7 +217,12 @@ function resolveWatchFor(w) {
           err(at, 'beforeWatch.watchFirst must be an array of entry ids.');
         } else {
           bw.watchFirst.forEach(id => {
-            if (!entryIds.has(id)) err(at, `watchFirst points at "${id}", which is not an entry id.`);
+            // Non-entry strings are allowed: a prerequisite can be a film outside
+            // this tracker (Logan, the Deadpool films) and renders as a plain chip.
+            // Anything id-shaped that matches nothing is almost certainly a typo.
+            if (!entryIds.has(id) && /^[a-z0-9]+(-[a-z0-9]+)+$/.test(id)) {
+              err(at, `watchFirst points at "${id}", which looks like an entry id but matches none.`);
+            }
           });
         }
       }

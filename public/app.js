@@ -1078,10 +1078,13 @@ function whenText(entry) {
 // only put things in here that can't reveal an event from the title itself.
 // "Watch these first" chips — each is an entry id from movies.json, so the label
 // and link come straight from the referenced title
+// "Watch these first" chips. Same rule as the optional row below: an entry id
+// links to that title, anything else (Logan, the Deadpool films) is a hard
+// prerequisite that simply isn't in this tracker, so it renders as a plain chip.
 function prereqChipHtml(id) {
   const found = findItem(id);
-  if (!found) return '';
-  return `<a class="chip" href="#/watch/${id}">${found.item.title}</a>`;
+  if (found) return `<a class="chip" href="#/watch/${id}">${found.item.title}</a>`;
+  return `<span class="chip chip--fact">${id}</span>`;
 }
 
 // "Helps, but optional" chips. An item that matches an entry id links to that
