@@ -65,3 +65,14 @@
 .save-utility__status { flex-basis: 100%; color: var(--fg-faint); }
 .save-utility__status:empty { display: none; }
 .save-utility__status.is-error { color: var(--crimson-soft); }
+
+/* ---------------- CHARACTER PHASE RECORDS ---------------- */
+/* The handoff caps these at 70ch for readability, which leaves a lot of empty
+   panel on a wide screen. These paragraphs are reference text you scan for a
+   film name rather than prose you read start to finish, so they run full width.
+   pre-line makes the newlines in the data meaningful: one film per line, so a
+   phase covering four titles reads as four entries instead of one block. */
+.phase-record-body {
+  max-width: none;
+  white-space: pre-line;
+}
