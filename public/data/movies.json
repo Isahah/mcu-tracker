@@ -1124,30 +1124,34 @@
           "releaseOrder": 43,
           "type": "series",
           "art": { "tmdbId": 122226, "poster": "/vFyJH630cF68LohVYjQW49074Sy.jpg", "backdrop": "/u3ySnWqSjM3jedYgJZTR7RWRDDm.jpg" },
-          "summary": "After a violent falling-out with Kingpin's crime empire, Maya Lopez returns to her Choctaw hometown to reconnect with her roots and confront the family and community she left behind.",
+          "summary": "Maya Lopez goes back to the Choctaw town in Oklahoma she grew up in, and finds that neither her family nor the life she left in New York is willing to let her start over quietly.",
           "beforeWatch": {
-            "context": "A direct continuation of Maya Lopez's story from Hawkeye, and a much smaller, more grounded piece of work than anything around it — most of it takes place in a small Oklahoma town. It's five episodes and was designed to be watched in one go. Hawkeye is the only real prerequisite.",
+            "context": "This carries straight on from Hawkeye, about five months later. What you need from that series is Maya. Her father ran the Tracksuit Mafia and was killed on Ronin's blade, she grew up around Wilson Fisk, who she called her uncle and who was closer to her than her own family was, and the last thing she did in that show was find out he had arranged her father's death and she shoots Fisk in the head for it. She left New York the same night. It is five episodes, much smaller than most series, and most of it takes place in one small Oklahoma town.",
             "watchFirst": ["hawkeye"]
           },
           "optionalViewing": ["Daredevil (2015 series)"],
-          "inUniverseSetting": "2025",
+          "inUniverseSetting": "May 2025",
+          "timeSkip": "Five months after Hawkeye",
           "deepDive": {
-            "plot": "After shooting her crime-boss mentor Wilson Fisk (Kingpin) during a violent falling-out, Maya Lopez flees New York and returns to her Choctaw hometown in Oklahoma for the first time in years. Reconnecting with the family and community she abandoned, Maya uncovers a mysterious power passed down through generations of women in her family, and ultimately confronts both her own painful history and Kingpin's lingering reach, choosing which legacy — her birth family's or her adoptive crime family's — she wants to carry forward.",
-            "significance": "The first MCU show to center a deaf, Indigenous American superhero, and deepens the Kingpin/Daredevil corner of the MCU introduced in She-Hulk.",
-            "orderNote": "Placed here following Maya's introduction in Hawkeye, unfolding in the same broad 2025 period."
+            "plot": "Maya Lopez grew up in Tamaha, Oklahoma. Her mother was killed in a car crash when Maya was a child, her father took her to New York afterwards, and Wilson Fisk took an interest in her there and raised her into an enforcer. At the end of Hawkeye she found out Fisk had arranged her father's killing, and she shot him for it. This picks up five months later, with Maya back in Tamaha for the first time in years, in a town and a family that did not ask her to come home. She wants to take Fisk's operation apart from a distance and leans on relatives who want nothing to do with any of it. Then she starts seeing things she cannot explain: her own Choctaw ancestors, a line of women reaching back to the first of them, each carrying something she is meant to inherit. Fisk is not dead. He sends people to Tamaha, and when that fails he comes himself. It ends at a Choctaw Nation powwow with her family in the middle of it, where Maya finally takes hold of what her ancestors left her and turns it on Fisk, putting his own childhood back in front of him. He leaves Tamaha, and he leaves her alone.",
+            "significance": "Deals with the aftermath of Maya's break with Wilson Fisk, and explains where her abilities actually come from, which is a Choctaw lineage rather than anything the MCU had set up before. It is also the first MCU series built around a deaf, Indigenous lead, and the sound design works accordingly. Beyond that it is self-contained. It leads directly into Daredevil: Born Again and does very little else for the wider MCU, so of everything in this phase it is the one you can skip without missing much.",
+            "orderNote": "Placed directly after Hawkeye, five months on, as the straight continuation of Maya's story from that series."
           },
           "watchFor": [
-            { "name": "Kingpin / Wilson Fisk", "characterId": "wilson-fisk", "thisFilm": "Survives being shot by Maya at the start of the series.", "future": "Continues his rivalry with Maya and remains a recurring MCU crime-boss threat." }
+            { "name": "How the series uses sound", "thisFilm": "Maya is deaf, and the show puts you in that position rather than describing it. Sound drops out, comes back through vibration and floorboards, and a good deal of the dialogue is signed. Worth watching somewhere quiet." },
+            { "name": "The episode titles", "thisFilm": "Each of the five is named for one of Maya's Choctaw ancestors, and each opens on that ancestor's story before returning to the present. The last one is named for Maya." },
+            { "name": "Maya's family in Tamaha", "thisFilm": "She left this town years ago and did not part well with anyone in it. The relatives she comes back to are not pleased to see her and are not written as obstacles either, which is most of what the series is actually about." },
+            { "name": "Kingpin", "characterId": "wilson-fisk", "thisFilm": "He survived being shot. He comes to Tamaha in person to get Maya back, and what stops him is not a fight. Maya reaches him through the same ancestral connection she has spent the series learning, and makes him look at his own childhood. He leaves without her.", "future": "Daredevil: Born Again picks him up from here, where he has turned respectable and is running for mayor of New York.", "nameIsSpoiler": true }
           ],
           "seasons": [
             {
               "seasonNumber": 1,
               "episodes": [
-                { "id": "echo-e1", "episodeNumber": 1, "title": "Home", "summary": "After shooting Kingpin, Maya Lopez flees New York and returns to her hometown for the first time in years." },
-                { "id": "echo-e2", "episodeNumber": 2, "title": "Casino", "summary": "Maya reconnects with her estranged family while trying to stay one step ahead of Kingpin's people." },
-                { "id": "echo-e3", "episodeNumber": 3, "title": "Tuklo", "summary": "Flashbacks reveal the tragic history that first drove a wedge between Maya and her family." },
-                { "id": "echo-e4", "episodeNumber": 4, "title": "Origins", "summary": "Maya taps into her Choctaw ancestry and a mysterious inherited power passed down through generations of women in her family." },
-                { "id": "echo-e5", "episodeNumber": 5, "title": "Storyteller", "summary": "Maya confronts her past and Kingpin's reach once and for all, choosing which legacy she wants to carry forward." }
+                { "id": "echo-e1", "episodeNumber": 1, "title": "Chafa", "summary": "Maya's life before Tamaha, and the night she decided she was finished with New York.", "deepDive": { "plot": "The episode opens on Chafa, the first of Maya's ancestors, and the origin the Choctaw tell about her. Then Tamaha, Oklahoma, and Maya as a child, until her mother is killed in a car crash and her father takes her to New York. Wilson Fisk takes an interest in her there, and over the years he raises her into something useful to him, closer to her than her own family ever managed. In the present she learns that her father's killing was arranged by Fisk himself. She shoots him for it and leaves the city that night." } },
+                { "id": "echo-e2", "episodeNumber": 2, "title": "Lowak", "summary": "Back in Tamaha, Maya starts working on Fisk's operation from a distance and gets nowhere with her family.", "deepDive": { "plot": "Maya arrives back in Tamaha for the first time in years and sets herself up at her uncle's skating rink. Her plan is to take Fisk's operation apart from out here, and it needs people, so she goes to the family she walked out on. They are not interested, and they are not shy about why. Between the arguments she starts seeing things she cannot account for, images of people she has never met that arrive without warning." } },
+                { "id": "echo-e3", "episodeNumber": 3, "title": "Tuklo", "summary": "Fisk's people arrive in town, and Maya finds out what she has brought with her.", "deepDive": { "plot": "Fisk's crew reach Tamaha. Whatever Maya thought she was doing at a safe distance is now happening on the street where her relatives live and work, and other people start paying for it. The episode sets her history against theirs: what she learned in New York works, and it costs the town something every time she uses it." } },
+                { "id": "echo-e4", "episodeNumber": 4, "title": "Taloa", "summary": "Maya is caught between the life Fisk built for her and the one she left behind.", "deepDive": { "plot": "Maya reaches the point where she has to choose which of the two things she is going to be. The visions have stopped being random and started being an inheritance, one that only works if she is willing to be part of a line rather than the last one standing. Her family has its own history with all of this, and most of that history is about people who did not get the chance." } },
+                { "id": "echo-e5", "episodeNumber": 5, "title": "Maya", "summary": "Everything comes to a head at the Choctaw Nation powwow.", "deepDive": { "plot": "Fisk's people hit the Choctaw Nation powwow with Maya's family in the middle of it. Maya finally takes hold of what her ancestors have been offering her all season, and it turns out not to be a weapon in the way she expected. Fisk comes for her himself, and she reaches him through the same connection, putting his own childhood in front of him until he cannot look away from it. He leaves. Maya stays, and the family she came back to is still standing." } }
               ]
             }
           ]
@@ -1348,21 +1352,27 @@
           "art": { "tmdbId": 453395, "poster": "/ddJcSKbcp4rKZTmuyWaMhuwcfMz.jpg", "backdrop": "/lv3TXqhpaIxkclIHbhN2MRMOemQ.jpg" },
           "summary": "Doctor Strange journeys into the dangerous and mind-bending multiverse with the help of a young woman who can travel between realities, while a powerful force hunts her for her abilities.",
           "beforeWatch": {
-            "context": "Follows directly from the end of No Way Home, and takes the door that film opened as its starting premise. It also assumes you've finished WandaVision — that series does far more setup for this film than the first Doctor Strange does. A noticeably darker, more horror-inflected film than anything before it.",
-            "watchFirst": ["doctor-strange-1","spiderman-3","wandavision"]
+            "context": "This picks up not long after the fight at the Statue of Liberty in No Way Home. Strange has just cast a reality-warping spell that went badly wrong, torn a hole in the sky and then closed it again, and he has not really answered for any of that. The other thing you need is WandaVision. Wanda built a fake reality over the town of Westview so she could live in it with Vision and the two sons the Hex gave her, and that show's post-credit scene left her alone somewhere remote, reading the Darkhold. One side note, not required at all: What If...? Seasons 1 and 2 makes a good primer, and you may recognise a face or two here from it, though the versions you meet may not have the exact same backstory. If you would rather not watch a whole season, episodes 1 and 4 from season 1 are the two worth your time first.",
+            "watchFirst": ["spiderman-3","wandavision"]
           },
           "optionalViewing": ["What If...? Season 2 (Disney+, 2023)"],
           "inUniverseSetting": "2024",
-          "timeSkip": "Directly follows No Way Home",
+          "timeSkip": "Soon after No Way Home",
           "deepDive": {
-            "plot": "Hunted by a mysterious force after a wedding goes wrong, America Chavez — a young woman who can punch holes between universes — draws Doctor Strange into the multiverse for the first time. They discover the hunter is actually Wanda Maximoff, consumed by the Darkhold and trying to steal America's powers to travel to a universe where she can be reunited with her children. Strange, forced to use dangerously corrupting magic himself to stop her, ultimately convinces Wanda to see what she's become, and she destroys the Darkhold and herself along with it, seemingly ending the Scarlet Witch's story — for now.",
-            "significance": "Pays off Wanda's entire arc from WandaVision in tragic fashion, and formally confirms the multiverse as a huge, story-spanning concept full of alternate versions of familiar heroes.",
-            "orderNote": "Follows on from No Way Home's confirmation that the multiverse is real, but sits back here rather than immediately after it so that Loki has laid out the rules first. The main reason it's this far up the phase is Wanda: her story runs straight from WandaVision into this film, and leaving too much between the two means forgetting where she started."
+            "plot": "America Chavez arrives in Strange's universe being chased by a demon, and she cannot control the power that got her there. She punches star-shaped holes between realities when she is frightened, and she has never once done it on purpose. Strange takes her to Wanda Maximoff for help and finds out Wanda is the one hunting her. Wanda has been reading the Darkhold since the end of WandaVision, and it has convinced her that if she takes America's power she can cross to a universe where Billy and Tommy are real and be their mother again. She destroys Kamar-Taj to get at her. America's panic throws her and Strange across the multiverse and they land on Earth-838, where the ruling council have already executed their own Strange for causing an incursion. Wanda dreamwalks into the body of her 838 variant and kills that council one by one. Strange gets out with the help of that world's Christine Palmer, dreamwalks into the corpse of a dead Strange to make it back, and reaches Wanda's last stand at Mount Wundagore. What stops her is not Strange. America opens a portal and lets Wanda see Billy and Tommy backing away from her in terror in their own universe. Wanda brings the mountain down on herself, and every copy of the Darkhold in every universe burns with it.",
+            "significance": "Introduces many rules the rest of the Multiverse Saga runs on. The biggest is the incursion: a catastrophic event where the boundary between two realities erodes, they collide, and one or both is destroyed. Travelling between realities does it, dreamwalking does it, and so does tearing a hole in spacetime the way No Way Home did. It also puts Patrick Stewart's Charles Xavier in an MCU film for the first time. He is not the Earth-616 version, but it is a step closer to the X-Men existing on this Earth. Strange finishes the film with a third eye, which is what meddling with the Darkhold costs him, and the mid-credits scene introduces Clea, who walks him through a portal that looks a great deal like the Dark Dimension. The Scarlet Witch dies at Wundagore, and every version of the Darkhold across the multiverse is destroyed with her.",
+            "orderNote": "Technically this is only a few weeks after the multiversal incident in No Way Home. It sits after both seasons of Loki instead, so that the foundations of the Multiverse Saga are laid down. From here we can assume that Loki is already the God of Stories and that the TVA has stopped trying to hold a single Sacred Timeline together, which fits a film where incursions and multiversal travel are happening without the TVA interfering."
           },
           "watchFor": [
-            { "name": "Incursions", "thisFilm": "Strange witnesses a universe-ending 'incursion' while multiverse-traveling.", "future": "Sets the stakes for future multiversal threats." },
-            { "name": "America Chavez", "characterId": "america-chavez", "thisFilm": "Escapes with Strange after her powers are hunted by Wanda.", "future": "Her ability to travel the multiverse makes her a target again in future stories." },
-            { "name": "Clea (mid-credit)", "thisFilm": "Approaches Strange after the darkness he dabbled in catches up to him.", "future": "Recruits him to fix the incursion he caused, teasing his next adventure." }
+            { "name": "Incursions", "thisFilm": "When two universes are pushed too close together, the boundary between them erodes, they collide, and one or both is destroyed. Strange sees the aftermath of one while falling through the multiverse, and Earth-838 executed their own Strange for causing another. Multiversal travel causes them, dreamwalking causes them, and so does tearing a hole in spacetime.", "future": "Incursions are a big part of Avengers: Doomsday, which brings Earth-616, Earth-828 and Earth-10005 together.", "spoils": "Avengers: Doomsday" },
+            { "name": "The names of the different Earths", "thisFilm": "The film says the numbers out loud. Home is Earth-616. The universe Strange and America land in is Earth-838. Beck used the same numbering in Far From Home, back when it was a lie." },
+            { "name": "Different variants" },
+            { "name": "Multiversal rules", "thisFilm": "Dreamwalking lets a sorcerer pilot the body of one of their own variants in another universe, and it is exactly as bad an idea as it sounds. The Darkhold is what teaches it, and it takes a price every time. Travelling between realities at all is what wears the boundaries thin in the first place." },
+            { "name": "America Chavez", "characterId": "america-chavez", "thisFilm": "Can punch star-shaped holes between universes, has been falling through them since she was a child, and has never done it deliberately. By the end she can, and she stays on at Kamar-Taj training as a sorcerer with the other students." },
+            { "name": "The Illuminati of Earth-838", "thisFilm": "The council that rules Earth-838 is made up of variants of people you know: Peggy Carter as Captain Carter, Maria Rambeau as Captain Marvel, Charles Xavier, Reed Richards and Black Bolt. The What If...? versions of Peggy Carter and the Doctor Strange from episode 4 are very similar to the ones we see in this movie.", "future": "Another version of Maria Rambeau turns up in the post-credit scene of The Marvels, operating as Binary.", "spoils": "The Marvels", "nameIsSpoiler": true },
+            { "name": "Strange's third eye", "thisFilm": "Dreamwalking into the corpse of a dead variant is Darkhold magic, and it leaves a mark. He walks out of the film with a third eye in his forehead.", "nameIsSpoiler": true },
+            { "name": "Clea (mid-credit)", "thisFilm": "Turns up in the mid-credits to tell Strange that what he did in this film has caused an incursion, and that he is going to help her fix it. They step through a portal that looks a great deal like the Dark Dimension.", "nameIsSpoiler": true },
+            { "name": "The death of the Scarlet Witch", "thisFilm": "Wanda brings Mount Wundagore down on herself, and every copy of the Darkhold in every universe is destroyed at the same moment.", "future": "The spell outlives her. Agatha All Along opens with it still holding, and breaking it is what starts that series.", "spoils": "Agatha All Along", "nameIsSpoiler": true }
           ],
           "postCredit": { "count": 2, "type": "mid+post" }
         },
@@ -1376,33 +1386,34 @@
           "art": { "tmdbId": 138501, "poster": "/mGsxKwXUjojitRv2E9qMTbxbBRd.jpg", "backdrop": "/tYLXJW1sZQU09VWY1BhSVPKGIwc.jpg" },
           "summary": "Trapped and powerless since the end of WandaVision, Agatha Harkness assembles a coven of misfit witches to help her survive the deadly Witches' Road and reclaim her magic.",
           "beforeWatch": {
-            "context": "Picks up some time after WandaVision, following that show's most memorable supporting character. It's a road-trip story with a witchy, theatrical register all its own. WandaVision is essential; Multiverse of Madness fills in what's happened to magic in the meantime but isn't strictly required.",
+            "context": "You need WandaVision for this one. Agatha Harkness is a witch who was alive for the Salem trials, and what she does is siphon power out of other witches, which is how she has stayed alive as long as she has. She spent that series posing as Agnes, the nosy neighbour down the street, working out how Wanda was casting so she could take it for herself. Wanda beat her and locked her inside the Agnes persona permanently, and that is where she has been ever since. This is set in the autumn of 2026, three years on from Westview, and after what happened to Wanda in Multiverse of Madness. There is not much more that can be said about it without spoiling something. It is unlike any other series in the MCU.",
             "watchFirst": ["wandavision","doctor-strange-2"]
           },
-          "inUniverseSetting": "2025",
-          "timeSkip": "Some time after WandaVision's finale",
+          "inUniverseSetting": "Fall 2026",
+          "timeSkip": "Three years after WandaVision",
           "deepDive": {
-            "plot": "Trapped and stripped of most of her memory and power since the end of WandaVision, Agatha Harkness is freed by a mysterious teenage boy who leads her to a legendary, deadly trial called the Witches' Road, said to grant whoever survives it their heart's greatest desire. Agatha assembles a ragtag coven of witches, each hiding a secret of their own, to walk the Road with her, and as they face trial after trial — losing members along the way — the boy's true identity and Agatha's real, long-hidden motive for seeking the Road are finally revealed.",
-            "significance": "Expands the MCU's magic-focused corner of the universe introduced in WandaVision, giving Agatha Harkness — one of the most acclaimed side characters of Phase Four — her own complete story.",
-            "orderNote": "Placed at the end of Phase Four as a direct continuation of Agatha's arc from WandaVision, set some time after that show's finale."
+            "plot": "Three years after Westview, Agatha is still inside the spell Wanda left her in, living out a grim small-town detective show that is not real. A teenage boy she has never met breaks it, and she comes back to herself with almost no power left. What he wants is for her to walk the Witches' Road, the trial from an old ballad that is supposed to give a witch her heart's desire at the end of it. He cannot tell her his name, because a sigil on him will not let him say it out loud. Agatha needs a coven to open the Road, so she assembles one out of whoever is left: Lilia Calderu, a divination witch who does not experience time in order, Jennifer Kale, a potions witch whose craft has been bound, and Alice Wu-Gulliver, a protection witch carrying a family curse. They are a witch short, so Mrs. Hart, who has no power at all, is drafted to make up the numbers. Rio Vidal, who has history with Agatha and is not there to help, follows them down. Every trial takes someone. The boy turns out to be Billy Maximoff, whose mind landed in a boy called William Kaplan at the exact moment the Hex came down. And the Road is a lie. There was never a Road. Agatha's son Nicholas Scratch wrote the ballad as a child, and after he died Agatha spent three centuries using the song to draw covens somewhere quiet and take everything they had. Rio is Death, and what she has been waiting on all that time is the bargain Agatha made over Nicholas. Agatha gives herself up at the end and comes back as a ghost only Billy can see, and the two of them go looking for Tommy.",
+            "significance": "Agatha ends the series dead, or as close to it as a witch attached to a living boy gets. The bigger piece is Billy Maximoff. Wanda's son went out with the Hex at the end of WandaVision, and this is where he comes back with a body of his own and the name Wiccan. Late on, the series nods at him doing the same thing for his brother, putting Tommy's soul into a boy drowning in a lake, which is exactly how Billy got his own body. It also answers two things WandaVision left alone. The Witches' Road was never a trial and never granted anyone anything. It was a song Agatha's son Nicholas Scratch made up as a boy, which Agatha turned into a lure after he died, using it to walk covens somewhere quiet and drain them. And Nicholas is what Rio Vidal has been about all along: Rio is Death, she came for the boy, and Agatha has spent three hundred years paying for trying to keep him.",
+            "orderNote": "Set three years after WandaVision, and after Wanda's death in Multiverse of Madness, which is what makes it possible for Agatha to get out at all. A natural continuation of that plotline, and the entry that closes Phase Four."
           },
           "watchFor": [
-            { "name": "The Witches' Road", "thisFilm": "A legendary, dangerous trial said to grant a witch's greatest desire to whoever survives it.", "future": "Its true nature is a mystery the whole season is built around." },
-            { "name": "Agatha's true goal", "characterId": "agatha-harkness", "thisFilm": "Hides her real reason for walking the Road from the rest of her coven for most of the season.", "future": "Recontextualizes everything once revealed." }
+            { "name": "Agatha's true goal", "characterId": "agatha-harkness", "thisFilm": "She hides her real reason for walking the Road from the rest of the coven for most of the season, and it is not the one she keeps telling them." },
+            { "name": "How Billy got a body", "thisFilm": "When Wanda took the Hex down, Billy went with it, and his consciousness had to land somewhere. It landed in William Kaplan, a boy in New Jersey who died in a car crash at that exact moment. Billy has been living that boy's life, with that boy's parents, ever since.", "nameIsSpoiler": true },
+            { "name": "What Billy does for Tommy", "thisFilm": "Late in the series there is a nod at Billy doing for his brother what was done for him, putting Tommy's soul into the body of a boy drowning in a lake.", "future": "VisionQuest is where what actually happens to Tommy's soul gets explained.", "spoils": "VisionQuest", "nameIsSpoiler": true }
           ],
           "seasons": [
             {
               "seasonNumber": 1,
               "episodes": [
-                { "id": "agatha-e1", "episodeNumber": 1, "title": "Seekest Thou the Road", "summary": "A mysterious detective shows up at Agatha's door with unsettling questions about a road only Agatha can see." },
-                { "id": "agatha-e2", "episodeNumber": 2, "title": "Circle, Cross, Time and Death", "summary": "Agatha realizes her memory and powers have been stripped after her time trapped in Westview, and starts assembling a coven." },
-                { "id": "agatha-e3", "episodeNumber": 3, "title": "Season of the Witch", "summary": "A ragtag group of witches, each hiding their own secret, agrees to walk the deadly Witches' Road with Agatha." },
-                { "id": "agatha-e4", "episodeNumber": 4, "title": "For Whom the Bell Tolls", "summary": "The coven faces their first trial on the Road, and the cost of walking it becomes horrifyingly clear." },
-                { "id": "agatha-e5", "episodeNumber": 5, "title": "Is This Job Insane?", "summary": "A trial designed around illusions forces each witch to confront a private fear or regret." },
-                { "id": "agatha-e6", "episodeNumber": 6, "title": "Death's Hand in Mine", "summary": "The Road claims its first real victim, throwing the coven's fragile trust into chaos." },
-                { "id": "agatha-e7", "episodeNumber": 7, "title": "Follow Me Follow Me", "summary": "The true identity of the mysterious teen following Agatha is revealed." },
-                { "id": "agatha-e8", "episodeNumber": 8, "title": "Scary Movie", "summary": "A flashback-heavy episode reveals how Agatha's coven, and her rivalry with the Salem witches, first began centuries ago." },
-                { "id": "agatha-e9", "episodeNumber": 9, "title": "Practical Magic to Conjure a Witch's Coven", "summary": "Agatha reaches the end of the Witches' Road and confronts the true cost of what she's been seeking all along." }
+                { "id": "agatha-e1", "episodeNumber": 1, "title": "Seekest Thou the Road", "summary": "Agatha is still living inside what is left of Wanda's spell, and a teenage boy turns up at her door and breaks it.", "deepDive": { "plot": "Agatha is living inside a detective show. She is a Westview police detective working a murder case, and none of it is real, it is the shape Wanda's spell settled into three years ago. An agent turns up and starts pulling at the edges of it. Then a teenage boy arrives at her door, and what he does breaks the whole thing open. Agatha comes back to herself in a town full of neighbours who remember exactly what she did to them, with almost no power left. The boy wants one thing from her: he wants to walk the Witches' Road." } },
+                { "id": "agatha-e2", "episodeNumber": 2, "title": "Circle Sewn with Fate / Unlock Thy Hidden Gate", "summary": "Agatha and the boy put a coven together, with people who remember her close behind them.", "deepDive": { "plot": "Agatha has no magic and cannot open the Road alone, and the boy will not tell her his name, because something stops him saying it out loud. So they go recruiting, with old enemies on their heels. Jennifer Kale, a potions witch whose craft has been bound so completely she has been reduced to selling wellness products. Lilia Calderu, who reads tarot and does not experience time in order. Alice Wu-Gulliver, a protection witch and the daughter of the singer who recorded the Ballad of the Witches' Road. They are a witch short, so Mrs. Hart from down the street, who has no power at all, is drafted to make up the numbers. They sing the ballad, and the Road opens underneath them." } },
+                { "id": "agatha-e3", "episodeNumber": 3, "title": "Through Many Miles / Of Tricks and Trials", "summary": "The coven reaches the first trial on the Road.", "deepDive": { "plot": "The first trial. The Road puts the coven in a house where the test is potions, which should be Jennifer's to pass except her craft is still bound. There is a right way through and a wrong one, and the wrong one kills. The coven loses its first member here. Afterwards the rules are clear to everyone left: each trial belongs to one of them, and the Road expects paying." } },
+                { "id": "agatha-e4", "episodeNumber": 4, "title": "If I Can't Reach You / Let My Song Teach You", "summary": "The second trial, and this one runs on the ballad itself.", "deepDive": { "plot": "The second trial is built out of the song, which puts it squarely on Alice. Her mother recorded the Ballad of the Witches' Road, and the curse Alice believes has followed her family ever since is bound up in it. Getting through means facing what that recording actually cost, rather than the version of it she has carried around." } },
+                { "id": "agatha-e5", "episodeNumber": 5, "title": "Darkest Hour / Wake Thy Power", "summary": "The coven runs for the next trial under a blood moon.", "deepDive": { "plot": "With their pursuers closing in, the coven flees under a blood moon towards the next trial, and it is the worst of them so far. By this point the pressure has stopped being about surviving the Road and started being about which of them is lying to the others, because it is increasingly obvious that Agatha knows how all of this works far better than a first-time walker should." } },
+                { "id": "agatha-e6", "episodeNumber": 6, "title": "Familiar by Thy Side", "summary": "The boy can finally say his own name.", "deepDive": { "plot": "The sigil comes off and the boy can say his name. He is Billy Maximoff. When Wanda pulled the Hex down, Billy did not simply stop, his consciousness went looking for somewhere to land, and it landed in William Kaplan, a boy who died in a car crash in that same moment. He has been living that boy's life, with that boy's parents, ever since. He came to Agatha because the Road is supposed to give you what you want most, and what he wants is his brother. How he is tied to the rest of the coven comes out at the same time." } },
+                { "id": "agatha-e7", "episodeNumber": 7, "title": "Death's Hand in Mine", "summary": "The next trial belongs to Lilia, and the episode unfolds the way she experiences time.", "deepDive": { "plot": "Lilia's trial, told the way she lives, cutting around her own life out of order until it settles on the one moment she has been seeing all along. She works out exactly what is coming and goes through with it anyway, so that the others can get past her." } },
+                { "id": "agatha-e8", "episodeNumber": 8, "title": "Follow Me My Friend / To Glory at the End", "summary": "The end of the Road.", "deepDive": { "plot": "They reach the end of the Road with almost nobody left, and what is waiting is not what the ballad promised. The shape of what Agatha has actually been doing on this walk stops being deniable, and Billy is the one standing in front of her when it does." } },
+                { "id": "agatha-e9", "episodeNumber": 9, "title": "Maiden Mother Crone", "summary": "The truth about Agatha Harkness and the Witches' Road.", "deepDive": { "plot": "Most of it in flashback. Salem in 1693, and Agatha's own coven trying to burn her, which ends with her draining every one of them. Her son, Nicholas Scratch. Rio Vidal, who was never a rival witch. The Ballad of the Witches' Road turns out to be a song Nicholas wrote as a boy, and after he died Agatha kept singing it, because a song about a road that grants your heart's desire brings witches to you, and witches are what she lives on. There was never a Road. It was real this time only because Billy believed in it, and Billy is his mother's son. Rio is Death, and the bargain over Nicholas is what she has been waiting three centuries to collect. Agatha gives herself up and comes back as something only Billy can see. Late on there is a boy going under in a lake, which reads as Billy doing for Tommy exactly what was done for him. The two of them leave Westview to go and find him." } }
               ]
             }
           ]
@@ -1415,75 +1426,10 @@
       "label": "The Multiverse Saga Continues",
       "movies": [
         {
-          "id": "shang-chi",
-          "title": "Shang-Chi and the Legend of the Ten Rings",
-          "year": 2021,
-          "narrativeOrder": 1,
-          "releaseOrder": 28,
-          "type": "movie",
-          "art": { "tmdbId": 566525, "poster": "/9f2Q0U3IOsLgrI2HkvldwSABZy5.jpg", "backdrop": "/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg" },
-          "summary": "A martial-arts prodigy who has been hiding from his past is drawn back into the orbit of his father's secret organization, the Ten Rings, and must confront a fate he thought he'd escaped.",
-          "beforeWatch": {
-            "context": "Almost entirely standalone, with a new cast and a story about a family rather than a world-ending threat. It builds its own mythology from scratch. The one thread reaching back is an organisation whose name has come up a couple of times before, notably in the first Iron Man film.",
-            "watchFirst": []
-          },
-          "inUniverseSetting": "2023",
-          "deepDive": {
-            "plot": "Shaun, a San Francisco valet who's secretly Shang-Chi, has spent a decade hiding from his father Xu Wenwu, the immortal leader of the Ten Rings organization and wielder of ten mystical rings. When his father hunts him down seeking a pendant tied to Shang-Chi's late mother's home village, Shang-Chi learns his father plans to break through a mystical seal, believing his dead wife is trapped behind it. It is actually the prison of a soul-devouring creature. Shang-Chi, his sister Xialing, and their allies stop the creature's escape, and Shang-Chi reluctantly accepts his father's rings and legacy.",
-            "significance": "Introduces a major new hero and organization to the MCU with deep ties to earlier films (the Mandarin hoax from Iron Man 3), and its mid-credit scene formally reconnects the Ten Rings to the wider cosmic mysteries the MCU is building toward.",
-            "orderNote": "Placed in the same broad post-Blip 'present day' period as WandaVision and Falcon/Winter Soldier, though its story is self-contained."
-          },
-          "watchFor": [
-            { "name": "A film that assumes almost nothing" },
-            { "name": "Xu Wenwu", "characterId": "xu-wenwu", "thisFilm": "The actual Mandarin, a thousand years old, and the film's best argument that a villain works better when you understand him. Grief is doing all of it." },
-            { "name": "Trevor Slattery", "thisFilm": "The actor Killian hired to play the Mandarin in Iron Man 3, imprisoned by the real organisation for the insult and kept alive because he's entertaining. The joke from that film gets a proper ending." },
-            { "name": "Katy", "thisFilm": "Refuses to be the friend who gets left behind, and the film gives her a real arc rather than a punchline." },
-            { "name": "Xialing", "characterId": "xu-xialing", "thisFilm": "Built her own fight club after being shut out of her father's training, and takes over the organisation at the end while telling Shang-Chi she's shutting it down.", "future": "That last shot leaves her running a criminal network nobody has followed up on." },
-            { "name": "Abomination", "characterId": "emil-blonsky", "thisFilm": "Turns up in the cage fight against Wong, apparently on friendly terms with him. First sight of Blonsky since The Incredible Hulk.", "future": "She-Hulk explains what he's been doing.", "spoils": "She-Hulk: Attorney at Law" },
-            { "name": "Wong", "thisFilm": "Recruits both Shang-Chi and, seemingly, half the MCU's loose ends. He's quietly become the person who handles anything strange." },
-            { "name": "The rings themselves (mid-credit)", "thisFilm": "Wong, Carol Danvers and Bruce Banner examine them and find they're far older than anyone thought, and that they've started sending a signal to something.", "future": "Still unanswered.", "spoils": "Avengers: Doomsday" }
-          ],
-          "postCredit": { "count": 2, "type": "mid+post" }
-        },
-        {
-          "id": "eternals",
-          "title": "Eternals",
-          "year": 2021,
-          "narrativeOrder": 2,
-          "releaseOrder": 29,
-          "type": "movie",
-          "art": { "tmdbId": 524434, "poster": "/lFByFSLV5WDJEv3KabbdAF959F2.jpg", "backdrop": "/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg" },
-          "summary": "A team of immortal beings who have secretly protected Earth for thousands of years are forced to reunite against their ancient enemies, the Deviants, uncovering long-hidden truths about their true purpose.",
-          "beforeWatch": {
-            "context": "A near-total reset: a new group who have been on Earth for seven thousand years without ever getting involved in anything you've watched, which the film addresses directly. It works cold. It's also the longest and slowest film here, and jumps between the present day and flashbacks across millennia.",
-            "watchFirst": []
-          },
-          "inUniverseSetting": "2023 (with flashbacks spanning 7,000 years)",
-          "deepDive": {
-            "plot": "A team of ten immortal beings, secretly sent to Earth 7,000 years ago by the cosmic being Arishem to protect humanity from monstrous Deviants, reunite in the present day when the Deviants unexpectedly resurface. The team discovers their true purpose was never protection. They were meant to incubate a Celestial embryo inside the Earth itself, an 'Emergence' that would destroy the planet to birth a new Celestial. Split over whether to let it happen, the Eternals stop the Emergence, but Arishem takes several of them away to judge whether humanity deserves to survive, leaving their fate unresolved.",
-            "significance": "Puts the Celestials on screen as the things that made the galaxy work, and answers where Earth came from in a way no other film has touched. It also leaves more unresolved threads than anything else in Phase Four, and almost none have been picked up.",
-            "orderNote": "Grouped with Shang-Chi and other 2021-released stories in the broad post-Blip period, since its 'present day' scenes align with them despite its ancient flashbacks."
-          },
-          "watchFor": [
-            { "name": "Why they sat out everything else" },
-            { "name": "The Celestials", "thisFilm": "Arishem made the Eternals, sends them to protect developing planets, and wipes their memories between assignments. They aren't gods and they aren't free." },
-            { "name": "Sersi", "characterId": "sersi", "thisFilm": "Handed the leadership she never wanted, and the film's argument is that caring about individual people is a qualification rather than a weakness." },
-            { "name": "Thena and Gilgamesh", "thisFilm": "Millennia of memory doing to Thena what it would do to anyone, and Gilgamesh quietly looking after her for centuries. The best relationship in the film." },
-            { "name": "Druig", "thisFilm": "Can control minds and has spent thousands of years being told not to. The film takes his objection seriously rather than treating it as villainy." },
-            { "name": "Phastos", "thisFilm": "Gave humanity technology, watched it used on Hiroshima, and stopped. Also the first Eternal to have an ordinary family." },
-            { "name": "What Earth actually is", "thisFilm": "A Celestial called Tiamut has been gestating in the planet's core the whole time, and every civilisation the Eternals helped grow was feeding it. The Emergence would hatch it and destroy the world.", "future": "They stop it, and Tiamut's hand is left standing out of the ocean. Nothing has addressed it since.", "nameIsSpoiler": true },
-            { "name": "Ikaris", "characterId": "ikaris", "thisFilm": "Knew all of it from the start, killed Ajak to keep it quiet, and flies into the sun when he can't go through with stopping Sersi.", "nameIsSpoiler": true },
-            { "name": "Arishem's judgment", "thisFilm": "Takes three of them to be judged, and tells Sersi he'll decide whether humanity is worth keeping by looking through her memories.", "future": "Left hanging entirely.", "nameIsSpoiler": true },
-            { "name": "Eros / Starfox & Pip the Troll (mid-credit)", "characterId": "eros", "thisFilm": "Turn up aboard their ship offering to help find the three who were taken. Eros introduces himself as Thanos's brother.", "future": "Nothing since." },
-            { "name": "Dane Whitman / the Ebony Blade (post-credit)", "characterId": "dane-whitman", "thisFilm": "Opens a case with his family's cursed sword in it, and an unseen voice asks if he's sure he's ready. The voice is Blade.", "future": "Also nothing since." }
-          ],
-          "postCredit": { "count": 2, "type": "mid+post" }
-        },
-        {
           "id": "moon-knight",
           "title": "Moon Knight",
           "year": 2022,
-          "narrativeOrder": 3,
+          "narrativeOrder": 1,
           "releaseOrder": 32,
           "type": "series",
           "art": { "tmdbId": 92749, "poster": "/x6FsYvt33846IQnDSFxla9j0RX8.jpg", "backdrop": "/iux1vKPT7Vw1AzetZb4Jz6wfYsm.jpg" },
@@ -1523,6 +1469,71 @@
           ]
         },
         {
+          "id": "shang-chi",
+          "title": "Shang-Chi and the Legend of the Ten Rings",
+          "year": 2021,
+          "narrativeOrder": 2,
+          "releaseOrder": 28,
+          "type": "movie",
+          "art": { "tmdbId": 566525, "poster": "/9f2Q0U3IOsLgrI2HkvldwSABZy5.jpg", "backdrop": "/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg" },
+          "summary": "A martial-arts prodigy who has been hiding from his past is drawn back into the orbit of his father's secret organization, the Ten Rings, and must confront a fate he thought he'd escaped.",
+          "beforeWatch": {
+            "context": "Almost entirely standalone, with a new cast and a story about a family rather than a world-ending threat. It builds its own mythology from scratch. The one thread reaching back is an organisation whose name has come up a couple of times before, notably in the first Iron Man film.",
+            "watchFirst": []
+          },
+          "inUniverseSetting": "2023",
+          "deepDive": {
+            "plot": "Shaun, a San Francisco valet who's secretly Shang-Chi, has spent a decade hiding from his father Xu Wenwu, the immortal leader of the Ten Rings organization and wielder of ten mystical rings. When his father hunts him down seeking a pendant tied to Shang-Chi's late mother's home village, Shang-Chi learns his father plans to break through a mystical seal, believing his dead wife is trapped behind it. It is actually the prison of a soul-devouring creature. Shang-Chi, his sister Xialing, and their allies stop the creature's escape, and Shang-Chi reluctantly accepts his father's rings and legacy.",
+            "significance": "Introduces a major new hero and organization to the MCU with deep ties to earlier films (the Mandarin hoax from Iron Man 3), and its mid-credit scene formally reconnects the Ten Rings to the wider cosmic mysteries the MCU is building toward.",
+            "orderNote": "Placed in the same broad post-Blip 'present day' period as WandaVision and Falcon/Winter Soldier, though its story is self-contained."
+          },
+          "watchFor": [
+            { "name": "A film that assumes almost nothing" },
+            { "name": "Xu Wenwu", "characterId": "xu-wenwu", "thisFilm": "The actual Mandarin, a thousand years old, and the film's best argument that a villain works better when you understand him. Grief is doing all of it." },
+            { "name": "Trevor Slattery", "thisFilm": "The actor Killian hired to play the Mandarin in Iron Man 3, imprisoned by the real organisation for the insult and kept alive because he's entertaining. The joke from that film gets a proper ending." },
+            { "name": "Katy", "thisFilm": "Refuses to be the friend who gets left behind, and the film gives her a real arc rather than a punchline." },
+            { "name": "Xialing", "characterId": "xu-xialing", "thisFilm": "Built her own fight club after being shut out of her father's training, and takes over the organisation at the end while telling Shang-Chi she's shutting it down.", "future": "That last shot leaves her running a criminal network nobody has followed up on." },
+            { "name": "Abomination", "characterId": "emil-blonsky", "thisFilm": "Turns up in the cage fight against Wong, apparently on friendly terms with him. First sight of Blonsky since The Incredible Hulk.", "future": "She-Hulk explains what he's been doing.", "spoils": "She-Hulk: Attorney at Law" },
+            { "name": "Wong", "thisFilm": "Recruits both Shang-Chi and, seemingly, half the MCU's loose ends. He's quietly become the person who handles anything strange." },
+            { "name": "The rings themselves (mid-credit)", "thisFilm": "Wong, Carol Danvers and Bruce Banner examine them and find they're far older than anyone thought, and that they've started sending a signal to something.", "future": "Still unanswered.", "spoils": "Avengers: Doomsday" }
+          ],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
+          "id": "eternals",
+          "title": "Eternals",
+          "year": 2021,
+          "narrativeOrder": 3,
+          "releaseOrder": 29,
+          "type": "movie",
+          "art": { "tmdbId": 524434, "poster": "/lFByFSLV5WDJEv3KabbdAF959F2.jpg", "backdrop": "/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg" },
+          "summary": "A team of immortal beings who have secretly protected Earth for thousands of years are forced to reunite against their ancient enemies, the Deviants, uncovering long-hidden truths about their true purpose.",
+          "beforeWatch": {
+            "context": "A near-total reset: a new group who have been on Earth for seven thousand years without ever getting involved in anything you've watched, which the film addresses directly. It works cold. It's also the longest and slowest film here, and jumps between the present day and flashbacks across millennia.",
+            "watchFirst": []
+          },
+          "inUniverseSetting": "2023 (with flashbacks spanning 7,000 years)",
+          "deepDive": {
+            "plot": "A team of ten immortal beings, secretly sent to Earth 7,000 years ago by the cosmic being Arishem to protect humanity from monstrous Deviants, reunite in the present day when the Deviants unexpectedly resurface. The team discovers their true purpose was never protection. They were meant to incubate a Celestial embryo inside the Earth itself, an 'Emergence' that would destroy the planet to birth a new Celestial. Split over whether to let it happen, the Eternals stop the Emergence, but Arishem takes several of them away to judge whether humanity deserves to survive, leaving their fate unresolved.",
+            "significance": "Puts the Celestials on screen as the things that made the galaxy work, and answers where Earth came from in a way no other film has touched. It also leaves more unresolved threads than anything else in Phase Four, and almost none have been picked up.",
+            "orderNote": "Grouped with Shang-Chi and other 2021-released stories in the broad post-Blip period, since its 'present day' scenes align with them despite its ancient flashbacks."
+          },
+          "watchFor": [
+            { "name": "Why they sat out everything else" },
+            { "name": "The Celestials", "thisFilm": "Arishem made the Eternals, sends them to protect developing planets, and wipes their memories between assignments. They aren't gods and they aren't free." },
+            { "name": "Sersi", "characterId": "sersi", "thisFilm": "Handed the leadership she never wanted, and the film's argument is that caring about individual people is a qualification rather than a weakness." },
+            { "name": "Thena and Gilgamesh", "thisFilm": "Millennia of memory doing to Thena what it would do to anyone, and Gilgamesh quietly looking after her for centuries. The best relationship in the film." },
+            { "name": "Druig", "thisFilm": "Can control minds and has spent thousands of years being told not to. The film takes his objection seriously rather than treating it as villainy." },
+            { "name": "Phastos", "thisFilm": "Gave humanity technology, watched it used on Hiroshima, and stopped. Also the first Eternal to have an ordinary family." },
+            { "name": "What Earth actually is", "thisFilm": "A Celestial called Tiamut has been gestating in the planet's core the whole time, and every civilisation the Eternals helped grow was feeding it. The Emergence would hatch it and destroy the world.", "future": "They stop it, and Tiamut's hand is left standing out of the ocean. Nothing has addressed it since.", "nameIsSpoiler": true },
+            { "name": "Ikaris", "characterId": "ikaris", "thisFilm": "Knew all of it from the start, killed Ajak to keep it quiet, and flies into the sun when he can't go through with stopping Sersi.", "nameIsSpoiler": true },
+            { "name": "Arishem's judgment", "thisFilm": "Takes three of them to be judged, and tells Sersi he'll decide whether humanity is worth keeping by looking through her memories.", "future": "Left hanging entirely.", "nameIsSpoiler": true },
+            { "name": "Eros / Starfox & Pip the Troll (mid-credit)", "characterId": "eros", "thisFilm": "Turn up aboard their ship offering to help find the three who were taken. Eros introduces himself as Thanos's brother.", "future": "Nothing since." },
+            { "name": "Dane Whitman / the Ebony Blade (post-credit)", "characterId": "dane-whitman", "thisFilm": "Opens a case with his family's cursed sword in it, and an unseen voice asks if he's sure he's ready. The voice is Blade.", "future": "Also nothing since." }
+          ],
+          "postCredit": { "count": 2, "type": "mid+post" }
+        },
+        {
           "id": "she-hulk",
           "title": "She-Hulk: Attorney at Law",
           "year": 2022,
@@ -1559,7 +1570,7 @@
                 { "id": "she-hulk-e2", "episodeNumber": 2, "title": "Superhuman Law", "summary": "Jennifer takes a job at a firm's new superhuman law division, complicating her attempt to keep a normal life." },
                 { "id": "she-hulk-e3", "episodeNumber": 3, "title": "The People vs. Emil Blonsky", "summary": "Jennifer represents Emil Blonsky in his bid for parole, drawing unwanted attention from a secretive government agency." },
                 { "id": "she-hulk-e4", "episodeNumber": 4, "title": "Is This Not Real Magic?", "summary": "A run-in with a washed-up sorcerer and a dating app disaster test Jennifer's patience in and out of the courtroom." },
-                { "id": "she-hulk-e5", "episodeNumber": 5, "title": "Mean, Green, and Straight Poured", "summary": "Jennifer deals with online harassment after a video of her as She-Hulk goes viral." },
+                { "id": "she-hulk-e5", "episodeNumber": 5, "title": "Mean, Green, and Straight Poured into These Jeans", "summary": "Jennifer deals with online harassment after a video of her as She-Hulk goes viral." },
                 { "id": "she-hulk-e6", "episodeNumber": 6, "title": "Just Jen", "summary": "Jennifer tries dating without turning into She-Hulk, with predictably messy results." },
                 { "id": "she-hulk-e7", "episodeNumber": 7, "title": "The Retreat", "summary": "A trip to Emil Blonsky's villain-wellness retreat reveals a scheme targeting Jennifer's blood." },
                 { "id": "she-hulk-e8", "episodeNumber": 8, "title": "Ribbit and Rip It", "summary": "Jennifer teams up with Daredevil to track down whoever's been stealing her blood." },
@@ -1610,7 +1621,7 @@
           "narrativeOrder": 6,
           "releaseOrder": 35,
           "type": "movie",
-          "art": { "tmdbId": 774752, "poster": "/8dqXyslZ2hv49Oiob9UjlGSHSTR.jpg", "backdrop": "/rfnmMYuZ6EKOBvQLp2wqP21v7sI.jpg" },
+          "art": { "tmdbId": 616037, "poster": "/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg", "backdrop": "/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg" },
           "summary": "Thor's search for inner peace is interrupted by a galactic killer known as Gorr the God Butcher, who seeks the extinction of the gods, forcing Thor to seek help from an old flame wielding his own hammer.",
           "beforeWatch": {
             "context": "Thor has been off with the Guardians since Endgame and is looking for a purpose. Ragnarok's comic register is dialled up further here. The two films that matter going in are Ragnarok, for the tone and the supporting cast, and Endgame, for where he ended up — plus a memory of Jane Foster from the first two Thor films.",

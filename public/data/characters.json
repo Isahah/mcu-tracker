@@ -703,6 +703,16 @@
       }
     },
     {
+      "id": "christine-palmer",
+      "name": "Christine Palmer",
+      "description": "An emergency surgeon at Metro-General, and Stephen Strange's former colleague and ex.",
+      "titles": ["doctor-strange-1", "doctor-strange-2"],
+      "phases": {
+        "phase-3": "Doctor Strange: the one colleague who keeps showing up after the crash ends his career. She is the surgeon he goes to when nobody else will have him, she operates on him while his own astral form stands over her arguing about it, and she is the only person in the film who treats him as a man rather than as a problem to be solved. She also tells him plainly that he has always had to be the one holding the knife.",
+        "phase-4": "Multiverse of Madness: the version from this universe marries someone else, and Strange goes to the wedding and has to sit through it. The one who matters to the plot is the Christine Palmer of Earth-838, a scientist on that world's expedition team, who breaks Strange out of the Illuminati's cells and stays with him through the fight at Wundagore before going home to her own universe."
+      }
+    },
+    {
       "id": "karl-mordo",
       "name": "Karl Mordo",
       "description": "A devout master of Kamar-Taj and Strange's first ally in the mystic arts.",
