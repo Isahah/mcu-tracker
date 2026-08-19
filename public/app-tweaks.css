@@ -76,3 +76,13 @@
   max-width: none;
   white-space: pre-line;
 }
+
+/* ---------------- ORG AND PLACE TILES ---------------- */
+/* Files with a "type" are organisations and places. They get no portrait on
+   purpose: the design system reserves the 1:1 crop for a person, so a studio
+   still of a building would be reading the ratio wrong. That makes the monogram
+   the intended treatment rather than a gap, and "no photo on file" the wrong
+   caption for it. Reuse the strip to name the type instead, which doubles as
+   the only type marker the grid needs. */
+.no-photo--org::after { content: "organisation"; }
+.no-photo--place::after { content: "location"; }

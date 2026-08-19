@@ -316,7 +316,10 @@ entries.forEach(({ entry }) => {
 });
 
 // --- characters.json -----------------------------------------------------
-const CHAR_KEYS = new Set(['id', 'name', 'description', 'titles', 'image', 'imagePosition', 'phases']);
+const CHAR_KEYS = new Set(['id', 'name', 'type', 'description', 'titles', 'image', 'imagePosition', 'phases']);
+// An absent "type" means a person, which is how the original character files stay
+// untouched by the places-and-organisations roster.
+const CHAR_TYPES = new Set(['org', 'place']);
 
 if (chars) {
   const seenChar = new Set();
@@ -332,6 +335,10 @@ if (chars) {
     if (c.id) {
       if (seenChar.has(c.id)) err(at, `Duplicate character id "${c.id}".`);
       seenChar.add(c.id);
+    }
+
+    if (c.type !== undefined && !CHAR_TYPES.has(c.type)) {
+      err(at, `type is "${c.type}" — expected "org", "place", or the field left off entirely for a person.`);
     }
 
     if (Array.isArray(c.titles)) {

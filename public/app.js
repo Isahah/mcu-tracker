@@ -650,11 +650,21 @@ function renderMenu() {
 // Monogram fallback for characters with no photo yet. The tint is hashed from the
 // name so the same person always gets the same tile — otherwise the mosaic
 // reshuffles on every render.
+// Words that carry no identity, so they never earn a letter in a monogram.
+// Without this "The Void" reads as TV and "The Avengers" as TA.
+const MONOGRAM_SKIP = new Set(['the', 'of', 'a', 'an']);
+
 function initialsFor(name) {
   const primary = name.split('/')[0].trim();
-  const words = primary.split(/\s+/).filter(Boolean);
+  // A dotted acronym (S.H.I.E.L.D., S.W.O.R.D.) is one word once the dots come
+  // out. Left alone it splits into a single "word" and yields "S." as initials.
+  const flat = /^(?:[A-Za-z]\.){2,}[A-Za-z]?\.?$/.test(primary)
+    ? primary.replace(/\./g, '')
+    : primary;
+  const all = flat.split(/\s+/).filter(Boolean);
+  const words = all.length > 1 ? all.filter(w => !MONOGRAM_SKIP.has(w.toLowerCase())) : all;
   if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase();
-  return primary.slice(0, 2).toUpperCase();
+  return (words[0] || flat).slice(0, 2).toUpperCase();
 }
 
 function tintFor(name) {
@@ -668,9 +678,12 @@ function portraitInnerHtml(c, extraStyle) {
     .filter(Boolean).join(';');
   // characters.json stores "/img/characters/x.png"; drop the leading slash so
   // the page works from a subfolder as well as from a domain root
+  // For an org or a place the monogram is the intended treatment, not a missing
+  // asset, so the tile carries its type instead of the "no photo on file" label.
+  const kind = c.type ? ` no-photo--${c.type}` : '';
   return c.image
     ? `<img src="${c.image.replace(/^\//, '')}" alt="${c.name}"${style ? ` style="${style}"` : ''}>`
-    : `<span class="no-photo no-photo--t${tintFor(c.name)}"${extraStyle ? ` style="${extraStyle}"` : ''}>${initialsFor(c.name)}</span>`;
+    : `<span class="no-photo no-photo--t${tintFor(c.name)}${kind}"${extraStyle ? ` style="${extraStyle}"` : ''}>${initialsFor(c.name)}</span>`;
 }
 
 // A phase counts as "seen" once the user has finished every released unit in it —
@@ -683,6 +696,16 @@ function phaseIsFinished(phase) {
 // UI-local database controls
 let charSort = 'appearance';
 let charTitleFilter = null; // entry id of the title whose cast is being shown, or null
+let charKind = 'all';       // 'all' | 'people' | 'places' — see charMatchesKind
+
+// A file with no "type" is a person. Orgs and places share one filter bucket:
+// there are far fewer of them than there are people, and someone narrowing the
+// grid is usually after "the non-person files", not orgs specifically.
+function charMatchesKind(c) {
+  if (charKind === 'people') return !c.type;
+  if (charKind === 'places') return !!c.type;
+  return true;
+}
 
 // Earliest phase the character has a record for — used by the "first appearance"
 // sort. Characters with no records sort last, keeping the order stable.
@@ -748,13 +771,13 @@ function clearTitleFilter() {
 function renderActiveFilter(shownCount) {
   const box = el('active-filter');
   if (!charTitleFilter) {
-    box.innerHTML = `<span class="result-count">${shownCount} characters</span>`;
+    box.innerHTML = `<span class="result-count">${shownCount} files</span>`;
     return;
   }
   const found = findItem(charTitleFilter);
   box.innerHTML = `
     <span class="filter-tag">${found.item.title}<a class="clear" href="#" role="button" aria-label="Clear title filter">&#10005;</a></span>
-    <span class="result-count">${shownCount} character${shownCount === 1 ? '' : 's'} on file</span>
+    <span class="result-count">${shownCount} file${shownCount === 1 ? '' : 's'} on record</span>
   `;
   box.querySelector('.clear').addEventListener('click', e => {
     e.preventDefault();
@@ -769,12 +792,25 @@ function renderDbControls() {
       <a href="#"${charSort === 'appearance' ? ' class="is-active"' : ''} data-sort="appearance">First appearance</a>
       <a href="#"${charSort === 'az' ? ' class="is-active"' : ''} data-sort="az">A &ndash; Z</a>
     </span>
+    <span class="segmented">
+      <span class="seg-label">Show</span>
+      <a href="#"${charKind === 'all' ? ' class="is-active"' : ''} data-kind="all">All</a>
+      <a href="#"${charKind === 'people' ? ' class="is-active"' : ''} data-kind="people">People</a>
+      <a href="#"${charKind === 'places' ? ' class="is-active"' : ''} data-kind="places">Places &amp; groups</a>
+    </span>
     <span class="spacer"></span>
   `;
   el('db-controls').querySelectorAll('[data-sort]').forEach(a => {
     a.addEventListener('click', e => {
       e.preventDefault();
       charSort = a.dataset.sort;
+      renderCharacters();
+    });
+  });
+  el('db-controls').querySelectorAll('[data-kind]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      charKind = a.dataset.kind;
       renderCharacters();
     });
   });
@@ -792,6 +828,7 @@ function renderCharacters() {
 
   const query = el('char-search').value.trim().toLowerCase();
   let shown = charactersData.slice();
+  if (charKind !== 'all') shown = shown.filter(charMatchesKind);
   if (charTitleFilter) shown = shown.filter(c => (c.titles || []).includes(charTitleFilter));
   if (query) shown = shown.filter(c => c.name.toLowerCase().includes(query));
 
@@ -822,7 +859,7 @@ function renderCharacters() {
 }
 
 // Full-page personnel file: portrait, spoiler-light overview, then the phase-by-phase
-// accordion. Every phase is listed for every character — even ones they aren't in — so
+// accordion. Every phase is listed on every file, including the ones it has no entry for, so
 // the list itself reveals nothing. Each row's state is driven by the *user's* progress:
 // brass where they've finished the phase, crimson "NOT SEEN" where they haven't.
 function renderCharacter(c) {
@@ -837,7 +874,7 @@ function renderCharacter(c) {
 
     <div class="section-rule">
       <p class="kicker">Phase-by-phase record</p>
-      <p class="lede" style="margin:8px 0 16px; font-size:14px">Every phase is listed for every character, so the list itself spoils nothing. Open only the phases you've finished.</p>
+      <p class="lede" style="margin:8px 0 16px; font-size:14px">Every phase is listed on every file, so the list itself spoils nothing. Open only the phases you've finished.</p>
       <div id="char-phase-list"></div>
     </div>
   `;

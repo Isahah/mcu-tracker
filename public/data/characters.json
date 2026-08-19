@@ -1643,6 +1643,341 @@
         "phase-2": "The Winter Soldier: hijacks the Lemurian Star with a crew of pirates and takes its engineers hostage, which is what puts Steve and Natasha on board in the first place. Steve goes at him hand to hand on deck and loses the mask doing it. Batroc ends the film in custody.",
         "phase-4": "The Falcon and the Winter Soldier: out again and running the hijacking Sam breaks up over Tunisia in the first episode, gone by parachute before Sam can get hold of him. Karli Morgenthau hires him with the Power Broker's own money for the fight in New York. He works out who has been paying him all along, tries to sell that back to her, and Sharon Carter shoots him for it."
       }
+    },
+    {
+      "id": "shield",
+      "name": "S.H.I.E.L.D.",
+      "type": "org",
+      "description": "Strategic Homeland Intervention, Enforcement and Logistics Division. The international security agency that spent decades quietly cleaning up after the extraordinary, then decided to recruit it instead.",
+      "titles": ["cap-1", "iron-man-1", "iron-man-2", "thor-1", "avengers-1", "cap-2", "avengers-2", "ant-man-1", "captain-marvel", "avengers-4", "spiderman-2", "secret-invasion"],
+      "phases": {
+        "phase-1": "Captain America: The First Avenger: not S.H.I.E.L.D. yet. The Strategic Scientific Reserve is the wartime outfit that runs Project Rebirth, and Peggy Carter and Howard Stark are the two people from it who go on to found the agency.\nIron Man: Agent Coulson spends the film trying to get a meeting, and the post-credits scene is Fury in Tony Stark's living room talking about the Avengers Initiative.\nIron Man 2: they bench Tony, and Natalie Rushman from legal turns out to have been a S.H.I.E.L.D. plant the whole time.\nThor: they seal off the crater in New Mexico, confiscate Jane Foster's research, and the post-credits scene has Erik Selvig handed the Tesseract to study.\nThe Avengers: the agency at its peak, with a flying helicarrier and the authority to pull six people into one room, and a World Security Council sitting above Fury telling him to put a nuclear missile into New York.",
+        "phase-2": "Captain America: The Winter Soldier: HYDRA has been growing inside S.H.I.E.L.D. since the 1940s, in the machine Peggy and Howard built. Project Insight is what it was all for, three helicarriers set to kill everyone an algorithm flagged, and Steve Rogers brings the entire agency down rather than let them launch.\nAvengers: Age of Ultron: what is left of it afterwards. Fury turns up at Clint Barton's farm with no organisation behind him, and still produces a helicarrier for the Sokovia evacuation.",
+        "phase-3": "Ant-Man: the 1989 opening is a S.H.I.E.L.D. scene. Hank Pym resigns at the Triskelion in front of Peggy Carter and Howard Stark after finding out they have been trying to replicate his particle behind his back.\nCaptain Marvel: set in 1995, when it is a much smaller outfit and both Fury and Coulson are junior agents. Fury names the Avengers Initiative at the end of it, after Carol Danvers' call sign.\nAvengers: Endgame: the time heist sends Steve back into the 2012 Triskelion, where he walks past his own body and talks a lift full of agents into handing over the sceptre.",
+        "phase-4": "Spider-Man: Far From Home: Peter Parker is recruited by what looks like a S.H.I.E.L.D. operation, with Fury and Maria Hill running him around Europe. Neither of them is who they appear to be, and the agency they seem to represent came apart years earlier.",
+        "phase-5": "Secret Invasion: the promise the whole series turns on was made by S.H.I.E.L.D. In 1995 Fury told Talos he would find the displaced Skrulls a home, and thirty years later he has not. The agency itself is long gone, and the response to the infiltration runs through Rhodey at the White House and Sonya Falsworth at MI6 instead."
+      }
+    },
+    {
+      "id": "hydra",
+      "name": "HYDRA",
+      "type": "org",
+      "description": "Founded as the deep science division of the Nazi war machine, and considerably harder to kill than the regime it served.",
+      "titles": ["cap-1", "cap-2", "avengers-2", "ant-man-1", "cap-3", "avengers-4"],
+      "phases": {
+        "phase-1": "Captain America: The First Avenger: Johann Schmidt runs it as Hitler's science division and then breaks from the Reich entirely, powering an arsenal with the Tesseract and building a bomber meant for American cities. Arnim Zola is the scientist making the weapons work, and he is taken alive when the war ends.",
+        "phase-2": "Captain America: The Winter Soldier: Zola's deal after the war was Operation Paperclip, and he used it to grow HYDRA inside S.H.I.E.L.D. for seventy years. Alexander Pierce is running it from the top of the agency, Project Insight is the payoff, and the Winter Soldier is the asset they have been thawing out for jobs since the 1950s.\nAvengers: Age of Ultron: Baron Strucker holds out in a Sokovian fortress with Loki's sceptre, and the experiments he runs on volunteers there are where Wanda and Pietro Maximoff get their powers.",
+        "phase-3": "Ant-Man: Darren Cross sells the Yellowjacket suit to HYDRA, and Mitchell Carson walks out of the building with a vial of the shrinking particle.\nCaptain America: Civil War: the Siberian facility where five more Winter Soldiers were made, and the 1991 tape Zemo uses to take the Avengers apart.\nAvengers: Endgame: Steve walks into the 2012 Triskelion and talks a lift full of HYDRA agents into handing him the sceptre without a fight."
+      }
+    },
+    {
+      "id": "avengers",
+      "name": "The Avengers",
+      "type": "org",
+      "description": "The response team Nick Fury proposed when it became clear the world had started producing problems no single agency could handle.",
+      "titles": ["iron-man-1", "iron-man-2", "avengers-1", "avengers-2", "ant-man-1", "cap-3", "spiderman-1", "avengers-3", "avengers-4", "spiderman-2", "hawkeye", "the-marvels", "thunderbolts"],
+      "phases": {
+        "phase-1": "Iron Man: the post-credits scene is the first anyone hears of the Avengers Initiative, with Fury waiting in Tony Stark's living room.\nIron Man 2: Natasha Romanoff's assessment recommends Iron Man as a consultant and Tony Stark not at all.\nThe Avengers: six people who cannot stand each other are put in one room over the Tesseract, and by the end of it they are holding a street in Manhattan against an alien army.",
+        "phase-2": "Avengers: Age of Ultron: an established unit by now, working out of Stark Tower and clearing HYDRA holdouts together. Tony Stark and Bruce Banner build Ultron without telling the others, Sokovia is the cost, and the film closes on a completely different roster at an upstate compound: Steve, Natasha, Rhodey, Sam, Wanda and Vision.",
+        "phase-3": "Ant-Man: Sam Wilson is on the compound grounds when Scott Lang breaks in, and the mid-credits scene is Sam and Steve with a problem they cannot solve on their own.\nCaptain America: Civil War: the Sokovia Accords split the team in half over whether it should answer to anyone, and it ends with an airport fight, a prison barge and Steve leaving the shield on the floor.\nSpider-Man: Homecoming: Peter Parker spends the whole film desperate to be one, and turns the offer down when it finally comes.\nAvengers: Infinity War: two years of nobody speaking, and they lose anyway. Half of them are dust by the credits.\nAvengers: Endgame: five years later the survivors run a time heist to undo it. Everyone comes back through the portals for the last fight, and the team loses Natasha and Tony to win it.",
+        "phase-4": "Spider-Man: Far From Home: with Tony dead, Steve gone and Thor off-world, the question the film keeps asking is who is left to do the job, and Nick Fury behaves as though Peter Parker is the answer.\nHawkeye: Clint Barton is the one still on the ground, and New York has turned the Battle of New York into a Broadway musical he has to sit through.",
+        "phase-5": "The Marvels: the end-credits scene has Kamala Khan let herself into Kate Bishop's flat with a folder, telling her she is putting a team together.",
+        "phase-6": "Thunderbolts*: Valentina Allegra de Fontaine presents her squad of expendables to the public as the New Avengers, and Sam Wilson files for the copyright on the name."
+      }
+    },
+    {
+      "id": "wakanda",
+      "name": "Wakanda",
+      "type": "place",
+      "description": "An East African nation the rest of the world believes is poor farmland, sitting on the only significant vibranium deposit on Earth.",
+      "titles": ["avengers-2", "cap-3", "black-panther", "avengers-3", "avengers-4", "falcon-winter-soldier", "black-panther-2"],
+      "phases": {
+        "phase-2": "Avengers: Age of Ultron: Ulysses Klaue's ship-breaking yard off the African coast is where Ultron goes for vibranium, and Klaue has a Wakandan brand burned into his neck for stealing it in the first place. This is the first time the country is named.",
+        "phase-3": "Captain America: Civil War: the Accords conference in Vienna is bombed, King T'Chaka is killed in the blast, and his son goes after the man he believes did it. Wakanda takes Bucky Barnes in at the end and puts him back under.\nBlack Panther: T'Challa comes home to be crowned, and Killmonger's claim to the throne is built on Wakanda having watched the world from behind a shield and done nothing about it. T'Challa opens the borders at the end.\nAvengers: Infinity War: the shield comes down and the country fights in the open for the first time in its history, and loses.\nAvengers: Endgame: the Wakandan army comes back through the portals for the last fight.",
+        "phase-4": "The Falcon and the Winter Soldier: Ayo and the Dora Milaje arrive in Latvia for Helmut Zemo, and put John Walker on the floor when he gets in the way. Ayo is also the one who did the deprogramming that made Bucky usable again, and Wakanda built the arm he is using.",
+        "phase-5": "Black Panther: Wakanda Forever: T'Challa dies before the film begins, and Ramonda holds the throne through a year of other nations trying to take vibranium by force. An American vibranium detector in the Atlantic brings Namor and Talokan to the surface, Ramonda is killed defending the country, and Shuri takes the mantle."
+      }
+    },
+    {
+      "id": "asgard",
+      "name": "Asgard",
+      "type": "place",
+      "description": "Odin's realm and Thor's home, the ruling power among the Nine Realms and considerably older than anywhere else in the story.",
+      "titles": ["thor-1", "thor-2", "thor-3", "avengers-3", "avengers-4", "thor-4"],
+      "phases": {
+        "phase-1": "Thor: a golden city with a throne, a weapons vault and a coronation that gets interrupted. Thor is banished for restarting a war with Jotunheim, Odin falls into the Odinsleep, and Loki takes the throne and finds out where he actually came from. Thor destroys the Bifrost to stop him, which leaves Asgard cut off from the other realms.",
+        "phase-2": "Thor: The Dark World: Malekith and the Dark Elves attack the city itself, the dungeons are broken open in the fighting, and Frigga is killed defending Jane Foster. The film ends with Loki on the throne wearing Odin's face.",
+        "phase-3": "Thor: Ragnarok: Odin dies in Norway and his firstborn is released by it. Hela takes Asgard in an afternoon, and the murals in the palace turn out to have been painted over the conquests the realm was built on. Thor works out that Ragnarok itself is the only thing that will stop her, and Loki sets Surtur loose to burn the city down. Asgard leaves as a ship full of refugees.\nAvengers: Infinity War: the opening scene is that ship, already boarded, with half the survivors dead on the floor before the title card.\nAvengers: Endgame: the ones who got out settle in a Norwegian fishing village they call New Asgard. Thor spends five years there drinking, and hands the crown to Valkyrie before leaving with the Guardians.",
+        "phase-5": "Thor: Love and Thunder: New Asgard has become a tourist town with a gift shop, a stage show and Valkyrie doing paperwork as king. Gorr attacks it and takes the children of the village, which is what brings Thor back."
+      }
+    },
+    {
+      "id": "kamar-taj",
+      "name": "Kamar-Taj",
+      "type": "place",
+      "description": "A walled compound in Kathmandu where an order of sorcerers has been training and defending the world for centuries, unnoticed by almost everyone.",
+      "titles": ["doctor-strange-1", "avengers-4", "spiderman-3", "doctor-strange-2", "shang-chi", "she-hulk"],
+      "phases": {
+        "phase-3": "Doctor Strange: Stephen Strange arrives broke and desperate after spending everything on his hands, and the Ancient One takes him in. He learns the sling ring and the mirror dimension there, and finds out the order maintains three Sanctums that keep the Earth sealed. Kaecilius and the zealots attack the compound after stealing pages from the Book of Cagliostro, and Mordo walks away at the end over what the Ancient One had been doing to stay alive.\nAvengers: Endgame: the portals that bring everyone to the final battle are opened out of Kamar-Taj, with Wong leading the masters through.",
+        "phase-4": "Spider-Man: No Way Home: Wong is Sorcerer Supreme by now, and he leaves for Kamar-Taj early on after telling Strange the spell is his own problem to deal with.\nDoctor Strange in the Multiverse of Madness: Wong shows Strange the Darkhold there and explains what Wanda Maximoff has been reading. She then attacks the compound directly to get to America Chavez, and the masters lose badly.",
+        "phase-5": "Shang-Chi and the Legend of the Ten Rings: the mid-credits scene. Wong brings Shang-Chi and Katy Chen here to work out what the ten rings actually are, with Bruce Banner and Carol Danvers joining by holographic call, and the meeting ends with nobody able to say where the beacon the rings have started sending is going.\nShe-Hulk: Attorney at Law: Wong is living there by now, and the series treats Kamar-Taj as somewhere between a headquarters and a flat. He portals out of it to collect Emil Blonsky from prison, has The Sopranos spoiled for him by a drunk woman who falls through a portal into his room, and later lets Blonsky come and stay."
+      }
+    },
+    {
+      "id": "sanctum-sanctorum",
+      "name": "Sanctum Sanctorum",
+      "type": "place",
+      "description": "A townhouse at 177A Bleecker Street in New York, one of three Sanctums holding the Earth's defences shut, and Doctor Strange's address.",
+      "titles": ["doctor-strange-1", "thor-3", "avengers-3", "avengers-4", "spiderman-3", "doctor-strange-2"],
+      "phases": {
+        "phase-3": "Doctor Strange: the New York Sanctum is one of three, with London and Hong Kong, and together they maintain the shield around the Earth. Kaecilius kills the master of the New York Sanctum, Strange ends up defending it more or less by accident, and that is how he inherits it.\nThor: Ragnarok: Thor and Loki are held there while Strange establishes what they want, and Loki spends a good while falling through a portal for being difficult about it.\nAvengers: Infinity War: Ebony Maw comes for the Time Stone, takes the building apart around Strange and Wong, and lifts Strange off the street outside it.\nAvengers: Endgame: the time heist sends Bruce Banner back to the 2012 Sanctum, where he has to talk the Ancient One into handing over the Time Stone.",
+        "phase-4": "Spider-Man: No Way Home: Peter Parker comes to Bleecker Street to ask for a spell that will make the world forget who he is. It is cast in the undercroft beneath the building, Peter talks over it while it is running, and most of the film follows from that.\nDoctor Strange in the Multiverse of Madness: Strange is living there at the start, and America Chavez arrives in the street outside with something chasing her across universes. The Earth-838 version of the building has a statue of that universe's Strange standing outside it and Karl Mordo as its master, and Mordo greets the pair at the door, invites them in and drugs their tea."
+      }
+    },
+    {
+      "id": "ten-rings",
+      "name": "The Ten Rings",
+      "type": "org",
+      "description": "A criminal organisation that turns up under several different guises long before the story gets round to explaining what it actually is.",
+      "titles": ["iron-man-1", "iron-man-3", "shang-chi"],
+      "phases": {
+        "phase-1": "Iron Man: the cell that ambushes Tony Stark's convoy in Afghanistan and holds him in a cave to build them a missile. Raza is the one giving orders on the ground, the weapons they are carrying are all Stark Industries stock, and the contract that put Tony in that cave was taken out by Obadiah Stane.",
+        "phase-2": "Iron Man 3: the Mandarin's broadcasts go out under the Ten Rings name and use its imagery, and the whole thing is staged. Trevor Slattery is an actor hired to read the speeches, and Aldrich Killian is using the campaign as cover for Extremis subjects failing in public.",
+        "phase-5": "Shang-Chi and the Legend of the Ten Rings: the real one. Xu Wenwu found the ten rings a thousand years ago and has run the organisation ever since, under a different name in every century. The outfit that took Tony Stark carries the same name and the same symbol, and Killian's fake Mandarin is an insult Wenwu takes personally enough to have Slattery abducted over it. The film ends with the rings on Shang-Chi's arms and the organisation handed to Xu Xialing, and the mid-credits scene has Wong take him to Kamar-Taj, where he, Bruce Banner and Carol Danvers all fail to say what the rings are or where the signal they have started sending is going."
+      }
+    },
+    {
+      "id": "red-room",
+      "name": "The Red Room",
+      "type": "org",
+      "description": "A Soviet programme that took girls, trained them into assassins, and went on turning them out long after the Soviet Union stopped existing.",
+      "titles": ["avengers-2", "black-widow", "thunderbolts"],
+      "phases": {
+        "phase-2": "Avengers: Age of Ultron: Wanda Maximoff puts Natasha Romanoff through a vision of it, and that is the first the audience sees of the place. The ballet studio, the shooting drills, and the graduation ceremony at the end of the programme, which is a forced hysterectomy carried out so that nothing can ever compete with the work.",
+        "phase-3": "Black Widow: Dreykov is alive, and the Red Room has been moved into a facility that flies, kept in the air over Russia so that nobody can find it. Every Widow is sedated going in and out so none of them can say where it is. They are chemically controlled rather than simply trained, and Melina Vostokoff's antidote is the only thing that breaks it. Natasha, Yelena Belova, Melina and Alexei Shostakov bring the facility down between them, Dreykov dies in it, and the freed Widows scatter with enough antidote to reach the rest.",
+        "phase-6": "Thunderbolts*: the Red Room appears in flashback, in what Yelena Belova remembers of where she came from."
+      }
+    },
+    {
+      "id": "quantum-realm",
+      "name": "The Quantum Realm",
+      "type": "place",
+      "description": "A dimension sitting underneath our own, reached by shrinking past the point where the ordinary laws of physics stop applying.",
+      "titles": ["doctor-strange-1", "ant-man-1", "ant-man-2", "avengers-4", "ant-man-3"],
+      "phases": {
+        "phase-3": "Doctor Strange: the Ancient One pushes Strange out of his body and throws him through a run of dimensions, and the Quantum Realm is one of the places he passes through.\nAnt-Man: Hank Pym describes it as where you end up if you shrink too far, and says nobody comes back. Scott Lang goes subatomic to get through Darren Cross's suit and does come back, which is what makes Hank think Janet might still be alive down there.\nAnt-Man and the Wasp: the whole film is an attempt to open a stable tunnel and get Janet van Dyne out after thirty years. It works. The post-credits scene then strands Scott in it when the Snap takes everyone standing at the controls.\nAvengers: Endgame: five years for everyone else turn out to have been five hours for Scott, and that gap is what tells him the Quantum Realm can be used to move through time. The entire heist runs on it.",
+        "phase-4": "Ant-Man and the Wasp: Quantumania: the whole film happens down there, and the place turns out to be inhabited. There are cities, a ruling power and a resistance fighting it. Janet van Dyne spent decades in the middle of all of it and told nobody, including the part where she helped Kang the Conqueror repair his ship and then stranded him."
+      }
+    },
+    {
+      "id": "damage-control",
+      "name": "The Department of Damage Control",
+      "type": "org",
+      "description": "A federal agency set up to clear away what the fighting leaves behind, and steadily more interested in the people doing the fighting.",
+      "titles": ["spiderman-1", "spiderman-3", "ms-marvel"],
+      "phases": {
+        "phase-3": "Spider-Man: Homecoming: a joint federal and Stark Industries operation formed to clean up after the Battle of New York, and the reason Adrian Toomes loses the salvage contract that was keeping his crew in work. Anne Marie Hoag runs it. Peter Parker also spends thirty-seven minutes locked in one of their storage vaults, which is where he works out what his suit can actually do.",
+        "phase-4": "Spider-Man: No Way Home: they arrest Peter, MJ, Ned and May in the first few minutes and hold them for questioning over Mysterio's broadcast, with Agent Cleary running the interviews.",
+        "phase-5": "Ms. Marvel: by this point it hunts enhanced people as a matter of policy rather than cleaning up after them. Agent Deever runs the Jersey City operation against Kamala Khan, using Stark drones and a sonic cannon in an alleyway and later raiding her school. Cleary is the one above her, and he is the same official who handled Peter Parker."
+      }
+    },
+    {
+      "id": "knowhere",
+      "name": "Knowhere",
+      "type": "place",
+      "description": "A mining colony built inside the severed head of a dead Celestial, floating at the edge of everything and run with no law worth the name.",
+      "titles": ["thor-2", "guardians-1", "avengers-3", "guardians-holiday-special", "guardians-3"],
+      "phases": {
+        "phase-2": "Thor: The Dark World: the mid-credits scene is Sif and Volstagg handing the Aether to the Collector, who keeps his collection here.\nGuardians of the Galaxy: the Guardians bring the Orb to the Collector to sell it. He explains what the Infinity Stones are and where they came from, and then one of his slaves grabs the thing and takes out most of the museum with it.",
+        "phase-3": "Avengers: Infinity War: Thanos gets there first. The museum is already burning by the time the Guardians arrive, he has the Reality Stone before any of them work out what they are looking at, and he takes Gamora with him when he goes.",
+        "phase-5": "The Guardians of the Galaxy Holiday Special: the Guardians have bought Knowhere from the Collector and are living in it, and Mantis and Drax leave it for Earth to fetch Kevin Bacon as a Christmas present for Quill.\nGuardians of the Galaxy Vol. 3: home and headquarters for the whole film. Adam Warlock attacks it in the opening and very nearly kills Rocket, and by the end it is full of the children taken off the High Evolutionary's ship, with Rocket in charge of the place."
+      }
+    },
+    {
+      "id": "tva",
+      "name": "The TVA",
+      "type": "org",
+      "description": "The Time Variance Authority. An organisation sitting outside time that arrests people for departing from the one approved version of history, and does not take questions about who approved it.",
+      "titles": ["loki", "ant-man-3", "loki-s2", "deadpool-wolverine"],
+      "phases": {
+        "phase-4": "Loki: Season 1: an agency outside time, staffed by people who believe three Time-Keepers created them, and empowered to delete anyone whose life departs from the Sacred Timeline. Loki is taken the moment he picks up the Tesseract in 2012, and Mobius recruits him rather than prune him. The Time-Keepers turn out to be animatronic props, every analyst and hunter turns out to be an abducted variant with their memory wiped, and the person actually running it has been sitting alone at the end of time the whole while.\nAnt-Man and the Wasp: Quantumania: the post-credits scene is Loki and Mobius in a theatre, watching Victor Timely give a lecture.\nLoki: Season 2: the Temporal Loom is failing, because the branching it was built to stop is now happening faster than it can be pruned. Miss Minutes turns out to have intentions of her own, Ravonna Renslayer throws in with Timely, and Loki spends the season learning to control his time-slipping well enough to do something about it. He ends up holding the branches open himself, in place of the Loom.\nDeadpool & Wolverine: Mr. Paradox runs a TVA branch with an unauthorised Time Ripper installed, and his answer to a universe whose Anchor Being has died is to speed its collapse up rather than wait. He prunes Wade Wilson into the Void when Wade will not go along with it."
+      }
+    },
+    {
+      "id": "void",
+      "name": "The Void",
+      "type": "place",
+      "description": "The place at the end of time where the TVA dumps everything it prunes, with something living there that makes sure none of it comes back.",
+      "titles": ["loki", "deadpool-wolverine"],
+      "phases": {
+        "phase-4": "Loki: Season 1: where Loki wakes up after being pruned, in the ruins of a New York that stops at a wall of nothing. What the TVA deletes is not destroyed, it is dropped here, and Alioth is the thing that keeps it here. Loki finds four other versions of himself surviving in it, and the way out runs past Alioth to the Citadel at the End of Time.\nDeadpool & Wolverine: Mr. Paradox prunes Wade Wilson and Logan into it. By now it has a society, run by Cassandra Nova out of the remains of the people and places that other timelines lost, and Alioth is still outside the walls."
+      }
+    },
+    {
+      "id": "talokan",
+      "name": "Talokan",
+      "type": "place",
+      "description": "An underwater kingdom off the Yucatán coast, hidden for four and a half centuries, and the only place on Earth besides Wakanda with vibranium.",
+      "titles": ["black-panther-2"],
+      "phases": {
+        "phase-5": "Black Panther: Wakanda Forever: founded in 1571, when a Yucatán Mayan village dying of smallpox took a herb grown from a vibranium meteor on the sea floor and became something that could breathe water. Namor was born during that change, aged differently from everyone else, and has ruled since. When an American vibranium detector starts working the Atlantic, Talokan reads it as the beginning of the same thing the Spanish did to them, and Namor comes to Wakanda to say the two nations can either take the surface world on together or fight each other first. They fight each other first."
+      }
+    },
+    {
+      "id": "vormir",
+      "name": "Vormir",
+      "type": "place",
+      "description": "A dead planet at the far edge of space, with a mountain at its centre and a single very old inhabitant.",
+      "titles": ["avengers-3", "avengers-4", "hawkeye"],
+      "phases": {
+        "phase-3": "Avengers: Infinity War: Thanos brings Gamora here for the Soul Stone. The keeper waiting at the top is the Red Skull, moved here by the Tesseract at the end of Captain America: The First Avenger and left to guard a stone he is not permitted to touch. The stone will only be given up in exchange for someone the taker loves, so Thanos throws Gamora off the cliff.\nAvengers: Endgame: Natasha Romanoff and Clint Barton arrive for the same stone under the same terms, and spend the scene fighting each other over which of them goes over the edge. Natasha is the one who does.",
+        "phase-4": "Hawkeye: Vormir turns up in Clint Barton's flashbacks, in what he keeps going back to about how Natasha died."
+      }
+    },
+    {
+      "id": "stark-industries",
+      "name": "Stark Industries",
+      "type": "org",
+      "description": "The manufacturer Howard Stark founded and his son inherited, which walked out of the weapons business overnight and spent the following decade building something else.",
+      "titles": ["cap-1", "iron-man-1", "iron-man-2", "avengers-1", "iron-man-3", "avengers-2", "cap-3", "spiderman-1", "spiderman-2"],
+      "phases": {
+        "phase-1": "Captain America: The First Avenger: Howard Stark runs it through the war, and he is the one who builds the vibranium shield and the machinery that turns Steve Rogers into a super-soldier.\nIron Man: the largest weapons manufacturer in the country, with Obadiah Stane on the board selling to both sides of the war Tony is demonstrating missiles in. Tony shuts the weapons division down at a press conference the week he gets home, and the share price falls through the floor.\nIron Man 2: Tony signs the company over to Pepper Potts and puts on the Stark Expo, while Justin Hammer chases the military contracts Stark walked away from and cannot build anything that works.\nThe Avengers: Stark Tower goes up in Manhattan running on its own arc reactor, and it is the roof Loki opens the portal from.",
+        "phase-2": "Iron Man 3: barely a company in this one. Aldrich Killian pitches Advanced Idea Mechanics as the thing Stark Industries used to be, and Tony spends the middle of the film with no resources beyond what he can build in a shed in Tennessee.\nAvengers: Age of Ultron: Stark Tower becomes Avengers Tower, and the company's upstate facility becomes the team's base by the end of it.",
+        "phase-3": "Captain America: Civil War: Tony opens the film funding an entire MIT graduating class, and the woman who stops him in the corridor afterwards to talk about her son in Sokovia is why he signs the Accords.\nSpider-Man: Homecoming: a Stark internship is Peter Parker's cover story, Happy Hogan is running the move of everything out of Avengers Tower to the upstate compound, and the truck Toomes' crew goes after is carrying Stark property.",
+        "phase-4": "Spider-Man: Far From Home: EDITH is a Stark Industries system left to Peter in Tony's will, with command of the company's satellites and a drone fleet. Quentin Beck used to work there and was fired, and the crew helping him fake the Elementals is made up of other people the company got rid of."
+      }
+    },
+    {
+      "id": "sword",
+      "name": "S.W.O.R.D.",
+      "type": "org",
+      "description": "The Sentient Weapon Observation and Response Division, founded by Maria Rambeau to keep watch on whatever comes at Earth from space.",
+      "titles": ["wandavision"],
+      "phases": {
+        "phase-4": "WandaVision: Maria Rambeau built it after 1995 for manned missions and extraterrestrial contact, and Tyler Hayward has since turned it toward robotics, artificial intelligence and weapons instead. S.W.O.R.D. is the operation that sets up outside Westview, establishes that Wanda Maximoff is generating the anomaly, and sends Monica Rambeau in through it. Hayward has also been quietly rebuilding Vision's body out of the remains he took, a programme he calls Cataract, and he launches it at Wanda while telling everyone the operation is a rescue."
+      }
+    },
+    {
+      "id": "skrulls",
+      "name": "The Skrulls",
+      "type": "org",
+      "description": "A species that can take the shape of anyone they have seen, scattered across the galaxy after losing a war, and looking for somewhere to live.",
+      "titles": ["captain-marvel", "wandavision", "spiderman-2", "secret-invasion", "the-marvels"],
+      "phases": {
+        "phase-3": "Captain Marvel: introduced as the enemy, shapeshifting infiltrators the Kree have been hunting for decades. Carol Danvers works out partway through that she has been fighting for the wrong side, and that Talos and the group on Earth are refugees trying to find Mar-Vell's engine so they can leave. Fury promises to help them find a home, and Carol goes off to look for one.",
+        "phase-4": "WandaVision: the mid-credits scene is a Skrull inside the FBI approaching Monica Rambeau to say an old friend of her mother's wants to see her.\nSpider-Man: Far From Home: Talos and his wife Soren spend the entire film standing in for Nick Fury and Maria Hill, running Peter Parker around Europe, while the real Fury is on a station in orbit.",
+        "phase-5": "Secret Invasion: after the Snap, Talos called every scattered Skrull he could reach to Earth, and thirty years on Fury still has not found them anywhere else to go. A faction under Gravik stops waiting and starts replacing people in governments, aiming to start a war big enough to leave the planet empty. Gravik kills Talos, Rhodey turns out to have been replaced some time ago, and it ends with the President signing an order that makes every Skrull on Earth a target.\nThe Marvels: Dar-Benn strips Tarnax, the refugee colony that never made it to Earth, of what was keeping it liveable, as one of the raids she runs to keep Hala going."
+      }
+    },
+    {
+      "id": "kree-empire",
+      "name": "The Kree Empire",
+      "type": "org",
+      "description": "A galactic empire ruled from Hala by an artificial intelligence, and a very long way into a war with the Skrulls.",
+      "titles": ["guardians-1", "captain-marvel", "the-marvels"],
+      "phases": {
+        "phase-2": "Guardians of the Galaxy: the empire has signed a peace treaty with Xandar and Ronan the Accuser refuses to honour it. He takes the Orb meaning to use it on Xandar himself, and Korath works for him until the Guardians get in the way.",
+        "phase-3": "Captain Marvel: most of the film happens inside it. Hala is the capital, the Supreme Intelligence is the artificial intelligence running the empire and it appears to every Kree as the person they most admire, and Starforce is its elite unit. Carol Danvers has been serving in it for six years believing she is Kree. The war against the Skrulls turns out to be an extermination campaign, and Carol burns the Accusers' fleet on her way out.",
+        "phase-5": "The Marvels: Hala is dying. The sun is failing, the air is going, and the civil war that followed Carol destroying the Supreme Intelligence has left the place wrecked. Dar-Benn holds Carol responsible for all of it and uses a Quantum Band to tear resources out of other worlds to keep Hala breathing. Carol ends the film by restoring the sun."
+      }
+    },
+    {
+      "id": "celestials",
+      "name": "The Celestials",
+      "type": "org",
+      "description": "Enormous beings that predate almost everything else, and have been seeding and harvesting inhabited worlds for longer than any civilisation in the story has existed.",
+      "titles": ["guardians-1", "guardians-2", "eternals", "cap-4"],
+      "phases": {
+        "phase-2": "Guardians of the Galaxy: the Collector's account of where the Infinity Stones came from includes a Celestial called Eson using the Power Stone to strip a populated planet down to bare rock. Knowhere is a Celestial too, or what is left of one, mined for whatever is still inside the skull.\nGuardians of the Galaxy Vol. 2: Ego describes himself as one. A consciousness that woke up alone and grew a planet around itself, and the seedlings he has planted on thousands of worlds are meant to convert all of them into more of him.",
+        "phase-5": "Eternals: the film that explains what they are for. Arishem the Judge seeds inhabited worlds with a Celestial waiting to hatch, and sends Eternals ahead to protect the population until there are enough of them to power the birth, which destroys the planet. Earth is carrying Tiamut. The Eternals stop the Emergence between them, and Arishem takes several of them away to decide whether humanity gets to continue.",
+        "phase-6": "Captain America: Brave New World: Tiamut's body is still in the Indian Ocean where it stopped, and the island that has formed around it is full of adamantium. Most of the film is governments manoeuvring over who gets to mine it."
+      }
+    },
+    {
+      "id": "ravagers",
+      "name": "The Ravagers",
+      "type": "org",
+      "description": "An interstellar syndicate of thieves, smugglers and pirates, split into roughly a hundred clans, each with its own captain and its own opinion of the others.",
+      "titles": ["guardians-1", "guardians-2", "guardians-3"],
+      "phases": {
+        "phase-2": "Guardians of the Galaxy: Yondu Udonta's clan collected Peter Quill off Earth as a child and kept him. Quill then steals the Orb out from under a job the clan was hired for, and they hunt him for most of the film until he trades it back in exchange for their help against Ronan over Xandar.\nGuardians of the Galaxy Vol. 2: the code and the politics behind it. Stakar Ogord freed Yondu from Kree slavery and gave him a clan, then exiled him for trafficking children, which is what Yondu was doing the day he picked up Quill. Taserface leads a mutiny and most of the clan dies in it. Yondu dies getting Quill out of Ego, and Stakar gives him the Ravager funeral he had been denied, with all the old captains turning up for it.",
+        "phase-5": "Guardians of the Galaxy Vol. 3: Stakar's United Ravagers, a coalition of clans put together after the Blip, help the Guardians get into the Orgoscope. The Gamora in this film is one of them, having been taken in by Stakar's clan after Endgame left her stranded outside her own timeline."
+      }
+    },
+    {
+      "id": "mutants",
+      "name": "Mutants",
+      "type": "org",
+      "description": "People born carrying a gene nobody gave them, which activates somewhere in the course of their lives and leaves them with abilities or a changed body.",
+      "titles": ["deadpool-wolverine", "doctor-strange-2", "black-panther-2", "ms-marvel", "the-marvels"],
+      "phases": {
+        "phase-4": "Deadpool & Wolverine: most of the Void's population turns out to be mutant. Laura, Elektra, Gambit and Blade are all down there, put there by the TVA, and Cassandra Nova running the place is Charles Xavier's twin sister.\nDoctor Strange in the Multiverse of Madness: Charles Xavier sits on the Illuminati of Earth-838 as that universe's representative for mutants.",
+        "phase-5": "Black Panther: Wakanda Forever: Namor uses the word about himself, which is the first time anyone in the main timeline does.\nMs. Marvel: Bruno tells Kamala that her genes carry a mutation the rest of her family does not have, and the X-Men theme plays underneath the line.\nThe Marvels: the post-credits scene puts Monica Rambeau in a universe that is not hers, with Beast standing over her."
+      }
+    },
+    {
+      "id": "sakaar",
+      "name": "Sakaar",
+      "type": "place",
+      "description": "A rubbish planet at the far end of a cluster of wormholes, where anything lost in the universe eventually washes up, run as an arena by the Grandmaster.",
+      "titles": ["thor-3", "she-hulk"],
+      "phases": {
+        "phase-3": "Thor: Ragnarok: Thor lands here after Hela throws him off the Bifrost, and is collected as scrap. The Grandmaster runs the planet and the Contest of Champions in it, and his reigning champion is the Hulk, who flew off in the Quinjet at the end of Age of Ultron and has not turned back into Bruce Banner in the two years since. Valkyrie is here as well, drinking, working as a scrapper since Hela wiped out the Valkyries. Thor gets all three of them off the planet, and Korg's revolution takes over what is left.",
+        "phase-5": "She-Hulk: Attorney at Law: Bruce Banner leaves Earth on a Sakaaran ship partway through the series and comes back with a son. Skaar was born on Sakaar, and time runs differently enough there that he is a teenager by the time Bruce brings him to a family barbecue in Los Angeles."
+      }
+    },
+    {
+      "id": "cia",
+      "name": "CIA",
+      "type": "org",
+      "description": "The United States' foreign intelligence service. Everett Ross has worked for it since well before anyone in Wakanda met him.",
+      "titles": ["black-panther", "black-panther-2", "thunderbolts"],
+      "phases": {
+        "phase-3": "Black Panther: Everett Ross is the agency's man on Ulysses Klaue, which is why he is in the casino in Busan when T'Challa arrives for the same target. He takes a bullet meant for Nakia, is patched up in Wakanda with technology nobody outside it has, and flies a Talon remotely for them at the end. Killmonger's ghost unit had also worked with the CIA destabilising foreign governments, and that is where he learned the method he brings home with him.",
+        "phase-5": "Black Panther: Wakanda Forever: Valentina Allegra de Fontaine is Director by now, with Ross working under her and quietly passing Shuri and Okoye everything he sees. The vibranium detector that sets the whole crisis off is an American project. Val has Ross arrested for the leaks at the end of it.",
+        "phase-6": "Thunderbolts*: Val is still Director and facing impeachment over the black projects she has been running off the books, and the squad she puts together is meant to destroy the evidence of them for her."
+      }
+    },
+    {
+      "id": "earth-616",
+      "name": "Earth-616",
+      "type": "place",
+      "description": "The universe the whole story takes place in, and the designation it acquires once other universes start arriving in it.",
+      "titles": ["spiderman-2", "spiderman-3", "deadpool-wolverine", "doctor-strange-2"],
+      "phases": {
+        "phase-4": "Spider-Man: Far From Home: Quentin Beck introduces the number. He claims to be from Earth-833 and calls this one Earth-616, as part of a multiverse story he has invented from nothing to sell a threat that does not exist.\nSpider-Man: No Way Home: the first real crossing. Strange's spell pulls in everyone from other universes who knew Peter Parker's identity, and it ends with Peter erased from the memory of every person in his own.\nDeadpool & Wolverine: the universe the Deadpool and X-Men films take place in is designated Earth-10005, and the TVA's working rule is that a universe begins to die when its Anchor Being does.\nDoctor Strange in the Multiverse of Madness: Earth-838 is named and visited, the Christine Palmer there uses both numbers out loud, and an incursion is defined as what happens when two universes are pushed into each other."
+      }
+    },
+    {
+      "id": "madripoor",
+      "name": "Madripoor",
+      "type": "place",
+      "description": "A city-state in Southeast Asia divided between Hightown and Lowtown, with a smuggling port and no extradition treaty with anyone.",
+      "titles": ["falcon-winter-soldier"],
+      "phases": {
+        "phase-4": "The Falcon and the Winter Soldier: Sam Wilson, Bucky Barnes and Helmut Zemo go there to find whoever recreated the super soldier serum. Getting through Lowtown means Bucky playing the Winter Soldier again in front of people who remember him as one. Sharon Carter has been living there since going on the run after Civil War, and the Power Broker everyone in the city is frightened of turns out to be her."
+      }
+    },
+    {
+      "id": "saber",
+      "name": "S.A.B.E.R.",
+      "type": "org",
+      "description": "Strategic Aerospace Biophysics and Exolinguistic Response. The aerospace defence operation Nick Fury was sent to build after the Blip, run off a station in orbit and staffed by humans and Skrulls together.",
+      "titles": ["wandavision", "secret-invasion", "the-marvels"],
+      "phases": {
+        "phase-4": "WandaVision: the mid-credits scene is a Skrull inside the FBI approaching Monica Rambeau on Fury's behalf, recruiting her for S.A.B.E.R. and for an assignment that is not on this planet.",
+        "phase-5": "Secret Invasion: Fury comes down from the station at the start of the series and goes back up at the end of it with Varra, having agreed to try opening talks between the Skrulls and the Kree.\nThe Marvels: the station is where most of the film is coordinated from. Fury runs it, Kamala Khan's family end up aboard, and when Dar-Benn's damage reaches it the evacuation is carried out by Goose and a very large number of flerken kittens swallowing everyone on board."
+      }
+    },
+    {
+      "id": "new-avengers",
+      "name": "New Avengers",
+      "type": "org",
+      "description": "A team announced as Avengers some years after Endgame, by a government that wanted one of its own.",
+      "titles": ["thunderbolts"],
+      "phases": {
+        "phase-6": "Thunderbolts*: Valentina Allegra de Fontaine already had a press conference booked by the time the fighting in New York stopped, and she used it to present the group as a team she had been assembling all along. Yelena Belova, Bucky Barnes, Alexei Shostakov, Ava Starr and John Walker walk out on stage and go along with it, and Yelena tells Val to her face that they own her now. They take the Watchtower as a headquarters and get matching uniforms and a place on a cereal box, and Bob Reynolds stays with them without going out on the work.\nFourteen months later Sam Wilson is assembling an Avengers team of his own and has filed for the copyright on the name, which leaves this one arguing about which of them counts as the real thing while a ship nobody recognises comes down over the city."
+      }
     }
   ]
 }
