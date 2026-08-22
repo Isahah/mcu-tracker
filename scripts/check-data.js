@@ -234,18 +234,30 @@ function resolveWatchFor(w) {
     // optionalViewing — an id becomes a link, anything else renders as a plain
     // chip. A typo'd id therefore looks completely normal on the page.
     if (entry.optionalViewing !== undefined) {
-      if (typeof entry.optionalViewing === 'string') {
+      const ov = entry.optionalViewing;
+      const checkItems = list => list.forEach(v => {
+        if (typeof v !== 'string') return err(at, 'optionalViewing items must be strings.');
+        // Looks like one of our ids but isn't one → almost certainly a typo
+        if (!entryIds.has(v) && /^[a-z0-9]+(-[a-z0-9]+)+$/.test(v)) {
+          warn(at, `optionalViewing "${v}" looks like an entry id but matches none — it will render as a plain chip, not a link.`);
+        }
+      });
+
+      if (typeof ov === 'string') {
         note(at, 'optionalViewing is a string — renders as prose. An array renders as chips.');
-      } else if (!Array.isArray(entry.optionalViewing)) {
-        err(at, 'optionalViewing must be an array (or a string).');
-      } else {
-        entry.optionalViewing.forEach(v => {
-          if (typeof v !== 'string') return err(at, 'optionalViewing items must be strings.');
-          // Looks like one of our ids but isn't one → almost certainly a typo
-          if (!entryIds.has(v) && /^[a-z0-9]+(-[a-z0-9]+)+$/.test(v)) {
-            warn(at, `optionalViewing "${v}" looks like an entry id but matches none — it will render as a plain chip, not a link.`);
-          }
+      } else if (Array.isArray(ov)) {
+        checkItems(ov);
+      } else if (ov && typeof ov === 'object') {
+        // { note, items } — a line of prose above the chips, for entries whose
+        // optional viewing is watched after this film rather than before it
+        Object.keys(ov).forEach(k => {
+          if (k !== 'note' && k !== 'items') warn(at, `optionalViewing has unrecognised key "${k}" — expected "note" and "items".`);
         });
+        if (ov.note !== undefined && typeof ov.note !== 'string') err(at, 'optionalViewing.note must be a string.');
+        if (!Array.isArray(ov.items)) err(at, 'optionalViewing.items must be an array.');
+        else checkItems(ov.items);
+      } else {
+        err(at, 'optionalViewing must be an array, a string, or { note, items }.');
       }
     }
 

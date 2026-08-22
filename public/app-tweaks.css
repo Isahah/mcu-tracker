@@ -86,3 +86,11 @@
    the only type marker the grid needs. */
 .no-photo--org::after { content: "organisation"; }
 .no-photo--place::after { content: "location"; }
+
+/* A note above the "Helps, but optional" chips. The heading reads as
+   before-you-watch by default, so an entry whose optional viewing comes *after*
+   the film needs a line saying so before the chips make sense. */
+.bw-note {
+  margin: 6px 0 10px;
+  font-size: 14px; line-height: 1.55; color: var(--fg-dim);
+}

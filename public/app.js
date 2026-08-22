@@ -833,10 +833,19 @@ function renderCharacters() {
   if (query) shown = shown.filter(c => c.name.toLowerCase().includes(query));
 
   if (charSort === 'az') {
+    // Stays purely alphabetical across both kinds: the point of A–Z is finding a
+    // name you already have, and grouping first would mean knowing which group
+    // it's in before you could look it up.
     shown.sort((a, b) => a.name.localeCompare(b.name));
   } else {
     const order = new Map(charactersData.map((c, i) => [c.id, i]));
-    shown.sort((a, b) => firstPhaseIndex(a) - firstPhaseIndex(b) || order.get(a.id) - order.get(b.id));
+    // People first, then places and organisations. Interleaving them by first
+    // appearance put S.H.I.E.L.D. and Wakanda in among the Phase One cast, which
+    // reads as a muddle rather than as one browsable list.
+    shown.sort((a, b) =>
+      (a.type ? 1 : 0) - (b.type ? 1 : 0)
+      || firstPhaseIndex(a) - firstPhaseIndex(b)
+      || order.get(a.id) - order.get(b.id));
   }
 
   renderActiveFilter(shown.length);
@@ -1156,10 +1165,20 @@ function beforeWatchHtml(entry) {
       <div class="bw-prereq">${bw.watchFirst.map(prereqChipHtml).join('')}</div></div>`);
   }
   if (entry.optionalViewing) {
-    // an array renders as chips (the usual case); a plain string still renders as prose
-    const body = Array.isArray(entry.optionalViewing)
-      ? `<div class="bw-prereq">${entry.optionalViewing.map(optionalChipHtml).join('')}</div>`
-      : `<p style="margin-top:8px">${entry.optionalViewing}</p>`;
+    // Three accepted shapes. An array renders as chips (the usual case); a plain
+    // string still renders as prose; { note, items } puts a line of prose above
+    // the chips, which is how an entry says these are watched *after* this film
+    // rather than before it — the default reading of the heading.
+    const ov = entry.optionalViewing;
+    let body;
+    if (Array.isArray(ov)) {
+      body = `<div class="bw-prereq">${ov.map(optionalChipHtml).join('')}</div>`;
+    } else if (typeof ov === 'object') {
+      body = (ov.note ? `<p class="bw-note">${ov.note}</p>` : '')
+        + `<div class="bw-prereq">${(ov.items || []).map(optionalChipHtml).join('')}</div>`;
+    } else {
+      body = `<p style="margin-top:8px">${ov}</p>`;
+    }
     blocks.push(`<div><p class="kicker">Helps, but optional</p>${body}</div>`);
   }
   if (!blocks.length) return '';

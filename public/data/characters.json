@@ -1645,6 +1645,74 @@
       }
     },
     {
+      "id": "arnim-zola",
+      "name": "Arnim Zola",
+      "description": "The scientist who made Hydra work. Softly spoken, entirely without nerve, and considerably harder to be rid of than his employer.",
+      "titles": ["cap-1", "cap-2"],
+      "phases": {
+        "phase-1": "Captain America: The First Avenger: Johann Schmidt's scientist, and the one who turns the Tesseract into something that can be fitted to a weapon. He runs the experiments on the prisoners at Krausberg, Bucky Barnes among them. Steve, Bucky and Gabe Jones take him off the Hydra train in the raid where Bucky falls, and Colonel Phillips works out during the interrogation that Zola is not carrying the cyanide pill every other Hydra agent has, which means he has no intention of dying for any of it. He tells them everything.",
+        "phase-2": "Captain America: The Winter Soldier: he never went to prison. The Americans brought him over under Operation Paperclip and put him to work, and he used the position to grow Hydra inside S.H.I.E.L.D. for decades. By 1972 he was dying, so his mind was copied onto banks of computers in a bunker in New Jersey, which is where Steve and Natasha find him. He explains what has been done to the agency, keeps them talking long enough for a missile to arrive, and the algorithm behind Project Insight is his."
+      }
+    },
+    {
+      "id": "abraham-erskine",
+      "name": "Abraham Erskine",
+      "description": "The scientist behind the super soldier serum, and the only person who ever knew the whole formula.",
+      "titles": ["cap-1"],
+      "phases": {
+        "phase-1": "Captain America: The First Avenger: a German scientist who built the serum, watched Johann Schmidt take an unfinished version of it, and defected to the Americans afterwards. He chooses Steve Rogers over stronger candidates on the grounds that a weak man knows the value of strength, and he asks Steve to promise to stay who he is rather than become a perfect soldier. A Hydra assassin shoots him in the street hours after the procedure works. He had never written the formula down, and everything anyone tries afterwards is an attempt to rebuild what died with him."
+      }
+    },
+    {
+      "id": "obadiah-stane",
+      "name": "Obadiah Stane",
+      "description": "Howard Stark's old business partner, and the executive who kept Stark Industries running through all the years Tony was not paying attention to it.",
+      "titles": ["iron-man-1"],
+      "phases": {
+        "phase-1": "Iron Man: he has run the company from just behind Tony's shoulder since Howard died, and he has been selling Stark weapons to both sides for years. The ambush in Afghanistan was a contract he took out on Tony, and when it fails he moves to take the company by having Tony declared unfit. He buys the wreck of the cave suit back off the Ten Rings, has the arc reactor pulled out of Tony's chest, and builds a far larger version of the armour for himself. Pepper Potts gets the evidence off his computer, and Stane dies over the Stark Industries building when Pepper overloads the arc reactor in the roof during the fight."
+      }
+    },
+    {
+      "id": "betty-ross",
+      "name": "Betty Ross",
+      "description": "A cellular biologist, Bruce Banner's partner in the work that went wrong, and General Ross's daughter.",
+      "titles": ["incredible-hulk", "cap-4"],
+      "phases": {
+        "phase-1": "The Incredible Hulk: she was working alongside Bruce on the gamma experiment and was badly hurt when it went wrong. Five years on she has rebuilt a life at Culver University and is seeing someone else, and she still holds the only surviving copy of the original data. She leaves with Bruce the moment he comes back for it, and puts herself between him and her father more than once.",
+        "phase-6": "Captain America: Brave New World: she is back in the story, with her father now President of the United States."
+      }
+    },
+    {
+      "id": "samuel-sterns",
+      "name": "Samuel Sterns",
+      "description": "A cellular biologist who spent years corresponding with Bruce Banner under the name Mr. Blue, and who wanted the gamma research for reasons of his own.",
+      "titles": ["incredible-hulk", "cap-4"],
+      "phases": {
+        "phase-1": "The Incredible Hulk: the scientist Bruce has been emailing as Mr. Blue, and the only person offering him a cure rather than a cage. He produces an antidote and it works. He has also quietly synthesised Banner's blood into a large stock of his own, which he intends to use on other things entirely. Emil Blonsky forces him to administer it, and in the struggle Sterns takes a head wound with that blood in it. The last shot of him is his skull starting to change shape.",
+        "phase-6": "Captain America: Brave New World: sixteen years later the film finally picks that up. Sterns is the Leader by now, and he has spent the intervening years in custody being used for what he can work out."
+      }
+    },
+    {
+      "id": "brock-rumlow",
+      "name": "Brock Rumlow / Crossbones",
+      "description": "A S.H.I.E.L.D. STRIKE team leader who works alongside Captain America, and who keeps turning up long after you would expect him to be finished.",
+      "titles": ["cap-2", "cap-3", "avengers-4"],
+      "phases": {
+        "phase-2": "Captain America: The Winter Soldier: leader of the STRIKE tactical team, working next to Steve Rogers on the Lemurian Star operation and then trying to kill him in a lift about twenty minutes later. He is Hydra, and has been the whole time. He fights Steve again at the Triskelion and is left badly burned when the helicarriers come down on top of him.",
+        "phase-3": "Captain America: Civil War: back under the name Crossbones, masked because of the burns, robbing a biological weapons lab in Lagos. Steve stops him, and rather than be taken he sets off a vest. Wanda Maximoff throws the blast upward to save Steve and it takes out several floors of a building full of people, which is the incident the Sokovia Accords are written in response to.\nAvengers: Endgame: he turns up again in the 2012 time heist, in the lift in the Triskelion, still a Hydra agent nobody has noticed yet. Steve gets past him without a fight."
+      }
+    },
+    {
+      "id": "ayesha",
+      "name": "Ayesha",
+      "description": "High Priestess of the Sovereign, a gold-skinned people who grow their citizens to specification and consider themselves above everyone who does not.",
+      "titles": ["guardians-2", "guardians-3"],
+      "phases": {
+        "phase-2": "Guardians of the Galaxy Vol. 2: she hires the Guardians to defend the Sovereign's batteries from a monster, and Rocket steals some of the batteries on the way out. She sends a remotely piloted fleet after them for it, loses, and is humiliated in front of her own council for spending so much on a grudge. In the credits she stands in front of a birthing pod holding something she has grown specifically to destroy them, and names him Adam.",
+        "phase-5": "Guardians of the Galaxy Vol. 3: still carrying the same grudge, and now working for the High Evolutionary, who created the Sovereign in the first place and treats Ayesha as a failed experiment. She sends Adam Warlock after Rocket before he is ready, which is most of why the film happens. By the end she dies protecting Adam from the Evolutionary."
+      }
+    },
+    {
       "id": "shield",
       "name": "S.H.I.E.L.D.",
       "type": "org",
