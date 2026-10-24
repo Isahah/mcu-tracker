@@ -1977,10 +1977,86 @@
           "postCredit": { "count": 1, "type": "mid", "skipNote": "This film is a continuation of the Fox Deadpool movies, and it is built on top of two decades of Fox X-Men films all the way up to Logan, plus a few smaller titles. Watching them first is strongly recommended, and at the very least watch Logan and the two Deadpool films. The context below contains spoilers for those films. Both lists below are in the order that makes the most narrative sense to watch them in, which is not release order. In Helps, but optional, anything wrapped in brackets is barely touched on by this film and is the easiest to skip." }
         },
         {
+          "id": "shang-chi",
+          "title": "Shang-Chi and the Legend of the Ten Rings",
+          "year": 2021,
+          "narrativeOrder": 11,
+          "releaseOrder": 28,
+          "type": "movie",
+          "art": { "tmdbId": 566525, "poster": "/9f2Q0U3IOsLgrI2HkvldwSABZy5.jpg", "backdrop": "/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg" },
+          "summary": "A valet in San Francisco is attacked on his morning bus by men working for his father, who runs an organisation called the Ten Rings.",
+          "beforeWatch": {
+            "context": "Nearly everything in this film is new. The characters, the setting and the mythology all start here. The one name you will already know is the Ten Rings, the organisation that kidnapped Tony Stark in the first Iron Man film, and it comes up again across that trilogy. Iron Man 3 matters most of the three, because a character from it appears here. A few other familiar faces turn up in small parts. The story happens a few months after the Blip, with everyone still adjusting to half the population coming back.",
+            "watchFirst": []
+          },
+          "optionalViewing": [
+            "iron-man-1",
+            "iron-man-3",
+            "doctor-strange-1"
+          ],
+          "inUniverseSetting": "Spring 2024",
+          "deepDive": {
+            "plot": "A thousand years ago Xu Wenwu finds ten mystical rings that make him immortal and close to unbeatable, and he founds the Ten Rings organisation. In 1996 he goes looking for Ta Lo, a hidden village of mythical creatures, and its guardian Ying Li stops him at the entrance and beats him in a fight. The two of them fall for each other, and Wenwu puts the rings away to raise two children with her, Shang-Chi and Xialing. One of his old enemies, the Iron Gang, murders Li. Wenwu puts the rings back on and trains his son into an assassin. As a teenager Shang-Chi is sent to kill the man who ordered his mother's death. He goes through with it, then runs to San Francisco and spends ten years parking cars under the name Shaun. In the present day the Ten Rings attack him on a bus and take the pendant Li gave him. He and his best friend Katy fly to Macau to warn his sister Xialing, who has built her own underground fight club and does not want saving. Wenwu brings all three of them home. He tells them he can hear Li's voice calling from behind the gates of Ta Lo, and that he intends to open the gates and burn the village down for holding her. The three of them escape with a captive actor called Trevor Slattery and reach Ta Lo first. Li's sister Ying Nan explains what is really behind the gate. It is the Dweller-in-Darkness, a soul-eating creature sealed there long ago, and it lures people in by imitating the voices of their dead. Wenwu attacks the seal anyway. The seal breaks, the Dweller takes his soul, and he passes the rings to his son before he dies. Shang-Chi, Xialing and a dragon called the Great Protector kill the Dweller together. Xialing takes over the Ten Rings organisation, and Wong brings Shang-Chi to Kamar-Taj to work out what the rings actually are.",
+            "significance": "Shang-Chi is introduced here, along with the leader of the Ten Rings, the organisation that kidnapped Tony Stark in the first Iron Man film. Xu Wenwu is the real Mandarin, the man Aldrich Killian was imitating when he invented a fake one in Iron Man 3. Trevor Slattery, the actor Killian hired to play that fake, comes back and is as oblivious as ever. Ta Lo is a new corner of the world, a separate dimension full of creatures from Chinese myth and protected by a dragon called the Great Protector. Wong and Abomination both appear, and the mid-credits scene brings back Carol Danvers and Bruce Banner. Banner is in human form, which is a change from the Smart Hulk of Endgame, because he has built a device to hold that form while his damaged arm heals.",
+            "orderNote": "This is set in early 2024, a couple of months after the Blip. Tonally it has nothing in common with the films on either side of it. Putting it earlier would leave it too far from the films that reference it, and putting it later does not work, because characters from it appear in what comes next. Wong is the clearest example, since he shows up here and then holds Kamar-Taj against Wanda in Doctor Strange in the Multiverse of Madness. This spot felt like the safest compromise."
+          },
+          "watchFor": [
+            {
+              "name": "Shang-Chi",
+              "characterId": "shang-chi",
+              "thisFilm": "A valet in San Francisco going by the name Shaun. He is Xu Wenwu's son, trained from childhood as an assassin, and he ran away after his first job. He has spent ten years pretending none of it happened. By the end of the film he is the one wearing the ten rings."
+            },
+            {
+              "name": "Xu Wenwu",
+              "characterId": "xu-wenwu",
+              "thisFilm": "A thousand years old, and the owner of the ten rings for all of it. He puts them away for the woman he marries, Ying Li, and puts them back on the day she is killed. What he wants by the time of this film is to get her back. He dies at the gate in Ta Lo when the Dweller-in-Darkness takes his soul, and he passes the rings to his son before he goes."
+            },
+            {
+              "name": "Katy",
+              "characterId": "katy-chen",
+              "thisFilm": "Shang-Chi's best friend of ten years, and the one person in his life who knew nothing about any of this. She comes along anyway. In Ta Lo she is handed a bow and trains for about a day, and she and Xialing save the Great Protector between them."
+            },
+            {
+              "name": "Xialing",
+              "characterId": "xu-xialing",
+              "thisFilm": "Shang-Chi's sister. Their father shut her out of his training because she was not a son, so she trained herself, then built her own underground fight club in Macau. She fights for Ta Lo, buries her father, and takes over the Ten Rings organisation at the end."
+            },
+            {
+              "name": "Trevor Slattery",
+              "thisFilm": "The actor Aldrich Killian hired to play the Mandarin in Iron Man 3. The real Ten Rings abducted him for the insult and then kept him alive because he amused them. He is still just as oblivious as he was in that film. He keeps a creature called Morris, and the two of them are the reason the others find their way through the forest maze into Ta Lo.",
+              "nameIsSpoiler": true
+            },
+            {
+              "name": "Abomination",
+              "characterId": "emil-blonsky",
+              "thisFilm": "Emil Blonsky, last seen in The Incredible Hulk, fighting Wong in a cage at the club in Macau. The two of them know each other, and Wong walks him back through a portal once the fight is over.",
+              "future": "He becomes one of the main characters in She-Hulk: Attorney at Law, where Jennifer Walters represents him at his parole hearing.",
+              "spoils": "She-Hulk: Attorney at Law",
+              "nameIsSpoiler": true
+            },
+            {
+              "name": "Wong",
+              "characterId": "wong",
+              "future": "Wong has been letting Emil Blonsky out of a supermax prison to fight in cage matches, and footage of one of them leaks online. In She-Hulk: Attorney at Law he has to answer for how a prisoner got out.",
+              "spoils": "She-Hulk: Attorney at Law",
+              "nameIsSpoiler": true
+            },
+            {
+              "name": "The rings themselves",
+              "thisFilm": "Wong brings Shang-Chi and Katy to Kamar-Taj to work out what the rings are. Carol Danvers and Bruce Banner join the meeting, and neither of them recognises the rings or can say where they came from. The examination turns up a beacon. The rings are sending a message to something, and nobody in the room knows what.",
+              "nameIsSpoiler": true
+            }
+          ],
+          "postCredit": {
+            "count": 2,
+            "type": "mid+post"
+          }
+        },
+        {
           "id": "doctor-strange-2",
           "title": "Doctor Strange in the Multiverse of Madness",
           "year": 2022,
-          "narrativeOrder": 11,
+          "narrativeOrder": 12,
           "releaseOrder": 33,
           "type": "movie",
           "art": { "tmdbId": 453395, "poster": "/ddJcSKbcp4rKZTmuyWaMhuwcfMz.jpg", "backdrop": "/lv3TXqhpaIxkclIHbhN2MRMOemQ.jpg" },
@@ -2014,7 +2090,7 @@
           "id": "agatha-all-along",
           "title": "Agatha All Along",
           "year": 2024,
-          "narrativeOrder": 12,
+          "narrativeOrder": 13,
           "releaseOrder": 45,
           "type": "series",
           "art": { "tmdbId": 138501, "poster": "/mGsxKwXUjojitRv2E9qMTbxbBRd.jpg", "backdrop": "/tYLXJW1sZQU09VWY1BhSVPKGIwc.jpg" },
@@ -2063,81 +2139,142 @@
           "id": "moon-knight",
           "title": "Moon Knight",
           "year": 2022,
-          "narrativeOrder": 1,
+          "narrativeOrder": 3,
           "releaseOrder": 32,
           "type": "series",
           "art": { "tmdbId": 92749, "poster": "/x6FsYvt33846IQnDSFxla9j0RX8.jpg", "backdrop": "/iux1vKPT7Vw1AzetZb4Jz6wfYsm.jpg" },
-          "summary": "A mild-mannered gift shop worker discovers he shares a body with a mercenary, both serving as the reluctant avatar of an Egyptian moon god.",
+          "summary": "A gift shop worker in London keeps blacking out and waking up in places he never travelled to, caught in a fight between Egyptian gods.",
           "beforeWatch": {
-            "context": "The most self-contained thing on this list. New character, new corner of the world, no crossovers and no required reading whatsoever. It never once mentions the Avengers. Go in cold; the disorientation in the opening episode is entirely intentional.",
+            "context": "This is the most self-contained entry on the list. It introduces a new character and a new corner of the world. There are no crossovers in either direction. The events take place after the Blip, but the show never brings that up, and nothing in the plot needs you to know it. The first episode holds back almost everything on purpose, so if you feel lost early on, that is the show doing it deliberately.",
             "watchFirst": []
           },
-          "inUniverseSetting": "2023",
+          "inUniverseSetting": "2025",
           "deepDive": {
-            "plot": "Mild-mannered gift shop worker Steven Grant discovers he shares a body with Marc Spector, a mercenary secretly serving as the avatar of the Egyptian moon god Khonshu. As the two struggle for control, they're forced to stop a cult leader, Arthur Harrow, from resurrecting the goddess Ammit to judge humanity for crimes it hasn't committed yet. Along the way, a third personality, Jake Lockley, is revealed to exist within the same body, hinting the full truth of Marc's fractured identity is still not fully understood even by himself.",
-            "significance": "Establishes that the Egyptian gods are real and active, and does it in a series that touches nothing else in the MCU. It is the clearest proof that these stories can be told without a single Avenger in them.",
-            "orderNote": "Placed here as a largely self-contained story with no direct thread into the wider Avengers plotline, grouped by release-era rather than a tight timeline link."
+            "plot": "Steven Grant works in the gift shop of a London museum. He ties his ankle to the bed at night, and he keeps losing days. The lost time is Marc Spector, a mercenary who shares his body. Marc is only alive because he agreed to serve Khonshu, the Egyptian god of the moon, as his avatar. Both of them are being hunted by Arthur Harrow. Harrow was Khonshu's avatar before Marc, and he now follows Ammit, a goddess who judges people for evil they have not committed yet. Harrow wants a golden scarab that leads to Ammit's tomb. The chase runs to Egypt. Khonshu calls a tribunal of the other gods against Harrow and loses, then breaks their rules to find the tomb anyway, so they seal him in stone. Marc, Steven and Layla El-Faouly get to the tomb first, but Harrow takes Ammit's ushabti and shoots Marc dead. Marc wakes up in a psychiatric hospital where Harrow is his doctor and his whole life is explained back to him as a delusion. It is not a hospital. It is the Egyptian afterlife, and getting out of it means going back through the childhood Marc has spent his life refusing to look at. Harrow frees Ammit and starts judging people in the streets of Cairo. Layla frees Khonshu, turns down his offer to become his avatar, and takes one from another god instead. Marc and Steven come back out of the afterlife. Between them they bind Ammit inside Harrow's body rather than kill him, and Khonshu keeps his side of the deal and lets the two of them go. The mid-credits scene shows there is a third man in their head. His name is Jake Lockley, and he has been doing Khonshu's killing all along.",
+            "significance": "This is the introduction of Moon Knight, and so far it is the only thing in the MCU he has appeared in. The series shows that the ancient Egyptian gods are real, and that they act on the world through human avatars who are bound to them by a deal. It also gives the MCU a working afterlife, with gates, scales of justice, and a goddess who decides who gets to pass through.",
+            "orderNote": "This could be placed anywhere in Phase Four or the early part of Phase Five. The series never references the wider Marvel universe, and nothing in the franchise points back to it, so there is no timeline thread to keep track of. I put it here because it works as a palate cleanser. If there were shows in Phase Four or the start of Phase Five you did not enjoy, this is a change of scenery, and it was well received by fans and critics."
           },
           "watchFor": [
-            { "name": "It connects to nothing, and that's the appeal" },
-            { "name": "Steven Grant", "characterId": "moon-knight", "thisFilm": "A gift-shop worker in London who loses time, wakes up in the wrong places, and ropes his ankle to the bed. The series opens inside his version of events, so you learn what's happening at the same rate he does." },
-            { "name": "Marc Spector", "characterId": "moon-knight", "thisFilm": "The mercenary Steven shares a body with, and the one who made the bargain. The show treats dissociative identity disorder as the actual subject rather than a twist." },
-            { "name": "Khonshu", "characterId": "khonshu", "thisFilm": "The Egyptian moon god in Marc's head, demanding punishment and offering power. Not a benevolent patron. The other gods seal him in stone partway through, and his own account of why he chose Marc is worse than Marc's." },
-            { "name": "Layla El-Faouly", "characterId": "layla-el-faouly", "thisFilm": "Marc's wife, an archaeologist, and the one person who knew him before any of this. Becomes the Scarlet Scarab as an avatar on her own terms rather than by being cornered into it." },
-            { "name": "Arthur Harrow", "thisFilm": "A former avatar of Khonshu who left, and now serves Ammit, who judges people for crimes they haven't committed yet. He's calm and reasonable and completely certain, which is what makes him work." },
-            { "name": "The asylum episode", "thisFilm": "Halfway through, the series stops and offers a reading in which none of it is real. It doesn't fully take it back either." },
-            { "name": "Jake Lockley", "thisFilm": "A third personality neither of the others knew about, doing the killing Marc refuses to do. The last scene reveals Khonshu kept him as his real avatar the whole time.", "nameIsSpoiler": true }
+            {
+              "name": "Steven Grant",
+              "characterId": "moon-knight",
+              "thisFilm": "He works at a museum in London and keeps blacking out. He wakes up far from home with no memory of getting there, so he ties his ankle to the bedpost at night to find out where his body goes."
+            },
+            {
+              "name": "Marc Spector",
+              "characterId": "moon-knight",
+              "thisFilm": "The man Steven has been sharing a body with, and the one who made the deal with Khonshu. He is a former marine turned mercenary. To Marc, Steven is the part of him that never had to live through any of it.",
+              "nameIsSpoiler": true
+            },
+            {
+              "name": "Khonshu",
+              "characterId": "khonshu",
+              "thisFilm": "The Egyptian moon god, and a harsh master. He keeps Marc on a tight leash and threatens to replace him with Layla when he does not get his way."
+            },
+            {
+              "name": "Layla El-Faouly",
+              "characterId": "layla-el-faouly",
+              "thisFilm": "Marc's estranged wife, and an archaeologist. Her father was killed during a dig in Egypt years ago."
+            },
+            {
+              "name": "Arthur Harrow",
+              "thisFilm": "The scales tattooed on his arm judge people for evil they have not committed yet. He kills anyone who comes up unbalanced. He is quiet, patient, and sure he is right."
+            },
+            {
+              "name": "Ammit",
+              "thisFilm": "She judges people on what they might do rather than what they have done. Her own avatar at the time, Alexander the Great, turned on her along with the rest of the Egyptian gods. They sealed her inside an ushabti."
+            },
+            {
+              "name": "The asylum",
+              "thisFilm": "About halfway through, Marc wakes up in a psychiatric hospital. For a while the show frames everything supernatural as a delusion."
+            },
+            {
+              "name": "What Marc has been hiding",
+              "thisFilm": "His younger brother Randall drowned in a flooded cave while the two of them were playing. Their mother blamed Marc and abused him for years afterwards. Steven Grant was invented by a twelve-year-old hiding in a bedroom. Steven has spent the whole series ringing a mother who is dead.",
+              "nameIsSpoiler": true
+            },
+            {
+              "name": "How Layla's father died",
+              "thisFilm": "Abdallah El-Faouly was shot on a dig in Egypt, and Marc was there. The man he was working the job with killed the archaeologists. Marc tried to stop him and got shot too, which is how he ended up dying in Khonshu's temple. Harrow is the one who finally tells Layla.",
+              "nameIsSpoiler": true
+            },
+            {
+              "name": "Jake Lockley",
+              "thisFilm": "A third alter neither Marc nor Steven knew about. He surfaces during their blackouts and does the killing Marc refuses to do.",
+              "nameIsSpoiler": true
+            }
           ],
+          "postCredit": {
+            "count": 1,
+            "type": "mid"
+          },
           "seasons": [
             {
               "seasonNumber": 1,
               "episodes": [
-                { "id": "moon-knight-e1", "episodeNumber": 1, "title": "The Goldfish Problem", "summary": "Steven Grant starts blacking out and waking up in strange places, unaware that another personality is sharing his body." },
-                { "id": "moon-knight-e2", "episodeNumber": 2, "title": "Summon the Suit", "summary": "Steven learns the truth about Marc Spector and Khonshu, the Egyptian moon god they both serve as an avatar." },
-                { "id": "moon-knight-e3", "episodeNumber": 3, "title": "The Friendly Type", "summary": "Marc and Steven are forced to work together to stop a cult leader from unleashing a vengeful goddess." },
-                { "id": "moon-knight-e4", "episodeNumber": 4, "title": "The Tomb", "summary": "A tomb-raiding expedition goes sideways as ancient traps and old betrayals catch up with the pair." },
-                { "id": "moon-knight-e5", "episodeNumber": 5, "title": "Asylum", "summary": "A trip through a mental institution blurs the line between what's real and what's in Marc and Steven's shared mind." },
-                { "id": "moon-knight-e6", "episodeNumber": 6, "title": "Gods and Monsters", "summary": "A third personality is revealed, and the fate of Egypt's afterlife hangs in the balance." }
+                {
+                  "id": "moon-knight-e1",
+                  "episodeNumber": 1,
+                  "title": "The Goldfish Problem",
+                  "summary": "Steven Grant keeps losing days. He wakes up in places he never travelled to, chased by people who want something he does not remember taking.",
+                  "deepDive": {
+                    "plot": "Steven Grant wakes up in his London flat, unties the restraint from his ankle and peels the tape off the door. He feeds his goldfish Gus and rings his mum. At the National Art Gallery, where he works in the gift shop, he gets told off for lecturing a visitor on Egyptian mythology and reminded that he is not a tour guide. That night he fights off sleep with puzzles. He comes round in a meadow in the Austrian Alps, with a voice in his head telling him to give the body back to Marc. Armed men come after him. A cult leader called Arthur Harrow is preaching in the square about a goddess named Ammit and judging his followers on the scales tattooed on his arm. Harrow wants a golden scarab that Steven does not know he is carrying. Steven blacks out over and over through the chase, and each time he comes round the men around him are dead. He wakes up in his own bed sure it was a nightmare. Then he notices Gus now has two fins instead of one, the pet shop owner says he came in yesterday, and the woman he thought he was taking to dinner tells him the date was two days ago. Behind a panel in his flat he finds a key and a phone full of calls to someone called Layla. When she rings, she calls him Marc. That night a creature only he can see hunts him through the closed museum. He locks himself in a bathroom, and his own reflection starts talking to him and asks for control of the body. Steven lets go."
+                  }
+                },
+                {
+                  "id": "moon-knight-e2",
+                  "episodeNumber": 2,
+                  "title": "Summon the Suit",
+                  "summary": "Steven goes looking for proof that he did not imagine any of it. A key from his flat leads him somewhere that should not be his.",
+                  "deepDive": {
+                    "plot": "Steven goes back to the museum and pulls the security footage. It shows him running from nothing, then walking out of the toilets as somebody else. He is fired on the spot. The key leads him to a storage unit where the attendant recognises him and waves him through. Inside are a camp bed, a bag of cash and weapons, the golden scarab, and an American passport with his own face on it under the name Marc Spector. The reflection in the mirror is Marc. He explains that he is the avatar of Khonshu, the Egyptian god of the moon, and that the arrangement only works if Steven stays out of it. Steven refuses and runs, and meets Khonshu in person in the corridor. Outside he is nearly run over by Layla El-Faouly, Marc's wife, who is expecting her husband and gets Steven instead. Two police officers arrest him, turn out to be Harrow's people, and hand him over. Harrow tells Steven that he was Khonshu's avatar before Marc, and that the difference between a cure and a poison is the dose. He suggests Khonshu may have picked Marc because his mind was already broken. Layla gets Steven out. Harrow sets a jackal on them that only Steven can see, and Steven summons the armour for the first time. He ends up in a white three piece suit rather than Marc's wrappings. He hands over to Marc, who kills the jackal, but the scarab falls out of Layla's pocket and Harrow leaves with it. Afterwards Khonshu threatens to make Layla his next avatar if Marc does not do as he is told, so Marc goes to Egypt."
+                  }
+                },
+                {
+                  "id": "moon-knight-e3",
+                  "episodeNumber": 3,
+                  "title": "The Friendly Type",
+                  "summary": "Harrow is already ahead of them in Cairo, so Khonshu takes the argument to the other Egyptian gods.",
+                  "deepDive": {
+                    "plot": "Marc hunts Harrow's disciples through Cairo. Steven fights him for control the whole way and tries to stop him killing anyone. By the end every disciple is dead, and both of them insist they did not do it. Layla follows Marc out to Egypt, furious that he left without a word. With no way of finding Ammit's tomb, Khonshu calls a tribunal of the Ennead. They are the council of Egyptian gods, and they speak through avatars gathered in a chamber beneath the Great Pyramid of Giza. Khonshu accuses Harrow of trying to free Ammit. Harrow denies all of it and turns the room around, describing Khonshu as an abuser who has been running a damaged man for his own ends. The Ennead find Harrow innocent. But one of the avatars quietly tips Marc off about Senfu, a medjay who was given the job of recording the tomb's location so the gods themselves would never know it. Senfu's sarcophagus has been sold to a black market collector, and Layla talks their way in to look at it. Harrow arrives mid deal and destroys the sarcophagus with Ammit's staff, but Layla gets away with the piece that matters. Steven reads it as a star map. The constellations have moved in the two thousand years since it was drawn, so Khonshu turns the whole night sky back to the night it recorded. He warns that the Ennead will punish him for it, and asks Marc to free him afterwards. Layla triangulates the tomb. The gods seal Khonshu inside a small stone ushabti, and Harrow is brought in to be shown the statue with a god trapped inside it."
+                  }
+                },
+                {
+                  "id": "moon-knight-e4",
+                  "episodeNumber": 4,
+                  "title": "The Tomb",
+                  "summary": "The search reaches the tomb, but what is waiting inside is only half the problem.",
+                  "deepDive": {
+                    "plot": "With Khonshu sealed away there is no suit and no healing. Steven and Layla find the dig site and go down, and Steven works out the route through the maze from the Eye of Horus carved into the walls. Before they go in, he tells Layla the thing Marc never would. Marc pushed her away to stop Khonshu taking her as an avatar. Inside they are hunted by the Heka Priests, corpses entombed to guard the place, and they split up and kill one each. Steven finds the burial chamber and realises it belongs to Alexander the Great, and that Alexander was Ammit's last avatar, with her ushabti still lodged in his throat. Harrow finds Layla and tells her how her father really died. He was shot on a dig by mercenaries, and Harrow lets her work out that Marc was one of them. Layla confronts Marc. He tells her it was the man he was working the job with who killed the archaeologists, and that he got shot too when he tried to stop it. Harrow's disciples arrive. Marc fights them to buy Layla time, and Harrow shoots him twice and drops him into the water. Marc wakes up in a psychiatric hospital in a gown. Arthur Harrow is his therapist, and Layla and the rest of the people from his life are fellow patients. The adventure film he loved as a boy is sitting on the desk, with a hero in it called Steven Grant. Marc works out that none of it is real and runs, and meets Steven face to face in a corridor for the first time. The two of them round a corner into a talking hippopotamus."
+                  }
+                },
+                {
+                  "id": "moon-knight-e5",
+                  "episodeNumber": 5,
+                  "title": "Asylum",
+                  "summary": "Marc and Steven are sent back through their own memories. Neither of them wants to see what is there.",
+                  "deepDive": {
+                    "plot": "The hippopotamus is Taweret, and the hospital is not a hospital. Marc is dead, and this is the Duat, the Egyptian afterlife. Taweret ferries souls across the sand towards the Gates of Osiris, and weighs their hearts on a set of scales on the way. Marc and Steven's will not balance, which means they will not be allowed through into the Field of Reeds. Taweret sends them back through their own memories to find what is missing. They pass a room full of the people Khonshu had Marc kill. Then Steven follows a small boy into a memory Marc has kept from him. Marc as a child, with a mother, a father and a younger brother called Randall. The boys were playing at being the hero of their favourite film when the cave they were in flooded, and Randall drowned. Their mother Wendy blamed Marc and spent years taking it out on him. Steven remembers a loving mother and rings her every day. Here he learns that she is dead, and that Marc could not make himself walk into the shiva. He learns where he came from too. Steven Grant was invented by a twelve-year-old hiding in a bedroom, built out of that film's hero so somebody in there could have an ordinary life. They also see the dig where Layla's father was killed, and Marc crawling into Khonshu's temple to die and being offered his life back in exchange for service. The scales are still unbalanced when they reach the gates. The dead Marc killed climb aboard the boat and drag him towards the side. Steven pulls him back and goes over himself, and freezes in the sand. The scales balance."
+                  }
+                },
+                {
+                  "id": "moon-knight-e6",
+                  "episodeNumber": 6,
+                  "title": "Gods and Monsters",
+                  "summary": "Harrow moves on Cairo, and everyone still standing has to decide what they will give up to stop him.",
+                  "deepDive": {
+                    "plot": "Harrow takes Ammit's ushabti from Marc's body and heads for Giza, judging the guards who stop them on the road. Layla follows him, and Taweret reaches her with a message telling her to free Khonshu. Harrow gets into the chamber under the pyramid, kills the avatars of the Ennead, breaks the ushabti and releases Ammit. Ammit tells him his own scales are unbalanced, and makes him her avatar anyway. Layla frees Khonshu and turns down his offer to become his avatar, so he goes after Ammit alone. In the Field of Reeds, Taweret tells Marc he is whole and can stay. He turns his back on it and walks out into the sand, finds Steven frozen there, and puts his own heart into Steven's hands. The Gates of Osiris open for the pair of them. Khonshu feels them come back and heals their body, and Marc and Steven renegotiate on the way out. Once Ammit is stopped, Khonshu lets them both go. One of the Ennead's avatars tells Layla the only way to stop Ammit is to bind her inside a vulnerable human body. Layla accepts Taweret's offer to become her avatar, and goes up over Cairo in golden wings. Harrow turns his disciples loose on the city. Marc, Steven and Layla take him on together and lose. Then Marc blacks out, and comes round standing over a beaten Harrow and a courtyard of dead disciples, with neither he nor Steven responsible for any of it. They bind Ammit inside Harrow's body. Khonshu orders Marc to finish Harrow off, and Marc refuses and tells him he is barely different from Ammit himself. Khonshu keeps his side of the deal and lets them go. The last scene before the credits puts Marc and Steven back in the asylum with Harrow, unsure all over again which version is the real one, until they notice blood in his footprints. They wake up in the London flat. In the mid-credits, Harrow is wheeled out of another hospital and put into a limousine, where Khonshu is waiting. He tells Harrow that Marc has no idea how broken he really is, and introduces Jake Lockley, the third alter who has been working for Khonshu all along. Jake shoots him."
+                  }
+                }
               ]
             }
           ]
         },
         {
-          "id": "shang-chi",
-          "title": "Shang-Chi and the Legend of the Ten Rings",
-          "year": 2021,
-          "narrativeOrder": 2,
-          "releaseOrder": 28,
-          "type": "movie",
-          "art": { "tmdbId": 566525, "poster": "/9f2Q0U3IOsLgrI2HkvldwSABZy5.jpg", "backdrop": "/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg" },
-          "summary": "A martial-arts prodigy who has been hiding from his past is drawn back into the orbit of his father's secret organization, the Ten Rings, and must confront a fate he thought he'd escaped.",
-          "beforeWatch": {
-            "context": "Almost entirely standalone, with a new cast and a story about a family rather than a world-ending threat. It builds its own mythology from scratch. The one thread reaching back is an organisation whose name has come up a couple of times before, notably in the first Iron Man film.",
-            "watchFirst": []
-          },
-          "inUniverseSetting": "2023",
-          "deepDive": {
-            "plot": "Shaun, a San Francisco valet who's secretly Shang-Chi, has spent a decade hiding from his father Xu Wenwu, the immortal leader of the Ten Rings organization and wielder of ten mystical rings. When his father hunts him down seeking a pendant tied to Shang-Chi's late mother's home village, Shang-Chi learns his father plans to break through a mystical seal, believing his dead wife is trapped behind it. It is actually the prison of a soul-devouring creature. Shang-Chi, his sister Xialing, and their allies stop the creature's escape, and Shang-Chi reluctantly accepts his father's rings and legacy.",
-            "significance": "Introduces a major new hero and organization to the MCU with deep ties to earlier films (the Mandarin hoax from Iron Man 3), and its mid-credit scene formally reconnects the Ten Rings to the wider cosmic mysteries the MCU is building toward.",
-            "orderNote": "Placed in the same broad post-Blip 'present day' period as WandaVision and Falcon/Winter Soldier, though its story is self-contained."
-          },
-          "watchFor": [
-            { "name": "A film that assumes almost nothing" },
-            { "name": "Xu Wenwu", "characterId": "xu-wenwu", "thisFilm": "The actual Mandarin, a thousand years old, and the film's best argument that a villain works better when you understand him. Grief is doing all of it." },
-            { "name": "Trevor Slattery", "thisFilm": "The actor Killian hired to play the Mandarin in Iron Man 3, imprisoned by the real organisation for the insult and kept alive because he's entertaining. The joke from that film gets a proper ending." },
-            { "name": "Katy", "thisFilm": "Refuses to be the friend who gets left behind, and the film gives her a real arc rather than a punchline." },
-            { "name": "Xialing", "characterId": "xu-xialing", "thisFilm": "Built her own fight club after being shut out of her father's training, and takes over the organisation at the end while telling Shang-Chi she's shutting it down.", "future": "That last shot leaves her running a criminal network nobody has followed up on." },
-            { "name": "Abomination", "characterId": "emil-blonsky", "thisFilm": "Turns up in the cage fight against Wong, apparently on friendly terms with him. First sight of Blonsky since The Incredible Hulk.", "future": "She-Hulk explains what he's been doing.", "spoils": "She-Hulk: Attorney at Law" },
-            { "name": "Wong", "thisFilm": "Recruits both Shang-Chi and, seemingly, half the MCU's loose ends. He's quietly become the person who handles anything strange." },
-            { "name": "The rings themselves (mid-credit)", "thisFilm": "Wong, Carol Danvers and Bruce Banner examine them and find they're far older than anyone thought, and that they've started sending a signal to something.", "future": "Still unanswered.", "spoils": "Avengers: Doomsday" }
-          ],
-          "postCredit": { "count": 2, "type": "mid+post" }
-        },
-        {
           "id": "eternals",
           "title": "Eternals",
           "year": 2021,
-          "narrativeOrder": 3,
+          "narrativeOrder": 1,
           "releaseOrder": 29,
           "type": "movie",
           "art": { "tmdbId": 524434, "poster": "/lFByFSLV5WDJEv3KabbdAF959F2.jpg", "backdrop": "/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg" },
@@ -2150,7 +2287,7 @@
           "deepDive": {
             "plot": "A team of ten immortal beings, secretly sent to Earth 7,000 years ago by the cosmic being Arishem to protect humanity from monstrous Deviants, reunite in the present day when the Deviants unexpectedly resurface. The team discovers their true purpose was never protection. They were meant to incubate a Celestial embryo inside the Earth itself, an 'Emergence' that would destroy the planet to birth a new Celestial. Split over whether to let it happen, the Eternals stop the Emergence, but Arishem takes several of them away to judge whether humanity deserves to survive, leaving their fate unresolved.",
             "significance": "Puts the Celestials on screen as the things that made the galaxy work, and answers where Earth came from in a way no other film has touched. It also leaves more unresolved threads than anything else in Phase Four, and almost none have been picked up.",
-            "orderNote": "Grouped with Shang-Chi and other 2021-released stories in the broad post-Blip period, since its 'present day' scenes align with them despite its ancient flashbacks."
+            "orderNote": "Opens Phase Five, in the same post-Blip stretch as the stories on either side of it. The flashbacks run back seven thousand years, but the present day story sits here."
           },
           "watchFor": [
             { "name": "Why they sat out everything else" },
@@ -2171,7 +2308,7 @@
           "id": "she-hulk",
           "title": "She-Hulk: Attorney at Law",
           "year": 2022,
-          "narrativeOrder": 4,
+          "narrativeOrder": 2,
           "releaseOrder": 36,
           "type": "series",
           "art": { "tmdbId": 92783, "poster": "/5xz2orV8f0usyrfGNshcoXHmiaV.jpg", "backdrop": "/eljErfkQUcFUgQkI4I1soZcH8MW.jpg" },
@@ -2225,7 +2362,7 @@
           "id": "black-panther-2",
           "title": "Black Panther: Wakanda Forever",
           "year": 2022,
-          "narrativeOrder": 5,
+          "narrativeOrder": 4,
           "releaseOrder": 37,
           "type": "movie",
           "art": { "tmdbId": 505642, "poster": "/sv1xJUazXeYqALzczSZ3O6nkH75.jpg", "backdrop": "/83H0C66AcvkwpG2738VCTHMY9uv.jpg" },
@@ -2252,7 +2389,7 @@
           "id": "thor-4",
           "title": "Thor: Love and Thunder",
           "year": 2022,
-          "narrativeOrder": 6,
+          "narrativeOrder": 5,
           "releaseOrder": 35,
           "type": "movie",
           "art": { "tmdbId": 616037, "poster": "/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg", "backdrop": "/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg" },
@@ -2277,7 +2414,7 @@
           "id": "ironheart",
           "title": "Ironheart",
           "year": 2025,
-          "narrativeOrder": 7,
+          "narrativeOrder": 6,
           "releaseOrder": 53,
           "type": "series",
           "art": { "tmdbId": 114471, "poster": "/dOh6MJpdlQhYpLBhzhNQeYGKTZ5.jpg", "backdrop": "/kiOEVg5BkzLE0pWoPKecXd7wZ2Q.jpg" },
@@ -2316,7 +2453,7 @@
           "id": "guardians-holiday-special",
           "title": "The Guardians of the Galaxy Holiday Special",
           "year": 2022,
-          "narrativeOrder": 8,
+          "narrativeOrder": 7,
           "releaseOrder": 38,
           "type": "special",
           "art": { "tmdbId": 774752, "poster": "/8dqXyslZ2hv49Oiob9UjlGSHSTR.jpg", "backdrop": "/rfnmMYuZ6EKOBvQLp2wqP21v7sI.jpg" },
@@ -2341,7 +2478,7 @@
           "id": "guardians-3",
           "title": "Guardians of the Galaxy Vol. 3",
           "year": 2023,
-          "narrativeOrder": 9,
+          "narrativeOrder": 8,
           "releaseOrder": 40,
           "type": "movie",
           "art": { "tmdbId": 447365, "poster": "/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg", "backdrop": "/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg" },
@@ -2367,7 +2504,7 @@
           "id": "secret-invasion",
           "title": "Secret Invasion",
           "year": 2023,
-          "narrativeOrder": 10,
+          "narrativeOrder": 9,
           "releaseOrder": 41,
           "type": "series",
           "art": { "tmdbId": 114472, "poster": "/3rINdUPSy9AklJg74jWHOyUXuZd.jpg", "backdrop": "/6mOK9j99OFlxGc3ird2jWUeUha9.jpg" },
@@ -2403,7 +2540,7 @@
           "id": "ms-marvel",
           "title": "Ms. Marvel",
           "year": 2022,
-          "narrativeOrder": 11,
+          "narrativeOrder": 10,
           "releaseOrder": 34,
           "type": "series",
           "art": { "tmdbId": 92782, "poster": "/3HWWh92kZbD7odwJX7nKmXNZsYo.jpg", "backdrop": "/mfcLUWASJghU8MTNK38eYktfE83.jpg" },
@@ -2447,7 +2584,7 @@
           "id": "the-marvels",
           "title": "The Marvels",
           "year": 2023,
-          "narrativeOrder": 12,
+          "narrativeOrder": 11,
           "releaseOrder": 42,
           "type": "movie",
           "art": { "tmdbId": 609681, "poster": "/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg", "backdrop": "/feSiISwgEpVzR1v3zv2n2AU4ANJ.jpg" },

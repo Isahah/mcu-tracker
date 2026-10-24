@@ -48,7 +48,8 @@
         "phase-1": "The Incredible Hulk: a fugitive in Brazil, hiding from General Ross and working on a cure, until Emil Blonsky takes a version of the same serum and forces a fight through Harlem.\nThe Avengers: Fury's people talk him out of hiding in Kolkata to help find the Tesseract, and he spends most of the film keeping a lid on it until the moment he decides not to.",
         "phase-2": "Iron Man 3: the post-credits only, dozing through Tony's account of the entire film.\nAvengers: Age of Ultron: he builds Ultron with Tony out of the Mind Stone, loses control in Johannesburg with Wanda in his head, and decides afterwards that the world is safer without him in it. He flies the Quinjet out and does not say where he is going.",
         "phase-3": "Thor: Ragnarok: the Quinjet came down on Sakaar, and by the time Thor finds him in the arena he has been Hulk without a break for two years.\nAvengers: Infinity War: Thanos beats the Hulk in the opening scene, and the Hulk will not come out again for the rest of the film.\nAvengers: Endgame: eighteen months in a gamma lab merged the two of them into one person, and it is that version who puts on the gauntlet and brings everyone back, at the cost of his arm.",
-        "phase-5": "Shang-Chi and the Legend of the Ten Rings: the post-credits, back in human form with his arm in a sling, sitting in while Wong examines the Ten Rings.\nShe-Hulk: Attorney at Law: a car crash puts his blood into his cousin Jennifer and gives her the same condition, and he spends the opening stretch of the series trying to train her out of it. He leaves for Sakaar partway through and comes back with a son, Skaar."
+        "phase-4": "Shang-Chi and the Legend of the Ten Rings: the post-credits, back in human form with his arm in a sling, sitting in while Wong examines the Ten Rings.",
+        "phase-5": "She-Hulk: Attorney at Law: a car crash puts his blood into his cousin Jennifer and gives her the same condition, and he spends the opening stretch of the series trying to train her out of it. He leaves for Sakaar partway through and comes back with a son, Skaar."
       }
     },
     {
@@ -344,7 +345,7 @@
       "titles": ["shang-chi"],
       "image": "/img/characters/shang-chi.webp",
       "phases": {
-        "phase-5": "Shang-Chi and the Legend of the Ten Rings: a San Francisco valet called Shaun, who is actually the son of Wenwu, the man who has run the Ten Rings organisation for a thousand years, and who trained him from the age of seven to be an assassin. Going home means facing his sister Xialing and his father's conviction that his dead wife is being held somewhere behind the gates of Ta Lo. Wenwu is killed by the thing he was trying to let out, and Shang-Chi takes the rings. The post-credits establishes that they are far older than anyone thought, and that they are signalling something."
+        "phase-4": "Shang-Chi and the Legend of the Ten Rings: a San Francisco valet called Shaun, who is actually the son of Wenwu, the man who has run the Ten Rings organisation for a thousand years, and who trained him from the age of seven to be an assassin. Going home means facing his sister Xialing and his father's conviction that his dead wife is being held somewhere behind the gates of Ta Lo. Wenwu is killed by the thing he was trying to let out, and Shang-Chi takes the rings. The post-credits establishes that they are far older than anyone thought, and that they are signalling something."
       }
     },
     {
@@ -684,12 +685,12 @@
       "id": "wong",
       "name": "Wong",
       "description": "Master of the mystic arts and keeper of Kamar-Taj's library, and eventually a good deal more than a sidekick.",
-      "titles": ["doctor-strange-1", "avengers-3", "avengers-4", "spiderman-3", "doctor-strange-2", "shang-chi", "she-hulk"],
+      "titles": ["doctor-strange-1", "avengers-3", "avengers-4", "spiderman-3", "shang-chi", "doctor-strange-2", "she-hulk"],
       "image": "/img/characters/wong.jpg",
       "phases": {
         "phase-3": "Doctor Strange: the librarian at Kamar-Taj who does not laugh at Strange's jokes and drills the rules into him.\nAvengers: Infinity War: holds the line in the New York fight.\nAvengers: Endgame: opens portals with the rest of them.",
-        "phase-4": "Spider-Man: No Way Home: Sorcerer Supreme by now on a technicality, since Strange was dust for five years and seniority is seniority. He tells Peter no about the spell and leaves before it goes wrong.\nDoctor Strange in the Multiverse of Madness: he holds Kamar-Taj against Wanda, and loses it.",
-        "phase-5": "Shang-Chi and the Legend of the Ten Rings: the cage match with Abomination, and the post-credits examination of the rings.\nShe-Hulk: Attorney at Law: a recurring guest, mostly to Jen's irritation."
+        "phase-4": "Spider-Man: No Way Home: Sorcerer Supreme by now on a technicality, since Strange was dust for five years and seniority is seniority. He tells Peter no about the spell and leaves before it goes wrong.\nShang-Chi and the Legend of the Ten Rings: the cage match with Abomination, and the post-credits examination of the rings.\nDoctor Strange in the Multiverse of Madness: he holds Kamar-Taj against Wanda, and loses it.",
+        "phase-5": "She-Hulk: Attorney at Law: a recurring guest, mostly to Jen's irritation."
       }
     },
     {
@@ -955,7 +956,7 @@
       "image": "/img/characters/katy-chen.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-5": "Shang-Chi and the Legend of the Ten Rings: ten years of karaoke and valet shifts with a best friend she thought she knew, until one bus fight rewrites all of it. In Ta Lo she picks up a bow, trains for roughly a day, and still puts the arrow where it needs to go. She ends the film name-dropping dragons at brunch, about ten seconds before Wong portals them both away."
+        "phase-4": "Shang-Chi and the Legend of the Ten Rings: ten years of karaoke and valet shifts with a best friend she thought she knew, until one bus fight rewrites all of it. In Ta Lo she picks up a bow, trains for roughly a day, and still puts the arrow where it needs to go. She ends the film name-dropping dragons at brunch, about ten seconds before Wong portals them both away."
       }
     },
     {
@@ -966,7 +967,7 @@
       "image": "/img/characters/xu-xialing.webp",
       "imagePosition": "top",
       "phases": {
-        "phase-5": "Shang-Chi and the Legend of the Ten Rings: abandoned twice over, by the brother who ran and the father who only ever saw a son, so she built her own underground fight empire out of nothing. She fights for Ta Lo, buries her father, and then takes his chair. The credits scene has her running the Ten Rings, remade the way she wants them."
+        "phase-4": "Shang-Chi and the Legend of the Ten Rings: abandoned twice over, by the brother who ran and the father who only ever saw a son, so she built her own underground fight empire out of nothing. She fights for Ta Lo, buries her father, and then takes his chair. The credits scene has her running the Ten Rings, remade the way she wants them."
       }
     },
     {
@@ -1334,7 +1335,7 @@
       "titles": ["shang-chi"],
       "image": "/img/characters/xu-wenwu.webp",
       "phases": {
-        "phase-5": "Shang-Chi and the Legend of the Ten Rings: a thousand years of conquest, and one decade of retirement for a woman who could beat him. When Li died the rings went back on and the children got an assassin's education instead of a childhood. What he becomes is grief with resources. The thing behind the gate in Ta Lo speaks with his wife's voice, and he tears the gate open to reach her. His last act is putting the rings on his son."
+        "phase-4": "Shang-Chi and the Legend of the Ten Rings: a thousand years of conquest, and one decade of retirement for a woman who could beat him. When Li died the rings went back on and the children got an assassin's education instead of a childhood. What he becomes is grief with resources. The thing behind the gate in Ta Lo speaks with his wife's voice, and he tears the gate open to reach her. His last act is putting the rings on his son."
       }
     },
     {
@@ -1433,7 +1434,8 @@
       "imagePosition": "top",
       "phases": {
         "phase-1": "The Incredible Hulk: a career commando who chases the Hulk's power through Ross's serum and Banner's blood until he becomes the Abomination, and wrecks Harlem before the Hulk chokes him out.",
-        "phase-5": "Shang-Chi and the Legend of the Ten Rings: cage-fighting Wong, with whom he appears to have an arrangement.\nShe-Hulk: Attorney at Law: Jen's client at his parole hearing, running a wellness retreat with seven soul mates. The reform is largely genuine. The paid Abomination appearances breaking his parole are also real, and he goes back to the Raft."
+        "phase-4": "Shang-Chi and the Legend of the Ten Rings: cage-fighting Wong, with whom he appears to have an arrangement.",
+        "phase-5": "She-Hulk: Attorney at Law: Jen's client at his parole hearing, running a wellness retreat with seven soul mates. The reform is largely genuine. The paid Abomination appearances breaking his parole are also real, and he goes back to the Raft."
       }
     },
     {
@@ -1501,7 +1503,6 @@
       "description": "The Egyptian god of the moon, who speaks through a chosen avatar and is only ever heard by the person he has chosen.",
       "titles": ["moon-knight"],
       "image": "/img/characters/khonshu.webp",
-
       "phases": {
         "phase-5": "Moon Knight: the voice in Marc Spector's head and the source of his powers, kept alive by a bargain Marc made when he was dying. Khonshu wants wrongdoers punished, and the other gods have no patience for how he goes about it, so they seal him in stone partway through. He is not a benevolent patron. He picked Marc partly because a fractured mind is easier to steer, he threatens to take Layla as a replacement, and the final scene reveals he kept a third personality, Jake Lockley, as his own avatar the whole time, doing the killing Marc refused to do."
       }
@@ -1784,11 +1785,11 @@
       "name": "Kamar-Taj",
       "type": "place",
       "description": "A walled compound in Kathmandu where an order of sorcerers has been training and defending the world for centuries, unnoticed by almost everyone.",
-      "titles": ["doctor-strange-1", "avengers-4", "spiderman-3", "doctor-strange-2", "shang-chi", "she-hulk"],
+      "titles": ["doctor-strange-1", "avengers-4", "spiderman-3", "shang-chi", "doctor-strange-2", "she-hulk"],
       "phases": {
         "phase-3": "Doctor Strange: Stephen Strange arrives broke and desperate after spending everything on his hands, and the Ancient One takes him in. He learns the sling ring and the mirror dimension there, and finds out the order maintains three Sanctums that keep the Earth sealed. Kaecilius and the zealots attack the compound after stealing pages from the Book of Cagliostro, and Mordo walks away at the end over what the Ancient One had been doing to stay alive.\nAvengers: Endgame: the portals that bring everyone to the final battle are opened out of Kamar-Taj, with Wong leading the masters through.",
-        "phase-4": "Spider-Man: No Way Home: Wong is Sorcerer Supreme by now, and he leaves for Kamar-Taj early on after telling Strange the spell is his own problem to deal with.\nDoctor Strange in the Multiverse of Madness: Wong shows Strange the Darkhold there and explains what Wanda Maximoff has been reading. She then attacks the compound directly to get to America Chavez, and the masters lose badly.",
-        "phase-5": "Shang-Chi and the Legend of the Ten Rings: the mid-credits scene. Wong brings Shang-Chi and Katy Chen here to work out what the ten rings actually are, with Bruce Banner and Carol Danvers joining by holographic call, and the meeting ends with nobody able to say where the beacon the rings have started sending is going.\nShe-Hulk: Attorney at Law: Wong is living there by now, and the series treats Kamar-Taj as somewhere between a headquarters and a flat. He portals out of it to collect Emil Blonsky from prison, has The Sopranos spoiled for him by a drunk woman who falls through a portal into his room, and later lets Blonsky come and stay."
+        "phase-4": "Spider-Man: No Way Home: Wong is Sorcerer Supreme by now, and he leaves for Kamar-Taj early on after telling Strange the spell is his own problem to deal with.\nShang-Chi and the Legend of the Ten Rings: the mid-credits scene. Wong brings Shang-Chi and Katy Chen here to work out what the ten rings actually are, with Bruce Banner and Carol Danvers joining by holographic call, and the meeting ends with nobody able to say where the beacon the rings have started sending is going.\nDoctor Strange in the Multiverse of Madness: Wong shows Strange the Darkhold there and explains what Wanda Maximoff has been reading. She then attacks the compound directly to get to America Chavez, and the masters lose badly.",
+        "phase-5": "She-Hulk: Attorney at Law: Wong is living there by now, and the series treats Kamar-Taj as somewhere between a headquarters and a flat. He portals out of it to collect Emil Blonsky from prison, has The Sopranos spoiled for him by a drunk woman who falls through a portal into his room, and later lets Blonsky come and stay."
       }
     },
     {
@@ -1811,7 +1812,7 @@
       "phases": {
         "phase-1": "Iron Man: the cell that ambushes Tony Stark's convoy in Afghanistan and holds him in a cave to build them a missile. Raza is the one giving orders on the ground, the weapons they are carrying are all Stark Industries stock, and the contract that put Tony in that cave was taken out by Obadiah Stane.",
         "phase-2": "Iron Man 3: the Mandarin's broadcasts go out under the Ten Rings name and use its imagery, and the whole thing is staged. Trevor Slattery is an actor hired to read the speeches, and Aldrich Killian is using the campaign as cover for Extremis subjects failing in public.",
-        "phase-5": "Shang-Chi and the Legend of the Ten Rings: the real one. Xu Wenwu found the ten rings a thousand years ago and has run the organisation ever since, under a different name in every century. The outfit that took Tony Stark carries the same name and the same symbol, and Killian's fake Mandarin is an insult Wenwu takes personally enough to have Slattery abducted over it. The film ends with the rings on Shang-Chi's arms and the organisation handed to Xu Xialing, and the mid-credits scene has Wong take him to Kamar-Taj, where he, Bruce Banner and Carol Danvers all fail to say what the rings are or where the signal they have started sending is going."
+        "phase-4": "Shang-Chi and the Legend of the Ten Rings: the real one. Xu Wenwu found the ten rings a thousand years ago and has run the organisation ever since, under a different name in every century. The outfit that took Tony Stark carries the same name and the same symbol, and Killian's fake Mandarin is an insult Wenwu takes personally enough to have Slattery abducted over it. The film ends with the rings on Shang-Chi's arms and the organisation handed to Xu Xialing, and the mid-credits scene has Wong take him to Kamar-Taj, where he, Bruce Banner and Carol Danvers all fail to say what the rings are or where the signal they have started sending is going."
       }
     },
     {
