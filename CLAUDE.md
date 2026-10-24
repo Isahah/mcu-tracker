@@ -4,16 +4,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A personal MCU watch tracker: a vanilla-JS frontend (no framework, no build step, no bundler) reading flat JSON files, with watch history in the browser. **No database and no backend** — it runs locally via a small dev server and deploys as a static site. Free, and never monetised (see Licensing below).
+A personal MCU watch tracker: a vanilla-JS frontend (no framework, no build step, no bundler) reading flat JSON files, with watch history in the browser. **No database and no backend**, so it runs locally via a small dev server and deploys as a static site. Free, and never monetised (see Licensing below).
 
 Its whole point is **narrative order without spoilers**: every title is placed by when the story happens, and anything that could spoil sits behind a toggle the reader opens deliberately.
 
 ## Commands
 
-- `npm install` — one-time dependency install (Express is the only dependency)
-- `npm start` — runs `node server.js`, serves at http://localhost:3939
-- `node scripts/fetch-artwork.js` — pull TMDB poster/backdrop paths (`--refresh` re-fetches everything, `--dry-run` writes nothing)
-- `npm run check` — read-only validator over the three data files. Run it after hand-editing. Catches JSON syntax errors with a line number, missing required fields, duplicate ids, `narrativeOrder` collisions and gaps, references that point at nothing (`watchFirst`, `characterId`, character `titles`), misspelled field names, missing portrait files, and save keys orphaned by a renamed id. Exits non-zero on errors. `MCU_DATA=<dir>` points it at a copy.
+- `npm install`. One-time dependency install (Express is the only dependency)
+- `npm start`. Runs `node server.js`, serves at http://localhost:3939
+- `node scripts/fetch-artwork.js`. Pull TMDB poster/backdrop paths (`--refresh` re-fetches everything, `--dry-run` writes nothing)
+- `npm run check`. Read-only validator over the three data files. Run it after hand-editing. Catches JSON syntax errors with a line number, missing required fields, duplicate ids, `narrativeOrder` collisions and gaps, references that point at nothing (`watchFirst`, `characterId`, character `titles`), misspelled field names, missing portrait files, and save keys orphaned by a renamed id. Exits non-zero on errors. `MCU_DATA=<dir>` points it at a copy.
 - No test suite, linter, or build step.
 
 ## Architecture
@@ -22,9 +22,9 @@ Its whole point is **narrative order without spoilers**: every title is placed b
 
 **There is no backend.** Everything the site needs is inside `public/`, and watch history lives in each visitor's browser, so the whole thing deploys as static files to Netlify, Cloudflare Pages or anything similar. Verified by serving `public/` with a plain file server and no `/api` routes at all.
 
-- `public/data/movies.json` — canonical content (phases, movies, series, episodes)
-- `public/data/characters.json` — the character database
-- `data/progress.json` — **legacy** personal save, gitignored, deliberately **outside `public/`** so it is never served. Migration source only; nothing writes to it.
+- `public/data/movies.json`. Canonical content (phases, movies, series, episodes)
+- `public/data/characters.json`. The character database
+- `data/progress.json`. **Legacy** personal save, gitignored, deliberately **outside `public/`** so it is never served. Migration source only; nothing writes to it.
 
 Paths in the frontend are **relative** (`data/movies.json`, `img/characters/x.png` with the stored leading slash stripped at render time), so the site works from a domain root or a subfolder.
 
@@ -36,37 +36,42 @@ Paths in the frontend are **relative** (`data/movies.json`, `img/characters/x.pn
 
 `{ phases: [ { id, name, label, movies: [...] } ] }`. Each phase holds movies, TV specials and full series, distinguished by `type: "movie" | "series" | "special"`.
 
-Required on every entry: `id`, `title`, `year`, `narrativeOrder`, `releaseOrder`, `type`, `summary`. Optional (all gracefully omitted from the UI when absent — never add empty placeholders):
+Required on every entry: `id`, `title`, `year`, `narrativeOrder`, `releaseOrder`, `type`, `summary`. Optional (all gracefully omitted from the UI when absent, so never add empty placeholders):
 
-- `art: { tmdbId, poster, backdrop }` — TMDB **path fragments** only, written by `scripts/fetch-artwork.js`. Never hand-edit; re-run the script instead.
-- `beforeWatch: { context, watchFirst }` — `context` is spoiler-free prose ("what you need to know going in"); `watchFirst` is an array rendered as chips. An **entry id** becomes a link; **any other string** renders as a plain chip, which is how hard prerequisites outside the tracker are listed (Deadpool & Wolverine requires Logan and both Deadpool films). The validator only errors on strings that *look* like an entry id and match none, so typos are still caught. **Spoiler rule for `context`**: it may reference outcomes of titles *earlier* in narrative order (the viewer has seen them), never this title's own events or anything later.
-- `optionalViewing` — three accepted shapes. An **array** of strings renders as chips under "Helps, but optional"; a plain **string** renders as prose; **`{ note, items }`** puts a line of prose above the chips. An item matching an entry id becomes a link to that title; anything else (films outside the tracker) renders as a plain chip. The `note` form exists because the heading reads as *before you watch* by default, so an entry whose optional viewing is meant to be watched **after** the film has to say so (Captain America: The First Avenger, pointing at the Agent Carter one-shot and series).
-- `inUniverseSetting` / `timeSkip` — only when genuinely established, never guessed. Both render as hero chips; `timeSkip` is skipped as a chip if over 60 chars (still appears in "When this happens").
-- `deepDive: { plot, significance, orderNote }` — full plot, why it matters, why it sits here.
-- `watchFor: [{ name, thisFilm, future, spoils?, characterId?, nameIsSpoiler? }]` — the two-tier spoiler system. Each payload is optional and independently placed: `thisFilm` puts the item in the brass panel, `future` in the crimson one, and the name alone appears as a chip under "People & things to watch for". Omit a field (don't write `""`) to keep the item out of that panel. `nameIsSpoiler: true` withholds the name from the chip row — for when naming someone up front is itself the spoiler — while its payloads still render; if every item is hidden, the whole row and its heading disappear.
-- `postCredit: { count, type, timing?, skipNote? }` — **only `skipNote` still renders.** Counts and timing were removed as noise by the design. `skipNote` survives because it's spoiler protection, not trivia (currently Black Widow and Ant-Man and the Wasp only).
-- `released: false` + `expectedRelease` — excluded from watched-count denominators.
-- series only: `seasons: [{ seasonNumber, episodes: [...] }]` — always nested under `seasons`, even for one season.
+- `art: { tmdbId, poster, backdrop }`. TMDB **path fragments** only, written by `scripts/fetch-artwork.js`. Never hand-edit; re-run the script instead.
+- `beforeWatch: { context, watchFirst }`. `context` is spoiler-free prose ("what you need to know going in"); `watchFirst` is an array rendered as chips. An **entry id** becomes a link; **any other string** renders as a plain chip, which is how hard prerequisites outside the tracker are listed (Deadpool & Wolverine requires Logan and both Deadpool films). The validator only errors on strings that *look* like an entry id and match none, so typos are still caught. **Spoiler rule for `context`**: it may reference outcomes of titles *earlier* in narrative order (the viewer has seen them), never this title's own events or anything later.
+- `optionalViewing`. Three accepted shapes. An **array** of strings renders as chips under "Helps, but optional"; a plain **string** renders as prose; **`{ note, items }`** puts a line of prose above the chips. An item matching an entry id becomes a link to that title; anything else (films outside the tracker) renders as a plain chip. The `note` form exists because the heading reads as *before you watch* by default, so an entry whose optional viewing is meant to be watched **after** the film has to say so (Captain America: The First Avenger, pointing at the Agent Carter one-shot and series).
+- `inUniverseSetting` / `timeSkip`. Only when genuinely established, never guessed. Both render as hero chips; `timeSkip` is skipped as a chip if over 60 chars (still appears in "When this happens").
+- `deepDive: { plot, significance, orderNote }`. Full plot, why it matters, why it sits here.
+- `watchFor: [{ name, thisFilm, future, spoils?, characterId?, nameIsSpoiler? }]`. The two-tier spoiler system. Each payload is optional and independently placed: `thisFilm` puts the item in the brass panel, `future` in the crimson one, and the name alone appears as a chip under "People & things to watch for". Omit a field (don't write `""`) to keep the item out of that panel. `nameIsSpoiler: true` withholds the name from the chip row, for when naming someone up front is itself the spoiler, while its payloads still render; if every item is hidden, the whole row and its heading disappear.
+- `postCredit: { count, type, timing?, skipNote? }`. **Only `skipNote` still renders.** Counts and timing were removed as noise by the design. `skipNote` survives because it's spoiler protection, not trivia (currently Black Widow and Ant-Man and the Wasp only).
+- `released: false` + `expectedRelease`. Excluded from watched-count denominators.
+- series only: `seasons: [{ seasonNumber, episodes: [...] }]`. Always nested under `seasons`, even for one season.
 
-**narrativeOrder vs releaseOrder**: `narrativeOrder` is per-phase and drives all display. `releaseOrder` is a global sequence kept as trivia. Phases group by *when the story happens*, not Marvel's release branding — Black Widow sits in Phase Three (2016) rather than Four. Follow that precedent, but narrative usefulness wins over strict chronology when the two fight: Captain Marvel is filed in Phase Three immediately before Endgame, not back in 1995, because that is where it pays off.
+**narrativeOrder vs releaseOrder**: `narrativeOrder` is per-phase and drives all display. `releaseOrder` is a global sequence kept as trivia. Phases group by *when the story happens*, not Marvel's release branding. Black Widow sits in Phase Three (2016) rather than Four. Follow that precedent, but narrative usefulness wins over strict chronology when the two fight: Captain Marvel is filed in Phase Three immediately before Endgame, not back in 1995, because that is where it pays off.
 
 **A character's `phases` key must match the phase its film is filed under, not when the story happens.** Row state on a personnel file is gated by the reader's own progress, so a paragraph filed too early shows content from a film they haven't watched. Fury's 1995 material sat under Phase One for exactly this reason and leaked Captain Marvel to anyone who had only finished Phase One.
 
 **Multi-season shows split into separate entries** when their seasons belong at different points in the watch order. Loki is the precedent: `loki` ("Loki: Season 1") and `loki-s2` ("Loki: Season 2") with Quantumania between them, because Kang is introduced in that film. Episode ids stay `loki-s1e1` … `loki-s2e6` so watch history survives. Keep the `seasons` wrapper on both.
 
-**Series carry a Deep Dive at the series level, and each episode carries its own `deepDive.plot`** — a recap of that episode behind the spoiler toggle, so the episode page has something more than its one-line `summary`. Episodes don't get `significance` or `orderNote`. Only some episodes carry their own `watchFor`.
+**Series carry a Deep Dive at the series level, and each episode carries its own `deepDive.plot`**. The episode one is a recap of that episode behind the spoiler toggle, so the episode page has something more than its one-line `summary`. Episodes don't get `significance` or `orderNote`. Only some episodes carry their own `watchFor`.
 
 ### Save data (browser `localStorage`)
 
-**Watch history lives in the browser, not on the server** (`localStorage` key `mcu-field-log-progress`). That's what allows a static public deploy: every visitor gets their own save and nobody can overwrite anyone else's. Consequences: it's per browser and per device with no sync, and clearing site data wipes it, so Export is the only backup. `updateProgress()` in `app.js` owns the `watchedAt` rules that used to be in `server.js`, and `validateSave()` owns the import validation.
+**Watch history lives in the browser, not on the server** (`localStorage` key `mcu-field-log-progress`). That is what allows a static public deploy, because every visitor gets their own save and nobody can overwrite anyone else's. The trade-off is that it is per browser and per device with no sync, and clearing site data wipes it, so Export is the only backup.
 
-On first load, `migrateFromServerOnce()` pulls an existing `data/progress.json` in through `/api/progress` and marks itself done in `localStorage`. That only succeeds against the local Express server; on the hosted site the fetch fails and a new visitor starts empty, which is correct. **`data/progress.json` is now legacy** — it's the migration source and nothing writes to it.
+The save is a flat object keyed by entry id (movie, episode, or series id for a series-level rating), plus one special key `_watching`. An entry is `{ watched?, watchedAt?, rating? }`, rating 0 to 10 in 0.5 steps. A few entries still carry `postCreditSeen` from a feature that was removed. Nothing reads it, and nothing may drop it either. Purely local UI preferences, like the artwork density toggle, get their own `localStorage` keys rather than a slot in the save.
 
-### Legacy save file (`data/progress.json`)
+`updateProgress()` in `app.js` owns the `watchedAt` rules that used to live in `server.js`. `validateSave()` owns the import validation. `readSave()` returns an empty object if the stored JSON is corrupt, so a bad save cannot take the app down.
 
-Flat object keyed by entry id (movie, episode, or series id for a series-level rating). Shape: `{ watched?, watchedAt?, rating? }`, rating 0–10 in 0.5 steps. A few entries also carry `postCreditSeen` from an earlier feature — nothing reads it, but nothing may drop it either. Gitignored and personal — **never hand-edit, and back it up before any test that writes progress.** Purely local UI preferences (e.g. the artwork density toggle) go in `localStorage`, not here.
+**Export and import** sit in the `.save-utility` row at the foot of the menu, deliberately not a card, since housekeeping should not outrank the phases. Both halves run entirely in the browser and neither touches the network.
 
-**Export / import** (the `.save-utility` row at the foot of the menu — deliberately not a card, since housekeeping shouldn't outrank the phases). Export is client-side: it re-fetches `/api/progress` and downloads `mcu-field-log-<date>.json`, a wrapper of `{ app, version, exportedAt, progress }`. Import posts to `/api/progress/import`, which accepts either that wrapper or a bare copy of `progress.json`, validates the payload **whole** (any bad entry rejects the lot — never a half-written save), copies the current file to `data/progress.backup.json`, then writes. Unknown keys on an entry are copied through deliberately. The page reloads afterwards rather than re-syncing each screen.
+- Export reads `localStorage` and downloads `mcu-field-log-<date>.json`, a wrapper of `{ app, version, exportedAt, progress }`.
+- Import reads the chosen file in the browser. `progressFromFile()` accepts either that wrapper or a bare save object. `validateSave()` checks the payload **whole**, so one bad entry rejects the lot and a corrupt file can never half-overwrite a good save. Unknown keys on an entry are copied through deliberately. A `confirm()` then shows the watched and rated counts of both saves before anything is replaced.
+- The save being replaced is copied to the `mcu-field-log-progress-previous` key as a **single undo step**, kept only until the next import. There is no server-side backup file any more.
+- The page reloads afterwards rather than re-syncing each screen.
+
+**`data/progress.json` is legacy.** It is gitignored, personal, and sits outside `public/` so it is never served. Nothing writes to it. Its only remaining job is migration. On first load `migrateFromServerOnce()` pulls it in through the read-only `GET /api/progress` and marks itself done in `localStorage`. That only succeeds against the local Express server, and it is skipped unless the hostname is localhost, which keeps a failed request out of every public visitor's console. On the hosted site a new visitor starts empty, which is correct. Never hand-edit it.
 
 ### Frontend (`public/app.js`, single file, no framework)
 
@@ -83,7 +88,7 @@ A **sticky app bar** sits above every screen with the overall watched count; the
 
 ### Design system
 
-`public/styles.css` is the **Ink Navy** stylesheet, copied verbatim from `design_handoff_mcu_field_log/mcu-field-log-v4.css`. **Don't edit it** — local changes go in `public/app-tweaks.css`, which loads after, so a newer handoff can be dropped straight in.
+`public/styles.css` is the **Ink Navy** stylesheet, copied verbatim from `design_handoff_mcu_field_log/mcu-field-log-v4.css`. **Don't edit it**. Local changes go in `public/app-tweaks.css`, which loads after, so a newer handoff can be dropped straight in.
 
 One override lives there that the character files depend on: `.phase-record-body` drops the handoff's `max-width: 70ch` and sets `white-space: pre-line`. The width cap left most of the panel empty on a wide screen, and `pre-line` is what turns the newlines in `characters.json` into one line per film. Removing either will visibly break every personnel file.
 
@@ -97,144 +102,236 @@ Disclosure panels use `aria-expanded` on the button plus a hidden body (`bindRev
 
 `scripts/fetch-artwork.js` looks up every title and writes `art` blocks. The key lives in **`tmdb.key`** (gitignored; `tmdb.key.example` is the committed template).
 
-- Only path fragments are stored; images always load from TMDB's CDN. **TMDB's terms cap caching at six months** — re-run with `--refresh` periodically.
+- Only path fragments are stored; images always load from TMDB's CDN. **TMDB's terms cap caching at six months**, so re-run with `--refresh` periodically.
 - Sizes: `w92` phase-list thumb, `w154` resume poster, `w342` hero poster, `w1280`/`w780` backdrop.
-- Images are **never** filtered, tinted or overlaid — status is signalled by a ring on the `.art` box instead.
+- Images are **never** filtered, tinted or overlaid. Status is signalled by a ring on the `.art` box instead.
 - No artwork → a hashed monogram tile (`.art--poster.no-photo--tN` + `.art-none` initials). Everything works without TMDB.
 - Detail pages and the series pop-up use the **10c card wash**: `.card-wash` as first child of `.dossier`/`#modal-content`, which carries `has-wash`. The alternative `.title-hero--bleed` (10b) is a one-class swap if bright backdrops wash out. Never add `overflow: hidden` to the modal.
 - Artwork can be toggled off per-user via the density chip (`is-compact` on `#case-files`, persisted in localStorage).
 
 ### Two-tier spoiler system
 
-Each `watchFor` item has two payloads. **Plot & context** (brass panel) holds the deep dive plus each item's `thisFilm`; **Spoilers for future films** (crimson panel) holds each `future` with its `spoils` tag. Don't merge them — finishing one title must not spoil a different one.
+Each `watchFor` item has two payloads. **Plot & context** (brass panel) holds the deep dive plus each item's `thisFilm`; **Spoilers for future films** (crimson panel) holds each `future` with its `spoils` tag. Don't merge them. Finishing one title must not spoil a different one.
 
-The chip row under "People & things to watch for" is inside **Before you watch**, so it carries the same no-spoilers contract as the rest of that panel: a name printed there is a promise that the name alone gives nothing away. When it does, set `nameIsSpoiler: true` rather than dropping the item — the payoff still gets written down, just behind a toggle.
+The chip row under "People & things to watch for" is inside **Before you watch**, so it carries the same no-spoilers contract as the rest of that panel: a name printed there is a promise that the name alone gives nothing away. When it does, set `nameIsSpoiler: true` rather than dropping the item. The payoff still gets written down, just behind a toggle.
 
 ### Character database (`public/data/characters.json`)
 
 `{ characters: [ { id, name, type?, description, titles, image?, imagePosition?, phases } ] }`, in curated display order (roughly heroes → supporting → antagonists), with the places and organisations appended after the people.
 
-- `type` — **absent means a person**, which is how the original 144 files stay untouched. The only other values are `"org"` (a group of people: S.H.I.E.L.D., the Skrulls, the Kree Empire, Mutants, the Celestials) and `"place"` (Wakanda, Vormir, the Quantum Realm). The validator rejects anything else. 29 such files were added in August 2026, listed on the `Show: All / People / Places & groups` filter on the database screen.
+- `type`. **Absent means a person**, which is how the original 144 files stay untouched. The only other values are `"org"` (a group of people: S.H.I.E.L.D., the Skrulls, the Kree Empire, Mutants, the Celestials) and `"place"` (Wakanda, Vormir, the Quantum Realm). The validator rejects anything else. 29 such files were added in August 2026, listed on the `Show: All / People / Places & groups` filter on the database screen.
 - **Org and place files get no portrait, deliberately.** The design system reserves the 1:1 crop for a person, so they fall through to the monogram tile, and `.no-photo--org` / `.no-photo--place` in `app-tweaks.css` relabel its caption strip from "no photo on file" to the type. `initialsFor()` in `app.js` handles dotted acronyms (S.H.I.E.L.D. → SH) and skips leading "the"/"of"/"a"/"an" (The Void → VO), so don't reintroduce a naive first-two-words split. Collisions exist and are tolerated (Vormir and The Void both give VO; Sakaar and S.A.B.E.R. both give SA).
 - Adding these resolved exactly **one** `watchFor` chip ("Hydra" on The First Avenger). The matcher needs an exact match against a `/`-segment of the name, so descriptive chips like "What S.H.I.E.L.D. actually is" still need an explicit `characterId`. The user has decided **not** to do that pass.
-- The screen is called **Database**, not "Character Database" — a label that no longer suits half of it. "Reference Database" was tried and rejected.
+- The screen is called **Database**, not "Character Database", a label that no longer suits half of it. "Reference Database" was tried and rejected.
 
 
-- `description` — 1–2 sentences at introduction/premise level. Never twists, deaths or late turns.
-- `titles` — single-line array of entry ids in narrative order; powers the "Browse by film or series" cast filter, which is collapsed behind a spoiler warning. Unreleased titles excluded.
-- `phases` — map of phase id → paragraph. Full spoilers for *that* phase are fine; never leak a later phase into an earlier entry.
+- `description`. 1 to 2 sentences at introduction/premise level. Never twists, deaths or late turns.
+- `titles`. Single-line array of entry ids in narrative order; powers the "Browse by film or series" cast filter, which is collapsed behind a spoiler warning. Unreleased titles excluded.
+- `phases`. Map of phase id → paragraph. Full spoilers for *that* phase are fine; never leak a later phase into an earlier entry.
 - **Format: one film per line, each opening with the full title and a colon.** `"Iron Man: kidnapped in Afghanistan…\nThe Incredible Hulk: one scene at the end…"`. The lines are real `\n` characters in the JSON string, and `.phase-record-body { white-space: pre-line }` in `app-tweaks.css` is what renders them as separate lines. Films go in narrative order within the phase. All 288 paragraphs were converted to this in August 2026; a paragraph with no newline is either a single-film phase or something that got missed.
 - **Use the film prefix even when the character does not appear in it.** "Hawkeye: she does not appear, but the series runs on her death." is right; a bare paragraph explaining the absence is not. Natasha's Phase Four, T'Challa's Phase Five and Pietro's Phase Four are the worked examples.
 - **Every film in `titles` should be named in that phase's paragraph.** 58 were missing before the August 2026 pass, most of them cameos and post-credits scenes that the prose had skipped: every Guardian is credited in Love and Thunder, Riri's own series was absent from her file, both Maximoff twins were missing the Winter Soldier post-credits cell. Not every gap is real, though. Fury's early films are covered collectively rather than one line each, which is fine.
 - **Moving a film between phases silently breaks character files.** A character's `phases` key is the phase the paragraph is *filed under*, not the phase the film is in, so re-bucketing a title leaves every mention of it showing on the wrong row, one phase too early or late. That happened to 45 paragraphs when Captain Marvel, the Ant-Man films, Wakanda Forever, Love and Thunder, Quantumania, the Holiday Special and Deadpool & Wolverine were moved. **After any re-bucketing, re-check** that each `phases` key matches where its film now lives, and that `titles` is still in narrative order. Fixing it is not a blind key rename: if a paragraph already exists at the destination the two must be merged, oldest film first, or one silently overwrites the other.
 - The file page shows **all six phases** for every character, so the list itself reveals nothing. Row state is driven by the **user's own progress**: brass `has-record` for a phase they've finished, crimson `is-unseen` with a "NOT SEEN" chip otherwise.
 - Roster threshold: somewhat-important through really-important. Recurring side characters in, one-scene cameos out.
-- `image` → `public/img/characters/<id>.<ext>`. Portraits are full colour (greyscale was removed). `imagePosition` (CSS `object-position`) shifts the square crop — use `"top"` for tall portraits rather than re-cropping files. Most images came from the MCU Fandom wiki; note their served files are often WebP regardless of extension.
+- `image` → `public/img/characters/<id>.<ext>`. Portraits are full colour (greyscale was removed). `imagePosition` (CSS `object-position`) shifts the square crop. Use `"top"` for tall portraits rather than re-cropping files. Most images came from the MCU Fandom wiki; note their served files are often WebP regardless of extension.
 
 ### "Currently watching" flags
 
-Up to 2 units flagged; ids in `progress.json` under `_watching`. A fixed corner dock shows a chip per flag on every screen (the label is dropped when two are flagged so both fit). Flagging is a detail-page button plus a pin on each phase-list row. Marking a flagged unit watched **auto-advances** the flag to the next unwatched unit in global narrative order; marking anything watched with no flags bootstraps one. Unwatching never touches flags.
+Up to 2 units can be flagged, and the ids live in the browser save under the `_watching` key. `validateSave()` enforces the cap of 2 on import. A fixed corner dock shows a chip per flag on every screen, and the label is dropped when two are flagged so both fit. Flagging is a detail-page button plus a pin on each phase-list row. Flagging a third drops the oldest.
+
+Marking a flagged unit watched **auto-advances** the flag to the next unwatched unit in global narrative order. That is `nextUnwatchedAfter()`, which walks `flatUnitIds()` and skips anything carrying `released: false`. Marking anything watched with no flags set bootstraps one. Unwatching never touches flags.
 
 ### Series pop-up
 
-Episodes have checkboxes (`.ep-check`) so you can tick them without leaving; `.season-mark` bulk-toggles a season and **needs `stopPropagation`** since it sits inside the header button. Ticking anything redraws the phase list behind the modal. **Single-season shows render their episodes directly with no accordion** — the bulk toggle moves to the `.episodes-head` heading.
+Episodes have checkboxes (`.ep-check`) so you can tick them without leaving; `.season-mark` bulk-toggles a season and **needs `stopPropagation`** since it sits inside the header button. Ticking anything redraws the phase list behind the modal. **Single-season shows render their episodes directly with no accordion**, and the bulk toggle moves to the `.episodes-head` heading.
 
 ### watchFor → character linking
 
 Tags render as links to `#/character/<id>` when they resolve. Order: an explicit `characterId` always wins; otherwise any `/`-segment of the name (parentheticals stripped, case-insensitive) matching a character's name. Unmatched names (concepts like "The Tesseract") stay plain chips on purpose.
 
-## House writing style
+## Writing style
 
-The user is rewriting all of this by hand because the original was AI-written and obviously so. Match these or the work gets thrown away:
+This applies to every bit of text that ships in `public/data/*.json`. It does not apply to chat messages.
 
-- **No em dashes.** Commas or full stops. `npm run check` counts what's left, per phase.
-- **Cut the trailing clause that re-frames a fact instead of adding one.** This is the note the user has given most often, and it has three shapes, all of which they delete on sight:
-  - meta-commentary about the film as a film — "the film skips past how he got there", "which people still argue about", "and the series never pretends otherwise"
-  - telling the reader what to conclude — "which is the film's clearest measure of what the gap cost", "which is the whole argument of the film in one line"
-  - sweeping thematic claims that can't be checked — "half of Phase Four is people arguing over what he left behind"
+The user is rewriting the whole tracker by hand because the original text was obviously AI-written. Text that reads like AI gets thrown out. The voice to match is Captain America: The First Avenger, Iron Man, Iron Man 2, Thor: The Dark World, Guardians of the Galaxy, and Loki: Season 2. Read them before writing anything new.
 
-  The test: if the clause could be deleted without losing a fact, delete it. There is usually *some* truth in these, which is exactly why they read as filler rather than as wrong.
-- **But do not over-apply the rule above.** Enforcing it on every single sentence is its own failure, and the user has called out the result as formulaic. It bans empty re-framing clauses, not stating significance. "This cameo brings Charlie Cox's Daredevil into the main timeline" is a fact and belongs in the text; "which is the whole argument of the film in one line" is filler. When something matters, say plainly why, once.
-- **Write informative, not literary.** The user rewrote a whole Spider-Man pass in August 2026 because the prose "didn't feel natural", and what they cut was consistent:
-  - compressed set-ups landing on a dry ironic beat: "he gives EDITH away to the first one who asks, and the last act is him taking it back"
-  - clipped fragments used as a tic: "Beck is lying." / "Not just his identity. Him."
-  - conclusions left implied for the reader to infer
-  What they wrote instead is plain declarative exposition with explicit connective glue ("In a tragic twist", "To fight these charges", "Ultimately"), stating outright what happened and why it matters. Prefer that.
-- **When the user hands you draft prose for a field, it is a brief, not raw material.** Their structural choices are deliberate and stay; their vocabulary is editable. This was the main correction of the Phase One pass in August 2026. Given a draft opening "The introduction to the star spangled man, the sentinel of liberty, the man in tights, the first avenger", the assistant deleted the nickname list without mentioning it and rewrote the rest into its own register. The user's reaction: "I didn't type it out for no reason." Keep the lists, the direct address ("If you have any Marvel knowledge at all you may recognise the surname"), the instruction to the reader ("Notice how erratic he is"), the "we meet / we get introduced" framing. Fix spelling, names, em dashes, and repetition.
-- **But do not over-correct into transcription either.** Told to preserve their wording, the assistant then kept a draft that opened three consecutive sentences with "We also", and the user flagged that too: "my vocab is very limited and bland... maybe find that medium." The repetition was the problem, not the word. The fix is to vary how each sentence *opens* while leaving the content plain, which is exactly what the Phase Four entries already do (`Introduces…` / `It also brings back…` / `Most of the series is…` / `By the end…`). Read a few of those before writing a new one.
-- **What the user edits back out of your prose**, from the same pass, all three worth internalising:
-  - figurative prepositions flattened: "the equipment Project Rebirth runs on" became "the equipment **for** Project Rebirth"
-  - decorative verbs plained: "Bucky Barnes and Peggy Carter **arrive alongside** him" became "**are also introduced** alongside him"
-  - **and the opposite failure, from the Thor: The Dark World pass:** told to trim, the assistant went austere, and the user edited colour back in. "Frigga dies here" became "It also features the tragic death of Thor's mother, Frigga". "The Aether is introduced" became "The story centers on the Aether, a red liquid power source". "Loki's real feelings surface for once" became "For once, Loki's genuine grief and feelings break through his usual deceptive performance". They also split long sentences into shorter signposted ones. Descriptive adjectives and explicit connective glue are wanted; what is not wanted is the re-framing clause. Those are different things.
-  - rhetorical scaffolding cut outright: "Notice how erratic he is… **and then notice what he actually delivers:** he builds…" lost the whole middle clause and became two plain sentences. Give the instruction once, then state the facts.
-- **Spell out full titles** on first mention in a field: "Spider-Man: Homecoming", not "Homecoming".
-- **`beforeWatch.context` is orientation, not a second summary.** What the reader needs to know *going in*: when it's set, what state the characters are in, what format surprises to expect. Not a preview of what happens.
-- **Don't write a `future` payload that continues a sentence from `thisFilm`.** They render in separate panels and most readers open one or neither. Each must stand alone — "Passing through Wanda's barrier is what gives Monica her powers", never "Those crossings are what give her powers".
+### The voice
+
+- Write plain and informative, the way a fan would explain the film to a friend who has not seen it. Some fun is fine when the chance comes up naturally, like the opening of the "Why it matters" section on Captain America: The First Avenger, and especially when the user asks for it in their prompt. Don't force it.
+- Say what happens and why it matters. Say it once, in plain words, and don't leave it for the reader to work out.
+- Descriptive detail is good. "A red liquid power source" and "a white three piece suit" are facts. Evaluative words are not wanted (stunning, incredible, iconic, masterful).
+- Link sentences with plain connectors like "after that", "by the end", "because of this", "for once". Vary how sentences open, and never start three in a row the same way.
+- Mix sentence lengths. Mostly normal sentences. No strings of tiny fragments, and no sentence that runs on for five clauses.
+- Starting a sentence with "and" or "but" is fine. Casual grammar is fine.
+- Write plots in present tense, like the Phase One plots.
+
+### Hard rules
+
+- No em dashes. Use a comma, a full stop or brackets. `npm run check` counts what's left.
+- No colons in prose. Setup, colon, payoff is one of the clearest AI tells. Write two sentences instead. `npm run check` does not catch these.
+- No "not X, but Y" or "not just X, it's Y" constructions. This includes the two-sentence version ("Not a weapon. A recording of..."). Say what the thing is.
+- No groups of three out of habit ("Not enhanced, not powerful, and he wins"). Use the real number of things.
+- No "X and also Y" constructions.
+- No rhetorical questions. No fake engagement ("Let's take a look", "Buckle up", "Join me").
+- No intensifiers: absolutely, totally, completely, incredibly, extremely, utterly, truly, deeply.
+- No bold, italics or emoji inside data text.
+- Straight quotes and apostrophes only. No curly ones.
+- Spell out full titles on first mention in a field. "Spider-Man: Homecoming", not "Homecoming".
+
+### What the user deletes on sight
+
+1. **A clause tacked onto a fact that re-frames it instead of adding to it.** This is the note the user gives most. It comes in three shapes.
+   - Commentary about the film as a film: "which people still argue about", "and the film refuses to simplify either".
+   - Telling the reader what to conclude: "which is the whole argument of the film in one line", "is a good measure of him".
+   - Big claims nobody can check: "half of Phase Four is people arguing over what he left behind".
+
+   The test is to delete the clause and see if a fact went with it. If not, it stays deleted. Don't over-apply this, though. Stating significance plainly is fine. "This cameo brings Charlie Cox's Daredevil into the main timeline" is a fact and belongs in the text.
+2. **Opinions and reviews.** "The car journey is the best scene in the film." "Widely rated one of the best villains in the run." "The villain most people name first." The tracker describes films, it does not review them. No "fans say", "many consider" or "critics noted" either.
+3. **Literary tics.** A compressed setup that lands on a dry ironic beat ("he gives EDITH away to the first one who asks, and the last act is him taking it back"). Clipped fragments used for effect ("Beck is lying." / "Not just his identity. Him."). Punchline one-liners ("He is not exaggerating."). Metaphors standing in for facts ("He is Tony's fear given a body", "this scene is load-bearing").
+4. **A bare one-line fact dropped on its own.** "Frigga dies here" was cut. Give the fact a full sentence that connects to what is around it.
+5. **Fancy wording where plain wording works.**
+   - "the equipment Project Rebirth runs on" became "the equipment for Project Rebirth"
+   - "Bucky Barnes and Peggy Carter arrive alongside him" became "are also introduced alongside him"
+6. **Going bare when told to trim.** The user edited colour back into Thor: The Dark World.
+   - "The Aether is introduced" became "The story centers on the Aether, a red liquid power source"
+   - "Loki's real feelings surface for once" became "For once, Loki's genuine grief and feelings break through his usual deceptive performance"
+
+   Descriptive adjectives and connectors are wanted. Re-framing clauses are not. Those are different things.
+7. **Rhetorical scaffolding.** "Notice how erratic he is, and then notice what he actually delivers: he builds..." lost the whole middle and became two plain sentences. Give an instruction once, then state the facts.
+
+### Patterns the user found in finished entries
+
+The user went back through entries, including ones already marked done, and found these. They are patterns, not phrase bans. Swapping in a synonym ("takes it and runs" for "runs with it") is the same mistake.
+
+1. **Abstract things that move.** Ideas, films, scenes, facts and stories do not arrive, run, land, lean, stand, reach back or pick things up. Only people and physical things do.
+   - "Natasha Romanoff arrives as Black Widow, and a much clearer picture of how S.H.I.E.L.D. operates arrives with her."
+   - "This film picks that up and runs with it."
+   - "Two things do reach back."
+   - "the whole series lands on..."
+   - "It leans on the collapse of the organisation..."
+
+   Make a person or an event the subject instead. "Natasha Romanoff is introduced as Black Widow. Through her, we see much more of how S.H.I.E.L.D. works." Literal movement is fine. "Thor lands in New Mexico" is a fact.
+2. **Empty closing tags.** A short, vague add-on at the end of a sentence that sounds like it means something but names nothing. It usually points back at "it", "there" or "him".
+   - "Runs alongside Iron Man rather than after it, and takes nothing from it."
+   - "and leaves it there"
+   - "which is what the five years later cost him"
+
+   Either cut it or say the actual fact. "Which is what the five years later cost him" should just say what happened. "In Avengers: Endgame, his whole family disappears in the Snap." The information is fine. Hinting at it instead of saying it is the problem.
+3. **"Rather than" contrasts.** Describing something by what it is not. "Runs alongside Iron Man rather than after it." "As a consultant rather than as a member of anything." This is a cousin of the banned "not X, but Y". Only use "rather than" when a character actually chooses between two options in the story. Otherwise say what the thing is.
+4. **Announcing instead of saying.** A sentence whose only job is to set up the next one. "Two things do reach back." "One thing worth knowing." "One piece of housekeeping." Cut it and start with the first real fact. Watch for the emphatic "do" or "does" ("two things do reach back", "he does survive"), which fakes a contrast with something nobody said.
+5. **Critic vocabulary.** Words about how the franchise is built, instead of what happens in it. The reader wants the story, not the engineering.
+   - Avoid: the run (as in "the best villain in the run"), thread, lands (as in "the series lands on"), leans on, stands as, deliberate or deliberately, fresh (as in "worth having fresh"), runs with.
+   - Watch for overuse: picks up (as in "picks up right after Civil War"), built on. These are normal phrases a person would say once. They read as AI when every entry uses them.
+
+### Words and phrases to avoid
+
+From Wikipedia's "Signs of AI writing" guide plus what the user has already cut. Using one of these once is not a crime, but each one is a flag.
+
+- **Puffing up importance:** testament to, stands as, serves as, plays a vital/key/pivotal role, crucial, key turning point, watershed, landmark, iconic, legendary, lasting/enduring legacy, profound, indelible, leaves a mark, cements, solidifies, underscores, highlights the importance of.
+- **AI vocabulary:** delve, tapestry, intricate, nuanced, multifaceted, interplay, compelling, resonate, showcase, foster, bolster, embark, unravel, grapple with. "Journey" and "navigate" only when literal. "Realm" only for the nine realms and the Quantum Realm.
+- **Editorializing:** it's worth noting, it's important to remember, notably, interestingly, importantly, remarkably, unusually for a superhero film.
+- **Essay transitions:** moreover, furthermore, additionally, in addition, that said, in summary, overall.
+- **"-ing" tails that add an opinion to the end of a sentence:** ", highlighting...", ", underscoring...", ", cementing...", ", reflecting...", ", setting the stage for...", ", paving the way for...".
+- **Trailer and cliché plot talk:** from the shadows, comes to a head, quietly (as in "quietly building"), looming threat, shocking, sets the stage, lays the groundwork, the stakes have never been higher.
+- **"The film" doing human things:** the film argues, the film refuses, the film insists, the film is careful that. Describe what happens on screen instead.
+- **Stock phrases the user has banned:** go in cold, dive into, unleash, game-changing.
+
+### Field rules
+
+- `summary` is one spoiler-light sentence. No ordering or release notes in it. Those go in `orderNote`.
+- `beforeWatch.context` is orientation, not a second summary. When it is set, what state the characters are in, what format surprises to expect.
+- `deepDive.plot` is a real recap in order, roughly the length of the Phase One plots, with no paragraph breaks. Introduce people normally ("Stephen Strange, a surgeon, ..."), not newspaper style ("Brilliant but arrogant surgeon Stephen Strange").
+- `significance` says what the title adds to the bigger story, plainly. It should not open on a bare one-liner.
+- `orderNote` says why the title sits where it sits. After any reorder, re-read every `orderNote` in that phase.
+- `watchFor` payloads each stand alone. `future` never continues a sentence from `thisFilm`. They render in separate panels and most readers open one or neither, so each has to make sense on its own. Write "Passing through Wanda's barrier is what gives Monica her powers", never "Those crossings are what give her powers".
+- **When the user gives you draft prose, it is a brief, not raw material.** Keep their structure, their lists, their direct address to the reader ("If you have any Marvel knowledge at all you may recognise the surname") and their "we meet / we get introduced" framing. Fix spelling, names, em dashes and repetition. But don't transcribe it either. If three sentences in a row start with "We also", vary the openings and keep the content plain, the way the Phase Four entries do (`Introduces...` / `It also brings back...` / `Most of the series is...` / `By the end...`).
+
+### Example
+
+Bad (from the old Black Panther entry):
+> T'Challa's cousin, abandoned in Oakland after his father was killed by T'Challa's. His grievance is legitimate and his method is not, and the film refuses to simplify either.
+
+Good:
+> Erik is T'Challa's cousin. His father N'Jobu was killed by T'Challa's father, T'Chaka, and Erik was left behind in Oakland as a child. He comes to Wakanda to take the throne and use its weapons to arm oppressed people around the world.
+
+The bad version uses a re-framing clause, "the film" doing human things, and a verdict instead of facts. The good one just says what happened.
+
+### Before you hand text back
+
+Run the `writing-check` skill on every field you wrote or changed. Wikipedia's guide makes the point that these words and patterns are signs of a deeper problem, not the problem itself. Swapping out "pivotal" does not fix a plot that is three sentences long and vague. Thin content and wrong facts matter more than any single word.
 
 ## Content conventions
 
-- `summary` — one spoiler-light sentence; anything more revealing goes in `deepDive.plot`.
+- `summary`. One spoiler-light sentence; anything more revealing goes in `deepDive.plot`.
 - Only add month/season precision to `inUniverseSetting` when confirmed.
 - `postCredit.skipNote` is rare and deliberate.
-- `spoils` — slash-separated, and each segment should be an **exact entry title** ("She-Hulk: Attorney at Law/Echo"), since the tag is what tells the reader which title they're about to have spoiled. `Loki` is the one established shorthand. A film that isn't in the tracker (Daredevil: Born Again, Wonder Man, the Sony Spider-Man films) can be named in the prose but must not go in the tag. Nothing validates this, so it drifts.
-- When editing `public/data/movies.json` programmatically: entries are **not** uniformly formatted (hand-edits have left some as `},{` on one line). Find entry bounds by brace-matching from the nearest `{` before `"id"`, never by assuming a newline. Insert new keys **before** the `summary` line — on unreleased entries `summary` is last and has no trailing comma.
+- `spoils`. Slash-separated, and each segment should be an **exact entry title** ("She-Hulk: Attorney at Law/Echo"), since the tag is what tells the reader which title they're about to have spoiled. `Loki` is the one established shorthand. A film that isn't in the tracker (Daredevil: Born Again, Wonder Man, the Sony Spider-Man films) can be named in the prose but must not go in the tag. Nothing validates this, so it drifts.
+- When editing `public/data/movies.json` programmatically: entries are **not** uniformly formatted (hand-edits have left some as `},{` on one line). Find entry bounds by brace-matching from the nearest `{` before `"id"`, never by assuming a newline. Insert new keys **before** the `summary` line, because on unreleased entries `summary` is last and has no trailing comma.
 
 ## Licensing / legal posture
 
 - TMDB free tier is **non-commercial**. Ads, affiliate links or donations would require a separate commercial agreement with TiVo. The user has decided to keep it free.
-- Attribution is mandatory and lives in the footer. The **official TMDB logo** must be used as a file, never redrawn — TMDB's `blue_short` SVG sits at `public/assets/tmdb.svg`, sized by `.tmdb-logo` in the handoff stylesheet and never recoloured or filtered.
-- Character portraits are studio stills sourced from fan wikis — the same posture as comparable fan trackers. Fine for a free project; would need revisiting if monetised.
+- Attribution is mandatory and lives in the footer. The **official TMDB logo** must be used as a file, never redrawn. TMDB's `blue_short` SVG sits at `public/assets/tmdb.svg`, sized by `.tmdb-logo` in the handoff stylesheet and never recoloured or filtered.
+- Character portraits are studio stills sourced from fan wikis, the same posture as comparable fan trackers. Fine for a free project; would need revisiting if monetised.
 
 ## Workflow
 
 - **Always ask before committing.** Pushing needs its own separate ask.
-- The user's own small content tweaks (image swaps, data edits) don't need their own commit — let them ride along.
-- **Back up `data/progress.json` before any test that writes progress**, and restore it afterwards.
-- The user welcomes unprompted suggestions — offer them.
-- **The MCU Fandom wiki is the other source, and it works.** `marvelcinematicuniverse.fandom.com` has an **Appearances** list on every location, organisation and character page, broken down by film and series, plus per-scene history sections. It caught three scenes missed from the location files (Bruce and the Ancient One at the 2012 Sanctum in Endgame, the Thor: The Dark World mid-credits being on Knowhere, Doctor Strange passing through the Quantum Realm), corrected where the Shang-Chi mid-credits scene happens, and cut S.W.O.R.D. and the Kree Empire down to their real size. **WebFetch 402s on that host** — use the browser tools (`preview_start {url}` then `javascript_tool` to pull `<h2>/<h3>` sections). Roughly a third of page loads fail and succeed on a straight retry. It is fan-edited, so it beats recall but is not authoritative, and its prose is never copied.
+- The user's own small content tweaks (image swaps, data edits) don't need their own commit, so let them ride along.
+- **Anything that marks titles watched writes to the real browser save.** `data/progress.json` is no longer touched, so backing it up protects nothing. Export a copy from the menu before any test that writes progress, and import it back afterwards.
+- The user welcomes unprompted suggestions, so offer them.
+- **The MCU Fandom wiki is the other source, and it works.** `marvelcinematicuniverse.fandom.com` has an **Appearances** list on every location, organisation and character page, broken down by film and series, plus per-scene history sections. It caught three scenes missed from the location files (Bruce and the Ancient One at the 2012 Sanctum in Endgame, the Thor: The Dark World mid-credits being on Knowhere, Doctor Strange passing through the Quantum Realm), corrected where the Shang-Chi mid-credits scene happens, and cut S.W.O.R.D. and the Kree Empire down to their real size. **WebFetch 402s on that host**, use the browser tools (`preview_start {url}` then `javascript_tool` to pull `<h2>/<h3>` sections). Roughly a third of page loads fail and succeed on a straight retry. It is fan-edited, so it beats recall but is not authoritative, and its prose is never copied.
   - **Its biography sections mix film canon with tie-in comics and one-shots, and the prose does not flag which is which.** Only the citation number does. The Arnim Zola page states that Peggy Carter drugged the guards at Castle Kaufmann to free Erskine before the war, which is not in The First Avenger at all; it traces to *Captain America: First Vengeance*, a prelude comic. Check the reference before using a detail that you cannot place in the film yourself.
   - The **Appearances** list is the reliable part, but read the qualifiers: `(mentioned)`, `(logo)`, `(flashback)`, `(corpse)` and `(photo)` are all listed as appearances and rarely justify a line. Entries under an *Alternate Universes* heading are variants, not the main-timeline thing.
-- **Verify against TMDB rather than recall for anything checkable.** The project has a key in `tmdb.key` and every entry has an `art.tmdbId`, so episode titles, air dates and overviews are one fetch away: `https://api.themoviedb.org/3/tv/<id>/season/<n>?api_key=<key>`. This is not theoretical. Echo had four of five episode titles invented, Agatha All Along had eight of nine wrong *and shifted by one*, so nine episode plots written from those titles were all mis-assigned. Thor: Love and Thunder carried the Guardians Holiday Special's `tmdbId` and rendered its poster. Audit the whole file, not just the entry in hand — all three were found by sweeping every series and every id at once.
+- **Verify against TMDB rather than recall for anything checkable.** The project has a key in `tmdb.key` and every entry has an `art.tmdbId`, so episode titles, air dates and overviews are one fetch away: `https://api.themoviedb.org/3/tv/<id>/season/<n>?api_key=<key>`. This is not theoretical. Echo had four of five episode titles invented, Agatha All Along had eight of nine wrong *and shifted by one*, so nine episode plots written from those titles were all mis-assigned. Thor: Love and Thunder carried the Guardians Holiday Special's `tmdbId` and rendered its poster. Audit the whole file, not just the entry in hand, all three were found by sweeping every series and every id at once.
 - **Only correct what you are certain of; collect the rest into a list for the user.** Their instruction, after the Echo and Agatha errors. A confidently wrong "fix" is worse than leaving the original. This has already paid off twice: Pepper was credited in Civil War and does not appear (removed), Happy was credited and does appear (kept, line added).
 - **No paragraph breaks in `deepDive.plot`.** Decided August 2026 and settled. The Deep Dive body has no `white-space: pre-line`, so `\n\n` collapses silently; enabling it would be a CSS change affecting every body on every entry, and no existing entry has breaks, so a partial pass would look worse than none. Plots are read start to finish, unlike the character phase records that `pre-line` exists for.
 - **Do not put `\n` inside a `node -e` string in the shell.** Git Bash mangles the escape into a raw newline, which is invalid inside a JSON string literal and breaks the whole data file. It happened twice. Write the script to a file and run it with `node <path>` instead.
 
 ## Where the content rewrite has got to
 
-**Status as the user gave it on 19 September 2026, which overrides any broader claim elsewhere in this file.** Phase One is finished. Phase Two is finished apart from **Winter Soldier and Age of Ultron**. In Phase Three only **Infinity War, Captain Marvel and Endgame** have had the real pass, and even those were among the earliest and the user wants to re-read them. Phase Four is finished. **Phases Five and Six have had nothing done at all.** Every entry in Phases Three, Five and Six already carries a `plot`, `significance`, `context` and a `watchFor` list, so completeness checks will not find the gap: the older text is from the original AI pass and has not been through the user or the house style. Judge by whether it reads like Hawkeye, not by whether the fields are populated.
+### State
 
-The remaining work is deliberately being done **newest first**. The user is publishing around VisionQuest and expects arrivals to check the recent titles, not the 2008 ones, so Phase Five leads and Winter Soldier and Age of Ultron come last. Within that, the user wants to start at the **top of Phase Five with Moon Knight** and work forward, not cherry-pick.
+- **Phase One** is finished.
+- **Phase Two** is finished apart from **Captain America: The Winter Soldier** and **Avengers: Age of Ultron**.
+- **Phase Three** has had a real pass on **Infinity War, Captain Marvel and Endgame** only, and those were early enough that the user wants to re-read them.
+- **Phase Four** is finished, including Shang-Chi, which moved in from Phase Five.
+- **Phase Five** has had **Moon Knight** only.
+- **Phase Six** has had nothing.
 
-**Nothing goes public until the whole rewrite is finished.** The user will not ship a half-rewritten tracker: a reader who hits one hand-written entry and one obviously-AI entry will write the whole thing off, which defeats the point. Treat "is every phase done" as the release gate. WandaVision and The Falcon and the Winter Soldier are done to episode level: every episode has its own `deepDive.plot`, and several carry their own `watchFor`. Far From Home, No Way Home and Hawkeye had a second pass in August 2026. **Hawkeye is the best current example of the voice the user wants** — they called it "infinitely better" than the No Way Home pass done immediately before it, which they had largely rewritten. Its six episode plots are the model for episode-level `deepDive.plot`. Loki: Season 1 and Quantumania followed. **Loki: Season 2 is next** (narrativeOrder 8).
+Every entry in Phases Three, Five and Six already carries a `plot`, `significance`, `context` and a `watchFor` list, so a completeness check will not find the gap. The older text is from the original AI pass and has been through neither the user nor the house style. Judge an entry by whether it reads like the reference entries named in the Writing style section, not by whether its fields are populated. Phases Five and Six hold the last 22 em dashes, and `npm run check` reports the count per phase.
 
-Quantumania's `orderNote` is deliberately provisional: the user wants to re-order some of Phase Four once the rest of it is written, so it states the Loki-either-side reasoning and nothing more. **What If...? is threaded through `optionalViewing` one season at a time**, so a reader never gets pointed at a season that spoils films they haven't reached: S1 on Quantumania, S2 on Multiverse of Madness, S3 on Ironheart. **Phase Four is now finished** — Loki Season 2, Deadpool & Wolverine, Multiverse of Madness, Agatha All Along and Echo all had full passes in August 2026, with episode-level `deepDive.plot` throughout. **Phases Five and Six are the remaining work** and hold the last 22 em dashes (`npm run check` reports the count per phase).
+### How the remaining work is ordered
 
-**Re-bucketing within a phase is cheap; across phases is the expensive one.** Captain America: The Winter Soldier was moved to sit after both Guardians films in August 2026, so the Collector thread runs from The Dark World's mid-credits straight into Guardians of the Galaxy. Because it stayed inside `phase-2`, no character `phases` key moved and **not one `titles` array needed re-sorting** (the Winter Soldier and Guardians casts never overlap). The whole job was renumbering `narrativeOrder` and fixing two `orderNote` fields. Contrast the Phase Four and Five re-bucketing below, which broke 45 paragraphs.
+The rewrite is being done **newest first**. The user is publishing around VisionQuest and expects arrivals to check the recent titles rather than the 2008 ones, so Phase Five leads and Winter Soldier and Age of Ultron come last. Work forward through a phase rather than cherry-picking.
 
-**`orderNote` fields rot when anything moves, and they rot silently.** Iron Man's opened "Third here" when it is second, The Incredible Hulk's said "Fourth", and Hulk's also claimed it ran concurrently with Iron Man after the in-universe years changed. None of that is caught by `npm run check`. **After any reorder, read every `orderNote` in the affected phase**, not just the entry you moved.
+**Nothing goes public until the whole rewrite is finished.** A reader who hits one hand-written entry and one obviously AI-written entry will write the whole thing off, which defeats the point. Treat "is every phase done" as the release gate.
 
-**Phase One in-universe years were corrected in August 2026** to Iron Man 2009, The Incredible Hulk 2010, Iron Man 2 2010, Thor 2010, The Avengers May 2012. This is the user's scheme and it is internally consistent; it runs a year ahead of Marvel's own timeline book, which puts Iron Man in 2010. Do not "fix" it back.
+The user writes or corrects the content. The assistant does the structural pass, meaning expanding `watchFor`, splitting payloads, `characterId`, `nameIsSpoiler` and de-dashing, unless asked otherwise. The user then edits on top, so don't be precious about the wording.
 
-**`nameIsSpoiler` is now the standard tool for cameo and death cards**, not a rarity. The rule the user applies: if a name in the no-spoilers chip row would reveal that someone turns up, or that they die, hide the chip and keep the payloads. Worked examples across Phase One and Two: Nick Fury's post-credit on Iron Man, Tony Stark's final scene on The Incredible Hulk, Coulson and the Chitauri salvage on The Avengers, Pepper and Happy on Iron Man 3, Frigga and the Collector on The Dark World, and five separate cards on Guardians Vol. 2. An entry can legitimately end up with more hidden cards than visible ones.
+### Ordering rules that are settled
 
-**A second pass over Phase One started in August 2026, working forward from the beginning.** **Phase One is finished, and Phase Two is underway** (Iron Man 3, The Dark World, Guardians of the Galaxy, Guardians Vol. 2 all done). The user paused the early phases on 22 August 2026 and returned on 19 September. **Next up is Moon Knight, at the top of Phase Five.** Winter Soldier and Age of Ultron are the last two things to do, not the next two. Captain America: The First Avenger is the reference for how the user wants this collaboration to run: they supply draft prose per field, the assistant edits it rather than replaces it (see House writing style above), then they edit on top again. That entry gained `optionalViewing.note`, an Arnim Zola item and an Abraham Erskine item, and lost the Howling Commandos chip and a redundant "seventy years" item that duplicated Steve's. Two character files were added during that pass, `arnim-zola` and `abraham-erskine`; Erskine's `future` payload deliberately reaches past his single scene to everyone who later tries to rebuild the serum, at the user's suggestion, so he is not a one-line file.
+- **Re-bucketing inside a phase is cheap. Across phases is expensive.** A move inside one phase is just renumbering `narrativeOrder` and fixing the `orderNote` fields. A move between phases also breaks every character file that mentions the title, because a character's `phases` key is the phase the paragraph is filed under. Moving Shang-Chi from Phase Five to Phase Four needed nine character files changed, and those split three ways. Some paragraphs moved whole. Some had to be **split**, because the paragraph also held a line for a film staying behind. Some had to be **merged** into a paragraph that already existed at the destination. A blind key rename destroys the last group. Two `titles` arrays also needed re-sorting, because the move changed which film came first.
+- **`orderNote` fields rot when anything moves, and they rot silently.** `npm run check` does not catch it. After any reorder, read every `orderNote` in the affected phase, not just the entry you moved.
+- **Phase One in-universe years** are Iron Man 2009, The Incredible Hulk 2010, Iron Man 2 2010, Thor 2010, The Avengers May 2012. This is the user's scheme, it is internally consistent, and it runs a year ahead of Marvel's own timeline book. Do not "fix" it back.
+- **Secret Invasion sits before The Marvels.** Secret Invasion ends with Fury going back to space, and The Marvels has him already stationed there. Talos does not appear alive in The Marvels because Gravik kills him in Secret Invasion, so Secret Invasion has to come first.
+- **Quantumania's `orderNote` is deliberately provisional.** The user may re-order some of Phase Four once the rest of it is written, so it states the Loki-either-side reasoning and nothing more.
+- **What If...? is threaded through `optionalViewing` one season at a time**, so a reader is never pointed at a season that spoils films they have not reached. S1 on Quantumania, S2 on Multiverse of Madness, S3 on Ironheart.
 
-**Phases Four and Five were re-bucketed in August 2026.** Phase Four now runs WandaVision, Falcon, Far From Home, No Way Home, Hawkeye, Echo, Loki S1, Quantumania, Loki S2, Deadpool & Wolverine, Multiverse of Madness, Agatha. Phase Five opens Moon Knight, Shang-Chi, Eternals, She-Hulk. The reasoning the user gave: get Multiverse of Madness closer to WandaVision so Wanda's arc is not forgotten, and accept that Shang-Chi and Eternals drift further from their dates because nothing references them. They know it only closed the WandaVision gap from twelve entries to nine, and chose that over moving the film ahead of Loki, which would have broken the multiverse-rules-first ordering.
+### Content rules that are settled
 
-**Secret Invasion sits before The Marvels, and that is now settled.** Sources had genuinely disagreed, and the argument used was that Secret Invasion ends with Fury going back to space while The Marvels has him already stationed there. The test was whether Talos appears alive in The Marvels: he does not. Gravik kills him in Secret Invasion, so Secret Invasion must come first. Both the entry's `orderNote` and this note were updated in August 2026 to say so rather than hedge.
+- **`nameIsSpoiler` is the standard tool for cameo and death cards**, not a rarity. If a name in the no-spoilers chip row would reveal that someone turns up, or that they die, hide the chip and keep the payloads. An entry can legitimately end up with more hidden cards than visible ones.
+- **`public/data/characters.json` is done.** The files use the one-film-per-line format, carry no em dashes, and name every credited film. The user reviewed them in batches and approved the voice, so treat them as a reference sample rather than prose still waiting on a pass.
+- Two defects found in that file are worth knowing as a class of problem. One file opened with a scene the character is not in (Okoye, where her own `titles` already disagreed), and several paragraphs had words dropped mid-sentence or began mid-sentence with no opening clause. There is also **a second AI voice** in about a dozen files, flat past-tense narration unlike the rest (Maria Rambeau, Yon-Rogg, Goose, Ebony Maw, Cull Obsidian, the Collector). That pocket carried the broken sentences, so if more of it surfaces, read it closely.
 
-**`public/data/characters.json` is done.** All 144 files were rewritten in one pass in August 2026: 288 phase paragraphs plus 24 descriptions, converted to the one-film-per-line format, de-dashed from 268 em dashes to zero, and every credited film now named. The user reviewed it in batches and approved the voice, so **treat these files as the reference sample alongside Hawkeye, not as prose still awaiting a pass.**
+### Known stale data
 
-That pass turned up three defects worth knowing about, because they suggest the class of thing still hiding elsewhere: Okoye's file opened with a Civil War scene she is not in (that was Ayo, and her own `titles` already disagreed), Yon-Rogg's paragraph had words dropped mid-sentence ("were sent to Earth.Mar-Vell and steal"), and the Collector's Phase Three began mid-sentence with no opening clause. There is also **a second AI voice** in about a dozen files, flat past-tense narration unlike the rest (Maria Rambeau, Yon-Rogg, Goose, Ebony Maw, Cull Obsidian, the Collector) — that pocket carried both broken sentences, so if more of it surfaces, read it closely.
-
-The user writes or corrects the content; the assistant does the structural pass (expanding `watchFor`, splitting payloads, `characterId`, `nameIsSpoiler`, de-dashing) unless asked otherwise. They then edit on top, so don't be precious about the wording.
-
-**Known stale data, deliberately deferred.** `spiderman-4` (Spider-Man: Brand New Day) is still `released: false` with no `watchFor` or `deepDive` and a placeholder summary. TMDB gives its release date as **2026-07-29**, so the stored "July 31, 2026" is wrong as well. While the flag is false the entry is excluded from watched-count denominators, so completion percentages are understated for anyone who has seen it. **The user knows and has chosen to leave it** until the Phase Five and Six pass reaches it in order. Do not fix it out of turn.
-
-**VisionQuest is the deadline.** TMDB has it at **first air date 2026-10-14**, one season, **8 episodes**, weekly, status still "In Production" as of 19 September 2026. Episodes 1 to 3 have dates (14, 21, 28 October); the rest do not. **TMDB lists no episode titles and no overviews** — they are placeholders reading "Episode 1", "Episode 2" and so on. Do not invent any; that is exactly how the Echo and Agatha All Along errors happened. The entry needs its `seasons` wrapper, the `released` flip and real content once the show actually airs.
+- **`spiderman-4` (Spider-Man: Brand New Day)** is still `released: false` with no `watchFor` or `deepDive` and a placeholder summary. TMDB gives its release date as 2026-07-29, so the stored "July 31, 2026" is wrong as well. While the flag is false the entry is excluded from watched-count denominators, so completion percentages are understated for anyone who has seen it. The user knows and has chosen to leave it until the Phase Five and Six pass reaches it in order. Do not fix it out of turn.
+- **VisionQuest has started airing and the entry has not caught up.** As of 24 October 2026 TMDB has it as a returning series, one season, 8 episodes, first aired 2026-10-13, with episodes dropping in pairs. Episodes 1 to 4 have real titles and overviews (No Strings, Theseus, Reboot, Malware). Episodes 5 to 8 have air dates of 27 October, 3 November and 10 November but no overviews yet. The stored entry is still `released: false` with `expectedRelease: "Fall 2026"` and no `seasons` wrapper, so it needs the wrapper, the flag flipped, and real content. Pull every title and date from TMDB rather than memory, and invent nothing for the episodes that have not aired. That is exactly how the Echo and Agatha All Along errors happened.
 
 ## Not yet built
 
-- Overall stats (hours watched, average rating, etc.) — the last item from the original roadmap
+- Overall stats (hours watched, average rating, etc.), the last item from the original roadmap
 - Portraits for the five characters added in August 2026: `christine-palmer`, `hunter-b15`, `ravonna-renslayer`, `alioth`, `darren-cross`. No files exist for them yet, so they fall back to monogram tiles. The user supplies the images; wiring one up is a single `image` field.
 - Possibly: Fox-era movies, an anime section
