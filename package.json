@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "check": "node scripts/check-data.js"
+    "check": "node scripts/check-data.js",
+    "prose": "node scripts/prose-check.js"
   },
   "dependencies": {
     "express": "^4.19.2"

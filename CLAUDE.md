@@ -13,6 +13,7 @@ Its whole point is **narrative order without spoilers**: every title is placed b
 - `npm install`. One-time dependency install (Express is the only dependency)
 - `npm start`. Runs `node server.js`, serves at http://localhost:3939
 - `node scripts/fetch-artwork.js`. Pull TMDB poster/backdrop paths (`--refresh` re-fetches everything, `--dry-run` writes nothing)
+- `npm run prose <entry-id>`. Read-only writing check over one entry (`scripts/prose-check.js`), the mechanical half of the `writing-check` skill. Flags em dashes, prose colons, curly quotes, banned words and phrases, sentences over 32 words, three same sentence openers in a row, "not X, but Y", "-ing" opinion tails, and clauses ending on a vague "it", "them", "that" or "ever since". Prints the entry's word count beside the approved reference entries. With no id it ranks every entry; `--phase phase-5` narrows it, `--words` gives lengths only. **A low score is not a pass**: run it over the whole file and the approved hand-written entries sit at the top of the worst list while the untouched AI text scores best, because that pass wrote short flat sentences. Use it on text you just wrote, then read the text.
 - `npm run check`. Read-only validator over the three data files. Run it after hand-editing. Catches JSON syntax errors with a line number, missing required fields, duplicate ids, `narrativeOrder` collisions and gaps, references that point at nothing (`watchFirst`, `characterId`, character `titles`), misspelled field names, missing portrait files, and save keys orphaned by a renamed id. Exits non-zero on errors. `MCU_DATA=<dir>` points it at a copy.
 - No test suite, linter, or build step.
 
@@ -171,6 +172,7 @@ The user is rewriting the whole tracker by hand because the original text was ob
 - No em dashes. Use a comma, a full stop or brackets. `npm run check` counts what's left.
 - No colons in prose. Setup, colon, payoff is one of the clearest AI tells. Write two sentences instead. `npm run check` does not catch these.
 - No "not X, but Y" or "not just X, it's Y" constructions. This includes the two-sentence version ("Not a weapon. A recording of..."). Say what the thing is.
+- No "rather than". Banned outright, not only when the contrast is fake. A survey in October 2026 found it in 4 of 6 Phase One entries, 5 of 6 in Phase Two and 10 of 11 in Phase Three, which is what made it obvious. There is always a plainer way to say the thing.
 - No groups of three out of habit ("Not enhanced, not powerful, and he wins"). Use the real number of things.
 - No "X and also Y" constructions.
 - No rhetorical questions. No fake engagement ("Let's take a look", "Buckle up", "Join me").
@@ -216,11 +218,14 @@ The user went back through entries, including ones already marked done, and foun
    - "Runs alongside Iron Man rather than after it, and takes nothing from it."
    - "and leaves it there"
    - "which is what the five years later cost him"
+   - "ever since", as in "the Celestials have been making stars, planets and life ever since". Grammatically fine, which is why it slips through, but it is a stock AI closer and it does the vague-trailing-phrase job. Say how long, or say what happened in the meantime. The Eternals line became "over millions of years the Celestials made the stars, the planets and every living thing". **There are 14 of these left in `movies.json` and 2 in `characters.json`**, most of them in entries already approved, so they belong to the final sweep and not to the entry in hand.
 
    Either cut it or say the actual fact. "Which is what the five years later cost him" should just say what happened. "In Avengers: Endgame, his whole family disappears in the Snap." The information is fine. Hinting at it instead of saying it is the problem.
-3. **"Rather than" contrasts.** Describing something by what it is not. "Runs alongside Iron Man rather than after it." "As a consultant rather than as a member of anything." This is a cousin of the banned "not X, but Y". Only use "rather than" when a character actually chooses between two options in the story. Otherwise say what the thing is.
+3. **"Rather than" contrasts.** Describing something by what it is not. "Runs alongside Iron Man rather than after it." "As a consultant rather than as a member of anything." This is a cousin of the banned "not X, but Y", and it is now a hard rule above. Say what the thing is.
 4. **Announcing instead of saying.** A sentence whose only job is to set up the next one. "Two things do reach back." "One thing worth knowing." "One piece of housekeeping." Cut it and start with the first real fact. Watch for the emphatic "do" or "does" ("two things do reach back", "he does survive"), which fakes a contrast with something nobody said.
-5. **Critic vocabulary.** Words about how the franchise is built, instead of what happens in it. The reader wants the story, not the engineering.
+5. **Vagueness that makes the reader fill in the blank.** AI leaves gaps and trusts the reader to close them. Name the thing instead. The Shang-Chi context read "Nearly everything in this film is new. The characters, the setting and the mythology all start here", where "here" was doing work that "in this film" should do, and the fix was to merge the two sentences so the vague word was never needed. Watch for "here", "this", "that" and "those" standing in for something that has not been named, and for filler nouns like things, elements, aspects and stuff. Also watch for a whole sentence that gestures at something without saying it, as in "Two scenes at the end point somewhere" or "it goes somewhere stranger than that".
+6. **Sentences and clauses that end on "it", "them" or "that".** The same vagueness, in its most common shape. Ending on the pronoun is what makes the reader do the work, and it is almost always avoidable, so name the thing instead. The Eternals pass had eleven of these in one entry. "sends a team of Eternals to guard the life growing on it" became "to guard the life on the surface", "Arishem made these too" became "Arishem built the Deviants as well", "a voice off screen asks whether he is ready for it" became "asks whether he is really ready", and "Ego tells Peter Quill that he is one" became "Ego introduces himself to Peter Quill as a Celestial". A pronoun whose subject is named in the same sentence is fine, so "the Mesopotamians make a god of him" stays. There are millions of ways to structure a sentence, and the structure does not have to be that one.
+7. **Critic vocabulary.** Words about how the franchise is built, instead of what happens in it. The reader wants the story, not the engineering.
    - Avoid: the run (as in "the best villain in the run"), thread, lands (as in "the series lands on"), leans on, stands as, deliberate or deliberately, fresh (as in "worth having fresh"), runs with.
    - Watch for overuse: picks up (as in "picks up right after Civil War"), built on. These are normal phrases a person would say once. They read as AI when every entry uses them.
 
@@ -259,7 +264,7 @@ The bad version uses a re-framing clause, "the film" doing human things, and a v
 
 ### Before you hand text back
 
-Run the `writing-check` skill on every field you wrote or changed. Wikipedia's guide makes the point that these words and patterns are signs of a deeper problem, not the problem itself. Swapping out "pivotal" does not fix a plot that is three sentences long and vague. Thin content and wrong facts matter more than any single word.
+Run the `writing-check` skill on every field you wrote or changed. Its mechanical half is `npm run prose <entry-id>`. Wikipedia's guide makes the point that these words and patterns are signs of a deeper problem, not the problem itself. Swapping out "pivotal" does not fix a plot that is three sentences long and vague. Thin content and wrong facts matter more than any single word.
 
 ## Content conventions
 
