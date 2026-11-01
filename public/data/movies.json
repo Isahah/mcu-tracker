@@ -2408,30 +2408,95 @@
           "releaseOrder": 37,
           "type": "movie",
           "art": { "tmdbId": 505642, "poster": "/sv1xJUazXeYqALzczSZ3O6nkH75.jpg", "backdrop": "/83H0C66AcvkwpG2738VCTHMY9uv.jpg" },
-          "summary": "Following the loss of their king, the people of Wakanda must fight to protect their nation from intervening world powers while facing a new threat from a hidden underwater civilization.",
+          "summary": "With their king gone, the Wakandans must hold off the world powers coming for their vibranium, and then a hidden civilisation on the ocean floor makes demands of its own.",
           "beforeWatch": {
-            "context": "About a year after Endgame, and about a year after the death of T'Challa — which the film treats as real and permanent, and which is also the real-world reason for its shape. It is first and last a film about grief. The first Black Panther is essential; Wakanda's new position in the world follows on directly from it.",
+            "context": "Wakanda is the most technologically advanced nation on Earth and the only source of vibranium, the strongest and most versatile metal anyone has found. It is also home to the Black Panther. In the first Black Panther, Erik Killmonger had the garden of heart-shaped herbs burned. The herb is where the Black Panther's strength comes from, so T'Challa was the last Black Panther Wakanda had. You last saw the Wakandans in the final battle of Avengers: Endgame. Chadwick Boseman, who played T'Challa, died on 28 August 2020. Marvel chose not to recast the part and not to recreate him digitally, and the film was written around his absence.",
             "watchFirst": ["black-panther","avengers-4"]
           },
           "inUniverseSetting": "2025",
           "timeSkip": "Roughly a year after T'Challa's death",
           "deepDive": {
-            "plot": "Following King T'Challa's death from an unspecified illness, Wakanda must defend itself from world powers seeking vibranium, while a hidden underwater civilization called Talokan, led by the mutant king Namor, declares war after Wakanda is blamed for exposing his people's existence. Shuri, consumed by grief and anger, briefly embraces the Black Panther mantle's power for vengeance, but ultimately chooses mercy over Namor's death, forging an uneasy peace between the two nations instead.",
-            "significance": "Passes the Black Panther mantle to Shuri, introduces Namor and Talokan as a major new nation and faction, and reveals T'Challa's secret son Toussaint as a future heir to Wakanda's legacy.",
-            "orderNote": "Placed in the middle of Phase Five as the culmination of Wakanda's post-T'Challa arc, roughly a year after his death."
+            "plot": "In 1571 the Spanish bring smallpox to the Yucatan. A shaman finds a plant that has grown in vibranium. Everyone who drinks it turns blue and loses the ability to breathe air, so they leave for the ocean floor and build a city called Talokan. One of them is pregnant at the time, and her son is born able to breathe air and fly. He ages slowly, his people worship him as the feathered serpent god K'uk'ulkan, and after he kills a Spanish priest who calls him the child without love, he takes the name Namor. In 2024 Shuri is in her lab racing to synthesise a replacement heart-shaped herb when Ramonda tells her that T'Challa has already died of an undisclosed illness. A year later the rest of the world wants Wakanda's vibranium. The Dora Milaje catch French operatives raiding a Wakandan outpost in Mali, and Ramonda tells the United Nations that the operation had its government's blessing. An American ship in the Atlantic finds vibranium with a new detector, and the Talokanil kill everyone aboard. Namor walks into Wakanda undetected, tells Ramonda and Shuri that Talokan has vibranium of its own, and asks for their help against the surface world. He also wants the scientist who built the detector dead. Okoye and Shuri get the name out of Everett Ross, an MIT student called Riri Williams, and Attuma and Namora seize Shuri and Riri while the three are escaping the FBI. Ramonda strips Okoye of her rank, then goes to Haiti and asks Nakia to bring Shuri home. Nakia breaks the two of them out and kills two Talokanil guards on the way out, so Namor attacks Birnin Zana and floods the throne room. Ramonda drowns getting Riri out. Shuri uses the bracelet Namor gave her to finish the herb, takes a dose, meets Killmonger on the ancestral plane, and becomes the Black Panther. She beats Namor on a beach, chooses to let him live, and the two nations stop fighting.",
+            "significance": "T'Challa is dead when the film opens, and the mantle of the Black Panther passes to Shuri. She rebuilds the heart-shaped herb using a plant from Talokan and comes out of the ritual with the strength and speed her brother had. Then she grows more of the herb, so Wakanda is never one death away from having no Black Panther. The rest of the world is still coming for Wakanda's vibranium, by raid and by treaty, and Talokan has exactly the same problem. Namor and his people have been under the ocean since 1571, and he calls himself a mutant, the first time anyone in the MCU says the word about themselves. Riri Williams is introduced as an MIT student building an armoured suit in a rented garage. Contessa Valentina Allegra de Fontaine turns up as Director of the CIA and as Everett Ross's ex-wife. Okoye loses her rank and finishes the film in Midnight Angel armour. And at the very end, Shuri learns that Nakia and T'Challa have a son.",
+            "orderNote": "Set about a year after T'Challa's death, in the same 2025 stretch as most of Phase Five. It has to sit before Ironheart, because Riri Williams is introduced in this film and that series follows her home afterwards. Putting it straight after Moon Knight also keeps two stories about grief together, since both of them turn on a death in the family."
           },
           "watchFor": [
-            { "name": "Namor & Talokan", "characterId": "namor", "thisFilm": "Wages war on the surface world before reaching an uneasy truce with Wakanda.", "future": "Leaves room for future conflict or alliance." },
-            { "name": "Shuri as Black Panther", "characterId": "shuri", "thisFilm": "Takes up her brother's mantle to defend Wakanda.", "future": "Shapes Wakanda's future direction." },
-            { "name": "Toussaint / T'Challa's son (post-credit)", "thisFilm": "Not present in the main story — revealed only in the post-credit scene.", "future": "Revealed as T'Challa's secret heir, teasing a future Black Panther legacy story." }
+            {
+              "name": "Vibranium",
+              "thisFilm": "The strongest metal on Earth, and until now Wakanda held every known deposit. Other countries have decided that is too much for one nation to hold, and ordinary scans cannot pick vibranium up, so they have started digging for their own. Talokan turns out to have a supply nobody knew about.",
+              "future": "Vibranium stops being the hardest thing on the planet. Captain America: Brave New World turns the dead Celestial's remains into a source of adamantium, and adamantium cuts straight through vibranium. Thaddeus Ross announces it to the world as the better metal, and one that no isolationist nation controls.",
+              "spoils": "Captain America: Brave New World"
+            },
+            {
+              "name": "Namor",
+              "characterId": "namor",
+              "thisFilm": "King of Talokan. The plant his mother drank while she was pregnant gave him winged ankles, pointed ears, skin that breathes air, and a very slow rate of ageing. He is more than four hundred and fifty years old. His people worship him as the feathered serpent god K'uk'ulkan. Heat and dry air are what weaken him.",
+              "future": "Namor is in Avengers: Doomsday, with Tenoch Huerta back in the part.",
+              "spoils": "Avengers: Doomsday"
+            },
+            {
+              "name": "Talokan",
+              "characterId": "talokan",
+              "thisFilm": "An underwater city off the Yucatan, four and a half centuries old, and nobody on the surface knew it existed. It has vibranium of its own, which is why the detector threatens Talokan and not only Wakanda. Namor named the city after Tlalocan, the Aztec paradise his mother used to describe to him. Whales and orcas come when the Talokanil call."
+            },
+            {
+              "name": "Mutants",
+              "characterId": "mutants",
+              "thisFilm": "Namor describes what the plant did to him and calls himself a mutant. That is the first time anyone in the MCU says the word about themselves, and the first confirmation that mutants exist in this continuity at all."
+            },
+            {
+              "name": "The heart-shaped herb",
+              "thisFilm": "Nakia saved one flower before the garden burned and that one went to T'Challa, so Wakanda had none left. Shuri spends the opening of this film trying to synthesise a replacement and cannot get her confidence above thirty per cent. The version she finally makes comes out at 98.7."
+            },
+            {
+              "name": "Ramonda",
+              "characterId": "ramonda",
+              "thisFilm": "T'Challa's mother, and queen of Wakanda while the throne sits empty. She is the one holding the country together through the year after his death, and she tells the United Nations that Wakanda will fight on without a Black Panther. When Namor floods the throne room she drowns getting Riri Williams out of the water."
+            },
+            {
+              "name": "Okoye",
+              "characterId": "okoye",
+              "thisFilm": "General of the Dora Milaje since the first film. She loses the rank over Cambridge and leaves her spear standing in the ground on the way out. Shuri later builds her a powered Midnight Angel suit, and Okoye recruits Aneka into the pair. At the very end she breaks Everett Ross out of custody."
+            },
+            {
+              "name": "Riri Williams",
+              "characterId": "riri-williams",
+              "thisFilm": "An MIT student who built the vibranium detector for a metallurgy class, which the CIA then took and put to work. She has also been building an Iron Man style suit in a rented public works garage in Cambridge. She fights the final battle in a suit Shuri builds her out of Wakandan parts. Then she goes home to MIT with the knowledge and none of the hardware, because Wakanda will not let her keep the armour."
+            },
+            {
+              "name": "Everett Ross",
+              "characterId": "everett-ross",
+              "thisFilm": "The CIA officer who owes T'Challa and Shuri his life after the first Black Panther, which is where you last saw him. He gives Wakanda intelligence knowing that doing so is treason, and he keeps feeding Ramonda information afterwards. Valentina plants a set of Kimoyo Beads for him to find, waits until he uses them to reach Wakanda, and has him arrested."
+            },
+            {
+              "name": "Valentina Allegra de Fontaine",
+              "characterId": "valentina",
+              "thisFilm": "Director of the CIA, and Everett Ross's ex-wife. You last saw her giving John Walker a new job after he lost the Captain America shield, and before that sending Yelena Belova after Clint Barton. She is running the American side of the vibranium problem, she puts Ross on the Wakanda file knowing he will leak, and she arrests him for treason once he does.",
+              "future": "Valentina keeps collecting people nobody else wants. Thunderbolts* is the film where she finally puts the team together, and she is the one who presents them to the public as the New Avengers.",
+              "spoils": "Thunderbolts*"
+            },
+            {
+              "name": "Shuri",
+              "characterId": "shuri",
+              "thisFilm": "She starts the film in her lab and ends it as the Black Panther. The one waiting for her on the ancestral plane is Killmonger, who tells her they both took the herb to get even with the people who took from their families. M'Baku argues against killing Namor, because killing a god would mean endless war and because he promised T'Challa he would look after her, and Shuri goes after Namor regardless. Afterwards she leaves for Haiti instead of claiming the throne, and M'Baku steps up to challenge for the crown.",
+              "nameIsSpoiler": true
+            },
+            {
+              "name": "Toussaint",
+              "thisFilm": "Nakia and T'Challa had a son in secret, and Nakia raised him in Haiti. Ramonda already knew and tries to tell Shuri at the one-year commemoration, but Namor's arrival cuts her off. She meets the boy on the Haiti trip and dies before she can tell anyone. In the mid-credits scene Nakia brings him out to Shuri on the beach. He introduces himself as Toussaint, then says that is his Haitian name and his real name is T'Challa.",
+              "nameIsSpoiler": true
+            }
           ],
-          "postCredit": { "count": 1, "type": "post" }
+          "postCredit": {
+            "count": 1,
+            "type": "mid"
+          }
         },
         {
           "id": "thor-4",
           "title": "Thor: Love and Thunder",
           "year": 2022,
-          "narrativeOrder": 5,
+          "narrativeOrder": 6,
           "releaseOrder": 35,
           "type": "movie",
           "art": { "tmdbId": 616037, "poster": "/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg", "backdrop": "/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg" },
@@ -2444,19 +2509,31 @@
           "deepDive": {
             "plot": "Still searching for peace after Endgame, Thor reunites with his ex, astrophysicist Jane Foster, who has used the remains of his old hammer Mjolnir to become the Mighty Thor while secretly battling cancer. Together they must stop Gorr the God Butcher, a grief-stricken former believer slaughtering gods across the universe after his own deity abandoned him, using a weapon capable of killing gods, the Necrosword. Jane sacrifices herself using Mjolnir's power to save the day, and Thor, having lost yet another partner, finds a new sense of purpose raising Gorr's resurrected daughter as his own.",
             "significance": "Gives Jane Foster a definitive, if bittersweet, send-off as the Mighty Thor, and continues Thor's long arc of loss and reinvention that began all the way back in Phase One.",
-            "orderNote": "Placed here in the same broad post-Blip period as Ms. Marvel and She-Hulk."
+            "orderNote": "Set in the same broad 2025 period as the rest of Phase Five, so the exact slot is a judgement call. It sits directly before The Guardians of the Galaxy Holiday Special, because the Guardians part company with Thor in the opening scenes of this film and the Holiday Special follows them on from that parting. Keeping those two together means the Guardians go straight on into Guardians of the Galaxy Vol. 3."
           },
           "watchFor": [
-            { "name": "Jane Foster / Mighty Thor's fate", "characterId": "jane-foster", "thisFilm": "Sacrifices herself using Mjolnir to save Thor and the children of Asgard.", "future": "Her journey to Valhalla leaves the door open for a possible future return." },
-            { "name": "Hercules (mid-credit)", "thisFilm": "Not present in the main story.", "future": "Zeus sends his son to hunt Thor down, setting up a rivalry for a future Thor story." }
+            {
+              "name": "Jane Foster / Mighty Thor's fate",
+              "characterId": "jane-foster",
+              "thisFilm": "Sacrifices herself using Mjolnir to save Thor and the children of Asgard.",
+              "future": "Her journey to Valhalla leaves the door open for a possible future return."
+            },
+            {
+              "name": "Hercules (mid-credit)",
+              "thisFilm": "Not present in the main story.",
+              "future": "Zeus sends his son to hunt Thor down, setting up a rivalry for a future Thor story."
+            }
           ],
-          "postCredit": { "count": 2, "type": "mid+post" }
+          "postCredit": {
+            "count": 2,
+            "type": "mid+post"
+          }
         },
         {
           "id": "ironheart",
           "title": "Ironheart",
           "year": 2025,
-          "narrativeOrder": 6,
+          "narrativeOrder": 5,
           "releaseOrder": 53,
           "type": "series",
           "art": { "tmdbId": 114471, "poster": "/dOh6MJpdlQhYpLBhzhNQeYGKTZ5.jpg", "backdrop": "/kiOEVg5BkzLE0pWoPKecXd7wZ2Q.jpg" },
@@ -2470,23 +2547,67 @@
           "deepDive": {
             "plot": "Expelled from MIT for selling her coursework, Riri Williams returns to Chicago determined to finish the powered armour she has been building since Wakanda. Short on money and parts, she takes work with Parker Robbins, a charming crew leader whose crimes are pulled off with technology — and eventually magic — that shouldn't exist. As Riri builds an AI companion modelled on her dead best friend, she is forced to choose between the resources Robbins offers and the person she wants to be, and to reckon with grief she has spent the whole series engineering her way around.",
             "significance": "Pushes the MCU's street-level corner into the collision between technology and magic, and gives Riri the origin proper that Wakanda Forever only sketched — establishing her as the next generation's armoured hero in Tony Stark's absence.",
-            "orderNote": "Placed after Wakanda Forever, which introduces Riri, and after Love and Thunder, in the same broad 2025 period as the stories around it."
+            "orderNote": "Placed directly after Black Panther: Wakanda Forever, which is where Riri Williams is introduced and where she builds her first suit. This series opens with her back in Chicago, having gone home without the Wakandan hardware, so the two belong side by side."
           },
           "watchFor": [
-            { "name": "Riri Williams / Ironheart", "characterId": "riri-williams", "thisFilm": "Builds her armour for real, on her own terms, and gains an AI companion built out of her own grief.", "future": "Established as the MCU's next armoured hero, with her story left deliberately unfinished." },
-            { "name": "Parker Robbins / The Hood", "characterId": "parker-robbins", "thisFilm": "A crew leader whose gear turns out to run on something far older and stranger than technology.", "future": "Sets up a magic-powered criminal threat with ambitions well beyond Chicago." },
-            { "name": "Technology meeting magic", "thisFilm": "The series' central collision — engineering repeatedly runs into forces it cannot model.", "future": "Widens the door between the MCU's science and mystic corners." }
+            {
+              "name": "Riri Williams / Ironheart",
+              "characterId": "riri-williams",
+              "thisFilm": "Builds her armour for real, on her own terms, and gains an AI companion built out of her own grief.",
+              "future": "Established as the MCU's next armoured hero, with her story left deliberately unfinished."
+            },
+            {
+              "name": "Parker Robbins / The Hood",
+              "characterId": "parker-robbins",
+              "thisFilm": "A crew leader whose gear turns out to run on something far older and stranger than technology.",
+              "future": "Sets up a magic-powered criminal threat with ambitions well beyond Chicago."
+            },
+            {
+              "name": "Technology meeting magic",
+              "thisFilm": "The series' central collision — engineering repeatedly runs into forces it cannot model.",
+              "future": "Widens the door between the MCU's science and mystic corners."
+            }
           ],
           "seasons": [
             {
               "seasonNumber": 1,
               "episodes": [
-                { "id": "ironheart-e1", "episodeNumber": 1, "title": "Take Me Home", "summary": "Expelled from MIT, Riri returns to Chicago with nothing but her designs and no way to fund them." },
-                { "id": "ironheart-e2", "episodeNumber": 2, "title": "Will the Real Natalie Please Stand Up?", "summary": "Riri's new AI companion takes on a form she wasn't prepared for, while the crew's first job tests her limits." },
-                { "id": "ironheart-e3", "episodeNumber": 3, "title": "We in Danger, Girl", "summary": "A job goes wrong and Riri starts to see what her new employer's technology can really do." },
-                { "id": "ironheart-e4", "episodeNumber": 4, "title": "Bad Magic", "summary": "The line between engineering and something far older gets much harder for Riri to ignore." },
-                { "id": "ironheart-e5", "episodeNumber": 5, "title": "Karma's a Glitch", "summary": "Riri's choices catch up with her, and the cost of the armour becomes personal." },
-                { "id": "ironheart-e6", "episodeNumber": 6, "title": "The Past Is the Past", "summary": "Riri confronts both her employer and the grief she has been building around, and decides what kind of hero she wants to be." }
+                {
+                  "id": "ironheart-e1",
+                  "episodeNumber": 1,
+                  "title": "Take Me Home",
+                  "summary": "Expelled from MIT, Riri returns to Chicago with nothing but her designs and no way to fund them."
+                },
+                {
+                  "id": "ironheart-e2",
+                  "episodeNumber": 2,
+                  "title": "Will the Real Natalie Please Stand Up?",
+                  "summary": "Riri's new AI companion takes on a form she wasn't prepared for, while the crew's first job tests her limits."
+                },
+                {
+                  "id": "ironheart-e3",
+                  "episodeNumber": 3,
+                  "title": "We in Danger, Girl",
+                  "summary": "A job goes wrong and Riri starts to see what her new employer's technology can really do."
+                },
+                {
+                  "id": "ironheart-e4",
+                  "episodeNumber": 4,
+                  "title": "Bad Magic",
+                  "summary": "The line between engineering and something far older gets much harder for Riri to ignore."
+                },
+                {
+                  "id": "ironheart-e5",
+                  "episodeNumber": 5,
+                  "title": "Karma's a Glitch",
+                  "summary": "Riri's choices catch up with her, and the cost of the armour becomes personal."
+                },
+                {
+                  "id": "ironheart-e6",
+                  "episodeNumber": 6,
+                  "title": "The Past Is the Past",
+                  "summary": "Riri confronts both her employer and the grief she has been building around, and decides what kind of hero she wants to be."
+                }
               ]
             }
           ]
