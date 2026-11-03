@@ -13,7 +13,7 @@ Run this on every field you wrote or changed before you show it to the user. The
 npm run prose <entry-id>
 ```
 
-That is `scripts/prose-check.js`, read-only. It reports per field: em dashes, colons in prose (real entry titles are blanked first, so only prose colons flag), curly quotes, missing space after a full stop, rhetorical questions, "X and also Y", "not X, but Y", "-ing" opinion tails, emphatic "do", every banned word and phrase, sentences over 32 words, three sentences in a row opening the same way, and clauses ending on a vague "it", "them", "that" or "ever since". It prints the entry's word count beside the approved reference entries, so length is checkable too.
+That is `scripts/prose-check.js`, read-only. It reports per field: em dashes, colons in prose (real entry titles are blanked first, so only prose colons flag), curly quotes, missing space after a full stop, rhetorical questions, "X and also Y", "not X, but Y", "-ing" opinion tails, emphatic "do", every banned word and phrase, sentences over 32 words, three sentences in a row opening the same way, clauses ending on a vague "it", "them", "that" or "ever since", and "nobody" opening a trailing clause. It prints the entry's word count beside the approved reference entries, so length is checkable too.
 
 **A hit is not always wrong.** "completely" can be literal, "realm" is fine for the nine realms, and TRAILING flags every pronoun at a clause end, most of which are fine because the subject is named in the same sentence. Decide each one; never blind-replace.
 
@@ -33,7 +33,7 @@ Read each field start to finish and check for:
 8. **Field fit.** `summary` is one sentence with no ordering notes. `context` is orientation, not a preview. `future` stands alone without `thisFilm`. Full titles on first mention.
 9. **Spoilers.** `context` never mentions this title's own events or anything later. Chip names in "Before you watch" give nothing away (use `nameIsSpoiler` if they do).
 10. **Abstract things that move.** Any sentence where an idea, film, scene or story is the subject of a movement verb (arrives, runs, lands, leans, stands, reaches back, picks up). Rewrite with a person or event as the subject.
-11. **Empty closing tags.** The last few words of each sentence. If they are vague and point back at "it", "there" or "him" without naming anything, cut them or say the actual fact. "ever since" belongs here too: say how long, or say what happened in the meantime.
+11. **Empty closing tags.** The last few words of each sentence. If they are vague and point back at "it", "there" or "him" without naming anything, cut them or say the actual fact. "ever since" belongs here too: say how long, or say what happened in the meantime. So does "nobody" opening the clause that closes a sentence ("a supply nobody knew about"): say who, or say the fact straight.
 12. **"Rather than".** Banned outright, not only where the contrast is fake.
 13. **Vagueness.** Any "here", "this", "that", "those" or filler noun standing in for something you have not named. Name it. Then check the end of every sentence and clause: ending on "it", "them" or "that" is the most common shape of this, and it is almost always avoidable.
 14. **Announcing sentences.** Any sentence that only sets up the next one ("Two things do reach back"). Cut it and lead with the fact. Check for emphatic "do" or "does".

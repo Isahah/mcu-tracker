@@ -68,6 +68,15 @@ const TRAILING = new RegExp(
   '|(?:some|these|those|the|other|all|such|a few)\\s+(?:things?|stuff|elements?|aspects?))\\s*[.,;]',
   'gi');
 
+// "nobody" opening the clause that closes a sentence, as in "a supply nobody
+// knew about". Same family as TRAILING, but the word sits at the front of the
+// vague clause instead of the end, so it needs its own pattern.
+const NOBODY = /\b(?:nobody|no one)\b[^.;"]{0,34}(?=[.;"]|$)/gi;
+
+// Banned words that are also somebody's name. Matched lowercase only, or the
+// scan fires on every mention of Jane Foster.
+const CASED = new Set(['foster']);
+
 const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 // Every real entry title, read from the data so the list cannot drift. Titles
@@ -126,7 +135,7 @@ function scan(value) {
   if (/,\s+\w+ing\b[^.]{0,40}\.\s*$/.test(value)) issues.push(['ING-TAIL', '"-ing" tail adding an opinion']);
   if (/\bdo(es)? \w+,/.test(value)) issues.push(['EMPHATIC-DO', 'emphatic "do"/"does" faking a contrast']);
 
-  const words = BANNED.filter(b => new RegExp('\\b' + esc(b), 'i').test(value));
+  const words = BANNED.filter(b => new RegExp('\\b' + esc(b), CASED.has(b) ? '' : 'i').test(value));
   if (words.length) issues.push(['WORDS', words.join(', ')]);
 
   const sentences = value.split(/(?<=[.!?])\s+/).filter(Boolean);
@@ -146,6 +155,12 @@ function scan(value) {
     return (s ? '...' : '') + value.slice(s, m.index + m[0].length);
   });
   if (trail.length) issues.push(['TRAILING', trail.join('  |  ')]);
+
+  const nb = [...value.matchAll(NOBODY)].map(m => {
+    const s = Math.max(0, m.index - 40);
+    return (s ? '...' : '') + value.slice(s, m.index + m[0].length);
+  });
+  if (nb.length) issues.push(['NOBODY', nb.join('  |  ')]);
 
   return issues;
 }

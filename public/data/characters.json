@@ -739,6 +739,15 @@
       }
     },
     {
+      "id": "axl",
+      "name": "Axl",
+      "description": "Heimdall's son, one of the children of New Asgard, named after the singer of Guns N' Roses.",
+      "titles": ["thor-4"],
+      "phases": {
+        "phase-5": "Thor: Love and Thunder: one of the children Gorr takes from New Asgard, and the one who works out how to use the sight he inherited from his father. He keeps a link open to Thor from inside the cage, then opens the Bifrost with Stormbreaker at the Gates of Eternity and takes the other children home. Valkyrie puts them all into fighting classes when they get back, and Sif teaches him the sword."
+      }
+    },
+    {
       "id": "odin",
       "name": "Odin",
       "description": "All-Father of Asgard, whose long reign hides some old secrets.",

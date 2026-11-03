@@ -2280,10 +2280,8 @@
           "art": { "tmdbId": 524434, "poster": "/lFByFSLV5WDJEv3KabbdAF959F2.jpg", "backdrop": "/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg" },
           "summary": "Ten immortal beings have lived on Earth for seven thousand years without ever stepping into human history, and a creature they thought they had wiped out brings them back together.",
           "beforeWatch": {
-            "context": "The only film you really need before this one is Avengers: Endgame, and the part that matters most is Bruce Banner's snap, the one that brought back everyone Thanos erased. Eternals kicks off just a few days to a few weeks later. The cast is entirely new, so there is nobody to catch up on. While most of the plot takes place in the modern day, the movie constantly flashes back across seven thousand years to highlight real historical places and eras. If you're a history nerd then you'll probably find a lot of these scenes interesting.",
-            "watchFirst": [
-              "avengers-4"
-            ]
+            "context": "The only film you really need before this one is Avengers: Endgame, and the part that matters most is Bruce Banner's snap, the one that brought back everyone Thanos erased. Eternals kicks off just a few days to a few weeks later. The cast is entirely new and none of them have appeared anywhere earlier. While most of the plot takes place in the modern day, the movie constantly flashes back across seven thousand years to highlight real historical places and eras. If you're a history nerd then you'll probably find a lot of these scenes interesting.",
+            "watchFirst": ["avengers-4"]
           },
           "inUniverseSetting": "Fall 2023",
           "deepDive": {
@@ -2410,81 +2408,82 @@
           "art": { "tmdbId": 505642, "poster": "/sv1xJUazXeYqALzczSZ3O6nkH75.jpg", "backdrop": "/83H0C66AcvkwpG2738VCTHMY9uv.jpg" },
           "summary": "With their king gone, the Wakandans must hold off the world powers coming for their vibranium, and then a hidden civilisation on the ocean floor makes demands of its own.",
           "beforeWatch": {
-            "context": "Wakanda is the most technologically advanced nation on Earth and the only source of vibranium, the strongest and most versatile metal anyone has found. It is also home to the Black Panther. In the first Black Panther, Erik Killmonger had the garden of heart-shaped herbs burned. The herb is where the Black Panther's strength comes from, so T'Challa was the last Black Panther Wakanda had. You last saw the Wakandans in the final battle of Avengers: Endgame. Chadwick Boseman, who played T'Challa, died on 28 August 2020. Marvel chose not to recast the part and not to recreate him digitally, and the film was written around his absence.",
+            "context": "Wakanda is the most technologically advanced nation on Earth and the only source of vibranium, the strongest and most versatile metal anyone has found. It is also home to the Black Panther. In the first Black Panther, Erik Killmonger had the garden of heart-shaped herbs burned. The herb is where the Black Panther's strength comes from, so T'Challa was the last Black Panther Wakanda had. You last saw the Wakandans in the final battle of Avengers: Endgame, and then briefly in The Falcon and the Winter Soldier, when the Dora Milaje came for Zemo. Chadwick Boseman, who played T'Challa, died on 28 August 2020. Marvel chose not to recast the part and not to recreate him digitally.",
             "watchFirst": ["black-panther","avengers-4"]
           },
           "inUniverseSetting": "2025",
           "timeSkip": "Roughly a year after T'Challa's death",
           "deepDive": {
-            "plot": "In 1571 the Spanish bring smallpox to the Yucatan. A shaman finds a plant that has grown in vibranium. Everyone who drinks it turns blue and loses the ability to breathe air, so they leave for the ocean floor and build a city called Talokan. One of them is pregnant at the time, and her son is born able to breathe air and fly. He ages slowly, his people worship him as the feathered serpent god K'uk'ulkan, and after he kills a Spanish priest who calls him the child without love, he takes the name Namor. In 2024 Shuri is in her lab racing to synthesise a replacement heart-shaped herb when Ramonda tells her that T'Challa has already died of an undisclosed illness. A year later the rest of the world wants Wakanda's vibranium. The Dora Milaje catch French operatives raiding a Wakandan outpost in Mali, and Ramonda tells the United Nations that the operation had its government's blessing. An American ship in the Atlantic finds vibranium with a new detector, and the Talokanil kill everyone aboard. Namor walks into Wakanda undetected, tells Ramonda and Shuri that Talokan has vibranium of its own, and asks for their help against the surface world. He also wants the scientist who built the detector dead. Okoye and Shuri get the name out of Everett Ross, an MIT student called Riri Williams, and Attuma and Namora seize Shuri and Riri while the three are escaping the FBI. Ramonda strips Okoye of her rank, then goes to Haiti and asks Nakia to bring Shuri home. Nakia breaks the two of them out and kills two Talokanil guards on the way out, so Namor attacks Birnin Zana and floods the throne room. Ramonda drowns getting Riri out. Shuri uses the bracelet Namor gave her to finish the herb, takes a dose, meets Killmonger on the ancestral plane, and becomes the Black Panther. She beats Namor on a beach, chooses to let him live, and the two nations stop fighting.",
-            "significance": "T'Challa is dead when the film opens, and the mantle of the Black Panther passes to Shuri. She rebuilds the heart-shaped herb using a plant from Talokan and comes out of the ritual with the strength and speed her brother had. Then she grows more of the herb, so Wakanda is never one death away from having no Black Panther. The rest of the world is still coming for Wakanda's vibranium, by raid and by treaty, and Talokan has exactly the same problem. Namor and his people have been under the ocean since 1571, and he calls himself a mutant, the first time anyone in the MCU says the word about themselves. Riri Williams is introduced as an MIT student building an armoured suit in a rented garage. Contessa Valentina Allegra de Fontaine turns up as Director of the CIA and as Everett Ross's ex-wife. Okoye loses her rank and finishes the film in Midnight Angel armour. And at the very end, Shuri learns that Nakia and T'Challa have a son.",
-            "orderNote": "Set about a year after T'Challa's death, in the same 2025 stretch as most of Phase Five. It has to sit before Ironheart, because Riri Williams is introduced in this film and that series follows her home afterwards. Putting it straight after Moon Knight also keeps two stories about grief together, since both of them turn on a death in the family."
+            "plot": "In 1571 the Spanish bring smallpox to the Yucatan. A shaman finds a plant that has grown in vibranium. Everyone who drinks it turns blue and loses the ability to breathe air, so they leave for the ocean floor and build a city called Talokan. One of the women is pregnant at the time, and her son is born able to breathe air and fly. He ages slowly, his people worship him as the feathered serpent god K'uk'ulkan, and after he kills a Spanish priest who calls him the child without love, he takes the name Namor. In 2024 Shuri is in her lab racing to synthesise a replacement heart-shaped herb when Ramonda tells her that T'Challa has already died of an undisclosed illness. A year later the rest of the world wants Wakanda's vibranium. The Dora Milaje catch French operatives raiding a Wakandan outpost in Mali, and Ramonda tells the United Nations that the operation had its government's blessing. An American mining ship finds vibranium at sea with a new detector, and the Talokanil kill everyone aboard. Namor walks into Wakanda undetected, tells Ramonda and Shuri that Talokan has vibranium of its own, and asks for their help against the surface world. He also wants the scientist who built the detector dead. Okoye and Shuri get the name out of Everett Ross, an MIT student called Riri Williams. While Okoye, Shuri and Riri are escaping the FBI in Cambridge, Attuma and Namora seize Shuri and Riri. Ramonda strips Okoye of her rank, then goes to Haiti and asks Nakia to bring Shuri home. Nakia breaks Shuri and Riri out and kills two Talokanil guards on the way, so Namor attacks Birnin Zana and floods the throne room. Ramonda drowns getting Riri out of the water. Shuri uses the bracelet Namor gave her to finish the herb, takes a dose, meets Killmonger on the ancestral plane, and becomes the Black Panther. She beats Namor on a beach, chooses to let him live, and the two nations stop fighting.",
+            "significance": "T'Challa is dead when the film opens, and the mantle of the Black Panther passes to Shuri. She rebuilds the heart-shaped herb using a plant from Talokan and comes out of the ritual with the strength and speed her brother had. Then she grows more of the herb, so Wakanda is never one death away from having no Black Panther. The rest of the world is still coming for Wakanda's vibranium, by raid and by treaty, and Talokan has exactly the same problem. Namor and his people have been under the ocean since 1571, and he calls himself a mutant. Riri Williams is introduced as an MIT student building an armoured suit in a rented garage. Contessa Valentina Allegra de Fontaine turns up as Director of the CIA and as Everett Ross's ex-wife. Okoye loses her rank and finishes the film in Midnight Angel armour. And at the very end, Shuri learns that Nakia and T'Challa have a son.",
+            "orderNote": "Set about a year after T'Challa's death, in the same 2025 stretch as most of Phase Five. It has to sit before Ironheart, because Riri Williams is introduced in this film and that series follows her home afterwards. Putting it straight after Moon Knight also pairs the two entries in the phase that run on gods and the afterlife. Moon Knight has the Egyptian pantheon and the Duat, and this film has the ancestral plane and a king his own people worship as a god."
           },
           "watchFor": [
             {
-              "name": "Vibranium",
-              "thisFilm": "The strongest metal on Earth, and until now Wakanda held every known deposit. Other countries have decided that is too much for one nation to hold, and ordinary scans cannot pick vibranium up, so they have started digging for their own. Talokan turns out to have a supply nobody knew about.",
-              "future": "Vibranium stops being the hardest thing on the planet. Captain America: Brave New World turns the dead Celestial's remains into a source of adamantium, and adamantium cuts straight through vibranium. Thaddeus Ross announces it to the world as the better metal, and one that no isolationist nation controls.",
-              "spoils": "Captain America: Brave New World"
-            },
-            {
               "name": "Namor",
               "characterId": "namor",
-              "thisFilm": "King of Talokan. The plant his mother drank while she was pregnant gave him winged ankles, pointed ears, skin that breathes air, and a very slow rate of ageing. He is more than four hundred and fifty years old. His people worship him as the feathered serpent god K'uk'ulkan. Heat and dry air are what weaken him.",
+              "thisFilm": "King of Talokan. The plant his mother drank while she was pregnant gave him winged ankles, pointed ears, skin that breathes air and a lifespan that has run from 1571 to now. Heat and dry air are what weaken him.",
               "future": "Namor is in Avengers: Doomsday, with Tenoch Huerta back in the part.",
               "spoils": "Avengers: Doomsday"
             },
             {
-              "name": "Talokan",
-              "characterId": "talokan",
-              "thisFilm": "An underwater city off the Yucatan, four and a half centuries old, and nobody on the surface knew it existed. It has vibranium of its own, which is why the detector threatens Talokan and not only Wakanda. Namor named the city after Tlalocan, the Aztec paradise his mother used to describe to him. Whales and orcas come when the Talokanil call."
-            },
-            {
-              "name": "Mutants",
-              "characterId": "mutants",
-              "thisFilm": "Namor describes what the plant did to him and calls himself a mutant. That is the first time anyone in the MCU says the word about themselves, and the first confirmation that mutants exist in this continuity at all."
-            },
-            {
-              "name": "The heart-shaped herb",
-              "thisFilm": "Nakia saved one flower before the garden burned and that one went to T'Challa, so Wakanda had none left. Shuri spends the opening of this film trying to synthesise a replacement and cannot get her confidence above thirty per cent. The version she finally makes comes out at 98.7."
-            },
-            {
-              "name": "Ramonda",
-              "characterId": "ramonda",
-              "thisFilm": "T'Challa's mother, and queen of Wakanda while the throne sits empty. She is the one holding the country together through the year after his death, and she tells the United Nations that Wakanda will fight on without a Black Panther. When Namor floods the throne room she drowns getting Riri Williams out of the water."
-            },
-            {
               "name": "Okoye",
               "characterId": "okoye",
-              "thisFilm": "General of the Dora Milaje since the first film. She loses the rank over Cambridge and leaves her spear standing in the ground on the way out. Shuri later builds her a powered Midnight Angel suit, and Okoye recruits Aneka into the pair. At the very end she breaks Everett Ross out of custody."
-            },
-            {
-              "name": "Riri Williams",
-              "characterId": "riri-williams",
-              "thisFilm": "An MIT student who built the vibranium detector for a metallurgy class, which the CIA then took and put to work. She has also been building an Iron Man style suit in a rented public works garage in Cambridge. She fights the final battle in a suit Shuri builds her out of Wakandan parts. Then she goes home to MIT with the knowledge and none of the hardware, because Wakanda will not let her keep the armour."
+              "thisFilm": "General of the Dora Milaje since the first film, and she loses the rank over Cambridge. Shuri later builds her a powered Midnight Angel suit, and Okoye recruits Aneka into the pair. At the very end she breaks Everett Ross out of custody."
             },
             {
               "name": "Everett Ross",
               "characterId": "everett-ross",
-              "thisFilm": "The CIA officer who owes T'Challa and Shuri his life after the first Black Panther, which is where you last saw him. He gives Wakanda intelligence knowing that doing so is treason, and he keeps feeding Ramonda information afterwards. Valentina plants a set of Kimoyo Beads for him to find, waits until he uses them to reach Wakanda, and has him arrested."
+              "thisFilm": "The CIA officer from the first Black Panther, which is where you last saw him. He gives Wakanda intelligence knowing the charge for it is treason. Valentina leaves a set of Kimoyo Beads out for him, waits until he uses the beads to reach Wakanda, and has him arrested."
             },
             {
               "name": "Valentina Allegra de Fontaine",
               "characterId": "valentina",
-              "thisFilm": "Director of the CIA, and Everett Ross's ex-wife. You last saw her giving John Walker a new job after he lost the Captain America shield, and before that sending Yelena Belova after Clint Barton. She is running the American side of the vibranium problem, she puts Ross on the Wakanda file knowing he will leak, and she arrests him for treason once he does.",
-              "future": "Valentina keeps collecting people nobody else wants. Thunderbolts* is the film where she finally puts the team together, and she is the one who presents them to the public as the New Avengers.",
+              "thisFilm": "Director of the CIA, and Everett Ross's ex-wife. You last saw her hiring John Walker after he lost the Captain America shield, and before that sending Yelena Belova after Clint Barton. She runs the American push for vibranium, and she put Ross on the Wakanda file knowing he would leak.",
+              "future": "Valentina keeps collecting people with nowhere else to go. Thunderbolts* is the film where she finally puts the team together, and she is the one who presents them to the public as the New Avengers.",
               "spoils": "Thunderbolts*"
+            },
+            {
+              "name": "Riri Williams",
+              "characterId": "riri-williams",
+              "thisFilm": "An MIT student who built the vibranium detector for a metallurgy class, which the CIA then took and put to work. She has also been building an Iron Man style suit of her own. She fights the final battle in a suit Shuri makes her, then goes home with the knowledge and none of the hardware, because Wakanda will not let her keep the armour."
             },
             {
               "name": "Shuri",
               "characterId": "shuri",
-              "thisFilm": "She starts the film in her lab and ends it as the Black Panther. The one waiting for her on the ancestral plane is Killmonger, who tells her they both took the herb to get even with the people who took from their families. M'Baku argues against killing Namor, because killing a god would mean endless war and because he promised T'Challa he would look after her, and Shuri goes after Namor regardless. Afterwards she leaves for Haiti instead of claiming the throne, and M'Baku steps up to challenge for the crown.",
+              "thisFilm": "She starts the film in her lab and ends it as the Black Panther. The one waiting for her on the ancestral plane is Killmonger, who tells her they both took the herb for revenge. She goes after Namor against M'Baku's advice and then spares him. Afterwards she leaves for Haiti instead of claiming the throne, and M'Baku steps up to challenge for the crown.",
+              "nameIsSpoiler": true
+            },
+            {
+              "name": "Ramonda",
+              "characterId": "ramonda",
+              "thisFilm": "T'Challa's mother, and queen of Wakanda while the throne sits empty. She holds the country together through the year after T'Challa's death and tells the United Nations that Wakanda will fight on without a Black Panther. When Namor floods the throne room she drowns getting Riri Williams out of the water.",
               "nameIsSpoiler": true
             },
             {
               "name": "Toussaint",
-              "thisFilm": "Nakia and T'Challa had a son in secret, and Nakia raised him in Haiti. Ramonda already knew and tries to tell Shuri at the one-year commemoration, but Namor's arrival cuts her off. She meets the boy on the Haiti trip and dies before she can tell anyone. In the mid-credits scene Nakia brings him out to Shuri on the beach. He introduces himself as Toussaint, then says that is his Haitian name and his real name is T'Challa.",
+              "thisFilm": "Nakia and T'Challa had a son in secret, and Nakia raised him in Haiti. Ramonda already knew and tries to tell Shuri at the one-year commemoration, but Namor's arrival cuts her off, and she dies before she gets another chance. Right at the end of the film Nakia brings the boy out to Shuri on the beach. He introduces himself as Toussaint, then says that is his Haitian name and his real name is T'Challa.",
               "nameIsSpoiler": true
+            },
+            {
+              "name": "Mutants",
+              "characterId": "mutants",
+              "thisFilm": "Namor calls himself a mutant, and says the plant his mother drank is what made him one."
+            },
+            {
+              "name": "Talokan",
+              "characterId": "talokan",
+              "thisFilm": "An underwater city off the Yucatan, four and a half centuries old and hidden from the surface world until now. It has vibranium of its own, which is why the detector threatens Talokan as much as Wakanda. Whales and orcas come when the Talokanil call."
+            },
+            {
+              "name": "Vibranium",
+              "thisFilm": "The strongest metal on Earth, and until now Wakanda held every known deposit. Other countries have decided that is too much for one nation to hold, and ordinary scans cannot pick vibranium up, so they have started digging for their own. Talokan turns out to have a second supply.",
+              "future": "Vibranium stops being the hardest material on the planet. Captain America: Brave New World turns the dead Celestial's remains into a source of adamantium, and adamantium cuts straight through vibranium. Thaddeus Ross announces it to the world as the better metal, and one that no isolationist nation controls.",
+              "spoils": "Captain America: Brave New World"
+            },
+            {
+              "name": "The heart-shaped herb",
+              "thisFilm": "Nakia saved one flower before the garden burned and that one went to T'Challa, so Wakanda had none left. Shuri spends the opening of this film trying to synthesise a replacement and cannot get her confidence above thirty per cent. The version she finally makes comes out at 98.7."
             }
           ],
           "postCredit": {
@@ -2500,28 +2499,57 @@
           "releaseOrder": 35,
           "type": "movie",
           "art": { "tmdbId": 616037, "poster": "/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg", "backdrop": "/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg" },
-          "summary": "Thor's search for inner peace is interrupted by a galactic killer known as Gorr the God Butcher, who seeks the extinction of the gods, forcing Thor to seek help from an old flame wielding his own hammer.",
+          "summary": "Gorr the God Butcher is working his way through the gods of the universe, and Thor goes after him with Valkyrie, Korg and an ex-girlfriend who is carrying Mjolnir.",
           "beforeWatch": {
-            "context": "Thor has been off with the Guardians since Endgame and is looking for a purpose. Ragnarok's comic register is dialled up further here. The two films that matter going in are Ragnarok, for the tone and the supporting cast, and Endgame, for where he ended up — plus a memory of Jane Foster from the first two Thor films.",
-            "watchFirst": ["thor-3","avengers-4"]
+            "context": "Asgard itself is gone. Thor let Surtur burn the city down to stop Hela at the end of Thor: Ragnarok, and Thanos killed Heimdall straight after, in the opening scene of Avengers: Infinity War. The survivors settled in a Norwegian fishing village and called it New Asgard. That is where Thor spent the five years in Avengers: Endgame, and at the end of that film he handed the crown to Valkyrie and left with the Guardians of the Galaxy. Hela shattered Mjolnir as well, so his weapon since then has been Stormbreaker, the axe he forged on Nidavellir. The last time Thor and Jane Foster spoke to each other was Thor: The Dark World, set twelve years earlier. Similar to Ragnarok, this one is more of a comedy than an action film, and it takes that further than Ragnarok did.",
+            "watchFirst": ["avengers-4"]
           },
           "inUniverseSetting": "2025",
           "deepDive": {
-            "plot": "Still searching for peace after Endgame, Thor reunites with his ex, astrophysicist Jane Foster, who has used the remains of his old hammer Mjolnir to become the Mighty Thor while secretly battling cancer. Together they must stop Gorr the God Butcher, a grief-stricken former believer slaughtering gods across the universe after his own deity abandoned him, using a weapon capable of killing gods, the Necrosword. Jane sacrifices herself using Mjolnir's power to save the day, and Thor, having lost yet another partner, finds a new sense of purpose raising Gorr's resurrected daughter as his own.",
-            "significance": "Gives Jane Foster a definitive, if bittersweet, send-off as the Mighty Thor, and continues Thor's long arc of loss and reinvention that began all the way back in Phase One.",
-            "orderNote": "Set in the same broad 2025 period as the rest of Phase Five, so the exact slot is a judgement call. It sits directly before The Guardians of the Galaxy Holiday Special, because the Guardians part company with Thor in the opening scenes of this film and the Holiday Special follows them on from that parting. Keeping those two together means the Guardians go straight on into Guardians of the Galaxy Vol. 3."
+            "plot": "On a dying world, a believer called Gorr loses his daughter to starvation. He then finds the god he has prayed to all his life, Rapu, who laughs at him for staying faithful. A black sword called All-Black the Necrosword calls out to Gorr. He kills Rapu with the sword and swears to kill every god in the universe. Thor has been travelling with the Guardians of the Galaxy and training off the weight he put on in Avengers: Endgame. The Guardians go their own way, and Thor returns to New Asgard, where Gorr's shadow monsters attack the village and carry the children off into space. New Asgard is a tourist town now, and the broken pieces of Mjolnir sit in a glass case as an attraction. Jane Foster has come to the village because she heard Mjolnir calling her. Her cancer has reached stage four, chemotherapy has stopped working, and the hammer puts itself back together around her, because Thor once asked it to protect her. As the Mighty Thor she fights alongside him, Valkyrie and Korg. The four of them go to Omnipotence City to ask Zeus for an army, and Zeus turns them down. The argument becomes a fight that ends with Thor driving Zeus's own Thunderbolt through his chest. In the Shadow Realm, Gorr beats all of them and takes Stormbreaker, which is the key he needs to open the Gates of Eternity and make his wish. Every transformation is killing Jane faster, so she puts the hammer down. She picks it up again for the last fight. At the Gates, Thor lends the children his lightning so they can fight off the shadow monsters, and Jane destroys the Necrosword. Gorr gets through the Gates, stands in front of Eternity, and spends his one wish on his daughter. He dies of the sword's corruption and asks Thor to raise her. Jane dies in Thor's arms.",
+            "significance": "Jane Foster returns as a lead for the first time since Thor: The Dark World, becomes the Mighty Thor, and dies before the end. Thor finishes the film carrying Mjolnir again, eight years after Hela shattered it, and hands Stormbreaker to Love, the daughter he agrees to raise. The universe turns out to have a full pantheon of gods. They gather in Omnipotence City, where the Greek god Zeus is the big blowhard running the assembly, and the Greek, Egyptian and Mesoamerican gods all have official seats. Eternity is a cosmic entity at the centre of the universe, and whoever reaches it first gets one wish. Heimdall's son Axl learns to use the sight he inherited, and Valkyrie puts the children of New Asgard into fighting classes when they get home. At the very end Zeus sends Hercules after Thor.",
+            "orderNote": "Set in the same broad 2025 period as the rest of Phase Five, so the exact slot is a judgement call. It sits directly before The Guardians of the Galaxy Holiday Special, because the Guardians part company with Thor in the opening scenes of this film. The Holiday Special follows them on from that parting. Keeping those two together means the Guardians go straight on into Guardians of the Galaxy Vol. 3."
           },
           "watchFor": [
             {
-              "name": "Jane Foster / Mighty Thor's fate",
+              "name": "Jane Foster",
               "characterId": "jane-foster",
-              "thisFilm": "Sacrifices herself using Mjolnir to save Thor and the children of Asgard.",
-              "future": "Her journey to Valhalla leaves the door open for a possible future return."
+              "thisFilm": "Thor's ex-girlfriend, and an astrophysicist. Her cancer is at stage four and chemotherapy has stopped working. Mjolnir reassembles for her because Thor once asked the hammer to protect her, and every transformation burns through the time she has left. She dies at the Gates of Eternity, and the last scene of the film puts her at the doors of Valhalla with Heimdall."
             },
             {
-              "name": "Hercules (mid-credit)",
-              "thisFilm": "Not present in the main story.",
-              "future": "Zeus sends his son to hunt Thor down, setting up a rivalry for a future Thor story."
+              "name": "Gorr the God Butcher",
+              "characterId": "gorr",
+              "thisFilm": "A believer whose daughter starved to death on a dying world, and whose god laughed at him for praying. All-Black the Necrosword chose him in that moment, and carrying it is slowly corrupting him. What he is after is Eternity, who grants one wish to the first person through the Gates."
+            },
+            {
+              "name": "Axl",
+              "characterId": "axl",
+              "thisFilm": "Heimdall's son, who inherited his father's sight, and he can project himself into somebody else's head. That is how Thor keeps track of the stolen children. At the Gates he opens the Bifrost with Stormbreaker and takes all of them home."
+            },
+            {
+              "name": "Love",
+              "thisFilm": "Gorr's daughter, who dies of starvation in the opening scene. Gorr spends his wish on bringing her back, then dies and asks Thor to raise her. Thor takes her into space and gives her Stormbreaker. The two of them go by Love and Thunder.",
+              "future": "Love is in Avengers: Doomsday, with India Rose Hemsworth back in the part, and Chris Hemsworth returns as Thor.",
+              "spoils": "Avengers: Doomsday",
+              "nameIsSpoiler": true
+            },
+            {
+              "name": "Hercules",
+              "thisFilm": "Zeus survives having his own Thunderbolt put through his chest. In the mid-credits scene he tells his son Hercules that people will fear the gods again once Thor Odinson falls out of the sky. Then he sends Hercules after Thor.",
+              "nameIsSpoiler": true
+            },
+            {
+              "name": "New Asgard",
+              "characterId": "asgard",
+              "thisFilm": "The town in Norway where the Asgardians who survived Thanos settled, and a tourist destination now. There is a gift shop, a stage show and a glass case holding the pieces of Mjolnir. Valkyrie runs the place as King, and the job is mostly paperwork and ribbon-cuttings."
+            },
+            {
+              "name": "Omnipotence City",
+              "thisFilm": "A floating city where the gods of every pantheon meet, run by Zeus. Dionysus, Artemis, Bast and Hercules are all in the room, Isis is there from the Egyptian council in Moon Knight, and two Celestials have seats as well. Thor goes to ask for an army against Gorr, and the group leaves with Zeus's Thunderbolt and nothing else."
+            },
+            {
+              "name": "Mjolnir",
+              "thisFilm": "Hela shattered the hammer in Thor: Ragnarok, and the pieces ended up in a display case in New Asgard. It reassembles for Jane Foster, and after her death Thor carries it again."
             }
           ],
           "postCredit": {
